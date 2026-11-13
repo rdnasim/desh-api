@@ -11,6 +11,18 @@ Bijoy ↔ Unicode converter, land unit converter, format validators (NID, vehicl
 emergency & government hotlines, proverbs/riddles/fun content, and a public docs site. Free, open,
 bilingual, privacy-first."
 
+## Clarifications
+
+### Session 2026-11-13
+
+- Q: How should Bijoy conversion treat embedded English/Latin text? → A: Phase 1 has no ignore
+  marker; the whole input is treated as Bijoy. Docs warn that mixed English text will be mapped.
+  An opt-in marker may be added later if users ask for it.
+- Q: What birth-year range makes a 17-digit NID plausible? → A: 1900 through the current year
+  (Asia/Dhaka), inclusive.
+- Q: Which BIN formats count as valid? → A: 9 digits is valid (`bin-9`). The 13-digit branch form
+  (9 + 4 digits, optional dash) is also `valid: true`, with `format: "legacy_or_branch"`.
+
 ## User Scenarios & Testing *(mandatory)*
 
 Each story below is an independently shippable slice. Stories are ordered by the value they unlock
@@ -120,8 +132,8 @@ signs, ya-phala, ra-phala, and punctuation) and match expected output exactly.
 2. **Given** `আমার সোনার বাংলা`, **When** converted to Bijoy, **Then** `Avgvi †mvbvi evsjv`.
 3. **Given** text up to the documented size limit, **When** converted, **Then** output is returned
    in a single response; text above the limit returns 413 with the limit stated.
-4. **Given** mixed Bijoy and plain English/numbers, **When** converted, **Then** Latin text that is
-   clearly not Bijoy (e.g. inside a configurable ignore marker) is preserved as documented.
+4. **Given** mixed Bijoy and plain English, **When** converted, **Then** the whole input is
+   treated as Bijoy (no ignore marker in Phase 1) and the docs state this clearly.
 
 ---
 

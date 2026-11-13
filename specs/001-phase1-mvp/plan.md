@@ -18,7 +18,7 @@ the same Zod schemas that generate the docs. See [research.md](./research.md) fo
 **Language/Version**: TypeScript 5.x (strict), ES2022 target; Node.js ≥ 22 for tooling
 
 **Primary Dependencies**: Hono 4, `@hono/zod-openapi`, Zod, `@scalar/hono-api-reference`;
-vendored Avro Phonetic rules (R10); dev: Wrangler, Vitest + `@cloudflare/vitest-pool-workers`,
+vendored Avro Phonetic rules (R10); dev: Wrangler, Vitest 4.1 + `@cloudflare/vitest-plugin`,
 Biome, tsx
 
 **Storage**: None at runtime. Source data in `data/**/*.json`, compiled to `src/generated/*.ts`
@@ -47,14 +47,15 @@ content sets
 |---|---|---|
 | I. Accuracy & Provenance | `DatasetMeta` per dataset drives `meta.source`/`meta.last_updated`; hotlines carry `last_verified`; land variants omitted unless sourced (R14); VERIFY items gate their stories | ✅ |
 | II. Privacy by Design | Validators format-only; invocation logs off, route-template logging only, `no-store`, POST variants (R19); `PRIVACY.md` | ✅ |
-| III. Bilingual | `name_en`/`name_bn` required by Zod schemas; Bangla digit parsing in shared `parseNumber` | ✅ |
+| III. Bilingual | `name_en`/`name_bn` required by Zod schemas; Bangla digit parsing in shared `parseNumber` | ⚠️ post-office `name_bn` is null (justified below) |
 | IV. Versioned contract | `/v1` router; shared envelope/error helpers; OpenAPI generated from route schemas; CORS middleware; bulk POST for phone (≤ 100) | ✅ |
 | V. Test-first & golden files | Tests precede implementation in every story in tasks.md; golden fixtures for converters; data-integrity suite | ✅ |
 | VI. Data as files | `data/**/*.json` sorted/pretty; `pnpm data:check` in CI | ✅ |
 | VII. Edge-first simplicity | No DB/KV; only the free Rate Limiting binding | ✅ |
 | VIII. Neutral content | Fun content traditional/public domain with `source` per record | ✅ |
 
-**Post-design re-check (after data-model + contracts)**: ✅ No violations; Complexity Tracking empty.
+**Post-design re-check (after US1 data import, 2026-11-13)**: ⚠️ one justified deviation: post offices
+have no Bangla names in any open source (Principle III). See Complexity Tracking.
 
 ## Project Structure
 
@@ -145,4 +146,6 @@ are reused by `scripts/build-data.ts` to validate data files, keeping one source
 
 ## Complexity Tracking
 
-No constitution violations — table intentionally empty.
+| Violation | Why Needed | Simpler Alternative Rejected Because |
+|-----------|------------|-------------------------------------|
+| Principle III (bilingual): post offices have `name_bn: null` | No open source has Bangla post-office names; shipping postcodes without them still unblocks address forms (US1) | Inventing transliterations would break Principle I (accuracy). Tracked as a community data task; the field is already in the schema |

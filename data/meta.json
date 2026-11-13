@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "geo.city-corporations",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+  },
+  {
+    "dataset": "geo.districts",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+  },
+  {
+    "dataset": "geo.divisions",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+  },
+  {
+    "dataset": "geo.postcodes",
+    "source": "Bangladesh GeoCode (GeoNames postal codes, compiled from the Bangladesh Post Office list)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); GeoNames data CC BY 4.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "GeoNames", "Bangladesh Post Office"]
+  },
+  {
+    "dataset": "geo.unions",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+  },
+  {
+    "dataset": "geo.upazilas",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+  }
+]

@@ -39,14 +39,21 @@ endpoints use a module-level meta (e.g. `source: "Bangla Academy revised calenda
 ### District
 Division fields + `division` (FK → Division.slug, required). Exactly 64 records.
 
+All area records also carry optional `bbs_code` (official BBS geocode, `^BD\d+$`) and `url`
+(official website).
+
 ### Upazila
-Division fields + `district` (FK → District.slug, required). Includes city-corporation thanas
-only if present in the BBS source (flag `type: "upazila" | "thana"`).
+Division fields + `district` (FK → District.slug, required). Exactly 495 records. When an upazila
+name repeats across districts, the slug is `<name>-<district>` (e.g. `kaliganj-gazipur`).
+
+### CityCorporation
+Division fields + `district`. Exactly 12 records; slug drops the "City Corporation" suffix
+(`dhaka-north`). Referenced by post offices in metropolitan areas.
 
 ### Union
 | Field | Type | Rules |
 |---|---|---|
-| `slug` | string | unique within `upazila` |
+| `slug` | string | unique within `upazila` (same-name pairs get `-2`) |
 | `upazila` | string | FK → Upazila.slug |
 | `name_en`, `name_bn`, `aliases`, `lat?`, `lon?` | | as above |
 
@@ -56,16 +63,20 @@ Totals for upazilas and unions are recorded in research R4 and asserted by `test
 | Field | Type | Rules |
 |---|---|---|
 | `postcode` | string | `^\d{4}$` |
-| `name_en`, `name_bn` | string | post office name |
-| `thana_en`, `thana_bn` | string | as printed in Post Office list |
-| `upazila` | string? | FK → Upazila.slug when reconcilable |
+| `name_en` | string | post office name |
+| `name_bn` | string \| null | `null` until contributed (no open source; see plan Complexity Tracking) |
+| `thana_en` | string | postal thana as printed in the Post Office list |
 | `district` | string | FK → District.slug |
+| `upazila` | string? | FK → Upazila.slug when linked to an upazila |
+| `city_corporation` | string? | FK → CityCorporation.slug when in a metropolitan area |
+| `lat`, `lon` | number? | |
 
-Multiple records may share a `postcode`.
+Multiple records may share a `postcode` (none do in the current source).
 
 ### SearchIndex (generated)
-`{ token: string, level: "division"|"district"|"upazila"|"union", ref: string }[]` built by
-`scripts/build-data.ts` from names + aliases. Not hand-edited.
+`[text, level, index][]`: `text` is the normalised name, Bangla name, and aliases joined by `|`;
+`level` ∈ `division|district|upazila|union|post_office`; `index` points into that level's dataset.
+Built by `scripts/build-data.ts`. Not hand-edited.
 
 ## Phone
 

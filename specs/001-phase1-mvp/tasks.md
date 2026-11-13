@@ -28,15 +28,15 @@ shipped independently.
 
 **Purpose**: Project initialization, tooling, and the data-source survey that unblocks all data work
 
-- [ ] T001 Create `package.json` (pnpm, `"type": "module"`, Node ≥ 22) with deps `hono`, `@hono/zod-openapi`, `zod`, `@scalar/hono-api-reference` and dev deps `wrangler`, `typescript`, `vitest`, `@cloudflare/vitest-pool-workers`, `@cloudflare/workers-types`, `@biomejs/biome`, `tsx`; scripts `dev`, `deploy`, `typecheck`, `lint`, `format`, `test`, `data:build`, `data:check`, `size:check`, `smoke` in package.json
-- [ ] T002 [P] Create strict TypeScript config (ES2022, `moduleResolution: bundler`, Workers types, path alias `@/*` → `src/*`) in tsconfig.json
-- [ ] T003 [P] Create Worker config in wrangler.jsonc: `name: "desh-api"`, `main: "src/index.ts"`, pinned `compatibility_date`, `observability.enabled: true` with invocation logs disabled (research R19), and Rate Limiting binding `RATE_LIMITER` with `limit: 120`, `period: 60` (R17)
-- [ ] T004 [P] Configure Biome lint + format (2-space, single quotes, sorted imports; JSON formatting for `data/**`) in biome.json
-- [ ] T005 [P] Configure Vitest with `@cloudflare/vitest-pool-workers` pointing at wrangler.jsonc in vitest.config.ts
-- [ ] T006 [P] Create .gitignore (`node_modules`, `.wrangler`, `src/generated`, `.dev.vars`, `coverage`)
-- [ ] T007 [P] Add LICENSE (MIT, code) and LICENSE-DATA (CC BY 4.0, data) at repo root
-- [ ] T008 [P] Create CI workflow running `pnpm install --frozen-lockfile`, `data:build`, `typecheck`, `lint`, `data:check`, `test`, `size:check` on push and PR in .github/workflows/ci.yml
-- [ ] T009 Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
+- [X] T001 Create `package.json` (pnpm, `"type": "module"`, Node ≥ 22) with deps `hono`, `@hono/zod-openapi`, `zod`, `@scalar/hono-api-reference` and dev deps `wrangler`, `typescript`, `vitest`, `@cloudflare/vitest-pool-workers`, `@cloudflare/workers-types`, `@biomejs/biome`, `tsx`; scripts `dev`, `deploy`, `typecheck`, `lint`, `format`, `test`, `data:build`, `data:check`, `size:check`, `smoke` in package.json
+- [X] T002 [P] Create strict TypeScript config (ES2022, `moduleResolution: bundler`, Workers types, path alias `@/*` → `src/*`) in tsconfig.json (no `@/*` alias: relative imports avoid extra resolver config in Wrangler and Vitest)
+- [X] T003 [P] Create Worker config in wrangler.jsonc: `name: "desh-api"`, `main: "src/index.ts"`, pinned `compatibility_date`, `observability.enabled: true` with invocation logs disabled (research R19), and Rate Limiting binding `RATE_LIMITER` with `limit: 120`, `period: 60` (R17)
+- [X] T004 [P] Configure Biome lint + format (2-space, single quotes, sorted imports; JSON formatting for `data/**`) in biome.json
+- [X] T005 [P] Configure Vitest with `@cloudflare/vitest-pool-workers` pointing at wrangler.jsonc in vitest.config.ts (uses `@cloudflare/vitest-plugin`, the renamed successor of the pool-workers package)
+- [X] T006 [P] Create .gitignore (`node_modules`, `.wrangler`, `src/generated`, `.dev.vars`, `coverage`)
+- [X] T007 [P] Add LICENSE (MIT, code) and LICENSE-DATA (CC BY 4.0, data) at repo root
+- [X] T008 [P] Create CI workflow running `pnpm install --frozen-lockfile`, `data:build`, `typecheck`, `lint`, `data:check`, `test`, `size:check` on push and PR in .github/workflows/ci.yml
+- [ ] T009 *(geo + postcodes done, see R4/R5; Bijoy map, Avro Phonetic, R13 formats, R14 land variants still open)* Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
 
 ---
 
@@ -48,26 +48,26 @@ shipped independently.
 
 ### Tests (write first, must fail)
 
-- [ ] T010 [P] Unit tests for Bangla⇄Latin digit conversion and `parseNumber` (Bangla digits, mixed digits, surrounding whitespace, comma separators, decimals, rejects non-numeric) in tests/unit/lib/digits.test.ts
-- [ ] T011 [P] Unit tests for text normalisation (NFC, `য়`/`ড়`/`ঢ়` composition, Latin lowercase + diacritic strip) in tests/unit/lib/normalize.test.ts
-- [ ] T012 [P] Unit tests for seeded PRNG determinism (same seed → same sequence; string seeds hashed) in tests/unit/lib/random.test.ts
-- [ ] T013 [P] Create contract test helpers (`call(path, init)`, `expectOk(res, schema)`, `expectError(res, status, code)`, OpenAPI response validator) in tests/contract/helpers.ts
-- [ ] T014 Contract tests for app shell: `GET /health`, `GET /` index, unknown route → 404 `not_found` envelope, wrong method → 405, CORS headers on GET/OPTIONS, 429 `rate_limited` with `Retry-After` when binding denies, `/openapi.json` is valid OpenAPI 3.1 in tests/contract/app.test.ts
+- [X] T010 [P] Unit tests for Bangla⇄Latin digit conversion and `parseNumber` (Bangla digits, mixed digits, surrounding whitespace, comma separators, decimals, rejects non-numeric) in tests/unit/lib/digits.test.ts
+- [X] T011 [P] Unit tests for text normalisation (NFC, `য়`/`ড়`/`ঢ়` composition, Latin lowercase + diacritic strip) in tests/unit/lib/normalize.test.ts
+- [X] T012 [P] Unit tests for seeded PRNG determinism (same seed → same sequence; string seeds hashed) in tests/unit/lib/random.test.ts
+- [X] T013 [P] Create contract test helpers (`call(path, init)`, `expectOk(res, schema)`, `expectError(res, status, code)`, OpenAPI response validator) in tests/contract/helpers.ts
+- [X] T014 Contract tests for app shell: `GET /health`, `GET /` index, unknown route → 404 `not_found` envelope, wrong method → 405, CORS headers on GET/OPTIONS, 429 `rate_limited` with `Retry-After` when binding denies, `/openapi.json` is valid OpenAPI 3.1 in tests/contract/app.test.ts
 
 ### Implementation
 
-- [ ] T015 [P] Implement digit conversion and `parseNumber` in src/lib/digits.ts
-- [ ] T016 [P] Implement normalisation helpers in src/lib/normalize.ts
-- [ ] T017 [P] Implement mulberry32 PRNG with string-seed hashing and `pick`/`sample` helpers in src/lib/random.ts
-- [ ] T018 [P] Define `DatasetMeta` Zod schema (`dataset`, `source`, `source_url?`, `licence`, `retrieved`, `last_updated` ISO date, `credits[]`) in src/lib/dataset-meta.ts and create data/meta.json (empty array)
-- [ ] T019 Implement response envelope `ok(c, data, meta)` and `metaFor(datasetKeys, extra?)` (`source`, `last_updated`, `version: "v1"`, optional `disclaimer`, `pagination`) in src/lib/envelope.ts
-- [ ] T020 Implement `ApiError`, error code table (`invalid_parameter` 400, `not_found` 404, `method_not_allowed` 405, `payload_too_large` 413, `rate_limited` 429, `internal_error` 500), Zod validation hook → 400 with `details`, `onError`/`notFound` handlers in src/lib/errors.ts
-- [ ] T021 [P] Implement cache helpers (`cachePublic(c, etag)` → `public, max-age=86400, s-maxage=604800` + ETag/304, `noStore(c)`) in src/lib/cache.ts
-- [ ] T022 [P] Implement privacy-safe logger middleware logging only method, route template (`c.req.routePath`), status, duration — never URL, query, or body in src/lib/logger.ts
-- [ ] T023 [P] Implement rate-limit middleware using `env.RATE_LIMITER` keyed by `CF-Connecting-IP` in src/lib/rate-limit.ts
-- [ ] T024 Implement data build pipeline: dataset registry `{ key, file, schema, transform? }`, validates each `data/**/*.json` with its Zod schema, enforces sorted records + pretty formatting, validates data/meta.json covers every dataset, emits `src/generated/<key>.ts` and `src/generated/etags.ts` (content hashes); `--check` mode for CI in scripts/build-data.ts
-- [ ] T025 Implement app shell: `OpenAPIHono` with CORS, logger, rate limit, error handlers, `/v1` sub-router, `GET /` module index, `GET /health` (git SHA via `env.VERSION`), `GET /openapi.json`, `GET /docs` (Scalar) in src/app.ts and Worker entry in src/index.ts
-- [ ] T026 [P] Implement compressed bundle size guard (`wrangler deploy --dry-run --outdir`, gzip, fail > 2.5 MB) in scripts/check-bundle-size.ts
+- [X] T015 [P] Implement digit conversion and `parseNumber` in src/lib/digits.ts
+- [X] T016 [P] Implement normalisation helpers in src/lib/normalize.ts
+- [X] T017 [P] Implement mulberry32 PRNG with string-seed hashing and `pick`/`sample` helpers in src/lib/random.ts
+- [X] T018 [P] Define `DatasetMeta` Zod schema (`dataset`, `source`, `source_url?`, `licence`, `retrieved`, `last_updated` ISO date, `credits[]`) in src/lib/dataset-meta.ts and create data/meta.json (empty array)
+- [X] T019 Implement response envelope `ok(c, data, meta)` and `metaFor(datasetKeys, extra?)` (`source`, `last_updated`, `version: "v1"`, optional `disclaimer`, `pagination`) in src/lib/envelope.ts
+- [X] T020 Implement `ApiError`, error code table (`invalid_parameter` 400, `not_found` 404, `method_not_allowed` 405, `payload_too_large` 413, `rate_limited` 429, `internal_error` 500), Zod validation hook → 400 with `details`, `onError`/`notFound` handlers in src/lib/errors.ts
+- [X] T021 [P] Implement cache helpers (`cachePublic(c, etag)` → `public, max-age=86400, s-maxage=604800` + ETag/304, `noStore(c)`) in src/lib/cache.ts (ETag/304 handled by Hono `etag()` middleware; default `no-store` via `defaultNoStore`)
+- [X] T022 [P] Implement privacy-safe logger middleware logging only method, route template (`c.req.routePath`), status, duration — never URL, query, or body in src/lib/logger.ts
+- [X] T023 [P] Implement rate-limit middleware using `env.RATE_LIMITER` keyed by `CF-Connecting-IP` in src/lib/rate-limit.ts
+- [X] T024 Implement data build pipeline: dataset registry `{ key, file, schema, transform? }`, validates each `data/**/*.json` with its Zod schema, enforces sorted records + pretty formatting, validates data/meta.json covers every dataset, emits `src/generated/<key>.ts` and `src/generated/etags.ts` (content hashes); `--check` mode for CI in scripts/build-data.ts (ETags come from the `etag()` middleware, so no `etags.ts` is emitted)
+- [X] T025 Implement app shell: `OpenAPIHono` with CORS, logger, rate limit, error handlers, `/v1` sub-router, `GET /` module index, `GET /health` (git SHA via `env.VERSION`), `GET /openapi.json`, `GET /docs` (Scalar) in src/app.ts and Worker entry in src/index.ts
+- [X] T026 [P] Implement compressed bundle size guard (`wrangler deploy --dry-run --outdir`, gzip, fail > 2.5 MB) in scripts/check-bundle-size.ts
 
 **Checkpoint**: `pnpm test` passes for Phase 2; `pnpm dev` serves `/health`, `/docs`, and a 404 envelope
 
@@ -81,24 +81,24 @@ shipped independently.
 
 ### Data for User Story 1 (depends on T009)
 
-- [ ] T027 [US1] Import 8 divisions and 64 districts with `slug`, `name_en`, `name_bn`, `aliases` (Comilla, Chittagong, Barisal, Jessore, Bogra…), `lat`, `lon` into data/geo/divisions.json and data/geo/districts.json; add `geo.divisions`/`geo.districts` entries to data/meta.json
-- [ ] T028 [US1] Import all upazilas (with `district` FK and `type: "upazila" | "thana"`) into data/geo/upazilas.json; record exact total in research.md R4; add meta entry
-- [ ] T029 [US1] Import all unions (with `upazila` FK; slug unique within upazila) into data/geo/unions.json; record exact total in research.md R4; add meta entry
-- [ ] T030 [P] [US1] Import Post Office list (one record per post office: `postcode` `^\d{4}$`, `name_en`, `name_bn`, `thana_en`, `thana_bn`, `upazila?`, `district`) into data/geo/postcodes.json; add meta entry
+- [X] T027 [US1] Import 8 divisions and 64 districts with `slug`, `name_en`, `name_bn`, `aliases` (Comilla, Chittagong, Barisal, Jessore, Bogra…), `lat`, `lon` into data/geo/divisions.json and data/geo/districts.json; add `geo.divisions`/`geo.districts` entries to data/meta.json
+- [X] T028 [US1] Import all upazilas (with `district` FK and `type: "upazila" | "thana"`) into data/geo/upazilas.json; record exact total in research.md R4; add meta entry
+- [X] T029 [US1] Import all unions (with `upazila` FK; slug unique within upazila) into data/geo/unions.json; record exact total in research.md R4; add meta entry
+- [X] T030 [P] [US1] Import Post Office list (one record per post office: `postcode` `^\d{4}$`, `name_en`, `name_bn`, `thana_en`, `thana_bn`, `upazila?`, `district`) into data/geo/postcodes.json; add meta entry
 
 ### Tests for User Story 1 (write first, must fail)
 
-- [ ] T031 [P] [US1] Dataset integrity tests: exactly 8 divisions and 64 districts, upazila/union totals equal R4 values, unique slugs, every FK resolves, no orphans, both names present and NFC, coordinates within lat [20.5, 26.7] / lon [88.0, 92.7] in tests/data/geo.test.ts
-- [ ] T032 [P] [US1] Unit tests for search ranking (exact > prefix > substring, level tie-break), alias match `comilla` → `cumilla`, Bangla query `মিরপুর`, `limit` cap 20 in tests/unit/geo/search.test.ts
-- [ ] T033 [P] [US1] Unit tests for haversine nearest (23.81, 90.41 → `dhaka`), upazila fallback to district, outside-bounds rejection in tests/unit/geo/nearest.test.ts
-- [ ] T034 [P] [US1] Contract tests for every endpoint in specs/001-phase1-mvp/contracts/geo.md including 404 unknown slug/postcode, 400 bad postcode format, pagination `meta.pagination`, cache headers + ETag in tests/contract/geo.test.ts
+- [X] T031 [P] [US1] Dataset integrity tests: exactly 8 divisions and 64 districts, upazila/union totals equal R4 values, unique slugs, every FK resolves, no orphans, both names present and NFC, coordinates within lat [20.5, 26.7] / lon [88.0, 92.7] in tests/data/geo.test.ts
+- [X] T032 [P] [US1] Unit tests for search ranking (exact > prefix > substring, level tie-break), alias match `comilla` → `cumilla`, Bangla query `মিরপুর`, `limit` cap 20 in tests/unit/geo/search.test.ts
+- [X] T033 [P] [US1] Unit tests for haversine nearest (23.81, 90.41 → `dhaka`), upazila fallback to district, outside-bounds rejection in tests/unit/geo/nearest.test.ts
+- [X] T034 [P] [US1] Contract tests for every endpoint in specs/001-phase1-mvp/contracts/geo.md including 404 unknown slug/postcode, 400 bad postcode format, pagination `meta.pagination`, cache headers + ETag in tests/contract/geo.test.ts
 
 ### Implementation for User Story 1
 
-- [ ] T035 [US1] Define Zod schemas for Division, District, Upazila, Union, PostOffice, SearchHit (slug `^[a-z0-9]+(-[a-z0-9]+)*$`, names ≤ 100 chars, lat ∈ [20.5, 26.7], lon ∈ [88.0, 92.7]) with OpenAPI examples in src/modules/geo/schemas.ts
-- [ ] T036 [US1] Register geo datasets in scripts/build-data.ts and generate parent→children maps, postcode→post-offices map, and normalised search index (research R6)
-- [ ] T037 [US1] Implement geo service (list/get by parent, postcode lookup, search, nearest per R7) in src/modules/geo/service.ts
-- [ ] T038 [US1] Implement geo routes per contracts/geo.md with OpenAPI summaries/examples and mount under `/v1` in src/modules/geo/routes.ts and src/app.ts
+- [X] T035 [US1] Define Zod schemas for Division, District, Upazila, Union, PostOffice, SearchHit (slug `^[a-z0-9]+(-[a-z0-9]+)*$`, names ≤ 100 chars, lat ∈ [20.5, 26.7], lon ∈ [88.0, 92.7]) with OpenAPI examples in src/modules/geo/schemas.ts
+- [X] T036 [US1] Register geo datasets in scripts/build-data.ts and generate parent→children maps, postcode→post-offices map, and normalised search index (research R6)
+- [X] T037 [US1] Implement geo service (list/get by parent, postcode lookup, search, nearest per R7) in src/modules/geo/service.ts
+- [X] T038 [US1] Implement geo routes per contracts/geo.md with OpenAPI summaries/examples and mount under `/v1` in src/modules/geo/routes.ts and src/app.ts
 
 **Checkpoint**: US1 independently deployable — this is the MVP cut
 

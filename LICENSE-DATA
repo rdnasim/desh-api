@@ -1,0 +1,11 @@
+Data licence
+
+Except where noted, the data in the data/ directory is made available under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Some datasets are derived from upstream sources under their own attribution
+licences. Each dataset's source, licence, and required credits are listed in
+data/meta.json and are returned in every API response as `meta.source`.
+When you reuse the data, credit "Desh API contributors" and the upstream
+sources listed for the datasets you use.

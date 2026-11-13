@@ -34,6 +34,6 @@
 - The response envelope (FR-001/002) and `/v1` prefix (FR-005) are product-level contract
   commitments from the constitution, not implementation choices, so they are kept in the spec.
 - SC-004 uses a latency number because the API itself is the product and developers are the users.
-- No clarification markers were needed; defaults are recorded under Assumptions. Running
-  `/speckit-clarify` is still recommended for: Bijoy ignore-marker behaviour, NID birth-year range,
-  and BIN format (9 vs. 13 digits).
+- No clarification markers were needed; defaults are recorded under Assumptions. Bijoy
+  ignore-marker behaviour, NID birth-year range, and BIN format were settled in the spec's
+  Clarifications session (2026-11-13).

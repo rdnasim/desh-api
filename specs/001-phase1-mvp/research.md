@@ -37,28 +37,39 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
   KV — adds latency and eventual consistency for no benefit at this size.
 - **Guardrail**: CI fails if the compressed bundle exceeds 2.5 MB; if hit, move unions to KV.
 
-## R4. Geo data source — **VERIFY**
+## R4. Geo data source — ✅ resolved 2026-11-13
 
 - **Decision**: Seed from an existing open dataset (candidates: `nuhil/bangladesh-geocode`,
   BBS Geocode 2011/2021 publications) and reconcile names/spellings with BBS. Use current official
   English spellings for slugs (Cumilla, Chattogram, Barishal, Jashore, Bogura) and keep historical
   spellings in `aliases`.
 - **Rationale**: Constitution (Data standards) requires surveying and crediting before duplicating.
-- **To verify**: licence compatibility with CC BY 4.0; upazila total (≈495) and union total
-  (≈4,5xx) against BBS; coordinate coverage for upazilas. Record exact totals here — they become
-  the SC-003 assertions.
+- **Finding**: Using `nuhil/bangladesh-geocode` @ `c4b950b` (MIT compilation, updated 2026-11-12),
+  which reconciles BBS geocodes (UN OCHA COD-AB, CC BY-IGO 3.0) with its original Bangla-name
+  collection. Licences are attribution-only and compatible with CC BY 4.0; credits are in
+  `data/meta.json`. **Totals (SC-003 assertions)**: 8 divisions, 64 districts, 495 upazilas,
+  4,540 unions, 12 city corporations. All divisions/districts/upazilas have coordinates; 150 unions
+  do not. Imported with `scripts/import/geocode.ts`.
+- **Slug rules**: Latin slug of the official English name. 10 upazila names repeat across districts
+  (e.g. Kaliganj), so those get the district appended (`kaliganj-gazipur`). Union slugs are unique
+  within their upazila; 4 upstream same-name pairs get a `-2` suffix.
 
-## R5. Postcodes — **VERIFY**
+## R5. Postcodes — ✅ resolved 2026-11-13
 
 - **Decision**: Import the Bangladesh Post Office postcode list (via an open dataset if licence
   permits, else transcribe from the official list) into `data/geo/postcodes.json`, one record per
   post office, linked to district and upazila/thana slugs.
-- **Rationale**: Postcodes are shared by several post offices, so the lookup returns an array.
+- **Rationale**: Postcodes may be shared by several post offices, so the lookup returns an array.
+- **Finding**: Same upstream repo (GeoNames postal codes, CC BY 4.0, compiled from the Post Office
+  list): 1,349 post offices, one per postcode, each linked to a district and to an upazila or a
+  city corporation. **Gap**: no Bangla post-office or thana names exist in any open source found,
+  so `name_bn` is `null` for post offices until contributed (see plan Complexity Tracking).
 
 ## R6. Search
 
-- **Decision**: Pre-built in-memory index of normalised tokens (lowercase Latin with diacritics
-  stripped; Bangla NFC with `য়/ড়/ঢ়` composed) across names + aliases. Ranking: exact >
+- **Decision**: Pre-built index (one row per record) of normalised text (lowercase Latin with
+  diacritics stripped; Bangla NFC, which makes precomposed and decomposed `য়/ড়/ঢ়` equal) across
+  names + aliases, covering divisions, districts, upazilas, unions, and post offices. Ranking: exact >
   prefix > substring; tie-break by level (division > district > upazila > union). Max 20 results.
 - **Alternatives**: Fuzzy (Levenshtein) search — deferred; aliases cover the common misspellings.
 
@@ -168,7 +179,8 @@ Validators never echo the input back in logs; responses echo only the normalised
 ## R18. Caching
 
 - **Decision**: Reference data and deterministic conversions: `Cache-Control: public,
-  max-age=86400, s-maxage=604800` + `ETag` (dataset content hash from build). Validators:
+  max-age=86400, s-maxage=604800` + `ETag` (Hono `etag()` middleware hashes the response body and
+  answers `If-None-Match` with 304). Responses default to `no-store` unless a route opts in. Validators:
   `Cache-Control: no-store` (privacy). Random content: `no-store` unless `seed` is given.
 
 ## R19. Privacy & logging
@@ -186,7 +198,7 @@ Validators never echo the input back in logs; responses echo only the normalised
 
 ## R21. Testing & tooling
 
-- **Decision**: Vitest with `@cloudflare/vitest-pool-workers` (runs tests inside workerd for
-  realistic behaviour). Layers: `tests/unit` (pure logic), `tests/contract` (HTTP + schema +
+- **Decision**: Vitest 4.1 with `@cloudflare/vitest-plugin` (the renamed, maintained successor of
+  `@cloudflare/vitest-pool-workers`; runs tests inside workerd for realistic behaviour). Layers: `tests/unit` (pure logic), `tests/contract` (HTTP + schema +
   envelope via the generated OpenAPI), `tests/data` (dataset integrity), `tests/golden` (fixtures).
   Biome for lint + format. pnpm. Node ≥ 22 for tooling. GitHub Actions CI.

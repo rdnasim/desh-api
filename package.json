@@ -1,0 +1,41 @@
+{
+  "name": "desh-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open public API for Bangladesh: reference data and Bangla language tools",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "dev": "pnpm data:build && wrangler dev",
+    "deploy": "pnpm data:build && wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "pnpm data:build && vitest run",
+    "test:watch": "vitest",
+    "data:build": "tsx scripts/build-data.ts",
+    "data:check": "tsx scripts/build-data.ts --check",
+    "size:check": "pnpm data:build && tsx scripts/check-bundle-size.ts",
+    "cf-typegen": "wrangler types src/worker-configuration.d.ts"
+  },
+  "dependencies": {
+    "@hono/zod-openapi": "^1.6.3",
+    "@scalar/hono-api-reference": "^0.12.20",
+    "hono": "^4.13.18",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.7",
+    "@cloudflare/vitest-plugin": "^1.8.1",
+    "@cloudflare/workers-types": "^5.20261112.1",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "vitest": "~4.1.12",
+    "wrangler": "^4.161.0"
+  }
+}
