@@ -18,9 +18,11 @@
     "test": "pnpm data:build && vitest run",
     "test:watch": "vitest",
     "data:build": "tsx scripts/build-data.ts",
-    "data:check": "tsx scripts/build-data.ts --check",
+    "data:check": "tsx scripts/build-data.ts --check && tsx scripts/data-sources-doc.ts --check",
     "size:check": "pnpm data:build && tsx scripts/check-bundle-size.ts",
-    "cf-typegen": "wrangler types src/worker-configuration.d.ts"
+    "cf-typegen": "wrangler types src/worker-configuration.d.ts",
+    "data:docs": "tsx scripts/data-sources-doc.ts",
+    "smoke": "tsx scripts/smoke.ts"
   },
   "dependencies": {
     "@hono/zod-openapi": "^1.6.3",

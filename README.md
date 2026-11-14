@@ -64,10 +64,13 @@ per minute per IP.
 | `pnpm data:check` | Validate every file in `data/` |
 | `pnpm typecheck` / `pnpm lint` | Types and Biome |
 | `pnpm size:check` | Keep the Worker bundle under budget |
+| `pnpm data:docs` | Regenerate [DATA_SOURCES.md](DATA_SOURCES.md) from `data/meta.json` |
+| `BASE=<url> pnpm smoke --bench` | Run the end-to-end scenarios against a running API, with latency |
 
 Reference data lives as JSON in [`data/`](data/), with sources and licences in
-[`data/meta.json`](data/meta.json). Fixing data is a pull request against those files;
-`pnpm data:check` tells you if anything is wrong.
+[`data/meta.json`](data/meta.json) (readable summary: [DATA_SOURCES.md](DATA_SOURCES.md)). Fixing data is a
+pull request against those files; see [CONTRIBUTING.md](CONTRIBUTING.md). How we handle what you
+send: [PRIVACY.md](PRIVACY.md).
 
 The project is built spec-first with [Spec Kit](https://github.com/github/spec-kit): principles in
 [`.specify/memory/constitution.md`](.specify/memory/constitution.md), the product vision in

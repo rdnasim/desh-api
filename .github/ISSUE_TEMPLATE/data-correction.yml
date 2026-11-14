@@ -1,0 +1,30 @@
+name: Data correction
+description: Something in the data is wrong or missing (a name, postcode, hotline, unit, …)
+labels: [data]
+body:
+  - type: input
+    id: endpoint
+    attributes:
+      label: Where did you see it?
+      description: The endpoint or data file, e.g. /v1/districts/cumilla or data/geo/unions.json
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What should it be?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link to an official page (gov.bd), gazette or published reference. Changes without a source cannot be merged.
+    validations:
+      required: true

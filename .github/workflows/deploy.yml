@@ -1,0 +1,42 @@
+name: Deploy
+
+# Deploys main to Cloudflare Workers after CI succeeds, then smoke-tests the live API.
+# Needs repository secrets CLOUDFLARE_API_TOKEN (Workers edit permission) and
+# CLOUDFLARE_ACCOUNT_ID, and the repository variable API_BASE_URL (e.g. https://desh-api.<you>.workers.dev).
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm data:build
+      - name: Deploy
+        run: pnpm exec wrangler deploy --var VERSION:${{ github.event.workflow_run.head_sha || github.sha }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Smoke test
+        run: pnpm smoke
+        env:
+          BASE: ${{ vars.API_BASE_URL }}

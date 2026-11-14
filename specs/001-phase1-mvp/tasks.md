@@ -295,13 +295,13 @@ shipped independently.
 
 ## Phase 12: Polish & Cross-Cutting Concerns
 
-- [ ] T105 [P] Write contribution guide (data-correction flow, source requirement, golden-file review, good-first-issue labels, Spec Kit workflow) in CONTRIBUTING.md
-- [ ] T106 [P] Write privacy policy (format-only validation, no storage, logging policy, POST recommendation) in PRIVACY.md
-- [ ] T107 [P] Generate data attribution page from data/meta.json in DATA_SOURCES.md (extend scripts/build-data.ts with `--docs`)
-- [ ] T108 [P] Add issue templates (data correction, bug, endpoint request) and PR template with "source of this change" field in .github/ISSUE_TEMPLATE/ and .github/pull_request_template.md
-- [ ] T109 [P] Require a second reviewer for safety-critical data in .github/CODEOWNERS (`data/hotlines/`)
-- [ ] T110 Implement smoke script running quickstart scenarios 1–15 against `BASE` with `--bench` p95 reporting in scripts/smoke.ts
-- [ ] T111 Add deploy workflow (on push to `main`, after CI: `wrangler deploy` with `CLOUDFLARE_API_TOKEN` secret, then `pnpm smoke`) in .github/workflows/deploy.yml
+- [X] T105 [P] Write contribution guide (data-correction flow, source requirement, golden-file review, good-first-issue labels, Spec Kit workflow) in CONTRIBUTING.md
+- [X] T106 [P] Write privacy policy (format-only validation, no storage, logging policy, POST recommendation) in PRIVACY.md
+- [X] T107 [P] Generate data attribution page from data/meta.json in DATA_SOURCES.md (extend scripts/build-data.ts with `--docs`) (`pnpm data:docs`; `pnpm data:check` fails if DATA_SOURCES.md is stale)
+- [X] T108 [P] Add issue templates (data correction, bug, endpoint request) and PR template with "source of this change" field in .github/ISSUE_TEMPLATE/ and .github/pull_request_template.md
+- [X] T109 [P] Require a second reviewer for safety-critical data in .github/CODEOWNERS (`data/hotlines/`) (names @rdnasim; a second maintainer must be added before two approvals can be required)
+- [X] T110 Implement smoke script running quickstart scenarios 1–15 against `BASE` with `--bench` p95 reporting in scripts/smoke.ts (local run: 15/15 pass, p95 5 ms — production p95 from Dhaka still to measure in T114)
+- [X] T111 Add deploy workflow (on push to `main`, after CI: `wrangler deploy` with `CLOUDFLARE_API_TOKEN` secret, then `pnpm smoke`) in .github/workflows/deploy.yml (needs CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets and the API_BASE_URL variable)
 - [ ] T112 Native-speaker review sign-off for all golden fixtures, recorded in tests/golden/REVIEW.md
 - [ ] T113 Run privacy log audit via `wrangler tail` (quickstart "Privacy check") and record result for SC-007 in specs/001-phase1-mvp/quickstart.md
 - [ ] T114 Run full quickstart.md validation against production, record p95 from Dhaka (SC-004), and update status in docs/roadmap.md

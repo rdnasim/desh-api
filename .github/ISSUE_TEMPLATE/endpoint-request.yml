@@ -1,0 +1,19 @@
+name: New endpoint or dataset
+description: Suggest data or a tool the API should offer
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you need, and what would you build with it?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Where does the data come from?
+      description: Official sources and their licences, if you know them
+  - type: textarea
+    id: example
+    attributes:
+      label: Example request and response
