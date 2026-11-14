@@ -4,7 +4,7 @@ Free, open-source API for Bangladesh reference data and Bangla language tools: a
 hierarchies, postcodes, Bangla numbers and dates, phone validation, Bijoy ↔ Unicode conversion and
 land units. Every response says where its data came from.
 
-> Status: Phase 1 in development, not deployed yet. "Desh API" is a working name.
+> Status: Phase 1 is live at **https://desh-api.riadul.workers.dev** (docs: [/docs](https://desh-api.riadul.workers.dev/docs)). "Desh API" is a working name.
 
 ## Try it
 
