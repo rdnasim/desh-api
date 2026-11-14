@@ -3,6 +3,10 @@
   "name": "desh-api",
   "main": "src/index.ts",
   "compatibility_date": "2026-11-01",
+  // Served at https://deshapi.riadul.com (Cloudflare creates the DNS record and certificate).
+  // The workers.dev address stays enabled so older links keep working.
+  "routes": [{ "pattern": "deshapi.riadul.com", "custom_domain": true }],
+  "workers_dev": true,
   "observability": {
     "enabled": true,
     // Invocation logs record full request URLs, which can contain NID/phone numbers.
