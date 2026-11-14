@@ -17,6 +17,33 @@ describe('app shell', () => {
     expect(body.modules.length).toBeGreaterThan(0);
   });
 
+  it('serves the landing page to browsers and JSON to API clients', async () => {
+    const page = await call('/', { headers: { Accept: 'text/html,application/xhtml+xml' } });
+    expect(page.status).toBe(200);
+    expect(page.headers.get('content-type')).toContain('text/html');
+    expect(page.headers.get('vary')).toContain('Accept');
+    const html = await page.text();
+    expect(html).toContain('<title>Desh API');
+    expect(html).toContain('href="/docs"');
+    expect(html).not.toMatch(/<script[^>]+src=|<link[^>]+stylesheet|fonts\.googleapis/);
+
+    const json = await call('/', { headers: { Accept: 'application/json' } });
+    expect(json.headers.get('content-type')).toContain('application/json');
+    expect(json.headers.get('vary')).toContain('Accept');
+  });
+
+  it('links only to example paths that exist', async () => {
+    const html = await (await call('/', { headers: { Accept: 'text/html' } })).text();
+    const paths = [...html.matchAll(/href="(\/v1\/[^"#]+)"/g)].map((m) =>
+      (m[1] as string).replaceAll('&amp;', '&'),
+    );
+    expect(paths.length).toBeGreaterThan(5);
+    for (const p of paths) {
+      const res = await call(p);
+      expect(res.status, p).toBe(200);
+    }
+  });
+
   it('lists one module in the index for every documented tag', async () => {
     const index = (await (await call('/')).json()) as { modules: { name: string }[] };
     const doc = (await (await call('/openapi.json')).json()) as { tags: { name: string }[] };
