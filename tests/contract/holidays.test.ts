@@ -123,3 +123,60 @@ describe('/v1/working-days', () => {
     );
   });
 });
+
+describe('holiday filters', () => {
+  const list = async (qs: string) =>
+    (await expectOk(await call(`/v1/holidays?year=2027&${qs}`))).data as {
+      id: string;
+      type: string;
+      dates: string[];
+    }[];
+
+  it('accepts several types at once', async () => {
+    const both = await list('type=general,executive-order');
+    expect(both).toHaveLength(22);
+    expect(both.every((h) => h.type === 'general' || h.type === 'executive-order')).toBe(true);
+  });
+
+  it('returns only office-closing holidays with closed=true', async () => {
+    const closed = await list('closed=true');
+    expect(closed).toHaveLength(21);
+    expect(closed.some((h) => h.id.includes('chaitra-sankranti'))).toBe(false);
+    expect(await list('closed=true&district=rangamati')).toHaveLength(22);
+  });
+
+  it('rejects unknown types and bad flags', async () => {
+    await expectError(
+      await call('/v1/holidays?year=2027&type=general,party'),
+      400,
+      'invalid_parameter',
+    );
+    await expectError(await call('/v1/holidays?year=2027&closed=maybe'), 400, 'invalid_parameter');
+    await expectError(
+      await call('/v1/holidays?year=2027&district=atlantis'),
+      400,
+      'invalid_parameter',
+    );
+  });
+});
+
+describe('GET /v1/holidays/dates', () => {
+  it('returns the unique office-closing dates as a flat sorted list', async () => {
+    const body = await expectOk(await call('/v1/holidays/dates?year=2027&closed=true'));
+    const dates = body.data as string[];
+    // 29 listed days, minus 20 May listed twice, minus the hill-district-only day.
+    expect(dates).toHaveLength(27);
+    expect(dates).toEqual([...dates].sort());
+    expect(new Set(dates).size).toBe(dates.length);
+    expect(dates).toContain('2027-12-16');
+    expect(dates).not.toContain('2027-04-13');
+  });
+
+  it('supports the same filters and 404s unpublished years', async () => {
+    const hindu = await expectOk(
+      await call('/v1/holidays/dates?year=2027&type=optional&community=hindu'),
+    );
+    expect(hindu.data).toHaveLength(9);
+    await expectError(await call('/v1/holidays/dates?year=2030'), 404, 'not_found');
+  });
+});

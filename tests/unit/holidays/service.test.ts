@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest';
 import type { Holiday } from '../../../src/modules/holidays/schemas';
 import {
   dayStatus,
+  filterHolidays,
   type HolidayData,
+  holidayDates,
   listHolidays,
   parseWeekend,
   UnavailableYearError,
@@ -138,5 +140,44 @@ describe('workingDays', () => {
     expect(() => workingDays(data, 'general', '2026-12-30', '2027-01-02')).toThrow(
       UnavailableYearError,
     );
+  });
+});
+
+describe('filterHolidays', () => {
+  const all = listHolidays(data, 'general', 2026);
+  const ids = (list: Holiday[]) => list.map((x) => x.id.split('-').slice(2).join('-')).sort();
+
+  it('filters by several types', () => {
+    expect(ids(filterHolidays(all, { types: ['optional'] }))).toEqual(['optional-day']);
+    expect(filterHolidays(all, { types: ['general', 'optional'] })).toHaveLength(5);
+  });
+
+  it('keeps only office-closing holidays with closed', () => {
+    expect(ids(filterHolidays(all, { closed: true }))).toEqual([
+      'christmas',
+      'moon-day',
+      'victory-day',
+    ]);
+    expect(ids(filterHolidays(all, { closed: true, district: 'rangamati' }))).toEqual([
+      'christmas',
+      'hill-day',
+      'moon-day',
+      'victory-day',
+    ]);
+  });
+
+  it('filters by community', () => {
+    expect(ids(filterHolidays(all, { community: 'christian' }))).toEqual(['optional-day']);
+  });
+});
+
+describe('holidayDates', () => {
+  it('returns unique dates in order', () => {
+    const list: Holiday[] = [
+      h('b', ['2026-12-16', '2026-12-17']),
+      h('a', ['2026-12-09']),
+      h('c', ['2026-12-16']),
+    ];
+    expect(holidayDates(list)).toEqual(['2026-12-09', '2026-12-16', '2026-12-17']);
   });
 });

@@ -5,10 +5,14 @@ names the official document(s) for the year and calendar used.
 
 | Method | Path | Query | 200 `data` | Errors |
 |---|---|---|---|---|
-| GET | `/v1/holidays` | `year` (required), `calendar?` (`general`\|`bank`, default `general`), `type?`, `community?` | `Holiday[]` sorted by first date | 400 bad params, 404 year not available (lists available years) |
+| GET | `/v1/holidays` | `year` (required), `calendar?` (`general`\|`bank`, default `general`), `type?` (one or more, comma-separated), `community?`, `closed?` (`true` = only office-closing holidays), `district?` | `Holiday[]` sorted by first date | 400 bad params, 404 year not available (lists available years) |
+| GET | `/v1/holidays/dates` | same as `/v1/holidays` | `string[]`: unique dates, sorted | 400, 404 |
 | GET | `/v1/holidays/years` | — | `{ year, calendar, documents[] }[]` | — |
 | GET | `/v1/is-holiday` | `date` (required), `calendar?`, `district?` (applies district-only holidays) | `DayStatus` | 400, 404 |
 | GET | `/v1/working-days` | `from`, `to` (required, ≤ 366 days), `calendar?`, `weekend?` (default `fri,sat`), `district?` | `WorkingDays` | 400, 404 |
+
+`closed=true` keeps holidays that close offices: not `optional`, and not district-only unless `district`
+matches. For 2027 that is 21 records and 27 unique dates.
 
 Every `Holiday` in a response also carries `bangla_dates[]` (formatted Bangla calendar date for
 each date). Responses that include a tentative holiday set `tentative: true` at the top level of

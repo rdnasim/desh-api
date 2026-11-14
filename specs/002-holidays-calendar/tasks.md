@@ -62,6 +62,11 @@ description: "Task list for Holidays & Calendar"
 - [X] T018 [P] Document the tentative-date update process (two reviewers, within 2 days) in CONTRIBUTING.md
 - [X] T019 Add holiday scenarios to scripts/smoke.ts and quickstart; update README examples and docs/roadmap.md
 
+## Phase 9: Follow-up (requested 2026-11-14)
+
+- [X] T020 [US1] Unit and contract tests for multi-value `type`, `closed=true` (district-aware) and `/v1/holidays/dates` in tests/unit/holidays/service.test.ts and tests/contract/holidays.test.ts
+- [X] T021 [US1] Implement `filterHolidays` and `holidayDates` in src/modules/holidays/service.ts; shared list query and `GET /v1/holidays/dates` in src/modules/holidays/routes.ts
+
 ## Dependencies
 
 - T001 blocks T006–T009; T014 needs T001's bank documents. T003–T005 block all data tasks.

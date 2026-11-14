@@ -21,7 +21,10 @@ import {
 import {
   type DayOptions,
   dayStatus,
+  filterHolidays,
   type HolidayData,
+  type HolidayFilter,
+  holidayDates,
   listHolidays,
   parseWeekend,
   UnavailableYearError,
@@ -191,6 +194,55 @@ function parseOptions(weekend: string | undefined, district: string | undefined)
 
 const banglaDate = (date: string) => toBanglaDate(date).formatted_bn;
 
+const listQuery = z.object({
+  year: z.string().openapi({ param: { name: 'year', in: 'query' }, example: '2027' }),
+  calendar: q('calendar', 'general (default) or bank'),
+  type: q(
+    'type',
+    `One or more, comma-separated: ${HolidayTypeSchema.options.join(', ')}`,
+    'general,executive-order',
+  ),
+  community: q('community', `For optional holidays: ${CommunitySchema.options.join(', ')}`),
+  closed: q(
+    'closed',
+    'true = only holidays that close offices (no optional or other-district holidays)',
+  ),
+  district: q('district', 'District slug; with closed=true, includes that district-only holiday'),
+});
+
+function parseListQuery(query: z.infer<typeof listQuery>) {
+  const year = numberParam('year', query.year, { min: 2000, max: 2100, integer: true });
+  const calendar = parseCalendar(query.calendar);
+  const filter: HolidayFilter = {};
+  if (query.type !== undefined) {
+    const parts = query.type
+      .split(',')
+      .map((t) => t.trim())
+      .filter(Boolean);
+    filter.types = parts.map(
+      (t) =>
+        HolidayTypeSchema.safeParse(t).data ??
+        invalid(`type must be one or more of: ${HolidayTypeSchema.options.join(', ')}`),
+    );
+  }
+  if (query.community !== undefined) {
+    filter.community =
+      CommunitySchema.safeParse(query.community).data ??
+      invalid(`community must be one of: ${CommunitySchema.options.join(', ')}`);
+  }
+  if (query.closed !== undefined) {
+    if (query.closed !== 'true' && query.closed !== 'false')
+      invalid('closed must be true or false');
+    filter.closed = query.closed === 'true';
+  }
+  if (query.district !== undefined) {
+    if (!getDistrict(query.district))
+      invalid(`district '${query.district}' is not a district slug`);
+    filter.district = query.district;
+  }
+  return { year, calendar, filter };
+}
+
 export const holidayRoutes = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
 
 holidayRoutes.openapi(
@@ -214,40 +266,45 @@ holidayRoutes.openapi(
     tags,
     summary: 'Official public holidays for a year',
     description:
-      'Includes general holidays, executive-order holidays and optional (community) holidays. Moon-dependent dates have `tentative: true` until confirmed. Years without a published official list return 404.',
-    request: {
-      query: z.object({
-        year: z.string().openapi({ param: { name: 'year', in: 'query' }, example: '2027' }),
-        calendar: q('calendar', 'general (default) or bank'),
-        type: q('type', HolidayTypeSchema.options.join(', ')),
-        community: q('community', `For optional holidays: ${CommunitySchema.options.join(', ')}`),
-      }),
-    },
+      'Includes general holidays, executive-order holidays and optional (community) holidays. Use `closed=true` for only the holidays that close offices, or `type` with several comma-separated values. Moon-dependent dates have `tentative: true` until confirmed. Years without a published official list return 404.',
+    request: { query: listQuery },
     responses: responses(z.array(HolidayOutSchema), 'Holidays sorted by first date'),
   }),
   (c) => {
-    const query = c.req.valid('query');
-    const year = numberParam('year', query.year, { min: 2000, max: 2100, integer: true });
-    const calendar = parseCalendar(query.calendar);
-    const type =
-      query.type === undefined
-        ? undefined
-        : (HolidayTypeSchema.safeParse(query.type).data ??
-          invalid(`type must be one of: ${HolidayTypeSchema.options.join(', ')}`));
-    const community =
-      query.community === undefined
-        ? undefined
-        : (CommunitySchema.safeParse(query.community).data ??
-          invalid(`community must be one of: ${CommunitySchema.options.join(', ')}`));
-    const list = run(() => listHolidays(DATA, calendar, year))
-      .filter(
-        (h) =>
-          (type === undefined || h.type === type) &&
-          (community === undefined || h.community === community),
-      )
-      .map((h) => ({ ...h, bangla_dates: h.dates.map(banglaDate) }));
+    const { year, calendar, filter } = parseListQuery(c.req.valid('query'));
+    const list = filterHolidays(
+      run(() => listHolidays(DATA, calendar, year)),
+      filter,
+    ).map((h) => ({ ...h, bangla_dates: h.dates.map(banglaDate) }));
     cachePublic(c);
     return ok(c, list, metaFor(META));
+  },
+);
+
+holidayRoutes.openapi(
+  createRoute({
+    method: 'get',
+    path: '/holidays/dates',
+    tags,
+    summary: 'Holiday dates for a year as a flat, sorted list',
+    description:
+      'Each date appears once, even when several holidays fall on it. Takes the same filters as /v1/holidays; `closed=true` gives the days offices are closed.',
+    request: { query: listQuery },
+    responses: responses(
+      z
+        .array(z.string())
+        .openapi('HolidayDates', { example: ['2027-01-24', '2027-02-21', '2027-03-05'] }),
+      'Dates in YYYY-MM-DD, in calendar order',
+    ),
+  }),
+  (c) => {
+    const { year, calendar, filter } = parseListQuery(c.req.valid('query'));
+    const list = filterHolidays(
+      run(() => listHolidays(DATA, calendar, year)),
+      filter,
+    );
+    cachePublic(c);
+    return ok(c, holidayDates(list), metaFor(META));
   },
 );
 

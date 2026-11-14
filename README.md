@@ -79,6 +79,8 @@ curl 'https://desh-api.riadul.workers.dev/v1/land/convert?value=5&from=katha&to=
 # → 8.26 decimal (3,600 sq ft)
 
 # Official holidays and working days (from the government's 2027 holiday notification)
+curl 'https://desh-api.riadul.workers.dev/v1/holidays?year=2027&closed=true'      # days offices close
+curl 'https://desh-api.riadul.workers.dev/v1/holidays/dates?year=2027&closed=true' # → ["2027-01-24", …] (27 dates)
 curl 'https://desh-api.riadul.workers.dev/v1/working-days?from=2027-12-01&to=2027-12-31'
 # → 21 working days (Fri/Sat weekend, Victory Day on 16 Dec)
 ```
