@@ -33,6 +33,11 @@ Extra rules for some data:
 - **Quiz questions and history events** need a URL for the fact, and must be neutral. If reliable
   sources disagree, leave the fact out.
 - **Land units** that vary by region need a cited source for each regional value.
+- **Holidays** come only from the government's yearly notification (Ministry of Public
+  Administration) and Bangladesh Bank's circular, never from news reports. When a moon-dependent
+  date is confirmed or a holiday is moved, open a PR within 2 days of the official announcement:
+  update `dates`, set `tentative: false`, add the announcement to that year's `documents` in
+  `data/holidays/years.json` and reference it in `amended_by`. Two reviewers are required.
 
 ## Code changes
 

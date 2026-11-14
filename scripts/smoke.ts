@@ -104,6 +104,17 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.text_bn ? true : 'no proverb'),
   },
   {
+    name: '13b holiday check',
+    path: '/v1/is-holiday?date=2027-12-16',
+    check: (_, b) =>
+      b.data?.holiday && b.data?.holidays?.[0]?.name_bn === 'বিজয় দিবস' ? true : 'not Victory Day',
+  },
+  {
+    name: '13c working days',
+    path: '/v1/working-days?from=2027-12-01&to=2027-12-31',
+    check: (_, b) => (b.data?.working_days === 21 ? true : `got ${b.data?.working_days}`),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

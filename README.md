@@ -77,6 +77,10 @@ curl -X POST https://desh-api.riadul.workers.dev/v1/phone/validate \
 # Land units
 curl 'https://desh-api.riadul.workers.dev/v1/land/convert?value=5&from=katha&to=decimal'
 # → 8.26 decimal (3,600 sq ft)
+
+# Official holidays and working days (from the government's 2027 holiday notification)
+curl 'https://desh-api.riadul.workers.dev/v1/working-days?from=2027-12-01&to=2027-12-31'
+# → 21 working days (Fri/Sat weekend, Victory Day on 16 Dec)
 ```
 
 The [interactive docs](https://desh-api.riadul.workers.dev/docs) list every endpoint with a
@@ -94,10 +98,10 @@ The [interactive docs](https://desh-api.riadul.workers.dev/docs) list every endp
 | **Validate** | Format checks for NID, vehicle plates, e-TIN, VAT BIN and postcodes | `POST /v1/validate/{type}` |
 | **Hotlines** | National hotline numbers, each checked against an official gov.bd page | [`/v1/hotlines?category=emergency`](https://desh-api.riadul.workers.dev/v1/hotlines?category=emergency) |
 | **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://desh-api.riadul.workers.dev/v1/fun/proverb/random) |
+| **Holidays** | Official 2027 public holidays (general, executive-order, optional by community), "is this a holiday?", working-day counts | [`/v1/is-holiday?date=2027-12-16`](https://desh-api.riadul.workers.dev/v1/is-holiday?date=2027-12-16) |
 
-Coming next: official public holidays and working-day counts
-([in review](https://github.com/rdnasim/desh-api/pull/2)), then finance calculators (income tax,
-VAT, EMI). See the [roadmap](docs/roadmap.md).
+Coming next: finance calculators (income tax, VAT, loan EMI) and the bank holiday calendar. See the
+[roadmap](docs/roadmap.md).
 
 ## How responses look
 
@@ -139,6 +143,7 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 |---|---|
 | Administrative areas, postcodes | Bangladesh Bureau of Statistics geocodes (via UN OCHA) and GeoNames, compiled by [nuhil/bangladesh-geocode](https://github.com/nuhil/bangladesh-geocode) |
 | Hotlines | [Bangladesh National Portal](https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89), [DGHS](https://dghs.gov.bd/) |
+| Holidays | [Ministry of Public Administration holiday notification for 2027](https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |
 | Transliteration | [@subhesadek/avro-phonetic](https://github.com/SubheSadek/avro-phonetic) (MPL-2.0) |

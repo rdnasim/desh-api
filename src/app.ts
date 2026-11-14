@@ -12,6 +12,7 @@ import { banglaRoutes } from './modules/bangla/routes';
 import { convertRoutes } from './modules/convert/routes';
 import { funRoutes } from './modules/fun/routes';
 import { geoRoutes } from './modules/geo/routes';
+import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
 import { phoneRoutes } from './modules/phone/routes';
@@ -59,6 +60,11 @@ const MODULES = [
     description: 'Proverbs, riddles, quiz, GI foods and on-this-day history',
     path: '/v1/fun/proverb/random',
   },
+  {
+    name: 'Holidays',
+    description: 'Official public holidays, is-it-a-holiday checks and working-day counts',
+    path: '/v1/is-holiday?date=2027-12-16',
+  },
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -89,6 +95,7 @@ app.route('/v1', landRoutes);
 app.route('/v1', validateRoutes);
 app.route('/v1', hotlineRoutes);
 app.route('/v1', funRoutes);
+app.route('/v1', holidayRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

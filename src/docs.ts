@@ -56,5 +56,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Traditional proverbs and riddles, quiz questions and history events (each citing its source), and GI-registered traditional foods by district. Pass `seed` for a repeatable pick.',
     },
+    {
+      name: 'Holidays',
+      description:
+        'Official government holiday lists (general, executive-order and optional), holiday checks and working-day counts. Only years with a published official list are served; moon-dependent dates are tentative until confirmed.',
+    },
   ],
 };
