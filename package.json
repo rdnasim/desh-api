@@ -22,7 +22,8 @@
     "size:check": "pnpm data:build && tsx scripts/check-bundle-size.ts",
     "cf-typegen": "wrangler types src/worker-configuration.d.ts",
     "data:docs": "tsx scripts/data-sources-doc.ts",
-    "smoke": "tsx scripts/smoke.ts"
+    "smoke": "tsx scripts/smoke.ts",
+    "cf:api-host-rule": "tsx scripts/cloudflare-api-host-rule.ts"
   },
   "dependencies": {
     "@hono/zod-openapi": "^1.6.3",

@@ -132,14 +132,28 @@ async function run(s: Scenario): Promise<{ ok: boolean; ms: number; message: str
   const started = performance.now();
   try {
     const res = await fetch(BASE + s.path, s.init);
-    const body = (await res.json()) as ApiBody;
+    const text = await res.text();
+    let body: ApiBody;
+    try {
+      body = JSON.parse(text) as ApiBody;
+    } catch {
+      // Usually a Cloudflare challenge page in front of the API (cf-mitigated: challenge).
+      const mitigated = res.headers.get('cf-mitigated');
+      return {
+        ok: false,
+        ms: performance.now() - started,
+        message: `HTTP ${res.status}, not JSON (${res.headers.get('content-type')})${mitigated ? `, cf-mitigated: ${mitigated}` : ''}`,
+      };
+    }
     const ms = performance.now() - started;
     if (!res.ok && s.name !== '15 unknown route')
       return { ok: false, ms, message: `HTTP ${res.status}` };
     const result = s.check(res, body);
     return { ok: result === true, ms, message: result === true ? '' : result };
   } catch (error) {
-    return { ok: false, ms: performance.now() - started, message: String(error) };
+    const cause = (error as { cause?: { code?: string; message?: string } }).cause;
+    const detail = cause ? ` (${cause.code ?? cause.message})` : '';
+    return { ok: false, ms: performance.now() - started, message: `${String(error)}${detail}` };
   }
 }
 
