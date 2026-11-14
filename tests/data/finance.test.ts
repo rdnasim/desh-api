@@ -1,0 +1,57 @@
+import { describe, expect, it } from 'vitest';
+import categories from '../../src/generated/finance.tax-categories';
+import years from '../../src/generated/finance.tax-years';
+
+describe('finance tax data', () => {
+  it('has a threshold for every category in every tax year', () => {
+    const slugs = categories.map((c) => c.slug).sort();
+    for (const y of years) expect(y.thresholds.map((t) => t.category).sort()).toEqual(slugs);
+  });
+
+  it('never sets a special category below the general threshold', () => {
+    for (const y of years) {
+      const general = y.thresholds.find((t) => t.category === 'general')?.amount ?? 0;
+      for (const t of y.thresholds)
+        expect(t.amount, `${y.tax_year} ${t.category}`).toBeGreaterThanOrEqual(general);
+    }
+  });
+
+  it('starts the 35% band at exactly 3 crore from 2028-29', () => {
+    for (const y of years.filter((r) => r.tax_year >= '2028-29')) {
+      const general = y.thresholds.find((t) => t.category === 'general')?.amount ?? 0;
+      const widths = y.slabs.slice(0, -1).reduce((a, s) => a + (s.width ?? 0), 0);
+      expect(general + widths, y.tax_year).toBe(30000000);
+      expect(y.slabs.at(-1)?.rate).toBe(35);
+      expect(y.note).toBeDefined();
+    }
+  });
+
+  it('has rising slab rates', () => {
+    for (const y of years) {
+      const rates = y.slabs.map((s) => s.rate);
+      expect(rates).toEqual([...rates].sort((a, b) => a - b));
+    }
+  });
+
+  it('cites only the law itself, with nothing left unverified', () => {
+    for (const y of years) {
+      expect(y.sources.every((s) => s.kind === 'act' && s.url)).toBe(true);
+      expect(y.unverified).toEqual([]);
+    }
+  });
+
+  it('matches the Finance Act 2026 general rules for 2026-27 and 2027-28', () => {
+    for (const tax_year of ['2026-27', '2027-28']) {
+      const y = years.find((r) => r.tax_year === tax_year);
+      expect(y?.slabs).toEqual([
+        { width: 300000, rate: 10 },
+        { width: 400000, rate: 15 },
+        { width: 500000, rate: 20 },
+        { width: 2000000, rate: 25 },
+        { width: null, rate: 30 },
+      ]);
+      expect(y?.thresholds.find((t) => t.category === 'general')?.amount).toBe(400000);
+      expect(y?.minimum_tax).toEqual({ general: 5000, new_taxpayer: 1000 });
+    }
+  });
+});

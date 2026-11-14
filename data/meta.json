@@ -11,6 +11,30 @@
     ]
   },
   {
+    "dataset": "finance.tax-categories",
+    "source": "Finance Act 2026 (Act No. 96 of 2026, 30 June 2026), Schedule 2; Income Tax Act 2023 (s. 78, Sixth Schedule) as amended by Act No. 89 of 2026 and Act No. 96 of 2026",
+    "source_url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
+    "licence": "Public law; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Legislative and Parliamentary Affairs Division (bdlaws.minlaw.gov.bd)",
+      "National Board of Revenue, Bangladesh"
+    ]
+  },
+  {
+    "dataset": "finance.tax-years",
+    "source": "Finance Act 2026 (Act No. 96 of 2026, 30 June 2026), Schedule 2; Income Tax Act 2023 (s. 78, Sixth Schedule) as amended by Act No. 89 of 2026 and Act No. 96 of 2026",
+    "source_url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
+    "licence": "Public law; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Legislative and Parliamentary Affairs Division (bdlaws.minlaw.gov.bd)",
+      "National Board of Revenue, Bangladesh"
+    ]
+  },
+  {
     "dataset": "fun.dishes",
     "source": "Department of Patents, Designs and Trademarks (DPDT), granted GI products list (page updated 2026-11-04)",
     "source_url": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf",

@@ -11,6 +11,8 @@ All reference data is plain JSON in [`data/`](data/):
 |---|---|
 | `data/geo/` | Divisions, districts, upazilas, unions, city corporations, post offices |
 | `data/hotlines/` | National hotline numbers |
+| `data/holidays/` | Official holiday lists per year and their source documents |
+| `data/finance/` | Income tax rules per tax year (thresholds, slabs, minimum tax, rebate) and taxpayer categories |
 | `data/fun/` | Proverbs, riddles, quiz questions, GI foods, history events |
 | `data/land/` | Land units |
 | `data/phone/` | Mobile operator prefixes |
@@ -38,6 +40,12 @@ Extra rules for some data:
   date is confirmed or a holiday is moved, open a PR within 2 days of the official announcement:
   update `dates`, set `tentative: false`, add the announcement to that year's `documents` in
   `data/holidays/years.json` and reference it in `amended_by`. Two reviewers are required.
+- **Income tax rules** come only from the Finance Act and the Income Tax Act 2023 as amended, never
+  from news reports or tax guides (they often disagree). Cite the Act number and the schedule or
+  section in `sources`; the text is on [bdlaws](http://bdlaws.minlaw.gov.bd/). After each budget,
+  add or correct the tax years the new Finance Act sets, then update the golden cases in
+  `tests/golden/finance/income-tax.json`. If a figure can't yet be checked against the Act, list it
+  in `unverified` rather than leaving it out. Years set in advance carry a `note`.
 
 ## Code changes
 
@@ -59,8 +67,9 @@ pnpm typecheck && pnpm lint
 
 Features are specified before they're built, with [Spec Kit](https://github.com/github/spec-kit):
 `/speckit-specify` → `/speckit-plan` → `/speckit-tasks` → `/speckit-implement`. Project rules are in
-[`.specify/memory/constitution.md`](.specify/memory/constitution.md); the current feature is in
-[`specs/001-phase1-mvp/`](specs/001-phase1-mvp/). Good first issues are labelled
+[`.specify/memory/constitution.md`](.specify/memory/constitution.md); each feature has its own
+folder under [`specs/`](specs/) (latest: [`003-finance-calculators`](specs/003-finance-calculators/)),
+and [`docs/roadmap.md`](docs/roadmap.md) shows what is built and what is next. Good first issues are labelled
 `good first issue`, and content curation (proverbs, riddles, quiz, history) is a great place to
 start.
 

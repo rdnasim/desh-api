@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "disabled",
+    "name_en": "Person with disability",
+    "name_bn": "প্রতিবন্ধী করদাতা",
+    "aliases": [
+      "disability",
+      "physically-challenged",
+      "pwd",
+      "প্রতিবন্ধী"
+    ]
+  },
+  {
+    "slug": "freedom-fighter",
+    "name_en": "Gazetted war-wounded freedom fighter",
+    "name_bn": "গেজেটভুক্ত যুদ্ধাহত মুক্তিযোদ্ধা",
+    "aliases": [
+      "freedom-fighters",
+      "war-wounded-freedom-fighter",
+      "মুক্তিযোদ্ধা"
+    ]
+  },
+  {
+    "slug": "general",
+    "name_en": "General taxpayer",
+    "name_bn": "সাধারণ করদাতা",
+    "aliases": [
+      "male",
+      "man",
+      "সাধারণ"
+    ]
+  },
+  {
+    "slug": "july-warrior",
+    "name_en": "Gazetted injured July warrior",
+    "name_bn": "গেজেটভুক্ত আহত জুলাই যোদ্ধা",
+    "aliases": [
+      "july-warriors",
+      "জুলাই যোদ্ধা"
+    ]
+  },
+  {
+    "slug": "senior",
+    "name_en": "Senior citizen (65 or older)",
+    "name_bn": "৬৫ বছর বা তদূর্ধ্ব বয়সের করদাতা",
+    "aliases": [
+      "65+",
+      "senior-citizen",
+      "elderly",
+      "প্রবীণ"
+    ]
+  },
+  {
+    "slug": "third-gender",
+    "name_en": "Third gender taxpayer",
+    "name_bn": "তৃতীয় লিঙ্গের করদাতা",
+    "aliases": [
+      "hijra",
+      "তৃতীয় লিঙ্গ"
+    ]
+  },
+  {
+    "slug": "woman",
+    "name_en": "Woman taxpayer",
+    "name_bn": "নারী করদাতা",
+    "aliases": [
+      "women",
+      "female",
+      "নারী",
+      "মহিলা"
+    ]
+  }
+]

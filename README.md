@@ -84,6 +84,14 @@ curl 'https://deshapi.riadul.com/v1/holidays?year=2027&closed=true'      # days 
 curl 'https://deshapi.riadul.com/v1/holidays/dates?year=2027&closed=true' # → ["2027-01-24", …] (27 dates)
 curl 'https://deshapi.riadul.com/v1/working-days?from=2027-12-01&to=2027-12-31'
 # → 21 working days (Fri/Sat weekend, Victory Day on 16 Dec)
+
+# Income tax under the Finance Act 2026 (tax year 2027-28 = income earned Jul 2026 – Jun 2027)
+curl 'https://deshapi.riadul.com/v1/finance/income-tax?income=1800000&employment_income=1800000'
+# → ৳5,00,000 salary exemption, ৳1,30,000 tax, with a slab-by-slab breakdown
+
+# Loan EMI, VAT, DPS, gratuity
+curl 'https://deshapi.riadul.com/v1/finance/emi?principal=1000000&rate=9&months=60'   # → 20,758.36 a month
+curl 'https://deshapi.riadul.com/v1/finance/vat?amount=1150&inclusive=true'            # → net 1,000 + VAT 150
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -102,8 +110,9 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Hotlines** | National hotline numbers, each checked against an official gov.bd page | [`/v1/hotlines?category=emergency`](https://deshapi.riadul.com/v1/hotlines?category=emergency) |
 | **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://deshapi.riadul.com/v1/fun/proverb/random) |
 | **Holidays** | Official 2027 public holidays (general, executive-order, optional by community), "is this a holiday?", working-day counts | [`/v1/is-holiday?date=2027-12-16`](https://deshapi.riadul.com/v1/is-holiday?date=2027-12-16) |
+| **Finance** | Income tax from the Finance Act 2026 for tax years 2026-27 to 2030-31 (all taxpayer categories, salary exemption, investment rebate, minimum tax), VAT, loan EMI with schedule, DPS maturity, statutory gratuity | [`/v1/finance/income-tax?income=1000000`](https://deshapi.riadul.com/v1/finance/income-tax?income=1000000) |
 
-Coming next: finance calculators (income tax, VAT, loan EMI) and the bank holiday calendar. See the
+Coming next: the bank holiday calendar, banks and routing numbers. See the
 [roadmap](docs/roadmap.md).
 
 ## How responses look
@@ -123,19 +132,20 @@ Errors use a stable `code`, a readable message (often in Bangla too), and the ri
 | Status | `code` | When |
 |---|---|---|
 | 400 | `invalid_parameter` | A parameter is missing, malformed or out of range |
-| 404 | `not_found` | Unknown slug, postcode or route |
+| 404 | `not_found` | Unknown slug, postcode or route; a holiday year or tax year with no official source yet |
 | 413 | `payload_too_large` | Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers) |
 | 429 | `rate_limited` | More than 120 requests per minute from one IP (see `Retry-After`) |
 
 **Limits and caching.** No key is needed; the limit is 120 requests per minute per IP. Reference
-data is cacheable for a day; validator responses are never cached. CORS is open, so you can call the
+data and calculator results are cacheable for a day; validator responses are never cached. CORS is open, so you can call the
 API straight from a browser.
 
 ## Privacy
 
 Validators (NID, phone, TIN, BIN, plates, postcodes) only check that a value is **well-formed**.
 Nothing is looked up, stored or logged; our logs record only the route pattern, never the value.
-For identifiers, use the `POST` endpoints so values stay out of URLs. Details: [PRIVACY.md](PRIVACY.md).
+For identifiers, use the `POST` endpoints so values stay out of URLs. The finance calculators take
+only numbers, never an identifier. Details: [PRIVACY.md](PRIVACY.md).
 
 ## Where the data comes from
 
@@ -147,6 +157,8 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 | Administrative areas, postcodes | Bangladesh Bureau of Statistics geocodes (via UN OCHA) and GeoNames, compiled by [nuhil/bangladesh-geocode](https://github.com/nuhil/bangladesh-geocode) |
 | Hotlines | [Bangladesh National Portal](https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89), [DGHS](https://dghs.gov.bd/) |
 | Holidays | [Ministry of Public Administration holiday notification for 2027](https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740) |
+| Income tax | [Finance Act 2026 (Act No. 96 of 2026)](http://bdlaws.minlaw.gov.bd/act-details-1725.html) and the Income Tax Act 2023 as amended |
+| VAT, gratuity | VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10)) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |
 | Transliteration | [@subhesadek/avro-phonetic](https://github.com/SubheSadek/avro-phonetic) (MPL-2.0) |

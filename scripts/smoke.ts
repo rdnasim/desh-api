@@ -115,6 +115,17 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.working_days === 21 ? true : `got ${b.data?.working_days}`),
   },
   {
+    name: '13d income tax',
+    path: '/v1/finance/income-tax?income=1000000&tax_year=2027-28',
+    check: (_, b) =>
+      b.data?.tax_payable === 75000 && b.meta?.disclaimer ? true : `got ${b.data?.tax_payable}`,
+  },
+  {
+    name: '13e loan EMI',
+    path: '/v1/finance/emi?principal=1000000&rate=9&months=60',
+    check: (_, b) => (b.data?.emi === 20758.36 ? true : `got ${b.data?.emi}`),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

@@ -11,6 +11,7 @@ import { logger } from './lib/logger';
 import { rateLimit } from './lib/rate-limit';
 import { banglaRoutes } from './modules/bangla/routes';
 import { convertRoutes } from './modules/convert/routes';
+import { financeRoutes } from './modules/finance/routes';
 import { funRoutes } from './modules/fun/routes';
 import { geoRoutes } from './modules/geo/routes';
 import { holidayRoutes } from './modules/holidays/routes';
@@ -66,6 +67,11 @@ const MODULES = [
     description: 'Official public holidays, is-it-a-holiday checks and working-day counts',
     path: '/v1/is-holiday?date=2027-12-16',
   },
+  {
+    name: 'Finance',
+    description: 'Income tax (Finance Act 2026), VAT, loan EMI, DPS and gratuity calculators',
+    path: '/v1/finance/income-tax?income=1000000',
+  },
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -103,6 +109,7 @@ app.route('/v1', validateRoutes);
 app.route('/v1', hotlineRoutes);
 app.route('/v1', funRoutes);
 app.route('/v1', holidayRoutes);
+app.route('/v1', financeRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

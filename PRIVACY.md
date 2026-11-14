@@ -8,6 +8,15 @@ The NID, phone, TIN, BIN, vehicle plate and postcode endpoints check whether a v
 **well-formed**. They never look up, confirm or enrich a real person, account or vehicle, and they
 do not call any other service.
 
+## Finance calculators
+
+The income tax, VAT, EMI, DPS and gratuity calculators take only numbers (income, amounts, rates,
+years of service), never a name, TIN or other identifier, and nothing is looked up. Because the
+answer depends only on those numbers, responses may be kept in Cloudflare's cache and your browser
+cache, keyed by the request URL, so the amounts in the URL are stored there for a while (up to a
+week) along with the answer. They are not linked to you, and our logs record only the route
+pattern (for example `/v1/finance/income-tax`).
+
 ## What we do not store
 
 - We have no database of requests. Nothing you send is saved.

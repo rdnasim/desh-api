@@ -1,0 +1,481 @@
+{
+  "description": "Hand-computed from the Finance Act 2026 tables (research F1–F4). Slabs above the threshold: 3,00,000 @10%, 4,00,000 @15%, 5,00,000 @20%, 20,00,000 @25%, rest @30%. Same rules for tax years 2026-27 and 2027-28. Cases under `by_year` use rates for one tax year only.",
+  "tax_years": ["2026-27", "2027-28"],
+  "cases": [
+    {
+      "name": "at the general threshold: no tax, no minimum tax",
+      "input": {
+        "income": 400000
+      },
+      "expect": {
+        "taxable_income": 400000,
+        "gross_tax": 0,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 0
+      }
+    },
+    {
+      "name": "zero income",
+      "input": {
+        "income": 0
+      },
+      "expect": {
+        "taxable_income": 0,
+        "gross_tax": 0,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 0
+      }
+    },
+    {
+      "name": "20,000 over threshold: 2,000 slab tax → minimum tax 5,000",
+      "input": {
+        "income": 420000
+      },
+      "expect": {
+        "taxable_income": 420000,
+        "gross_tax": 2000,
+        "rebate": 0,
+        "minimum_tax_applied": true,
+        "tax_payable": 5000
+      }
+    },
+    {
+      "name": "new taxpayer: 2,000 is above the 1,000 minimum",
+      "input": {
+        "income": 420000,
+        "new_taxpayer": true
+      },
+      "expect": {
+        "taxable_income": 420000,
+        "gross_tax": 2000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 2000
+      }
+    },
+    {
+      "name": "new taxpayer: 500 slab tax → minimum 1,000",
+      "input": {
+        "income": 405000,
+        "new_taxpayer": true
+      },
+      "expect": {
+        "taxable_income": 405000,
+        "gross_tax": 500,
+        "rebate": 0,
+        "minimum_tax_applied": true,
+        "tax_payable": 1000
+      }
+    },
+    {
+      "name": "5 lakh: 1,00,000 @10%",
+      "input": {
+        "income": 500000
+      },
+      "expect": {
+        "taxable_income": 500000,
+        "gross_tax": 10000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 10000
+      }
+    },
+    {
+      "name": "end of the 10% slab (7 lakh): 30,000",
+      "input": {
+        "income": 700000
+      },
+      "expect": {
+        "taxable_income": 700000,
+        "gross_tax": 30000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 30000
+      }
+    },
+    {
+      "name": "10 lakh: 30,000 + 3,00,000 @15% = 75,000",
+      "input": {
+        "income": 1000000
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 75000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 75000
+      }
+    },
+    {
+      "name": "end of the 15% slab (11 lakh): 30,000 + 60,000",
+      "input": {
+        "income": 1100000
+      },
+      "expect": {
+        "taxable_income": 1100000,
+        "gross_tax": 90000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 90000
+      }
+    },
+    {
+      "name": "end of the 25% slab (36 lakh): 30,000 + 60,000 + 1,00,000 + 5,00,000",
+      "input": {
+        "income": 3600000
+      },
+      "expect": {
+        "taxable_income": 3600000,
+        "gross_tax": 690000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 690000
+      }
+    },
+    {
+      "name": "50 lakh: 6,90,000 + 14,00,000 @30% = 11,10,000",
+      "input": {
+        "income": 5000000
+      },
+      "expect": {
+        "taxable_income": 5000000,
+        "gross_tax": 1110000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 1110000
+      }
+    },
+    {
+      "name": "woman, 10 lakh: threshold 4,50,000; 30,000 + 2,50,000 @15% = 67,500",
+      "input": {
+        "income": 1000000,
+        "category": "woman"
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 67500,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 67500
+      }
+    },
+    {
+      "name": "senior at the 4,50,000 threshold",
+      "input": {
+        "income": 450000,
+        "category": "senior"
+      },
+      "expect": {
+        "taxable_income": 450000,
+        "gross_tax": 0,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 0
+      }
+    },
+    {
+      "name": "disabled, 6 lakh: threshold 5,25,000; 75,000 @10%",
+      "input": {
+        "income": 600000,
+        "category": "disabled"
+      },
+      "expect": {
+        "taxable_income": 600000,
+        "gross_tax": 7500,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 7500
+      }
+    },
+    {
+      "name": "third gender, 6 lakh: same threshold as disabled",
+      "input": {
+        "income": 600000,
+        "category": "third-gender"
+      },
+      "expect": {
+        "taxable_income": 600000,
+        "gross_tax": 7500,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 7500
+      }
+    },
+    {
+      "name": "freedom fighter at the 5,50,000 threshold",
+      "input": {
+        "income": 550000,
+        "category": "freedom-fighter"
+      },
+      "expect": {
+        "taxable_income": 550000,
+        "gross_tax": 0,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 0
+      }
+    },
+    {
+      "name": "July warrior, 5,60,000: 1,000 slab tax → minimum 5,000",
+      "input": {
+        "income": 560000,
+        "category": "july-warrior"
+      },
+      "expect": {
+        "taxable_income": 560000,
+        "gross_tax": 1000,
+        "rebate": 0,
+        "minimum_tax_applied": true,
+        "tax_payable": 5000
+      }
+    },
+    {
+      "name": "parent of two disabled children: threshold 4,00,000 + 2 × 50,000",
+      "input": {
+        "income": 500000,
+        "disabled_dependants": 2
+      },
+      "expect": {
+        "taxable_income": 500000,
+        "gross_tax": 0,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 0
+      }
+    },
+    {
+      "name": "woman with one disabled child, 10 lakh: threshold 5,00,000; 30,000 + 2,00,000 @15%",
+      "input": {
+        "income": 1000000,
+        "category": "woman",
+        "disabled_dependants": 1
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 60000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 60000
+      }
+    },
+    {
+      "name": "salary 9 lakh: one-third (3,00,000) exempt → 6 lakh taxable → 20,000",
+      "input": {
+        "income": 900000,
+        "employment_income": 900000
+      },
+      "expect": {
+        "taxable_income": 600000,
+        "gross_tax": 20000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 20000
+      }
+    },
+    {
+      "name": "salary 18 lakh: exemption capped at 5,00,000 → 13 lakh taxable → 30,000 + 60,000 + 40,000",
+      "input": {
+        "income": 1800000,
+        "employment_income": 1800000
+      },
+      "expect": {
+        "taxable_income": 1300000,
+        "gross_tax": 130000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 130000
+      }
+    },
+    {
+      "name": "salary 6 lakh of a 12 lakh income: 2,00,000 exempt → 10 lakh taxable",
+      "input": {
+        "income": 1200000,
+        "employment_income": 600000
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 75000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 75000
+      }
+    },
+    {
+      "name": "salary 6 lakh: exemption brings it to the threshold, so no minimum tax",
+      "input": {
+        "income": 600000,
+        "employment_income": 600000
+      },
+      "expect": {
+        "taxable_income": 400000,
+        "gross_tax": 0,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 0
+      }
+    },
+    {
+      "name": "rebate limited by investment: min(30,000; 10% × 2,00,000; 7,50,000) = 20,000",
+      "input": {
+        "income": 1000000,
+        "investment": 200000
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 75000,
+        "rebate": 20000,
+        "limited_by": "investment",
+        "minimum_tax_applied": false,
+        "tax_payable": 55000
+      }
+    },
+    {
+      "name": "rebate limited by income: min(3% × 10 lakh; 1,00,000; 7,50,000) = 30,000",
+      "input": {
+        "income": 1000000,
+        "investment": 1000000
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 75000,
+        "rebate": 30000,
+        "limited_by": "income",
+        "minimum_tax_applied": false,
+        "tax_payable": 45000
+      }
+    },
+    {
+      "name": "rebate limited by the 7,50,000 cap (30 crore income, 1 crore investment)",
+      "input": {
+        "income": 300000000,
+        "investment": 10000000
+      },
+      "expect": {
+        "taxable_income": 300000000,
+        "gross_tax": 89610000,
+        "rebate": 750000,
+        "limited_by": "cap",
+        "minimum_tax_applied": false,
+        "tax_payable": 88860000
+      }
+    },
+    {
+      "name": "rebate larger than the tax: cut to the tax, then minimum tax applies",
+      "input": {
+        "income": 450000,
+        "investment": 100000
+      },
+      "expect": {
+        "taxable_income": 450000,
+        "gross_tax": 5000,
+        "rebate": 5000,
+        "limited_by": "tax",
+        "minimum_tax_applied": true,
+        "tax_payable": 5000
+      }
+    },
+    {
+      "name": "fractional taka are kept to the paisa",
+      "input": {
+        "income": 700000.4
+      },
+      "expect": {
+        "taxable_income": 700000.4,
+        "gross_tax": 30000.06,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 30000.06
+      }
+    }
+  ],
+  "by_year": [
+    {
+      "tax_year": "2028-29",
+      "name": "10 lakh: threshold 4,50,000; 30,000 + 2,50,000 @15% = 67,500",
+      "input": {
+        "income": 1000000
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 67500,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 67500
+      }
+    },
+    {
+      "tax_year": "2028-29",
+      "name": "4 crore: 6,90,000 to 36.5 lakh + 2,63,50,000 @30% + 1 crore @35% (35% starts at 3 crore)",
+      "input": {
+        "income": 40000000
+      },
+      "expect": {
+        "taxable_income": 40000000,
+        "gross_tax": 12095000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 12095000
+      }
+    },
+    {
+      "tax_year": "2029-30",
+      "name": "freedom fighter, 6,20,000: threshold 6,00,000; 2,000 → minimum 5,000",
+      "input": {
+        "income": 620000,
+        "category": "freedom-fighter"
+      },
+      "expect": {
+        "taxable_income": 620000,
+        "gross_tax": 2000,
+        "rebate": 0,
+        "minimum_tax_applied": true,
+        "tax_payable": 5000
+      }
+    },
+    {
+      "tax_year": "2030-31",
+      "name": "10 lakh: threshold 5,00,000; 30,000 + 2,00,000 @15% = 60,000",
+      "input": {
+        "income": 1000000
+      },
+      "expect": {
+        "taxable_income": 1000000,
+        "gross_tax": 60000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 60000
+      }
+    },
+    {
+      "tax_year": "2030-31",
+      "name": "woman, 6 lakh: threshold 5,50,000; 5,000 equals the minimum, so it is not 'applied'",
+      "input": {
+        "income": 600000,
+        "category": "woman"
+      },
+      "expect": {
+        "taxable_income": 600000,
+        "gross_tax": 5000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 5000
+      }
+    },
+    {
+      "tax_year": "2030-31",
+      "name": "4 crore: 6,90,000 to 37 lakh + 2,63,00,000 @30% + 1 crore @35%",
+      "input": {
+        "income": 40000000
+      },
+      "expect": {
+        "taxable_income": 40000000,
+        "gross_tax": 12080000,
+        "rebate": 0,
+        "minimum_tax_applied": false,
+        "tax_payable": 12080000
+      }
+    }
+  ]
+}

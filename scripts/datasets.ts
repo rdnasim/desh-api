@@ -1,6 +1,7 @@
 import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
+import { TaxCategorySchema, TaxYearSchema } from '../src/modules/finance/schemas';
 import {
   DishSchema,
   HistoryEventSchema,
@@ -138,6 +139,20 @@ export const datasets: DatasetSpec[] = [
     type: { name: 'Holiday', from: '../modules/holidays/schemas' },
   },
   {
+    key: 'finance.tax-categories',
+    file: 'finance/tax-categories.json',
+    schema: TaxCategorySchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'TaxCategory', from: '../modules/finance/schemas' },
+  },
+  {
+    key: 'finance.tax-years',
+    file: 'finance/tax-years.json',
+    schema: TaxYearSchema,
+    sortKey: (r) => r.tax_year,
+    type: { name: 'TaxYear', from: '../modules/finance/schemas' },
+  },
+  {
     key: 'fun.proverbs',
     file: 'fun/proverbs.json',
     schema: ProverbSchema,
@@ -220,6 +235,28 @@ export function derive(data: Record<string, any[]>): {
     }
     for (const d of h.districts ?? []) {
       if (!districtSlugs.has(d)) errors.push(`holidays: ${h.id} has unknown district '${d}'`);
+    }
+  }
+  const categories = slugs('finance.tax-categories');
+  const aliases = new Map<string, string>();
+  for (const c of data['finance.tax-categories'] ?? []) {
+    for (const name of [c.slug, c.name_bn, ...c.aliases]) {
+      const key = normalizeForSearch(name);
+      const other = aliases.get(key);
+      if (other && other !== c.slug)
+        errors.push(`finance.tax-categories: '${name}' names both ${other} and ${c.slug}`);
+      aliases.set(key, c.slug);
+    }
+  }
+  for (const y of data['finance.tax-years'] ?? []) {
+    const covered = y.thresholds.map((t: { category: string }) => t.category);
+    for (const c of covered) {
+      if (!categories.has(c))
+        errors.push(`finance.tax-years: ${y.tax_year} has unknown category '${c}'`);
+    }
+    for (const c of categories) {
+      if (covered.filter((x: string) => x === c).length !== 1)
+        errors.push(`finance.tax-years: ${y.tax_year} needs exactly one threshold for '${c}'`);
     }
   }
   for (const d of data['fun.dishes'] ?? []) {
