@@ -26,6 +26,9 @@ describe('app shell', () => {
     expect(html).toContain('<title>Desh API');
     expect(html).toContain('href="/docs"');
     expect(html).not.toMatch(/<script[^>]+src=|<link[^>]+stylesheet|fonts\.googleapis/);
+    for (const theme of ['auto', 'light', 'dark'])
+      expect(html).toContain(`data-theme-set="${theme}"`);
+    expect(html).toContain(':root[data-theme="dark"]');
 
     const json = await call('/', { headers: { Accept: 'application/json' } });
     expect(json.headers.get('content-type')).toContain('application/json');

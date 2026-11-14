@@ -11,6 +11,12 @@ export const LANDING_HTML = /* html */ `<!doctype html>
 <meta name="description" content="A free, open API for Bangladesh: divisions to unions, postcodes, taka in words, Bangla dates, Bijoy to Unicode, phone validation, official holidays. English and Bangla names, and the source of every fact.">
 <meta name="theme-color" content="#E4002B">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ccircle cx='14' cy='16' r='9' fill='%23E4002B'/%3E%3C/svg%3E">
+<script>
+try {
+  var saved = localStorage.getItem('desh-theme');
+  if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved);
+} catch (e) {}
+</script>
 <style>
 :root {
   --bg: #FFFFFF;
@@ -24,8 +30,21 @@ export const LANDING_HTML = /* html */ `<!doctype html>
   --sans: "Helvetica Neue", Helvetica, Arial, "Bangla Sangam MN", "Noto Sans Bengali", "Nirmala UI", sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Bangla Sangam MN", "Kohinoor Bangla", "Noto Sans Bengali", "Nirmala UI", monospace;
 }
+/* Theme: follows the device unless the visitor picks Light or Dark (stored as data-theme). */
+:root { color-scheme: light; }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111111;
+  --bg-alt: #191919;
+  --ink: #F7F7F8;
+  --ink-2: #A8A8AD;
+  --rule: #F7F7F8;
+  --hair: #2E2E31;
+  --code-bg: #191919;
+}
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --bg: #111111;
     --bg-alt: #191919;
     --ink: #F7F7F8;
@@ -57,11 +76,19 @@ code, pre, .mono { font-family: var(--mono); font-size: 14px; }
 /* Header */
 header.top { border-bottom: 2px solid var(--rule); }
 header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.mark { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; text-decoration: none; }
+.mark { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
 .disc { width: 18px; height: 18px; border-radius: 50%; background: var(--red); display: inline-block; }
 nav.links { display: flex; gap: 28px; font-size: 15px; }
 nav.links a { text-decoration: none; }
 nav.links a:hover { text-decoration: underline; }
+.top-right { display: flex; align-items: center; gap: 28px; }
+.theme { display: flex; border: 1px solid var(--rule); }
+.theme button {
+  font: inherit; font-size: 13px; padding: 5px 10px; border: 0; background: var(--bg); color: var(--ink);
+  cursor: pointer; border-radius: 0;
+}
+.theme button + button { border-left: 1px solid var(--rule); }
+.theme button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 
 /* Hero */
 .hero { padding: 72px 0 0; }
@@ -203,8 +230,11 @@ footer p { margin: 0 0 6px; }
   .principles { grid-template-columns: 1fr; }
   .principle, .principle:nth-child(2n) { padding: 18px 0; border-left: 0; }
   footer .grid > div { grid-column: 1 / -1; margin-bottom: 16px; }
-  nav.links { gap: 16px; }
+  nav.links { gap: 12px; font-size: 14px; }
   nav.links .opt { display: none; }
+  .top-right { gap: 12px; }
+  .mark { font-size: 18px; gap: 8px; }
+  .theme button { padding: 4px 8px; font-size: 12px; }
 }
 </style>
 </head>
@@ -212,12 +242,19 @@ footer p { margin: 0 0 6px; }
 <header class="top">
   <div class="wrap">
     <a class="mark" href="/"><span class="disc" aria-hidden="true"></span>Desh API</a>
-    <nav class="links" aria-label="Main">
-      <a href="#try">Try it</a>
-      <a href="#modules" class="opt">Modules</a>
-      <a href="/docs">Docs</a>
-      <a href="https://github.com/rdnasim/desh-api">GitHub</a>
-    </nav>
+    <div class="top-right">
+      <nav class="links" aria-label="Main">
+        <a href="#try" class="opt">Try it</a>
+        <a href="#modules" class="opt">Modules</a>
+        <a href="/docs">Docs</a>
+        <a href="https://github.com/rdnasim/desh-api" class="opt">GitHub</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Colour theme">
+        <button type="button" data-theme-set="auto" aria-pressed="true">Auto</button>
+        <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -372,6 +409,24 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
 </footer>
 
 <script>
+(function () {
+  var root = document.documentElement;
+  var themeButtons = document.querySelectorAll('[data-theme-set]');
+  function showTheme() {
+    var current = root.getAttribute('data-theme') || 'auto';
+    themeButtons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-theme-set') === current)); });
+  }
+  themeButtons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var choice = b.getAttribute('data-theme-set');
+      if (choice === 'auto') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', choice);
+      try { if (choice === 'auto') localStorage.removeItem('desh-theme'); else localStorage.setItem('desh-theme', choice); } catch (e) {}
+      showTheme();
+    });
+  });
+  showTheme();
+})();
+
 (function () {
   var origin = location.origin;
   document.getElementById('base-url').textContent = origin;
