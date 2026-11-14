@@ -10,9 +10,9 @@
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green.svg)](LICENSE-DATA)
 
-[**Live API**](https://desh-api.riadul.workers.dev) ·
-[**Interactive docs**](https://desh-api.riadul.workers.dev/docs) ·
-[OpenAPI](https://desh-api.riadul.workers.dev/openapi.json) ·
+[**Live API**](https://deshapi.riadul.com) ·
+[**Interactive docs**](https://deshapi.riadul.com/docs) ·
+[OpenAPI](https://deshapi.riadul.com/openapi.json) ·
 [Data sources](DATA_SOURCES.md) ·
 [Contributing](CONTRIBUTING.md)
 
@@ -25,6 +25,7 @@ from an old spreadsheet, "taka in words" for invoices, a Bijoy-to-Unicode conver
 regex. Desh API puts them behind one clean, documented API, free to use, with **English and Bangla
 names everywhere** and **the source of every fact in every response**.
 
+- Base URL: **`https://deshapi.riadul.com`** (the older `desh-api.riadul.workers.dev` address also works)
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
@@ -35,7 +36,7 @@ names everywhere** and **the source of every fact in every response**.
 No install needed. Paste any of these into a terminal or browser:
 
 ```bash
-curl https://desh-api.riadul.workers.dev/v1/districts/cumilla
+curl https://deshapi.riadul.com/v1/districts/cumilla
 ```
 
 ```json
@@ -53,54 +54,54 @@ More examples:
 
 ```bash
 # Taka in words, for invoices and cheques
-curl 'https://desh-api.riadul.workers.dev/v1/bangla/taka-in-words?amount=1250.50'
+curl 'https://deshapi.riadul.com/v1/bangla/taka-in-words?amount=1250.50'
 # → "এক হাজার দুইশত পঞ্চাশ টাকা পঞ্চাশ পয়সা"
 
 # Today's Bangla date (revised Bangla Academy calendar)
-curl 'https://desh-api.riadul.workers.dev/v1/bangla/date?date=2026-12-16'
+curl 'https://deshapi.riadul.com/v1/bangla/date?date=2026-12-16'
 # → "১ পৌষ ১৪৩৩ বঙ্গাব্দ", Wednesday, season: শীত
 
 # Search with old spellings
-curl 'https://desh-api.riadul.workers.dev/v1/search?q=comilla'
+curl 'https://deshapi.riadul.com/v1/search?q=comilla'
 # → district "cumilla" (কুমিল্লা), division "chattogram"
 
 # Bijoy (SutonnyMJ) → Unicode
-curl -X POST https://desh-api.riadul.workers.dev/v1/convert/bijoy-to-unicode \
+curl -X POST https://deshapi.riadul.com/v1/convert/bijoy-to-unicode \
   -H 'content-type: text/plain' --data-binary 'Avgvi †mvbvi evsjv'
 # → "আমার সোনার বাংলা"
 
 # Validate a phone number (send it in the body, not the URL)
-curl -X POST https://desh-api.riadul.workers.dev/v1/phone/validate \
+curl -X POST https://deshapi.riadul.com/v1/phone/validate \
   -H 'content-type: application/json' -d '{"number":"+8801712345678"}'
 # → valid, "01712345678", original operator Grameenphone
 
 # Land units
-curl 'https://desh-api.riadul.workers.dev/v1/land/convert?value=5&from=katha&to=decimal'
+curl 'https://deshapi.riadul.com/v1/land/convert?value=5&from=katha&to=decimal'
 # → 8.26 decimal (3,600 sq ft)
 
 # Official holidays and working days (from the government's 2027 holiday notification)
-curl 'https://desh-api.riadul.workers.dev/v1/holidays?year=2027&closed=true'      # days offices close
-curl 'https://desh-api.riadul.workers.dev/v1/holidays/dates?year=2027&closed=true' # → ["2027-01-24", …] (27 dates)
-curl 'https://desh-api.riadul.workers.dev/v1/working-days?from=2027-12-01&to=2027-12-31'
+curl 'https://deshapi.riadul.com/v1/holidays?year=2027&closed=true'      # days offices close
+curl 'https://deshapi.riadul.com/v1/holidays/dates?year=2027&closed=true' # → ["2027-01-24", …] (27 dates)
+curl 'https://deshapi.riadul.com/v1/working-days?from=2027-12-01&to=2027-12-31'
 # → 21 working days (Fri/Sat weekend, Victory Day on 16 Dec)
 ```
 
-The [interactive docs](https://desh-api.riadul.workers.dev/docs) list every endpoint with a
+The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
 "Try it" button.
 
 ## What's inside
 
 | Module | What it does | Example |
 |---|---|---|
-| **Geo** | 8 divisions, 64 districts, 495 upazilas, 4,540 unions, 1,349 post offices; bilingual search; nearest area to a GPS point | [`/v1/upazilas?district=cumilla`](https://desh-api.riadul.workers.dev/v1/upazilas?district=cumilla) |
-| **Bangla toolkit** | Number and taka in words, Latin ⇄ Bangla digits, lakh/crore formatting (১২,৫০,০০০), Bangla calendar date, ordinals, URL slugs, Avro Phonetic transliteration | [`/v1/bangla/num-to-words?n=1250`](https://desh-api.riadul.workers.dev/v1/bangla/num-to-words?n=1250) |
+| **Geo** | 8 divisions, 64 districts, 495 upazilas, 4,540 unions, 1,349 post offices; bilingual search; nearest area to a GPS point | [`/v1/upazilas?district=cumilla`](https://deshapi.riadul.com/v1/upazilas?district=cumilla) |
+| **Bangla toolkit** | Number and taka in words, Latin ⇄ Bangla digits, lakh/crore formatting (১২,৫০,০০০), Bangla calendar date, ordinals, URL slugs, Avro Phonetic transliteration | [`/v1/bangla/num-to-words?n=1250`](https://deshapi.riadul.com/v1/bangla/num-to-words?n=1250) |
 | **Phone** | Validate and normalise mobile numbers in any common format, original operator, bulk (up to 100) | `POST /v1/phone/validate` |
 | **Convert** | Bijoy (SutonnyMJ) ⇄ Unicode, up to 100 KB per request | `POST /v1/convert/bijoy-to-unicode` |
-| **Land** | Convert katha, bigha, decimal (shotangsho), chotak, acre, sq ft, sq m, gaj… | [`/v1/land/units`](https://desh-api.riadul.workers.dev/v1/land/units) |
+| **Land** | Convert katha, bigha, decimal (shotangsho), chotak, acre, sq ft, sq m, gaj… | [`/v1/land/units`](https://deshapi.riadul.com/v1/land/units) |
 | **Validate** | Format checks for NID, vehicle plates, e-TIN, VAT BIN and postcodes | `POST /v1/validate/{type}` |
-| **Hotlines** | National hotline numbers, each checked against an official gov.bd page | [`/v1/hotlines?category=emergency`](https://desh-api.riadul.workers.dev/v1/hotlines?category=emergency) |
-| **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://desh-api.riadul.workers.dev/v1/fun/proverb/random) |
-| **Holidays** | Official 2027 public holidays (general, executive-order, optional by community), "is this a holiday?", working-day counts | [`/v1/is-holiday?date=2027-12-16`](https://desh-api.riadul.workers.dev/v1/is-holiday?date=2027-12-16) |
+| **Hotlines** | National hotline numbers, each checked against an official gov.bd page | [`/v1/hotlines?category=emergency`](https://deshapi.riadul.com/v1/hotlines?category=emergency) |
+| **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://deshapi.riadul.com/v1/fun/proverb/random) |
+| **Holidays** | Official 2027 public holidays (general, executive-order, optional by community), "is this a holiday?", working-day counts | [`/v1/is-holiday?date=2027-12-16`](https://deshapi.riadul.com/v1/is-holiday?date=2027-12-16) |
 
 Coming next: finance calculators (income tax, VAT, loan EMI) and the bank holiday calendar. See the
 [roadmap](docs/roadmap.md).

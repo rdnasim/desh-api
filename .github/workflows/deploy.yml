@@ -2,7 +2,7 @@ name: Deploy
 
 # Deploys main to Cloudflare Workers after CI succeeds, then smoke-tests the live API.
 # Needs repository secrets CLOUDFLARE_API_TOKEN (Workers edit permission) and
-# CLOUDFLARE_ACCOUNT_ID, and the repository variable API_BASE_URL (e.g. https://desh-api.<you>.workers.dev).
+# CLOUDFLARE_ACCOUNT_ID, and the repository variable API_BASE_URL (e.g. https://deshapi.riadul.com).
 
 on:
   workflow_run:
