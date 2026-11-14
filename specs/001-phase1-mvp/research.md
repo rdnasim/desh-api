@@ -100,16 +100,25 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
   (গ্রীষ্ম, বর্ষা, শরৎ, হেমন্ত, শীত, বসন্ত).
 - **To verify**: cross-check 10 known dates (e.g. 21 Feb = ৮ ফাল্গুন, 16 Dec = ১ পৌষ,
   26 Mar = ১২ চৈত্র) against the official calendar before release (vision note).
+  16 cases (incl. month boundaries and a leap-year Falgun) are in
+  `tests/golden/bangla/calendar.json`, each worked out by hand from the rules above; a check
+  against a printed government calendar is still part of T112.
 - **Alternatives**: Indian (West Bengal) calendar — different rules; out of scope, may be added as
   `system=indian` later.
 
-## R10. Phonetic transliteration — **VERIFY licence**
+## R10. Phonetic transliteration — ✅ resolved 2026-11-14
 
 - **Decision**: Use the Avro Phonetic rule set (the de-facto standard BD users type). Prefer an
   existing maintained JS implementation if its licence is MIT/MPL-compatible; vendor it under
   `src/vendor/` with its licence header kept intact (MPL-2.0 file-level copyleft is compatible with
   an MIT project as long as the file stays MPL).
 - **Alternatives**: Write our own rules — large effort; defer unless licensing blocks reuse.
+- **Finding**: Using `@subhesadek/avro-phonetic@2.1.4` (MPL-2.0, TypeScript, zero dependencies,
+  no install scripts, no network/eval/DOM use; reviewed before adding) as an unmodified npm
+  dependency instead of vendoring. MPL-2.0 obligations apply only to its own files. It follows
+  Avro's case-sensitive rules (`dh` → ধ, `Dh` → ঢ) and ships a ~670-word dictionary.
+  **Known upstream issue**: য-ফলা is emitted as `্য়` instead of `্য` (`sondhya` → সন্ধ্য়া);
+  such cases are left out of the golden file and should be reported upstream.
 
 ## R11. Bijoy ↔ Unicode — **VERIFY licence**
 

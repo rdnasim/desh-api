@@ -25,6 +25,7 @@
   "dependencies": {
     "@hono/zod-openapi": "^1.6.3",
     "@scalar/hono-api-reference": "^0.12.20",
+    "@subhesadek/avro-phonetic": "2.1.4",
     "hono": "^4.13.18",
     "zod": "^4.6.7"
   },

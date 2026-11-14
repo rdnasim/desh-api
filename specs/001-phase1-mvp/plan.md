@@ -18,7 +18,7 @@ the same Zod schemas that generate the docs. See [research.md](./research.md) fo
 **Language/Version**: TypeScript 5.x (strict), ES2022 target; Node.js ≥ 22 for tooling
 
 **Primary Dependencies**: Hono 4, `@hono/zod-openapi`, Zod, `@scalar/hono-api-reference`;
-vendored Avro Phonetic rules (R10); dev: Wrangler, Vitest 4.1 + `@cloudflare/vitest-plugin`,
+`@subhesadek/avro-phonetic` (MPL-2.0, unmodified dependency, R10); dev: Wrangler, Vitest 4.1 + `@cloudflare/vitest-plugin`,
 Biome, tsx
 
 **Storage**: None at runtime. Source data in `data/**/*.json`, compiled to `src/generated/*.ts`
@@ -111,7 +111,6 @@ src/
 │   ├── rate-limit.ts         # Rate Limiting binding middleware
 │   └── random.ts             # seeded PRNG
 ├── generated/                # build output (git-ignored)
-├── vendor/avro-phonetic/     # vendored rules with original licence
 └── modules/
     ├── geo/{schemas,service,routes}.ts
     ├── bangla/{schemas,routes,num-to-words,taka,format-number,calendar,ordinal,slug,transliterate}.ts

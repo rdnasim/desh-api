@@ -1,0 +1,36 @@
+{
+  "_note": "Expected normalisation and validation. Operator is the original prefix allocation (portability not detectable).",
+  "valid": [
+    ["01712345678", "01712345678", "grameenphone"],
+    ["01312345678", "01312345678", "grameenphone"],
+    ["01412345678", "01412345678", "banglalink"],
+    ["01912345678", "01912345678", "banglalink"],
+    ["01512345678", "01512345678", "teletalk"],
+    ["01612345678", "01612345678", "airtel"],
+    ["01812345678", "01812345678", "robi"],
+    ["+8801712345678", "01712345678", "grameenphone"],
+    ["8801712345678", "01712345678", "grameenphone"],
+    ["008801712345678", "01712345678", "grameenphone"],
+    ["+88001712345678", "01712345678", "grameenphone"],
+    ["1712345678", "01712345678", "grameenphone"],
+    ["০১৭১২৩৪৫৬৭৮", "01712345678", "grameenphone"],
+    ["+৮৮০১৮১২৩৪৫৬৭৮", "01812345678", "robi"],
+    ["017 1234 5678", "01712345678", "grameenphone"],
+    ["017-1234-5678", "01712345678", "grameenphone"],
+    ["(+880) 1712-345678", "01712345678", "grameenphone"],
+    ["  01912345678  ", "01912345678", "banglalink"]
+  ],
+  "invalid": [
+    ["", "invalid_length"],
+    ["0171234567", "invalid_length"],
+    ["017123456789", "invalid_length"],
+    ["+880171234567", "invalid_length"],
+    ["01212345678", "invalid_prefix"],
+    ["01112345678", "invalid_prefix"],
+    ["02912345678", "invalid_prefix"],
+    ["+14155552671", "invalid_prefix"],
+    ["0171234567a", "invalid_chars"],
+    ["phone: 01712345678", "invalid_chars"],
+    ["01712345678 ext 2", "invalid_chars"]
+  ]
+}

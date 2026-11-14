@@ -1,0 +1,117 @@
+{
+  "_note": "Revised Bangla Academy calendar (2019): 14 April = 1 Boishakh; Boishakh–Ashwin 31 days, Kartik–Magh 30, Falgun 29 (30 in Gregorian leap years), Chaitra 30. Each case was worked out by hand from those rules.",
+  "cases": [
+    {
+      "date": "2026-04-14",
+      "day": 1,
+      "month": 1,
+      "year": 1433,
+      "formatted_bn": "১ বৈশাখ ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2026-04-13",
+      "day": 30,
+      "month": 12,
+      "year": 1432,
+      "formatted_bn": "৩০ চৈত্র ১৪৩২ বঙ্গাব্দ"
+    },
+    {
+      "date": "2026-12-16",
+      "day": 1,
+      "month": 9,
+      "year": 1433,
+      "formatted_bn": "১ পৌষ ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2027-02-21",
+      "day": 8,
+      "month": 11,
+      "year": 1433,
+      "formatted_bn": "৮ ফাল্গুন ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2027-03-26",
+      "day": 12,
+      "month": 12,
+      "year": 1433,
+      "formatted_bn": "১২ চৈত্র ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2026-10-16",
+      "day": 31,
+      "month": 6,
+      "year": 1433,
+      "formatted_bn": "৩১ আশ্বিন ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2026-10-17",
+      "day": 1,
+      "month": 7,
+      "year": 1433,
+      "formatted_bn": "১ কার্তিক ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2027-03-14",
+      "day": 29,
+      "month": 11,
+      "year": 1433,
+      "formatted_bn": "২৯ ফাল্গুন ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2028-03-14",
+      "day": 30,
+      "month": 11,
+      "year": 1434,
+      "formatted_bn": "৩০ ফাল্গুন ১৪৩৪ বঙ্গাব্দ"
+    },
+    {
+      "date": "2028-03-15",
+      "day": 1,
+      "month": 12,
+      "year": 1434,
+      "formatted_bn": "১ চৈত্র ১৪৩৪ বঙ্গাব্দ"
+    },
+    {
+      "date": "2026-11-14",
+      "day": 29,
+      "month": 7,
+      "year": 1433,
+      "formatted_bn": "২৯ কার্তিক ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2026-11-15",
+      "day": 30,
+      "month": 7,
+      "year": 1433,
+      "formatted_bn": "৩০ কার্তিক ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "2026-11-16",
+      "day": 1,
+      "month": 8,
+      "year": 1433,
+      "formatted_bn": "১ অগ্রহায়ণ ১৪৩৩ বঙ্গাব্দ"
+    },
+    {
+      "date": "1971-03-26",
+      "day": 12,
+      "month": 12,
+      "year": 1377,
+      "formatted_bn": "১২ চৈত্র ১৩৭৭ বঙ্গাব্দ"
+    },
+    {
+      "date": "1971-01-01",
+      "day": 17,
+      "month": 9,
+      "year": 1377,
+      "formatted_bn": "১৭ পৌষ ১৩৭৭ বঙ্গাব্দ"
+    },
+    {
+      "date": "2100-12-31",
+      "day": 16,
+      "month": 9,
+      "year": 1507,
+      "formatted_bn": "১৬ পৌষ ১৫০৭ বঙ্গাব্দ"
+    }
+  ]
+}

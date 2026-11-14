@@ -36,7 +36,7 @@ shipped independently.
 - [X] T006 [P] Create .gitignore (`node_modules`, `.wrangler`, `src/generated`, `.dev.vars`, `coverage`)
 - [X] T007 [P] Add LICENSE (MIT, code) and LICENSE-DATA (CC BY 4.0, data) at repo root
 - [X] T008 [P] Create CI workflow running `pnpm install --frozen-lockfile`, `data:build`, `typecheck`, `lint`, `data:check`, `test`, `size:check` on push and PR in .github/workflows/ci.yml
-- [ ] T009 *(geo + postcodes done, see R4/R5; Bijoy map, Avro Phonetic, R13 formats, R14 land variants still open)* Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
+- [ ] T009 *(geo, postcodes and Avro Phonetic done, see R4/R5/R10; Bijoy map, R13 formats, R14 land variants still open)* Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
 
 ---
 
@@ -112,25 +112,25 @@ shipped independently.
 
 ### Tests for User Story 2 (write first, must fail)
 
-- [ ] T039 [P] [US2] Create golden fixture for number words: every value 0–100, plus 101, 110, 999, 1000, 1250 (`এক হাজার দুইশত পঞ্চাশ`), 100000, 1250000, 10000000, 1000000000, 999999999999999, and decimals in tests/golden/bangla/num-to-words.json
-- [ ] T040 [P] [US2] Unit tests for num-to-words and taka-in-words (0 → `শূন্য`, `1250.50` → `… টাকা পঞ্চাশ পয়সা`, paisa omitted when 0, negative/over-max/3-decimal rejection) in tests/unit/bangla/num-to-words.test.ts
-- [ ] T041 [P] [US2] Unit tests for format-number (`1250000` → `১২,৫০,০০০`, Latin output, decimals) and digit conversion endpoint logic in tests/unit/bangla/format-number.test.ts
-- [ ] T042 [P] [US2] Create calendar golden fixture (14 Apr → ১ বৈশাখ; 21 Feb → ৮ ফাল্গুন; 16 Dec 2026 → ১ পৌষ ১৪৩৩; 26 Mar → ১২ চৈত্র; 13/14 Apr year boundary; Falgun 30 in leap years e.g. 2028; 1971-01-01 and 2100-12-31 bounds) in tests/golden/bangla/calendar.json and tests in tests/unit/bangla/calendar.test.ts
-- [ ] T043 [P] [US2] Unit tests for ordinals 1–100 (`3` → `তৃতীয়`) and Bangla slugs (`আমার সোনার বাংলা` → URL-safe romanised slug) in tests/unit/bangla/ordinal-slug.test.ts
-- [ ] T044 [P] [US2] Create transliteration golden fixture (`ami bhalo achi` → `আমি ভালো আছি`, ≥ 50 reviewed phrases) in tests/golden/bangla/transliterate.json and tests in tests/unit/bangla/transliterate.test.ts
-- [ ] T045 [P] [US2] Contract tests for every endpoint in specs/001-phase1-mvp/contracts/bangla.md (incl. Bangla-digit inputs and 400 cases) in tests/contract/bangla.test.ts
+- [X] T039 [P] [US2] Create golden fixture for number words: every value 0–100, plus 101, 110, 999, 1000, 1250 (`এক হাজার দুইশত পঞ্চাশ`), 100000, 1250000, 10000000, 1000000000, 999999999999999, and decimals in tests/golden/bangla/num-to-words.json (118 cases)
+- [X] T040 [P] [US2] Unit tests for num-to-words and taka-in-words (0 → `শূন্য`, `1250.50` → `… টাকা পঞ্চাশ পয়সা`, paisa omitted when 0, negative/over-max/3-decimal rejection) in tests/unit/bangla/num-to-words.test.ts
+- [X] T041 [P] [US2] Unit tests for format-number (`1250000` → `১২,৫০,০০০`, Latin output, decimals) and digit conversion endpoint logic in tests/unit/bangla/format-number.test.ts
+- [X] T042 [P] [US2] Create calendar golden fixture (14 Apr → ১ বৈশাখ; 21 Feb → ৮ ফাল্গুন; 16 Dec 2026 → ১ পৌষ ১৪৩৩; 26 Mar → ১২ চৈত্র; 13/14 Apr year boundary; Falgun 30 in leap years e.g. 2028; 1971-01-01 and 2100-12-31 bounds) in tests/golden/bangla/calendar.json and tests in tests/unit/bangla/calendar.test.ts (16 hand-checked cases)
+- [X] T043 [P] [US2] Unit tests for ordinals 1–100 (`3` → `তৃতীয়`) and Bangla slugs (`আমার সোনার বাংলা` → URL-safe romanised slug) in tests/unit/bangla/ordinal-slug.test.ts
+- [X] T044 [P] [US2] Create transliteration golden fixture (`ami bhalo achi` → `আমি ভালো আছি`, ≥ 50 reviewed phrases) in tests/golden/bangla/transliterate.json and tests in tests/unit/bangla/transliterate.test.ts (64 reviewed phrases)
+- [X] T045 [P] [US2] Contract tests for every endpoint in specs/001-phase1-mvp/contracts/bangla.md (incl. Bangla-digit inputs and 400 cases) in tests/contract/bangla.test.ts
 
 ### Implementation for User Story 2
 
-- [ ] T046 [P] [US2] Implement num-to-words (0–99 lookup table, শত/হাজার/লক্ষ/কোটি, recursion above কোটি, max 999,999,999,999,999, ≤ 2 decimals) in src/modules/bangla/num-to-words.ts
-- [ ] T047 [US2] Implement taka-in-words on top of num-to-words in src/modules/bangla/taka.ts
-- [ ] T048 [P] [US2] Implement South Asian number grouping with Bangla/Latin digits in src/modules/bangla/format-number.ts
-- [ ] T049 [P] [US2] Implement revised Bangla calendar conversion (R9: months 1–6 = 31 days, 7–10 = 30, Falgun 29/30, Chaitra 30; year offset 593/594; seasons; weekday names) in src/modules/bangla/calendar.ts
-- [ ] T050 [P] [US2] Implement Bangla ordinals 1–100 in src/modules/bangla/ordinal.ts
-- [ ] T051 [P] [US2] Implement Bangla → romanised URL slug in src/modules/bangla/slug.ts
-- [ ] T052 [P] [US2] Vendor Avro Phonetic rules with original licence header (per R10 finding) into src/vendor/avro-phonetic/ and wrap in src/modules/bangla/transliterate.ts
-- [ ] T053 [US2] Define request/response Zod schemas with examples (text ≤ 1000 chars, date range 1971-01-01…2100-12-31, `to` ∈ `bn|en`) in src/modules/bangla/schemas.ts
-- [ ] T054 [US2] Implement Bangla toolkit routes per contracts/bangla.md (cacheable, default date = today in Asia/Dhaka) and mount in src/modules/bangla/routes.ts and src/app.ts
+- [X] T046 [P] [US2] Implement num-to-words (0–99 lookup table, শত/হাজার/লক্ষ/কোটি, recursion above কোটি, max 999,999,999,999,999, ≤ 2 decimals) in src/modules/bangla/num-to-words.ts
+- [X] T047 [US2] Implement taka-in-words on top of num-to-words in src/modules/bangla/taka.ts
+- [X] T048 [P] [US2] Implement South Asian number grouping with Bangla/Latin digits in src/modules/bangla/format-number.ts
+- [X] T049 [P] [US2] Implement revised Bangla calendar conversion (R9: months 1–6 = 31 days, 7–10 = 30, Falgun 29/30, Chaitra 30; year offset 593/594; seasons; weekday names) in src/modules/bangla/calendar.ts
+- [X] T050 [P] [US2] Implement Bangla ordinals 1–100 in src/modules/bangla/ordinal.ts
+- [X] T051 [P] [US2] Implement Bangla → romanised URL slug in src/modules/bangla/slug.ts
+- [X] T052 [P] [US2] Vendor Avro Phonetic rules with original licence header (per R10 finding) into src/vendor/avro-phonetic/ and wrap in src/modules/bangla/transliterate.ts (used `@subhesadek/avro-phonetic` as an unmodified MPL-2.0 dependency instead of vendoring; see R10)
+- [X] T053 [US2] Define request/response Zod schemas with examples (text ≤ 1000 chars, date range 1971-01-01…2100-12-31, `to` ∈ `bn|en`) in src/modules/bangla/schemas.ts
+- [X] T054 [US2] Implement Bangla toolkit routes per contracts/bangla.md (cacheable, default date = today in Asia/Dhaka) and mount in src/modules/bangla/routes.ts and src/app.ts
 
 **Checkpoint**: US1 + US2 both work independently
 
@@ -144,15 +144,15 @@ shipped independently.
 
 ### Tests for User Story 3 (write first, must fail)
 
-- [ ] T055 [P] [US3] Create golden cases (all 7 prefixes; `+880`, `880`, `0088`, no prefix; Bangla digits; spaces/dashes; wrong length; `012` prefix; landline; letters) in tests/golden/phone/cases.json and tests in tests/unit/phone/service.test.ts
-- [ ] T056 [P] [US3] Contract tests per contracts/phone.md: GET, POST validate, bulk preserves order, bulk > 100 → 413, `Cache-Control: no-store`, `portability_notice` always present in tests/contract/phone.test.ts
+- [X] T055 [P] [US3] Create golden cases (all 7 prefixes; `+880`, `880`, `0088`, no prefix; Bangla digits; spaces/dashes; wrong length; `012` prefix; landline; letters) in tests/golden/phone/cases.json and tests in tests/unit/phone/service.test.ts
+- [X] T056 [P] [US3] Contract tests per contracts/phone.md: GET, POST validate, bulk preserves order, bulk > 100 → 413, `Cache-Control: no-store`, `portability_notice` always present in tests/contract/phone.test.ts
 
 ### Implementation for User Story 3
 
-- [ ] T057 [P] [US3] Create prefix data (013/017 Grameenphone, 014/019 Banglalink, 015 Teletalk, 016 Airtel, 018 Robi; bilingual names) in data/phone/prefixes.json with meta entry
-- [ ] T058 [US3] Define OperatorPrefix (`prefix` `^01[3-9]$`, unique) and PhoneResult schemas in src/modules/phone/schemas.ts and register dataset in scripts/build-data.ts
-- [ ] T059 [US3] Implement normalise/validate service with reason codes `invalid_chars`, `invalid_length`, `invalid_prefix` (R12) in src/modules/phone/service.ts
-- [ ] T060 [US3] Implement phone routes (no-store) and mount in src/modules/phone/routes.ts and src/app.ts
+- [X] T057 [P] [US3] Create prefix data (013/017 Grameenphone, 014/019 Banglalink, 015 Teletalk, 016 Airtel, 018 Robi; bilingual names) in data/phone/prefixes.json with meta entry
+- [X] T058 [US3] Define OperatorPrefix (`prefix` `^01[3-9]$`, unique) and PhoneResult schemas in src/modules/phone/schemas.ts and register dataset in scripts/build-data.ts
+- [X] T059 [US3] Implement normalise/validate service with reason codes `invalid_chars`, `invalid_length`, `invalid_prefix` (R12) in src/modules/phone/service.ts
+- [X] T060 [US3] Implement phone routes (no-store) and mount in src/modules/phone/routes.ts and src/app.ts
 
 **Checkpoint**: US3 independently functional
 

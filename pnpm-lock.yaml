@@ -14,6 +14,9 @@ importers:
       '@scalar/hono-api-reference':
         specifier: ^0.12.20
         version: 0.12.20(hono@4.13.18)
+      '@subhesadek/avro-phonetic':
+        specifier: 2.1.4
+        version: 2.1.4
       hono:
         specifier: ^4.13.18
         version: 4.13.18
@@ -688,6 +691,10 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@subhesadek/avro-phonetic@2.1.4':
+    resolution: {integrity: sha512-MYKJGifGhxv3W3r6kPVJUWjxv49JbfRuDxQkRSCgrdzdsJsNCNUIDJIxL+fjEb3yk5XNop8+jzbcuBa7sL4GkQ==}
+    engines: {node: '>=22.0.0', pnpm: '>=11.0.0'}
 
   '@tybys/wasm-util@0.10.4':
     resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
@@ -1563,6 +1570,8 @@ snapshots:
   '@speed-highlight/core@1.2.24': {}
 
   '@standard-schema/spec@1.1.0': {}
+
+  '@subhesadek/avro-phonetic@2.1.4': {}
 
   '@tybys/wasm-util@0.10.4':
     dependencies:

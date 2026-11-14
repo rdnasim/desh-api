@@ -10,6 +10,7 @@ import {
   UnionSchema,
   UpazilaSchema,
 } from '../src/modules/geo/schemas';
+import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 
 export interface DatasetSpec {
   /** Key used in data/meta.json and for the generated module name. */
@@ -74,6 +75,13 @@ export const datasets: DatasetSpec[] = [
     schema: PostOfficeSchema,
     sortKey: (r: PostOffice) => `${r.postcode}/${r.name_en}`,
     type: { name: 'PostOffice', from: GEO },
+  },
+  {
+    key: 'phone.prefixes',
+    file: 'phone/prefixes.json',
+    schema: OperatorPrefixSchema,
+    sortKey: (r) => r.prefix,
+    type: { name: 'OperatorPrefix', from: '../modules/phone/schemas' },
   },
 ];
 

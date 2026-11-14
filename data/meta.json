@@ -6,7 +6,11 @@
     "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
     "retrieved": "2026-11-13",
     "last_updated": "2026-11-12",
-    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
   },
   {
     "dataset": "geo.districts",
@@ -15,7 +19,11 @@
     "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
     "retrieved": "2026-11-13",
     "last_updated": "2026-11-12",
-    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
   },
   {
     "dataset": "geo.divisions",
@@ -24,7 +32,11 @@
     "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
     "retrieved": "2026-11-13",
     "last_updated": "2026-11-12",
-    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
   },
   {
     "dataset": "geo.postcodes",
@@ -33,7 +45,11 @@
     "licence": "MIT (compilation); GeoNames data CC BY 4.0",
     "retrieved": "2026-11-13",
     "last_updated": "2026-11-12",
-    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "GeoNames", "Bangladesh Post Office"]
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "GeoNames",
+      "Bangladesh Post Office"
+    ]
   },
   {
     "dataset": "geo.unions",
@@ -42,7 +58,11 @@
     "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
     "retrieved": "2026-11-13",
     "last_updated": "2026-11-12",
-    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
   },
   {
     "dataset": "geo.upazilas",
@@ -51,6 +71,21 @@
     "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
     "retrieved": "2026-11-13",
     "last_updated": "2026-11-12",
-    "credits": ["Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)", "Bangladesh Bureau of Statistics", "UN OCHA Humanitarian Data Exchange"]
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
+  },
+  {
+    "dataset": "phone.prefixes",
+    "source": "BTRC mobile numbering plan (operator prefix allocation)",
+    "source_url": "https://www.btrc.gov.bd",
+    "licence": "Public information; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Bangladesh Telecommunication Regulatory Commission"
+    ]
   }
 ]

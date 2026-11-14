@@ -7,7 +7,9 @@ import { defaultNoStore } from './lib/cache';
 import { errorHandler, notFoundHandler, validationHook } from './lib/errors';
 import { logger } from './lib/logger';
 import { rateLimit } from './lib/rate-limit';
+import { banglaRoutes } from './modules/bangla/routes';
 import { geoRoutes } from './modules/geo/routes';
+import { phoneRoutes } from './modules/phone/routes';
 
 const MODULES = [
   {
@@ -38,6 +40,8 @@ app.get('/', (c) =>
 app.get('/health', (c) => c.json({ status: 'ok', version: c.env?.VERSION ?? 'dev' }));
 
 app.route('/v1', geoRoutes);
+app.route('/v1', banglaRoutes);
+app.route('/v1', phoneRoutes);
 
 app.doc31('/openapi.json', {
   openapi: '3.1.0',

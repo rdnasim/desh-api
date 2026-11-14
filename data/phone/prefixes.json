@@ -1,0 +1,44 @@
+[
+  {
+    "prefix": "013",
+    "operator_slug": "grameenphone",
+    "operator_en": "Grameenphone",
+    "operator_bn": "গ্রামীণফোন"
+  },
+  {
+    "prefix": "014",
+    "operator_slug": "banglalink",
+    "operator_en": "Banglalink",
+    "operator_bn": "বাংলালিংক"
+  },
+  {
+    "prefix": "015",
+    "operator_slug": "teletalk",
+    "operator_en": "Teletalk",
+    "operator_bn": "টেলিটক"
+  },
+  {
+    "prefix": "016",
+    "operator_slug": "airtel",
+    "operator_en": "Airtel",
+    "operator_bn": "এয়ারটেল"
+  },
+  {
+    "prefix": "017",
+    "operator_slug": "grameenphone",
+    "operator_en": "Grameenphone",
+    "operator_bn": "গ্রামীণফোন"
+  },
+  {
+    "prefix": "018",
+    "operator_slug": "robi",
+    "operator_en": "Robi",
+    "operator_bn": "রবি"
+  },
+  {
+    "prefix": "019",
+    "operator_slug": "banglalink",
+    "operator_en": "Banglalink",
+    "operator_bn": "বাংলালিংক"
+  }
+]

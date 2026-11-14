@@ -20,3 +20,23 @@ export function parseNumber(input: string): number | null {
   const value = Number(text.replaceAll(',', ''));
   return Number.isFinite(value) ? value : null;
 }
+
+export interface ParsedDecimal {
+  negative: boolean;
+  /** Integer digits without grouping, e.g. "1250000". */
+  integer: string;
+  /** Fraction digits as written, e.g. "50" (empty when there is no decimal point). */
+  fraction: string;
+  value: number;
+}
+
+/** Like {@link parseNumber}, but keeps the digit strings so callers can work without float error. */
+export function parseDecimal(input: string): ParsedDecimal | null {
+  const text = toLatinDigits(input.trim());
+  if (!NUMBER_PATTERN.test(text)) return null;
+  const negative = text.startsWith('-');
+  const [integer = '', fraction = ''] = text.replace('-', '').replaceAll(',', '').split('.');
+  const value = Number(text.replaceAll(',', ''));
+  if (!Number.isFinite(value)) return null;
+  return { negative, integer: integer.replace(/^0+(?=\d)/, ''), fraction, value };
+}
