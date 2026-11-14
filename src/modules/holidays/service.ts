@@ -1,5 +1,8 @@
 import type { Calendar, Holiday, HolidayYear } from './schemas';
 
+type HolidayType = Holiday['type'];
+type Community = NonNullable<Holiday['community']>;
+
 export const WEEKDAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'] as const;
 export const DEFAULT_WEEKEND = new Set([5, 6]); // Friday, Saturday
 export const MAX_RANGE_DAYS = 366;
@@ -51,6 +54,28 @@ export function listHolidays(data: HolidayData, calendar: Calendar, year: number
   return data.holidays
     .filter((h) => h.calendar === calendar && h.year === year)
     .sort((a, b) => ((a.dates[0] as string) < (b.dates[0] as string) ? -1 : 1));
+}
+
+export interface HolidayFilter {
+  types?: HolidayType[];
+  community?: Community;
+  /** Only holidays that close offices: not optional, nationwide or for `district`. */
+  closed?: boolean;
+  district?: string;
+}
+
+export function filterHolidays(list: Holiday[], filter: HolidayFilter): Holiday[] {
+  return list.filter(
+    (h) =>
+      (filter.types === undefined || filter.types.includes(h.type)) &&
+      (filter.community === undefined || h.community === filter.community) &&
+      (!filter.closed || closes(h, filter.district)),
+  );
+}
+
+/** Every date of the given holidays, once each, in calendar order. */
+export function holidayDates(list: Holiday[]): string[] {
+  return [...new Set(list.flatMap((h) => h.dates))].sort();
 }
 
 /** Holidays that close everything: not optional, and either nationwide or for this district. */
