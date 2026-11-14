@@ -17,6 +17,12 @@ describe('app shell', () => {
     expect(body.modules.length).toBeGreaterThan(0);
   });
 
+  it('lists one module in the index for every documented tag', async () => {
+    const index = (await (await call('/')).json()) as { modules: { name: string }[] };
+    const doc = (await (await call('/openapi.json')).json()) as { tags: { name: string }[] };
+    expect(index.modules.map((m) => m.name).sort()).toEqual(doc.tags.map((t) => t.name).sort());
+  });
+
   it('unknown route returns 404 envelope', async () => {
     await expectError(await call('/v1/nope'), 404, 'not_found');
   });

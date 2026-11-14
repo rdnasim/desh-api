@@ -1,93 +1,195 @@
-# Desh API
+<div align="center">
 
-Free, open-source API for Bangladesh reference data and Bangla language tools: address
-hierarchies, postcodes, Bangla numbers and dates, phone validation, Bijoy ↔ Unicode conversion and
-land units. Every response says where its data came from.
+# 🇧🇩 Desh API
 
-> Status: Phase 1 is live at **https://desh-api.riadul.workers.dev** (docs: [/docs](https://desh-api.riadul.workers.dev/docs)). "Desh API" is a working name.
+**Free, open API for Bangladesh reference data and Bangla language tools.**
+বাংলাদেশের তথ্য ও বাংলা ভাষার টুলসের জন্য একটি ফ্রি, ওপেন সোর্স API।
 
-## Try it
+[![CI](https://github.com/rdnasim/desh-api/actions/workflows/ci.yml/badge.svg)](https://github.com/rdnasim/desh-api/actions/workflows/ci.yml)
+[![Deploy](https://github.com/rdnasim/desh-api/actions/workflows/deploy.yml/badge.svg)](https://github.com/rdnasim/desh-api/actions/workflows/deploy.yml)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green.svg)](LICENSE-DATA)
+
+[**Live API**](https://desh-api.riadul.workers.dev) ·
+[**Interactive docs**](https://desh-api.riadul.workers.dev/docs) ·
+[OpenAPI](https://desh-api.riadul.workers.dev/openapi.json) ·
+[Data sources](DATA_SOURCES.md) ·
+[Contributing](CONTRIBUTING.md)
+
+</div>
+
+---
+
+Every Bangladeshi developer has rebuilt the same things: a division → district → upazila dropdown
+from an old spreadsheet, "taka in words" for invoices, a Bijoy-to-Unicode converter, a phone-number
+regex. Desh API puts them behind one clean, documented API, free to use, with **English and Bangla
+names everywhere** and **the source of every fact in every response**.
+
+- No sign-up, no API key
+- Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
+- Validators check formats only and never store what you send
+- Runs on Cloudflare's edge network, so responses are fast
+
+## Try it now
+
+No install needed. Paste any of these into a terminal or browser:
 
 ```bash
-pnpm install
-pnpm dev                     # http://localhost:8787
-open http://localhost:8787/docs
+curl https://desh-api.riadul.workers.dev/v1/districts/cumilla
 ```
-
-`/docs` has every endpoint with examples and a "Try it" button. The machine-readable description is
-at `/openapi.json`.
-
-## Examples
-
-```bash
-# Address hierarchy (English and Bangla names)
-curl localhost:8787/v1/divisions
-curl 'localhost:8787/v1/districts?division=chattogram'
-curl 'localhost:8787/v1/upazilas?district=cumilla'
-curl localhost:8787/v1/postcodes/1205
-curl 'localhost:8787/v1/search?q=comilla'          # old spellings work
-
-# Bangla toolkit
-curl 'localhost:8787/v1/bangla/taka-in-words?amount=1250.50'
-# → "এক হাজার দুইশত পঞ্চাশ টাকা পঞ্চাশ পয়সা"
-curl 'localhost:8787/v1/bangla/format-number?n=1250000'   # → "১২,৫০,০০০"
-curl 'localhost:8787/v1/bangla/date?date=2026-12-16'      # → "১ পৌষ ১৪৩৩ বঙ্গাব্দ"
-
-# Phone numbers (format check only, never stored or logged)
-curl -X POST localhost:8787/v1/phone/validate -H 'content-type: application/json' \
-  -d '{"number":"+8801712345678"}'
-
-# Bijoy (SutonnyMJ) → Unicode
-curl -X POST localhost:8787/v1/convert/bijoy-to-unicode -H 'content-type: text/plain' \
-  --data-binary 'Avgvi †mvbvi evsjv'                     # → "আমার সোনার বাংলা"
-
-# Land units
-curl 'localhost:8787/v1/land/convert?value=5&from=katha&to=sqft'   # → 3600
-```
-
-Every response looks like this:
 
 ```json
-{ "success": true, "data": { "...": "..." },
-  "meta": { "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)", "last_updated": "2026-11-12", "version": "v1" } }
+{
+  "success": true,
+  "data": {
+    "slug": "cumilla", "name_en": "Cumilla", "name_bn": "কুমিল্লা", "aliases": ["Comilla"],
+    "bbs_code": "BD2019", "lat": 23.468275, "lon": 91.178814, "division": "chattogram"
+  },
+  "meta": { "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)", "last_updated": "2026-11-12", "version": "v1" }
+}
 ```
 
-Numbers can be sent with Bangla digits (`১২৫০`). No API key is needed; the limit is 120 requests
-per minute per IP.
+More examples:
 
-## Development
+```bash
+# Taka in words, for invoices and cheques
+curl 'https://desh-api.riadul.workers.dev/v1/bangla/taka-in-words?amount=1250.50'
+# → "এক হাজার দুইশত পঞ্চাশ টাকা পঞ্চাশ পয়সা"
+
+# Today's Bangla date (revised Bangla Academy calendar)
+curl 'https://desh-api.riadul.workers.dev/v1/bangla/date?date=2026-12-16'
+# → "১ পৌষ ১৪৩৩ বঙ্গাব্দ", Wednesday, season: শীত
+
+# Search with old spellings
+curl 'https://desh-api.riadul.workers.dev/v1/search?q=comilla'
+# → district "cumilla" (কুমিল্লা), division "chattogram"
+
+# Bijoy (SutonnyMJ) → Unicode
+curl -X POST https://desh-api.riadul.workers.dev/v1/convert/bijoy-to-unicode \
+  -H 'content-type: text/plain' --data-binary 'Avgvi †mvbvi evsjv'
+# → "আমার সোনার বাংলা"
+
+# Validate a phone number (send it in the body, not the URL)
+curl -X POST https://desh-api.riadul.workers.dev/v1/phone/validate \
+  -H 'content-type: application/json' -d '{"number":"+8801712345678"}'
+# → valid, "01712345678", original operator Grameenphone
+
+# Land units
+curl 'https://desh-api.riadul.workers.dev/v1/land/convert?value=5&from=katha&to=decimal'
+# → 8.26 decimal (3,600 sq ft)
+```
+
+The [interactive docs](https://desh-api.riadul.workers.dev/docs) list every endpoint with a
+"Try it" button.
+
+## What's inside
+
+| Module | What it does | Example |
+|---|---|---|
+| **Geo** | 8 divisions, 64 districts, 495 upazilas, 4,540 unions, 1,349 post offices; bilingual search; nearest area to a GPS point | [`/v1/upazilas?district=cumilla`](https://desh-api.riadul.workers.dev/v1/upazilas?district=cumilla) |
+| **Bangla toolkit** | Number and taka in words, Latin ⇄ Bangla digits, lakh/crore formatting (১২,৫০,০০০), Bangla calendar date, ordinals, URL slugs, Avro Phonetic transliteration | [`/v1/bangla/num-to-words?n=1250`](https://desh-api.riadul.workers.dev/v1/bangla/num-to-words?n=1250) |
+| **Phone** | Validate and normalise mobile numbers in any common format, original operator, bulk (up to 100) | `POST /v1/phone/validate` |
+| **Convert** | Bijoy (SutonnyMJ) ⇄ Unicode, up to 100 KB per request | `POST /v1/convert/bijoy-to-unicode` |
+| **Land** | Convert katha, bigha, decimal (shotangsho), chotak, acre, sq ft, sq m, gaj… | [`/v1/land/units`](https://desh-api.riadul.workers.dev/v1/land/units) |
+| **Validate** | Format checks for NID, vehicle plates, e-TIN, VAT BIN and postcodes | `POST /v1/validate/{type}` |
+| **Hotlines** | National hotline numbers, each checked against an official gov.bd page | [`/v1/hotlines?category=emergency`](https://desh-api.riadul.workers.dev/v1/hotlines?category=emergency) |
+| **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://desh-api.riadul.workers.dev/v1/fun/proverb/random) |
+
+Coming next: official public holidays and working-day counts
+([in review](https://github.com/rdnasim/desh-api/pull/2)), then finance calculators (income tax,
+VAT, EMI). See the [roadmap](docs/roadmap.md).
+
+## How responses look
+
+Every success has the same shape, and `meta.source` always says where the data came from:
+
+```json
+{ "success": true, "data": { … }, "meta": { "source": "…", "last_updated": "2026-11-14", "version": "v1" } }
+```
+
+Errors use a stable `code`, a readable message (often in Bangla too), and the right HTTP status:
+
+```json
+{ "success": false, "error": { "code": "not_found", "message": "Route /v1/nope not found", "message_bn": "এই পাথটি পাওয়া যায়নি" }, "meta": { … } }
+```
+
+| Status | `code` | When |
+|---|---|---|
+| 400 | `invalid_parameter` | A parameter is missing, malformed or out of range |
+| 404 | `not_found` | Unknown slug, postcode or route |
+| 413 | `payload_too_large` | Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers) |
+| 429 | `rate_limited` | More than 120 requests per minute from one IP (see `Retry-After`) |
+
+**Limits and caching.** No key is needed; the limit is 120 requests per minute per IP. Reference
+data is cacheable for a day; validator responses are never cached. CORS is open, so you can call the
+API straight from a browser.
+
+## Privacy
+
+Validators (NID, phone, TIN, BIN, plates, postcodes) only check that a value is **well-formed**.
+Nothing is looked up, stored or logged; our logs record only the route pattern, never the value.
+For identifiers, use the `POST` endpoints so values stay out of URLs. Details: [PRIVACY.md](PRIVACY.md).
+
+## Where the data comes from
+
+Every dataset lists its source, licence and retrieval date in [`data/meta.json`](data/meta.json)
+(readable version: [DATA_SOURCES.md](DATA_SOURCES.md)). Highlights:
+
+| Data | Source |
+|---|---|
+| Administrative areas, postcodes | Bangladesh Bureau of Statistics geocodes (via UN OCHA) and GeoNames, compiled by [nuhil/bangladesh-geocode](https://github.com/nuhil/bangladesh-geocode) |
+| Hotlines | [Bangladesh National Portal](https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89), [DGHS](https://dghs.gov.bd/) |
+| GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
+| Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |
+| Transliteration | [@subhesadek/avro-phonetic](https://github.com/SubheSadek/avro-phonetic) (MPL-2.0) |
+
+If something is wrong, please [report it](https://github.com/rdnasim/desh-api/issues/new/choose)
+with a source. Facts that reliable sources disagree on are left out rather than guessed.
+
+## Run it yourself
+
+You need Node.js 22+ and [pnpm](https://pnpm.io).
+
+```bash
+git clone https://github.com/rdnasim/desh-api.git
+cd desh-api
+pnpm install
+pnpm dev            # http://localhost:8787 — docs at /docs
+```
 
 | Command | What it does |
 |---|---|
-| `pnpm dev` | Build data and run the Worker locally |
-| `pnpm test` | Unit, contract, data-integrity and golden-file tests (run inside workerd) |
+| `pnpm dev` | Build the data and run the API locally |
+| `pnpm test` | Unit, contract, data-integrity and golden-file tests (run inside the Workers runtime) |
 | `pnpm data:check` | Validate every file in `data/` |
-| `pnpm typecheck` / `pnpm lint` | Types and Biome |
-| `pnpm size:check` | Keep the Worker bundle under budget |
-| `pnpm data:docs` | Regenerate [DATA_SOURCES.md](DATA_SOURCES.md) from `data/meta.json` |
-| `BASE=<url> pnpm smoke --bench` | Run the end-to-end scenarios against a running API, with latency |
+| `pnpm typecheck` · `pnpm lint` | TypeScript and Biome |
+| `BASE=<url> pnpm smoke --bench` | End-to-end checks against a running API, with latency |
 
-Reference data lives as JSON in [`data/`](data/), with sources and licences in
-[`data/meta.json`](data/meta.json) (readable summary: [DATA_SOURCES.md](DATA_SOURCES.md)). Fixing data is a
-pull request against those files; see [CONTRIBUTING.md](CONTRIBUTING.md). How we handle what you
-send: [PRIVACY.md](PRIVACY.md).
+**Stack:** TypeScript, [Hono](https://hono.dev) with OpenAPI-generated docs
+([Scalar](https://scalar.com)), Cloudflare Workers, Vitest. Reference data is plain JSON in
+[`data/`](data/), validated and bundled at build time; there is no database.
 
-The project is built spec-first with [Spec Kit](https://github.com/github/spec-kit): principles in
-[`.specify/memory/constitution.md`](.specify/memory/constitution.md), the product vision in
-[`docs/vision.md`](docs/vision.md), the roadmap in [`docs/roadmap.md`](docs/roadmap.md), and the
-current feature's spec, plan and tasks in [`specs/001-phase1-mvp/`](specs/001-phase1-mvp/).
+```text
+data/            reference data (edit these to fix data)
+src/modules/     one folder per module: schemas, service, routes
+scripts/         data build, importers, smoke test
+tests/           unit, contract, data and golden-file tests
+specs/           Spec Kit specs, plans and tasks for each feature
+```
 
-## Data sources and credits
+The project is planned spec-first with [GitHub Spec Kit](https://github.com/github/spec-kit). The
+rules it follows are in the [constitution](.specify/memory/constitution.md); each feature's spec,
+plan and tasks are in [`specs/`](specs/).
 
-- Administrative areas and postcodes: [nuhil/bangladesh-geocode](https://github.com/nuhil/bangladesh-geocode)
-  (MIT), built from Bangladesh Bureau of Statistics geocodes via UN OCHA (CC BY-IGO) and GeoNames
-  (CC BY 4.0).
-- Bijoy mapping: derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode)
-  (MIT, BinduLogic).
-- Phonetic transliteration: [@subhesadek/avro-phonetic](https://github.com/SubheSadek/avro-phonetic)
-  (MPL-2.0).
+## Contributing
 
-## Licence
+The most useful contributions are **data fixes**, and you don't need to code: edit a JSON file in
+[`data/`](data/) or open an issue, and say where the fact comes from. New proverbs, riddles, quiz
+questions and history events are welcome too. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Code: [MIT](LICENSE). Data: [CC BY 4.0](LICENSE-DATA), with upstream attribution as listed in
-`data/meta.json`.
+## License
+
+Code: [MIT](LICENSE). Data: [CC BY 4.0](LICENSE-DATA). When you reuse the data, please credit
+"Desh API contributors" and the upstream sources in [DATA_SOURCES.md](DATA_SOURCES.md).
+
+"Desh API" is a working name.
