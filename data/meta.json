@@ -142,6 +142,28 @@
     ]
   },
   {
+    "dataset": "holidays.holidays",
+    "source": "Ministry of Public Administration holiday notifications (2027: No. 05.00.0000.175.08.0008.25-105, 5 Nov 2026)",
+    "source_url": "https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Ministry of Public Administration, Bangladesh"
+    ]
+  },
+  {
+    "dataset": "holidays.years",
+    "source": "Ministry of Public Administration holiday notifications (2027: No. 05.00.0000.175.08.0008.25-105, 5 Nov 2026)",
+    "source_url": "https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Ministry of Public Administration, Bangladesh"
+    ]
+  },
+  {
     "dataset": "hotlines",
     "source": "Bangladesh National Portal, 'জরুরি হটলাইন' (page updated 2026-07-28); Directorate General of Health Services for 16263",
     "source_url": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",

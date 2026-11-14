@@ -43,6 +43,11 @@ curl -X POST localhost:8787/v1/convert/bijoy-to-unicode -H 'content-type: text/p
 
 # Land units
 curl 'localhost:8787/v1/land/convert?value=5&from=katha&to=sqft'   # → 3600
+
+# Official holidays (2027), holiday check, working days
+curl 'localhost:8787/v1/holidays?year=2027&type=general'
+curl 'localhost:8787/v1/is-holiday?date=2027-12-16'                 # → Victory Day
+curl 'localhost:8787/v1/working-days?from=2027-12-01&to=2027-12-31' # → 21
 ```
 
 Every response looks like this:

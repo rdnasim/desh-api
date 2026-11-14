@@ -1,0 +1,723 @@
+{
+  "_note": "Row-by-row transcription of MoPA notification 05.00.0000.175.08.0008.25-105 (5 Nov 2026), read from the scanned PDF on mopa.gov.bd. weekday_bn and bangla_date are as printed and are checked against the calendar module.",
+  "document": {
+    "ref": "MoPA notification 05.00.0000.175.08.0008.25-105 (5 Nov 2026)",
+    "url": "https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740"
+  },
+  "section_totals": {
+    "general": 15,
+    "executive-order": 14,
+    "optional:muslim": 6,
+    "optional:hindu": 9,
+    "optional:christian": 8,
+    "optional:buddhist": 7,
+    "optional:ethnic-minority": 2
+  },
+  "rows": [
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "শহিদ দিবস ও আন্তর্জাতিক মাতৃভাষা দিবস",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-02-21",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "০৮ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "জুমাতুল বিদা",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-05",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "২০ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "ঈদ-উল-ফিতর",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-03-10",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "২৫ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "স্বাধীনতা ও জাতীয় দিবস",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-26",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "১২ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "চৈত্র সংক্রান্তি (শুধু রাঙ্গামাটি, খাগড়াছড়ি ও বান্দরবান পার্বত্য জেলার জন্য প্রযোজ্য)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-04-13",
+          "weekday_bn": "মঙ্গলবার",
+          "bangla_date": "৩০ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "মে দিবস",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-05-01",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "১৮ বৈশাখ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "ঈদ-উল-আজহা",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-05-17",
+          "weekday_bn": "সোমবার",
+          "bangla_date": "০৩ জ্যৈষ্ঠ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "বুদ্ধ পূর্ণিমা (বৈশাখী পূর্ণিমা)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-05-20",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "০৬ জ্যৈষ্ঠ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "জুলাই গণ-অভ্যুত্থান দিবস",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-08-05",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "২১ শ্রাবণ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "ঈদ-ই-মিলাদুন্নবী (সা.)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-08-15",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "৩১ শ্রাবণ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "জন্মাষ্টমী",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-08-25",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "১০ ভাদ্র ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "দুর্গাপূজা (বিজয়া দশমী)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-10-10",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "২৫ আশ্বিন ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "জাতীয় বিপ্লব ও সংহতি দিবস",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-11-07",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "২২ কার্তিক ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "বিজয় দিবস",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-12-16",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "০১ পৌষ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "general",
+      "community": null,
+      "name_bn": "যিশুখ্রিষ্টের জন্মদিন (বড়দিন)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-12-25",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "১০ পৌষ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "executive-order",
+      "community": null,
+      "name_bn": "শব-ই-বরাত",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-01-24",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "১০ মাঘ ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "executive-order",
+      "community": null,
+      "name_bn": "শব-ই-কদর",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-03-07",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "২২ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "executive-order",
+      "community": null,
+      "name_bn": "ঈদ-উল-ফিতর (ঈদের পূর্বের ০২ দিন ও পরের ০২ দিন)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-03-08",
+          "weekday_bn": "সোমবার",
+          "bangla_date": "২৩ ফাল্গুন ১৪৩৩"
+        },
+        {
+          "date": "2027-03-09",
+          "weekday_bn": "মঙ্গলবার",
+          "bangla_date": "২৪ ফাল্গুন ১৪৩৩"
+        },
+        {
+          "date": "2027-03-11",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "২৬ ফাল্গুন ১৪৩৩"
+        },
+        {
+          "date": "2027-03-12",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "২৭ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "executive-order",
+      "community": null,
+      "name_bn": "নববর্ষ",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-04-14",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "০১ বৈশাখ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "executive-order",
+      "community": null,
+      "name_bn": "ঈদ-উল-আজহা (ঈদের পূর্বের ০২ দিন ও পরের ০৩ দিন)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-05-15",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "০১ জ্যৈষ্ঠ ১৪৩৪"
+        },
+        {
+          "date": "2027-05-16",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "০২ জ্যৈষ্ঠ ১৪৩৪"
+        },
+        {
+          "date": "2027-05-18",
+          "weekday_bn": "মঙ্গলবার",
+          "bangla_date": "০৪ জ্যৈষ্ঠ ১৪৩৪"
+        },
+        {
+          "date": "2027-05-19",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "০৫ জ্যৈষ্ঠ ১৪৩৪"
+        },
+        {
+          "date": "2027-05-20",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "০৬ জ্যৈষ্ঠ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "executive-order",
+      "community": null,
+      "name_bn": "আশুরা",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-06-16",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "০২ আষাঢ় ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "executive-order",
+      "community": null,
+      "name_bn": "দুর্গাপূজা (নবমী)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-10-09",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "২৪ আশ্বিন ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "muslim",
+      "name_bn": "শব-ই-মিরাজ",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-01-06",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "২২ পৌষ ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "muslim",
+      "name_bn": "ঈদ-উল-ফিতর (ঈদের পরের তৃতীয় দিন)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-03-13",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "২৮ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "muslim",
+      "name_bn": "ঈদ-উল-আজহা (ঈদের পরের চতুর্থ দিন)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-05-21",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "০৭ জ্যৈষ্ঠ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "muslim",
+      "name_bn": "আখেরি চাহার সোম্বা",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-07-28",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "১৩ শ্রাবণ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "muslim",
+      "name_bn": "ফাতেহা-ই-ইয়াজদাহম",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-09-13",
+          "weekday_bn": "সোমবার",
+          "bangla_date": "২৯ ভাদ্র ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "muslim",
+      "name_bn": "শব-ই-মিরাজ",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-12-26",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "১১ পৌষ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "শ্রীশ্রী সরস্বতী পূজা",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-02-11",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "২৮ মাঘ ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "শ্রীশ্রী শিবরাত্রি ব্রত",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-06",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "২১ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "দোলযাত্রা",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-22",
+          "weekday_bn": "সোমবার",
+          "bangla_date": "০৮ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "শ্রীশ্রী হরিচাঁদ ঠাকুরের আবির্ভাব",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-04-04",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "২১ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "মহালয়া",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-09-30",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "১৫ আশ্বিন ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "শ্রীশ্রী দুর্গাপূজা (সপ্তমী ও অষ্টমী)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-10-07",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "২২ আশ্বিন ১৪৩৪"
+        },
+        {
+          "date": "2027-10-08",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "২৩ আশ্বিন ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "শ্রীশ্রী লক্ষ্মী পূজা",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-10-14",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "২৯ আশ্বিন ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "hindu",
+      "name_bn": "শ্রীশ্রী শ্যামা পূজা",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-10-28",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "১২ কার্তিক ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "christian",
+      "name_bn": "ইংরেজি নববর্ষ",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-01-01",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "১৭ পৌষ ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "christian",
+      "name_bn": "ভস্ম বুধবার",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-02-10",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "২৭ মাঘ ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "christian",
+      "name_bn": "পুণ্য বৃহস্পতিবার",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-25",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "১১ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "christian",
+      "name_bn": "পুণ্য শুক্রবার",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-26",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "১২ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "christian",
+      "name_bn": "পুণ্য শনিবার",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-27",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "১৩ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "christian",
+      "name_bn": "ইস্টার সানডে",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-03-28",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "১৪ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "christian",
+      "name_bn": "যিশুখ্রিষ্টের জন্মোৎসব (বড়দিনের পূর্বের ও পরের দিন)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-12-24",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "০৯ পৌষ ১৪৩৪"
+        },
+        {
+          "date": "2027-12-26",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "১১ পৌষ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "buddhist",
+      "name_bn": "মাঘী পূর্ণিমা",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-02-20",
+          "weekday_bn": "শনিবার",
+          "bangla_date": "০৭ ফাল্গুন ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "buddhist",
+      "name_bn": "চৈত্র সংক্রান্তি (তিনটি পার্বত্য জেলা ব্যতীত দেশের অন্যত্র সংশ্লিষ্ট কর্মচারীদের জন্য প্রযোজ্য)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-04-13",
+          "weekday_bn": "মঙ্গলবার",
+          "bangla_date": "৩০ চৈত্র ১৪৩৩"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "buddhist",
+      "name_bn": "বুদ্ধ পূর্ণিমা (পূর্বের ও পরের দিন)",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-05-19",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "০৫ জ্যৈষ্ঠ ১৪৩৪"
+        },
+        {
+          "date": "2027-05-21",
+          "weekday_bn": "শুক্রবার",
+          "bangla_date": "০৭ জ্যৈষ্ঠ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "buddhist",
+      "name_bn": "আষাঢ়ী পূর্ণিমা",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-07-18",
+          "weekday_bn": "রবিবার",
+          "bangla_date": "০৩ শ্রাবণ ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "buddhist",
+      "name_bn": "মধু পূর্ণিমা (ভাদ্র পূর্ণিমা)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-09-15",
+          "weekday_bn": "বুধবার",
+          "bangla_date": "৩১ ভাদ্র ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "buddhist",
+      "name_bn": "প্রবারণা পূর্ণিমা (আশ্বিনী পূর্ণিমা)",
+      "tentative": true,
+      "dates": [
+        {
+          "date": "2027-10-14",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "২৯ আশ্বিন ১৪৩৪"
+        }
+      ]
+    },
+    {
+      "section": "optional",
+      "community": "ethnic-minority",
+      "name_bn": "বৈসাবি ও পার্বত্য চট্টগ্রামের অন্যান্য ক্ষুদ্র নৃ-গোষ্ঠীর অনুরূপ সামাজিক উৎসব",
+      "tentative": false,
+      "dates": [
+        {
+          "date": "2027-04-12",
+          "weekday_bn": "সোমবার",
+          "bangla_date": "২৯ চৈত্র ১৪৩৩"
+        },
+        {
+          "date": "2027-04-15",
+          "weekday_bn": "বৃহস্পতিবার",
+          "bangla_date": "০২ বৈশাখ ১৪৩৪"
+        }
+      ]
+    }
+  ]
+}

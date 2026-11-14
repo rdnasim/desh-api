@@ -103,6 +103,9 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
   16 cases (incl. month boundaries and a leap-year Falgun) are in
   `tests/golden/bangla/calendar.json`, each worked out by hand from the rules above; a check
   against a printed government calendar is still part of T112.
+  **Update 2026-11-14**: the government's 2027 holiday notification prints a Bangla date for each of
+  63 holiday dates across 2027; all 63 agree with this implementation (see
+  `specs/002-holidays-calendar/research.md`, H1). The 2026-dated cases above remain hand-checked.
 - **Alternatives**: Indian (West Bengal) calendar — different rules; out of scope, may be added as
   `system=indian` later.
 

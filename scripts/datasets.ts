@@ -18,6 +18,7 @@ import {
   UnionSchema,
   UpazilaSchema,
 } from '../src/modules/geo/schemas';
+import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schemas';
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
@@ -123,6 +124,20 @@ export const datasets: DatasetSpec[] = [
     type: { name: 'Hotline', from: '../modules/hotlines/schemas' },
   },
   {
+    key: 'holidays.years',
+    file: 'holidays/years.json',
+    schema: HolidayYearSchema,
+    sortKey: (r) => `${r.year}/${r.calendar}`,
+    type: { name: 'HolidayYear', from: '../modules/holidays/schemas' },
+  },
+  {
+    key: 'holidays.holidays',
+    file: 'holidays/holidays.json',
+    schema: HolidaySchema,
+    sortKey: (r) => r.id,
+    type: { name: 'Holiday', from: '../modules/holidays/schemas' },
+  },
+  {
     key: 'fun.proverbs',
     file: 'fun/proverbs.json',
     schema: ProverbSchema,
@@ -189,6 +204,24 @@ export function derive(data: Record<string, any[]>): {
   fk('geo.postcodes', 'upazila', 'geo.upazilas', true);
   fk('geo.postcodes', 'city_corporation', 'geo.city-corporations', true);
   const districtSlugs = slugs('geo.districts');
+  const docRefs = new Map<string, Set<string>>();
+  for (const y of data['holidays.years'] ?? []) {
+    docRefs.set(`${y.year}/${y.calendar}`, new Set(y.documents.map((d: { ref: string }) => d.ref)));
+  }
+  for (const h of data['holidays.holidays'] ?? []) {
+    const refs = docRefs.get(`${h.year}/${h.calendar}`);
+    if (!refs)
+      errors.push(`holidays: ${h.id} has no holidays.years entry for ${h.year}/${h.calendar}`);
+    else {
+      if (!refs.has(h.source))
+        errors.push(`holidays: ${h.id} source '${h.source}' is not a document of ${h.year}`);
+      if (h.amended_by && !refs.has(h.amended_by))
+        errors.push(`holidays: ${h.id} amended_by is not a document of ${h.year}`);
+    }
+    for (const d of h.districts ?? []) {
+      if (!districtSlugs.has(d)) errors.push(`holidays: ${h.id} has unknown district '${d}'`);
+    }
+  }
   for (const d of data['fun.dishes'] ?? []) {
     if (d.district !== undefined && !districtSlugs.has(d.district)) {
       errors.push(`fun.dishes: ${d.slug} has unknown district '${d.district}'`);
