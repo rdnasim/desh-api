@@ -153,7 +153,7 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
   016 Airtel (Robi), 018 Robi. Reason codes: `invalid_length`, `invalid_prefix`, `invalid_chars`.
 - **Note**: Always include the portability notice (constitution, Data standards).
 
-## R13. Format validators — **VERIFY formats**
+## R13. Format validators — ✅ shipped 2026-11-14 as format-only checks; two items still open
 
 | Identifier | Decision | To verify |
 |---|---|---|
@@ -164,6 +164,18 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
 | Postcode | 4 digits + existence check against postcode dataset. | — |
 
 Validators never echo the input back in logs; responses echo only the normalised value to the caller.
+
+- **Shipped**: NID, TIN, BIN and postcode exactly as in the table (17-digit birth year: 1900 to the
+  current year in Asia/Dhaka, per spec Clarifications). Vehicle plates: area = any district's
+  Bangla or English name (from `geo.districts`) plus plate abbreviations in
+  `data/validate/vehicle-area-aliases.json` (currently চট্ট); `মেট্রো` is reported, not checked
+  against a list of metro areas; the class letter must be a Bangla consonant (English input via a
+  fixed map of common renderings; retroflex letters are Bangla-only).
+- **Still open**: (1) BRTA's official list of class letters and what each means. No published
+  source was found, so meanings are not returned rather than guessed. (2) Which areas issue metro
+  plates. Until sourced, any area may carry `মেট্রো`.
+- A contract test captures `console.log`/`console.error` during validator and phone calls and
+  asserts the submitted values never appear (SC-007).
 
 ## R14. Land units — ✅ standard units shipped 2026-11-14; regional values still open
 

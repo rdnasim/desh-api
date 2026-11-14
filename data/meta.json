@@ -108,5 +108,15 @@
     "credits": [
       "Bangladesh Telecommunication Regulatory Commission"
     ]
+  },
+  {
+    "dataset": "validate.vehicle-area-aliases",
+    "source": "Abbreviations seen on BRTA registration plates (e.g. 'চট্ট মেট্রো' for Chattogram Metro); full area names come from geo.districts",
+    "licence": "CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
+    ]
   }
 ]

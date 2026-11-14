@@ -2,6 +2,7 @@ import { OpenAPIHono } from '@hono/zod-openapi';
 import { Scalar } from '@scalar/hono-api-reference';
 import { cors } from 'hono/cors';
 import { etag } from 'hono/etag';
+import { OPENAPI_CONFIG } from './docs';
 import type { AppEnv } from './env';
 import { defaultNoStore } from './lib/cache';
 import { errorHandler, notFoundHandler, validationHook } from './lib/errors';
@@ -12,6 +13,7 @@ import { convertRoutes } from './modules/convert/routes';
 import { geoRoutes } from './modules/geo/routes';
 import { landRoutes } from './modules/land/routes';
 import { phoneRoutes } from './modules/phone/routes';
+import { validateRoutes } from './modules/validate/routes';
 
 const MODULES = [
   {
@@ -46,17 +48,9 @@ app.route('/v1', banglaRoutes);
 app.route('/v1', phoneRoutes);
 app.route('/v1', convertRoutes);
 app.route('/v1', landRoutes);
+app.route('/v1', validateRoutes);
 
-app.doc31('/openapi.json', {
-  openapi: '3.1.0',
-  info: {
-    title: 'Desh API',
-    version: '1.0.0',
-    description:
-      'Free, open, bilingual API for Bangladesh reference data and Bangla language tools. Every response includes `meta.source` and `meta.last_updated`.',
-    license: { name: 'MIT (code), CC BY 4.0 (data)' },
-  },
-});
+app.doc31('/openapi.json', OPENAPI_CONFIG);
 
 app.get('/docs', Scalar({ url: '/openapi.json', pageTitle: 'Desh API' }));
 

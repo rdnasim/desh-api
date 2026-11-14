@@ -10,8 +10,9 @@ import {
   DistrictSchema,
   DivisionSchema,
   GeoLevelSchema,
+  NearestAreaSchema,
   ParentsSchema,
-  PostOfficeSchema,
+  PostcodeLookupSchema,
   SearchHitSchema,
   UnionSchema,
   UpazilaSchema,
@@ -229,10 +230,7 @@ geoRoutes.openapi(
         code: z.string().openapi({ param: { name: 'code', in: 'path' }, example: '1205' }),
       }),
     },
-    responses: json(
-      z.object({ postcode: z.string(), post_offices: z.array(PostOfficeSchema) }),
-      'Post offices with this postcode',
-    ),
+    responses: json(PostcodeLookupSchema, 'Post offices with this postcode'),
   }),
   (c) => {
     const code = toLatinDigits(c.req.valid('param').code.trim());
@@ -297,10 +295,7 @@ geoRoutes.openapi(
           .openapi({ param: { name: 'level', in: 'query', description: 'Default: district' } }),
       }),
     },
-    responses: json(
-      z.object({ area: SearchHitSchema, distance_km: z.number() }),
-      'Nearest area and its distance from the point',
-    ),
+    responses: json(NearestAreaSchema, 'Nearest area and its distance from the point'),
   }),
   (c) => {
     const params = c.req.valid('query');

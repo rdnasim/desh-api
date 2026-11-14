@@ -119,15 +119,18 @@ Conversion: `value × from.sqft(region) ÷ to.sqft(region)`; region falls back t
 
 ## Validators (no stored personal data)
 
-### VehicleArea (`data/validate/vehicle-areas.json`)
-`slug`, `name_en`, `name_bn`, `metro_allowed: boolean`.
+### Plate areas
+Every district (`geo.districts`, Bangla and English names) is a valid plate area. Plate-only
+abbreviations live in `data/validate/vehicle-area-aliases.json`: `alias_bn` (e.g. চট্ট),
+`alias_en`, `district` (FK → District.slug).
 
-### VehicleClass (`data/validate/vehicle-classes.json`)
-`letter_bn` (single Bangla letter), `letter_en` (transliteration), `description_en`, `description_bn`.
+Class letters are checked to be Bangla consonants; no class table is stored until BRTA's list is
+sourced (research R13).
 
 ### ValidationResult (response only)
 `type`, `valid`, `reason?`, `normalized?`, `details?` (type-specific, e.g. NID `format: "10"|"13"|"17"`,
-`birth_year?`; vehicle `area`, `metro`, `class`, `series`, `number`; postcode `exists`, `post_offices?`).
+`birth_year?`; TIN `format: "e-tin-12"`; BIN `format: "bin-9"|"legacy_or_branch"`; vehicle `area`
+(Ref), `metro`, `class` (Bangla letter), `series`, `number`; postcode `exists`, `post_offices?`).
 
 ## Hotlines
 

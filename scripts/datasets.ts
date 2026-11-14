@@ -13,6 +13,7 @@ import {
 } from '../src/modules/geo/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
+import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
 
 export interface DatasetSpec {
   /** Key used in data/meta.json and for the generated module name. */
@@ -99,6 +100,13 @@ export const datasets: DatasetSpec[] = [
     sortKey: (r) => r.slug,
     type: { name: 'LandUnit', from: '../modules/land/schemas' },
   },
+  {
+    key: 'validate.vehicle-area-aliases',
+    file: 'validate/vehicle-area-aliases.json',
+    schema: VehicleAreaAliasSchema,
+    sortKey: (r) => r.alias_bn,
+    type: { name: 'VehicleAreaAlias', from: '../modules/validate/schemas' },
+  },
 ];
 
 type Named = { name_en: string; name_bn: string | null; aliases?: string[] };
@@ -130,6 +138,11 @@ export function derive(data: Record<string, any[]>): {
   fk('geo.postcodes', 'district', 'geo.districts');
   fk('geo.postcodes', 'upazila', 'geo.upazilas', true);
   fk('geo.postcodes', 'city_corporation', 'geo.city-corporations', true);
+  const districtSlugs = slugs('geo.districts');
+  for (const a of data['validate.vehicle-area-aliases'] ?? []) {
+    if (!districtSlugs.has(a.district))
+      errors.push(`validate.vehicle-area-aliases: unknown district '${a.district}'`);
+  }
 
   const index: SearchIndexRow[] = [];
   const levels = [

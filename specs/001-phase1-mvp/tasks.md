@@ -36,7 +36,7 @@ shipped independently.
 - [X] T006 [P] Create .gitignore (`node_modules`, `.wrangler`, `src/generated`, `.dev.vars`, `coverage`)
 - [X] T007 [P] Add LICENSE (MIT, code) and LICENSE-DATA (CC BY 4.0, data) at repo root
 - [X] T008 [P] Create CI workflow running `pnpm install --frozen-lockfile`, `data:build`, `typecheck`, `lint`, `data:check`, `test`, `size:check` on push and PR in .github/workflows/ci.yml
-- [ ] T009 *(geo, postcodes, Avro Phonetic, Bijoy map done, see R4/R5/R10/R11; R13 formats and R14 regional land variants still open)* Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
+- [ ] T009 *(geo, postcodes, Avro Phonetic, Bijoy map done, see R4/R5/R10/R11; BRTA class list / metro areas (R13) and R14 regional land variants still open)* Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
 
 ---
 
@@ -210,9 +210,9 @@ shipped independently.
 
 **Independent Test**: Every registered route appears in `/openapi.json` with a valid example; `/docs` renders (quickstart scenario 14)
 
-- [ ] T075 [P] [US9] Contract test: every registered `/v1` route appears in `/openapi.json`, has summary, tag, and ≥ 1 example, and every example validates against its response schema in tests/contract/openapi.test.ts
-- [ ] T076 [US9] Configure OpenAPI document (title, description, licence, servers, one tag per module with bilingual description) and Scalar UI options in src/docs.ts and wire into src/app.ts
-- [ ] T077 [US9] Write README.md (what it is, base URL, 5-line examples per module, links to /docs, contributing, licences)
+- [X] T075 [P] [US9] Contract test: every registered `/v1` route appears in `/openapi.json`, has summary, tag, and ≥ 1 example, and every example validates against its response schema in tests/contract/openapi.test.ts (examples are also validated against their schemas with @cfworker/json-schema)
+- [X] T076 [US9] Configure OpenAPI document (title, description, licence, servers, one tag per module with bilingual description) and Scalar UI options in src/docs.ts and wire into src/app.ts
+- [X] T077 [US9] Write README.md (what it is, base URL, 5-line examples per module, links to /docs, contributing, licences)
 
 **Checkpoint**: Public launch candidate (US1–US5 + docs)
 
@@ -226,20 +226,20 @@ shipped independently.
 
 ### Tests for User Story 6 (write first, must fail)
 
-- [ ] T078 [P] [US6] Unit tests for NID (10/13/17 digits, Bangla digits, 17-digit birth year 1900…current year, `invalid_length`/`invalid_chars`/`invalid_birth_year`) in tests/unit/validate/nid.test.ts
-- [ ] T079 [P] [US6] Unit tests for vehicle plates (`ঢাকা মেট্রো-গ ১১-২২৩৩` parsed; Latin transliteration; unknown area/class; malformed series/number) in tests/unit/validate/vehicle.test.ts
-- [ ] T080 [P] [US6] Unit tests for TIN (12 digits), BIN (9 digits; 13-digit branch form flagged `legacy_or_branch`), postcode format + existence in tests/unit/validate/tin-bin-postcode.test.ts
-- [ ] T081 [P] [US6] Contract tests per contracts/validate.md (GET and POST variants, `no-store`, unknown type → 400) plus a log-capture test asserting the input value never appears in logger output in tests/contract/validate.test.ts
+- [X] T078 [P] [US6] Unit tests for NID (10/13/17 digits, Bangla digits, 17-digit birth year 1900…current year, `invalid_length`/`invalid_chars`/`invalid_birth_year`) in tests/unit/validate/nid.test.ts
+- [X] T079 [P] [US6] Unit tests for vehicle plates (`ঢাকা মেট্রো-গ ১১-২২৩৩` parsed; Latin transliteration; unknown area/class; malformed series/number) in tests/unit/validate/vehicle.test.ts
+- [X] T080 [P] [US6] Unit tests for TIN (12 digits), BIN (9 digits; 13-digit branch form flagged `legacy_or_branch`), postcode format + existence in tests/unit/validate/tin-bin-postcode.test.ts
+- [X] T081 [P] [US6] Contract tests per contracts/validate.md (GET and POST variants, `no-store`, unknown type → 400) plus a log-capture test asserting the input value never appears in logger output in tests/contract/validate.test.ts
 
 ### Implementation for User Story 6
 
-- [ ] T082 [P] [US6] Create vehicle area list (`slug`, `name_en`, `name_bn`, `metro_allowed`) and BRTA class letters (`letter_bn`, `letter_en`, descriptions) per R13 in data/validate/vehicle-areas.json and data/validate/vehicle-classes.json with meta entries
-- [ ] T083 [US6] Define ValidationResult and data schemas and register datasets in src/modules/validate/schemas.ts and scripts/build-data.ts
-- [ ] T084 [P] [US6] Implement NID validator in src/modules/validate/nid.ts
-- [ ] T085 [P] [US6] Implement vehicle plate parser/validator in src/modules/validate/vehicle.ts
-- [ ] T086 [P] [US6] Implement TIN and BIN validators in src/modules/validate/tin-bin.ts
-- [ ] T087 [US6] Implement postcode validator using the generated postcode map from US1 (T036) in src/modules/validate/postcode.ts
-- [ ] T088 [US6] Implement validate routes (GET + `POST /v1/validate/{type}`, no-store) and mount in src/modules/validate/routes.ts and src/app.ts
+- [X] T082 [P] [US6] Create vehicle area list (`slug`, `name_en`, `name_bn`, `metro_allowed`) and BRTA class letters (`letter_bn`, `letter_en`, descriptions) per R13 in data/validate/vehicle-areas.json and data/validate/vehicle-classes.json with meta entries (only `vehicle-area-aliases.json`: districts come from geo data; no class table until BRTA's list is sourced, see R13)
+- [X] T083 [US6] Define ValidationResult and data schemas and register datasets in src/modules/validate/schemas.ts and scripts/build-data.ts
+- [X] T084 [P] [US6] Implement NID validator in src/modules/validate/nid.ts
+- [X] T085 [P] [US6] Implement vehicle plate parser/validator in src/modules/validate/vehicle.ts
+- [X] T086 [P] [US6] Implement TIN and BIN validators in src/modules/validate/tin-bin.ts
+- [X] T087 [US6] Implement postcode validator using the generated postcode map from US1 (T036) in src/modules/validate/postcode.ts
+- [X] T088 [US6] Implement validate routes (GET + `POST /v1/validate/{type}`, no-store) and mount in src/modules/validate/routes.ts and src/app.ts
 
 **Checkpoint**: US6 independently functional (postcode check requires US1 data)
 

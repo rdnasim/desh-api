@@ -133,7 +133,50 @@ export const SearchHitSchema = z
     postcode: z.string().optional(),
     parents: ParentsSchema,
   })
-  .openapi('SearchHit');
+  .openapi('SearchHit', {
+    example: {
+      level: 'district',
+      slug: 'cumilla',
+      name_en: 'Cumilla',
+      name_bn: 'কুমিল্লা',
+      parents: { division: { slug: 'chattogram', name_en: 'Chattogram', name_bn: 'চট্টগ্রাম' } },
+    },
+  });
+
+export const PostcodeLookupSchema = z
+  .object({ postcode: z.string(), post_offices: z.array(PostOfficeSchema) })
+  .openapi('PostcodeLookup', {
+    example: {
+      postcode: '1205',
+      post_offices: [
+        {
+          postcode: '1205',
+          name_en: 'New Market TSO',
+          name_bn: null,
+          thana_en: 'New market',
+          district: 'dhaka',
+          city_corporation: 'dhaka-south',
+          lat: 23.7433,
+          lon: 90.3841,
+        },
+      ],
+    },
+  });
+
+export const NearestAreaSchema = z
+  .object({ area: SearchHitSchema, distance_km: z.number() })
+  .openapi('NearestArea', {
+    example: {
+      area: {
+        level: 'district',
+        slug: 'dhaka',
+        name_en: 'Dhaka',
+        name_bn: 'ঢাকা',
+        parents: { division: { slug: 'dhaka', name_en: 'Dhaka', name_bn: 'ঢাকা' } },
+      },
+      distance_km: 6.07,
+    },
+  });
 
 /** Pre-built search index row: [normalised text, level, record index]. Generated, never hand-edited. */
 export type SearchIndexRow = [text: string, level: z.infer<typeof GeoLevelSchema>, index: number];
