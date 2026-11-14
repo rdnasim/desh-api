@@ -46,5 +46,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Format checks for NID, vehicle registration plates, e-TIN, VAT BIN and postcodes. Values are never looked up, stored or logged.',
     },
+    {
+      name: 'Hotlines',
+      description:
+        'National hotline numbers checked against official government pages. In an emergency, call 999.',
+    },
   ],
 };

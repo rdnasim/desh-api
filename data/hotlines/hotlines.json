@@ -1,0 +1,192 @@
+[
+  {
+    "number": "100",
+    "name_en": "BTRC customer complaints call centre",
+    "name_bn": "বিটিআরসি গ্রাহক অভিযোগ কল সেন্টার",
+    "category": "utility",
+    "hours": "24/7",
+    "notes_en": "From any Bangladeshi mobile.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "102",
+    "name_en": "Fire Service and Civil Defence",
+    "name_bn": "ফায়ার সার্ভিস ও সিভিল ডিফেন্স",
+    "category": "emergency",
+    "notes_en": "Callable from all operators; the old number 02-223355555 also works.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "103",
+    "name_en": "Supreme Court helpline",
+    "name_bn": "সুপ্রীম কোর্ট হেল্পলাইন",
+    "category": "legal-aid",
+    "notes_en": "WhatsApp: 01316154216, 01795373680.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "106",
+    "name_en": "Anti-Corruption Commission hotline",
+    "name_bn": "দুর্নীতি দমন কমিশন (দুদক) হটলাইন",
+    "category": "government-service",
+    "toll_free": true,
+    "hours": "Office hours, 9am–5pm",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "109",
+    "name_en": "National Helpline Centre for Violence against Women and Children",
+    "name_bn": "নারী ও শিশু নির্যাতন প্রতিরোধে ন্যাশনাল হেল্পলাইন সেন্টার",
+    "category": "women-children",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "1090",
+    "name_en": "Disaster early warning (interactive voice response)",
+    "name_bn": "দুর্যোগের আগাম বার্তা",
+    "category": "disaster",
+    "toll_free": true,
+    "notes_en": "Menu: 1 marine weather, 2 river port warnings, 3 daily weather, 4 cyclone warnings, 5 flood and river levels.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "1098",
+    "name_en": "Child Helpline",
+    "name_bn": "চাইল্ড হেল্পলাইন",
+    "category": "women-children",
+    "toll_free": true,
+    "hours": "24/7, including weekends and government holidays",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16109",
+    "name_en": "Government employees' welfare line (Bangladesh Karmachari Kalyan Board)",
+    "name_bn": "কল্যাণ লাইন (বাংলাদেশ কর্মচারী কল্যাণ বোর্ড)",
+    "category": "government-service",
+    "hours": "Office hours, 9am–4pm",
+    "notes_en": "Help line: +8809639666333.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16111",
+    "name_en": "Bangladesh Coast Guard emergency service",
+    "name_bn": "বাংলাদেশ কোস্ট গার্ড জরুরি সেবা",
+    "category": "emergency",
+    "hours": "24/7",
+    "notes_en": "From all mobile operators; merchant ships by satellite: +8809610916111.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16113",
+    "name_en": "Inland water transport authority (BIWTA) hotline",
+    "name_bn": "বাংলাদেশ অভ্যন্তরীণ নৌ-পরিবহন কর্তৃপক্ষ (বিআইডব্লিউটিএ) হটলাইন",
+    "category": "transport",
+    "notes_en": "Passenger services and emergencies.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16122",
+    "name_en": "Land services helpline (Ministry of Land)",
+    "name_bn": "ভূমিসেবা হেল্পলাইন",
+    "category": "government-service",
+    "notes_en": "From abroad: +880 96123 16122.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16131",
+    "name_en": "Universal Pension Scheme (National Pension Authority)",
+    "name_bn": "সর্বজনীন পেনশন স্কিম",
+    "category": "government-service",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16135",
+    "name_en": "Expatriate call centre (Wage Earners' Welfare Board)",
+    "name_bn": "প্রবাসী কল সেন্টার",
+    "category": "government-service",
+    "toll_free": true,
+    "hours": "24/7",
+    "notes_en": "From abroad: +8809610102030.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16263",
+    "name_en": "Health call centre (Directorate General of Health Services)",
+    "name_bn": "স্বাস্থ্য বাতায়ন (স্বাস্থ্য অধিদপ্তর)",
+    "category": "health",
+    "hours": "24/7",
+    "source": "https://dghs.gov.bd/",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16445",
+    "name_en": "Passport services call centre",
+    "name_bn": "পাসপোর্ট সেবা কল সেন্টার",
+    "category": "government-service",
+    "hours": "24/7",
+    "notes_en": "From abroad: 09666716445.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16575",
+    "name_en": "e-GP (electronic government procurement) helpline",
+    "name_bn": "ই-জিপি হেল্পলাইন",
+    "category": "government-service",
+    "hours": "24/7",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16699",
+    "name_en": "National Legal Aid helpline",
+    "name_bn": "জাতীয় আইনগত সহায়তা প্রদান সংস্থা হেল্পলাইন",
+    "category": "legal-aid",
+    "toll_free": true,
+    "notes_en": "Long number: +8809612316430.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16999",
+    "name_en": "Power Division customer complaints call centre",
+    "name_bn": "বিদ্যুৎ বিভাগ গ্রাহক অভিযোগ কল সেন্টার",
+    "category": "utility",
+    "hours": "24/7",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "333",
+    "name_en": "Government information and services call centre",
+    "name_bn": "সরকারি তথ্য ও সেবা (জাতীয় কল সেন্টার)",
+    "category": "information",
+    "hours": "24/7",
+    "notes_en": "From abroad: 09666789333.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  },
+  {
+    "number": "999",
+    "name_en": "National Emergency Service (police, fire, ambulance)",
+    "name_bn": "জাতীয় জরুরি সেবা",
+    "category": "emergency",
+    "toll_free": true,
+    "hours": "24/7",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-14"
+  }
+]

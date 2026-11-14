@@ -11,6 +11,7 @@ import { rateLimit } from './lib/rate-limit';
 import { banglaRoutes } from './modules/bangla/routes';
 import { convertRoutes } from './modules/convert/routes';
 import { geoRoutes } from './modules/geo/routes';
+import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
 import { phoneRoutes } from './modules/phone/routes';
 import { validateRoutes } from './modules/validate/routes';
@@ -49,6 +50,7 @@ app.route('/v1', phoneRoutes);
 app.route('/v1', convertRoutes);
 app.route('/v1', landRoutes);
 app.route('/v1', validateRoutes);
+app.route('/v1', hotlineRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

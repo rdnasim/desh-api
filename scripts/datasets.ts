@@ -11,6 +11,7 @@ import {
   UnionSchema,
   UpazilaSchema,
 } from '../src/modules/geo/schemas';
+import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
@@ -106,6 +107,13 @@ export const datasets: DatasetSpec[] = [
     schema: VehicleAreaAliasSchema,
     sortKey: (r) => r.alias_bn,
     type: { name: 'VehicleAreaAlias', from: '../modules/validate/schemas' },
+  },
+  {
+    key: 'hotlines',
+    file: 'hotlines/hotlines.json',
+    schema: HotlineSchema,
+    sortKey: (r) => r.number,
+    type: { name: 'Hotline', from: '../modules/hotlines/schemas' },
   },
 ];
 

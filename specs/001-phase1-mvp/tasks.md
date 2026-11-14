@@ -253,14 +253,14 @@ shipped independently.
 
 ### Tests for User Story 7 (write first, must fail)
 
-- [ ] T089 [P] [US7] Data tests: required fields, unique `number` `^\d{3,6}$`, category in enum, `999` present, warn (not fail) when `last_verified` > 180 days old in tests/data/hotlines.test.ts
-- [ ] T090 [P] [US7] Contract tests per contracts/hotlines.md (list, filter, unknown category 400 listing valid ones, get by number, 404) in tests/contract/hotlines.test.ts
+- [X] T089 [P] [US7] Data tests: required fields, unique `number` `^\d{3,6}$`, category in enum, `999` present, warn (not fail) when `last_verified` > 180 days old in tests/data/hotlines.test.ts
+- [X] T090 [P] [US7] Contract tests per contracts/hotlines.md (list, filter, unknown category 400 listing valid ones, get by number, 404) in tests/contract/hotlines.test.ts
 
 ### Implementation for User Story 7
 
-- [ ] T091 [US7] Curate national hotlines, each verified against its official source with `source` URL and `last_verified` date; second maintainer review required in data/hotlines/hotlines.json with meta entry
-- [ ] T092 [US7] Define Hotline schema (category enum `emergency|health|women-children|information|legal-aid|disaster|utility|other`) and register dataset in src/modules/hotlines/schemas.ts and scripts/build-data.ts
-- [ ] T093 [US7] Implement hotline routes and mount in src/modules/hotlines/routes.ts and src/app.ts
+- [X] T091 [US7] Curate national hotlines, each verified against its official source with `source` URL and `last_verified` date; second maintainer review required in data/hotlines/hotlines.json with meta entry — **20 numbers checked against bangladesh.gov.bd and dghs.gov.bd on 2026-11-14 (R15); second maintainer review still pending before launch**
+- [X] T092 [US7] Define Hotline schema (category enum `emergency|health|women-children|information|legal-aid|disaster|utility|other`) and register dataset in src/modules/hotlines/schemas.ts and scripts/build-data.ts
+- [X] T093 [US7] Implement hotline routes and mount in src/modules/hotlines/routes.ts and src/app.ts
 
 **Checkpoint**: US7 independently functional
 

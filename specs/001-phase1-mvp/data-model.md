@@ -139,10 +139,10 @@ sourced (research R13).
 |---|---|---|
 | `number` | string | `^\d{3,6}$`, unique |
 | `name_en`, `name_bn` | string | required |
-| `category` | enum | `emergency` `health` `women-children` `information` `legal-aid` `disaster` `utility` `other` |
-| `description_en?`, `description_bn?` | string | |
-| `toll_free` | boolean | |
-| `hours` | string | e.g. `24/7` |
+| `category` | enum | `emergency` `health` `women-children` `disaster` `information` `legal-aid` `government-service` `transport` `utility` |
+| `toll_free?` | boolean | only when the source states it |
+| `hours?` | string | only when the source states it, e.g. `24/7` |
+| `notes_en?` | string | alternate or overseas numbers, menu options |
 | `source` | string | official URL — required |
 | `last_verified` | date | required; CI warns when > 180 days old |
 

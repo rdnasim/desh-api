@@ -192,11 +192,19 @@ Validators never echo the input back in logs; responses echo only the normalised
   bigha, acre, hectare) with Bangla names and aliases; `variants` is empty and only `standard` is a
   valid region until sourced values are contributed. Kani, gonda, kora and kranti are not included.
 
-## R15. Hotlines
+## R15. Hotlines — ✅ resolved 2026-11-14 (second human review pending)
 
 - **Decision**: Curate national numbers only (999, 333, 109, 1098, 16263, 106, 16430, etc.), each with
   official source URL and `last_verified`. Two-reviewer rule for edits (constitution, Workflow).
 - **To verify**: every number dialled/confirmed against the official government source at data entry.
+- **Finding**: 20 numbers checked on 2026-11-14 against the national portal's "জরুরি হটলাইন" page
+  (https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89, content updated
+  2026-07-28) and, for 16263, the DGHS homepage. "Verified" means read from that official page on
+  that date; no number was dialled. Corrections versus commonly repeated lists: legal aid is
+  **16699** (16430 is only the tail of its long number), and fire service is **102**. Left out: 16357
+  and 16171 (no service name on the page) and the narcotics line (a full mobile number). `toll_free`
+  and `hours` are set only when the page states them. The Police HQ hotline page refused
+  connections and was not used.
 
 ## R16. Fun content
 
