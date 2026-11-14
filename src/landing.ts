@@ -8,7 +8,7 @@ export const LANDING_HTML = /* html */ `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Desh API — Bangladesh reference data and Bangla language tools</title>
-<meta name="description" content="A free, open API for Bangladesh: divisions to unions, postcodes, taka in words, Bangla dates, Bijoy to Unicode, phone validation, official holidays. English and Bangla names, and the source of every fact.">
+<meta name="description" content="A free, open API for Bangladesh: divisions to unions, postcodes, taka in words, Bangla dates, Bijoy to Unicode, phone validation, official holidays, income tax and loan calculators. English and Bangla names, and the source of every fact.">
 <meta name="theme-color" content="#E4002B">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ccircle cx='14' cy='16' r='9' fill='%23E4002B'/%3E%3C/svg%3E">
 <script>
@@ -179,6 +179,7 @@ pre.out { margin: 0; padding: 16px; max-height: 420px; overflow: auto; backgroun
 .mods { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--rule); }
 .mod { padding: 22px 22px 26px 0; border-bottom: 1px solid var(--hair); }
 .mod:nth-child(3n+2), .mod:nth-child(3n) { padding-left: 22px; border-left: 1px solid var(--hair); }
+.mod:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
 .mod .k { font-size: 13px; font-weight: 700; color: var(--red); font-variant-numeric: tabular-nums; }
 .mod h3 { margin: 4px 0 8px; font-size: 21px; letter-spacing: -0.01em; }
 .mod p { margin: 0 0 14px; font-size: 15px; color: var(--ink-2); }
@@ -264,7 +265,7 @@ footer p { margin: 0 0 6px; }
     <h1>Bangladesh reference data and Bangla language tools, as a free API.</h1>
     <div class="disc-big" aria-hidden="true"></div>
     <p class="bn" lang="bn">বাংলাদেশের তথ্য ও বাংলা ভাষার টুলস — ফ্রি, ওপেন সোর্স API।</p>
-    <p class="lede">Divisions to unions, postcodes, taka in words, Bangla dates, Bijoy to Unicode, phone validation and official holidays. English and Bangla names everywhere, and the source of every fact in every response. No sign-up, no API key.</p>
+    <p class="lede">Divisions to unions, postcodes, taka in words, Bangla dates, Bijoy to Unicode, phone validation, official holidays, and income tax, VAT and loan calculators. English and Bangla names everywhere, and the source of every fact in every response. No sign-up, no API key.</p>
     <div class="base">
       <div class="url"><span id="base-url">https://deshapi.riadul.com</span><button class="copy" type="button" data-copy-from="base-url">Copy</button></div>
       <a class="btn primary" href="/docs">Open the docs</a>
@@ -318,6 +319,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">07</div><h3>Validate</h3><p>Format checks for NID, vehicle plates, e-TIN, VAT BIN and postcodes. Nothing is looked up or stored.</p><a href="/docs#tag/validate">POST /v1/validate/{type}</a></div>
         <div class="mod"><div class="k">08</div><h3>Hotlines</h3><p>National hotline numbers, each checked against an official government page, with the date it was checked.</p><a href="/v1/hotlines?category=emergency">/v1/hotlines?category=emergency</a></div>
         <div class="mod"><div class="k">09</div><h3>Fun</h3><p>Traditional proverbs and riddles, quiz questions, GI-registered foods by district, and Bangladesh history by date.</p><a href="/v1/fun/proverb/random">/v1/fun/proverb/random</a></div>
+        <div class="mod"><div class="k">10</div><h3>Finance</h3><p>Income tax under the Finance Act 2026 for every taxpayer category, with the salary exemption, investment rebate, minimum tax and a slab-by-slab breakdown. Also VAT, loan EMI with a repayment schedule, DPS maturity and statutory gratuity.</p><a href="/v1/finance/income-tax?income=1200000&amp;employment_income=1200000">/v1/finance/income-tax?income=1200000&amp;employment_income=1200000</a></div>
       </div>
     </div>
   </div>
@@ -356,7 +358,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
         <thead><tr><th>Status</th><th>code</th><th>When</th></tr></thead>
         <tbody>
           <tr><td>400</td><td><code>invalid_parameter</code></td><td>A parameter is missing, malformed or out of range</td></tr>
-          <tr><td>404</td><td><code>not_found</code></td><td>Unknown slug, postcode, route, or a year with no official holiday list</td></tr>
+          <tr><td>404</td><td><code>not_found</code></td><td>Unknown slug, postcode, route, a year with no official holiday list, or a tax year with no Finance Act rates</td></tr>
           <tr><td>413</td><td><code>payload_too_large</code></td><td>Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers)</td></tr>
           <tr><td>429</td><td><code>rate_limited</code></td><td>More than 120 requests per minute from one IP</td></tr>
         </tbody>
@@ -389,6 +391,8 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
         <tbody>
           <tr><td>Administrative areas, postcodes</td><td>Bangladesh Bureau of Statistics geocodes (via UN OCHA) and GeoNames, compiled by <a href="https://github.com/nuhil/bangladesh-geocode">nuhil/bangladesh-geocode</a></td></tr>
           <tr><td>Holidays</td><td><a href="https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740">Ministry of Public Administration, 2027 holiday notification</a></td></tr>
+          <tr><td>Income tax</td><td><a href="http://bdlaws.minlaw.gov.bd/act-details-1725.html">Finance Act 2026 (Act No. 96 of 2026)</a> and the Income Tax Act 2023 as amended</td></tr>
+          <tr><td>VAT, gratuity</td><td>VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10))</td></tr>
           <tr><td>Hotlines</td><td><a href="https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89">Bangladesh National Portal</a>, <a href="https://dghs.gov.bd/">DGHS</a></td></tr>
           <tr><td>GI foods</td><td><a href="https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf">Department of Patents, Designs and Trademarks</a></td></tr>
           <tr><td>Bijoy mapping</td><td>Derived from <a href="https://github.com/BinduLogic/bn-ansi-to-unicode">bn-ansi-to-unicode</a> (MIT)</td></tr>
@@ -444,6 +448,8 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'Transliterate', method: 'GET', path: '/v1/bangla/transliterate?text=ami%20bhalo%20achi' },
     { label: 'Holiday check', method: 'GET', path: '/v1/is-holiday?date=2027-12-16' },
     { label: 'Working days', method: 'GET', path: '/v1/working-days?from=2027-12-01&to=2027-12-31' },
+    { label: 'Income tax', method: 'GET', path: '/v1/finance/income-tax?income=1200000&employment_income=1200000' },
+    { label: 'Loan EMI', method: 'GET', path: '/v1/finance/emi?principal=1000000&rate=9&months=60' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
     { label: 'Bijoy to Unicode', method: 'POST', path: '/v1/convert/bijoy-to-unicode', body: '{"text":"Avgvi \\u2020mvbvi evsjv"}' },

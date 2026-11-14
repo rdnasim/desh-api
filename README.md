@@ -132,19 +132,20 @@ Errors use a stable `code`, a readable message (often in Bangla too), and the ri
 | Status | `code` | When |
 |---|---|---|
 | 400 | `invalid_parameter` | A parameter is missing, malformed or out of range |
-| 404 | `not_found` | Unknown slug, postcode or route |
+| 404 | `not_found` | Unknown slug, postcode or route; a holiday year or tax year with no official source yet |
 | 413 | `payload_too_large` | Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers) |
 | 429 | `rate_limited` | More than 120 requests per minute from one IP (see `Retry-After`) |
 
 **Limits and caching.** No key is needed; the limit is 120 requests per minute per IP. Reference
-data is cacheable for a day; validator responses are never cached. CORS is open, so you can call the
+data and calculator results are cacheable for a day; validator responses are never cached. CORS is open, so you can call the
 API straight from a browser.
 
 ## Privacy
 
 Validators (NID, phone, TIN, BIN, plates, postcodes) only check that a value is **well-formed**.
 Nothing is looked up, stored or logged; our logs record only the route pattern, never the value.
-For identifiers, use the `POST` endpoints so values stay out of URLs. Details: [PRIVACY.md](PRIVACY.md).
+For identifiers, use the `POST` endpoints so values stay out of URLs. The finance calculators take
+only numbers, never an identifier. Details: [PRIVACY.md](PRIVACY.md).
 
 ## Where the data comes from
 
