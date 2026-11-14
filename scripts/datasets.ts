@@ -2,6 +2,13 @@ import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
 import {
+  DishSchema,
+  HistoryEventSchema,
+  ProverbSchema,
+  QuizQuestionSchema,
+  RiddleSchema,
+} from '../src/modules/fun/schemas';
+import {
   CityCorporationSchema,
   DistrictSchema,
   DivisionSchema,
@@ -115,6 +122,41 @@ export const datasets: DatasetSpec[] = [
     sortKey: (r) => r.number,
     type: { name: 'Hotline', from: '../modules/hotlines/schemas' },
   },
+  {
+    key: 'fun.proverbs',
+    file: 'fun/proverbs.json',
+    schema: ProverbSchema,
+    sortKey: (r) => r.id,
+    type: { name: 'Proverb', from: '../modules/fun/schemas' },
+  },
+  {
+    key: 'fun.riddles',
+    file: 'fun/riddles.json',
+    schema: RiddleSchema,
+    sortKey: (r) => r.id,
+    type: { name: 'Riddle', from: '../modules/fun/schemas' },
+  },
+  {
+    key: 'fun.quiz',
+    file: 'fun/quiz.json',
+    schema: QuizQuestionSchema,
+    sortKey: (r) => r.id,
+    type: { name: 'QuizQuestion', from: '../modules/fun/schemas' },
+  },
+  {
+    key: 'fun.dishes',
+    file: 'fun/dishes.json',
+    schema: DishSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'Dish', from: '../modules/fun/schemas' },
+  },
+  {
+    key: 'fun.history',
+    file: 'fun/history.json',
+    schema: HistoryEventSchema,
+    sortKey: (r) => r.id,
+    type: { name: 'HistoryEvent', from: '../modules/fun/schemas' },
+  },
 ];
 
 type Named = { name_en: string; name_bn: string | null; aliases?: string[] };
@@ -147,6 +189,11 @@ export function derive(data: Record<string, any[]>): {
   fk('geo.postcodes', 'upazila', 'geo.upazilas', true);
   fk('geo.postcodes', 'city_corporation', 'geo.city-corporations', true);
   const districtSlugs = slugs('geo.districts');
+  for (const d of data['fun.dishes'] ?? []) {
+    if (d.district !== undefined && !districtSlugs.has(d.district)) {
+      errors.push(`fun.dishes: ${d.slug} has unknown district '${d.district}'`);
+    }
+  }
   for (const a of data['validate.vehicle-area-aliases'] ?? []) {
     if (!districtSlugs.has(a.district))
       errors.push(`validate.vehicle-area-aliases: unknown district '${a.district}'`);

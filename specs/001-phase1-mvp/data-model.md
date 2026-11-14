@@ -152,9 +152,9 @@ sourced (research R13).
 |---|---|
 | Proverb | `id`, `text_bn`, `meaning_bn`, `meaning_en`, `transliteration?`, `source` |
 | Riddle | `id`, `question_bn`, `answer_bn`, `answer_en?`, `source` |
-| QuizQuestion | `id`, `topic` (enum: `liberation-war`, `geography`, `culture`, `history`), `question_bn`, `question_en`, `options` (2–5 × `{bn,en}`), `answer_index`, `source` |
-| Dish | `slug`, `name_en`, `name_bn`, `region` (district/division slug), `description_en`, `description_bn` |
-| HistoryEvent | `id`, `month` (1–12), `day` (1–31), `year`, `title_en`, `title_bn`, `source` |
+| QuizQuestion | `id`, `topic` (enum: `liberation-war`, `geography`, `culture`, `history`), `question_bn`, `question_en`, `options` (2–5 × `{bn,en}`, distinct), `answer_index` (< options length), `source` (URL) |
+| Dish | `slug`, `name_en`, `name_bn`, `district?` (absent for national GIs), `gi_application?`, `description_en`, `description_bn`, `source` (URL) — GI-registered foods only |
+| HistoryEvent | `id`, `month` (1–12), `day` (1–31, a real date in `year`), `year`, `title_en`, `title_bn`, `source` (URL) |
 
 `id` is a stable short string (`proverb-0001`). Content must be traditional/public domain or factual.
 

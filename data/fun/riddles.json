@@ -1,0 +1,100 @@
+[
+  {
+    "id": "riddle-0001",
+    "question_bn": "বন থেকে বেরোল টিয়ে, সোনার টোপর মাথায় দিয়ে।",
+    "answer_bn": "আনারস",
+    "answer_en": "Pineapple",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0002",
+    "question_bn": "এক থালা সুপারি, গুনতে নারে ব্যাপারী।",
+    "answer_bn": "আকাশের তারা",
+    "answer_en": "Stars in the sky",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0003",
+    "question_bn": "বাবার টাকা গুনতে পারি না, মায়ের শাড়ি ভাঁজ করতে পারি না।",
+    "answer_bn": "তারা ও আকাশ",
+    "answer_en": "The stars and the sky",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0004",
+    "question_bn": "হাত আছে পা নেই, বুক তার ফাটা, আস্ত মানুষ গিলে খায়, মাথা তার কাটা।",
+    "answer_bn": "জামা",
+    "answer_en": "A shirt",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0005",
+    "question_bn": "তিন অক্ষরে নাম তার জলে বাস করে, মাঝের অক্ষর বাদ দিলে আকাশে উড়ে।",
+    "answer_bn": "চিতল (মাছ) — চিল",
+    "answer_en": "Chitol (a fish); drop the middle letter and it is chil (a kite)",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0006",
+    "question_bn": "জলে জন্ম, জলে বাস, জল দেখলে হয় নাশ।",
+    "answer_bn": "লবণ",
+    "answer_en": "Salt",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0007",
+    "question_bn": "আট পা ষোলো হাঁটু, বসে থাকে জাল পেতে।",
+    "answer_bn": "মাকড়সা",
+    "answer_en": "A spider",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0008",
+    "question_bn": "দিনে ঘুমায় রাতে জাগে, উল্টো হয়ে ঝুলে থাকে।",
+    "answer_bn": "বাদুড়",
+    "answer_en": "A bat",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0009",
+    "question_bn": "সাদা মাঠে কালো বীজ, মুখে বলে হাতে বোনে।",
+    "answer_bn": "লেখা (কাগজে কালি)",
+    "answer_en": "Writing (ink on paper)",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0010",
+    "question_bn": "পা নেই তবু চলে, মুখ নেই তবু কথা বলে।",
+    "answer_bn": "চিঠি",
+    "answer_en": "A letter",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0011",
+    "question_bn": "কোন জিনিস কাটলে বাড়ে?",
+    "answer_bn": "পুকুর",
+    "answer_en": "A pond",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0012",
+    "question_bn": "কোন জিনিস ভাঙলে শব্দ হয় না?",
+    "answer_bn": "ঘুম",
+    "answer_en": "Sleep",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0013",
+    "question_bn": "একটি ঘরে বত্রিশ জন পাহারাদার, মাঝখানে একজন নাচে।",
+    "answer_bn": "জিহ্বা (দাঁতের মাঝে)",
+    "answer_en": "The tongue (among the teeth)",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0014",
+    "question_bn": "আকাশেতে ফল ধরে, ফলের ভেতর জল।",
+    "answer_bn": "ডাব",
+    "answer_en": "A green coconut",
+    "source": "Traditional (public domain)"
+  }
+]

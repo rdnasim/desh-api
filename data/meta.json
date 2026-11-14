@@ -11,6 +11,59 @@
     ]
   },
   {
+    "dataset": "fun.dishes",
+    "source": "Department of Patents, Designs and Trademarks (DPDT), granted GI products list (page updated 2026-11-04)",
+    "source_url": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Department of Patents, Designs and Trademarks, Bangladesh"
+    ]
+  },
+  {
+    "dataset": "fun.history",
+    "source": "Facts read from cited pages (Wikipedia: Bengali language movement, Bangladesh Liberation War, Provisional Government of Bangladesh, National symbols of Bangladesh); each event cites its page",
+    "licence": "Facts; descriptions CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Wikipedia contributors",
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "fun.proverbs",
+    "source": "Traditional Bangla proverbs (public domain); meanings written by desh-api contributors",
+    "licence": "Public domain proverbs; meanings CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "fun.quiz",
+    "source": "Facts read from cited pages (Wikipedia: National symbols of Bangladesh, Bengali language movement, Bangladesh Liberation War, Provisional Government of Bangladesh, Geography of Bangladesh); each question cites its page. Facts where sources disagreed were left out.",
+    "licence": "Facts; questions CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Wikipedia contributors",
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "fun.riddles",
+    "source": "Traditional Bangla riddles (public domain)",
+    "licence": "Public domain riddles; translations CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
+    ]
+  },
+  {
     "dataset": "geo.city-corporations",
     "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
     "source_url": "https://github.com/nuhil/bangladesh-geocode",

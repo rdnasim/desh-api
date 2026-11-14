@@ -51,5 +51,10 @@ export const OPENAPI_CONFIG = {
       description:
         'National hotline numbers checked against official government pages. In an emergency, call 999.',
     },
+    {
+      name: 'Fun',
+      description:
+        'Traditional proverbs and riddles, quiz questions and history events (each citing its source), and GI-registered traditional foods by district. Pass `seed` for a repeatable pick.',
+    },
   ],
 };

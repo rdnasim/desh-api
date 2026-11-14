@@ -206,12 +206,26 @@ Validators never echo the input back in logs; responses echo only the normalised
   and `hours` are set only when the page states them. The Police HQ hotline page refused
   connections and was not used.
 
-## R16. Fun content
+## R16. Fun content — ✅ starter set shipped 2026-11-14 (below original targets)
 
 - **Decision**: Curate small seed sets (≥ 100 proverbs, ≥ 50 riddles, ≥ 50 quiz questions across
   ≥ 3 topics, ≥ 64 dishes ≈ one per district, history events for ≥ 100 calendar days), all
   traditional/public domain or factual; `source` field per record. Randomness via a seeded PRNG
   (mulberry32) so `seed` gives reproducible output.
+- **Shipped instead of the targets above**, because accuracy and the "traditional only" rule beat
+  volume: 102 traditional proverbs; 14 riddles (only ones known to be traditional, none invented);
+  28 quiz questions (culture 14, geography 6, liberation war 5, history 3); 22 GI-registered
+  foods from DPDT's official list (https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf,
+  updated 2026-11-04), 20 tied to a district; 7 history events. Every quiz question and history
+  event cites the page its fact was read from.
+- **Deliberately left out**: facts where sources disagreed (highest peak: Saka Haphong vs
+  Mowdok Taung vs Keokradong; war start 25 vs 26 March; provisional government formed 10 vs 17
+  April; date of the declaration of independence), and national days added or cancelled in
+  2024–2025, under the neutrality principle. 26 March is described only as "considered the official
+  Independence Day", as the source says.
+- **Growing the sets** is a community task: each new riddle needs a traditional source, and each
+  quiz question or history event needs a URL. Minimums in `tests/data/fun.test.ts` should be raised
+  as contributions land.
 
 ## R17. Rate limiting
 

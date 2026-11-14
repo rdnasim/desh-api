@@ -9,8 +9,8 @@ without `seed` → `Cache-Control: no-store`.
 | GET | `/v1/fun/riddle/random` | `seed?` | `Riddle` | — |
 | GET | `/v1/fun/quiz` | `topic?`, `count?` (1–10, default 1), `seed?` | `QuizQuestion[]` | 400 unknown topic |
 | GET | `/v1/fun/quiz/topics` | — | `{ slug, name_en, name_bn, count }[]` | — |
-| GET | `/v1/fun/food/random` | `region?`, `seed?` | `Dish` | 400 unknown region |
-| GET | `/v1/fun/today-in-history` | `date?` (`MM-DD`, default today Asia/Dhaka) | `HistoryEvent[]` (may be empty) | 400 bad date |
+| GET | `/v1/fun/food/random` | `region?` (district or division slug), `seed?` | `Dish`, or `null` if the region has no GI food listed yet | 400 unknown region |
+| GET | `/v1/fun/today-in-history` | `date?` (`MM-DD`, default today Asia/Dhaka and `no-store`) | `HistoryEvent[]` oldest first (may be empty) | 400 bad date |
 
 ```json
 // GET /v1/fun/proverb/random

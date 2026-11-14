@@ -274,20 +274,20 @@ shipped independently.
 
 ### Tests for User Story 8 (write first, must fail)
 
-- [ ] T094 [P] [US8] Data tests: minimum counts (≥ 100 proverbs, ≥ 50 riddles, ≥ 50 quiz questions over ≥ 3 topics, ≥ 64 dishes, history for ≥ 100 days), unique ids, `source` on every record, valid `answer_index`, valid month/day in tests/data/fun.test.ts
-- [ ] T095 [P] [US8] Unit tests: seeded picks deterministic, quiz `count` without duplicates, today-in-history returns `[]` for empty days in tests/unit/fun/service.test.ts
-- [ ] T096 [P] [US8] Contract tests per contracts/fun.md (no-store without seed, cacheable with seed, 400 unknown topic/region) in tests/contract/fun.test.ts
+- [X] T094 [P] [US8] Data tests: minimum counts (≥ 100 proverbs, ≥ 50 riddles, ≥ 50 quiz questions over ≥ 3 topics, ≥ 64 dishes, history for ≥ 100 days), unique ids, `source` on every record, valid `answer_index`, valid month/day in tests/data/fun.test.ts (starter-set minimums: 100 proverbs, 10 riddles, 25 quiz, 20 dishes, 5 events; see R16)
+- [X] T095 [P] [US8] Unit tests: seeded picks deterministic, quiz `count` without duplicates, today-in-history returns `[]` for empty days in tests/unit/fun/service.test.ts
+- [X] T096 [P] [US8] Contract tests per contracts/fun.md (no-store without seed, cacheable with seed, 400 unknown topic/region) in tests/contract/fun.test.ts
 
 ### Implementation for User Story 8
 
-- [ ] T097 [P] [US8] Curate traditional proverbs with meanings in data/fun/proverbs.json
-- [ ] T098 [P] [US8] Curate traditional riddles with answers in data/fun/riddles.json
-- [ ] T099 [P] [US8] Write factual quiz questions (topics `liberation-war`, `geography`, `culture`, `history`; 2–5 options) in data/fun/quiz.json
-- [ ] T100 [P] [US8] Curate traditional dishes by region in data/fun/dishes.json
-- [ ] T101 [P] [US8] Curate Bangladesh history events by month/day with sources in data/fun/history.json
-- [ ] T102 [US8] Define fun schemas and register datasets (add meta entries) in src/modules/fun/schemas.ts and scripts/build-data.ts
-- [ ] T103 [US8] Implement fun service using src/lib/random.ts in src/modules/fun/service.ts
-- [ ] T104 [US8] Implement fun routes and mount in src/modules/fun/routes.ts and src/app.ts
+- [X] T097 [P] [US8] Curate traditional proverbs with meanings in data/fun/proverbs.json
+- [X] T098 [P] [US8] Curate traditional riddles with answers in data/fun/riddles.json (14 known-traditional riddles; none invented)
+- [X] T099 [P] [US8] Write factual quiz questions (topics `liberation-war`, `geography`, `culture`, `history`; 2–5 options) in data/fun/quiz.json (28 questions, each citing its source page; disputed facts left out)
+- [X] T100 [P] [US8] Curate traditional dishes by region in data/fun/dishes.json (22 GI-registered foods from DPDT's official list)
+- [X] T101 [P] [US8] Curate Bangladesh history events by month/day with sources in data/fun/history.json (7 sourced events; contested national days left out)
+- [X] T102 [US8] Define fun schemas and register datasets (add meta entries) in src/modules/fun/schemas.ts and scripts/build-data.ts
+- [X] T103 [US8] Implement fun service using src/lib/random.ts in src/modules/fun/service.ts
+- [X] T104 [US8] Implement fun routes and mount in src/modules/fun/routes.ts and src/app.ts
 
 **Checkpoint**: All Phase 1 user stories functional
 
