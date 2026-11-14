@@ -8,7 +8,7 @@ specs benefit from what was learned.
 
 | Feature | Phase | Modules (vision §4) | Status |
 |---|---|---|---|
-| [`001-phase1-mvp`](../specs/001-phase1-mvp/) | 1 — MVP (weeks 1–4) | 1 Geo, 2 Bangla Toolkit, 3 Phone, 4 Bijoy ↔ Unicode, 5 Land Units, 6 Format Validators, 7 Hotlines, 8 Proverbs & Fun, docs site | **Built (110/114 tasks); awaiting deploy, human reviews and two unsourced data items** |
+| [`001-phase1-mvp`](../specs/001-phase1-mvp/) | 1 — MVP (weeks 1–4) | 1 Geo, 2 Bangla Toolkit, 3 Phone, 4 Bijoy ↔ Unicode, 5 Land Units, 6 Format Validators, 7 Hotlines, 8 Proverbs & Fun, docs site | **Live** at https://desh-api.riadul.workers.dev (112/114 tasks); awaiting native-speaker review and two unsourced data items |
 | [`002-holidays-calendar`](../specs/002-holidays-calendar/) | 2 — Live data | 9 Holidays & Calendar | **Built for 2027 (general calendar)**; 2026 and bank calendar blocked on official documents |
 | `003-…` (to split) | 2 — Live data (months 2–3) | 10 Market Prices, 11 Banks & Routing, 12 Gold & Zakat, 13 Finance Calculators, 14 Education, 15 Mock Data, API keys & daily quotas | Not started |
 | `00x-expansion` | 3 — Expansion (months 4–6) | 16 Prayer Times, 17 Transport, 18 Health, 19 Weather/AQI/Flood, 20 Constituencies, 21 Tourism, 22 NLP, SDKs (npm, PyPI, Composer) | Not started |

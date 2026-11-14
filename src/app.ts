@@ -21,8 +21,49 @@ import { validateRoutes } from './modules/validate/routes';
 const MODULES = [
   {
     name: 'Geo',
-    description: 'Divisions, districts, upazilas, unions, postcodes, search',
+    description: 'Divisions, districts, upazilas, unions, postcodes, search, nearest area',
     path: '/v1/divisions',
+  },
+  {
+    name: 'Bangla toolkit',
+    description:
+      'Number and taka in words, digits, lakh/crore formatting, Bangla date, ordinals, slugs, transliteration',
+    path: '/v1/bangla/num-to-words?n=1250',
+  },
+  {
+    name: 'Phone',
+    description: 'Validate and normalise mobile numbers, original operator',
+    path: '/v1/phone/01712345678',
+  },
+  {
+    name: 'Convert',
+    description: 'Bijoy (SutonnyMJ) to Unicode and back (POST)',
+    path: '/v1/convert/bijoy-to-unicode',
+  },
+  {
+    name: 'Land',
+    description: 'Land unit conversion (katha, bigha, decimal, acre, …)',
+    path: '/v1/land/convert?value=5&from=katha&to=sqft',
+  },
+  {
+    name: 'Validate',
+    description: 'Format checks for NID, vehicle plates, TIN, BIN and postcodes (nothing stored)',
+    path: '/v1/validate/postcode/1205',
+  },
+  {
+    name: 'Hotlines',
+    description: 'Official national hotline numbers with source and verification date',
+    path: '/v1/hotlines?category=emergency',
+  },
+  {
+    name: 'Fun',
+    description: 'Proverbs, riddles, quiz, GI foods and on-this-day history',
+    path: '/v1/fun/proverb/random',
+  },
+  {
+    name: 'Holidays',
+    description: 'Official public holidays, is-it-a-holiday checks and working-day counts',
+    path: '/v1/is-holiday?date=2027-12-16',
   },
 ];
 

@@ -24,9 +24,14 @@ One line per request, containing only:
 - the status code,
 - how long it took.
 
-We do not log full URLs, query strings, request bodies or response bodies. Cloudflare's automatic
+We do not store full URLs, query strings, request bodies or response bodies. Cloudflare's automatic
 per-request logs, which would include full URLs, are turned off. An automated test checks that
-values sent to the validators never appear in our log output.
+values sent to the validators never appear in our log output, and this was confirmed on the live
+service on 14 November 2026.
+
+One exception to be aware of: while the project maintainer is actively watching Cloudflare's
+real-time log stream (for debugging), that stream shows the URL of each request as it happens. It is
+not stored. Request bodies are never shown, which is another reason to send identifiers with `POST`.
 
 ## Keep values out of URLs
 

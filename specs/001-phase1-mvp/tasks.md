@@ -303,8 +303,8 @@ shipped independently.
 - [X] T110 Implement smoke script running quickstart scenarios 1–15 against `BASE` with `--bench` p95 reporting in scripts/smoke.ts (local run: 15/15 pass, p95 5 ms — production p95 from Dhaka still to measure in T114)
 - [X] T111 Add deploy workflow (on push to `main`, after CI: `wrangler deploy` with `CLOUDFLARE_API_TOKEN` secret, then `pnpm smoke`) in .github/workflows/deploy.yml (needs CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets and the API_BASE_URL variable)
 - [ ] T112 Native-speaker review sign-off for all golden fixtures, recorded in tests/golden/REVIEW.md
-- [ ] T113 Run privacy log audit via `wrangler tail` (quickstart "Privacy check") and record result for SC-007 in specs/001-phase1-mvp/quickstart.md
-- [ ] T114 Run full quickstart.md validation against production, record p95 from Dhaka (SC-004), and update status in docs/roadmap.md
+- [X] T113 Run privacy log audit via `wrangler tail` (quickstart "Privacy check") and record result for SC-007 in specs/001-phase1-mvp/quickstart.md — **done 2026-11-14 on https://desh-api.riadul.workers.dev**: our log lines held only route templates for 5 validator/phone calls; Cloudflare's live tail shows GET URLs to the account owner (not stored); PRIVACY.md updated
+- [X] T114 Run full quickstart.md validation against production, record p95 from Dhaka (SC-004), and update status in docs/roadmap.md — **done 2026-11-14**: 15/15 scenarios pass in production; 280 requests from a Bangladesh IP (cf-ipcountry BD): p50 10 ms, p95 17 ms
 
 ---
 
