@@ -60,3 +60,11 @@ BASE=https://<worker-domain> pnpm smoke   # runs scenarios 1–15 against produc
 ```
 
 Measure p95 latency from a Dhaka vantage point (SC-004) with `pnpm smoke --bench`.
+
+## Production results (2026-11-14)
+
+- Deployed to https://desh-api.riadul.workers.dev (version from `main` at de9a392).
+- `pnpm smoke --bench`: 15/15 scenarios pass; 280 requests from Bangladesh: p50 10 ms, p95 17 ms (SC-004 ✅).
+- Privacy check via `wrangler tail`: our log lines contain only route templates; no submitted NID,
+  phone or plate values (SC-007 ✅). The live tail itself shows request URLs (GET) to the account
+  owner while open; it is not stored. Prefer POST for identifiers.
