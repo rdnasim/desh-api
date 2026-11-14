@@ -8,7 +8,7 @@ specs benefit from what was learned.
 
 | Feature | Phase | Modules (vision §4) | Status |
 |---|---|---|---|
-| [`001-phase1-mvp`](../specs/001-phase1-mvp/) | 1 — MVP (weeks 1–4) | 1 Geo, 2 Bangla Toolkit, 3 Phone, 4 Bijoy ↔ Unicode, 5 Land Units, 6 Format Validators, 7 Hotlines, 8 Proverbs & Fun, docs site | **Built (111/114 tasks); awaiting deploy and human reviews** |
+| [`001-phase1-mvp`](../specs/001-phase1-mvp/) | 1 — MVP (weeks 1–4) | 1 Geo, 2 Bangla Toolkit, 3 Phone, 4 Bijoy ↔ Unicode, 5 Land Units, 6 Format Validators, 7 Hotlines, 8 Proverbs & Fun, docs site | **Built (110/114 tasks); awaiting deploy, human reviews and two unsourced data items** |
 | `002-live-data-and-keys` | 2 — Live data (months 2–3) | 9 Holidays, 10 Market Prices, 11 Banks & Routing, 12 Gold & Zakat, 13 Finance Calculators, 14 Education, 15 Mock Data, API keys & daily quotas | Not started |
 | `003-expansion` | 3 — Expansion (months 4–6) | 16 Prayer Times, 17 Transport, 18 Health, 19 Weather/AQI/Flood, 20 Constituencies, 21 Tourism, 22 NLP, SDKs (npm, PyPI, Composer) | Not started |
 | `004-ecosystem` | 4 — Ecosystem (6+ months) | Playground, bots, browser extension, form widgets, WordPress/Laravel plugins, Sheets add-on, dashboard, CLI | Not started |
