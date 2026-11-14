@@ -16,6 +16,16 @@ describe('finance tax data', () => {
     }
   });
 
+  it('starts the 35% band at exactly 3 crore from 2028-29', () => {
+    for (const y of years.filter((r) => r.tax_year >= '2028-29')) {
+      const general = y.thresholds.find((t) => t.category === 'general')?.amount ?? 0;
+      const widths = y.slabs.slice(0, -1).reduce((a, s) => a + (s.width ?? 0), 0);
+      expect(general + widths, y.tax_year).toBe(30000000);
+      expect(y.slabs.at(-1)?.rate).toBe(35);
+      expect(y.note).toBeDefined();
+    }
+  });
+
   it('has rising slab rates', () => {
     for (const y of years) {
       const rates = y.slabs.map((s) => s.rate);

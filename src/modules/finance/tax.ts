@@ -22,10 +22,28 @@ export function resolveCategory(name: string): TaxCategory | undefined {
   return lookup.get(normalizeForSearch(name));
 }
 
-/** The rules for `taxYear`, or for the latest tax year when it is omitted. */
-export function findTaxYear(years: readonly TaxYear[], taxYear?: string): TaxYear {
+const BANGLADESH_OFFSET_MS = 6 * 60 * 60 * 1000;
+
+/** Today's date (YYYY-MM-DD) in Bangladesh (UTC+6, no daylight saving). */
+export function bangladeshToday(now = new Date()): string {
+  return new Date(now.getTime() + BANGLADESH_OFFSET_MS).toISOString().slice(0, 10);
+}
+
+/**
+ * The rules for `taxYear`. Without one, the current tax year: the one whose income year contains
+ * `today`, or the nearest available year when `today` is outside them all.
+ */
+export function findTaxYear(
+  years: readonly TaxYear[],
+  taxYear?: string,
+  today = bangladeshToday(),
+): TaxYear {
   const sorted = [...years].sort((a, b) => a.tax_year.localeCompare(b.tax_year));
-  const found = taxYear === undefined ? sorted.at(-1) : sorted.find((y) => y.tax_year === taxYear);
+  const found =
+    taxYear === undefined
+      ? (sorted.find((y) => y.income_year.from <= today && today <= y.income_year.to) ??
+        (today < (sorted[0]?.income_year.from ?? '') ? sorted[0] : sorted.at(-1)))
+      : sorted.find((y) => y.tax_year === taxYear);
   if (!found) {
     throw new UnavailableTaxYearError(
       taxYear ?? '',
@@ -118,5 +136,6 @@ export function incomeTax(year: TaxYear, category: TaxCategory, input: TaxInput)
     tax_payable: payable,
     effective_rate: income > 0 ? round2((payable / income) * 100) : 0,
     unverified: year.unverified,
+    ...(year.note ? { note: year.note } : {}),
   };
 }

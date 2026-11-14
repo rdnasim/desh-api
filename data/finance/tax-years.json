@@ -35,7 +35,6 @@
         "amount": 550000
       }
     ],
-    "disabled_dependant_extra": 50000,
     "slabs": [
       {
         "width": 300000,
@@ -58,6 +57,7 @@
         "rate": 30
       }
     ],
+    "disabled_dependant_extra": 50000,
     "minimum_tax": {
       "general": 5000,
       "new_taxpayer": 1000
@@ -129,7 +129,6 @@
         "amount": 550000
       }
     ],
-    "disabled_dependant_extra": 50000,
     "slabs": [
       {
         "width": 300000,
@@ -152,6 +151,7 @@
         "rate": 30
       }
     ],
+    "disabled_dependant_extra": 50000,
     "minimum_tax": {
       "general": 5000,
       "new_taxpayer": 1000
@@ -186,5 +186,302 @@
       }
     ],
     "unverified": []
+  },
+  {
+    "tax_year": "2028-29",
+    "income_year": {
+      "from": "2027-07-01",
+      "to": "2028-06-30"
+    },
+    "thresholds": [
+      {
+        "category": "general",
+        "amount": 450000
+      },
+      {
+        "category": "woman",
+        "amount": 500000
+      },
+      {
+        "category": "senior",
+        "amount": 500000
+      },
+      {
+        "category": "disabled",
+        "amount": 575000
+      },
+      {
+        "category": "third-gender",
+        "amount": 575000
+      },
+      {
+        "category": "freedom-fighter",
+        "amount": 600000
+      },
+      {
+        "category": "july-warrior",
+        "amount": 600000
+      }
+    ],
+    "slabs": [
+      {
+        "width": 300000,
+        "rate": 10
+      },
+      {
+        "width": 400000,
+        "rate": 15
+      },
+      {
+        "width": 500000,
+        "rate": 20
+      },
+      {
+        "width": 2000000,
+        "rate": 25
+      },
+      {
+        "width": 26350000,
+        "rate": 30
+      },
+      {
+        "width": null,
+        "rate": 35
+      }
+    ],
+    "disabled_dependant_extra": 50000,
+    "minimum_tax": {
+      "general": 5000,
+      "new_taxpayer": 1000
+    },
+    "employment_exemption": {
+      "divisor": 3,
+      "cap": 500000
+    },
+    "investment_rebate": {
+      "income_rate": 3,
+      "investment_rate": 10,
+      "cap": 750000
+    },
+    "sources": [
+      {
+        "ref": "Finance Act 2026 (Act No. 96 of 2026), Schedule 2, Part 1, para ক (rates, thresholds, minimum tax); s. 61 (investment rebate)",
+        "date": "2026-06-30",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
+        "kind": "act"
+      },
+      {
+        "ref": "Income Tax Act 2023 (Act No. 12 of 2023), s. 78 (investment rebate) and Sixth Schedule, Part 1, para 27 (employment exemption)",
+        "date": "2023-06-22",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1429.html",
+        "kind": "act"
+      },
+      {
+        "ref": "Finance (FY 2025-26) Act 2026 (Act No. 89 of 2026): Sixth Schedule, Part 1, para 27 cap raised to Tk 5 lakh",
+        "date": "2026-04-10",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1718.html",
+        "kind": "act"
+      }
+    ],
+    "unverified": [],
+    "note": "Set in advance by the Finance Act 2026; a later Finance Act may change it. The employment exemption and investment rebate are the Income Tax Act 2023 rules in force on 1 July 2026."
+  },
+  {
+    "tax_year": "2029-30",
+    "income_year": {
+      "from": "2028-07-01",
+      "to": "2029-06-30"
+    },
+    "thresholds": [
+      {
+        "category": "general",
+        "amount": 450000
+      },
+      {
+        "category": "woman",
+        "amount": 500000
+      },
+      {
+        "category": "senior",
+        "amount": 500000
+      },
+      {
+        "category": "disabled",
+        "amount": 575000
+      },
+      {
+        "category": "third-gender",
+        "amount": 575000
+      },
+      {
+        "category": "freedom-fighter",
+        "amount": 600000
+      },
+      {
+        "category": "july-warrior",
+        "amount": 600000
+      }
+    ],
+    "slabs": [
+      {
+        "width": 300000,
+        "rate": 10
+      },
+      {
+        "width": 400000,
+        "rate": 15
+      },
+      {
+        "width": 500000,
+        "rate": 20
+      },
+      {
+        "width": 2000000,
+        "rate": 25
+      },
+      {
+        "width": 26350000,
+        "rate": 30
+      },
+      {
+        "width": null,
+        "rate": 35
+      }
+    ],
+    "disabled_dependant_extra": 50000,
+    "minimum_tax": {
+      "general": 5000,
+      "new_taxpayer": 1000
+    },
+    "employment_exemption": {
+      "divisor": 3,
+      "cap": 500000
+    },
+    "investment_rebate": {
+      "income_rate": 3,
+      "investment_rate": 10,
+      "cap": 750000
+    },
+    "sources": [
+      {
+        "ref": "Finance Act 2026 (Act No. 96 of 2026), Schedule 2, Part 1, para ক (rates, thresholds, minimum tax); s. 61 (investment rebate)",
+        "date": "2026-06-30",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
+        "kind": "act"
+      },
+      {
+        "ref": "Income Tax Act 2023 (Act No. 12 of 2023), s. 78 (investment rebate) and Sixth Schedule, Part 1, para 27 (employment exemption)",
+        "date": "2023-06-22",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1429.html",
+        "kind": "act"
+      },
+      {
+        "ref": "Finance (FY 2025-26) Act 2026 (Act No. 89 of 2026): Sixth Schedule, Part 1, para 27 cap raised to Tk 5 lakh",
+        "date": "2026-04-10",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1718.html",
+        "kind": "act"
+      }
+    ],
+    "unverified": [],
+    "note": "Set in advance by the Finance Act 2026; a later Finance Act may change it. The employment exemption and investment rebate are the Income Tax Act 2023 rules in force on 1 July 2026."
+  },
+  {
+    "tax_year": "2030-31",
+    "income_year": {
+      "from": "2029-07-01",
+      "to": "2030-06-30"
+    },
+    "thresholds": [
+      {
+        "category": "general",
+        "amount": 500000
+      },
+      {
+        "category": "woman",
+        "amount": 550000
+      },
+      {
+        "category": "senior",
+        "amount": 550000
+      },
+      {
+        "category": "disabled",
+        "amount": 625000
+      },
+      {
+        "category": "third-gender",
+        "amount": 625000
+      },
+      {
+        "category": "freedom-fighter",
+        "amount": 650000
+      },
+      {
+        "category": "july-warrior",
+        "amount": 650000
+      }
+    ],
+    "slabs": [
+      {
+        "width": 300000,
+        "rate": 10
+      },
+      {
+        "width": 400000,
+        "rate": 15
+      },
+      {
+        "width": 500000,
+        "rate": 20
+      },
+      {
+        "width": 2000000,
+        "rate": 25
+      },
+      {
+        "width": 26300000,
+        "rate": 30
+      },
+      {
+        "width": null,
+        "rate": 35
+      }
+    ],
+    "disabled_dependant_extra": 50000,
+    "minimum_tax": {
+      "general": 5000,
+      "new_taxpayer": 1000
+    },
+    "employment_exemption": {
+      "divisor": 3,
+      "cap": 500000
+    },
+    "investment_rebate": {
+      "income_rate": 3,
+      "investment_rate": 10,
+      "cap": 750000
+    },
+    "sources": [
+      {
+        "ref": "Finance Act 2026 (Act No. 96 of 2026), Schedule 2, Part 1, para ক (rates, thresholds, minimum tax); s. 61 (investment rebate)",
+        "date": "2026-06-30",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
+        "kind": "act"
+      },
+      {
+        "ref": "Income Tax Act 2023 (Act No. 12 of 2023), s. 78 (investment rebate) and Sixth Schedule, Part 1, para 27 (employment exemption)",
+        "date": "2023-06-22",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1429.html",
+        "kind": "act"
+      },
+      {
+        "ref": "Finance (FY 2025-26) Act 2026 (Act No. 89 of 2026): Sixth Schedule, Part 1, para 27 cap raised to Tk 5 lakh",
+        "date": "2026-04-10",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1718.html",
+        "kind": "act"
+      }
+    ],
+    "unverified": [],
+    "note": "Set in advance by the Finance Act 2026; a later Finance Act may change it. The employment exemption and investment rebate are the Income Tax Act 2023 rules in force on 1 July 2026."
   }
 ]

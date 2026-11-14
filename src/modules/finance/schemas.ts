@@ -42,6 +42,9 @@ const TaxYearFields = z.object({
     description:
       'Rules that rest only on secondary sources and are not yet checked against the gazette',
   }),
+  note: z.string().min(1).optional().openapi({
+    description: 'Caveat for this tax year, e.g. rates set in advance that a later Act may change',
+  }),
 });
 
 export const TaxYearSchema = TaxYearFields.refine(
@@ -133,6 +136,7 @@ export const IncomeTaxSchema = z
     tax_payable: Taka,
     effective_rate: Percent.openapi({ description: 'Tax payable as % of income' }),
     unverified: z.array(z.string()),
+    note: z.string().optional(),
   })
   .openapi('IncomeTax', {
     example: {

@@ -97,7 +97,7 @@ financeRoutes.openapi(
     tags,
     summary: 'Income tax rules per tax year (thresholds, slabs, minimum tax, rebate)',
     description:
-      'Rules from the Finance Act, keyed by tax year. `income_year` is the period the income is earned in: tax year 2027-28 covers income from 1 July 2026 to 30 June 2027.',
+      'Rules from the Finance Act, keyed by tax year. `income_year` is the period the income is earned in: tax year 2027-28 covers income from 1 July 2026 to 30 June 2027. Years from 2028-29 were set in advance by the Finance Act 2026 and carry a `note`.',
     responses: responses(z.array(TaxYearOutSchema), 'Tax years, oldest first'),
   }),
   (c) => {
@@ -129,7 +129,11 @@ financeRoutes.openapi(
     request: {
       query: z.object({
         income: required('income', 'Total annual income in Taka (≥ 0)', '1000000'),
-        tax_year: optional('tax_year', 'e.g. 2027-28. Default: the latest available', '2027-28'),
+        tax_year: optional(
+          'tax_year',
+          'e.g. 2027-28 (2026-27 to 2030-31). Default: the current tax year, whose income year contains today in Bangladesh',
+          '2027-28',
+        ),
         category: optional(
           'category',
           'general (default), woman, senior, disabled, third-gender, freedom-fighter, july-warrior; Bangla names accepted',
@@ -191,7 +195,9 @@ financeRoutes.openapi(
       if (error instanceof RangeError) invalid(error.message);
       throw error;
     }
-    cachePublic(c);
+    // The default tax year changes on 1 July, so a default answer must not sit in caches for days.
+    if (taxYear === undefined) c.header('Cache-Control', 'public, max-age=3600');
+    else cachePublic(c);
     return ok(c, result, taxMeta());
   },
 );

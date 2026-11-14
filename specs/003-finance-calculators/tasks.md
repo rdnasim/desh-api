@@ -60,6 +60,12 @@ description: "Task list for Finance Calculators"
 - [X] T020 (all figures match Act No. 96 of 2026 and Act No. 89 of 2026; research F11) Verify the `unverified` figures (category thresholds, employment cap, rebate cap) against the gazetted Finance Act 2026 text; then clear `unverified` and record the check in research.md (needs the gazette PDF — maintainer)
 - [X] T021 Run type-check, lint, data check, tests and the bundle-size check
 
+## Phase 9: Follow-up (requested 2026-11-14)
+
+- [X] T022 [US1] Add tax years 2028-29, 2029-30 and 2030-31 from Schedule 2 paras খ and গ (35% band, `note` on advance rates) in data/finance/tax-years.json, with golden cases in tests/golden/finance/income-tax.json (`by_year`) and a data test that 35% starts at 3 crore
+- [X] T023 [US1] Default tax year = the one whose income year contains today in Bangladesh (UTC+6), instead of the latest; unit tests for boundaries and fallback in tests/unit/finance/tax.test.ts
+- [X] T024 [US1] Cache responses that used the default tax year for 1 hour only; contract test in tests/contract/finance.test.ts
+
 ## Dependencies
 
 - T001–T003 block everything that reads tax data; T004 needs T003.

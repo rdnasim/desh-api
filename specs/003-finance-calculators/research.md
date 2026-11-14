@@ -140,5 +140,10 @@ allowance when both are taxpayers (now in the parameter description); para ক(�
 non-residents other than non-resident Bangladeshis. The data now cites only these Acts and
 `unverified` is empty.
 
-Schedule 2 also fixes the rates for tax years 2028-29/2029-30 (threshold 4,50,000; 30% band of
-2,63,50,000, then 35%) and 2030-31 (threshold 5,00,000). These could be added as data later.
+Schedule 2 also fixes the rates for tax years 2028-29/2029-30 (paras খ: thresholds 4,50,000 /
+5,00,000 women and 65+ / 5,75,000 disabled and third gender / 6,00,000 freedom fighters and July
+warriors; 30% on the next 2,63,50,000, then 35%) and 2030-31 (para গ: 5,00,000 / 5,50,000 /
+6,25,000 / 6,50,000; 30% on the next 2,63,00,000, then 35%). In both, 35% starts at exactly Tk 3
+crore. These are now in the data (task T022) with a `note` that a later Finance Act may change
+them; the employment exemption and investment rebate for those years are the Income Tax Act rules
+in force on 1 July 2026.

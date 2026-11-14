@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import categories from '../../../src/generated/finance.tax-categories';
 import years from '../../../src/generated/finance.tax-years';
 import {
+  bangladeshToday,
   findTaxYear,
   incomeTax,
   resolveCategory,
@@ -16,32 +17,32 @@ function category(name: string) {
 }
 const general = category('general');
 
+type GoldenCase = (typeof golden.cases)[number] & { tax_year?: string };
+
+function runGolden(taxYear: string, c: GoldenCase) {
+  const { category: name = 'general', ...input } = c.input as { category?: string; income: number };
+  const r = incomeTax(findTaxYear(years, taxYear), category(name), input);
+  expect({
+    taxable_income: r.taxable_income,
+    gross_tax: r.gross_tax,
+    rebate: r.rebate.amount,
+    minimum_tax_applied: r.minimum_tax_applied,
+    tax_payable: r.tax_payable,
+  }).toEqual({
+    taxable_income: c.expect.taxable_income,
+    gross_tax: c.expect.gross_tax,
+    rebate: c.expect.rebate,
+    minimum_tax_applied: c.expect.minimum_tax_applied,
+    tax_payable: c.expect.tax_payable,
+  });
+  if ('limited_by' in c.expect) expect(r.rebate.limited_by).toBe(c.expect.limited_by);
+}
+
 describe('incomeTax (golden cases)', () => {
   for (const taxYear of golden.tax_years) {
-    for (const c of golden.cases) {
-      it(`${taxYear}: ${c.name}`, () => {
-        const { category: name = 'general', ...input } = c.input as {
-          category?: string;
-          income: number;
-        };
-        const r = incomeTax(findTaxYear(years, taxYear), category(name), input);
-        expect({
-          taxable_income: r.taxable_income,
-          gross_tax: r.gross_tax,
-          rebate: r.rebate.amount,
-          minimum_tax_applied: r.minimum_tax_applied,
-          tax_payable: r.tax_payable,
-        }).toEqual({
-          taxable_income: c.expect.taxable_income,
-          gross_tax: c.expect.gross_tax,
-          rebate: c.expect.rebate,
-          minimum_tax_applied: c.expect.minimum_tax_applied,
-          tax_payable: c.expect.tax_payable,
-        });
-        if ('limited_by' in c.expect) expect(r.rebate.limited_by).toBe(c.expect.limited_by);
-      });
-    }
+    for (const c of golden.cases) it(`${taxYear}: ${c.name}`, () => runGolden(taxYear, c));
   }
+  for (const c of golden.by_year) it(`${c.tax_year}: ${c.name}`, () => runGolden(c.tax_year, c));
 });
 
 describe('incomeTax breakdown', () => {
@@ -83,8 +84,21 @@ describe('incomeTax breakdown', () => {
 });
 
 describe('findTaxYear', () => {
-  it('defaults to the latest tax year', () => {
-    expect(findTaxYear(years).tax_year).toBe('2027-28');
+  it('defaults to the tax year whose income year contains the date', () => {
+    expect(findTaxYear(years, undefined, '2026-11-14').tax_year).toBe('2027-28');
+    expect(findTaxYear(years, undefined, '2026-06-30').tax_year).toBe('2026-27');
+    expect(findTaxYear(years, undefined, '2026-07-01').tax_year).toBe('2027-28');
+    expect(findTaxYear(years, undefined, '2030-06-30').tax_year).toBe('2030-31');
+  });
+
+  it('falls back to the nearest year outside the covered range', () => {
+    expect(findTaxYear(years, undefined, '2040-01-01').tax_year).toBe('2030-31');
+    expect(findTaxYear(years, undefined, '2020-01-01').tax_year).toBe('2026-27');
+  });
+
+  it('uses the date in Bangladesh (UTC+6) by default', () => {
+    expect(bangladeshToday(new Date('2027-06-30T18:30:00Z'))).toBe('2027-07-01');
+    expect(bangladeshToday(new Date('2027-06-30T17:59:00Z'))).toBe('2027-06-30');
   });
 
   it('throws with the available years for an unknown one', () => {
@@ -93,8 +107,20 @@ describe('findTaxYear', () => {
       expect.unreachable();
     } catch (e) {
       expect(e).toBeInstanceOf(UnavailableTaxYearError);
-      expect((e as UnavailableTaxYearError).available).toEqual(['2026-27', '2027-28']);
+      expect((e as UnavailableTaxYearError).available).toEqual([
+        '2026-27',
+        '2027-28',
+        '2028-29',
+        '2029-30',
+        '2030-31',
+      ]);
     }
+  });
+
+  it('passes the advance-rates note through to the result', () => {
+    const later = incomeTax(findTaxYear(years, '2028-29'), general, { income: 1 });
+    expect(later.note).toContain('later Finance Act');
+    expect(incomeTax(findTaxYear(years, '2027-28'), general, { income: 1 }).note).toBeUndefined();
   });
 });
 

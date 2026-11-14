@@ -22,7 +22,12 @@ overridden):
   30 June of the previous year), because the two are easily confused (research F2).
 - Q: Which tax years ship first? → A: Tax years 2026-27 (income earned Jul 2025 – Jun 2026, returns
   due now) and 2027-28 (income earned in the current fiscal year, Jul 2026 – Jun 2027). Finance Act
-  2026 sets both with identical rates. Without a `tax_year`, the latest one is used.
+  2026 sets both with identical rates. Later added: 2028-29 to 2030-31, which the same Act sets in
+  advance; they carry a `note` that a later Finance Act may change them.
+- Q: Which tax year applies when none is given? → A: The current one: the tax year whose income
+  year contains today's date in Bangladesh. (First built as "the latest year", which would have
+  jumped to 2030-31 once later years were added.) Such responses are cached for an hour only, since
+  the answer changes on 1 July.
 - Q: Which official source is authoritative? → A: The Finance Act as passed and gazetted. Where only
   secondary summaries of the passed Act were available, the data says so (research F1).
 - Q: How much of the tax return does the calculator cover? → A: Individual residents only: slabs,

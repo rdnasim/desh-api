@@ -22,6 +22,7 @@
 | `investment_rebate` | `{ income_rate, investment_rate, cap }` | % of taxable income, % of investment, Taka |
 | `sources` | `SourceDoc[]` | ≥ 1; `{ ref, date, url?, kind }` with `kind` ∈ `act`, `summary`, `news` |
 | `unverified` | string[] | field names resting only on secondary sources; empty once checked against the gazette |
+| `note` | string? | caveat for the year, e.g. rates set in advance (2028-29 onward) that a later Act may change |
 
 Records sorted by `tax_year`.
 
@@ -31,7 +32,7 @@ Records sorted by `tax_year`.
   `employment_exemption`, `taxable_income`, `tax_free_threshold`, `slabs[]` {`from`, `to` (null
   for the last), `rate`, `taxed`, `tax`}, `gross_tax`, `rebate` {`eligible_investment`, `amount`,
   `limited_by` ∈ `none|income|investment|cap|tax`}, `minimum_tax`, `minimum_tax_applied`,
-  `tax_payable`, `effective_rate` (% of income), `unverified[]`.
+  `tax_payable`, `effective_rate` (% of income), `unverified[]`, `note?`.
 - **Emi**: `principal`, `annual_rate`, `months`, `emi`, `total_payment`, `total_interest`,
   `schedule?[]` {`month`, `payment`, `principal`, `interest`, `balance`}.
 - **Vat**: `rate`, `inclusive`, `net`, `vat`, `gross`.

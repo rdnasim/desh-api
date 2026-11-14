@@ -12,8 +12,8 @@ import { call, expectError, expectOk } from './helpers';
 const enc = encodeURIComponent;
 
 describe('GET /v1/finance/income-tax', () => {
-  it('defaults to the latest tax year and the general category, with source and disclaimer', async () => {
-    const res = await call('/v1/finance/income-tax?income=1000000');
+  it('defaults to the current tax year and the general category, with source and disclaimer', async () => {
+    const res = await call('/v1/finance/income-tax?income=1000000&tax_year=2027-28');
     expect(res.headers.get('cache-control')).toContain('public');
     const body = await expectOk(res, IncomeTaxSchema);
     expect(body.data).toMatchObject({
@@ -77,7 +77,27 @@ describe('GET /v1/finance/income-tax', () => {
       404,
       'not_found',
     );
-    expect(body.error.message).toContain('2026-27, 2027-28');
+    expect(body.error.message).toContain('2026-27, 2027-28, 2028-29, 2029-30, 2030-31');
+  });
+
+  it('without tax_year uses the year whose income year contains today (Bangladesh time)', async () => {
+    const today = new Date(Date.now() + 6 * 3600_000).toISOString().slice(0, 10);
+    const res = await call('/v1/finance/income-tax?income=1000000');
+    expect(res.headers.get('cache-control')).toBe('public, max-age=3600');
+    const body = await expectOk(res, IncomeTaxSchema);
+    const { from, to } = body.data.income_year;
+    if (today >= '2025-07-01' && today <= '2030-06-30') {
+      expect(from <= today && today <= to).toBe(true);
+    }
+  });
+
+  it('carries the advance-rates note for later tax years', async () => {
+    const body = await expectOk(
+      await call('/v1/finance/income-tax?income=40000000&tax_year=2030-31'),
+      IncomeTaxSchema,
+    );
+    expect(body.data).toMatchObject({ tax_payable: 12080000 });
+    expect(body.data.note).toContain('later Finance Act');
   });
 
   it('400s bad input', async () => {
@@ -112,7 +132,13 @@ describe('GET /v1/finance/tax-years', () => {
       tax_year: string;
       thresholds: { category: string; name_bn: string }[];
     }[];
-    expect(years.map((y) => y.tax_year)).toEqual(['2026-27', '2027-28']);
+    expect(years.map((y) => y.tax_year)).toEqual([
+      '2026-27',
+      '2027-28',
+      '2028-29',
+      '2029-30',
+      '2030-31',
+    ]);
     for (const y of years) {
       expect(TaxYearOutSchema.safeParse(y).success).toBe(true);
       expect(y.thresholds.find((t) => t.category === 'woman')?.name_bn).toBe('নারী করদাতা');
