@@ -1,0 +1,730 @@
+[
+  {
+    "id": "quiz-0001",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় ফুল কোনটি?",
+    "question_en": "What is the national flower of Bangladesh?",
+    "options": [
+      {
+        "bn": "শাপলা",
+        "en": "Water lily"
+      },
+      {
+        "bn": "গোলাপ",
+        "en": "Rose"
+      },
+      {
+        "bn": "জবা",
+        "en": "Hibiscus"
+      },
+      {
+        "bn": "শিউলি",
+        "en": "Night jasmine"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0002",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় ফল কোনটি?",
+    "question_en": "What is the national fruit of Bangladesh?",
+    "options": [
+      {
+        "bn": "আম",
+        "en": "Mango"
+      },
+      {
+        "bn": "কাঁঠাল",
+        "en": "Jackfruit"
+      },
+      {
+        "bn": "লিচু",
+        "en": "Lychee"
+      },
+      {
+        "bn": "কলা",
+        "en": "Banana"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0003",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় বৃক্ষ কোনটি?",
+    "question_en": "What is the national tree of Bangladesh?",
+    "options": [
+      {
+        "bn": "বট গাছ",
+        "en": "Banyan"
+      },
+      {
+        "bn": "নিম গাছ",
+        "en": "Neem"
+      },
+      {
+        "bn": "আম গাছ",
+        "en": "Mango tree"
+      },
+      {
+        "bn": "কাঁঠাল গাছ",
+        "en": "Jackfruit tree"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0004",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় পশু কোনটি?",
+    "question_en": "What is the national animal of Bangladesh?",
+    "options": [
+      {
+        "bn": "হাতি",
+        "en": "Elephant"
+      },
+      {
+        "bn": "রয়েল বেঙ্গল টাইগার",
+        "en": "Royal Bengal tiger"
+      },
+      {
+        "bn": "চিত্রা হরিণ",
+        "en": "Spotted deer"
+      },
+      {
+        "bn": "সিংহ",
+        "en": "Lion"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0005",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় মাছ কোনটি?",
+    "question_en": "What is the national fish of Bangladesh?",
+    "options": [
+      {
+        "bn": "রুই",
+        "en": "Rohu"
+      },
+      {
+        "bn": "কাতলা",
+        "en": "Catla"
+      },
+      {
+        "bn": "ইলিশ",
+        "en": "Ilish (hilsa)"
+      },
+      {
+        "bn": "পাঙ্গাশ",
+        "en": "Pangas"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0006",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় পাখি কোনটি?",
+    "question_en": "What is the national bird of Bangladesh?",
+    "options": [
+      {
+        "bn": "দোয়েল",
+        "en": "Oriental magpie-robin"
+      },
+      {
+        "bn": "কোকিল",
+        "en": "Koel"
+      },
+      {
+        "bn": "ময়না",
+        "en": "Hill myna"
+      },
+      {
+        "bn": "শালিক",
+        "en": "Common myna"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0007",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় সংগীতের নাম কী?",
+    "question_en": "What is the name of the national anthem of Bangladesh?",
+    "options": [
+      {
+        "bn": "আমার সোনার বাংলা",
+        "en": "Amar Sonar Bangla"
+      },
+      {
+        "bn": "নতুনের গান",
+        "en": "Notuner Gaan"
+      },
+      {
+        "bn": "একুশের গান",
+        "en": "Ekusher Gaan"
+      },
+      {
+        "bn": "ধনধান্য পুষ্পভরা",
+        "en": "Dhono Dhanyo Pushpo Bhora"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0008",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় সংগীত কে রচনা করেছেন?",
+    "question_en": "Who wrote the national anthem of Bangladesh?",
+    "options": [
+      {
+        "bn": "কাজী নজরুল ইসলাম",
+        "en": "Kazi Nazrul Islam"
+      },
+      {
+        "bn": "রবীন্দ্রনাথ ঠাকুর",
+        "en": "Rabindranath Tagore"
+      },
+      {
+        "bn": "জসীমউদ্দীন",
+        "en": "Jasimuddin"
+      },
+      {
+        "bn": "জীবনানন্দ দাশ",
+        "en": "Jibanananda Das"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0009",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় কবি কে?",
+    "question_en": "Who is the national poet of Bangladesh?",
+    "options": [
+      {
+        "bn": "রবীন্দ্রনাথ ঠাকুর",
+        "en": "Rabindranath Tagore"
+      },
+      {
+        "bn": "জসীমউদ্দীন",
+        "en": "Jasimuddin"
+      },
+      {
+        "bn": "কাজী নজরুল ইসলাম",
+        "en": "Kazi Nazrul Islam"
+      },
+      {
+        "bn": "মাইকেল মধুসূদন দত্ত",
+        "en": "Michael Madhusudan Dutt"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0010",
+    "topic": "culture",
+    "question_bn": "জাতীয় রণসংগীত 'নতুনের গান' কে লিখেছেন?",
+    "question_en": "Who wrote 'Notuner Gaan', the national march?",
+    "options": [
+      {
+        "bn": "কাজী নজরুল ইসলাম",
+        "en": "Kazi Nazrul Islam"
+      },
+      {
+        "bn": "রবীন্দ্রনাথ ঠাকুর",
+        "en": "Rabindranath Tagore"
+      },
+      {
+        "bn": "সুকান্ত ভট্টাচার্য",
+        "en": "Sukanta Bhattacharya"
+      },
+      {
+        "bn": "শামসুর রাহমান",
+        "en": "Shamsur Rahman"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0011",
+    "topic": "culture",
+    "question_bn": "'একুশের গান' (আমার ভাইয়ের রক্তে রাঙানো) কে লিখেছেন?",
+    "question_en": "Who wrote 'Ekusher Gaan'?",
+    "options": [
+      {
+        "bn": "আবদুল গাফফার চৌধুরী",
+        "en": "Abdul Gaffar Choudhury"
+      },
+      {
+        "bn": "কাজী নজরুল ইসলাম",
+        "en": "Kazi Nazrul Islam"
+      },
+      {
+        "bn": "শামসুর রাহমান",
+        "en": "Shamsur Rahman"
+      },
+      {
+        "bn": "জসীমউদ্দীন",
+        "en": "Jasimuddin"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0012",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় বাদ্যযন্ত্র কোনটি?",
+    "question_en": "What is the national musical instrument of Bangladesh?",
+    "options": [
+      {
+        "bn": "তবলা",
+        "en": "Tabla"
+      },
+      {
+        "bn": "দোতারা",
+        "en": "Dotara"
+      },
+      {
+        "bn": "সেতার",
+        "en": "Sitar"
+      },
+      {
+        "bn": "বাঁশি",
+        "en": "Flute"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0013",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় মসজিদ কোনটি?",
+    "question_en": "What is the national mosque of Bangladesh?",
+    "options": [
+      {
+        "bn": "বায়তুল মুকাররম",
+        "en": "Baitul Mukarram"
+      },
+      {
+        "bn": "ষাট গম্বুজ মসজিদ",
+        "en": "Sixty Dome Mosque"
+      },
+      {
+        "bn": "তারা মসজিদ",
+        "en": "Star Mosque"
+      },
+      {
+        "bn": "কাকরাইল মসজিদ",
+        "en": "Kakrail Mosque"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0014",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের মুদ্রার নাম কী?",
+    "question_en": "What is the currency of Bangladesh?",
+    "options": [
+      {
+        "bn": "রুপি",
+        "en": "Rupee"
+      },
+      {
+        "bn": "টাকা",
+        "en": "Taka"
+      },
+      {
+        "bn": "দিনার",
+        "en": "Dinar"
+      },
+      {
+        "bn": "রিয়াল",
+        "en": "Riyal"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0015",
+    "topic": "history",
+    "question_bn": "ভাষা আন্দোলনে ঢাকায় ২১ ফেব্রুয়ারি পুলিশের গুলিতে ছাত্ররা শহীদ হন কোন সালে?",
+    "question_en": "In which year were students shot by police in Dhaka on 21 February during the Language Movement?",
+    "options": [
+      {
+        "bn": "১৯৪৮",
+        "en": "1948"
+      },
+      {
+        "bn": "১৯৫২",
+        "en": "1952"
+      },
+      {
+        "bn": "১৯৬৯",
+        "en": "1969"
+      },
+      {
+        "bn": "১৯৭১",
+        "en": "1971"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/Bengali_language_movement"
+  },
+  {
+    "id": "quiz-0016",
+    "topic": "history",
+    "question_bn": "ইউনেস্কো কোন সালে ২১ ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে ঘোষণার প্রস্তাব গ্রহণ করে?",
+    "question_en": "In which year did UNESCO adopt the proposal to declare 21 February International Mother Language Day?",
+    "options": [
+      {
+        "bn": "১৯৫২",
+        "en": "1952"
+      },
+      {
+        "bn": "১৯৭২",
+        "en": "1972"
+      },
+      {
+        "bn": "১৯৯৯",
+        "en": "1999"
+      },
+      {
+        "bn": "২০০০",
+        "en": "2000"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://en.wikipedia.org/wiki/Bengali_language_movement"
+  },
+  {
+    "id": "quiz-0017",
+    "topic": "history",
+    "question_bn": "বাংলাদেশের জাতীয় পতাকা আনুষ্ঠানিকভাবে কোন সালে গৃহীত হয়?",
+    "question_en": "In which year was the national flag of Bangladesh officially adopted?",
+    "options": [
+      {
+        "bn": "১৯৭১",
+        "en": "1971"
+      },
+      {
+        "bn": "১৯৭২",
+        "en": "1972"
+      },
+      {
+        "bn": "১৯৭৫",
+        "en": "1975"
+      },
+      {
+        "bn": "১৯৫২",
+        "en": "1952"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0018",
+    "topic": "liberation-war",
+    "question_bn": "বাংলাদেশের মুক্তিযুদ্ধ কোন সালে সংঘটিত হয়?",
+    "question_en": "In which year was the Bangladesh Liberation War fought?",
+    "options": [
+      {
+        "bn": "১৯৬৯",
+        "en": "1969"
+      },
+      {
+        "bn": "১৯৭০",
+        "en": "1970"
+      },
+      {
+        "bn": "১৯৭১",
+        "en": "1971"
+      },
+      {
+        "bn": "১৯৭২",
+        "en": "1972"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+  },
+  {
+    "id": "quiz-0019",
+    "topic": "liberation-war",
+    "question_bn": "বিজয় দিবস কোন তারিখে পালিত হয়?",
+    "question_en": "On which date is Victory Day observed?",
+    "options": [
+      {
+        "bn": "২৬ মার্চ",
+        "en": "26 March"
+      },
+      {
+        "bn": "১৬ ডিসেম্বর",
+        "en": "16 December"
+      },
+      {
+        "bn": "২১ ফেব্রুয়ারি",
+        "en": "21 February"
+      },
+      {
+        "bn": "১৪ ডিসেম্বর",
+        "en": "14 December"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+  },
+  {
+    "id": "quiz-0020",
+    "topic": "liberation-war",
+    "question_bn": "স্বাধীনতা দিবস কোন তারিখে পালিত হয়?",
+    "question_en": "On which date is Independence Day observed?",
+    "options": [
+      {
+        "bn": "২৬ মার্চ",
+        "en": "26 March"
+      },
+      {
+        "bn": "১৬ ডিসেম্বর",
+        "en": "16 December"
+      },
+      {
+        "bn": "১৭ এপ্রিল",
+        "en": "17 April"
+      },
+      {
+        "bn": "২১ ফেব্রুয়ারি",
+        "en": "21 February"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+  },
+  {
+    "id": "quiz-0021",
+    "topic": "liberation-war",
+    "question_bn": "অপারেশন সার্চলাইট কোন রাতে শুরু হয়?",
+    "question_en": "On which night did Operation Searchlight begin?",
+    "options": [
+      {
+        "bn": "২৫ মার্চ ১৯৭১",
+        "en": "25 March 1971"
+      },
+      {
+        "bn": "৭ মার্চ ১৯৭১",
+        "en": "7 March 1971"
+      },
+      {
+        "bn": "১৬ ডিসেম্বর ১৯৭১",
+        "en": "16 December 1971"
+      },
+      {
+        "bn": "১৪ ডিসেম্বর ১৯৭১",
+        "en": "14 December 1971"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+  },
+  {
+    "id": "quiz-0022",
+    "topic": "liberation-war",
+    "question_bn": "১৯৭১ সালের ১৭ এপ্রিল অস্থায়ী সরকারের মন্ত্রিসভা কোথায় শপথ নেয়?",
+    "question_en": "Where did the provisional government's cabinet take its oath on 17 April 1971?",
+    "options": [
+      {
+        "bn": "ঢাকা",
+        "en": "Dhaka"
+      },
+      {
+        "bn": "মুজিবনগর",
+        "en": "Mujibnagar"
+      },
+      {
+        "bn": "চট্টগ্রাম",
+        "en": "Chattogram"
+      },
+      {
+        "bn": "কলকাতা",
+        "en": "Kolkata"
+      }
+    ],
+    "answer_index": 1,
+    "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0023",
+    "topic": "geography",
+    "question_bn": "বাংলাদেশে কয়টি জেলা আছে?",
+    "question_en": "How many districts does Bangladesh have?",
+    "options": [
+      {
+        "bn": "৫৪",
+        "en": "54"
+      },
+      {
+        "bn": "৬০",
+        "en": "60"
+      },
+      {
+        "bn": "৬৪",
+        "en": "64"
+      },
+      {
+        "bn": "৬৮",
+        "en": "68"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://github.com/nuhil/bangladesh-geocode"
+  },
+  {
+    "id": "quiz-0024",
+    "topic": "geography",
+    "question_bn": "বাংলাদেশে কয়টি বিভাগ আছে?",
+    "question_en": "How many divisions does Bangladesh have?",
+    "options": [
+      {
+        "bn": "৬",
+        "en": "6"
+      },
+      {
+        "bn": "৭",
+        "en": "7"
+      },
+      {
+        "bn": "৮",
+        "en": "8"
+      },
+      {
+        "bn": "১০",
+        "en": "10"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://github.com/nuhil/bangladesh-geocode"
+  },
+  {
+    "id": "quiz-0025",
+    "topic": "geography",
+    "question_bn": "বাংলাদেশের জাতীয় বন কোনটি?",
+    "question_en": "What is the national forest of Bangladesh?",
+    "options": [
+      {
+        "bn": "সুন্দরবন",
+        "en": "Sundarbans"
+      },
+      {
+        "bn": "লাউয়াছড়া",
+        "en": "Lawachara"
+      },
+      {
+        "bn": "মধুপুর",
+        "en": "Madhupur"
+      },
+      {
+        "bn": "ভাওয়াল",
+        "en": "Bhawal"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://bn.wikipedia.org/wiki/বাংলাদেশের_জাতীয়_প্রতীকসমূহ"
+  },
+  {
+    "id": "quiz-0026",
+    "topic": "geography",
+    "question_bn": "রয়েল বেঙ্গল টাইগারের আবাস সুন্দরবন বাংলাদেশের কোন উপকূলে?",
+    "question_en": "On which coast of Bangladesh is the Sundarbans, home of the Royal Bengal tiger?",
+    "options": [
+      {
+        "bn": "দক্ষিণ-পশ্চিম",
+        "en": "South-west"
+      },
+      {
+        "bn": "দক্ষিণ-পূর্ব",
+        "en": "South-east"
+      },
+      {
+        "bn": "উত্তর-পূর্ব",
+        "en": "North-east"
+      },
+      {
+        "bn": "উত্তর-পশ্চিম",
+        "en": "North-west"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Geography_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0027",
+    "topic": "geography",
+    "question_bn": "একক নদী হিসেবে বাংলাদেশের দীর্ঘতম নদী কোনটি?",
+    "question_en": "Which is the longest river in Bangladesh on its own?",
+    "options": [
+      {
+        "bn": "পদ্মা",
+        "en": "Padma"
+      },
+      {
+        "bn": "যমুনা",
+        "en": "Jamuna"
+      },
+      {
+        "bn": "সুরমা-মেঘনা",
+        "en": "Surma-Meghna"
+      },
+      {
+        "bn": "কর্ণফুলী",
+        "en": "Karnaphuli"
+      }
+    ],
+    "answer_index": 2,
+    "source": "https://en.wikipedia.org/wiki/Geography_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0028",
+    "topic": "geography",
+    "question_bn": "বাংলাদেশের জাতীয় নদী কোনটি?",
+    "question_en": "What is the national river of Bangladesh?",
+    "options": [
+      {
+        "bn": "যমুনা",
+        "en": "Jamuna"
+      },
+      {
+        "bn": "পদ্মা",
+        "en": "Padma"
+      },
+      {
+        "bn": "মেঘনা",
+        "en": "Meghna"
+      },
+      {
+        "bn": "তিস্তা",
+        "en": "Teesta"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  }
+]

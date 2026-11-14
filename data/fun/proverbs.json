@@ -1,0 +1,716 @@
+[
+  {
+    "id": "proverb-0001",
+    "text_bn": "অতি লোভে তাঁতি নষ্ট",
+    "meaning_bn": "বেশি লোভ করলে ক্ষতি হয়।",
+    "meaning_en": "Excessive greed leads to ruin.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0002",
+    "text_bn": "অল্প বিদ্যা ভয়ংকরী",
+    "meaning_bn": "অল্প জ্ঞান নিয়ে বড়াই করা বিপজ্জনক।",
+    "meaning_en": "A little learning is a dangerous thing.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0003",
+    "text_bn": "অতি ভক্তি চোরের লক্ষণ",
+    "meaning_bn": "মাত্রাতিরিক্ত বিনয় সন্দেহজনক।",
+    "meaning_en": "Too much flattery is a sign of bad intent.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0004",
+    "text_bn": "অভাবে স্বভাব নষ্ট",
+    "meaning_bn": "দারিদ্র্য মানুষের চরিত্র নষ্ট করে।",
+    "meaning_en": "Want spoils character.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0005",
+    "text_bn": "অতি চালাকের গলায় দড়ি",
+    "meaning_bn": "বেশি চালাকি শেষে নিজেরই বিপদ ডেকে আনে।",
+    "meaning_en": "Over-cleverness ends in one's own downfall.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0006",
+    "text_bn": "অসময়ে কেউ কারো নয়",
+    "meaning_bn": "বিপদের দিনে কাউকে পাশে পাওয়া যায় না।",
+    "meaning_en": "In hard times no one stands by you.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0007",
+    "text_bn": "আপনি বাঁচলে বাপের নাম",
+    "meaning_bn": "আগে নিজেকে রক্ষা করতে হয়।",
+    "meaning_en": "Save yourself first.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0008",
+    "text_bn": "আপন ভালো পাগলেও বোঝে",
+    "meaning_bn": "নিজের ভালো সবাই বোঝে।",
+    "meaning_en": "Even a madman knows what is good for him.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0009",
+    "text_bn": "আঙুল ফুলে কলাগাছ",
+    "meaning_bn": "হঠাৎ অল্প সময়ে অনেক ধনী হওয়া।",
+    "meaning_en": "Sudden, undeserved riches.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0010",
+    "text_bn": "আম ছালা দুই-ই গেল",
+    "meaning_bn": "সবকিছু হারানো।",
+    "meaning_en": "Losing both the goods and the sack: losing everything.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0011",
+    "text_bn": "ইচ্ছা থাকলে উপায় হয়",
+    "meaning_bn": "চেষ্টা থাকলে পথ মেলে।",
+    "meaning_en": "Where there is a will, there is a way.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0012",
+    "text_bn": "ইটটি মারলে পাটকেলটি খেতে হয়",
+    "meaning_bn": "অন্যায় করলে তার ফল ভোগ করতে হয়।",
+    "meaning_en": "Throw a brick and you will be hit by a stone.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0013",
+    "text_bn": "উঠন্ত মুলো পত্তনেই চেনা যায়",
+    "meaning_bn": "শুরু দেখেই ভবিষ্যৎ বোঝা যায়।",
+    "meaning_en": "The morning shows the day.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0014",
+    "text_bn": "উলুবনে মুক্তা ছড়ানো",
+    "meaning_bn": "অযোগ্য জায়গায় মূল্যবান জিনিস দেওয়া।",
+    "meaning_en": "Casting pearls before swine.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0015",
+    "text_bn": "উচিত কথায় বন্ধু বেজার",
+    "meaning_bn": "সত্য কথা বললে বন্ধুও অসন্তুষ্ট হয়।",
+    "meaning_en": "Plain truth upsets even friends.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0016",
+    "text_bn": "এক মাঘে শীত যায় না",
+    "meaning_bn": "একবার বেঁচে গেলেই বিপদ শেষ হয় না।",
+    "meaning_en": "One escape does not end the danger.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0017",
+    "text_bn": "এক হাতে তালি বাজে না",
+    "meaning_bn": "ঝগড়া বা কাজে দুই পক্ষই দায়ী।",
+    "meaning_en": "It takes two to clap.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0018",
+    "text_bn": "এক ঢিলে দুই পাখি মারা",
+    "meaning_bn": "এক চেষ্টায় দুই কাজ সারা।",
+    "meaning_en": "To kill two birds with one stone.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0019",
+    "text_bn": "কষ্ট না করলে কেষ্ট মেলে না",
+    "meaning_bn": "পরিশ্রম ছাড়া সাফল্য আসে না।",
+    "meaning_en": "No pain, no gain.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0020",
+    "text_bn": "কাঁটা দিয়ে কাঁটা তোলা",
+    "meaning_bn": "শত্রু দিয়ে শত্রু দমন।",
+    "meaning_en": "Use a thorn to remove a thorn.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0021",
+    "text_bn": "কানা ছেলের নাম পদ্মলোচন",
+    "meaning_bn": "নামের সাথে গুণের মিল নেই।",
+    "meaning_en": "A blind boy named Lotus-eyed: a name that does not fit.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0022",
+    "text_bn": "কাকের মাংস কাকে খায় না",
+    "meaning_bn": "একই দলের লোক একে অপরের ক্ষতি করে না।",
+    "meaning_en": "Crows do not eat crows.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0023",
+    "text_bn": "কয়লা ধুলে ময়লা যায় না",
+    "meaning_bn": "স্বভাব বদলায় না।",
+    "meaning_en": "Washing coal does not make it white.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0024",
+    "text_bn": "কাজির গরু কেতাবে আছে, গোয়ালে নেই",
+    "meaning_bn": "কাগজে আছে, বাস্তবে নেই।",
+    "meaning_en": "The judge's cow is in the ledger but not in the shed.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0025",
+    "text_bn": "কারো পৌষ মাস, কারো সর্বনাশ",
+    "meaning_bn": "একজনের সুসময় আরেকজনের দুঃসময়।",
+    "meaning_en": "One person's feast is another's ruin.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0026",
+    "text_bn": "কাকস্য পরিবেদনা",
+    "meaning_bn": "বৃথা আক্ষেপ।",
+    "meaning_en": "A crow's lament: a useless complaint.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0027",
+    "text_bn": "খাল কেটে কুমির আনা",
+    "meaning_bn": "নিজেই বিপদ ডেকে আনা।",
+    "meaning_en": "Digging a canal to let in the crocodile.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0028",
+    "text_bn": "খাজনার চেয়ে বাজনা বেশি",
+    "meaning_bn": "মূল জিনিসের চেয়ে আনুষঙ্গিক খরচ বেশি।",
+    "meaning_en": "The music costs more than the tax.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0029",
+    "text_bn": "গাছে কাঁঠাল গোঁফে তেল",
+    "meaning_bn": "কাজ হওয়ার আগেই ফল ভোগের আয়োজন।",
+    "meaning_en": "Counting your chickens before they hatch.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0030",
+    "text_bn": "গরু মেরে জুতা দান",
+    "meaning_bn": "বড় ক্ষতি করে সামান্য দান।",
+    "meaning_en": "Kill a cow, then donate a pair of shoes.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0031",
+    "text_bn": "গেঁয়ো যোগী ভিখ পায় না",
+    "meaning_bn": "নিজের এলাকায় গুণীর কদর হয় না।",
+    "meaning_en": "A prophet has no honour in his own village.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0032",
+    "text_bn": "গোদের উপর বিষফোঁড়া",
+    "meaning_bn": "বিপদের উপর বিপদ।",
+    "meaning_en": "A boil on top of a swelling: trouble upon trouble.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0033",
+    "text_bn": "গুড়ে বালি",
+    "meaning_bn": "আশায় নিরাশা।",
+    "meaning_en": "Sand in the molasses: hopes dashed.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0034",
+    "text_bn": "ঘরপোড়া গরু সিঁদুরে মেঘ দেখলে ডরায়",
+    "meaning_bn": "একবার বিপদে পড়লে সামান্য লক্ষণেও ভয় লাগে।",
+    "meaning_en": "Once bitten, twice shy.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0035",
+    "text_bn": "ঘুঁটে পোড়ে, গোবর হাসে",
+    "meaning_bn": "অন্যের দুর্দশায় হাসা, নিজের পরিণতি না বুঝে।",
+    "meaning_en": "The dung cake burns while the dung laughs.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0036",
+    "text_bn": "ঘোড়া দেখে খোঁড়া",
+    "meaning_bn": "সাহায্য পেলে অলস হয়ে যাওয়া।",
+    "meaning_en": "Going lame at the sight of a horse.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0037",
+    "text_bn": "চোর পালালে বুদ্ধি বাড়ে",
+    "meaning_bn": "ঘটনা ঘটে যাওয়ার পর বুদ্ধি আসে।",
+    "meaning_en": "Wisdom comes after the thief has fled.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0038",
+    "text_bn": "চকচক করলেই সোনা হয় না",
+    "meaning_bn": "বাইরের চেহারা দেখে বিচার করা যায় না।",
+    "meaning_en": "All that glitters is not gold.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0039",
+    "text_bn": "চোরে চোরে মাসতুতো ভাই",
+    "meaning_bn": "অসৎ লোকেরা একজোট হয়।",
+    "meaning_en": "Thieves are all cousins.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0040",
+    "text_bn": "চাঁদেরও কলঙ্ক আছে",
+    "meaning_bn": "কেউ নিখুঁত নয়।",
+    "meaning_en": "Even the moon has spots.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0041",
+    "text_bn": "চেনা বামুনের পৈতা লাগে না",
+    "meaning_bn": "পরিচিত লোকের পরিচয়পত্র লাগে না।",
+    "meaning_en": "A known priest needs no sacred thread.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0042",
+    "text_bn": "ছাই ফেলতে ভাঙা কুলা",
+    "meaning_bn": "তুচ্ছ কাজে অবহেলিত লোককে ব্যবহার করা।",
+    "meaning_en": "A broken winnowing tray for throwing ash.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0043",
+    "text_bn": "ছুঁচো মেরে হাত গন্ধ",
+    "meaning_bn": "তুচ্ছ কাজে নিজেরই অপমান।",
+    "meaning_en": "Kill a muskrat and your hand stinks.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0044",
+    "text_bn": "জলে কুমির ডাঙায় বাঘ",
+    "meaning_bn": "দুই দিকেই বিপদ।",
+    "meaning_en": "A crocodile in the water, a tiger on land.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0045",
+    "text_bn": "ঝোপ বুঝে কোপ মারা",
+    "meaning_bn": "সুযোগ বুঝে কাজ করা।",
+    "meaning_en": "Strike when the bush is right: seize the moment.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0046",
+    "text_bn": "ঠাকুর ঘরে কে? আমি কলা খাই না",
+    "meaning_bn": "অপরাধী নিজেই ধরা দেয়।",
+    "meaning_en": "A guilty conscience gives itself away.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0047",
+    "text_bn": "ঠেলার নাম বাবাজি",
+    "meaning_bn": "চাপে পড়লে সবাই নরম হয়।",
+    "meaning_en": "Pressure makes anyone agreeable.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0048",
+    "text_bn": "ঢাকের দায়ে মনসা বিকানো",
+    "meaning_bn": "উদ্দেশ্যের চেয়ে উপায়ের খরচ বেশি।",
+    "meaning_en": "Selling the idol to pay for the drum.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0049",
+    "text_bn": "ঢেঁকি স্বর্গে গেলেও ধান ভানে",
+    "meaning_bn": "স্বভাব কোথাও বদলায় না।",
+    "meaning_en": "Even in heaven the husking pedal husks rice.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0050",
+    "text_bn": "ডুবে ডুবে জল খাওয়া",
+    "meaning_bn": "গোপনে কাজ করা।",
+    "meaning_en": "Drinking water while staying under: doing things secretly.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0051",
+    "text_bn": "তেলা মাথায় তেল দেওয়া",
+    "meaning_bn": "যার আছে তাকেই আরও দেওয়া।",
+    "meaning_en": "Oiling an already oiled head.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0052",
+    "text_bn": "তিলকে তাল করা",
+    "meaning_bn": "সামান্য বিষয়কে বড় করে তোলা।",
+    "meaning_en": "Making a palm fruit out of a sesame seed.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0053",
+    "text_bn": "দশের লাঠি একের বোঝা",
+    "meaning_bn": "অনেকে মিলে করলে কাজ সহজ হয়।",
+    "meaning_en": "Many hands make light work.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0054",
+    "text_bn": "দুধ কলা দিয়ে কালসাপ পোষা",
+    "meaning_bn": "শত্রুকে আদর করে লালন করা।",
+    "meaning_en": "Feeding milk and bananas to a cobra.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0055",
+    "text_bn": "দুষ্ট গরুর চেয়ে শূন্য গোয়াল ভালো",
+    "meaning_bn": "খারাপ সঙ্গীর চেয়ে একা থাকা ভালো।",
+    "meaning_en": "An empty shed is better than a vicious cow.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0056",
+    "text_bn": "দাঁত থাকতে দাঁতের মর্যাদা বোঝে না",
+    "meaning_bn": "থাকতে মূল্য বোঝা যায় না।",
+    "meaning_en": "We do not value our teeth until they are gone.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0057",
+    "text_bn": "দূরের ঢোল শুনতে ভালো",
+    "meaning_bn": "দূর থেকে সব কিছু সুন্দর মনে হয়।",
+    "meaning_en": "Distant drums sound sweet.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0058",
+    "text_bn": "দশচক্রে ভগবান ভূত",
+    "meaning_bn": "দলের চাপে সত্যও মিথ্যা হয়ে যায়।",
+    "meaning_en": "Ten voices together can turn a god into a ghost.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0059",
+    "text_bn": "দুধের সাধ ঘোলে মেটানো",
+    "meaning_bn": "ভালো জিনিসের বদলে কম দামি দিয়ে সন্তুষ্ট হওয়া।",
+    "meaning_en": "Satisfying a craving for milk with buttermilk.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0060",
+    "text_bn": "ধরি মাছ না ছুঁই পানি",
+    "meaning_bn": "নিজে জড়িত না হয়ে কাজ হাসিল করা।",
+    "meaning_en": "Catch the fish without touching the water.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0061",
+    "text_bn": "নাচতে না জানলে উঠান বাঁকা",
+    "meaning_bn": "নিজের অক্ষমতার দোষ অন্যের ঘাড়ে চাপানো।",
+    "meaning_en": "A bad dancer blames the uneven courtyard.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0062",
+    "text_bn": "নিজের চরকায় তেল দাও",
+    "meaning_bn": "নিজের কাজে মন দাও।",
+    "meaning_en": "Oil your own spinning wheel: mind your own business.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0063",
+    "text_bn": "নুন আনতে পান্তা ফুরায়",
+    "meaning_bn": "অভাবের সংসার।",
+    "meaning_en": "By the time the salt arrives, the rice is gone.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0064",
+    "text_bn": "নেই মামার চেয়ে কানা মামা ভালো",
+    "meaning_bn": "কিছু না থাকার চেয়ে কিছু থাকা ভালো।",
+    "meaning_en": "A one-eyed uncle is better than none.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0065",
+    "text_bn": "নিজের নাক কেটে পরের যাত্রা ভঙ্গ",
+    "meaning_bn": "অন্যের ক্ষতি করতে নিজের ক্ষতি করা।",
+    "meaning_en": "Cutting off your own nose to spoil another's journey.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0066",
+    "text_bn": "পরের ধনে পোদ্দারি",
+    "meaning_bn": "অন্যের টাকায় বাহাদুরি।",
+    "meaning_en": "Playing the banker with other people's money.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0067",
+    "text_bn": "পাগলে কি না বলে, ছাগলে কি না খায়",
+    "meaning_bn": "অবুঝের কথায় গুরুত্ব দেওয়া চলে না।",
+    "meaning_en": "What won't a madman say, what won't a goat eat.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0068",
+    "text_bn": "পড়েছি মোগলের হাতে, খানা খেতে হবে সাথে",
+    "meaning_bn": "পরিস্থিতির সাথে মানিয়ে চলতে হয়।",
+    "meaning_en": "When in Rome, do as the Romans do.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0069",
+    "text_bn": "পিপীলিকার পাখা ওঠে মরিবার তরে",
+    "meaning_bn": "অহংকার পতনের কারণ।",
+    "meaning_en": "The ant grows wings only to die: pride before a fall.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0070",
+    "text_bn": "বজ্র আঁটুনি ফস্কা গেরো",
+    "meaning_bn": "বাইরে কড়া, ভেতরে ঢিলা।",
+    "meaning_en": "A tight grip with a loose knot.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0071",
+    "text_bn": "বসতে পেলে শুতে চায়",
+    "meaning_bn": "একটু সুযোগ পেলে আরও চায়।",
+    "meaning_en": "Give a seat and they want a bed.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0072",
+    "text_bn": "বামন হয়ে চাঁদে হাত",
+    "meaning_bn": "সাধ্যের বাইরে কিছু চাওয়া।",
+    "meaning_en": "A dwarf reaching for the moon.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0073",
+    "text_bn": "বিনা মেঘে বজ্রপাত",
+    "meaning_bn": "হঠাৎ বিপদ।",
+    "meaning_en": "Thunder without clouds: a bolt from the blue.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0074",
+    "text_bn": "বোবার শত্রু নেই",
+    "meaning_bn": "চুপ থাকলে শত্রু হয় না।",
+    "meaning_en": "The silent have no enemies.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0075",
+    "text_bn": "বানরের গলায় মুক্তার মালা",
+    "meaning_bn": "অযোগ্যের হাতে মূল্যবান জিনিস।",
+    "meaning_en": "A pearl necklace on a monkey.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0076",
+    "text_bn": "বিড়ালের ভাগ্যে শিকা ছেঁড়া",
+    "meaning_bn": "ভাগ্যক্রমে অপ্রত্যাশিত লাভ।",
+    "meaning_en": "The hanging basket breaks just for the cat: a lucky windfall.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0077",
+    "text_bn": "বড় গাছেই ঝড় লাগে",
+    "meaning_bn": "বড় মানুষের বিপদও বড়।",
+    "meaning_en": "The tallest trees catch the most wind.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0078",
+    "text_bn": "ভাগের মা গঙ্গা পায় না",
+    "meaning_bn": "দায়িত্ব ভাগ হলে কেউ পালন করে না।",
+    "meaning_en": "A mother shared by many sons never gets to the Ganges.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0079",
+    "text_bn": "ভিক্ষার চাল কাঁড়া আর আকাঁড়া",
+    "meaning_bn": "যে চায় তার বাছবিচার চলে না।",
+    "meaning_en": "Begged rice, husked or not: beggars can't be choosers.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0080",
+    "text_bn": "মাছের মায়ের পুত্রশোক",
+    "meaning_bn": "লোক দেখানো দুঃখ।",
+    "meaning_en": "A fish mourning her young: crocodile tears.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0081",
+    "text_bn": "মিষ্টি কথায় চিড়ে ভেজে না",
+    "meaning_bn": "শুধু মিষ্টি কথায় কাজ হয় না।",
+    "meaning_en": "Sweet words do not soak the flattened rice.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0082",
+    "text_bn": "মরা হাতি লাখ টাকা",
+    "meaning_bn": "মহৎ জিনিস পড়ে গেলেও মূল্য হারায় না।",
+    "meaning_en": "Even a dead elephant is worth a hundred thousand.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0083",
+    "text_bn": "মামার বাড়ির আবদার",
+    "meaning_bn": "অন্যায় দাবি।",
+    "meaning_en": "Demands as if at your uncle's house.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0084",
+    "text_bn": "মাথা নেই তার মাথা ব্যথা",
+    "meaning_bn": "যার সাথে সম্পর্ক নেই তার দুশ্চিন্তা।",
+    "meaning_en": "A headache for one who has no head.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0085",
+    "text_bn": "যত গর্জে তত বর্ষে না",
+    "meaning_bn": "যে বেশি হুমকি দেয় সে কম করে।",
+    "meaning_en": "Barking dogs seldom bite.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0086",
+    "text_bn": "যেমন কুকুর তেমন মুগুর",
+    "meaning_bn": "যেমন লোক তেমন ব্যবহার।",
+    "meaning_en": "A club to match the dog: tit for tat.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0087",
+    "text_bn": "যার বিয়ে তার খবর নাই, পাড়াপড়শির ঘুম নাই",
+    "meaning_bn": "যার বিষয় সে নির্লিপ্ত, অন্যরা ব্যস্ত।",
+    "meaning_en": "The groom is unconcerned while the neighbours lose sleep.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0088",
+    "text_bn": "যে যায় লঙ্কায় সে-ই হয় রাবণ",
+    "meaning_bn": "ক্ষমতা পেলে সবাই বদলে যায়।",
+    "meaning_en": "Whoever goes to Lanka becomes Ravana: power corrupts.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0089",
+    "text_bn": "যার শিল যার নোড়া, তারই ভাঙি দাঁতের গোড়া",
+    "meaning_bn": "নিজের অস্ত্রেই নিজে ঘায়েল।",
+    "meaning_en": "Breaking someone's teeth with their own grinding stone.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0090",
+    "text_bn": "রতনে রতন চেনে",
+    "meaning_bn": "গুণী গুণীকে চেনে।",
+    "meaning_en": "It takes a jewel to know a jewel.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0091",
+    "text_bn": "লোভে পাপ, পাপে মৃত্যু",
+    "meaning_bn": "লোভ থেকে পাপ, পাপ থেকে ধ্বংস।",
+    "meaning_en": "Greed leads to sin, and sin to death.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0092",
+    "text_bn": "শাক দিয়ে মাছ ঢাকা",
+    "meaning_bn": "স্পষ্ট দোষ লুকানোর চেষ্টা।",
+    "meaning_en": "Hiding a fish under greens.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0093",
+    "text_bn": "শুভস্য শীঘ্রম",
+    "meaning_bn": "ভালো কাজ দেরি না করে করা উচিত।",
+    "meaning_en": "Do good things without delay.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0094",
+    "text_bn": "সময়ের এক ফোঁড়, অসময়ের দশ ফোঁড়",
+    "meaning_bn": "সময়মতো কাজ করলে পরে কষ্ট কম।",
+    "meaning_en": "A stitch in time saves nine.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0095",
+    "text_bn": "সস্তার তিন অবস্থা",
+    "meaning_bn": "সস্তা জিনিস শেষে বেশি খরচ করায়।",
+    "meaning_en": "Cheap things cost you three times over.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0096",
+    "text_bn": "সাত নকলে আসল খাস্তা",
+    "meaning_bn": "বারবার নকল করলে আসল হারিয়ে যায়।",
+    "meaning_en": "Seven copies ruin the original.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0097",
+    "text_bn": "সবুরে মেওয়া ফলে",
+    "meaning_bn": "ধৈর্যের ফল মিষ্টি।",
+    "meaning_en": "Patience bears sweet fruit.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0098",
+    "text_bn": "সুখে থাকতে ভূতে কিলায়",
+    "meaning_bn": "ভালো অবস্থায় থেকেও ঝামেলা ডেকে আনা।",
+    "meaning_en": "Being comfortable, yet the ghost punches you: looking for trouble.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0099",
+    "text_bn": "সব ভালো যার শেষ ভালো",
+    "meaning_bn": "শেষ ভালো হলে সব ভালো।",
+    "meaning_en": "All's well that ends well.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0100",
+    "text_bn": "হাতি ঘোড়া গেল তল, মশা বলে কত জল",
+    "meaning_bn": "বড়রা যেখানে ব্যর্থ, ছোটরা সেখানে বড়াই করে।",
+    "meaning_en": "Elephants and horses drowned, and the mosquito asks how deep it is.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0101",
+    "text_bn": "হাতের লক্ষ্মী পায়ে ঠেলা",
+    "meaning_bn": "সৌভাগ্য অবহেলা করা।",
+    "meaning_en": "Kicking away the fortune in your hand.",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "proverb-0102",
+    "text_bn": "হাড়ে হাড়ে চেনা",
+    "meaning_bn": "ভালোভাবে চেনা।",
+    "meaning_en": "To know someone to the bone.",
+    "source": "Traditional (public domain)"
+  }
+]

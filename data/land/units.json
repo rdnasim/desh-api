@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "acre",
+    "name_en": "Acre",
+    "name_bn": "একর",
+    "aliases": [
+      "acres",
+      "ekor"
+    ],
+    "sqft": 43560,
+    "variants": []
+  },
+  {
+    "slug": "bigha",
+    "name_en": "Bigha",
+    "name_bn": "বিঘা",
+    "aliases": [
+      "bigah",
+      "bighas"
+    ],
+    "sqft": 14400,
+    "variants": []
+  },
+  {
+    "slug": "chotak",
+    "name_en": "Chotak",
+    "name_bn": "ছটাক",
+    "aliases": [
+      "chatak",
+      "chhotak",
+      "chotaks"
+    ],
+    "sqft": 45,
+    "variants": []
+  },
+  {
+    "slug": "decimal",
+    "name_en": "Decimal (Shotangsho)",
+    "name_bn": "শতাংশ",
+    "aliases": [
+      "dec",
+      "shatak",
+      "shatangsha",
+      "shotangsho",
+      "shotok",
+      "শতক"
+    ],
+    "sqft": 435.6,
+    "variants": []
+  },
+  {
+    "slug": "hectare",
+    "name_en": "Hectare",
+    "name_bn": "হেক্টর",
+    "aliases": [
+      "ha",
+      "hectares"
+    ],
+    "sqft": 107639.104,
+    "variants": []
+  },
+  {
+    "slug": "katha",
+    "name_en": "Katha",
+    "name_bn": "কাঠা",
+    "aliases": [
+      "kata",
+      "kathas",
+      "kattha"
+    ],
+    "sqft": 720,
+    "variants": []
+  },
+  {
+    "slug": "ojutangsho",
+    "name_en": "Ojutangsho",
+    "name_bn": "অযুতাংশ",
+    "aliases": [
+      "ajutangsha",
+      "ojutango"
+    ],
+    "sqft": 4.356,
+    "variants": []
+  },
+  {
+    "slug": "sqft",
+    "name_en": "Square foot",
+    "name_bn": "বর্গফুট",
+    "aliases": [
+      "ft2",
+      "sft",
+      "sq-ft",
+      "square-feet",
+      "square-foot"
+    ],
+    "sqft": 1,
+    "variants": []
+  },
+  {
+    "slug": "sqm",
+    "name_en": "Square metre",
+    "name_bn": "বর্গমিটার",
+    "aliases": [
+      "m2",
+      "sq-m",
+      "square-meter",
+      "square-metre"
+    ],
+    "sqft": 10.7639104,
+    "variants": []
+  },
+  {
+    "slug": "sqyd",
+    "name_en": "Square yard (Gaj)",
+    "name_bn": "বর্গগজ",
+    "aliases": [
+      "gaj",
+      "gaz",
+      "sq-yd",
+      "square-yard",
+      "yd2",
+      "গজ"
+    ],
+    "sqft": 9,
+    "variants": []
+  }
+]

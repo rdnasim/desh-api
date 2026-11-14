@@ -1,0 +1,748 @@
+[
+  {
+    "slug": "bagerhat",
+    "name_en": "Bagerhat",
+    "name_bn": "বাগেরহাট",
+    "aliases": [],
+    "bbs_code": "BD4001",
+    "url": "www.bagerhat.gov.bd",
+    "lat": 22.651568,
+    "lon": 89.785938,
+    "division": "khulna"
+  },
+  {
+    "slug": "bandarban",
+    "name_en": "Bandarban",
+    "name_bn": "বান্দরবান",
+    "aliases": [],
+    "bbs_code": "BD2003",
+    "url": "www.bandarban.gov.bd",
+    "lat": 22.195328,
+    "lon": 92.218377,
+    "division": "chattogram"
+  },
+  {
+    "slug": "barguna",
+    "name_en": "Barguna",
+    "name_bn": "বরগুনা",
+    "aliases": [],
+    "bbs_code": "BD1004",
+    "url": "www.barguna.gov.bd",
+    "lat": 22.159182,
+    "lon": 90.125581,
+    "division": "barishal"
+  },
+  {
+    "slug": "barishal",
+    "name_en": "Barishal",
+    "name_bn": "বরিশাল",
+    "aliases": [
+      "Barisal"
+    ],
+    "bbs_code": "BD1006",
+    "url": "www.barisal.gov.bd",
+    "lat": 22.700418,
+    "lon": 90.373157,
+    "division": "barishal"
+  },
+  {
+    "slug": "bhola",
+    "name_en": "Bhola",
+    "name_bn": "ভোলা",
+    "aliases": [],
+    "bbs_code": "BD1009",
+    "url": "www.bhola.gov.bd",
+    "lat": 22.685923,
+    "lon": 90.648179,
+    "division": "barishal"
+  },
+  {
+    "slug": "bogura",
+    "name_en": "Bogura",
+    "name_bn": "বগুড়া",
+    "aliases": [
+      "Bogra"
+    ],
+    "bbs_code": "BD5010",
+    "url": "www.bogra.gov.bd",
+    "lat": 24.846523,
+    "lon": 89.377755,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "brahmanbaria",
+    "name_en": "Brahmanbaria",
+    "name_bn": "ব্রাহ্মণবাড়িয়া",
+    "aliases": [],
+    "bbs_code": "BD2012",
+    "url": "www.brahmanbaria.gov.bd",
+    "lat": 23.95709,
+    "lon": 91.111929,
+    "division": "chattogram"
+  },
+  {
+    "slug": "chandpur",
+    "name_en": "Chandpur",
+    "name_bn": "চাঁদপুর",
+    "aliases": [],
+    "bbs_code": "BD2013",
+    "url": "www.chandpur.gov.bd",
+    "lat": 23.233259,
+    "lon": 90.671291,
+    "division": "chattogram"
+  },
+  {
+    "slug": "chapainababganj",
+    "name_en": "Chapainababganj",
+    "name_bn": "চাঁপাইনবাবগঞ্জ",
+    "aliases": [
+      "Chapai Nawabganj",
+      "Chapainawabganj",
+      "Nawabganj"
+    ],
+    "bbs_code": "BD5070",
+    "url": "www.chapainawabganj.gov.bd",
+    "lat": 24.596503,
+    "lon": 88.277512,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "chattogram",
+    "name_en": "Chattogram",
+    "name_bn": "চট্টগ্রাম",
+    "aliases": [
+      "Chittagong"
+    ],
+    "bbs_code": "BD2015",
+    "url": "www.chittagong.gov.bd",
+    "lat": 22.335109,
+    "lon": 91.834073,
+    "division": "chattogram"
+  },
+  {
+    "slug": "chuadanga",
+    "name_en": "Chuadanga",
+    "name_bn": "চুয়াডাঙ্গা",
+    "aliases": [],
+    "bbs_code": "BD4018",
+    "url": "www.chuadanga.gov.bd",
+    "lat": 23.640196,
+    "lon": 88.841841,
+    "division": "khulna"
+  },
+  {
+    "slug": "coxs-bazar",
+    "name_en": "Cox's Bazar",
+    "name_bn": "কক্সবাজার",
+    "aliases": [
+      "Cox Bazar",
+      "Coxs Bazar",
+      "Coxsbazar"
+    ],
+    "bbs_code": "BD2022",
+    "url": "www.coxsbazar.gov.bd",
+    "lat": 21.443158,
+    "lon": 91.973817,
+    "division": "chattogram"
+  },
+  {
+    "slug": "cumilla",
+    "name_en": "Cumilla",
+    "name_bn": "কুমিল্লা",
+    "aliases": [
+      "Comilla"
+    ],
+    "bbs_code": "BD2019",
+    "url": "www.comilla.gov.bd",
+    "lat": 23.468275,
+    "lon": 91.178814,
+    "division": "chattogram"
+  },
+  {
+    "slug": "dhaka",
+    "name_en": "Dhaka",
+    "name_bn": "ঢাকা",
+    "aliases": [],
+    "bbs_code": "BD3026",
+    "url": "www.dhaka.gov.bd",
+    "lat": 23.711525,
+    "lon": 90.411145,
+    "division": "dhaka"
+  },
+  {
+    "slug": "dinajpur",
+    "name_en": "Dinajpur",
+    "name_bn": "দিনাজপুর",
+    "aliases": [],
+    "bbs_code": "BD5527",
+    "url": "www.dinajpur.gov.bd",
+    "lat": 25.621706,
+    "lon": 88.63545,
+    "division": "rangpur"
+  },
+  {
+    "slug": "faridpur",
+    "name_en": "Faridpur",
+    "name_bn": "ফরিদপুর",
+    "aliases": [],
+    "bbs_code": "BD3029",
+    "url": "www.faridpur.gov.bd",
+    "lat": 23.607082,
+    "lon": 89.842941,
+    "division": "dhaka"
+  },
+  {
+    "slug": "feni",
+    "name_en": "Feni",
+    "name_bn": "ফেনী",
+    "aliases": [],
+    "bbs_code": "BD2030",
+    "url": "www.feni.gov.bd",
+    "lat": 23.023231,
+    "lon": 91.384084,
+    "division": "chattogram"
+  },
+  {
+    "slug": "gaibandha",
+    "name_en": "Gaibandha",
+    "name_bn": "গাইবান্ধা",
+    "aliases": [],
+    "bbs_code": "BD5532",
+    "url": "www.gaibandha.gov.bd",
+    "lat": 25.328751,
+    "lon": 89.528088,
+    "division": "rangpur"
+  },
+  {
+    "slug": "gazipur",
+    "name_en": "Gazipur",
+    "name_bn": "গাজীপুর",
+    "aliases": [],
+    "bbs_code": "BD3033",
+    "url": "www.gazipur.gov.bd",
+    "lat": 24.002286,
+    "lon": 90.426428,
+    "division": "dhaka"
+  },
+  {
+    "slug": "gopalganj",
+    "name_en": "Gopalganj",
+    "name_bn": "গোপালগঞ্জ",
+    "aliases": [],
+    "bbs_code": "BD3035",
+    "url": "www.gopalganj.gov.bd",
+    "lat": 23.005086,
+    "lon": 89.826606,
+    "division": "dhaka"
+  },
+  {
+    "slug": "habiganj",
+    "name_en": "Habiganj",
+    "name_bn": "হবিগঞ্জ",
+    "aliases": [
+      "Hobiganj"
+    ],
+    "bbs_code": "BD6036",
+    "url": "www.habiganj.gov.bd",
+    "lat": 24.374945,
+    "lon": 91.41553,
+    "division": "sylhet"
+  },
+  {
+    "slug": "jamalpur",
+    "name_en": "Jamalpur",
+    "name_bn": "জামালপুর",
+    "aliases": [],
+    "bbs_code": "BD4539",
+    "url": "www.jamalpur.gov.bd",
+    "lat": 24.937533,
+    "lon": 89.937775,
+    "division": "mymensingh"
+  },
+  {
+    "slug": "jashore",
+    "name_en": "Jashore",
+    "name_bn": "যশোর",
+    "aliases": [
+      "Jessore"
+    ],
+    "bbs_code": "BD4041",
+    "url": "www.jessore.gov.bd",
+    "lat": 23.16643,
+    "lon": 89.208113,
+    "division": "khulna"
+  },
+  {
+    "slug": "jhalokati",
+    "name_en": "Jhalokati",
+    "name_bn": "ঝালকাঠি",
+    "aliases": [
+      "Jhalakati",
+      "Jhalokathi"
+    ],
+    "bbs_code": "BD1042",
+    "url": "www.jhalakathi.gov.bd",
+    "lat": 22.642269,
+    "lon": 90.200393,
+    "division": "barishal"
+  },
+  {
+    "slug": "jhenaidah",
+    "name_en": "Jhenaidah",
+    "name_bn": "ঝিনাইদহ",
+    "aliases": [
+      "Jhenaidaha",
+      "Jhinaidah"
+    ],
+    "bbs_code": "BD4044",
+    "url": "www.jhenaidah.gov.bd",
+    "lat": 23.544818,
+    "lon": 89.153921,
+    "division": "khulna"
+  },
+  {
+    "slug": "joypurhat",
+    "name_en": "Joypurhat",
+    "name_bn": "জয়পুরহাট",
+    "aliases": [
+      "Jaipurhat"
+    ],
+    "bbs_code": "BD5038",
+    "url": "www.joypurhat.gov.bd",
+    "lat": 25.096369,
+    "lon": 89.040043,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "khagrachhari",
+    "name_en": "Khagrachhari",
+    "name_bn": "খাগড়াছড়ি",
+    "aliases": [
+      "Khagrachari"
+    ],
+    "bbs_code": "BD2046",
+    "url": "www.khagrachhari.gov.bd",
+    "lat": 23.119285,
+    "lon": 91.984663,
+    "division": "chattogram"
+  },
+  {
+    "slug": "khulna",
+    "name_en": "Khulna",
+    "name_bn": "খুলনা",
+    "aliases": [],
+    "bbs_code": "BD4047",
+    "url": "www.khulna.gov.bd",
+    "lat": 22.815774,
+    "lon": 89.568679,
+    "division": "khulna"
+  },
+  {
+    "slug": "kishoreganj",
+    "name_en": "Kishoreganj",
+    "name_bn": "কিশোরগঞ্জ",
+    "aliases": [],
+    "bbs_code": "BD3048",
+    "url": "www.kishoreganj.gov.bd",
+    "lat": 24.444937,
+    "lon": 90.776575,
+    "division": "dhaka"
+  },
+  {
+    "slug": "kurigram",
+    "name_en": "Kurigram",
+    "name_bn": "কুড়িগ্রাম",
+    "aliases": [],
+    "bbs_code": "BD5549",
+    "url": "www.kurigram.gov.bd",
+    "lat": 25.805445,
+    "lon": 89.636174,
+    "division": "rangpur"
+  },
+  {
+    "slug": "kushtia",
+    "name_en": "Kushtia",
+    "name_bn": "কুষ্টিয়া",
+    "aliases": [],
+    "bbs_code": "BD4050",
+    "url": "www.kushtia.gov.bd",
+    "lat": 23.901258,
+    "lon": 89.120482,
+    "division": "khulna"
+  },
+  {
+    "slug": "lakshmipur",
+    "name_en": "Lakshmipur",
+    "name_bn": "লক্ষ্মীপুর",
+    "aliases": [
+      "Laxmipur"
+    ],
+    "bbs_code": "BD2051",
+    "url": "www.lakshmipur.gov.bd",
+    "lat": 22.942477,
+    "lon": 90.841184,
+    "division": "chattogram"
+  },
+  {
+    "slug": "lalmonirhat",
+    "name_en": "Lalmonirhat",
+    "name_bn": "লালমনিরহাট",
+    "aliases": [],
+    "bbs_code": "BD5552",
+    "url": "www.lalmonirhat.gov.bd",
+    "lat": 25.916545,
+    "lon": 89.453241,
+    "division": "rangpur"
+  },
+  {
+    "slug": "madaripur",
+    "name_en": "Madaripur",
+    "name_bn": "মাদারীপুর",
+    "aliases": [],
+    "bbs_code": "BD3054",
+    "url": "www.madaripur.gov.bd",
+    "lat": 23.164102,
+    "lon": 90.189681,
+    "division": "dhaka"
+  },
+  {
+    "slug": "magura",
+    "name_en": "Magura",
+    "name_bn": "মাগুরা",
+    "aliases": [],
+    "bbs_code": "BD4055",
+    "url": "www.magura.gov.bd",
+    "lat": 23.487337,
+    "lon": 89.419956,
+    "division": "khulna"
+  },
+  {
+    "slug": "manikganj",
+    "name_en": "Manikganj",
+    "name_bn": "মানিকগঞ্জ",
+    "aliases": [],
+    "bbs_code": "BD3056",
+    "url": "www.manikganj.gov.bd",
+    "lat": 23.860226,
+    "lon": 90.001829,
+    "division": "dhaka"
+  },
+  {
+    "slug": "meherpur",
+    "name_en": "Meherpur",
+    "name_bn": "মেহেরপুর",
+    "aliases": [],
+    "bbs_code": "BD4057",
+    "url": "www.meherpur.gov.bd",
+    "lat": 23.762213,
+    "lon": 88.631821,
+    "division": "khulna"
+  },
+  {
+    "slug": "moulvibazar",
+    "name_en": "Moulvibazar",
+    "name_bn": "মৌলভীবাজার",
+    "aliases": [
+      "Maulvibazar"
+    ],
+    "bbs_code": "BD6058",
+    "url": "www.moulvibazar.gov.bd",
+    "lat": 24.482934,
+    "lon": 91.777417,
+    "division": "sylhet"
+  },
+  {
+    "slug": "munshiganj",
+    "name_en": "Munshiganj",
+    "name_bn": "মুন্সিগঞ্জ",
+    "aliases": [],
+    "bbs_code": "BD3059",
+    "url": "www.munshiganj.gov.bd",
+    "lat": 23.543574,
+    "lon": 90.535433,
+    "division": "dhaka"
+  },
+  {
+    "slug": "mymensingh",
+    "name_en": "Mymensingh",
+    "name_bn": "ময়মনসিংহ",
+    "aliases": [],
+    "bbs_code": "BD4561",
+    "url": "www.mymensingh.gov.bd",
+    "lat": 24.746567,
+    "lon": 90.407209,
+    "division": "mymensingh"
+  },
+  {
+    "slug": "naogaon",
+    "name_en": "Naogaon",
+    "name_bn": "নওগাঁ",
+    "aliases": [],
+    "bbs_code": "BD5064",
+    "url": "www.naogaon.gov.bd",
+    "lat": 24.832562,
+    "lon": 88.924852,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "narail",
+    "name_en": "Narail",
+    "name_bn": "নড়াইল",
+    "aliases": [],
+    "bbs_code": "BD4065",
+    "url": "www.narail.gov.bd",
+    "lat": 23.172534,
+    "lon": 89.512672,
+    "division": "khulna"
+  },
+  {
+    "slug": "narayanganj",
+    "name_en": "Narayanganj",
+    "name_bn": "নারায়ণগঞ্জ",
+    "aliases": [],
+    "bbs_code": "BD3067",
+    "url": "www.narayanganj.gov.bd",
+    "lat": 23.63366,
+    "lon": 90.496482,
+    "division": "dhaka"
+  },
+  {
+    "slug": "narsingdi",
+    "name_en": "Narsingdi",
+    "name_bn": "নরসিংদী",
+    "aliases": [
+      "Narsinghdi"
+    ],
+    "bbs_code": "BD3068",
+    "url": "www.narsingdi.gov.bd",
+    "lat": 23.932233,
+    "lon": 90.71541,
+    "division": "dhaka"
+  },
+  {
+    "slug": "natore",
+    "name_en": "Natore",
+    "name_bn": "নাটোর",
+    "aliases": [],
+    "bbs_code": "BD5069",
+    "url": "www.natore.gov.bd",
+    "lat": 24.420556,
+    "lon": 89.000282,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "netrakona",
+    "name_en": "Netrakona",
+    "name_bn": "নেত্রকোণা",
+    "aliases": [
+      "Netrokona"
+    ],
+    "bbs_code": "BD4572",
+    "url": "www.netrokona.gov.bd",
+    "lat": 24.870955,
+    "lon": 90.727887,
+    "division": "mymensingh"
+  },
+  {
+    "slug": "nilphamari",
+    "name_en": "Nilphamari",
+    "name_bn": "নীলফামারী",
+    "aliases": [],
+    "bbs_code": "BD5573",
+    "url": "www.nilphamari.gov.bd",
+    "lat": 25.931794,
+    "lon": 88.856006,
+    "division": "rangpur"
+  },
+  {
+    "slug": "noakhali",
+    "name_en": "Noakhali",
+    "name_bn": "নোয়াখালী",
+    "aliases": [],
+    "bbs_code": "BD2075",
+    "url": "www.noakhali.gov.bd",
+    "lat": 22.869563,
+    "lon": 91.099398,
+    "division": "chattogram"
+  },
+  {
+    "slug": "pabna",
+    "name_en": "Pabna",
+    "name_bn": "পাবনা",
+    "aliases": [],
+    "bbs_code": "BD5076",
+    "url": "www.pabna.gov.bd",
+    "lat": 23.998524,
+    "lon": 89.233645,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "panchagarh",
+    "name_en": "Panchagarh",
+    "name_bn": "পঞ্চগড়",
+    "aliases": [
+      "Panchagar"
+    ],
+    "bbs_code": "BD5577",
+    "url": "www.panchagarh.gov.bd",
+    "lat": 26.3411,
+    "lon": 88.554161,
+    "division": "rangpur"
+  },
+  {
+    "slug": "patuakhali",
+    "name_en": "Patuakhali",
+    "name_bn": "পটুয়াখালী",
+    "aliases": [],
+    "bbs_code": "BD1078",
+    "url": "www.patuakhali.gov.bd",
+    "lat": 22.359632,
+    "lon": 90.329871,
+    "division": "barishal"
+  },
+  {
+    "slug": "pirojpur",
+    "name_en": "Pirojpur",
+    "name_bn": "পিরোজপুর",
+    "aliases": [],
+    "bbs_code": "BD1079",
+    "url": "www.pirojpur.gov.bd",
+    "lat": 22.57814,
+    "lon": 89.998391,
+    "division": "barishal"
+  },
+  {
+    "slug": "rajbari",
+    "name_en": "Rajbari",
+    "name_bn": "রাজবাড়ী",
+    "aliases": [],
+    "bbs_code": "BD3082",
+    "url": "www.rajbari.gov.bd",
+    "lat": 23.757431,
+    "lon": 89.644467,
+    "division": "dhaka"
+  },
+  {
+    "slug": "rajshahi",
+    "name_en": "Rajshahi",
+    "name_bn": "রাজশাহী",
+    "aliases": [],
+    "bbs_code": "BD5081",
+    "url": "www.rajshahi.gov.bd",
+    "lat": 24.372303,
+    "lon": 88.563076,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "rangamati",
+    "name_en": "Rangamati",
+    "name_bn": "রাঙ্গামাটি",
+    "aliases": [],
+    "bbs_code": "BD2084",
+    "url": "www.rangamati.gov.bd",
+    "lat": 22.65561,
+    "lon": 92.175411,
+    "division": "chattogram"
+  },
+  {
+    "slug": "rangpur",
+    "name_en": "Rangpur",
+    "name_bn": "রংপুর",
+    "aliases": [],
+    "bbs_code": "BD5585",
+    "url": "www.rangpur.gov.bd",
+    "lat": 25.75581,
+    "lon": 89.244462,
+    "division": "rangpur"
+  },
+  {
+    "slug": "satkhira",
+    "name_en": "Satkhira",
+    "name_bn": "সাতক্ষীরা",
+    "aliases": [],
+    "bbs_code": "BD4087",
+    "url": "www.satkhira.gov.bd",
+    "lat": 22.718091,
+    "lon": 89.068703,
+    "division": "khulna"
+  },
+  {
+    "slug": "shariatpur",
+    "name_en": "Shariatpur",
+    "name_bn": "শরীয়তপুর",
+    "aliases": [],
+    "bbs_code": "BD3086",
+    "url": "www.shariatpur.gov.bd",
+    "lat": 23.20602,
+    "lon": 90.347773,
+    "division": "dhaka"
+  },
+  {
+    "slug": "sherpur",
+    "name_en": "Sherpur",
+    "name_bn": "শেরপুর",
+    "aliases": [],
+    "bbs_code": "BD4589",
+    "url": "www.sherpur.gov.bd",
+    "lat": 25.020493,
+    "lon": 90.015297,
+    "division": "mymensingh"
+  },
+  {
+    "slug": "sirajganj",
+    "name_en": "Sirajganj",
+    "name_bn": "সিরাজগঞ্জ",
+    "aliases": [
+      "Serajganj"
+    ],
+    "bbs_code": "BD5088",
+    "url": "www.sirajganj.gov.bd",
+    "lat": 24.453398,
+    "lon": 89.700682,
+    "division": "rajshahi"
+  },
+  {
+    "slug": "sunamganj",
+    "name_en": "Sunamganj",
+    "name_bn": "সুনামগঞ্জ",
+    "aliases": [],
+    "bbs_code": "BD6090",
+    "url": "www.sunamganj.gov.bd",
+    "lat": 25.065804,
+    "lon": 91.395012,
+    "division": "sylhet"
+  },
+  {
+    "slug": "sylhet",
+    "name_en": "Sylhet",
+    "name_bn": "সিলেট",
+    "aliases": [],
+    "bbs_code": "BD6091",
+    "url": "www.sylhet.gov.bd",
+    "lat": 24.889796,
+    "lon": 91.869789,
+    "division": "sylhet"
+  },
+  {
+    "slug": "tangail",
+    "name_en": "Tangail",
+    "name_bn": "টাঙ্গাইল",
+    "aliases": [],
+    "bbs_code": "BD3093",
+    "url": "www.tangail.gov.bd",
+    "lat": 24.264145,
+    "lon": 89.918029,
+    "division": "dhaka"
+  },
+  {
+    "slug": "thakurgaon",
+    "name_en": "Thakurgaon",
+    "name_bn": "ঠাকুরগাঁও",
+    "aliases": [],
+    "bbs_code": "BD5594",
+    "url": "www.thakurgaon.gov.bd",
+    "lat": 26.033695,
+    "lon": 88.461683,
+    "division": "rangpur"
+  }
+]

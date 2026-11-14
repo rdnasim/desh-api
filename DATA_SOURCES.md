@@ -1,0 +1,26 @@
+# Data sources
+
+<!-- Generated from data/meta.json by `pnpm data:docs`. Do not edit by hand. -->
+
+Every API response names its source in `meta.source`. This page lists the source, licence and
+credits for each dataset. When you reuse the data, please credit "Desh API contributors" and the
+upstream sources below.
+
+| Dataset | Source | Licence | Retrieved | Last updated | Credits |
+|---|---|---|---|---|---|
+| `convert.bijoy-map` | [SutonnyMJ Bijoy mapping derived from bn-ansi-to-unicode (BinduLogic)](https://github.com/BinduLogic/bn-ansi-to-unicode) | MIT (Copyright (c) 2022 BinduLogic LLC); desh-api additions CC BY 4.0 | 2026-11-14 | 2026-11-14 | BinduLogic LLC (bn-ansi-to-unicode) |
+| `fun.dishes` | [Department of Patents, Designs and Trademarks (DPDT), granted GI products list (page updated 2026-11-04)](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) | Public government information; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | Department of Patents, Designs and Trademarks, Bangladesh |
+| `fun.history` | Facts read from cited pages (Wikipedia: Bengali language movement, Bangladesh Liberation War, Provisional Government of Bangladesh, National symbols of Bangladesh); each event cites its page | Facts; descriptions CC BY 4.0 | 2026-11-14 | 2026-11-14 | Wikipedia contributors; desh-api contributors |
+| `fun.proverbs` | Traditional Bangla proverbs (public domain); meanings written by desh-api contributors | Public domain proverbs; meanings CC BY 4.0 | 2026-11-14 | 2026-11-14 | desh-api contributors |
+| `fun.quiz` | Facts read from cited pages (Wikipedia: National symbols of Bangladesh, Bengali language movement, Bangladesh Liberation War, Provisional Government of Bangladesh, Geography of Bangladesh); each question cites its page. Facts where sources disagreed were left out. | Facts; questions CC BY 4.0 | 2026-11-14 | 2026-11-14 | Wikipedia contributors; desh-api contributors |
+| `fun.riddles` | Traditional Bangla riddles (public domain) | Public domain riddles; translations CC BY 4.0 | 2026-11-14 | 2026-11-14 | desh-api contributors |
+| `geo.city-corporations` | [Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)](https://github.com/nuhil/bangladesh-geocode) | MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0 | 2026-11-13 | 2026-11-12 | Nuhil Mehdy and contributors (nuhil/bangladesh-geocode); Bangladesh Bureau of Statistics; UN OCHA Humanitarian Data Exchange |
+| `geo.districts` | [Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)](https://github.com/nuhil/bangladesh-geocode) | MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0 | 2026-11-13 | 2026-11-12 | Nuhil Mehdy and contributors (nuhil/bangladesh-geocode); Bangladesh Bureau of Statistics; UN OCHA Humanitarian Data Exchange |
+| `geo.divisions` | [Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)](https://github.com/nuhil/bangladesh-geocode) | MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0 | 2026-11-13 | 2026-11-12 | Nuhil Mehdy and contributors (nuhil/bangladesh-geocode); Bangladesh Bureau of Statistics; UN OCHA Humanitarian Data Exchange |
+| `geo.postcodes` | [Bangladesh GeoCode (GeoNames postal codes, compiled from the Bangladesh Post Office list)](https://github.com/nuhil/bangladesh-geocode) | MIT (compilation); GeoNames data CC BY 4.0 | 2026-11-13 | 2026-11-12 | Nuhil Mehdy and contributors (nuhil/bangladesh-geocode); GeoNames; Bangladesh Post Office |
+| `geo.unions` | [Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)](https://github.com/nuhil/bangladesh-geocode) | MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0 | 2026-11-13 | 2026-11-12 | Nuhil Mehdy and contributors (nuhil/bangladesh-geocode); Bangladesh Bureau of Statistics; UN OCHA Humanitarian Data Exchange |
+| `geo.upazilas` | [Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)](https://github.com/nuhil/bangladesh-geocode) | MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0 | 2026-11-13 | 2026-11-12 | Nuhil Mehdy and contributors (nuhil/bangladesh-geocode); Bangladesh Bureau of Statistics; UN OCHA Humanitarian Data Exchange |
+| `hotlines` | [Bangladesh National Portal, 'জরুরি হটলাইন' (page updated 2026-07-28); Directorate General of Health Services for 16263](https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89) | Public government information; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | Bangladesh National Portal (bangladesh.gov.bd); Directorate General of Health Services |
+| `land.units` | Standard Bangladesh land measurement equivalents (1 acre = 100 decimal = 43,560 sq ft; 1 katha = 720 sq ft; 1 bigha = 20 katha); metric factors from the international foot (0.3048 m) | Facts; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | desh-api contributors |
+| `phone.prefixes` | [BTRC mobile numbering plan (operator prefix allocation)](https://www.btrc.gov.bd) | Public information; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | Bangladesh Telecommunication Regulatory Commission |
+| `validate.vehicle-area-aliases` | Abbreviations seen on BRTA registration plates (e.g. 'চট্ট মেট্রো' for Chattogram Metro); full area names come from geo.districts | CC BY 4.0 | 2026-11-14 | 2026-11-14 | desh-api contributors |

@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "desh-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "observability": {
+    "enabled": true,
+    // Invocation logs record full request URLs, which can contain NID/phone numbers.
+    // We emit our own route-template-only log line instead (see src/lib/logger.ts).
+    "logs": { "enabled": true, "invocation_logs": false }
+  },
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 120, "period": 60 }
+    }
+  ],
+  "vars": {
+    "VERSION": "dev"
+  }
+}

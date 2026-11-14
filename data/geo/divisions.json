@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "barishal",
+    "name_en": "Barishal",
+    "name_bn": "বরিশাল",
+    "aliases": [
+      "Barisal"
+    ],
+    "bbs_code": "BD10",
+    "url": "www.barisaldiv.gov.bd",
+    "lat": 22.392843,
+    "lon": 90.406395
+  },
+  {
+    "slug": "chattogram",
+    "name_en": "Chattogram",
+    "name_bn": "চট্টগ্রাম",
+    "aliases": [
+      "Chittagong"
+    ],
+    "bbs_code": "BD20",
+    "url": "www.chittagongdiv.gov.bd",
+    "lat": 22.701308,
+    "lon": 91.705861
+  },
+  {
+    "slug": "dhaka",
+    "name_en": "Dhaka",
+    "name_bn": "ঢাকা",
+    "aliases": [],
+    "bbs_code": "BD30",
+    "url": "www.dhakadiv.gov.bd",
+    "lat": 23.839021,
+    "lon": 90.242159
+  },
+  {
+    "slug": "khulna",
+    "name_en": "Khulna",
+    "name_bn": "খুলনা",
+    "aliases": [],
+    "bbs_code": "BD40",
+    "url": "www.khulnadiv.gov.bd",
+    "lat": 22.837718,
+    "lon": 89.304779
+  },
+  {
+    "slug": "mymensingh",
+    "name_en": "Mymensingh",
+    "name_bn": "ময়মনসিংহ",
+    "aliases": [],
+    "bbs_code": "BD45",
+    "url": "www.mymensinghdiv.gov.bd",
+    "lat": 24.84783,
+    "lon": 90.381745
+  },
+  {
+    "slug": "rajshahi",
+    "name_en": "Rajshahi",
+    "name_bn": "রাজশাহী",
+    "aliases": [],
+    "bbs_code": "BD50",
+    "url": "www.rajshahidiv.gov.bd",
+    "lat": 24.589338,
+    "lon": 89.046363
+  },
+  {
+    "slug": "rangpur",
+    "name_en": "Rangpur",
+    "name_bn": "রংপুর",
+    "aliases": [],
+    "bbs_code": "BD55",
+    "url": "www.rangpurdiv.gov.bd",
+    "lat": 25.780421,
+    "lon": 89.054095
+  },
+  {
+    "slug": "sylhet",
+    "name_en": "Sylhet",
+    "name_bn": "সিলেট",
+    "aliases": [],
+    "bbs_code": "BD60",
+    "url": "www.sylhetdiv.gov.bd",
+    "lat": 24.715289,
+    "lon": 91.664713
+  }
+]

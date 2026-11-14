@@ -1,0 +1,25 @@
+name: Bug
+description: The API returns an error or a wrong result
+labels: [bug]
+body:
+  - type: input
+    id: request
+    attributes:
+      label: Request
+      description: Method and URL (leave out any personal data such as NID or phone numbers)
+      placeholder: GET /v1/bangla/num-to-words?n=1250
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Paste the response body
+    validations:
+      required: true

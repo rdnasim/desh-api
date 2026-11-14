@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "barishal",
+    "name_en": "Barishal City Corporation",
+    "name_bn": "বরিশাল সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD10065000",
+    "url": "barishalcity.gov.bd",
+    "lat": 22.70207,
+    "lon": 90.342336,
+    "district": "barishal"
+  },
+  {
+    "slug": "chattogram",
+    "name_en": "Chattogram City Corporation",
+    "name_bn": "চট্টগ্রাম সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD20151600",
+    "url": "ccc.gov.bd",
+    "lat": 22.345521,
+    "lon": 91.808973,
+    "district": "chattogram"
+  },
+  {
+    "slug": "cumilla",
+    "name_en": "Cumilla City Corporation",
+    "name_bn": "কুমিল্লা সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD20195000",
+    "lat": 23.43375,
+    "lon": 91.183351,
+    "district": "cumilla"
+  },
+  {
+    "slug": "dhaka-north",
+    "name_en": "Dhaka North City Corporation",
+    "name_bn": "ঢাকা উত্তর সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD30262500",
+    "url": "dncc.gov.bd",
+    "lat": 23.820778,
+    "lon": 90.406191,
+    "district": "dhaka"
+  },
+  {
+    "slug": "dhaka-south",
+    "name_en": "Dhaka South City Corporation",
+    "name_bn": "ঢাকা দক্ষিণ সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD30262000",
+    "url": "dscc.gov.bd",
+    "lat": 23.726755,
+    "lon": 90.437424,
+    "district": "dhaka"
+  },
+  {
+    "slug": "gazipur",
+    "name_en": "Gazipur City Corporation",
+    "name_bn": "গাজীপুর সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD30333300",
+    "url": "gcc.gov.bd",
+    "lat": 23.983191,
+    "lon": 90.38474,
+    "district": "gazipur"
+  },
+  {
+    "slug": "khulna",
+    "name_en": "Khulna City Corporation",
+    "name_bn": "খুলনা সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD40473300",
+    "lat": 22.837318,
+    "lon": 89.541144,
+    "district": "khulna"
+  },
+  {
+    "slug": "mymensingh",
+    "name_en": "Mymensingh City Corporation",
+    "name_bn": "ময়মনসিংহ সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD45614000",
+    "url": "mcc.gov.bd",
+    "lat": 24.749811,
+    "lon": 90.405808,
+    "district": "mymensingh"
+  },
+  {
+    "slug": "narayanganj",
+    "name_en": "Narayanganj City Corporation",
+    "name_bn": "নারায়ণগঞ্জ সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD30674400",
+    "url": "ncc.gov.bd",
+    "lat": 23.652714,
+    "lon": 90.510362,
+    "district": "narayanganj"
+  },
+  {
+    "slug": "rajshahi",
+    "name_en": "Rajshahi City Corporation",
+    "name_bn": "রাজশাহী সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD50816600",
+    "lat": 24.380773,
+    "lon": 88.608748,
+    "district": "rajshahi"
+  },
+  {
+    "slug": "rangpur",
+    "name_en": "Rangpur City Corporation",
+    "name_bn": "রংপুর সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD55857500",
+    "url": "rpcc.gov.bd",
+    "lat": 25.753226,
+    "lon": 89.244234,
+    "district": "rangpur"
+  },
+  {
+    "slug": "sylhet",
+    "name_en": "Sylhet City Corporation",
+    "name_bn": "সিলেট সিটি কর্পোরেশন",
+    "aliases": [],
+    "bbs_code": "BD60915000",
+    "url": "scc.gov.bd",
+    "lat": 24.894932,
+    "lon": 91.871795,
+    "district": "sylhet"
+  }
+]

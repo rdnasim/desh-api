@@ -1,0 +1,8 @@
+# Reviews are requested automatically from these owners.
+# Safety-critical data needs two approvals (constitution: Development Workflow). Add a second
+# maintainer to the hotline line below and enable "Require review from Code Owners" with 2 required
+# approvals in the branch protection rules for main.
+
+*                       @rdnasim
+/data/hotlines/         @rdnasim
+/.specify/memory/       @rdnasim

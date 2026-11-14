@@ -1,0 +1,187 @@
+[
+  {
+    "dataset": "convert.bijoy-map",
+    "source": "SutonnyMJ Bijoy mapping derived from bn-ansi-to-unicode (BinduLogic)",
+    "source_url": "https://github.com/BinduLogic/bn-ansi-to-unicode",
+    "licence": "MIT (Copyright (c) 2022 BinduLogic LLC); desh-api additions CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "BinduLogic LLC (bn-ansi-to-unicode)"
+    ]
+  },
+  {
+    "dataset": "fun.dishes",
+    "source": "Department of Patents, Designs and Trademarks (DPDT), granted GI products list (page updated 2026-11-04)",
+    "source_url": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Department of Patents, Designs and Trademarks, Bangladesh"
+    ]
+  },
+  {
+    "dataset": "fun.history",
+    "source": "Facts read from cited pages (Wikipedia: Bengali language movement, Bangladesh Liberation War, Provisional Government of Bangladesh, National symbols of Bangladesh); each event cites its page",
+    "licence": "Facts; descriptions CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Wikipedia contributors",
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "fun.proverbs",
+    "source": "Traditional Bangla proverbs (public domain); meanings written by desh-api contributors",
+    "licence": "Public domain proverbs; meanings CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "fun.quiz",
+    "source": "Facts read from cited pages (Wikipedia: National symbols of Bangladesh, Bengali language movement, Bangladesh Liberation War, Provisional Government of Bangladesh, Geography of Bangladesh); each question cites its page. Facts where sources disagreed were left out.",
+    "licence": "Facts; questions CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Wikipedia contributors",
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "fun.riddles",
+    "source": "Traditional Bangla riddles (public domain)",
+    "licence": "Public domain riddles; translations CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "geo.city-corporations",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
+  },
+  {
+    "dataset": "geo.districts",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
+  },
+  {
+    "dataset": "geo.divisions",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
+  },
+  {
+    "dataset": "geo.postcodes",
+    "source": "Bangladesh GeoCode (GeoNames postal codes, compiled from the Bangladesh Post Office list)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); GeoNames data CC BY 4.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "GeoNames",
+      "Bangladesh Post Office"
+    ]
+  },
+  {
+    "dataset": "geo.unions",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
+  },
+  {
+    "dataset": "geo.upazilas",
+    "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
+    "source_url": "https://github.com/nuhil/bangladesh-geocode",
+    "licence": "MIT (compilation); BBS/OCHA COD-AB data CC BY-IGO 3.0",
+    "retrieved": "2026-11-13",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
+      "Bangladesh Bureau of Statistics",
+      "UN OCHA Humanitarian Data Exchange"
+    ]
+  },
+  {
+    "dataset": "hotlines",
+    "source": "Bangladesh National Portal, 'জরুরি হটলাইন' (page updated 2026-07-28); Directorate General of Health Services for 16263",
+    "source_url": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Bangladesh National Portal (bangladesh.gov.bd)",
+      "Directorate General of Health Services"
+    ]
+  },
+  {
+    "dataset": "land.units",
+    "source": "Standard Bangladesh land measurement equivalents (1 acre = 100 decimal = 43,560 sq ft; 1 katha = 720 sq ft; 1 bigha = 20 katha); metric factors from the international foot (0.3048 m)",
+    "licence": "Facts; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "phone.prefixes",
+    "source": "BTRC mobile numbering plan (operator prefix allocation)",
+    "source_url": "https://www.btrc.gov.bd",
+    "licence": "Public information; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "Bangladesh Telecommunication Regulatory Commission"
+    ]
+  },
+  {
+    "dataset": "validate.vehicle-area-aliases",
+    "source": "Abbreviations seen on BRTA registration plates (e.g. 'চট্ট মেট্রো' for Chattogram Metro); full area names come from geo.districts",
+    "licence": "CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
+    ]
+  }
+]
