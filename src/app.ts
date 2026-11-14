@@ -4,6 +4,7 @@ import { cors } from 'hono/cors';
 import { etag } from 'hono/etag';
 import { OPENAPI_CONFIG } from './docs';
 import type { AppEnv } from './env';
+import { LANDING_HTML } from './landing';
 import { defaultNoStore } from './lib/cache';
 import { errorHandler, notFoundHandler, validationHook } from './lib/errors';
 import { logger } from './lib/logger';
@@ -75,15 +76,21 @@ app.use('*', defaultNoStore);
 app.use('*', etag());
 app.use('/v1/*', rateLimit);
 
-app.get('/', (c) =>
-  c.json({
+// Browsers get the landing page; API clients (curl, fetch) get the JSON index.
+app.get('/', (c) => {
+  c.header('Vary', 'Accept');
+  if (c.req.header('accept')?.includes('text/html')) {
+    c.header('Cache-Control', 'public, max-age=3600');
+    return c.html(LANDING_HTML);
+  }
+  return c.json({
     name: 'Desh API',
     description: 'Open public API for Bangladesh: reference data and Bangla language tools',
     docs: '/docs',
     openapi: '/openapi.json',
     modules: MODULES,
-  }),
-);
+  });
+});
 
 app.get('/health', (c) => c.json({ status: 'ok', version: c.env?.VERSION ?? 'dev' }));
 
