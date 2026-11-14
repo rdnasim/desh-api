@@ -120,7 +120,7 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
   **Known upstream issue**: য-ফলা is emitted as `্য়` instead of `্য` (`sondhya` → সন্ধ্য়া);
   such cases are left out of the golden file and should be reported upstream.
 
-## R11. Bijoy ↔ Unicode — **VERIFY licence**
+## R11. Bijoy ↔ Unicode — ✅ resolved 2026-11-14
 
 - **Decision**: Table-driven converter: (1) longest-match character map (SutonnyMJ code points →
   Unicode), (2) reordering pass for pre-base vowel signs (ি, ে, ৈ) and reph (র্), (3) `ো/ৌ` composition,
@@ -130,6 +130,18 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
   is compatible, build the map from the SutonnyMJ glyph chart.
 - **Golden corpus**: ≥ 200 reviewed lines covering conjuncts, reph, ya/ra-phala, hasanta, ৎ, ঁ,
   Bangla digits, and punctuation (`tests/golden/bijoy/*.txt`).
+- **Finding**: The mapping (188 entries, `data/convert/bijoy-map.json`) is derived from
+  `bn-ansi-to-unicode` (BinduLogic, MIT, explicit copyright file), with a `kind` per entry and a
+  `preferred_reverse` flag where several Bijoy glyphs map to the same Unicode. The converter code is
+  our own. `bijoy-unicode-converter` (npm, labelled MIT) was rejected: its code matches S. M.
+  Mahbub Murshed's Bijoy converter, which I believe is GPL, so the MIT label may not hold. A package
+  published the day before the survey was skipped as a supply-chain risk.
+- **Golden method**: 261 Bangla lines were encoded by our encoder and decoded by BinduLogic's
+  independent decoder; 255 agree exactly with the source text and contain no Bangla Unicode on the
+  Bijoy side. The other 6 all contain ৌ (typed `‡` + consonant + `Š`), which that decoder cannot
+  produce; they are kept separately as hand-checked. Two Bijoy samples from outside sources (vision
+  doc, upstream README) decode correctly. The "no Bangla in Bijoy output" guard was added after it
+  caught a real bug (ো left un-split) that both decoders had passed through silently.
 - **Limit**: 100 KB per request (FR-041); conversion is O(n) and well within the 10 ms CPU budget
   for that size — benchmark in tests.
 
@@ -153,7 +165,7 @@ confirmed (and the finding recorded here) during the Setup/data tasks before the
 
 Validators never echo the input back in logs; responses echo only the normalised value to the caller.
 
-## R14. Land units — **VERIFY regional values**
+## R14. Land units — ✅ standard units shipped 2026-11-14; regional values still open
 
 - **Decision**: Canonical base unit = square foot. Unambiguous values: 1 acre = 43,560 sq ft;
   1 decimal (শতাংশ) = 435.6 sq ft; 1 ojutangsho = 4.356 sq ft; 1 katha = 720 sq ft (standard);
@@ -164,6 +176,9 @@ Validators never echo the input back in logs; responses echo only the normalised
 - **To verify**: collect regional values (Sylhet, Chattogram, Barishal, Khulna) with sources from
   the Land Ministry / DLRS and field references before publishing those variants. Unverified
   variants are omitted rather than guessed (constitution I).
+- **Shipped**: 10 standard units (sq ft, sq m, sq yd/gaj, decimal, ojutangsho, chotak, katha,
+  bigha, acre, hectare) with Bangla names and aliases; `variants` is empty and only `standard` is a
+  valid region until sourced values are contributed. Kani, gonda, kora and kranti are not included.
 
 ## R15. Hotlines
 

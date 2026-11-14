@@ -1,0 +1,985 @@
+[
+  {
+    "bijoy": "&",
+    "unicode": "্‌",
+    "kind": "hasanta"
+  },
+  {
+    "bijoy": "0",
+    "unicode": "০",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "1",
+    "unicode": "১",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "2",
+    "unicode": "২",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "3",
+    "unicode": "৩",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "4",
+    "unicode": "৪",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "5",
+    "unicode": "৫",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "6",
+    "unicode": "৬",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "7",
+    "unicode": "৭",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "8",
+    "unicode": "৮",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "9",
+    "unicode": "৯",
+    "kind": "digit"
+  },
+  {
+    "bijoy": "A",
+    "unicode": "অ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "Av",
+    "unicode": "আ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "B",
+    "unicode": "ই",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "C",
+    "unicode": "ঈ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "D",
+    "unicode": "উ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "E",
+    "unicode": "ঊ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "F",
+    "unicode": "ঋ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "G",
+    "unicode": "এ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "H",
+    "unicode": "ঐ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "I",
+    "unicode": "ও",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "J",
+    "unicode": "ঔ",
+    "kind": "vowel"
+  },
+  {
+    "bijoy": "K",
+    "unicode": "ক",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "L",
+    "unicode": "খ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "M",
+    "unicode": "গ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "N",
+    "unicode": "ঘ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "O",
+    "unicode": "ঙ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "P",
+    "unicode": "চ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "Q",
+    "unicode": "ছ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "R",
+    "unicode": "জ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "S",
+    "unicode": "ঝ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "T",
+    "unicode": "ঞ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "U",
+    "unicode": "ট",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "V",
+    "unicode": "ঠ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "W",
+    "unicode": "ড",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "X",
+    "unicode": "ঢ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "Y",
+    "unicode": "ণ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "Z",
+    "unicode": "ত",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "^",
+    "unicode": "্ব",
+    "kind": "phala",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "_",
+    "unicode": "থ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "`",
+    "unicode": "দ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "a",
+    "unicode": "ধ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "b",
+    "unicode": "ন",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "c",
+    "unicode": "প",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "d",
+    "unicode": "ফ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "e",
+    "unicode": "ব",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "f",
+    "unicode": "ভ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "g",
+    "unicode": "ম",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "h",
+    "unicode": "য",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "i",
+    "unicode": "র",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "j",
+    "unicode": "ল",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "k",
+    "unicode": "শ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "l",
+    "unicode": "ষ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "m",
+    "unicode": "স",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "n",
+    "unicode": "হ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "o",
+    "unicode": "ড়",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "p",
+    "unicode": "ঢ়",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "q",
+    "unicode": "য়",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "r",
+    "unicode": "ৎ",
+    "kind": "consonant"
+  },
+  {
+    "bijoy": "s",
+    "unicode": "ং",
+    "kind": "sign"
+  },
+  {
+    "bijoy": "t",
+    "unicode": "ঃ",
+    "kind": "sign"
+  },
+  {
+    "bijoy": "u",
+    "unicode": "ঁ",
+    "kind": "sign"
+  },
+  {
+    "bijoy": "v",
+    "unicode": "া",
+    "kind": "vowel_sign"
+  },
+  {
+    "bijoy": "w",
+    "unicode": "ি",
+    "kind": "pre_base_sign"
+  },
+  {
+    "bijoy": "x",
+    "unicode": "ী",
+    "kind": "vowel_sign"
+  },
+  {
+    "bijoy": "y",
+    "unicode": "ু",
+    "kind": "vowel_sign",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "z",
+    "unicode": "ু",
+    "kind": "vowel_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "|",
+    "unicode": "।",
+    "kind": "punct"
+  },
+  {
+    "bijoy": "~",
+    "unicode": "ূ",
+    "kind": "vowel_sign",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "¡",
+    "unicode": "্ব",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "¢",
+    "unicode": "্ভ",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "£",
+    "unicode": "্ভ্র",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "¤",
+    "unicode": "ম্",
+    "kind": "half"
+  },
+  {
+    "bijoy": "¥",
+    "unicode": "্ম",
+    "kind": "phala",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "¦",
+    "unicode": "্ব",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "§",
+    "unicode": "্ম",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "¨",
+    "unicode": "্য",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "©",
+    "unicode": "র্",
+    "kind": "reph"
+  },
+  {
+    "bijoy": "ª",
+    "unicode": "্র",
+    "kind": "phala",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "«",
+    "unicode": "্র",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "¬",
+    "unicode": "্ল",
+    "kind": "phala",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "­",
+    "unicode": "্ল",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "®",
+    "unicode": "ষ্",
+    "kind": "half"
+  },
+  {
+    "bijoy": "¯",
+    "unicode": "স্",
+    "kind": "half"
+  },
+  {
+    "bijoy": "°",
+    "unicode": "ক্ক",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "±",
+    "unicode": "ক্ট",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "²",
+    "unicode": "ক্ষ্ণ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "³",
+    "unicode": "ক্ত",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "´",
+    "unicode": "ক্ম",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "µ",
+    "unicode": "ক্র",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "¶",
+    "unicode": "ক্ষ",
+    "kind": "conjunct",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "·",
+    "unicode": "ক্স",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "¸",
+    "unicode": "গু",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "¹",
+    "unicode": "জ্ঞ",
+    "kind": "conjunct",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "º",
+    "unicode": "গ্দ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "»",
+    "unicode": "গ্ধ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "¼",
+    "unicode": "ঙ্ক",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "½",
+    "unicode": "ঙ্গ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "¾",
+    "unicode": "জ্জ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "¿",
+    "unicode": "্ত্র",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "À",
+    "unicode": "জ্ঝ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Á",
+    "unicode": "জ্ঞ",
+    "kind": "conjunct",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "Â",
+    "unicode": "ঞ্চ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ã",
+    "unicode": "ঞ্ছ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ä",
+    "unicode": "ঞ্জ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Å",
+    "unicode": "ঞ্ঝ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Æ",
+    "unicode": "ট্ট",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ç",
+    "unicode": "ড্ড",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "È",
+    "unicode": "ণ্ট",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "É",
+    "unicode": "ণ্ঠ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ê",
+    "unicode": "ণ্ড",
+    "kind": "conjunct",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "Ë",
+    "unicode": "ত্ত",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ì",
+    "unicode": "ত্থ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Í",
+    "unicode": "্ত",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "Î",
+    "unicode": "ত্র",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ï",
+    "unicode": "দ্দ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ð",
+    "unicode": "ণ্ড",
+    "kind": "conjunct",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "Ñ",
+    "unicode": "-",
+    "kind": "punct"
+  },
+  {
+    "bijoy": "Ò",
+    "unicode": "\"",
+    "kind": "punct",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "Ó",
+    "unicode": "\"",
+    "kind": "punct",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "Ô",
+    "unicode": "'",
+    "kind": "punct",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "Õ",
+    "unicode": "'",
+    "kind": "punct",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "Ö",
+    "unicode": "্র",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "×",
+    "unicode": "দ্ধ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ø",
+    "unicode": "দ্ব",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ù",
+    "unicode": "দ্ম",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ú",
+    "unicode": "ন্ঠ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Û",
+    "unicode": "ন্ড",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ü",
+    "unicode": "ন্ধ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Ý",
+    "unicode": "ন্স",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "Þ",
+    "unicode": "প্ট",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ß",
+    "unicode": "প্ত",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "à",
+    "unicode": "প্প",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "á",
+    "unicode": "প্স",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "â",
+    "unicode": "ব্জ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ã",
+    "unicode": "ব্দ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ä",
+    "unicode": "ব্ধ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "å",
+    "unicode": "ভ্র",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "æ",
+    "unicode": "ু",
+    "kind": "vowel_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "ç",
+    "unicode": "ম্ফ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "è",
+    "unicode": "্ন",
+    "kind": "phala",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "é",
+    "unicode": "ল্ক",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ê",
+    "unicode": "ল্গ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ë",
+    "unicode": "ল্ট",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ì",
+    "unicode": "ল্ড",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "í",
+    "unicode": "ল্প",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "î",
+    "unicode": "ল্ফ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ï",
+    "unicode": "শু",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ð",
+    "unicode": "শ্চ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ñ",
+    "unicode": "শ্ছ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ò",
+    "unicode": "ষ্ণ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ó",
+    "unicode": "ষ্ট",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ô",
+    "unicode": "ষ্ঠ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "õ",
+    "unicode": "ষ্ফ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ö",
+    "unicode": "স্খ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "÷",
+    "unicode": "স্ট",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ø",
+    "unicode": "স্ন",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ù",
+    "unicode": "স্ফ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ú",
+    "unicode": "্প",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "û",
+    "unicode": "হু",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ü",
+    "unicode": "হৃ",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ý",
+    "unicode": "হ্ন",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "þ",
+    "unicode": "হ্ম",
+    "kind": "conjunct"
+  },
+  {
+    "bijoy": "ÿ",
+    "unicode": "ক্ষ",
+    "kind": "conjunct",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "Œ",
+    "unicode": "্ক্র",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "œ",
+    "unicode": "্ন",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "Š",
+    "unicode": "ৗ",
+    "kind": "vowel_sign"
+  },
+  {
+    "bijoy": "š",
+    "unicode": "ন্",
+    "kind": "half",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "Ÿ",
+    "unicode": "্ব",
+    "kind": "phala",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "ƒ",
+    "unicode": "ূ",
+    "kind": "vowel_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "ˆ",
+    "unicode": "ৈ",
+    "kind": "pre_base_sign",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "˜",
+    "unicode": "দ্",
+    "kind": "half",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "–",
+    "unicode": "ু",
+    "kind": "vowel_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "—",
+    "unicode": "্ত",
+    "kind": "phala",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "‘",
+    "unicode": "্তু",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "’",
+    "unicode": "্থ",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "‚",
+    "unicode": "ূ",
+    "kind": "vowel_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "“",
+    "unicode": "ু",
+    "kind": "vowel_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "”",
+    "unicode": "চ্",
+    "kind": "half"
+  },
+  {
+    "bijoy": "„",
+    "unicode": "ৃ",
+    "kind": "vowel_sign",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "†",
+    "unicode": "ে",
+    "kind": "pre_base_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "‡",
+    "unicode": "ে",
+    "kind": "pre_base_sign",
+    "preferred_reverse": true
+  },
+  {
+    "bijoy": "•",
+    "unicode": "ঙ্",
+    "kind": "half"
+  },
+  {
+    "bijoy": "…",
+    "unicode": "ৃ",
+    "kind": "vowel_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "‰",
+    "unicode": "ৈ",
+    "kind": "pre_base_sign",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "‹",
+    "unicode": "্ক",
+    "kind": "phala"
+  },
+  {
+    "bijoy": "›",
+    "unicode": "ন্",
+    "kind": "half",
+    "preferred_reverse": false
+  },
+  {
+    "bijoy": "™",
+    "unicode": "দ্",
+    "kind": "half",
+    "preferred_reverse": false
+  }
+]

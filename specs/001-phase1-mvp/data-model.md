@@ -99,17 +99,17 @@ Built by `scripts/build-data.ts`. Not hand-edited.
 |---|---|---|
 | `bijoy` | string | 1–3 chars, unique |
 | `unicode` | string | NFC Bangla |
-| `kind` | enum | `consonant` `vowel` `vowel_sign` `pre_base_sign` `conjunct` `reph` `digit` `punct` `other` |
+| `kind` | enum | `consonant` `conjunct` `vowel` `half` (pre-form ending in ্) `phala` (post-form starting with ্) `hasanta` `reph` `vowel_sign` `pre_base_sign` `sign` (ং ঃ ঁ) `digit` `punct` |
 
-Entries are matched longest-first. Reverse map derived at build time; ambiguities resolved by a
-`preferred_reverse: true` flag.
+Entries are matched longest-first. The reverse map is built at load time; where several Bijoy glyphs
+map to the same Unicode, exactly one has `preferred_reverse: true` (the others `false`).
 
 ## Land
 
 ### LandUnit (`data/land/units.json`)
 | Field | Type | Rules |
 |---|---|---|
-| `slug` | string | e.g. `katha`, `decimal`, `bigha`, `acre`, `sqft`, `sqm`, `hectare` |
+| `slug` | string | `acre` `bigha` `chotak` `decimal` `hectare` `katha` `ojutangsho` `sqft` `sqm` `sqyd` |
 | `name_en`, `name_bn` | string | required (e.g. `Decimal (Shotangsho)`, `শতাংশ`) |
 | `aliases` | string[] | e.g. `shotangsho`, `shatak`, `dec` |
 | `sqft` | number > 0 | standard value |

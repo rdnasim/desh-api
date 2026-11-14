@@ -9,6 +9,9 @@ POST responses are not cached by the CDN.
 | POST | `/v1/convert/unicode-to-bijoy` | `{ "text": string }` (≤ 100 KB) | `{ input_length, output }` | 400, 413 |
 
 Also accepts `Content-Type: text/plain` bodies (raw text) for convenience; response is still JSON.
+Responses are `no-store`. The whole input is treated as Bijoy (spec Clarifications): English words
+mixed into Bijoy text are mapped too. Unicode → Bijoy splits ো/ৌ into `‡ … v` / `‡ … Š`, uses
+standard phalas (স্ব = `m^`), and the output never contains Bangla Unicode.
 
 ```json
 // POST /v1/convert/bijoy-to-unicode  { "text": "Avgvi †mvbvi evsjv" }

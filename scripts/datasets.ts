@@ -1,5 +1,6 @@
 import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
+import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
 import {
   CityCorporationSchema,
   DistrictSchema,
@@ -10,6 +11,7 @@ import {
   UnionSchema,
   UpazilaSchema,
 } from '../src/modules/geo/schemas';
+import { LandUnitSchema } from '../src/modules/land/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 
 export interface DatasetSpec {
@@ -82,6 +84,20 @@ export const datasets: DatasetSpec[] = [
     schema: OperatorPrefixSchema,
     sortKey: (r) => r.prefix,
     type: { name: 'OperatorPrefix', from: '../modules/phone/schemas' },
+  },
+  {
+    key: 'convert.bijoy-map',
+    file: 'convert/bijoy-map.json',
+    schema: BijoyMapEntrySchema,
+    sortKey: (r) => r.bijoy,
+    type: { name: 'BijoyMapEntry', from: '../modules/convert/schemas' },
+  },
+  {
+    key: 'land.units',
+    file: 'land/units.json',
+    schema: LandUnitSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'LandUnit', from: '../modules/land/schemas' },
   },
 ];
 

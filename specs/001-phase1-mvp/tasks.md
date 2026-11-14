@@ -36,7 +36,7 @@ shipped independently.
 - [X] T006 [P] Create .gitignore (`node_modules`, `.wrangler`, `src/generated`, `.dev.vars`, `coverage`)
 - [X] T007 [P] Add LICENSE (MIT, code) and LICENSE-DATA (CC BY 4.0, data) at repo root
 - [X] T008 [P] Create CI workflow running `pnpm install --frozen-lockfile`, `data:build`, `typecheck`, `lint`, `data:check`, `test`, `size:check` on push and PR in .github/workflows/ci.yml
-- [ ] T009 *(geo, postcodes and Avro Phonetic done, see R4/R5/R10; Bijoy map, R13 formats, R14 land variants still open)* Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
+- [ ] T009 *(geo, postcodes, Avro Phonetic, Bijoy map done, see R4/R5/R10/R11; R13 formats and R14 regional land variants still open)* Survey existing open BD datasets and libraries (geo, postcodes, Bijoy map, Avro Phonetic) and record chosen source, licence, and credit for each VERIFY item (R4, R5, R10, R11, R13, R14) in specs/001-phase1-mvp/research.md
 
 ---
 
@@ -166,17 +166,17 @@ shipped independently.
 
 ### Tests for User Story 4 (write first, must fail)
 
-- [ ] T061 [P] [US4] Create ≥ 200 reviewed golden line pairs covering conjuncts, reph, pre-base vowel signs, ya-/ra-phala, hasanta, ৎ, ঁ, Bangla digits, punctuation in tests/golden/bijoy/bijoy.txt and tests/golden/bijoy/unicode.txt
-- [ ] T062 [P] [US4] Unit tests: golden both directions, `Avgvi †mvbvi evsjv` ⇄ `আমার সোনার বাংলা`, Unicode→Bijoy→Unicode round trip, 100 KB input converts within CPU budget in tests/unit/convert/bijoy.test.ts
-- [ ] T063 [P] [US4] Contract tests per contracts/convert.md: JSON and `text/plain` bodies, empty → 400, > 100 KB → 413, input not echoed in tests/contract/convert.test.ts
+- [X] T061 [P] [US4] Create ≥ 200 reviewed golden line pairs covering conjuncts, reph, pre-base vowel signs, ya-/ra-phala, hasanta, ৎ, ঁ, Bangla digits, punctuation in tests/golden/bijoy/bijoy.txt and tests/golden/bijoy/unicode.txt (one file, tests/golden/bijoy/pairs.json: 255 cross-checked + 6 hand-checked ৌ pairs + 2 external samples)
+- [X] T062 [P] [US4] Unit tests: golden both directions, `Avgvi †mvbvi evsjv` ⇄ `আমার সোনার বাংলা`, Unicode→Bijoy→Unicode round trip, 100 KB input converts within CPU budget in tests/unit/convert/bijoy.test.ts
+- [X] T063 [P] [US4] Contract tests per contracts/convert.md: JSON and `text/plain` bodies, empty → 400, > 100 KB → 413, input not echoed in tests/contract/convert.test.ts
 
 ### Implementation for User Story 4
 
-- [ ] T064 [US4] Create mapping table (fields `bijoy` 1–3 chars unique, `unicode` NFC, `kind` enum, `preferred_reverse?`) from the R11 source in data/convert/bijoy-map.json with meta entry
-- [ ] T065 [US4] Define BijoyMap schema and register dataset (emit longest-first forward map and derived reverse map) in src/modules/convert/schemas.ts and scripts/build-data.ts
-- [ ] T066 [US4] Implement Bijoy → Unicode (longest match, pre-base sign + reph reordering, ো/ৌ composition, NFC) in src/modules/convert/bijoy-to-unicode.ts
-- [ ] T067 [US4] Implement Unicode → Bijoy (inverse map + reverse reordering) in src/modules/convert/unicode-to-bijoy.ts
-- [ ] T068 [US4] Implement convert routes with 100 KB body limit and mount in src/modules/convert/routes.ts and src/app.ts
+- [X] T064 [US4] Create mapping table (fields `bijoy` 1–3 chars unique, `unicode` NFC, `kind` enum, `preferred_reverse?`) from the R11 source in data/convert/bijoy-map.json with meta entry (188 entries from BinduLogic bn-ansi-to-unicode, MIT; see R11)
+- [X] T065 [US4] Define BijoyMap schema and register dataset (emit longest-first forward map and derived reverse map) in src/modules/convert/schemas.ts and scripts/build-data.ts
+- [X] T066 [US4] Implement Bijoy → Unicode (longest match, pre-base sign + reph reordering, ো/ৌ composition, NFC) in src/modules/convert/bijoy-to-unicode.ts
+- [X] T067 [US4] Implement Unicode → Bijoy (inverse map + reverse reordering) in src/modules/convert/unicode-to-bijoy.ts
+- [X] T068 [US4] Implement convert routes with 100 KB body limit and mount in src/modules/convert/routes.ts and src/app.ts
 
 **Checkpoint**: US4 independently functional
 
@@ -190,15 +190,15 @@ shipped independently.
 
 ### Tests for User Story 5 (write first, must fail)
 
-- [ ] T069 [P] [US5] Unit tests: 5 katha case, 1 bigha = 20 katha, 1 acre = 100 decimal, alias resolution (`shotangsho` → `decimal`), region fallback to `standard`, unknown unit / value ≤ 0 errors, 2-decimal rounding in tests/unit/land/service.test.ts
-- [ ] T070 [P] [US5] Contract tests per contracts/land.md incl. `meta.disclaimer` and `region` echoed in tests/contract/land.test.ts
+- [X] T069 [P] [US5] Unit tests: 5 katha case, 1 bigha = 20 katha, 1 acre = 100 decimal, alias resolution (`shotangsho` → `decimal`), region fallback to `standard`, unknown unit / value ≤ 0 errors, 2-decimal rounding in tests/unit/land/service.test.ts
+- [X] T070 [P] [US5] Contract tests per contracts/land.md incl. `meta.disclaimer` and `region` echoed in tests/contract/land.test.ts
 
 ### Implementation for User Story 5
 
-- [ ] T071 [US5] Create unit data with standard values from R14 (acre 43560, decimal 435.6, ojutangsho 4.356, katha 720, bigha 14400, chotak 45, sqm 10.7639104, hectare 107639.104 sq ft) and only sourced regional variants in data/land/units.json with meta entry
-- [ ] T072 [US5] Define LandUnit schema (`sqft` > 0, `variants[]` each with `region`, `sqft`, `source`) and register dataset in src/modules/land/schemas.ts and scripts/build-data.ts
-- [ ] T073 [US5] Implement conversion service in src/modules/land/service.ts
-- [ ] T074 [US5] Implement land routes with disclaimer meta and mount in src/modules/land/routes.ts and src/app.ts
+- [X] T071 [US5] Create unit data with standard values from R14 (acre 43560, decimal 435.6, ojutangsho 4.356, katha 720, bigha 14400, chotak 45, sqm 10.7639104, hectare 107639.104 sq ft) and only sourced regional variants in data/land/units.json with meta entry (10 standard units incl. sq yd/gaj; no regional variants until sourced, see R14)
+- [X] T072 [US5] Define LandUnit schema (`sqft` > 0, `variants[]` each with `region`, `sqft`, `source`) and register dataset in src/modules/land/schemas.ts and scripts/build-data.ts
+- [X] T073 [US5] Implement conversion service in src/modules/land/service.ts
+- [X] T074 [US5] Implement land routes with disclaimer meta and mount in src/modules/land/routes.ts and src/app.ts
 
 **Checkpoint**: US5 independently functional
 

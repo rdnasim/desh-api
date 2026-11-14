@@ -1,5 +1,16 @@
 [
   {
+    "dataset": "convert.bijoy-map",
+    "source": "SutonnyMJ Bijoy mapping derived from bn-ansi-to-unicode (BinduLogic)",
+    "source_url": "https://github.com/BinduLogic/bn-ansi-to-unicode",
+    "licence": "MIT (Copyright (c) 2022 BinduLogic LLC); desh-api additions CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "BinduLogic LLC (bn-ansi-to-unicode)"
+    ]
+  },
+  {
     "dataset": "geo.city-corporations",
     "source": "Bangladesh GeoCode (BBS geocodes via UN OCHA COD-AB)",
     "source_url": "https://github.com/nuhil/bangladesh-geocode",
@@ -75,6 +86,16 @@
       "Nuhil Mehdy and contributors (nuhil/bangladesh-geocode)",
       "Bangladesh Bureau of Statistics",
       "UN OCHA Humanitarian Data Exchange"
+    ]
+  },
+  {
+    "dataset": "land.units",
+    "source": "Standard Bangladesh land measurement equivalents (1 acre = 100 decimal = 43,560 sq ft; 1 katha = 720 sq ft; 1 bigha = 20 katha); metric factors from the international foot (0.3048 m)",
+    "licence": "Facts; compilation CC BY 4.0",
+    "retrieved": "2026-11-14",
+    "last_updated": "2026-11-14",
+    "credits": [
+      "desh-api contributors"
     ]
   },
   {
