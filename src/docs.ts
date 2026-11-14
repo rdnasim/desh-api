@@ -61,5 +61,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Official government holiday lists (general, executive-order and optional), holiday checks and working-day counts. Only years with a published official list are served; moon-dependent dates are tentative until confirmed.',
     },
+    {
+      name: 'Finance',
+      description:
+        'Income tax for individuals from the Finance Act (keyed by tax year; tax year 2027-28 = income earned July 2026 – June 2027), VAT, loan EMI, DPS maturity and statutory gratuity. Every response cites its legal source and carries a disclaimer; these are estimates, not tax, financial or legal advice.',
+    },
   ],
 };

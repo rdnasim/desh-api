@@ -1,0 +1,196 @@
+[
+  {
+    "tax_year": "2026-27",
+    "income_year": {
+      "from": "2025-07-01",
+      "to": "2026-06-30"
+    },
+    "thresholds": [
+      {
+        "category": "general",
+        "amount": 400000
+      },
+      {
+        "category": "woman",
+        "amount": 450000
+      },
+      {
+        "category": "senior",
+        "amount": 450000
+      },
+      {
+        "category": "disabled",
+        "amount": 525000
+      },
+      {
+        "category": "third-gender",
+        "amount": 525000
+      },
+      {
+        "category": "freedom-fighter",
+        "amount": 550000
+      },
+      {
+        "category": "july-warrior",
+        "amount": 550000
+      }
+    ],
+    "disabled_dependant_extra": 50000,
+    "slabs": [
+      {
+        "width": 300000,
+        "rate": 10
+      },
+      {
+        "width": 400000,
+        "rate": 15
+      },
+      {
+        "width": 500000,
+        "rate": 20
+      },
+      {
+        "width": 2000000,
+        "rate": 25
+      },
+      {
+        "width": null,
+        "rate": 30
+      }
+    ],
+    "minimum_tax": {
+      "general": 5000,
+      "new_taxpayer": 1000
+    },
+    "employment_exemption": {
+      "divisor": 3,
+      "cap": 500000
+    },
+    "investment_rebate": {
+      "income_rate": 3,
+      "investment_rate": 10,
+      "cap": 750000
+    },
+    "sources": [
+      {
+        "ref": "Finance Act 2026 (passed 29 June 2026; Bangladesh Gazette, 30 June 2026)",
+        "date": "2026-06-30",
+        "kind": "act"
+      },
+      {
+        "ref": "The Daily Star: Finance bill passed, tax-free income threshold set at Tk 4 lakh for FY2026-27",
+        "date": "2026-06-29",
+        "url": "https://www.thedailystar.net/business/bangladesh-budget-2025-26/news/finance-bill-passed-tax-free-income-threshold-set-tk-4-lakh-fy2026-27-4211511",
+        "kind": "news"
+      },
+      {
+        "ref": "Rahman Rahman Huq (KPMG): Salient features of Finance Bill 2026 (slabs, minimum tax, rebate)",
+        "date": "2026-06-11",
+        "url": "https://assets.kpmg.com/content/dam/kpmg/bd/pdf/Salient_features_of_Finance_Bill_2026(Tax-and_VAT).pdf",
+        "kind": "summary"
+      }
+    ],
+    "unverified": [
+      "thresholds (all categories except general)",
+      "employment_exemption.cap",
+      "investment_rebate.cap"
+    ]
+  },
+  {
+    "tax_year": "2027-28",
+    "income_year": {
+      "from": "2026-07-01",
+      "to": "2027-06-30"
+    },
+    "thresholds": [
+      {
+        "category": "general",
+        "amount": 400000
+      },
+      {
+        "category": "woman",
+        "amount": 450000
+      },
+      {
+        "category": "senior",
+        "amount": 450000
+      },
+      {
+        "category": "disabled",
+        "amount": 525000
+      },
+      {
+        "category": "third-gender",
+        "amount": 525000
+      },
+      {
+        "category": "freedom-fighter",
+        "amount": 550000
+      },
+      {
+        "category": "july-warrior",
+        "amount": 550000
+      }
+    ],
+    "disabled_dependant_extra": 50000,
+    "slabs": [
+      {
+        "width": 300000,
+        "rate": 10
+      },
+      {
+        "width": 400000,
+        "rate": 15
+      },
+      {
+        "width": 500000,
+        "rate": 20
+      },
+      {
+        "width": 2000000,
+        "rate": 25
+      },
+      {
+        "width": null,
+        "rate": 30
+      }
+    ],
+    "minimum_tax": {
+      "general": 5000,
+      "new_taxpayer": 1000
+    },
+    "employment_exemption": {
+      "divisor": 3,
+      "cap": 500000
+    },
+    "investment_rebate": {
+      "income_rate": 3,
+      "investment_rate": 10,
+      "cap": 750000
+    },
+    "sources": [
+      {
+        "ref": "Finance Act 2026 (passed 29 June 2026; Bangladesh Gazette, 30 June 2026)",
+        "date": "2026-06-30",
+        "kind": "act"
+      },
+      {
+        "ref": "The Daily Star: Finance bill passed, tax-free income threshold set at Tk 4 lakh for FY2026-27",
+        "date": "2026-06-29",
+        "url": "https://www.thedailystar.net/business/bangladesh-budget-2025-26/news/finance-bill-passed-tax-free-income-threshold-set-tk-4-lakh-fy2026-27-4211511",
+        "kind": "news"
+      },
+      {
+        "ref": "Rahman Rahman Huq (KPMG): Salient features of Finance Bill 2026 (slabs, minimum tax, rebate)",
+        "date": "2026-06-11",
+        "url": "https://assets.kpmg.com/content/dam/kpmg/bd/pdf/Salient_features_of_Finance_Bill_2026(Tax-and_VAT).pdf",
+        "kind": "summary"
+      }
+    ],
+    "unverified": [
+      "thresholds (all categories except general)",
+      "employment_exemption.cap",
+      "investment_rebate.cap"
+    ]
+  }
+]
