@@ -57,7 +57,7 @@ description: "Task list for Finance Calculators"
 ## Phase 8: Polish
 
 - [X] T019 [P] Smoke scenarios in scripts/smoke.ts; README module table and examples; docs/roadmap.md; regenerate DATA_SOURCES.md
-- [ ] T020 *(open: needs the gazette PDF)* Verify the `unverified` figures (category thresholds, employment cap, rebate cap) against the gazetted Finance Act 2026 text; then clear `unverified` and record the check in research.md (needs the gazette PDF — maintainer)
+- [X] T020 (all figures match Act No. 96 of 2026 and Act No. 89 of 2026; research F11) Verify the `unverified` figures (category thresholds, employment cap, rebate cap) against the gazetted Finance Act 2026 text; then clear `unverified` and record the check in research.md (needs the gazette PDF — maintainer)
 - [X] T021 Run type-check, lint, data check, tests and the bundle-size check
 
 ## Dependencies

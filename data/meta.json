@@ -12,26 +12,26 @@
   },
   {
     "dataset": "finance.tax-categories",
-    "source": "Finance Act 2026 (Bangladesh Gazette, 30 June 2026); figures cross-checked with news reports of the passed Act and Rahman Rahman Huq (KPMG), Salient features of Finance Bill 2026",
-    "source_url": "https://www.thedailystar.net/business/bangladesh-budget-2025-26/news/finance-bill-passed-tax-free-income-threshold-set-tk-4-lakh-fy2026-27-4211511",
+    "source": "Finance Act 2026 (Act No. 96 of 2026, 30 June 2026), Schedule 2; Income Tax Act 2023 (s. 78, Sixth Schedule) as amended by Act No. 89 of 2026 and Act No. 96 of 2026",
+    "source_url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
     "licence": "Public law; compilation CC BY 4.0",
     "retrieved": "2026-11-14",
     "last_updated": "2026-11-14",
     "credits": [
-      "National Board of Revenue, Bangladesh",
-      "Rahman Rahman Huq (KPMG in Bangladesh)"
+      "Legislative and Parliamentary Affairs Division (bdlaws.minlaw.gov.bd)",
+      "National Board of Revenue, Bangladesh"
     ]
   },
   {
     "dataset": "finance.tax-years",
-    "source": "Finance Act 2026 (Bangladesh Gazette, 30 June 2026); figures cross-checked with news reports of the passed Act and Rahman Rahman Huq (KPMG), Salient features of Finance Bill 2026",
-    "source_url": "https://www.thedailystar.net/business/bangladesh-budget-2025-26/news/finance-bill-passed-tax-free-income-threshold-set-tk-4-lakh-fy2026-27-4211511",
+    "source": "Finance Act 2026 (Act No. 96 of 2026, 30 June 2026), Schedule 2; Income Tax Act 2023 (s. 78, Sixth Schedule) as amended by Act No. 89 of 2026 and Act No. 96 of 2026",
+    "source_url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
     "licence": "Public law; compilation CC BY 4.0",
     "retrieved": "2026-11-14",
     "last_updated": "2026-11-14",
     "credits": [
-      "National Board of Revenue, Bangladesh",
-      "Rahman Rahman Huq (KPMG in Bangladesh)"
+      "Legislative and Parliamentary Affairs Division (bdlaws.minlaw.gov.bd)",
+      "National Board of Revenue, Bangladesh"
     ]
   },
   {

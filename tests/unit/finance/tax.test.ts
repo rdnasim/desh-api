@@ -68,7 +68,7 @@ describe('incomeTax breakdown', () => {
       effective_rate: 7.5,
       rebate: { eligible_investment: 0, amount: 0, limited_by: 'none' },
     });
-    expect(r.unverified.length).toBeGreaterThan(0);
+    expect(r.unverified).toEqual([]);
   });
 
   it('gives an effective rate of 0 for zero income', () => {

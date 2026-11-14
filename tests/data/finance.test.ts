@@ -23,10 +23,10 @@ describe('finance tax data', () => {
     }
   });
 
-  it('cites the Act and lists what is still unverified', () => {
+  it('cites only the law itself, with nothing left unverified', () => {
     for (const y of years) {
-      expect(y.sources.some((s) => s.kind === 'act')).toBe(true);
-      expect(Array.isArray(y.unverified)).toBe(true);
+      expect(y.sources.every((s) => s.kind === 'act' && s.url)).toBe(true);
+      expect(y.unverified).toEqual([]);
     }
   });
 

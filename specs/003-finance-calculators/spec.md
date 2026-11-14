@@ -4,7 +4,7 @@
 
 **Created**: 2026-11-14
 
-**Status**: Implemented (T020 open)
+**Status**: Implemented
 
 **Input**: User description: "Phase 2, module 13 of docs/vision.md — finance calculators: income tax
 for the current fiscal year, VAT, loan EMI, DPS and gratuity. Tax slabs come from the Finance Act,
@@ -190,9 +190,6 @@ responses are cacheable like other deterministic conversions.
 
 ## Assumptions
 
-- Enacted figures for Finance Act 2026 come from news reports of the passed Act and post-Act
-  professional summaries, cross-checked against the KPMG summary of the bill (research F1). The
-  gazette text itself was not machine-readable; a task tracks verifying against it.
-- The employment exemption cap (Tk 5,00,000) and investment rebate cap (Tk 7,50,000) come from
-  secondary sources (research F3, F4) and are flagged for verification.
+- All tax rules were checked against the law itself: Finance Act 2026 (Act No. 96 of 2026) and
+  the Income Tax Act 2023 as amended by Acts No. 89 and 96 of 2026 (research F11).
 - One day's wage for gratuity = monthly wage ÷ 30.

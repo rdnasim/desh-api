@@ -156,7 +156,7 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 | Administrative areas, postcodes | Bangladesh Bureau of Statistics geocodes (via UN OCHA) and GeoNames, compiled by [nuhil/bangladesh-geocode](https://github.com/nuhil/bangladesh-geocode) |
 | Hotlines | [Bangladesh National Portal](https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89), [DGHS](https://dghs.gov.bd/) |
 | Holidays | [Ministry of Public Administration holiday notification for 2027](https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740) |
-| Income tax | Finance Act 2026 (gazetted 30 June 2026); figures not yet checked against the gazette are listed in each response's `unverified` field |
+| Income tax | [Finance Act 2026 (Act No. 96 of 2026)](http://bdlaws.minlaw.gov.bd/act-details-1725.html) and the Income Tax Act 2023 as amended |
 | VAT, gratuity | VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10)) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |

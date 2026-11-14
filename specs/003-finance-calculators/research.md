@@ -25,13 +25,14 @@
 - **Category thresholds as passed** (each the bill figure + Tk 25,000): women and 65+ **4,50,000**;
   disabled and third gender **5,25,000**; war-wounded freedom fighters and July warriors
   **5,50,000**. Found only in post-Act secondary guides (e.g. ajkerbongo.com, updated
-  2026-11-12; reports collected by web search), not in a news report of the passage itself. These
-  are marked `unverified` in the data until checked against the gazette text (task T020).
+  2026-11-12; reports collected by web search), not in a news report of the passage itself.
+  **Confirmed against the Act** (F11).
 - **Slabs, minimum tax, rebate**: no report of any change on passage; Dhaka Tribune (28 Jun 2026,
   https://www.dhakatribune.com/business/413809/tax-free-income-ceiling-now-tk4-lakh-but-tensions)
   confirms the lowest rate rising from 5% to 10% and the rebate on investment falling from 15% to
   10%.
-- **Gazette text**: not found as machine-readable text on nbr.gov.bd or bdlaws during research.
+- **Gazette text**: found on 2026-11-14 as **Act No. 96 of 2026** on bdlaws (see F11); every figure
+  above matches it.
 
 ## F2. "Tax year" vs "income year"
 
@@ -55,15 +56,16 @@
 - **Evidence**: Tk 4,50,000 in the Sixth Schedule as amended by Finance Act 2024
   (taxvatpoint.com); several 2026-27 guides report the cap raised to Tk 5,00,000 (arthonitee.com,
   ramco.com). Dhaka Tribune (28 Jun 2026) notes salaried people under Tk 6 lakh gross are
-  outside the net, which fits a one-third exemption (6 lakh × 2/3 = 4 lakh). **Flagged
-  `unverified`** (task T020).
+  outside the net, which fits a one-third exemption (6 lakh × 2/3 = 4 lakh). **Confirmed** (F11):
+  the official English translation (SRO 404, Oct 2025) still shows 4,50,000 because it is
+  consolidated only to Finance Act 2024; the change to 5 lakh came later.
 
 ## F4. Investment rebate
 
 - **Decision**: lowest of 3% of taxable income, 10% of eligible investment (Sixth Schedule Part 3)
   and Tk 7,50,000. Applied after slabs; tax cannot fall below zero; the minimum tax applies after
-  the rebate. The cap is from the bill (KPMG) and a post-Act guide (roylawnexus.com). **Flagged
-  `unverified`** (task T020). Which investments qualify is the caller's job; the API takes the
+  the rebate. The cap is from the bill (KPMG) and a post-Act guide (roylawnexus.com).
+  **Confirmed** (F11). Which investments qualify is the caller's job; the API takes the
   eligible amount.
 
 ## F5. Out of scope for the tax calculator
@@ -119,3 +121,24 @@ withholding. All are named in the disclaimer.
 Several calculators exist (bdtaxguide.com, ayakor.com, rebatebhai.com, countrytaxcalc.com); they
 disagree on 2026-27 thresholds, which is the gap this API fills: every figure tied to a cited
 source and an explicit `unverified` list rather than silently mixing bill and Act figures.
+
+## F11. Check against the law itself (task T020, 2026-11-14)
+
+All rules in `data/finance/tax-years.json` were checked against primary text on bdlaws
+(Legislative and Parliamentary Affairs Division). The pages are served as UTF-16, which is why
+earlier automated reads returned unreadable text.
+
+| Rule | Primary text | Result |
+|---|---|---|
+| Slabs, all category thresholds, +50,000 per disabled child/dependant, minimum tax 5,000 / 1,000 | **Finance Act 2026, Act No. 96 of 2026 (30 June 2026)**, s. 160 and Schedule 2, Part 1, para ক ("২০২৬-২০২৭ এবং ২০২৭-২০২৮ করবর্ষের জন্য করহার"), http://bdlaws.minlaw.gov.bd/act-details-1725.html; schedule PDF `upload/act/2026-08-17-10-27-29-তফসিল_Act-No-96.pdf` | Match |
+| Investment rebate: 0.03 × income, 0.10 × investment, Tk 7.50 lakh | Income Tax Act 2023 s. 78 as amended by Act No. 96 of 2026 s. 61 ("০.১৫" → "০.১০"; "১০ (দশ)" → "৭.৫০") | Match |
+| Employment exemption: one-third or Tk 5 lakh | Income Tax Act 2023 Sixth Schedule Part 1 para (27), amended "৪ (চার) লক্ষ ৫০ (পঞ্চাশ) হাজার" → "৫ (পাঁচ) লক্ষ" by **Finance (FY 2025-26) Act 2026, Act No. 89 of 2026 (10 April 2026)**, which re-enacted and repealed Finance Ordinance 2025 (s. 162). Act No. 96 does not amend para (27) (its s. 32 and s. 157 change other clauses). | Match |
+
+Also confirmed: s. 160(1) applies the Schedule 2 rates "২০২৬-২০২৭ হইতে ২০৩০-২০৩১ করবর্ষের জন্য",
+which supports keying by tax year (F2); para ক(ঘ) allows only one parent to claim the disabled-child
+allowance when both are taxpayers (now in the parameter description); para ক(ঙ) excludes
+non-residents other than non-resident Bangladeshis. The data now cites only these Acts and
+`unverified` is empty.
+
+Schedule 2 also fixes the rates for tax years 2028-29/2029-30 (threshold 4,50,000; 30% band of
+2,63,50,000, then 35%) and 2030-31 (threshold 5,00,000). These could be added as data later.

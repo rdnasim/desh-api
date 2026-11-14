@@ -27,7 +27,7 @@ const UPDATED = '2026-11-14';
 const MAX_AMOUNT = 1e13;
 
 const TAX_DISCLAIMER =
-  'Estimate for individual resident taxpayers; not tax advice. Excludes net-wealth and environment surcharge, reduced-rate and final-tax income, return-filing rebates and penalties, and tax already deducted at source. Rules listed in `unverified` come from summaries of the passed Finance Act and are not yet checked against the gazette. Confirm with NBR or a tax adviser before filing.';
+  'Estimate for individual resident taxpayers; not tax advice. Excludes net-wealth and environment surcharge, reduced-rate and final-tax income, return-filing rebates and penalties, and tax already deducted at source. Any rule listed in `unverified` is not yet checked against the gazetted law. Confirm with NBR or a tax adviser before filing.';
 const taxMeta = () =>
   metaFor(['finance.tax-years', 'finance.tax-categories'], { disclaimer: TAX_DISCLAIMER });
 
@@ -137,7 +137,7 @@ financeRoutes.openapi(
         ),
         disabled_dependants: optional(
           'disabled_dependants',
-          'Number of disabled children/dependants (raises the threshold for a parent or guardian)',
+          'Number of disabled children/dependants: +Tk 50,000 each for a parent or guardian (if both parents are taxpayers, only one may claim it)',
         ),
         employment_income: optional(
           'employment_income',

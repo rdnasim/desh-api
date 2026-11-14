@@ -73,28 +73,25 @@
     },
     "sources": [
       {
-        "ref": "Finance Act 2026 (passed 29 June 2026; Bangladesh Gazette, 30 June 2026)",
+        "ref": "Finance Act 2026 (Act No. 96 of 2026), Schedule 2, Part 1, para ক (rates, thresholds, minimum tax); s. 61 (investment rebate)",
         "date": "2026-06-30",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
         "kind": "act"
       },
       {
-        "ref": "The Daily Star: Finance bill passed, tax-free income threshold set at Tk 4 lakh for FY2026-27",
-        "date": "2026-06-29",
-        "url": "https://www.thedailystar.net/business/bangladesh-budget-2025-26/news/finance-bill-passed-tax-free-income-threshold-set-tk-4-lakh-fy2026-27-4211511",
-        "kind": "news"
+        "ref": "Income Tax Act 2023 (Act No. 12 of 2023), s. 78 (investment rebate) and Sixth Schedule, Part 1, para 27 (employment exemption)",
+        "date": "2023-06-22",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1429.html",
+        "kind": "act"
       },
       {
-        "ref": "Rahman Rahman Huq (KPMG): Salient features of Finance Bill 2026 (slabs, minimum tax, rebate)",
-        "date": "2026-06-11",
-        "url": "https://assets.kpmg.com/content/dam/kpmg/bd/pdf/Salient_features_of_Finance_Bill_2026(Tax-and_VAT).pdf",
-        "kind": "summary"
+        "ref": "Finance (FY 2025-26) Act 2026 (Act No. 89 of 2026): Sixth Schedule, Part 1, para 27 cap raised to Tk 5 lakh",
+        "date": "2026-04-10",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1718.html",
+        "kind": "act"
       }
     ],
-    "unverified": [
-      "thresholds (all categories except general)",
-      "employment_exemption.cap",
-      "investment_rebate.cap"
-    ]
+    "unverified": []
   },
   {
     "tax_year": "2027-28",
@@ -170,27 +167,24 @@
     },
     "sources": [
       {
-        "ref": "Finance Act 2026 (passed 29 June 2026; Bangladesh Gazette, 30 June 2026)",
+        "ref": "Finance Act 2026 (Act No. 96 of 2026), Schedule 2, Part 1, para ক (rates, thresholds, minimum tax); s. 61 (investment rebate)",
         "date": "2026-06-30",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",
         "kind": "act"
       },
       {
-        "ref": "The Daily Star: Finance bill passed, tax-free income threshold set at Tk 4 lakh for FY2026-27",
-        "date": "2026-06-29",
-        "url": "https://www.thedailystar.net/business/bangladesh-budget-2025-26/news/finance-bill-passed-tax-free-income-threshold-set-tk-4-lakh-fy2026-27-4211511",
-        "kind": "news"
+        "ref": "Income Tax Act 2023 (Act No. 12 of 2023), s. 78 (investment rebate) and Sixth Schedule, Part 1, para 27 (employment exemption)",
+        "date": "2023-06-22",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1429.html",
+        "kind": "act"
       },
       {
-        "ref": "Rahman Rahman Huq (KPMG): Salient features of Finance Bill 2026 (slabs, minimum tax, rebate)",
-        "date": "2026-06-11",
-        "url": "https://assets.kpmg.com/content/dam/kpmg/bd/pdf/Salient_features_of_Finance_Bill_2026(Tax-and_VAT).pdf",
-        "kind": "summary"
+        "ref": "Finance (FY 2025-26) Act 2026 (Act No. 89 of 2026): Sixth Schedule, Part 1, para 27 cap raised to Tk 5 lakh",
+        "date": "2026-04-10",
+        "url": "http://bdlaws.minlaw.gov.bd/act-details-1718.html",
+        "kind": "act"
       }
     ],
-    "unverified": [
-      "thresholds (all categories except general)",
-      "employment_exemption.cap",
-      "investment_rebate.cap"
-    ]
+    "unverified": []
   }
 ]

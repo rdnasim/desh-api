@@ -33,6 +33,5 @@
 
 - Six decisions were taken on the maintainer's behalf in the Clarifications session (year key,
   initial years, source authority, scope of the tax calculation, VAT rate handling, gratuity basis).
-- Three figures rest on secondary sources (enacted category thresholds, employment exemption cap,
-  investment rebate cap); research.md records each source and a task tracks verification against
-  the gazetted Finance Act 2026.
+- Three figures first rested on secondary sources (category thresholds, employment exemption cap,
+  investment rebate cap); all three were later confirmed against the Acts themselves (research F11).
