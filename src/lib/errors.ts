@@ -10,6 +10,7 @@ export const ERROR_CODES = {
   payload_too_large: 413,
   rate_limited: 429,
   internal_error: 500,
+  upstream_unavailable: 503,
 } as const satisfies Record<string, ContentfulStatusCode>;
 
 export type ErrorCode = keyof typeof ERROR_CODES;

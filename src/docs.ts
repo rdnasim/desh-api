@@ -81,5 +81,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Universities listed by the University Grants Commission: category, founding year, website, campus address, institutional contacts and UGC notes on programmes. Names of officials are not included.',
     },
+    {
+      name: 'Gold & zakat',
+      description:
+        'Gold and silver prices read live from the Bangladesh Jewellers Association (BAJUS), per gram and per vori (11.664 g), and a zakat calculator using the classical nisab (7.5 vori gold or 52.5 vori silver).',
+    },
   ],
 };
