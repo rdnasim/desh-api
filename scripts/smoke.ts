@@ -14,6 +14,8 @@ interface Scenario {
   name: string;
   path: string;
   init?: RequestInit;
+  /** Let `check` see error responses too (for routes whose documented errors are acceptable). */
+  checkErrors?: boolean;
   check: (res: Response, body: ApiBody) => string | true;
 }
 
@@ -146,6 +148,7 @@ const scenarios: Scenario[] = [
   {
     name: '13i gold prices (live from BAJUS)',
     path: '/v1/gold/prices',
+    checkErrors: true,
     // An outage at BAJUS is reported as 503, which is the correct behaviour, not a failed deploy.
     check: (res, b) =>
       b.data?.gold?.['22k']?.per_gram > 0 ||
@@ -185,7 +188,7 @@ async function run(s: Scenario): Promise<{ ok: boolean; ms: number; message: str
       };
     }
     const ms = performance.now() - started;
-    if (!res.ok && s.name !== '15 unknown route')
+    if (!res.ok && !s.checkErrors && s.name !== '15 unknown route')
       return { ok: false, ms, message: `HTTP ${res.status}` };
     const result = s.check(res, body);
     return { ok: result === true, ms, message: result === true ? '' : result };
