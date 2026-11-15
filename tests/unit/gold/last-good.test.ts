@@ -53,6 +53,15 @@ describe('last good gold prices', () => {
     expect(await recall(kv as never, t0)).toBeUndefined();
   });
 
+  it('reads a copy saved in the older { prices, fetched_at } shape', async () => {
+    const kv = fakeKv();
+    kv.store.set(
+      'gold:bajus:last-good',
+      JSON.stringify({ prices, fetched_at: '2026-11-15T06:00:00.000Z' }),
+    );
+    expect((await recall(kv as never, t0 + HOUR))?.prices).toEqual(prices);
+  });
+
   it('does nothing without a KV binding', async () => {
     await expect(remember(undefined, prices, t0)).resolves.toBeUndefined();
     expect(await recall(undefined, t0)).toBeUndefined();

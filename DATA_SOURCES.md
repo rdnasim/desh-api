@@ -30,6 +30,8 @@ upstream sources below.
 | `holidays.years` | [Ministry of Public Administration holiday notifications (2027: No. 05.00.0000.175.08.0008.25-105, 5 Nov 2026)](https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740) | Public government information; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | Ministry of Public Administration, Bangladesh |
 | `hotlines` | [Bangladesh National Portal, 'জরুরি হটলাইন' (page updated 2026-07-28); Directorate General of Health Services for 16263](https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89) | Public government information; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | Bangladesh National Portal (bangladesh.gov.bd); Directorate General of Health Services |
 | `land.units` | Standard Bangladesh land measurement equivalents (1 acre = 100 decimal = 43,560 sq ft; 1 katha = 720 sq ft; 1 bigha = 20 katha); metric factors from the international foot (0.3048 m) | Facts; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | desh-api contributors |
+| `market.commodities` | [Commodity names and units exactly as written in the Trading Corporation of Bangladesh daily retail price list; English names and slugs by desh-api contributors](https://tcb.gov.bd/pages/daily-rmps) | Names: public government information; translations CC BY 4.0 | 2026-11-15 | 2026-11-15 | Trading Corporation of Bangladesh; desh-api contributors |
+| `market.fuel` | [Energy and Mineral Resources Division monthly fuel price notices (published by Bangladesh Petroleum Corporation)](https://bpc.gov.bd/) | Public government information; compilation CC BY 4.0 | 2026-11-15 | 2026-10-29 | Energy and Mineral Resources Division; Bangladesh Petroleum Corporation |
 | `mock.names` | [Common Bangladeshi given and family names compiled by desh-api contributors (no directory of real people used); tradition weights from the BBS Population and Housing Census 2022](https://en.prothomalo.com/bangladesh/at87h01ocn) | CC BY 4.0 | 2026-11-15 | 2026-11-15 | desh-api contributors |
 | `phone.prefixes` | [BTRC mobile numbering plan (operator prefix allocation)](https://www.btrc.gov.bd) | Public information; compilation CC BY 4.0 | 2026-11-14 | 2026-11-14 | Bangladesh Telecommunication Regulatory Commission |
 | `validate.vehicle-area-aliases` | Abbreviations seen on BRTA registration plates (e.g. 'চট্ট মেট্রো' for Chattogram Metro); full area names come from geo.districts | CC BY 4.0 | 2026-11-14 | 2026-11-14 | desh-api contributors |
@@ -41,6 +43,7 @@ Read when a request arrives (cached at the edge), not stored in `data/`.
 | Endpoint | Source | Notes |
 |---|---|---|
 | `/v1/gold/prices`, `/v1/zakat` | [Bangladesh Jewellers Association (BAJUS), gold and silver rate](https://www.bajus.org/gold-price) | Cached 30 minutes; `meta.last_updated` is the price list's effective date. Where BAJUS cannot be reached, the last list read within 7 days (kept in Workers KV) is served as `last_known`; otherwise 503 |
+| `/v1/market/prices` | [Trading Corporation of Bangladesh (TCB), daily retail prices in Dhaka](https://tcb.gov.bd/pages/daily-rmps) | Newest daily spreadsheet, cached 30 minutes (each file a day); English names from `market.commodities`. Same last-good copy in Workers KV and 503 rule as gold |
 
 ## Rules and formulas
 

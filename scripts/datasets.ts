@@ -24,6 +24,7 @@ import {
 import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schemas';
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
+import { CommoditySchema, FuelMonthSchema } from '../src/modules/market/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 import { routingCheckDigitOk } from '../src/modules/validate/routing';
@@ -183,6 +184,20 @@ export const datasets: DatasetSpec[] = [
     schema: TaxYearSchema,
     sortKey: (r) => r.tax_year,
     type: { name: 'TaxYear', from: '../modules/finance/schemas' },
+  },
+  {
+    key: 'market.commodities',
+    file: 'market/commodities.json',
+    schema: CommoditySchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'Commodity', from: '../modules/market/schemas' },
+  },
+  {
+    key: 'market.fuel',
+    file: 'market/fuel.json',
+    schema: FuelMonthSchema,
+    sortKey: (r) => r.month,
+    type: { name: 'FuelMonth', from: '../modules/market/schemas' },
   },
   {
     key: 'mock.names',

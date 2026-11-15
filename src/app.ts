@@ -20,6 +20,7 @@ import { goldRoutes } from './modules/gold/routes';
 import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
+import { marketRoutes } from './modules/market/routes';
 import { mockRoutes } from './modules/mock/routes';
 import { phoneRoutes } from './modules/phone/routes';
 import { validateRoutes } from './modules/validate/routes';
@@ -97,6 +98,12 @@ const MODULES = [
     description: 'Current BAJUS gold and silver prices (per gram and vori) and a zakat calculator',
     path: '/v1/gold/prices',
   },
+  {
+    name: 'Market prices',
+    description:
+      "Today's TCB retail prices of essential goods in Dhaka, and government fuel prices",
+    path: '/v1/market/prices?category=edible-oil',
+  },
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -140,6 +147,7 @@ app.route('/v1', mockRoutes);
 app.route('/v1', bankRoutes);
 app.route('/v1', educationRoutes);
 app.route('/v1', goldRoutes);
+app.route('/v1', marketRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

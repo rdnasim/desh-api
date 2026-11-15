@@ -15,7 +15,8 @@ specs benefit from what was learned.
 | [`005-banks`](../specs/005-banks/) | 2 — Live data | 11 Banks & Routing Numbers | **Built**: 61 banks, 11,533 branches (Bangladesh Bank, 31 Aug 2026), 8,080 routing numbers; permission from bddata.org and Bangla bank names pending |
 | [`006-education`](../specs/006-education/) | 2 — Live data | 14 Education Data (universities) | **Built**: 181 UGC universities; programmes, education boards and Bangla names are follow-ups |
 | [`007-gold-zakat`](../specs/007-gold-zakat/) | 2 — Live data | 12 Gold Price & Zakat | **Built**: live BAJUS prices (no storage); BAJUS refuses some regions, which get the last good list from Workers KV (≤ 7 days old); price history would need a database |
-| `00x-…` (to split) | 2 — Live data (months 2–3) | 10 Market Prices, API keys & daily quotas | Not started |
+| [`009-market-prices`](../specs/009-market-prices/) | 2 — Live data | 10 Market Prices | **Built**: TCB daily Dhaka retail prices (live, KV fallback), monthly fuel prices; exchange rates blocked (Bangladesh Bank captcha) |
+| `00x-…` | 2 — Live data | API keys & daily quotas | Not started |
 | `00x-expansion` | 3 — Expansion (months 4–6) | 16 Prayer Times, 17 Transport, 18 Health, 19 Weather/AQI/Flood, 20 Constituencies, 21 Tourism, 22 NLP, SDKs (npm, PyPI, Composer) | Not started |
 | `00x-ecosystem` | 4 — Ecosystem (6+ months) | Playground, bots, browser extension, form widgets, WordPress/Laravel plugins, Sheets add-on, dashboard, CLI | Not started |
 
@@ -30,6 +31,8 @@ Items waiting on a maintainer decision or on a document only a person can obtain
 | 005 | Bangla names for the 61 banks | An official source |
 | 006 | Bangla university names, approved programmes, education boards | UGC data for names; follow-up features |
 | 004 | Native-speaker review of mock name spellings | A reviewer |
+| 009 | Exchange rates from Bangladesh Bank | A browser download or another official source (bb.org.bd blocks automated reads) |
+| 009 | Fuel prices each month | Add the month's Energy Division notice to `data/market/fuel.json` |
 
 Phase 2 and 3 are large; when their turn comes, split them into several features (e.g.
 `002-holidays-calendar`, `003-finance-calculators`) if any single spec exceeds ~8 user stories.

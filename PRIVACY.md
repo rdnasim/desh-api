@@ -25,6 +25,12 @@ minutes keyed by the URL, so prefer rounded amounts if that matters to you. To r
 API contacts bajus.org; your IP address and request are not passed on. The only thing stored is the
 last price list itself (in Cloudflare Workers KV), never anything about the request.
 
+## Market and fuel prices
+
+`/v1/market/prices` and `/v1/fuel/prices` take no personal input. To read market prices the API
+contacts tcb.gov.bd and its file storage; your IP address and request are not passed on. Only the
+price list itself is kept (in Workers KV).
+
 ## Mock data
 
 `/v1/mock/*` returns made-up people. Names are combined at random from lists of common names, and

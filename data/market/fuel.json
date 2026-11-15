@@ -1,0 +1,17 @@
+[
+  {
+    "month": "2026-11",
+    "effective_from": "2026-11-01",
+    "prices": {
+      "diesel": 135,
+      "octane": 165,
+      "petrol": 160,
+      "kerosene": 155
+    },
+    "source": {
+      "ref": "Energy and Mineral Resources Division memo 28.00.0000.000.026.35.0116.24.499 (29 Oct 2026): November 2026 prices unchanged from the 20 Sep 2026 notification 28.00.0000.000.026.07.0017.26.215",
+      "date": "2026-10-29",
+      "url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bpc/2026/10/3e654999-fe81-418f-8fdb-9b0e444b4e87.pdf"
+    }
+  }
+]

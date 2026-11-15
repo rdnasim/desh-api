@@ -8,7 +8,7 @@ export const LANDING_HTML = /* html */ `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Desh API — Bangladesh reference data and Bangla language tools</title>
-<meta name="description" content="A free, open API for Bangladesh: divisions to unions, postcodes, bank branches and routing numbers, universities, official holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat and gold prices. English and Bangla names, and the source of every fact.">
+<meta name="description" content="A free, open API for Bangladesh: divisions to unions, postcodes, bank branches and routing numbers, universities, official holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat, gold and market prices. English and Bangla names, and the source of every fact.">
 <meta name="theme-color" content="#E4002B">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ccircle cx='14' cy='16' r='9' fill='%23E4002B'/%3E%3C/svg%3E">
 <script>
@@ -266,7 +266,7 @@ footer p { margin: 0 0 6px; }
     <h1>Bangladesh reference data, Bangla tools and calculators, as a free API.</h1>
     <div class="disc-big" aria-hidden="true"></div>
     <p class="bn" lang="bn">বাংলাদেশের তথ্য, বাংলা ভাষার টুলস ও ক্যালকুলেটর — ফ্রি, ওপেন সোর্স API।</p>
-    <p class="lede">Divisions to unions and postcodes, bank branches and routing numbers, universities, official holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat and today's gold price. English and Bangla names, and the source of every fact in every response. No sign-up, no API key.</p>
+    <p class="lede">Divisions to unions and postcodes, bank branches and routing numbers, universities, official holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat, and today's gold and market prices. English and Bangla names, and the source of every fact in every response. No sign-up, no API key.</p>
     <div class="base">
       <div class="url"><span id="base-url">https://deshapi.riadul.com</span><button class="copy" type="button" data-copy-from="base-url">Copy</button></div>
       <a class="btn primary" href="/docs">Open the docs</a>
@@ -277,7 +277,7 @@ footer p { margin: 0 0 6px; }
 
 <div class="wrap counts" aria-label="What the data covers">
   <div class="grid">
-    <div class="count"><span class="n">14</span><span class="l">modules</span></div>
+    <div class="count"><span class="n">15</span><span class="l">modules</span></div>
     <div class="count"><span class="n">4,540</span><span class="l">unions</span></div>
     <div class="count"><span class="n">1,349</span><span class="l">post offices</span></div>
     <div class="count"><span class="n">11,533</span><span class="l">bank branches</span></div>
@@ -325,6 +325,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">12</div><h3>Banks</h3><p>All 61 banks and 11,533 branches from Bangladesh Bank, by district and upazila. Look up a branch by routing number, or check a routing number's check digit.</p><a href="/v1/routing/010130065">/v1/routing/010130065</a></div>
         <div class="mod"><div class="k">13</div><h3>Education</h3><p>All 181 universities listed by the University Grants Commission: public, private, international and cross-border, with founding year, website and campus.</p><a href="/v1/universities?category=public">/v1/universities?category=public</a></div>
         <div class="mod"><div class="k">14</div><h3>Gold &amp; zakat</h3><p>Today's gold and silver prices from the Bangladesh Jewellers Association, per gram and per vori, and a zakat calculator with the nisab worked out from those prices.</p><a href="/v1/gold/prices">/v1/gold/prices</a></div>
+        <div class="mod"><div class="k">15</div><h3>Market prices</h3><p>Today's retail prices of rice, oil, pulses, spices, fish, meat and more in Dhaka from the Trading Corporation of Bangladesh, with week, month and year comparisons; and government fuel prices.</p><a href="/v1/market/prices?category=edible-oil">/v1/market/prices?category=edible-oil</a></div>
       </div>
     </div>
   </div>
@@ -366,7 +367,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
           <tr><td>404</td><td><code>not_found</code></td><td>Unknown slug, postcode, route, a year with no official holiday list, or a tax year with no Finance Act rates</td></tr>
           <tr><td>413</td><td><code>payload_too_large</code></td><td>Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers)</td></tr>
           <tr><td>429</td><td><code>rate_limited</code></td><td>More than 120 requests per minute from one IP</td></tr>
-          <tr><td>503</td><td><code>upstream_unavailable</code></td><td>A live source (gold prices from BAJUS) could not be read and no list from the last 7 days is saved</td></tr>
+          <tr><td>503</td><td><code>upstream_unavailable</code></td><td>A live source (gold prices from BAJUS, market prices from TCB) could not be read and no list from the last 7 days is saved</td></tr>
         </tbody>
       </table>
       <p class="muted">Numbers can be sent in Latin or Bangla digits (1250 or ১২৫০). CORS is open, so you can call the API from a browser.</p>
@@ -402,6 +403,8 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
           <tr><td>Banks and branches</td><td><a href="https://www.bb.org.bd/econdata/bs/geo_bank.pdf">Bangladesh Bank branch list</a> (as on 31 August 2026); routing numbers matched from <a href="https://www.bddata.org/all-banks/">bddata.org</a></td></tr>
           <tr><td>Universities</td><td><a href="https://www.ugc.gov.bd/universities">University Grants Commission</a></td></tr>
           <tr><td>Gold and silver prices</td><td><a href="https://www.bajus.org/gold-price">Bangladesh Jewellers Association (BAJUS)</a>, read live</td></tr>
+          <tr><td>Market prices</td><td><a href="https://tcb.gov.bd/pages/daily-rmps">Trading Corporation of Bangladesh daily retail prices</a>, read live</td></tr>
+          <tr><td>Fuel prices</td><td>Energy and Mineral Resources Division monthly notices (via <a href="https://bpc.gov.bd/">BPC</a>)</td></tr>
           <tr><td>Hotlines</td><td><a href="https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89">Bangladesh National Portal</a>, <a href="https://dghs.gov.bd/">DGHS</a></td></tr>
           <tr><td>GI foods</td><td><a href="https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf">Department of Patents, Designs and Trademarks</a></td></tr>
           <tr><td>Bijoy mapping</td><td>Derived from <a href="https://github.com/BinduLogic/bn-ansi-to-unicode">bn-ansi-to-unicode</a> (MIT)</td></tr>
@@ -464,6 +467,8 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'Universities', method: 'GET', path: '/v1/universities?category=public' },
     { label: 'Gold price', method: 'GET', path: '/v1/gold/prices' },
     { label: 'Zakat', method: 'GET', path: '/v1/zakat?wealth=1000000' },
+    { label: 'Market prices', method: 'GET', path: '/v1/market/prices?category=edible-oil' },
+    { label: 'Fuel prices', method: 'GET', path: '/v1/fuel/prices' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
     { label: 'Bijoy to Unicode', method: 'POST', path: '/v1/convert/bijoy-to-unicode', body: '{"text":"Avgvi \\u2020mvbvi evsjv"}' },

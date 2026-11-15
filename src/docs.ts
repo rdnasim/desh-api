@@ -5,14 +5,14 @@ export const OPENAPI_CONFIG = {
     title: 'Desh API',
     version: '1.0.0',
     description: [
-      "Free, open, bilingual API for Bangladesh: reference data (geo, banks, universities, holidays, hotlines), Bangla language tools, validators, and calculators (income tax, VAT, loans, zakat, today's gold price).",
+      "Free, open, bilingual API for Bangladesh: reference data (geo, banks, universities, holidays, hotlines), Bangla language tools, validators, and calculators (income tax, VAT, loans, zakat), and today's gold, market and fuel prices.",
       '',
       '- Every response is `{ success, data, meta }`; `meta.source` and `meta.last_updated` say where the data came from.',
       '- Errors are `{ success: false, error: { code, message } }` with a matching HTTP status.',
       '- Numbers can be sent in Latin (1250) or Bangla (১২৫০) digits.',
       '- No API key needed. Limit: 120 requests per minute per IP.',
       '- Validators check formats only and never store or log what you send.',
-      '- Gold prices are read live from BAJUS. Where BAJUS cannot be reached, the last list read (within 7 days) is served with `freshness: "last_known"`; with none, the API answers 503 `upstream_unavailable`.',
+      '- Gold and market prices are read live (BAJUS, TCB). Where a source cannot be reached, the last list read (within 7 days) is served with `freshness: "last_known"`; with none, the API answers 503 `upstream_unavailable`.',
       '- Where an official source is English-only (bank branches, most universities), `name_bn` is omitted rather than invented.',
     ].join('\n'),
     license: { name: 'Code MIT, data CC BY 4.0' },
@@ -87,6 +87,11 @@ export const OPENAPI_CONFIG = {
       name: 'Gold & zakat',
       description:
         'Gold and silver prices read live from the Bangladesh Jewellers Association (BAJUS), per gram and per vori (11.664 g), and a zakat calculator using the classical nisab (7.5 vori gold or 52.5 vori silver).',
+    },
+    {
+      name: 'Market prices',
+      description:
+        "Today's retail prices of essential goods in Dhaka from the Trading Corporation of Bangladesh (read live from TCB's daily spreadsheet, with English names added), and the government's monthly fuel prices.",
     },
   ],
 };

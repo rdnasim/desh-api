@@ -255,6 +255,30 @@
     ]
   },
   {
+    "dataset": "market.commodities",
+    "source": "Commodity names and units exactly as written in the Trading Corporation of Bangladesh daily retail price list; English names and slugs by desh-api contributors",
+    "source_url": "https://tcb.gov.bd/pages/daily-rmps",
+    "licence": "Names: public government information; translations CC BY 4.0",
+    "retrieved": "2026-11-15",
+    "last_updated": "2026-11-15",
+    "credits": [
+      "Trading Corporation of Bangladesh",
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "market.fuel",
+    "source": "Energy and Mineral Resources Division monthly fuel price notices (published by Bangladesh Petroleum Corporation)",
+    "source_url": "https://bpc.gov.bd/",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-15",
+    "last_updated": "2026-10-29",
+    "credits": [
+      "Energy and Mineral Resources Division",
+      "Bangladesh Petroleum Corporation"
+    ]
+  },
+  {
     "dataset": "mock.names",
     "source": "Common Bangladeshi given and family names compiled by desh-api contributors (no directory of real people used); tradition weights from the BBS Population and Housing Census 2022",
     "source_url": "https://en.prothomalo.com/bangladesh/at87h01ocn",

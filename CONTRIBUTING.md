@@ -15,6 +15,7 @@ All reference data is plain JSON in [`data/`](data/):
 | `data/mock/` | Common given and family names used to build synthetic test people |
 | `data/banks/` | Banks and branches (rebuilt from Bangladesh Bank's branch list with `scripts/import/banks.py`) |
 | `data/education/` | Universities and their categories (rebuilt from ugc.gov.bd with `scripts/import/ugc.ts`) |
+| `data/market/` | Fuel prices per month, and English names for TCB's commodities |
 | `data/finance/` | Income tax rules per tax year (thresholds, slabs, minimum tax, rebate) and taxpayer categories |
 | `data/fun/` | Proverbs, riddles, quiz questions, GI foods, history events |
 | `data/land/` | Land units |
@@ -57,6 +58,11 @@ Extra rules for some data:
 - **Gold prices** are read live from bajus.org, not stored. If BAJUS changes its page and the API
   starts answering 503, update the parser in `src/modules/gold/bajus.ts` and its test fixture in
   `tests/golden/gold/`.
+- **Fuel prices** change by monthly government notice: add a record to `data/market/fuel.json`
+  with the month, effective date, the four prices and the notice (memo number, date, URL).
+- **Market prices** are read live from TCB. If TCB adds an item, it appears in `/v1/market/prices`
+  without a `slug` or English name; add it to `data/market/commodities.json` with `name_bn` and
+  `unit_bn` exactly as TCB writes them.
 - **Bank branches** come from Bangladesh Bank's branch list; refresh them with the importer rather
   than by hand. A routing number may be added or corrected only with a source (Bangladesh Bank or
   the bank's own website) and must pass the check digit (`pnpm data:check` enforces it).
@@ -82,7 +88,7 @@ pnpm typecheck && pnpm lint
 Features are specified before they're built, with [Spec Kit](https://github.com/github/spec-kit):
 `/speckit-specify` → `/speckit-plan` → `/speckit-tasks` → `/speckit-implement`. Project rules are in
 [`.specify/memory/constitution.md`](.specify/memory/constitution.md); each feature has its own
-folder under [`specs/`](specs/) (latest: [`007-gold-zakat`](specs/007-gold-zakat/)),
+folder under [`specs/`](specs/) (latest: [`009-market-prices`](specs/009-market-prices/)),
 and [`docs/roadmap.md`](docs/roadmap.md) shows what is built and what is next. Good first issues are labelled
 `good first issue`, and content curation (proverbs, riddles, quiz, history) is a great place to
 start.
