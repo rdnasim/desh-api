@@ -1,0 +1,482 @@
+[
+  {
+    "slug": "anchor-dal",
+    "name_en": "Anchor dal (split yellow peas)",
+    "name_bn": "এ্যাংকর ডাল",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "pulses"
+  },
+  {
+    "slug": "atta-loose",
+    "name_en": "Atta, white (loose)",
+    "name_bn": "আটা সাদা (খোলা)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "flour"
+  },
+  {
+    "slug": "atta-packet",
+    "name_en": "Atta (packet)",
+    "name_bn": "আটা (প্যাকেট)",
+    "unit_en": "per kg (packet)",
+    "unit_bn": "প্রতি কেজি প্যাঃ",
+    "category": "flour"
+  },
+  {
+    "slug": "bay-leaf",
+    "name_en": "Bay leaf",
+    "name_bn": "তেজপাতা",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "beef",
+    "name_en": "Beef",
+    "name_bn": "গরু",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "fish-meat"
+  },
+  {
+    "slug": "brinjal",
+    "name_en": "Brinjal (eggplant)",
+    "name_bn": "বেগুন",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "misc"
+  },
+  {
+    "slug": "cardamom-small",
+    "name_en": "Cardamom (small)",
+    "name_bn": "এলাচ(ছোট)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "chicken-broiler",
+    "name_en": "Chicken (broiler)",
+    "name_bn": "মুরগী(ব্রয়লার)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "fish-meat"
+  },
+  {
+    "slug": "chicken-local",
+    "name_en": "Chicken (local)",
+    "name_bn": "মুরগী (দেশী)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "fish-meat"
+  },
+  {
+    "slug": "chickpeas",
+    "name_en": "Chickpeas (by quality)",
+    "name_bn": "ছোলা (মানভেদে)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "pulses"
+  },
+  {
+    "slug": "cinnamon",
+    "name_en": "Cinnamon",
+    "name_bn": "দারুচিনি",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "clove",
+    "name_en": "Clove",
+    "name_bn": "লবঙ্গ",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "coriander",
+    "name_en": "Coriander seed",
+    "name_bn": "ধনে",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "cucumber",
+    "name_en": "Cucumber",
+    "name_bn": "শসা",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "misc"
+  },
+  {
+    "slug": "cumin",
+    "name_en": "Cumin",
+    "name_bn": "জিরা",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "dates",
+    "name_en": "Dates (ordinary quality)",
+    "name_bn": "খেজুর(সাধারণ মানের)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "misc"
+  },
+  {
+    "slug": "dried-chilli-imported",
+    "name_en": "Dried chilli (imported)",
+    "name_bn": "শুকনা মরিচ (আমদানি)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "dried-chilli-local",
+    "name_en": "Dried chilli (local)",
+    "name_bn": "শুকনা মরিচ (দেশী)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "egg-farm",
+    "name_en": "Eggs (farm)",
+    "name_bn": "ডিম (ফার্ম)",
+    "unit_en": "per hali (4 pieces)",
+    "unit_bn": "প্রতি হালি",
+    "category": "misc"
+  },
+  {
+    "slug": "garlic-imported",
+    "name_en": "Garlic (imported)",
+    "name_bn": "রসুন (আমদানি)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "garlic-local",
+    "name_en": "Garlic (local)",
+    "name_bn": "রসুন (দেশী)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "ginger-imported",
+    "name_en": "Ginger (imported)",
+    "name_bn": "আদা (আমদানি)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "ginger-local",
+    "name_en": "Ginger (local)",
+    "name_bn": "আদা (দেশী)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "green-chilli",
+    "name_en": "Green chilli",
+    "name_bn": "কাঁচামরিচ",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "misc"
+  },
+  {
+    "slug": "hilsa",
+    "name_en": "Hilsa fish",
+    "name_bn": "ইলিশ",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "fish-meat"
+  },
+  {
+    "slug": "lemon",
+    "name_en": "Lemon",
+    "name_bn": "লেবু",
+    "unit_en": "per hali (4 pieces)",
+    "unit_bn": "প্রতি হালি",
+    "category": "misc"
+  },
+  {
+    "slug": "lentil-bold",
+    "name_en": "Red lentils (bold grain)",
+    "name_bn": "মশুর ডাল (বড় দানা)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "pulses"
+  },
+  {
+    "slug": "lentil-medium",
+    "name_en": "Red lentils (medium grain)",
+    "name_bn": "মশুর ডাল (মাঝারী দানা)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "pulses"
+  },
+  {
+    "slug": "lentil-small",
+    "name_en": "Red lentils (small grain)",
+    "name_bn": "মশুর ডাল (ছোট দানা)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "pulses"
+  },
+  {
+    "slug": "maida-loose",
+    "name_en": "Maida (loose)",
+    "name_bn": "ময়দা (খোলা)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "flour"
+  },
+  {
+    "slug": "maida-packet",
+    "name_en": "Maida (packet)",
+    "name_bn": "ময়দা (প্যাকেট)",
+    "unit_en": "per kg (packet)",
+    "unit_bn": "প্রতি কেজি প্যাঃ",
+    "category": "flour"
+  },
+  {
+    "slug": "milk-powder-dano",
+    "name_en": "Milk powder: Dano",
+    "name_bn": "ডানো",
+    "unit_en": "1 kg pack",
+    "unit_bn": "১ কেজি",
+    "category": "milk-powder"
+  },
+  {
+    "slug": "milk-powder-diploma",
+    "name_en": "Milk powder: Diploma (New Zealand)",
+    "name_bn": "ডিপ্লোমা (নিউজিল্যান্ড)",
+    "unit_en": "1 kg pack",
+    "unit_bn": "১ কেজি",
+    "category": "milk-powder"
+  },
+  {
+    "slug": "milk-powder-fresh",
+    "name_en": "Milk powder: Fresh",
+    "name_bn": "ফ্রেশ",
+    "unit_en": "1 kg pack",
+    "unit_bn": "১ কেজি",
+    "category": "milk-powder"
+  },
+  {
+    "slug": "milk-powder-marks",
+    "name_en": "Milk powder: Marks",
+    "name_bn": "মার্কস",
+    "unit_en": "1 kg pack",
+    "unit_bn": "১ কেজি",
+    "category": "milk-powder"
+  },
+  {
+    "slug": "ms-rod-40",
+    "name_en": "MS rod (40 grade)",
+    "name_bn": "এম,এস রড( ৪০ গ্রেড)",
+    "unit_en": "per metric ton",
+    "unit_bn": "প্রতি মেঃটন",
+    "category": "misc"
+  },
+  {
+    "slug": "ms-rod-60",
+    "name_en": "MS rod (60 grade)",
+    "name_bn": "এম,এস রড (৬০ গ্রেড)",
+    "unit_en": "per metric ton",
+    "unit_bn": "প্রতি মেঃটন",
+    "category": "misc"
+  },
+  {
+    "slug": "mung-dal",
+    "name_en": "Mung dal (by quality)",
+    "name_bn": "মুগ ডাল (মানভেদে)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "pulses"
+  },
+  {
+    "slug": "mutton",
+    "name_en": "Goat meat (khasi)",
+    "name_bn": "খাসী",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "fish-meat"
+  },
+  {
+    "slug": "onion-imported",
+    "name_en": "Onion (imported)",
+    "name_bn": "পিঁয়াজ (আমদানি)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "onion-local",
+    "name_en": "Onion (local)",
+    "name_bn": "পিঁয়াজ (দেশী)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "palm-oil-loose",
+    "name_en": "Palm oil (loose)",
+    "name_bn": "পাম অয়েল (লুজ)",
+    "unit_en": "per litre",
+    "unit_bn": "প্রতি লিটার",
+    "category": "edible-oil"
+  },
+  {
+    "slug": "potato",
+    "name_en": "Potato (new/old)",
+    "name_bn": "আলু (নতুন/পুরাতন)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "pulses"
+  },
+  {
+    "slug": "rice-aromatic-loose",
+    "name_en": "Aromatic rice (polao), loose",
+    "name_bn": "চাল সুগন্ধী (পোলাও)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "rice"
+  },
+  {
+    "slug": "rice-aromatic-packet",
+    "name_en": "Aromatic rice (polao), packet",
+    "name_bn": "চাল সুগন্ধী (পোলাও)",
+    "unit_en": "per kg (packet)",
+    "unit_bn": "প্রতি কেজি প্যাঃ",
+    "category": "rice"
+  },
+  {
+    "slug": "rice-bran-oil-5l",
+    "name_en": "Rice bran oil (bottle)",
+    "name_bn": "রাইস ব্রান তেল (বোতল)",
+    "unit_en": "5 litre bottle",
+    "unit_bn": "৫ লিটার",
+    "category": "edible-oil"
+  },
+  {
+    "slug": "rice-coarse",
+    "name_en": "Coarse rice (swarna/China IRRI)",
+    "name_bn": "চাল (মোটা)/স্বর্ণা/চায়না ইরি",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "rice"
+  },
+  {
+    "slug": "rice-fine",
+    "name_en": "Fine rice (nazirshail/miniket)",
+    "name_bn": "চাল সরু (নাজির/মিনিকেট)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "rice"
+  },
+  {
+    "slug": "rice-medium",
+    "name_en": "Medium rice (paijam/BR-28)",
+    "name_bn": "চাল (মাঝারী)পাইজাম/আটাশ",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "rice"
+  },
+  {
+    "slug": "rui",
+    "name_en": "Rui (rohu) fish",
+    "name_bn": "রুই",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "fish-meat"
+  },
+  {
+    "slug": "salt-iodized",
+    "name_en": "Iodized salt (packet)",
+    "name_bn": "লবণ(প্যাঃ)আয়োডিনযুক্ত",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "misc"
+  },
+  {
+    "slug": "soybean-oil-1l",
+    "name_en": "Soybean oil (bottle)",
+    "name_bn": "সয়াবিন তেল (বোতল)",
+    "unit_en": "1 litre bottle",
+    "unit_bn": "১ লিটার",
+    "category": "edible-oil"
+  },
+  {
+    "slug": "soybean-oil-2l",
+    "name_en": "Soybean oil (bottle)",
+    "name_bn": "সয়াবিন তেল (বোতল)",
+    "unit_en": "2 litre bottle",
+    "unit_bn": "2 লিটার",
+    "category": "edible-oil"
+  },
+  {
+    "slug": "soybean-oil-5l",
+    "name_en": "Soybean oil (bottle)",
+    "name_bn": "সয়াবিন তেল (বোতল)",
+    "unit_en": "5 litre bottle",
+    "unit_bn": "৫ লিটার",
+    "category": "edible-oil"
+  },
+  {
+    "slug": "soybean-oil-loose",
+    "name_en": "Soybean oil (loose)",
+    "name_bn": "সয়াবিন তেল (লুজ)",
+    "unit_en": "per litre",
+    "unit_bn": "প্রতি লিটার",
+    "category": "edible-oil"
+  },
+  {
+    "slug": "sugar",
+    "name_en": "Sugar",
+    "name_bn": "চিনি",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "misc"
+  },
+  {
+    "slug": "super-palm-oil-loose",
+    "name_en": "Super palm oil (loose)",
+    "name_bn": "সুপার পাম অয়েল (লুজ)",
+    "unit_en": "per litre",
+    "unit_bn": "প্রতি লিটার",
+    "category": "edible-oil"
+  },
+  {
+    "slug": "turmeric-imported",
+    "name_en": "Turmeric (imported)",
+    "name_bn": "হলুদ (আমদানি)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "turmeric-local",
+    "name_en": "Turmeric (local)",
+    "name_bn": "হলুদ (দেশী)",
+    "unit_en": "per kg",
+    "unit_bn": "প্রতি কেজি",
+    "category": "spices"
+  },
+  {
+    "slug": "writing-paper",
+    "name_en": "Writing paper (white)",
+    "name_bn": "লেখার কাগজ(সাদা)",
+    "unit_en": "per dista (24 sheets)",
+    "unit_bn": "প্রতি দিস্তা",
+    "category": "misc"
+  }
+]

@@ -155,6 +155,17 @@ const scenarios: Scenario[] = [
         : `no prices (freshness ${b.data?.freshness ?? b.error?.code})`,
   },
   {
+    name: '13j market prices (live or last known)',
+    path: '/v1/market/prices?category=rice',
+    check: (_, b) =>
+      b.data?.items?.length > 0 ? true : `no items (freshness ${b.data?.freshness})`,
+  },
+  {
+    name: '13k fuel prices',
+    path: '/v1/fuel/prices',
+    check: (_, b) => (b.data?.prices?.diesel > 0 ? true : 'no fuel prices'),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

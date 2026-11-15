@@ -30,8 +30,8 @@ every response**.
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 14 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays,
-  finance, mock data, banks, universities, gold & zakat
+- 15 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays,
+  finance, mock data, banks, universities, gold & zakat, market prices
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -104,6 +104,10 @@ curl 'https://deshapi.riadul.com/v1/mock/people?count=3&seed=demo'
 curl 'https://deshapi.riadul.com/v1/gold/prices'
 curl 'https://deshapi.riadul.com/v1/zakat?wealth=1000000'
 
+# Today's Dhaka retail prices (TCB) and fuel prices
+curl 'https://deshapi.riadul.com/v1/market/prices?category=edible-oil'
+curl 'https://deshapi.riadul.com/v1/fuel/prices'   # → diesel 135, octane 165, petrol 160, kerosene 155 Tk/litre
+
 # Which branch is this routing number? (check digit verified)
 curl 'https://deshapi.riadul.com/v1/routing/010130065'
 # → Agrani Bank, Kachua Bazar branch, Kachua, Chandpur
@@ -131,8 +135,9 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Banks** | All 61 banks and 11,533 branches from Bangladesh Bank by district and upazila; routing-number lookup and check-digit validation | [`/v1/routing/010130065`](https://deshapi.riadul.com/v1/routing/010130065) |
 | **Education** | All 181 universities listed by the University Grants Commission (public, private, international, cross-border) with founding year, website, campus and contacts | [`/v1/universities?category=public`](https://deshapi.riadul.com/v1/universities?category=public) |
 | **Gold & zakat** | Today's BAJUS gold and silver prices per gram and per vori; zakat with the nisab from those prices | [`/v1/gold/prices`](https://deshapi.riadul.com/v1/gold/prices) |
+| **Market prices** | Today's TCB retail prices of essential goods in Dhaka (rice, oil, pulses, spices, fish, meat…) with week, month and year comparisons; government fuel prices | [`/v1/market/prices?category=edible-oil`](https://deshapi.riadul.com/v1/market/prices?category=edible-oil) |
 
-Coming next: the bank holiday calendar and market prices. See the
+Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the
 [roadmap](docs/roadmap.md).
 
 ## How responses look
@@ -155,16 +160,18 @@ Errors use a stable `code`, a readable message (often in Bangla too), and the ri
 | 404 | `not_found` | Unknown slug, postcode or route; a holiday year or tax year with no official source yet |
 | 413 | `payload_too_large` | Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers) |
 | 429 | `rate_limited` | More than 120 requests per minute from one IP (see `Retry-After`) |
-| 503 | `upstream_unavailable` | A live source (gold prices from BAJUS) could not be read and no list from the last 7 days is saved |
+| 503 | `upstream_unavailable` | A live source (gold prices from BAJUS, market prices from TCB) could not be read and no list from the last 7 days is saved |
 
 **Limits and caching.** No key is needed; the limit is 120 requests per minute per IP. Reference
-data and calculator results are cacheable for a day; gold prices for 10 minutes; an income-tax
+data and calculator results are cacheable for a day; gold prices for 10 minutes, market prices
+for 30; an income-tax
 answer that used the default (current) tax year for an hour. Validator responses and unseeded mock
 data are never cached. CORS is open, so you can call the API straight from a browser.
 
-**Live data.** Gold prices are read from BAJUS when you ask (cached by Cloudflare for 30 minutes).
-BAJUS refuses some regions; there the API serves the last list it read (within 7 days), marked
-`freshness: "last_known"` with its `fetched_at` time, and answers 503 only if it has none.
+**Live data.** Gold prices (BAJUS) and market prices (TCB) are read when you ask, cached by
+Cloudflare for 30 minutes. If a source refuses the region a request is served from, the API serves
+the last list it read (within 7 days), marked `freshness: "last_known"` with its `fetched_at` time,
+and answers 503 only if it has none.
 
 ## Privacy
 
@@ -188,6 +195,8 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 | Banks and branches | [Bangladesh Bank branch list](https://www.bb.org.bd/econdata/bs/geo_bank.pdf) (as on 31 August 2026); routing numbers matched from [bddata.org](https://www.bddata.org/all-banks/) |
 | Universities | [University Grants Commission](https://www.ugc.gov.bd/universities) |
 | Gold and silver prices | [Bangladesh Jewellers Association (BAJUS)](https://www.bajus.org/gold-price), read live |
+| Market prices | [Trading Corporation of Bangladesh](https://tcb.gov.bd/pages/daily-rmps) daily retail prices, read live |
+| Fuel prices | Energy and Mineral Resources Division monthly notices (via [BPC](https://bpc.gov.bd/)) |
 | VAT, gratuity | VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10)) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |
@@ -219,9 +228,9 @@ pnpm dev            # http://localhost:8787 — docs at /docs
 
 **Stack:** TypeScript, [Hono](https://hono.dev) with OpenAPI-generated docs
 ([Scalar](https://scalar.com)), Cloudflare Workers, Vitest. Reference data is plain JSON in
-[`data/`](data/), validated and bundled at build time; there is no database. The one live source
-(BAJUS gold prices) is read at request time and cached at the edge; its last good copy is kept in
-Workers KV for regions where BAJUS cannot be reached.
+[`data/`](data/), validated and bundled at build time; there is no database. The live sources
+(BAJUS gold prices, TCB market prices) are read at request time and cached at the edge; their last
+good copies are kept in Workers KV for regions where they cannot be reached.
 
 ```text
 data/            reference data (edit these to fix data)
