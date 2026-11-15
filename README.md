@@ -92,6 +92,10 @@ curl 'https://deshapi.riadul.com/v1/finance/income-tax?income=1800000&employment
 # Loan EMI, VAT, DPS, gratuity
 curl 'https://deshapi.riadul.com/v1/finance/emi?principal=1000000&rate=9&months=60'   # → 20,758.36 a month
 curl 'https://deshapi.riadul.com/v1/finance/vat?amount=1150&inclusive=true'            # → net 1,000 + VAT 150
+
+# Synthetic test data (same seed, same people)
+curl 'https://deshapi.riadul.com/v1/mock/people?count=3&seed=demo'
+# → bilingual names, valid-format phones and NIDs, example.com emails, real upazilas and postcodes
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -111,6 +115,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://deshapi.riadul.com/v1/fun/proverb/random) |
 | **Holidays** | Official 2027 public holidays (general, executive-order, optional by community), "is this a holiday?", working-day counts | [`/v1/is-holiday?date=2027-12-16`](https://deshapi.riadul.com/v1/is-holiday?date=2027-12-16) |
 | **Finance** | Income tax from the Finance Act 2026 for tax years 2026-27 to 2030-31 (all taxpayer categories, salary exemption, investment rebate, minimum tax), VAT, loan EMI with schedule, DPS maturity, statutory gratuity | [`/v1/finance/income-tax?income=1000000`](https://deshapi.riadul.com/v1/finance/income-tax?income=1000000) |
+| **Mock data** | Synthetic Bangladeshi people and addresses for testing: bilingual names, phones and NIDs that pass the validators, real upazilas and postcodes; repeatable with `seed` | [`/v1/mock/people?count=3&seed=demo`](https://deshapi.riadul.com/v1/mock/people?count=3&seed=demo) |
 
 Coming next: the bank holiday calendar, banks and routing numbers. See the
 [roadmap](docs/roadmap.md).
@@ -145,7 +150,7 @@ API straight from a browser.
 Validators (NID, phone, TIN, BIN, plates, postcodes) only check that a value is **well-formed**.
 Nothing is looked up, stored or logged; our logs record only the route pattern, never the value.
 For identifiers, use the `POST` endpoints so values stay out of URLs. The finance calculators take
-only numbers, never an identifier. Details: [PRIVACY.md](PRIVACY.md).
+only numbers, never an identifier. Mock data is made up and never describes a real person. Details: [PRIVACY.md](PRIVACY.md).
 
 ## Where the data comes from
 

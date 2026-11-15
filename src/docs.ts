@@ -66,5 +66,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Income tax for individuals from the Finance Act (keyed by tax year; tax year 2027-28 = income earned July 2026 – June 2027), VAT, loan EMI, DPS maturity and statutory gratuity. Every response cites its legal source and carries a disclaimer; these are estimates, not tax, financial or legal advice.',
     },
+    {
+      name: 'Mock data',
+      description:
+        'Synthetic Bangladeshi people and addresses for testing apps: bilingual names, format-valid phones and NIDs, example.com emails, and addresses consistent with real upazilas and postcodes. Nothing describes a real person. Pass `seed` for repeatable output.',
+    },
   ],
 };

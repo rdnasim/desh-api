@@ -17,6 +17,13 @@ cache, keyed by the request URL, so the amounts in the URL are stored there for 
 week) along with the answer. They are not linked to you, and our logs record only the route
 pattern (for example `/v1/finance/income-tax`).
 
+## Mock data
+
+`/v1/mock/*` returns made-up people. Names are combined at random from lists of common names, and
+phone numbers and NIDs are random digits in the right format, so one may happen to belong to a real
+person: never call, text or look up generated numbers. Emails use `example.com`, which cannot
+receive mail. Religion is used only to pair names believably and is never returned.
+
 ## What we do not store
 
 - We have no database of requests. Nothing you send is saved.
