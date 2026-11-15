@@ -116,7 +116,8 @@ app.get('/', (c) => {
   }
   return c.json({
     name: 'Desh API',
-    description: 'Open public API for Bangladesh: reference data and Bangla language tools',
+    description:
+      'Open public API for Bangladesh: reference data, Bangla language tools, validators and calculators',
     docs: '/docs',
     openapi: '/openapi.json',
     modules: MODULES,

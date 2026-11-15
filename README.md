@@ -2,8 +2,8 @@
 
 # 🇧🇩 Desh API
 
-**Free, open API for Bangladesh reference data and Bangla language tools.**
-বাংলাদেশের তথ্য ও বাংলা ভাষার টুলসের জন্য একটি ফ্রি, ওপেন সোর্স API।
+**Free, open API for Bangladesh reference data, Bangla language tools and calculators.**
+বাংলাদেশের তথ্য, বাংলা ভাষার টুলস ও ক্যালকুলেটরের জন্য একটি ফ্রি, ওপেন সোর্স API।
 
 [![CI](https://github.com/rdnasim/desh-api/actions/workflows/ci.yml/badge.svg)](https://github.com/rdnasim/desh-api/actions/workflows/ci.yml)
 [![Deploy](https://github.com/rdnasim/desh-api/actions/workflows/deploy.yml/badge.svg)](https://github.com/rdnasim/desh-api/actions/workflows/deploy.yml)
@@ -22,13 +22,16 @@
 
 Every Bangladeshi developer has rebuilt the same things: a division → district → upazila dropdown
 from an old spreadsheet, "taka in words" for invoices, a Bijoy-to-Unicode converter, a phone-number
-regex. Desh API puts them behind one clean, documented API, free to use, with **English and Bangla
-names everywhere** and **the source of every fact in every response**.
+regex, a bank-branch picker, an income-tax calculator. Desh API puts them behind one clean,
+documented API, free to use, with **English and Bangla names** and **the source of every fact in
+every response**.
 
 - Base URL: **`https://deshapi.riadul.com`** (the older `desh-api.riadul.workers.dev` address also works)
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
+- 14 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays,
+  finance, mock data, banks, universities, gold & zakat
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -119,7 +122,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Phone** | Validate and normalise mobile numbers in any common format, original operator, bulk (up to 100) | `POST /v1/phone/validate` |
 | **Convert** | Bijoy (SutonnyMJ) ⇄ Unicode, up to 100 KB per request | `POST /v1/convert/bijoy-to-unicode` |
 | **Land** | Convert katha, bigha, decimal (shotangsho), chotak, acre, sq ft, sq m, gaj… | [`/v1/land/units`](https://deshapi.riadul.com/v1/land/units) |
-| **Validate** | Format checks for NID, vehicle plates, e-TIN, VAT BIN and postcodes | `POST /v1/validate/{type}` |
+| **Validate** | Format checks for NID, vehicle plates, e-TIN, VAT BIN, postcodes and bank routing numbers (check digit) | `POST /v1/validate/{type}` |
 | **Hotlines** | National hotline numbers, each checked against an official gov.bd page | [`/v1/hotlines?category=emergency`](https://deshapi.riadul.com/v1/hotlines?category=emergency) |
 | **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://deshapi.riadul.com/v1/fun/proverb/random) |
 | **Holidays** | Official 2027 public holidays (general, executive-order, optional by community), "is this a holiday?", working-day counts | [`/v1/is-holiday?date=2027-12-16`](https://deshapi.riadul.com/v1/is-holiday?date=2027-12-16) |
@@ -152,17 +155,23 @@ Errors use a stable `code`, a readable message (often in Bangla too), and the ri
 | 404 | `not_found` | Unknown slug, postcode or route; a holiday year or tax year with no official source yet |
 | 413 | `payload_too_large` | Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers) |
 | 429 | `rate_limited` | More than 120 requests per minute from one IP (see `Retry-After`) |
+| 503 | `upstream_unavailable` | A live source (gold prices from BAJUS) could not be read; never a stale or guessed value |
 
 **Limits and caching.** No key is needed; the limit is 120 requests per minute per IP. Reference
-data and calculator results are cacheable for a day; validator responses are never cached. CORS is open, so you can call the
-API straight from a browser.
+data and calculator results are cacheable for a day; gold prices for 10 minutes; an income-tax
+answer that used the default (current) tax year for an hour. Validator responses and unseeded mock
+data are never cached. CORS is open, so you can call the API straight from a browser.
+
+**Live data.** Gold prices are read from BAJUS when you ask (cached by Cloudflare for 30 minutes).
+BAJUS refuses some regions, so a request served outside Bangladesh may get a 503 instead of prices.
 
 ## Privacy
 
 Validators (NID, phone, TIN, BIN, plates, postcodes) only check that a value is **well-formed**.
 Nothing is looked up, stored or logged; our logs record only the route pattern, never the value.
-For identifiers, use the `POST` endpoints so values stay out of URLs. The finance calculators take
-only numbers, never an identifier. Mock data is made up and never describes a real person. Details: [PRIVACY.md](PRIVACY.md).
+For identifiers, use the `POST` endpoints so values stay out of URLs. The finance and zakat
+calculators take only numbers, never an identifier. Mock data is made up and never describes a real
+person. Details: [PRIVACY.md](PRIVACY.md).
 
 ## Where the data comes from
 
@@ -204,10 +213,13 @@ pnpm dev            # http://localhost:8787 — docs at /docs
 | `pnpm data:check` | Validate every file in `data/` |
 | `pnpm typecheck` · `pnpm lint` | TypeScript and Biome |
 | `BASE=<url> pnpm smoke --bench` | End-to-end checks against a running API, with latency |
+| `tsx scripts/import/ugc.ts <dir>` | Refresh universities from ugc.gov.bd (one request per second) |
+| `python3 -I scripts/import/banks.py <pdf> <csv>` | Rebuild banks and branches from Bangladesh Bank's branch list |
 
 **Stack:** TypeScript, [Hono](https://hono.dev) with OpenAPI-generated docs
 ([Scalar](https://scalar.com)), Cloudflare Workers, Vitest. Reference data is plain JSON in
-[`data/`](data/), validated and bundled at build time; there is no database.
+[`data/`](data/), validated and bundled at build time; there is no database. The one live source
+(BAJUS gold prices) is read at request time and cached at the edge.
 
 ```text
 data/            reference data (edit these to fix data)
