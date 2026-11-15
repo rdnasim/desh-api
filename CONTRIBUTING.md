@@ -14,6 +14,7 @@ All reference data is plain JSON in [`data/`](data/):
 | `data/holidays/` | Official holiday lists per year and their source documents |
 | `data/mock/` | Common given and family names used to build synthetic test people |
 | `data/banks/` | Banks and branches (rebuilt from Bangladesh Bank's branch list with `scripts/import/banks.py`) |
+| `data/education/` | Universities and their categories (rebuilt from ugc.gov.bd with `scripts/import/ugc.ts`) |
 | `data/finance/` | Income tax rules per tax year (thresholds, slabs, minimum tax, rebate) and taxpayer categories |
 | `data/fun/` | Proverbs, riddles, quiz questions, GI foods, history events |
 | `data/land/` | Land units |

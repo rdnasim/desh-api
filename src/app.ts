@@ -12,6 +12,7 @@ import { rateLimit } from './lib/rate-limit';
 import { banglaRoutes } from './modules/bangla/routes';
 import { bankRoutes } from './modules/banks/routes';
 import { convertRoutes } from './modules/convert/routes';
+import { educationRoutes } from './modules/education/routes';
 import { financeRoutes } from './modules/finance/routes';
 import { funRoutes } from './modules/fun/routes';
 import { geoRoutes } from './modules/geo/routes';
@@ -84,6 +85,12 @@ const MODULES = [
     description: 'Banks and their 11,533 branches from Bangladesh Bank, with routing numbers',
     path: '/v1/routing/010130065',
   },
+  {
+    name: 'Education',
+    description:
+      'Universities listed by the University Grants Commission (public, private, international)',
+    path: '/v1/universities?category=public',
+  },
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -124,6 +131,7 @@ app.route('/v1', holidayRoutes);
 app.route('/v1', financeRoutes);
 app.route('/v1', mockRoutes);
 app.route('/v1', bankRoutes);
+app.route('/v1', educationRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

@@ -139,6 +139,11 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.bank?.slug === 'agrani-bank' ? true : `got ${b.data?.bank?.slug}`),
   },
   {
+    name: '13h universities',
+    path: '/v1/universities/university-of-dhaka',
+    check: (_, b) => (b.data?.established === 1921 ? true : `got ${b.data?.established}`),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

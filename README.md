@@ -122,8 +122,9 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Finance** | Income tax from the Finance Act 2026 for tax years 2026-27 to 2030-31 (all taxpayer categories, salary exemption, investment rebate, minimum tax), VAT, loan EMI with schedule, DPS maturity, statutory gratuity | [`/v1/finance/income-tax?income=1000000`](https://deshapi.riadul.com/v1/finance/income-tax?income=1000000) |
 | **Mock data** | Synthetic Bangladeshi people and addresses for testing: bilingual names, phones and NIDs that pass the validators, real upazilas and postcodes; repeatable with `seed` | [`/v1/mock/people?count=3&seed=demo`](https://deshapi.riadul.com/v1/mock/people?count=3&seed=demo) |
 | **Banks** | All 61 banks and 11,533 branches from Bangladesh Bank by district and upazila; routing-number lookup and check-digit validation | [`/v1/routing/010130065`](https://deshapi.riadul.com/v1/routing/010130065) |
+| **Education** | All 181 universities listed by the University Grants Commission (public, private, international, cross-border) with founding year, website, campus and contacts | [`/v1/universities?category=public`](https://deshapi.riadul.com/v1/universities?category=public) |
 
-Coming next: the bank holiday calendar, education data, gold prices and zakat. See the
+Coming next: the bank holiday calendar, gold prices and zakat. See the
 [roadmap](docs/roadmap.md).
 
 ## How responses look
@@ -170,6 +171,7 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 | Holidays | [Ministry of Public Administration holiday notification for 2027](https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740) |
 | Income tax | [Finance Act 2026 (Act No. 96 of 2026)](http://bdlaws.minlaw.gov.bd/act-details-1725.html) and the Income Tax Act 2023 as amended |
 | Banks and branches | [Bangladesh Bank branch list](https://www.bb.org.bd/econdata/bs/geo_bank.pdf) (as on 31 August 2026); routing numbers matched from [bddata.org](https://www.bddata.org/all-banks/) |
+| Universities | [University Grants Commission](https://www.ugc.gov.bd/universities) |
 | VAT, gratuity | VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10)) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |

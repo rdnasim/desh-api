@@ -2,6 +2,7 @@ import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
 import { BankSchema, BranchSchema } from '../src/modules/banks/schemas';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
+import { UniversityCategorySchema, UniversitySchema } from '../src/modules/education/schemas';
 import { TaxCategorySchema, TaxYearSchema } from '../src/modules/finance/schemas';
 import {
   DishSchema,
@@ -156,6 +157,20 @@ export const datasets: DatasetSpec[] = [
     type: { name: 'Branch', from: '../modules/banks/schemas' },
   },
   {
+    key: 'education.universities',
+    file: 'education/universities.json',
+    schema: UniversitySchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'University', from: '../modules/education/schemas' },
+  },
+  {
+    key: 'education.university-categories',
+    file: 'education/university-categories.json',
+    schema: UniversityCategorySchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'UniversityCategory', from: '../modules/education/schemas' },
+  },
+  {
     key: 'finance.tax-categories',
     file: 'finance/tax-categories.json',
     schema: TaxCategorySchema,
@@ -306,6 +321,10 @@ export function derive(data: Record<string, any[]>): {
           `banks.branches: ${b.id} routing number does not start with ${bank.routing_code}`,
         );
     }
+  }
+  for (const u of data['education.universities'] ?? []) {
+    if (u.district !== undefined && !districtSlugs.has(u.district))
+      errors.push(`education.universities: ${u.slug} has unknown district '${u.district}'`);
   }
   for (const d of data['fun.dishes'] ?? []) {
     if (d.district !== undefined && !districtSlugs.has(d.district)) {

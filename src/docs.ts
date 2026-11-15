@@ -76,5 +76,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Scheduled banks and their branches from Bangladesh Bank (as on 31 August 2026), by district and upazila, and routing-number lookup. Routing numbers come from a secondary table and are included only when they match the branch and pass the check digit; confirm with your bank before sending money.',
     },
+    {
+      name: 'Education',
+      description:
+        'Universities listed by the University Grants Commission: category, founding year, website, campus address, institutional contacts and UGC notes on programmes. Names of officials are not included.',
+    },
   ],
 };
