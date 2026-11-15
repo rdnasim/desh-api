@@ -210,6 +210,17 @@
     ]
   },
   {
+    "dataset": "mock.names",
+    "source": "Common Bangladeshi given and family names compiled by desh-api contributors (no directory of real people used); tradition weights from the BBS Population and Housing Census 2022",
+    "source_url": "https://en.prothomalo.com/bangladesh/at87h01ocn",
+    "licence": "CC BY 4.0",
+    "retrieved": "2026-11-15",
+    "last_updated": "2026-11-15",
+    "credits": [
+      "desh-api contributors"
+    ]
+  },
+  {
     "dataset": "phone.prefixes",
     "source": "BTRC mobile numbering plan (operator prefix allocation)",
     "source_url": "https://www.btrc.gov.bd",
