@@ -10,6 +10,7 @@ import { errorHandler, notFoundHandler, validationHook } from './lib/errors';
 import { logger } from './lib/logger';
 import { rateLimit } from './lib/rate-limit';
 import { banglaRoutes } from './modules/bangla/routes';
+import { bankRoutes } from './modules/banks/routes';
 import { convertRoutes } from './modules/convert/routes';
 import { financeRoutes } from './modules/finance/routes';
 import { funRoutes } from './modules/fun/routes';
@@ -72,6 +73,11 @@ const MODULES = [
     description: 'Income tax (Finance Act 2026), VAT, loan EMI, DPS and gratuity calculators',
     path: '/v1/finance/income-tax?income=1000000',
   },
+  {
+    name: 'Banks',
+    description: 'Banks and their 11,533 branches from Bangladesh Bank, with routing numbers',
+    path: '/v1/routing/010130065',
+  },
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -110,6 +116,7 @@ app.route('/v1', hotlineRoutes);
 app.route('/v1', funRoutes);
 app.route('/v1', holidayRoutes);
 app.route('/v1', financeRoutes);
+app.route('/v1', bankRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

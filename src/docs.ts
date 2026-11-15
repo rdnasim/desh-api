@@ -66,5 +66,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Income tax for individuals from the Finance Act (keyed by tax year; tax year 2027-28 = income earned July 2026 – June 2027), VAT, loan EMI, DPS maturity and statutory gratuity. Every response cites its legal source and carries a disclaimer; these are estimates, not tax, financial or legal advice.',
     },
+    {
+      name: 'Banks',
+      description:
+        'Scheduled banks and their branches from Bangladesh Bank (as on 31 August 2026), by district and upazila, and routing-number lookup. Routing numbers come from a secondary table and are included only when they match the branch and pass the check digit; confirm with your bank before sending money.',
+    },
   ],
 };

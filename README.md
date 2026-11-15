@@ -92,6 +92,11 @@ curl 'https://deshapi.riadul.com/v1/finance/income-tax?income=1800000&employment
 # Loan EMI, VAT, DPS, gratuity
 curl 'https://deshapi.riadul.com/v1/finance/emi?principal=1000000&rate=9&months=60'   # → 20,758.36 a month
 curl 'https://deshapi.riadul.com/v1/finance/vat?amount=1150&inclusive=true'            # → net 1,000 + VAT 150
+
+# Which branch is this routing number? (check digit verified)
+curl 'https://deshapi.riadul.com/v1/routing/010130065'
+# → Agrani Bank, Kachua Bazar branch, Kachua, Chandpur
+curl 'https://deshapi.riadul.com/v1/banks/sonali-bank/branches?district=cumilla'
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -111,8 +116,9 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Fun** | Traditional proverbs and riddles, quiz questions, GI-registered foods by district, on-this-day history | [`/v1/fun/proverb/random`](https://deshapi.riadul.com/v1/fun/proverb/random) |
 | **Holidays** | Official 2027 public holidays (general, executive-order, optional by community), "is this a holiday?", working-day counts | [`/v1/is-holiday?date=2027-12-16`](https://deshapi.riadul.com/v1/is-holiday?date=2027-12-16) |
 | **Finance** | Income tax from the Finance Act 2026 for tax years 2026-27 to 2030-31 (all taxpayer categories, salary exemption, investment rebate, minimum tax), VAT, loan EMI with schedule, DPS maturity, statutory gratuity | [`/v1/finance/income-tax?income=1000000`](https://deshapi.riadul.com/v1/finance/income-tax?income=1000000) |
+| **Banks** | All 61 banks and 11,533 branches from Bangladesh Bank by district and upazila; routing-number lookup and check-digit validation | [`/v1/routing/010130065`](https://deshapi.riadul.com/v1/routing/010130065) |
 
-Coming next: the bank holiday calendar, banks and routing numbers. See the
+Coming next: the bank holiday calendar, education data, gold prices and zakat. See the
 [roadmap](docs/roadmap.md).
 
 ## How responses look
@@ -158,6 +164,7 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 | Hotlines | [Bangladesh National Portal](https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89), [DGHS](https://dghs.gov.bd/) |
 | Holidays | [Ministry of Public Administration holiday notification for 2027](https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740) |
 | Income tax | [Finance Act 2026 (Act No. 96 of 2026)](http://bdlaws.minlaw.gov.bd/act-details-1725.html) and the Income Tax Act 2023 as amended |
+| Banks and branches | [Bangladesh Bank branch list](https://www.bb.org.bd/econdata/bs/geo_bank.pdf) (as on 31 August 2026); routing numbers matched from [bddata.org](https://www.bddata.org/all-banks/) |
 | VAT, gratuity | VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10)) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |

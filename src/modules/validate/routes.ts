@@ -5,6 +5,7 @@ import { ErrorSchema, envelope, type Meta, metaFor, ok, staticMeta } from '../..
 import { validationHook } from '../../lib/errors';
 import { validateNid } from './nid';
 import { validatePostcode } from './postcode';
+import { validateRouting } from './routing';
 import {
   type ValidationResult,
   ValidationResultSchema,
@@ -41,6 +42,14 @@ const VALIDATORS: Record<
     meta: () => staticMeta('NBR VAT BIN format (9 digits; 13-digit branch form)', UPDATED),
   },
   postcode: { run: validatePostcode, meta: () => metaFor(['geo.postcodes']) },
+  routing: {
+    run: validateRouting,
+    meta: () =>
+      staticMeta(
+        'Bank routing number format: 9 digits with a 5-7-1 weighted check digit (inferred from published routing numbers)',
+        UPDATED,
+      ),
+  },
 };
 
 const responses = {
@@ -68,6 +77,12 @@ const GET_ROUTES = [
   { type: 'nid', param: 'number', example: '1234567890', summary: 'Check an NID number format' },
   { type: 'tin', param: 'number', example: '123456789012', summary: 'Check an e-TIN format' },
   { type: 'bin', param: 'number', example: '000123456', summary: 'Check a VAT BIN format' },
+  {
+    type: 'routing',
+    param: 'number',
+    example: '010130065',
+    summary: 'Check a bank routing number format and check digit',
+  },
   {
     type: 'postcode',
     param: 'code',

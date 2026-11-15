@@ -126,6 +126,11 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.emi === 20758.36 ? true : `got ${b.data?.emi}`),
   },
   {
+    name: '13g routing number lookup',
+    path: '/v1/routing/010130065',
+    check: (_, b) => (b.data?.bank?.slug === 'agrani-bank' ? true : `got ${b.data?.bank?.slug}`),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

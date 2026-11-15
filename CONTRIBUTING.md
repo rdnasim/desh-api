@@ -12,6 +12,7 @@ All reference data is plain JSON in [`data/`](data/):
 | `data/geo/` | Divisions, districts, upazilas, unions, city corporations, post offices |
 | `data/hotlines/` | National hotline numbers |
 | `data/holidays/` | Official holiday lists per year and their source documents |
+| `data/banks/` | Banks and branches (rebuilt from Bangladesh Bank's branch list with `scripts/import/banks.py`) |
 | `data/finance/` | Income tax rules per tax year (thresholds, slabs, minimum tax, rebate) and taxpayer categories |
 | `data/fun/` | Proverbs, riddles, quiz questions, GI foods, history events |
 | `data/land/` | Land units |
@@ -46,6 +47,9 @@ Extra rules for some data:
   add or correct the tax years the new Finance Act sets, then update the golden cases in
   `tests/golden/finance/income-tax.json`. If a figure can't yet be checked against the Act, list it
   in `unverified` rather than leaving it out. Years set in advance carry a `note`.
+- **Bank branches** come from Bangladesh Bank's branch list; refresh them with the importer rather
+  than by hand. A routing number may be added or corrected only with a source (Bangladesh Bank or
+  the bank's own website) and must pass the check digit (`pnpm data:check` enforces it).
 
 ## Code changes
 

@@ -1,0 +1,364 @@
+[
+  {
+    "slug": "ab-bank",
+    "name_en": "AB BANK PLC.",
+    "bb_id": 41,
+    "routing_code": "020"
+  },
+  {
+    "slug": "agrani-bank",
+    "name_en": "AGRANI BANK PLC.",
+    "bb_id": 11,
+    "routing_code": "010"
+  },
+  {
+    "slug": "al-arafah-islami-bank",
+    "name_en": "AL-ARAFAH ISLAMI BANK PLC.",
+    "bb_id": 57,
+    "routing_code": "015"
+  },
+  {
+    "slug": "bangladesh-commerce-bank",
+    "name_en": "BANGLADESH COMMERCE BANK LIMITED",
+    "bb_id": 64,
+    "routing_code": "030"
+  },
+  {
+    "slug": "bangladesh-development-bank",
+    "name_en": "BANGLADESH DEVELOPMENT BANK PLC.",
+    "bb_id": 36,
+    "routing_code": "047"
+  },
+  {
+    "slug": "bangladesh-krishi-bank",
+    "name_en": "BANGLADESH KRISHI BANK",
+    "bb_id": 31,
+    "routing_code": "035"
+  },
+  {
+    "slug": "bank-al-falah",
+    "name_en": "BANK AL-FALAH LIMITED",
+    "bb_id": 75,
+    "routing_code": "065"
+  },
+  {
+    "slug": "bank-asia",
+    "name_en": "BANK ASIA PLC.",
+    "bb_id": 68,
+    "routing_code": "070"
+  },
+  {
+    "slug": "basic-bank",
+    "name_en": "BASIC BANK PLC.",
+    "bb_id": 35,
+    "routing_code": "055"
+  },
+  {
+    "slug": "bengal-commercial-bank",
+    "name_en": "BENGAL COMMERCIAL BANK PLC.",
+    "bb_id": 140
+  },
+  {
+    "slug": "brac-bank",
+    "name_en": "BRAC BANK PLC.",
+    "bb_id": 72,
+    "routing_code": "060"
+  },
+  {
+    "slug": "citibank-na",
+    "name_en": "CITIBANK, N.A.",
+    "bb_id": 26,
+    "routing_code": "075"
+  },
+  {
+    "slug": "citizens-bank",
+    "name_en": "CITIZENS BANK PLC.",
+    "bb_id": 141
+  },
+  {
+    "slug": "city-bank",
+    "name_en": "CITY BANK PLC.",
+    "bb_id": 44,
+    "routing_code": "225"
+  },
+  {
+    "slug": "commercial-bank-of-ceylon",
+    "name_en": "COMMERCIAL BANK OF CEYLON LTD.",
+    "bb_id": 27,
+    "routing_code": "080"
+  },
+  {
+    "slug": "community-bank-bangladesh",
+    "name_en": "COMMUNITY BANK BANGLADESH PLC.",
+    "bb_id": 139
+  },
+  {
+    "slug": "dhaka-bank",
+    "name_en": "DHAKA BANK PLC.",
+    "bb_id": 56,
+    "routing_code": "085"
+  },
+  {
+    "slug": "dutch-bangla-bank",
+    "name_en": "DUTCH-BANGLA BANK PLC.",
+    "bb_id": 59,
+    "routing_code": "090"
+  },
+  {
+    "slug": "eastern-bank",
+    "name_en": "EASTERN BANK PLC.",
+    "bb_id": 52,
+    "routing_code": "095"
+  },
+  {
+    "slug": "export-import-bank-of-bangladesh",
+    "name_en": "EXPORT IMPORT BANK OF BANGLADESH PLC.",
+    "bb_id": 63,
+    "routing_code": "100"
+  },
+  {
+    "slug": "first-security-islami-bank",
+    "name_en": "FIRST SECURITY ISLAMI BANK PLC.",
+    "bb_id": 67,
+    "routing_code": "105"
+  },
+  {
+    "slug": "global-islami-bank",
+    "name_en": "GLOBAL ISLAMI BANK PLC.",
+    "bb_id": 84,
+    "routing_code": "300"
+  },
+  {
+    "slug": "habib-bank",
+    "name_en": "HABIB BANK LTD.",
+    "bb_id": 25,
+    "routing_code": "110"
+  },
+  {
+    "slug": "hsbc",
+    "name_en": "THE HONG KONG & SHANGHAI BANKING CORPORATION LTD. (HSBC)",
+    "bb_id": 74,
+    "routing_code": "115"
+  },
+  {
+    "slug": "icb-islamic-bank",
+    "name_en": "ICB ISLAMIC BANK LTD.",
+    "bb_id": 49,
+    "routing_code": "230"
+  },
+  {
+    "slug": "ific-bank",
+    "name_en": "IFIC BANK PLC.",
+    "bb_id": 45,
+    "routing_code": "120"
+  },
+  {
+    "slug": "islami-bank-bangladesh",
+    "name_en": "ISLAMI BANK BANGLADESH PLC.",
+    "bb_id": 42,
+    "routing_code": "125"
+  },
+  {
+    "slug": "jamuna-bank",
+    "name_en": "JAMUNA BANK PLC.",
+    "bb_id": 71,
+    "routing_code": "130"
+  },
+  {
+    "slug": "janata-bank",
+    "name_en": "JANATA BANK PLC.",
+    "bb_id": 12,
+    "routing_code": "135"
+  },
+  {
+    "slug": "meghna-bank",
+    "name_en": "MEGHNA BANK PLC.",
+    "bb_id": 78,
+    "routing_code": "275"
+  },
+  {
+    "slug": "mercantile-bank",
+    "name_en": "MERCANTILE BANK PLC.",
+    "bb_id": 60,
+    "routing_code": "140"
+  },
+  {
+    "slug": "midland-bank",
+    "name_en": "MIDLAND BANK PLC.",
+    "bb_id": 79,
+    "routing_code": "285"
+  },
+  {
+    "slug": "modhumoti-bank",
+    "name_en": "MODHUMOTI BANK PLC.",
+    "bb_id": 85,
+    "routing_code": "295"
+  },
+  {
+    "slug": "mutual-trust-bank",
+    "name_en": "MUTUAL TRUST BANK PLC.",
+    "bb_id": 65,
+    "routing_code": "145"
+  },
+  {
+    "slug": "national-bank",
+    "name_en": "NATIONAL BANK PLC.",
+    "bb_id": 43,
+    "routing_code": "150"
+  },
+  {
+    "slug": "national-bank-of-pakistan",
+    "name_en": "NATIONAL BANK OF PAKISTAN",
+    "bb_id": 28,
+    "routing_code": "155"
+  },
+  {
+    "slug": "national-credit-and-commerce-bank",
+    "name_en": "NATIONAL CREDIT AND COMMERCE BANK PLC.",
+    "bb_id": 53,
+    "routing_code": "160"
+  },
+  {
+    "slug": "nrb-bank",
+    "name_en": "NRB BANK PLC.",
+    "bb_id": 83,
+    "routing_code": "290"
+  },
+  {
+    "slug": "nrbc-bank",
+    "name_en": "NRBC BANK PLC.",
+    "bb_id": 76,
+    "routing_code": "260"
+  },
+  {
+    "slug": "one-bank",
+    "name_en": "ONE BANK PLC.",
+    "bb_id": 62,
+    "routing_code": "165"
+  },
+  {
+    "slug": "padma-bank",
+    "name_en": "PADMA BANK PLC.",
+    "bb_id": 80,
+    "routing_code": "280"
+  },
+  {
+    "slug": "premier-bank",
+    "name_en": "THE PREMIER BANK PLC.",
+    "bb_id": 66,
+    "routing_code": "235"
+  },
+  {
+    "slug": "prime-bank",
+    "name_en": "PRIME BANK PLC.",
+    "bb_id": 54,
+    "routing_code": "170"
+  },
+  {
+    "slug": "probashi-kallyan-bank",
+    "name_en": "PROBASHI KALLYAN BANK",
+    "bb_id": 138
+  },
+  {
+    "slug": "pubali-bank",
+    "name_en": "PUBALI BANK PLC.",
+    "bb_id": 47,
+    "routing_code": "175"
+  },
+  {
+    "slug": "rajshahi-krishi-unnayan-bank",
+    "name_en": "RAJSHAHI KRISHI UNNAYAN BANK",
+    "bb_id": 33,
+    "routing_code": "180"
+  },
+  {
+    "slug": "rupali-bank",
+    "name_en": "RUPALI BANK PLC.",
+    "bb_id": 14,
+    "routing_code": "185"
+  },
+  {
+    "slug": "sbac-bank",
+    "name_en": "SBAC BANK PLC.",
+    "bb_id": 77,
+    "routing_code": "270"
+  },
+  {
+    "slug": "shahjalal-islami-bank",
+    "name_en": "SHAHJALAL ISLAMI BANK PLC.",
+    "bb_id": 70,
+    "routing_code": "190"
+  },
+  {
+    "slug": "shimanto-bank",
+    "name_en": "SHIMANTO BANK PLC.",
+    "bb_id": 50,
+    "routing_code": "305"
+  },
+  {
+    "slug": "social-islami-bank",
+    "name_en": "SOCIAL ISLAMI BANK PLC.",
+    "bb_id": 58,
+    "routing_code": "195"
+  },
+  {
+    "slug": "sonali-bank",
+    "name_en": "SONALI BANK PLC.",
+    "bb_id": 15,
+    "routing_code": "200"
+  },
+  {
+    "slug": "southeast-bank",
+    "name_en": "SOUTHEAST BANK PLC.",
+    "bb_id": 55,
+    "routing_code": "205"
+  },
+  {
+    "slug": "standard-chartered-bank",
+    "name_en": "STANDARD CHARTERED BANK",
+    "bb_id": 23,
+    "routing_code": "215"
+  },
+  {
+    "slug": "standard-islami-bank",
+    "name_en": "STANDARD ISLAMI BANK PLC.",
+    "bb_id": 61,
+    "routing_code": "210"
+  },
+  {
+    "slug": "state-bank-of-india",
+    "name_en": "STATE BANK OF INDIA",
+    "bb_id": 24,
+    "routing_code": "220"
+  },
+  {
+    "slug": "trust-bank",
+    "name_en": "TRUST BANK PLC.",
+    "bb_id": 69,
+    "routing_code": "240"
+  },
+  {
+    "slug": "union-bank",
+    "name_en": "UNION BANK PLC.",
+    "bb_id": 82,
+    "routing_code": "265"
+  },
+  {
+    "slug": "united-commercial-bank",
+    "name_en": "UNITED COMMERCIAL BANK PLC.",
+    "bb_id": 46,
+    "routing_code": "245"
+  },
+  {
+    "slug": "uttara-bank",
+    "name_en": "UTTARA BANK PLC.",
+    "bb_id": 48,
+    "routing_code": "250"
+  },
+  {
+    "slug": "woori-bank",
+    "name_en": "WOORI BANK",
+    "bb_id": 73,
+    "routing_code": "255"
+  }
+]
