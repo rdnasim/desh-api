@@ -3,6 +3,8 @@ export interface Env {
   RATE_LIMITER?:
     | Pick<RateLimit, 'limit'>
     | { limit: (o: RateLimitOptions) => Promise<{ success: boolean }> };
+  /** Last good copies of live data (gold prices). Absent in some test setups. */
+  LIVE_DATA?: Pick<KVNamespace, 'get' | 'put'>;
   /** Git SHA or release label, set at deploy time. */
   VERSION?: string;
 }

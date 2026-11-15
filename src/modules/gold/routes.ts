@@ -5,6 +5,7 @@ import { ErrorSchema, envelope, ok, staticMeta } from '../../lib/envelope';
 import { ApiError, validationHook } from '../../lib/errors';
 import { numberParam } from '../../lib/params';
 import { BAJUS_URL, fetchBajus } from './bajus';
+import { recall, remember } from './last-good';
 import {
   type GoldPrices,
   GoldPricesSchema,
@@ -36,11 +37,21 @@ const query = (name: string, description: string, example?: string) =>
     .optional()
     .openapi({ param: { name, in: 'query', description }, example });
 
-async function prices(): Promise<GoldPrices> {
+async function prices(c: Context<AppEnv>): Promise<GoldPrices> {
+  const kv = c.env?.LIVE_DATA;
   try {
-    return await fetchBajus();
+    const live = await fetchBajus();
+    const saving = remember(kv, live);
+    try {
+      c.executionCtx.waitUntil(saving);
+    } catch {
+      await saving; // no execution context (tests)
+    }
+    return { ...live, fetched_at: new Date().toISOString(), freshness: 'live' };
   } catch (error) {
     console.error(JSON.stringify({ level: 'error', name: 'bajus', message: String(error) }));
+    const saved = await recall(kv);
+    if (saved) return { ...saved.prices, fetched_at: saved.fetched_at, freshness: 'last_known' };
     throw new ApiError(
       'upstream_unavailable',
       `Gold prices are unavailable right now (${BAJUS_URL} could not be read). Try again later.`,
@@ -50,9 +61,20 @@ async function prices(): Promise<GoldPrices> {
 }
 
 /** Prices change once a day at most; short cache so a new list shows up within minutes. */
-const cachePrices = (c: Context) => c.header('Cache-Control', 'public, max-age=600');
-const meta = (p: GoldPrices, extra = {}) =>
-  staticMeta(`${SOURCE}, effective ${p.effective_date}`, p.effective_date, extra);
+const cachePrices = (c: Context, p: GoldPrices) =>
+  c.header('Cache-Control', `public, max-age=${p.freshness === 'live' ? 600 : 300}`);
+const LAST_KNOWN = (p: GoldPrices) =>
+  `BAJUS could not be read from this region, so this is the last price list read, at ${p.fetched_at}.`;
+const meta = (p: GoldPrices, disclaimer?: string) => {
+  const notes = [p.freshness === 'last_known' ? LAST_KNOWN(p) : undefined, disclaimer].filter(
+    Boolean,
+  );
+  return staticMeta(
+    `${SOURCE}, effective ${p.effective_date}`,
+    p.effective_date,
+    notes.length ? { disclaimer: notes.join(' ') } : {},
+  );
+};
 
 function enumParam<T extends string>(
   name: string,
@@ -81,8 +103,8 @@ goldRoutes.openapi(
     responses: responses(GoldPricesSchema, 'Prices'),
   }),
   async (c) => {
-    const p = await prices();
-    cachePrices(c);
+    const p = await prices(c);
+    cachePrices(c, p);
     return ok(c, p, meta(p));
   },
 );
@@ -112,8 +134,8 @@ goldRoutes.openapi(
     const wealth = numberParam('wealth', q.wealth, { min: 0, max: 1e13 });
     const basis = enumParam('basis', q.basis, MetalSchema.options, 'silver');
     const karat = enumParam('karat', q.karat, KaratSchema.options, '22k');
-    const p = await prices();
-    cachePrices(c);
-    return ok(c, zakat(p, wealth, basis, karat), meta(p, { disclaimer: ZAKAT_DISCLAIMER }));
+    const p = await prices(c);
+    cachePrices(c, p);
+    return ok(c, zakat(p, wealth, basis, karat), meta(p, ZAKAT_DISCLAIMER));
   },
 );

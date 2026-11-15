@@ -40,7 +40,7 @@ Read when a request arrives (cached at the edge), not stored in `data/`.
 
 | Endpoint | Source | Notes |
 |---|---|---|
-| `/v1/gold/prices`, `/v1/zakat` | [Bangladesh Jewellers Association (BAJUS), gold and silver rate](https://www.bajus.org/gold-price) | Cached 30 minutes; `meta.last_updated` is the price list's effective date; 503 if BAJUS cannot be read |
+| `/v1/gold/prices`, `/v1/zakat` | [Bangladesh Jewellers Association (BAJUS), gold and silver rate](https://www.bajus.org/gold-price) | Cached 30 minutes; `meta.last_updated` is the price list's effective date. Where BAJUS cannot be reached, the last list read within 7 days (kept in Workers KV) is served as `last_known`; otherwise 503 |
 
 ## Rules and formulas
 

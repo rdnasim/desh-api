@@ -12,7 +12,7 @@ export const OPENAPI_CONFIG = {
       '- Numbers can be sent in Latin (1250) or Bangla (১২৫০) digits.',
       '- No API key needed. Limit: 120 requests per minute per IP.',
       '- Validators check formats only and never store or log what you send.',
-      '- Gold prices are read live from BAJUS; if a live source cannot be read the API answers 503 `upstream_unavailable`, never a stale or guessed value.',
+      '- Gold prices are read live from BAJUS. Where BAJUS cannot be reached, the last list read (within 7 days) is served with `freshness: "last_known"`; with none, the API answers 503 `upstream_unavailable`.',
       '- Where an official source is English-only (bank branches, most universities), `name_bn` is omitted rather than invented.',
     ].join('\n'),
     license: { name: 'Code MIT, data CC BY 4.0' },

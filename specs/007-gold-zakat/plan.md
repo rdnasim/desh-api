@@ -34,3 +34,4 @@ tests/{unit/gold/service,contract/gold}.test.ts
 | Item | Why | Simpler alternative rejected because |
 |---|---|---|
 | Runtime dependency on bajus.org | Prices change daily | A committed file would be stale within a day; a cron + database is more infrastructure |
+| Workers KV namespace `desh-api-live-data` (binding `LIVE_DATA`, one key) | BAJUS refuses some regions; without a saved copy, server callers in US/EU clouds always get 503 | Per-data-centre edge cache cannot share a successful read across regions; a scheduled job may itself run in a refused region. Free tier: ~5 writes/day against 1,000 |

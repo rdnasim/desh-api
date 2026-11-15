@@ -22,8 +22,13 @@ Decisions taken on the maintainer's behalf (each can be overridden):
   Islamic Foundation's fitra guidance refers to; `basis=gold` (7.5 vori) on request. Scholars differ;
   the disclaimer says so.
 - Q: Which price values the nisab? → A: 22K by default (`karat` to change).
-- Q: BAJUS unreachable or redesigned? → A: 503 `upstream_unavailable`, never stale or guessed
-  prices.
+- Q: BAJUS unreachable or redesigned? → A: 503 `upstream_unavailable`, never guessed prices.
+- Q (2026-11-15, after launch): BAJUS refuses requests from some regions (GitHub's US runners and
+  the Cloudflare data centres serving them got 403). → A, approved by the maintainer: keep the last
+  good list in Workers KV. Each successful read saves it (only when the list is new or the saved
+  copy is over 6 hours old); when BAJUS cannot be read, the saved list is served with
+  `freshness: "last_known"`, its `fetched_at`, and a note in `meta.disclaimer`, for up to 7 days
+  after it was read. With nothing saved, 503 as before.
 
 ## User Scenarios & Testing *(mandatory)*
 

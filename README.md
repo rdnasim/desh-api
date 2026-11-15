@@ -155,7 +155,7 @@ Errors use a stable `code`, a readable message (often in Bangla too), and the ri
 | 404 | `not_found` | Unknown slug, postcode or route; a holiday year or tax year with no official source yet |
 | 413 | `payload_too_large` | Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers) |
 | 429 | `rate_limited` | More than 120 requests per minute from one IP (see `Retry-After`) |
-| 503 | `upstream_unavailable` | A live source (gold prices from BAJUS) could not be read; never a stale or guessed value |
+| 503 | `upstream_unavailable` | A live source (gold prices from BAJUS) could not be read and no list from the last 7 days is saved |
 
 **Limits and caching.** No key is needed; the limit is 120 requests per minute per IP. Reference
 data and calculator results are cacheable for a day; gold prices for 10 minutes; an income-tax
@@ -163,7 +163,8 @@ answer that used the default (current) tax year for an hour. Validator responses
 data are never cached. CORS is open, so you can call the API straight from a browser.
 
 **Live data.** Gold prices are read from BAJUS when you ask (cached by Cloudflare for 30 minutes).
-BAJUS refuses some regions, so a request served outside Bangladesh may get a 503 instead of prices.
+BAJUS refuses some regions; there the API serves the last list it read (within 7 days), marked
+`freshness: "last_known"` with its `fetched_at` time, and answers 503 only if it has none.
 
 ## Privacy
 
@@ -219,7 +220,8 @@ pnpm dev            # http://localhost:8787 — docs at /docs
 **Stack:** TypeScript, [Hono](https://hono.dev) with OpenAPI-generated docs
 ([Scalar](https://scalar.com)), Cloudflare Workers, Vitest. Reference data is plain JSON in
 [`data/`](data/), validated and bundled at build time; there is no database. The one live source
-(BAJUS gold prices) is read at request time and cached at the edge.
+(BAJUS gold prices) is read at request time and cached at the edge; its last good copy is kept in
+Workers KV for regions where BAJUS cannot be reached.
 
 ```text
 data/            reference data (edit these to fix data)
