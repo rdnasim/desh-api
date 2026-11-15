@@ -23,6 +23,7 @@ import {
 import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schemas';
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
+import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 import { routingCheckDigitOk } from '../src/modules/validate/routing';
 import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
@@ -167,6 +168,13 @@ export const datasets: DatasetSpec[] = [
     schema: TaxYearSchema,
     sortKey: (r) => r.tax_year,
     type: { name: 'TaxYear', from: '../modules/finance/schemas' },
+  },
+  {
+    key: 'mock.names',
+    file: 'mock/names.json',
+    schema: MockNameSchema,
+    sortKey: (r) => `${r.tradition}/${r.kind}/${r.name_en}`,
+    type: { name: 'MockName', from: '../modules/mock/schemas' },
   },
   {
     key: 'fun.proverbs',

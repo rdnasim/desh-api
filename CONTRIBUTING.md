@@ -12,6 +12,7 @@ All reference data is plain JSON in [`data/`](data/):
 | `data/geo/` | Divisions, districts, upazilas, unions, city corporations, post offices |
 | `data/hotlines/` | National hotline numbers |
 | `data/holidays/` | Official holiday lists per year and their source documents |
+| `data/mock/` | Common given and family names used to build synthetic test people |
 | `data/banks/` | Banks and branches (rebuilt from Bangladesh Bank's branch list with `scripts/import/banks.py`) |
 | `data/finance/` | Income tax rules per tax year (thresholds, slabs, minimum tax, rebate) and taxpayer categories |
 | `data/fun/` | Proverbs, riddles, quiz questions, GI foods, history events |
@@ -47,6 +48,9 @@ Extra rules for some data:
   add or correct the tax years the new Finance Act sets, then update the golden cases in
   `tests/golden/finance/income-tax.json`. If a figure can't yet be checked against the Act, list it
   in `unverified` rather than leaving it out. Years set in advance carry a `note`.
+- **Mock names** must be common names, never copied from a list of real people. Give both
+  spellings (Bangla in NFC), the naming tradition, and a `gender` on family names used by one
+  gender only (for example Akter, Uddin). Native-speaker spelling fixes are very welcome.
 - **Bank branches** come from Bangladesh Bank's branch list; refresh them with the importer rather
   than by hand. A routing number may be added or corrected only with a source (Bangladesh Bank or
   the bank's own website) and must pass the check digit (`pnpm data:check` enforces it).
@@ -72,7 +76,7 @@ pnpm typecheck && pnpm lint
 Features are specified before they're built, with [Spec Kit](https://github.com/github/spec-kit):
 `/speckit-specify` → `/speckit-plan` → `/speckit-tasks` → `/speckit-implement`. Project rules are in
 [`.specify/memory/constitution.md`](.specify/memory/constitution.md); each feature has its own
-folder under [`specs/`](specs/) (latest: [`003-finance-calculators`](specs/003-finance-calculators/)),
+folder under [`specs/`](specs/) (latest: [`004-mock-data`](specs/004-mock-data/)),
 and [`docs/roadmap.md`](docs/roadmap.md) shows what is built and what is next. Good first issues are labelled
 `good first issue`, and content curation (proverbs, riddles, quiz, history) is a great place to
 start.

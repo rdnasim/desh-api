@@ -126,6 +126,14 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.emi === 20758.36 ? true : `got ${b.data?.emi}`),
   },
   {
+    name: '13f mock people (seeded)',
+    path: '/v1/mock/people?count=3&seed=smoke',
+    check: (_, b) =>
+      b.data?.length === 3 && /@example\.com$/.test(b.data[0]?.email ?? '')
+        ? true
+        : 'bad mock data',
+  },
+  {
     name: '13g routing number lookup',
     path: '/v1/routing/010130065',
     check: (_, b) => (b.data?.bank?.slug === 'agrani-bank' ? true : `got ${b.data?.bank?.slug}`),

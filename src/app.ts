@@ -18,6 +18,7 @@ import { geoRoutes } from './modules/geo/routes';
 import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
+import { mockRoutes } from './modules/mock/routes';
 import { phoneRoutes } from './modules/phone/routes';
 import { validateRoutes } from './modules/validate/routes';
 
@@ -74,6 +75,11 @@ const MODULES = [
     path: '/v1/finance/income-tax?income=1000000',
   },
   {
+    name: 'Mock data',
+    description: 'Synthetic Bangladeshi people and addresses for testing (bilingual, repeatable)',
+    path: '/v1/mock/people?count=3&seed=demo',
+  },
+  {
     name: 'Banks',
     description: 'Banks and their 11,533 branches from Bangladesh Bank, with routing numbers',
     path: '/v1/routing/010130065',
@@ -116,6 +122,7 @@ app.route('/v1', hotlineRoutes);
 app.route('/v1', funRoutes);
 app.route('/v1', holidayRoutes);
 app.route('/v1', financeRoutes);
+app.route('/v1', mockRoutes);
 app.route('/v1', bankRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);

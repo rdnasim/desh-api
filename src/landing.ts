@@ -321,7 +321,8 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">08</div><h3>Hotlines</h3><p>National hotline numbers, each checked against an official government page, with the date it was checked.</p><a href="/v1/hotlines?category=emergency">/v1/hotlines?category=emergency</a></div>
         <div class="mod"><div class="k">09</div><h3>Fun</h3><p>Traditional proverbs and riddles, quiz questions, GI-registered foods by district, and Bangladesh history by date.</p><a href="/v1/fun/proverb/random">/v1/fun/proverb/random</a></div>
         <div class="mod"><div class="k">10</div><h3>Finance</h3><p>Income tax under the Finance Act 2026 for every taxpayer category, with the salary exemption, investment rebate, minimum tax and a slab-by-slab breakdown. Also VAT, loan EMI with a repayment schedule, DPS maturity and statutory gratuity.</p><a href="/v1/finance/income-tax?income=1200000&amp;employment_income=1200000">/v1/finance/income-tax?income=1200000&amp;employment_income=1200000</a></div>
-        <div class="mod"><div class="k">11</div><h3>Banks</h3><p>All 61 banks and 11,533 branches from Bangladesh Bank, by district and upazila. Look up a branch by routing number, or check a routing number's check digit.</p><a href="/v1/routing/010130065">/v1/routing/010130065</a></div>
+        <div class="mod"><div class="k">11</div><h3>Mock data</h3><p>Synthetic Bangladeshi people and addresses for testing: bilingual names, phones and NIDs that pass the validators, example.com emails, and real upazilas and postcodes. Repeatable with a seed.</p><a href="/v1/mock/people?count=3&amp;seed=demo">/v1/mock/people?count=3&amp;seed=demo</a></div>
+        <div class="mod"><div class="k">12</div><h3>Banks</h3><p>All 61 banks and 11,533 branches from Bangladesh Bank, by district and upazila. Look up a branch by routing number, or check a routing number's check digit.</p><a href="/v1/routing/010130065">/v1/routing/010130065</a></div>
       </div>
     </div>
   </div>
@@ -453,6 +454,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'Working days', method: 'GET', path: '/v1/working-days?from=2027-12-01&to=2027-12-31' },
     { label: 'Income tax', method: 'GET', path: '/v1/finance/income-tax?income=1200000&employment_income=1200000' },
     { label: 'Loan EMI', method: 'GET', path: '/v1/finance/emi?principal=1000000&rate=9&months=60' },
+    { label: 'Mock people', method: 'GET', path: '/v1/mock/people?count=3&seed=demo' },
     { label: 'Routing number', method: 'GET', path: '/v1/routing/010130065' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
