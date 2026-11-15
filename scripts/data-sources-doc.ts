@@ -27,6 +27,26 @@ const lines = [
     return `| \`${m.dataset}\` | ${source} | ${cell(m.licence)} | ${m.retrieved} | ${m.last_updated} | ${cell(m.credits.join('; '))} |`;
   }),
   '',
+  '## Live sources',
+  '',
+  'Read when a request arrives (cached at the edge), not stored in `data/`.',
+  '',
+  '| Endpoint | Source | Notes |',
+  '|---|---|---|',
+  "| `/v1/gold/prices`, `/v1/zakat` | [Bangladesh Jewellers Association (BAJUS), gold and silver rate](https://www.bajus.org/gold-price) | Cached 30 minutes; `meta.last_updated` is the price list's effective date; 503 if BAJUS cannot be read |",
+  '',
+  '## Rules and formulas',
+  '',
+  'Calculators that apply a law or a standard formula rather than a dataset.',
+  '',
+  '| Endpoint | Source |',
+  '|---|---|',
+  '| `/v1/finance/vat` | Value Added Tax and Supplementary Duty Act 2012, section 15 (standard rate 15%) |',
+  '| `/v1/finance/gratuity` | Bangladesh Labour Act 2006, section 2(10) |',
+  '| `/v1/finance/emi`, `/v1/finance/dps` | Standard reducing-balance and recurring-deposit formulas |',
+  '| `/v1/zakat` | Classical nisab: 7.5 vori (87.48 g) gold or 52.5 vori (612.36 g) silver; rate 2.5% |',
+  '| `/v1/validate/routing/{number}` | Routing check digit (weights 5-7-1), inferred from 10,032 published routing numbers |',
+  '',
 ];
 const content = lines.join('\n');
 const target = join(root, 'DATA_SOURCES.md');

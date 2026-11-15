@@ -8,7 +8,7 @@ export const LANDING_HTML = /* html */ `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Desh API — Bangladesh reference data and Bangla language tools</title>
-<meta name="description" content="A free, open API for Bangladesh: divisions to unions, postcodes, taka in words, Bangla dates, Bijoy to Unicode, phone validation, official holidays, income tax and loan calculators. English and Bangla names, and the source of every fact.">
+<meta name="description" content="A free, open API for Bangladesh: divisions to unions, postcodes, bank branches and routing numbers, universities, official holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat and gold prices. English and Bangla names, and the source of every fact.">
 <meta name="theme-color" content="#E4002B">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ccircle cx='14' cy='16' r='9' fill='%23E4002B'/%3E%3C/svg%3E">
 <script>
@@ -263,10 +263,10 @@ footer p { margin: 0 0 6px; }
 <main>
 <div class="wrap hero">
   <div class="grid">
-    <h1>Bangladesh reference data and Bangla language tools, as a free API.</h1>
+    <h1>Bangladesh reference data, Bangla tools and calculators, as a free API.</h1>
     <div class="disc-big" aria-hidden="true"></div>
-    <p class="bn" lang="bn">বাংলাদেশের তথ্য ও বাংলা ভাষার টুলস — ফ্রি, ওপেন সোর্স API।</p>
-    <p class="lede">Divisions to unions, postcodes, taka in words, Bangla dates, Bijoy to Unicode, phone validation, official holidays, and income tax, VAT and loan calculators. English and Bangla names everywhere, and the source of every fact in every response. No sign-up, no API key.</p>
+    <p class="bn" lang="bn">বাংলাদেশের তথ্য, বাংলা ভাষার টুলস ও ক্যালকুলেটর — ফ্রি, ওপেন সোর্স API।</p>
+    <p class="lede">Divisions to unions and postcodes, bank branches and routing numbers, universities, official holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat and today's gold price. English and Bangla names, and the source of every fact in every response. No sign-up, no API key.</p>
     <div class="base">
       <div class="url"><span id="base-url">https://deshapi.riadul.com</span><button class="copy" type="button" data-copy-from="base-url">Copy</button></div>
       <a class="btn primary" href="/docs">Open the docs</a>
@@ -275,14 +275,14 @@ footer p { margin: 0 0 6px; }
   </div>
 </div>
 
-<div class="wrap counts" aria-label="What the geo data covers">
+<div class="wrap counts" aria-label="What the data covers">
   <div class="grid">
-    <div class="count"><span class="n">8</span><span class="l">divisions</span></div>
-    <div class="count"><span class="n">64</span><span class="l">districts</span></div>
-    <div class="count"><span class="n">495</span><span class="l">upazilas</span></div>
+    <div class="count"><span class="n">14</span><span class="l">modules</span></div>
     <div class="count"><span class="n">4,540</span><span class="l">unions</span></div>
     <div class="count"><span class="n">1,349</span><span class="l">post offices</span></div>
-    <div class="count note"><span class="l">Every name in English and Bangla, from Bangladesh Bureau of Statistics geocodes.</span></div>
+    <div class="count"><span class="n">11,533</span><span class="l">bank branches</span></div>
+    <div class="count"><span class="n">181</span><span class="l">universities</span></div>
+    <div class="count note"><span class="l">From BBS geocodes, Bangladesh Bank and the University Grants Commission; every response names its source.</span></div>
   </div>
 </div>
 
@@ -317,7 +317,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">04</div><h3>Phone</h3><p>Validate and normalise mobile numbers in any common format, with the original operator. Up to 100 at once.</p><a href="/docs#tag/phone">POST /v1/phone/validate</a></div>
         <div class="mod"><div class="k">05</div><h3>Convert</h3><p>Bijoy (SutonnyMJ) text to Unicode and back, up to 100 KB per request.</p><a href="/docs#tag/convert">POST /v1/convert/bijoy-to-unicode</a></div>
         <div class="mod"><div class="k">06</div><h3>Land</h3><p>Convert katha, bigha, decimal, chotak, acre, square feet, square metres and gaj.</p><a href="/v1/land/convert?value=5&amp;from=katha&amp;to=sqft">/v1/land/convert?value=5&amp;from=katha&amp;to=sqft</a></div>
-        <div class="mod"><div class="k">07</div><h3>Validate</h3><p>Format checks for NID, vehicle plates, e-TIN, VAT BIN and postcodes. Nothing is looked up or stored.</p><a href="/docs#tag/validate">POST /v1/validate/{type}</a></div>
+        <div class="mod"><div class="k">07</div><h3>Validate</h3><p>Format checks for NID, vehicle plates, e-TIN, VAT BIN, postcodes and bank routing numbers. Nothing is looked up or stored.</p><a href="/docs#tag/validate">POST /v1/validate/{type}</a></div>
         <div class="mod"><div class="k">08</div><h3>Hotlines</h3><p>National hotline numbers, each checked against an official government page, with the date it was checked.</p><a href="/v1/hotlines?category=emergency">/v1/hotlines?category=emergency</a></div>
         <div class="mod"><div class="k">09</div><h3>Fun</h3><p>Traditional proverbs and riddles, quiz questions, GI-registered foods by district, and Bangladesh history by date.</p><a href="/v1/fun/proverb/random">/v1/fun/proverb/random</a></div>
         <div class="mod"><div class="k">10</div><h3>Finance</h3><p>Income tax under the Finance Act 2026 for every taxpayer category, with the salary exemption, investment rebate, minimum tax and a slab-by-slab breakdown. Also VAT, loan EMI with a repayment schedule, DPS maturity and statutory gratuity.</p><a href="/v1/finance/income-tax?income=1200000&amp;employment_income=1200000">/v1/finance/income-tax?income=1200000&amp;employment_income=1200000</a></div>
@@ -366,6 +366,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
           <tr><td>404</td><td><code>not_found</code></td><td>Unknown slug, postcode, route, a year with no official holiday list, or a tax year with no Finance Act rates</td></tr>
           <tr><td>413</td><td><code>payload_too_large</code></td><td>Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers)</td></tr>
           <tr><td>429</td><td><code>rate_limited</code></td><td>More than 120 requests per minute from one IP</td></tr>
+          <tr><td>503</td><td><code>upstream_unavailable</code></td><td>A live source (gold prices from BAJUS) could not be read; never a stale or guessed value</td></tr>
         </tbody>
       </table>
       <p class="muted">Numbers can be sent in Latin or Bangla digits (1250 or ১২৫০). CORS is open, so you can call the API from a browser.</p>
@@ -379,7 +380,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     <div class="sec-body">
       <div class="principles">
         <div class="principle"><h3>Every fact has a source</h3><p>Each response names its source and last update. Facts that reliable sources disagree on are left out rather than guessed.</p></div>
-        <div class="principle"><h3>English and Bangla</h3><p>Every named thing has <code>name_en</code> and <code>name_bn</code>. Bangla text is Unicode.</p></div>
+        <div class="principle"><h3>English and Bangla</h3><p>Places, categories and messages come with <code>name_en</code> and <code>name_bn</code>, in Unicode. Where the official source is English-only (bank branches, most universities), we say so rather than invent a spelling.</p></div>
         <div class="principle"><h3>Format checks only</h3><p>Validators check that an NID, phone or plate is well-formed. Nothing is looked up, stored or logged. <a href="https://github.com/rdnasim/desh-api/blob/main/PRIVACY.md">Privacy</a></p></div>
         <div class="principle"><h3>Free and open</h3><p>No key or sign-up. Code is MIT, data is CC BY 4.0, and corrections are a pull request away.</p></div>
       </div>

@@ -52,6 +52,11 @@ Extra rules for some data:
 - **Mock names** must be common names, never copied from a list of real people. Give both
   spellings (Bangla in NFC), the naming tradition, and a `gender` on family names used by one
   gender only (for example Akter, Uddin). Native-speaker spelling fixes are very welcome.
+- **Universities** come from ugc.gov.bd; refresh them with `tsx scripts/import/ugc.ts <dir>` (it
+  waits a second between requests). Never add names of officials (vice-chancellors, registrars).
+- **Gold prices** are read live from bajus.org, not stored. If BAJUS changes its page and the API
+  starts answering 503, update the parser in `src/modules/gold/bajus.ts` and its test fixture in
+  `tests/golden/gold/`.
 - **Bank branches** come from Bangladesh Bank's branch list; refresh them with the importer rather
   than by hand. A routing number may be added or corrected only with a source (Bangladesh Bank or
   the bank's own website) and must pass the check digit (`pnpm data:check` enforces it).
@@ -77,7 +82,7 @@ pnpm typecheck && pnpm lint
 Features are specified before they're built, with [Spec Kit](https://github.com/github/spec-kit):
 `/speckit-specify` → `/speckit-plan` → `/speckit-tasks` → `/speckit-implement`. Project rules are in
 [`.specify/memory/constitution.md`](.specify/memory/constitution.md); each feature has its own
-folder under [`specs/`](specs/) (latest: [`004-mock-data`](specs/004-mock-data/)),
+folder under [`specs/`](specs/) (latest: [`007-gold-zakat`](specs/007-gold-zakat/)),
 and [`docs/roadmap.md`](docs/roadmap.md) shows what is built and what is next. Good first issues are labelled
 `good first issue`, and content curation (proverbs, riddles, quiz, history) is a great place to
 start.

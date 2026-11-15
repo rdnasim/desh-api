@@ -4,7 +4,7 @@ Desh API is built so that it never needs to know who you are or what you looked 
 
 ## Validators check formats only
 
-The NID, phone, TIN, BIN, vehicle plate and postcode endpoints check whether a value is
+The NID, phone, TIN, BIN, vehicle plate, postcode and bank routing number endpoints check whether a value is
 **well-formed**. They never look up, confirm or enrich a real person, account or vehicle, and they
 do not call any other service.
 
@@ -16,6 +16,13 @@ answer depends only on those numbers, responses may be kept in Cloudflare's cach
 cache, keyed by the request URL, so the amounts in the URL are stored there for a while (up to a
 week) along with the answer. They are not linked to you, and our logs record only the route
 pattern (for example `/v1/finance/income-tax`).
+
+## Gold prices and zakat
+
+`/v1/gold/prices` takes no input. `/v1/zakat` takes only an amount of wealth (and the nisab basis);
+it is not stored or logged, but like the finance calculators the response may be cached for up to 10
+minutes keyed by the URL, so prefer rounded amounts if that matters to you. To read gold prices the
+API contacts bajus.org; your IP address and request are not passed on.
 
 ## Mock data
 

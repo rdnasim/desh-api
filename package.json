@@ -2,7 +2,7 @@
   "name": "desh-api",
   "version": "0.1.0",
   "private": true,
-  "description": "Open public API for Bangladesh: reference data and Bangla language tools",
+  "description": "Open public API for Bangladesh: reference data, Bangla language tools, validators and calculators",
   "license": "MIT",
   "type": "module",
   "engines": {
