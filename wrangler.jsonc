@@ -20,6 +20,8 @@
       "simple": { "limit": 120, "period": 60 }
     }
   ],
+  // Last good copy of live data (BAJUS gold prices) for regions where the source refuses requests.
+  "kv_namespaces": [{ "binding": "LIVE_DATA", "id": "f72b59d7f98c4f7fb4fe16f6cce52ce3" }],
   "vars": {
     "VERSION": "dev"
   }

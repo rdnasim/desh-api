@@ -1,5 +1,8 @@
 import type { GoldPrices, Karat } from './schemas';
 
+/** Prices as read from the page, before `fetched_at`/`freshness` are added. */
+export type ParsedPrices = Omit<GoldPrices, 'fetched_at' | 'freshness'>;
+
 export const BAJUS_URL = 'https://www.bajus.org/gold-price';
 /** 1 vori (bhori, tola) = 11.664 g. */
 export const VORI_GRAMS = 11.664;
@@ -14,7 +17,7 @@ const text = (html: string) =>
     .replace(/\s+/g, ' ');
 
 /** Gold and silver prices from BAJUS's gold-price page. Throws if the page has changed. */
-export function parseBajus(html: string): GoldPrices {
+export function parseBajus(html: string): ParsedPrices {
   const body = text(html);
   const table = (metal: 'Gold' | 'Silver') => {
     const price = (label: string): { per_gram: number; per_vori: number } => {
@@ -45,7 +48,7 @@ export function parseBajus(html: string): GoldPrices {
 }
 
 /** Fetches and parses the current BAJUS prices; Cloudflare caches the upstream page for 30 minutes. */
-export async function fetchBajus(): Promise<GoldPrices> {
+export async function fetchBajus(): Promise<ParsedPrices> {
   const res = await fetch(BAJUS_URL, {
     headers: { 'user-agent': 'desh-api (+https://github.com/rdnasim/desh-api)' },
     cf: { cacheTtl: 1800, cacheEverything: true },

@@ -1,12 +1,13 @@
 import { round2 } from '../finance/money';
+import type { ParsedPrices } from './bajus';
 import { VORI_GRAMS } from './bajus';
-import type { GoldPrices, Karat, Metal } from './schemas';
+import type { Karat, Metal } from './schemas';
 
 /** Classical nisab: 7.5 vori of gold or 52.5 vori of silver (research G2). */
 const NISAB_VORI: Record<Metal, number> = { gold: 7.5, silver: 52.5 };
 const RATE = 2.5 as const;
 
-function nisab(prices: GoldPrices, basis: Metal, karat: Karat) {
+function nisab(prices: ParsedPrices, basis: Metal, karat: Karat) {
   const grams = round2(NISAB_VORI[basis] * VORI_GRAMS);
   const perGram = prices[basis][karat].per_gram;
   return { grams, perGram, value: round2(grams * perGram) };
@@ -14,7 +15,7 @@ function nisab(prices: GoldPrices, basis: Metal, karat: Karat) {
 
 /** Zakat at 2.5% on net zakatable wealth held for a lunar year, if it reaches the nisab. */
 export function zakat(
-  prices: GoldPrices,
+  prices: ParsedPrices,
   wealth: number,
   basis: Metal = 'silver',
   karat: Karat = '22k',

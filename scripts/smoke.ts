@@ -146,15 +146,13 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.established === 1921 ? true : `got ${b.data?.established}`),
   },
   {
-    name: '13i gold prices (live from BAJUS)',
+    name: '13i gold prices (live or last known)',
     path: '/v1/gold/prices',
-    checkErrors: true,
-    // An outage at BAJUS is reported as 503, which is the correct behaviour, not a failed deploy.
-    check: (res, b) =>
-      b.data?.gold?.['22k']?.per_gram > 0 ||
-      (res.status === 503 && b.error?.code === 'upstream_unavailable')
+    // BAJUS refuses some regions; there the last good list from KV must be served, not a 503.
+    check: (_, b) =>
+      b.data?.gold?.['22k']?.per_gram > 0
         ? true
-        : `got ${res.status}`,
+        : `no prices (freshness ${b.data?.freshness ?? b.error?.code})`,
   },
   {
     name: '14 docs and OpenAPI',

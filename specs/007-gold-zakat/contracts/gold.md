@@ -1,6 +1,6 @@
 # Contract: Gold & zakat
 
-Responses: `Cache-Control: public, max-age=600`; `meta.last_updated` = BAJUS effective date.
+Responses: `Cache-Control: public, max-age=600` (300 for `last_known`); `meta.last_updated` = BAJUS effective date. `GoldPrices` also has `fetched_at` and `freshness` (`live` | `last_known`).
 
 | Method | Path | Query | 200 `data` | Errors |
 |---|---|---|---|---|

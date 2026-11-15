@@ -19,6 +19,11 @@ export const GoldPricesSchema = z
     gold: Table,
     silver: Table,
     source_url: z.string().url(),
+    fetched_at: z.string().openapi({ description: 'When this list was read from BAJUS' }),
+    freshness: z.enum(['live', 'last_known']).openapi({
+      description:
+        '`last_known` when BAJUS could not be read from this region and the last list read (within 7 days) is served',
+    }),
   })
   .openapi('GoldPrices', {
     example: {
@@ -37,6 +42,8 @@ export const GoldPricesSchema = z
         traditional: { per_gram: 190, per_vori: 2216 },
       },
       source_url: 'https://www.bajus.org/gold-price',
+      fetched_at: '2026-11-15T06:00:00.000Z',
+      freshness: 'live',
     },
   });
 

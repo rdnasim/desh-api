@@ -22,7 +22,8 @@ pattern (for example `/v1/finance/income-tax`).
 `/v1/gold/prices` takes no input. `/v1/zakat` takes only an amount of wealth (and the nisab basis);
 it is not stored or logged, but like the finance calculators the response may be cached for up to 10
 minutes keyed by the URL, so prefer rounded amounts if that matters to you. To read gold prices the
-API contacts bajus.org; your IP address and request are not passed on.
+API contacts bajus.org; your IP address and request are not passed on. The only thing stored is the
+last price list itself (in Cloudflare Workers KV), never anything about the request.
 
 ## Mock data
 

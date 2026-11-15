@@ -1,4 +1,5 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { env } from 'cloudflare:workers';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { GoldPricesSchema, ZakatSchema } from '../../src/modules/gold/schemas';
 import fixture from '../golden/gold/bajus-gold-price-2026-11-14.txt?raw';
 import { call, expectError, expectOk } from './helpers';
@@ -12,6 +13,8 @@ function upstream(body: string, status = 200) {
   });
 }
 afterEach(() => vi.restoreAllMocks());
+const kv = (env as unknown as { LIVE_DATA: KVNamespace }).LIVE_DATA;
+beforeEach(() => kv.delete('gold:bajus:last-good'));
 
 describe('GET /v1/gold/prices', () => {
   it('returns BAJUS prices with the effective date as last_updated', async () => {
@@ -23,6 +26,28 @@ describe('GET /v1/gold/prices', () => {
     expect(body.meta.last_updated).toBe('2026-11-14');
     expect(body.meta.source).toContain('BAJUS');
     expect(spy).toHaveBeenCalledOnce();
+  });
+
+  it('marks live prices with when they were read', async () => {
+    upstream(fixture);
+    const body = await expectOk(await call('/v1/gold/prices'), GoldPricesSchema);
+    expect(body.data.freshness).toBe('live');
+    expect(Date.parse(body.data.fetched_at)).toBeGreaterThan(Date.now() - 60_000);
+  });
+
+  it('serves the last good list when BAJUS cannot be read, saying so', async () => {
+    upstream(fixture);
+    await call('/v1/gold/prices');
+    vi.restoreAllMocks();
+    upstream('blocked', 403);
+    const res = await call('/v1/gold/prices');
+    expect(res.headers.get('cache-control')).toBe('public, max-age=300');
+    const body = await expectOk(res, GoldPricesSchema);
+    expect(body.data).toMatchObject({ freshness: 'last_known', effective_date: '2026-11-14' });
+    expect(body.meta.disclaimer).toContain('last price list');
+    const zakat = await expectOk(await call('/v1/zakat?wealth=1000000'));
+    expect(zakat.data).toMatchObject({ zakat: 25000 });
+    expect(zakat.meta.disclaimer).toContain('last price list');
   });
 
   it('503s when BAJUS is down or its page changed', async () => {
