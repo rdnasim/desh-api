@@ -322,6 +322,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">09</div><h3>Fun</h3><p>Traditional proverbs and riddles, quiz questions, GI-registered foods by district, and Bangladesh history by date.</p><a href="/v1/fun/proverb/random">/v1/fun/proverb/random</a></div>
         <div class="mod"><div class="k">10</div><h3>Finance</h3><p>Income tax under the Finance Act 2026 for every taxpayer category, with the salary exemption, investment rebate, minimum tax and a slab-by-slab breakdown. Also VAT, loan EMI with a repayment schedule, DPS maturity and statutory gratuity.</p><a href="/v1/finance/income-tax?income=1200000&amp;employment_income=1200000">/v1/finance/income-tax?income=1200000&amp;employment_income=1200000</a></div>
         <div class="mod"><div class="k">11</div><h3>Mock data</h3><p>Synthetic Bangladeshi people and addresses for testing: bilingual names, phones and NIDs that pass the validators, example.com emails, and real upazilas and postcodes. Repeatable with a seed.</p><a href="/v1/mock/people?count=3&amp;seed=demo">/v1/mock/people?count=3&amp;seed=demo</a></div>
+        <div class="mod"><div class="k">12</div><h3>Banks</h3><p>All 61 banks and 11,533 branches from Bangladesh Bank, by district and upazila. Look up a branch by routing number, or check a routing number's check digit.</p><a href="/v1/routing/010130065">/v1/routing/010130065</a></div>
       </div>
     </div>
   </div>
@@ -395,6 +396,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
           <tr><td>Holidays</td><td><a href="https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740">Ministry of Public Administration, 2027 holiday notification</a></td></tr>
           <tr><td>Income tax</td><td><a href="http://bdlaws.minlaw.gov.bd/act-details-1725.html">Finance Act 2026 (Act No. 96 of 2026)</a> and the Income Tax Act 2023 as amended</td></tr>
           <tr><td>VAT, gratuity</td><td>VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10))</td></tr>
+          <tr><td>Banks and branches</td><td><a href="https://www.bb.org.bd/econdata/bs/geo_bank.pdf">Bangladesh Bank branch list</a> (as on 31 August 2026); routing numbers matched from <a href="https://www.bddata.org/all-banks/">bddata.org</a></td></tr>
           <tr><td>Hotlines</td><td><a href="https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89">Bangladesh National Portal</a>, <a href="https://dghs.gov.bd/">DGHS</a></td></tr>
           <tr><td>GI foods</td><td><a href="https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf">Department of Patents, Designs and Trademarks</a></td></tr>
           <tr><td>Bijoy mapping</td><td>Derived from <a href="https://github.com/BinduLogic/bn-ansi-to-unicode">bn-ansi-to-unicode</a> (MIT)</td></tr>
@@ -453,6 +455,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'Income tax', method: 'GET', path: '/v1/finance/income-tax?income=1200000&employment_income=1200000' },
     { label: 'Loan EMI', method: 'GET', path: '/v1/finance/emi?principal=1000000&rate=9&months=60' },
     { label: 'Mock people', method: 'GET', path: '/v1/mock/people?count=3&seed=demo' },
+    { label: 'Routing number', method: 'GET', path: '/v1/routing/010130065' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
     { label: 'Bijoy to Unicode', method: 'POST', path: '/v1/convert/bijoy-to-unicode', body: '{"text":"Avgvi \\u2020mvbvi evsjv"}' },

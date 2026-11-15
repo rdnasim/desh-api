@@ -10,6 +10,7 @@ import { errorHandler, notFoundHandler, validationHook } from './lib/errors';
 import { logger } from './lib/logger';
 import { rateLimit } from './lib/rate-limit';
 import { banglaRoutes } from './modules/bangla/routes';
+import { bankRoutes } from './modules/banks/routes';
 import { convertRoutes } from './modules/convert/routes';
 import { financeRoutes } from './modules/finance/routes';
 import { funRoutes } from './modules/fun/routes';
@@ -78,6 +79,11 @@ const MODULES = [
     description: 'Synthetic Bangladeshi people and addresses for testing (bilingual, repeatable)',
     path: '/v1/mock/people?count=3&seed=demo',
   },
+  {
+    name: 'Banks',
+    description: 'Banks and their 11,533 branches from Bangladesh Bank, with routing numbers',
+    path: '/v1/routing/010130065',
+  },
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -117,6 +123,7 @@ app.route('/v1', funRoutes);
 app.route('/v1', holidayRoutes);
 app.route('/v1', financeRoutes);
 app.route('/v1', mockRoutes);
+app.route('/v1', bankRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

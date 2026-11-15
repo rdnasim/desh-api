@@ -1,7 +1,7 @@
 import { z } from '@hono/zod-openapi';
 import { NameBnSchema, SlugSchema } from '../../lib/schemas';
 
-export const ValidationTypeSchema = z.enum(['nid', 'vehicle', 'tin', 'bin', 'postcode']);
+export const ValidationTypeSchema = z.enum(['nid', 'vehicle', 'tin', 'bin', 'postcode', 'routing']);
 
 export const ValidationReasonSchema = z.enum([
   'invalid_chars',
@@ -10,6 +10,7 @@ export const ValidationReasonSchema = z.enum([
   'invalid_format',
   'unknown_area',
   'unknown_class',
+  'invalid_check_digit',
 ]);
 
 export const ValidationResultSchema = z

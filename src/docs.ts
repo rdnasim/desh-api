@@ -71,5 +71,10 @@ export const OPENAPI_CONFIG = {
       description:
         'Synthetic Bangladeshi people and addresses for testing apps: bilingual names, format-valid phones and NIDs, example.com emails, and addresses consistent with real upazilas and postcodes. Nothing describes a real person. Pass `seed` for repeatable output.',
     },
+    {
+      name: 'Banks',
+      description:
+        'Scheduled banks and their branches from Bangladesh Bank (as on 31 August 2026), by district and upazila, and routing-number lookup. Routing numbers come from a secondary table and are included only when they match the branch and pass the check digit; confirm with your bank before sending money.',
+    },
   ],
 };

@@ -7,3 +7,6 @@ coverage/
 .env*
 *.log
 .DS_Store
+
+# Source documents (cited by URL in data/meta.json; often too large or not ours to redistribute)
+data/**/*.pdf

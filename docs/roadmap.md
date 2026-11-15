@@ -12,7 +12,8 @@ specs benefit from what was learned.
 | [`002-holidays-calendar`](../specs/002-holidays-calendar/) | 2 — Live data | 9 Holidays & Calendar | **Built for 2027 (general calendar)**; 2026 and bank calendar blocked on official documents |
 | [`003-finance-calculators`](../specs/003-finance-calculators/) | 2 — Live data | 13 Finance Calculators | **Built** for tax years 2026-27 to 2030-31 (24/24 tasks); every tax rule checked against Act No. 96 of 2026 |
 | [`004-mock-data`](../specs/004-mock-data/) | 2 — Live data | 15 Bangla Mock Data Generator | **Built** (people and addresses); Bangla name spellings await native-speaker review |
-| `00x-…` (to split) | 2 — Live data (months 2–3) | 10 Market Prices, 11 Banks & Routing (**blocked**: Bangladesh Bank's routing list is behind a captcha; needs a manual download), 12 Gold & Zakat, 14 Education, API keys & daily quotas | Not started |
+| [`005-banks`](../specs/005-banks/) | 2 — Live data | 11 Banks & Routing Numbers | **Built**: 61 banks, 11,533 branches (Bangladesh Bank, 31 Aug 2026), 8,080 routing numbers; permission from bddata.org and Bangla bank names pending |
+| `00x-…` (to split) | 2 — Live data (months 2–3) | 10 Market Prices, 12 Gold & Zakat, 14 Education, API keys & daily quotas | Not started |
 | `00x-expansion` | 3 — Expansion (months 4–6) | 16 Prayer Times, 17 Transport, 18 Health, 19 Weather/AQI/Flood, 20 Constituencies, 21 Tourism, 22 NLP, SDKs (npm, PyPI, Composer) | Not started |
 | `00x-ecosystem` | 4 — Ecosystem (6+ months) | Playground, bots, browser extension, form widgets, WordPress/Laravel plugins, Sheets add-on, dashboard, CLI | Not started |
 

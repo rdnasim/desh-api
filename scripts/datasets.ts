@@ -1,5 +1,6 @@
 import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
+import { BankSchema, BranchSchema } from '../src/modules/banks/schemas';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
 import { TaxCategorySchema, TaxYearSchema } from '../src/modules/finance/schemas';
 import {
@@ -24,6 +25,7 @@ import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
+import { routingCheckDigitOk } from '../src/modules/validate/routing';
 import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
 
 export interface DatasetSpec {
@@ -138,6 +140,20 @@ export const datasets: DatasetSpec[] = [
     schema: HolidaySchema,
     sortKey: (r) => r.id,
     type: { name: 'Holiday', from: '../modules/holidays/schemas' },
+  },
+  {
+    key: 'banks.banks',
+    file: 'banks/banks.json',
+    schema: BankSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'Bank', from: '../modules/banks/schemas' },
+  },
+  {
+    key: 'banks.branches',
+    file: 'banks/branches.json',
+    schema: BranchSchema,
+    sortKey: (r) => r.id,
+    type: { name: 'Branch', from: '../modules/banks/schemas' },
   },
   {
     key: 'finance.tax-categories',
@@ -265,6 +281,30 @@ export function derive(data: Record<string, any[]>): {
     for (const c of categories) {
       if (covered.filter((x: string) => x === c).length !== 1)
         errors.push(`finance.tax-years: ${y.tax_year} needs exactly one threshold for '${c}'`);
+    }
+  }
+  const bankBySlug = new Map((data['banks.banks'] ?? []).map((b) => [b.slug, b]));
+  const upazilaDistrict = new Map((data['geo.upazilas'] ?? []).map((u) => [u.slug, u.district]));
+  const routingSeen = new Set<string>();
+  for (const b of data['banks.branches'] ?? []) {
+    const bank = bankBySlug.get(b.bank);
+    if (!bank) errors.push(`banks.branches: ${b.id} has unknown bank '${b.bank}'`);
+    else if (!b.id.startsWith(String(bank.bb_id)) || b.id.length !== String(bank.bb_id).length + 4)
+      errors.push(`banks.branches: ${b.id} does not start with bank ID ${bank.bb_id}`);
+    if (!districtSlugs.has(b.district))
+      errors.push(`banks.branches: ${b.id} has unknown district '${b.district}'`);
+    if (b.upazila !== undefined && upazilaDistrict.get(b.upazila) !== b.district)
+      errors.push(`banks.branches: ${b.id} upazila '${b.upazila}' is not in ${b.district}`);
+    if (b.routing_number !== undefined) {
+      if (!routingCheckDigitOk(b.routing_number))
+        errors.push(`banks.branches: ${b.id} routing number fails the check digit`);
+      if (routingSeen.has(b.routing_number))
+        errors.push(`banks.branches: routing number ${b.routing_number} used twice`);
+      routingSeen.add(b.routing_number);
+      if (bank?.routing_code && !b.routing_number.startsWith(bank.routing_code))
+        errors.push(
+          `banks.branches: ${b.id} routing number does not start with ${bank.routing_code}`,
+        );
     }
   }
   for (const d of data['fun.dishes'] ?? []) {

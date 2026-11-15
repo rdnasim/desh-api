@@ -13,6 +13,7 @@ All reference data is plain JSON in [`data/`](data/):
 | `data/hotlines/` | National hotline numbers |
 | `data/holidays/` | Official holiday lists per year and their source documents |
 | `data/mock/` | Common given and family names used to build synthetic test people |
+| `data/banks/` | Banks and branches (rebuilt from Bangladesh Bank's branch list with `scripts/import/banks.py`) |
 | `data/finance/` | Income tax rules per tax year (thresholds, slabs, minimum tax, rebate) and taxpayer categories |
 | `data/fun/` | Proverbs, riddles, quiz questions, GI foods, history events |
 | `data/land/` | Land units |
@@ -50,6 +51,9 @@ Extra rules for some data:
 - **Mock names** must be common names, never copied from a list of real people. Give both
   spellings (Bangla in NFC), the naming tradition, and a `gender` on family names used by one
   gender only (for example Akter, Uddin). Native-speaker spelling fixes are very welcome.
+- **Bank branches** come from Bangladesh Bank's branch list; refresh them with the importer rather
+  than by hand. A routing number may be added or corrected only with a source (Bangladesh Bank or
+  the bank's own website) and must pass the check digit (`pnpm data:check` enforces it).
 
 ## Code changes
 

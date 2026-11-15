@@ -1,5 +1,28 @@
 [
   {
+    "dataset": "banks.banks",
+    "source": "Bangladesh Bank, Banking Statistics Division: list of bank branches by district and thana, as on 31 August 2026 (econdata/bs/geo_bank.pdf)",
+    "source_url": "https://www.bb.org.bd/econdata/bs/geo_bank.pdf",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-15",
+    "last_updated": "2026-11-15",
+    "credits": [
+      "Bangladesh Bank"
+    ]
+  },
+  {
+    "dataset": "banks.branches",
+    "source": "Bangladesh Bank, Banking Statistics Division: list of bank branches by district and thana, as on 31 August 2026 (econdata/bs/geo_bank.pdf); routing numbers from the bddata.org bank routing table (reportedly from Bangladesh Bank), attached only when bank, district, branch name and check digit agree",
+    "source_url": "https://www.bb.org.bd/econdata/bs/geo_bank.pdf",
+    "licence": "Branch list: public government information; compilation CC BY 4.0. Routing numbers: factual data compiled by bddata.org (all rights reserved; used with attribution, see specs/005-banks/research.md)",
+    "retrieved": "2026-11-15",
+    "last_updated": "2026-11-15",
+    "credits": [
+      "Bangladesh Bank",
+      "bddata.org (Bangladesh Barta)"
+    ]
+  },
+  {
     "dataset": "convert.bijoy-map",
     "source": "SutonnyMJ Bijoy mapping derived from bn-ansi-to-unicode (BinduLogic)",
     "source_url": "https://github.com/BinduLogic/bn-ansi-to-unicode",
