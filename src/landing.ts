@@ -324,6 +324,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">11</div><h3>Mock data</h3><p>Synthetic Bangladeshi people and addresses for testing: bilingual names, phones and NIDs that pass the validators, example.com emails, and real upazilas and postcodes. Repeatable with a seed.</p><a href="/v1/mock/people?count=3&amp;seed=demo">/v1/mock/people?count=3&amp;seed=demo</a></div>
         <div class="mod"><div class="k">12</div><h3>Banks</h3><p>All 61 banks and 11,533 branches from Bangladesh Bank, by district and upazila. Look up a branch by routing number, or check a routing number's check digit.</p><a href="/v1/routing/010130065">/v1/routing/010130065</a></div>
         <div class="mod"><div class="k">13</div><h3>Education</h3><p>All 181 universities listed by the University Grants Commission: public, private, international and cross-border, with founding year, website and campus.</p><a href="/v1/universities?category=public">/v1/universities?category=public</a></div>
+        <div class="mod"><div class="k">14</div><h3>Gold &amp; zakat</h3><p>Today's gold and silver prices from the Bangladesh Jewellers Association, per gram and per vori, and a zakat calculator with the nisab worked out from those prices.</p><a href="/v1/gold/prices">/v1/gold/prices</a></div>
       </div>
     </div>
   </div>
@@ -399,6 +400,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
           <tr><td>VAT, gratuity</td><td>VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10))</td></tr>
           <tr><td>Banks and branches</td><td><a href="https://www.bb.org.bd/econdata/bs/geo_bank.pdf">Bangladesh Bank branch list</a> (as on 31 August 2026); routing numbers matched from <a href="https://www.bddata.org/all-banks/">bddata.org</a></td></tr>
           <tr><td>Universities</td><td><a href="https://www.ugc.gov.bd/universities">University Grants Commission</a></td></tr>
+          <tr><td>Gold and silver prices</td><td><a href="https://www.bajus.org/gold-price">Bangladesh Jewellers Association (BAJUS)</a>, read live</td></tr>
           <tr><td>Hotlines</td><td><a href="https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89">Bangladesh National Portal</a>, <a href="https://dghs.gov.bd/">DGHS</a></td></tr>
           <tr><td>GI foods</td><td><a href="https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf">Department of Patents, Designs and Trademarks</a></td></tr>
           <tr><td>Bijoy mapping</td><td>Derived from <a href="https://github.com/BinduLogic/bn-ansi-to-unicode">bn-ansi-to-unicode</a> (MIT)</td></tr>
@@ -459,6 +461,8 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'Mock people', method: 'GET', path: '/v1/mock/people?count=3&seed=demo' },
     { label: 'Routing number', method: 'GET', path: '/v1/routing/010130065' },
     { label: 'Universities', method: 'GET', path: '/v1/universities?category=public' },
+    { label: 'Gold price', method: 'GET', path: '/v1/gold/prices' },
+    { label: 'Zakat', method: 'GET', path: '/v1/zakat?wealth=1000000' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
     { label: 'Bijoy to Unicode', method: 'POST', path: '/v1/convert/bijoy-to-unicode', body: '{"text":"Avgvi \\u2020mvbvi evsjv"}' },

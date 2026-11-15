@@ -97,6 +97,10 @@ curl 'https://deshapi.riadul.com/v1/finance/vat?amount=1150&inclusive=true'     
 curl 'https://deshapi.riadul.com/v1/mock/people?count=3&seed=demo'
 # → bilingual names, valid-format phones and NIDs, example.com emails, real upazilas and postcodes
 
+# Today's gold price, and zakat on 10 lakh (nisab from the silver price)
+curl 'https://deshapi.riadul.com/v1/gold/prices'
+curl 'https://deshapi.riadul.com/v1/zakat?wealth=1000000'
+
 # Which branch is this routing number? (check digit verified)
 curl 'https://deshapi.riadul.com/v1/routing/010130065'
 # → Agrani Bank, Kachua Bazar branch, Kachua, Chandpur
@@ -123,8 +127,9 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Mock data** | Synthetic Bangladeshi people and addresses for testing: bilingual names, phones and NIDs that pass the validators, real upazilas and postcodes; repeatable with `seed` | [`/v1/mock/people?count=3&seed=demo`](https://deshapi.riadul.com/v1/mock/people?count=3&seed=demo) |
 | **Banks** | All 61 banks and 11,533 branches from Bangladesh Bank by district and upazila; routing-number lookup and check-digit validation | [`/v1/routing/010130065`](https://deshapi.riadul.com/v1/routing/010130065) |
 | **Education** | All 181 universities listed by the University Grants Commission (public, private, international, cross-border) with founding year, website, campus and contacts | [`/v1/universities?category=public`](https://deshapi.riadul.com/v1/universities?category=public) |
+| **Gold & zakat** | Today's BAJUS gold and silver prices per gram and per vori; zakat with the nisab from those prices | [`/v1/gold/prices`](https://deshapi.riadul.com/v1/gold/prices) |
 
-Coming next: the bank holiday calendar, gold prices and zakat. See the
+Coming next: the bank holiday calendar and market prices. See the
 [roadmap](docs/roadmap.md).
 
 ## How responses look
@@ -172,6 +177,7 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 | Income tax | [Finance Act 2026 (Act No. 96 of 2026)](http://bdlaws.minlaw.gov.bd/act-details-1725.html) and the Income Tax Act 2023 as amended |
 | Banks and branches | [Bangladesh Bank branch list](https://www.bb.org.bd/econdata/bs/geo_bank.pdf) (as on 31 August 2026); routing numbers matched from [bddata.org](https://www.bddata.org/all-banks/) |
 | Universities | [University Grants Commission](https://www.ugc.gov.bd/universities) |
+| Gold and silver prices | [Bangladesh Jewellers Association (BAJUS)](https://www.bajus.org/gold-price), read live |
 | VAT, gratuity | VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10)) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |

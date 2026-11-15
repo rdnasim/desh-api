@@ -16,6 +16,7 @@ import { educationRoutes } from './modules/education/routes';
 import { financeRoutes } from './modules/finance/routes';
 import { funRoutes } from './modules/fun/routes';
 import { geoRoutes } from './modules/geo/routes';
+import { goldRoutes } from './modules/gold/routes';
 import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
@@ -91,6 +92,11 @@ const MODULES = [
       'Universities listed by the University Grants Commission (public, private, international)',
     path: '/v1/universities?category=public',
   },
+  {
+    name: 'Gold & zakat',
+    description: 'Current BAJUS gold and silver prices (per gram and vori) and a zakat calculator',
+    path: '/v1/gold/prices',
+  },
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -132,6 +138,7 @@ app.route('/v1', financeRoutes);
 app.route('/v1', mockRoutes);
 app.route('/v1', bankRoutes);
 app.route('/v1', educationRoutes);
+app.route('/v1', goldRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

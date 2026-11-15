@@ -43,6 +43,12 @@ describe('app shell', () => {
     expect(paths.length).toBeGreaterThan(5);
     for (const p of paths) {
       const res = await call(p);
+      // Live-data routes (gold prices) answer 503 when their upstream cannot be reached from here.
+      if (res.status === 503) {
+        const body = (await res.json()) as { error: { code: string } };
+        expect(body.error.code, p).toBe('upstream_unavailable');
+        continue;
+      }
       expect(res.status, p).toBe(200);
     }
   });
