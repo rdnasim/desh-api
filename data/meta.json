@@ -34,6 +34,28 @@
     ]
   },
   {
+    "dataset": "education.universities",
+    "source": "University Grants Commission of Bangladesh (ugc.gov.bd): university lists and university pages (site updated 2026-11-12)",
+    "source_url": "https://www.ugc.gov.bd/universities",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-15",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "University Grants Commission of Bangladesh"
+    ]
+  },
+  {
+    "dataset": "education.university-categories",
+    "source": "University Grants Commission of Bangladesh (ugc.gov.bd): university lists and university pages (site updated 2026-11-12)",
+    "source_url": "https://www.ugc.gov.bd/universities",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-15",
+    "last_updated": "2026-11-12",
+    "credits": [
+      "University Grants Commission of Bangladesh"
+    ]
+  },
+  {
     "dataset": "finance.tax-categories",
     "source": "Finance Act 2026 (Act No. 96 of 2026, 30 June 2026), Schedule 2; Income Tax Act 2023 (s. 78, Sixth Schedule) as amended by Act No. 89 of 2026 and Act No. 96 of 2026",
     "source_url": "http://bdlaws.minlaw.gov.bd/act-details-1725.html",

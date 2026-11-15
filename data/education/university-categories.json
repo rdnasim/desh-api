@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "cbhe",
+    "name_en": "CBHE",
+    "name_bn": "সিবিএইচই",
+    "description": "Cross-Border Higher Education institutions."
+  },
+  {
+    "slug": "international",
+    "name_en": "International Universities",
+    "name_bn": "আন্তর্জাতিক বিশ্ববিদ্যালয়",
+    "description": "Internationally affiliated and foreign universities operating in Bangladesh."
+  },
+  {
+    "slug": "private",
+    "name_en": "Private Universities",
+    "name_bn": "বেসরকারি বিশ্ববিদ্যালয়",
+    "description": "Universities established under the Private University Act."
+  },
+  {
+    "slug": "public",
+    "name_en": "Public Universities",
+    "name_bn": "পাবলিক বিশ্ববিদ্যালয়",
+    "description": "Government-funded universities established by act of parliament."
+  }
+]

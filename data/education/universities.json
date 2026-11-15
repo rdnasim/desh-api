@@ -1,0 +1,2780 @@
+[
+  {
+    "slug": "ahsania-mission-university-of-science-and-technology",
+    "ugc_id": 333,
+    "name_en": "Ahsania Mission University of Science and Technology",
+    "category": "private",
+    "established": 2018,
+    "website": "www.amust.ac.bd",
+    "campus": "54/1-2 Mirzapur, Binodpur Bazar, Motihar Rajshahi-6206",
+    "district": "rajshahi",
+    "emails": [
+      "infor@amust.ac.bd",
+      "registrar@amust.ac.bd"
+    ],
+    "phone": "01324744550, 01324744559"
+  },
+  {
+    "slug": "ahsanullah-university-of-science-and-technology",
+    "ugc_id": 245,
+    "name_en": "Ahsanullah University of Science and Technology",
+    "category": "private",
+    "established": 1995,
+    "website": "www.aust.edu",
+    "campus": "Plot No. 141-142, Love Road, Tejgaon I/A, Dhaka-1208.",
+    "district": "dhaka",
+    "emails": [
+      "vc@aust.edu",
+      "regr@aust.edu"
+    ],
+    "phone": "88-02-9120248, 9130613,9115461",
+    "fax": "88-02-9130508, 9860564"
+  },
+  {
+    "slug": "america-bangladesh-university",
+    "ugc_id": 354,
+    "name_en": "America Bangladesh University",
+    "category": "private",
+    "ugc_notes": [
+      {
+        "title": "University closed",
+        "description": "সাময়িক অনুমতিপত্রের শর্তাবলী প্রতিপালন এবং গুণগত মানসম্পন্ন শিক্ষা নিশ্চিতকরণে ব্যর্থ হওয়ায় সরকার ২২/১০/২০০৬ তারিখে এস.আর.ও জারির মাধ্যমে আমেরিকা বাংলাদেশ ইউনিভার্সিটি বন্ধ ঘোষণা করে। উক্ত বন্ধ আদেশের বিরুদ্ধে আদালত ২০/১১/২০১৩ তারিখে রায় প্রদান করে। বর্তমানে এ বিশ্ববিদ্যালয়টির অনুমোদিত কোনো ক্যাম্পাস ও ঠিকানা নেই। বিশ্ববিদ্যালয়টির বোর্ড অব ট্রাস্টিজ নিয়ে আদালতে একাধিক মামলা চলমান। বিশ্ববিদ্যালয়টিতে বর্তমানে বৈধ কোন কর্তৃপক্ষ নেই। বিওটি নিয়ে মামলা চলমান থাকা, মহামান্য রাষ্ট্রপতি কর্তৃক ভিসি, প্রো-ভিসি ও ট্রেজারার না থাকা এবং সাময়িক অনুমতির মেয়াদ উত্তীর্ণ হওয়ায় বেসরকারি বিশ্ববিদ্যালয় আইন ২০১০ এর ১২(১) ধারা অনুযায়ী বিশ্ববিদ্যালয়টির কার্যক্রমের আইনগত আর কোন ভিত্তি নেই।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "american-international-university-bangladesh",
+    "ugc_id": 246,
+    "name_en": "American International University-Bangladesh",
+    "category": "private",
+    "established": 1995,
+    "website": "www.aiub.ac.bd",
+    "campus": "Plot No: 408/1 (Old: KA-66/1), Kuril Kuratoli Road, Khilkhet, Dhaka 1229, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "info@aiub.edu"
+    ],
+    "phone": "880-2-8811749, 8815386-7",
+    "fax": "880-2-8813233,",
+    "ugc_notes": [
+      {
+        "title": "Department of Journalism and Mass Communication",
+        "description": "উল্লিখিত প্রোগ্রাম ০২টি (BA in Mass Communication & Media, BA in Advertising) আপডেট করে BA in Media & Mass Communication (i. Major in Electronic and Print Journalism, ii. Major in Advertising) নামকরণ করা হয়েছে।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Business Administration",
+        "description": "উল্লিখিত সকল BBA প্রোগ্রাম আপডেট করে ১১/১১/২০১৯ তারিখে Bachelor of Business Administration (BBA) প্রোগ্রাম হিসেবে অনুমোদন দেয়া হয়।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Business Administration",
+        "description": "উল্লিখিত প্রোগ্রাম দুটিকে আপডেট করে ১১/১১/২০১৯ তারিখে Master of Business Administration (MBA) প্রোগ্রাম হিসেবে অনুমোদন দেয়া হয়।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "anwer-khan-modern-university",
+    "ugc_id": 331,
+    "name_en": "Anwer Khan Modern University",
+    "category": "private",
+    "established": 2016,
+    "website": "www.akmu.edu.bd",
+    "campus": "House No: 6, Gareeb e Nawaz Road, Sector-11, Uttara,Dhaka-1230",
+    "district": "dhaka",
+    "emails": [
+      "registrar@akmu.edu.bd",
+      "info@akmu.ac.bd",
+      "info@akmu.edu.bd"
+    ],
+    "phone": "+8802-48957283/48957276; 01975214261"
+  },
+  {
+    "slug": "asa-university-bangladesh",
+    "ugc_id": 288,
+    "name_en": "ASA University Bangladesh",
+    "category": "private",
+    "established": 2006,
+    "website": "www.asaub.edu.bd",
+    "campus": "ASA Tower,23/3, Bir Uttam A.N.M Nuruzzaman Sarak , Shaymoli, Mohammadpur, Dhaka-1207",
+    "district": "dhaka",
+    "emails": [
+      "info@asaub.edu.bd"
+    ],
+    "phone": "8130238, 8122555, 8130283",
+    "fax": "880-2-8114831"
+  },
+  {
+    "slug": "asian-university-for-women",
+    "ugc_id": 356,
+    "name_en": "Asian University for Women",
+    "category": "international",
+    "established": 2000,
+    "website": "www.auw.edu.bd",
+    "campus": "20/A M.M. Ali Road, Chittagong, Bangladesh",
+    "district": "chattogram"
+  },
+  {
+    "slug": "asian-university-of-bangladesh",
+    "ugc_id": 251,
+    "name_en": "Asian University of Bangladesh",
+    "category": "private",
+    "established": 1996,
+    "website": "www.aub.ac.bd",
+    "campus": "Bangabandhu Road, Tongabari, Ashulia, Dhaka -1341",
+    "district": "dhaka",
+    "emails": [
+      "info@aub.ac.bd"
+    ],
+    "phone": "48950729, 58950709 (Ext. 101, 102), Mobile: 01678 664433, 01678 664413, 01678 664419,",
+    "fax": "880-28916521"
+  },
+  {
+    "slug": "atish-dipankar-university-of-science-technology",
+    "ugc_id": 286,
+    "name_en": "Atish Dipankar University of Science & Technology",
+    "category": "private",
+    "established": 2004,
+    "website": "www.adust.edu.bd",
+    "campus": "Plot# 209, Sector# 15, khantek, Uttara, Dhaka-1230",
+    "district": "dhaka",
+    "emails": [
+      "info@adust.edu.bd"
+    ],
+    "phone": "0178766575, 01787666576"
+  },
+  {
+    "slug": "aviation-and-aerospace-university-bangladesh",
+    "ugc_id": 225,
+    "name_en": "Aviation And Aerospace University, Bangladesh",
+    "category": "public",
+    "established": 2019,
+    "website": "www.aaub.edu.bd",
+    "campus": "Lalmonirhat (in Process)",
+    "district": "lalmonirhat",
+    "emails": [
+      "contact@aaub.edu.bd"
+    ],
+    "phone": "8801769995099"
+  },
+  {
+    "slug": "bandarban-university",
+    "ugc_id": 335,
+    "name_en": "Bandarban University",
+    "category": "private",
+    "established": 2018,
+    "website": "www.bubban.ac.bd",
+    "campus": "K B Road, Shualok-4600, Bandarban Sadar, Bandarban",
+    "district": "bandarban",
+    "emails": [
+      "info@bubban.ac.bd",
+      "registrar@bubban.ac.bd"
+    ],
+    "phone": "01318-305899, 01318305900,"
+  },
+  {
+    "slug": "bangladesh-agricultural-university",
+    "ugc_id": 182,
+    "name_en": "Bangladesh Agricultural University",
+    "category": "public",
+    "established": 1961,
+    "website": "www.bau.edu.bd",
+    "campus": "Bangladesh Agricultural University, Mymensingh-2202, Bangladesh",
+    "district": "mymensingh",
+    "emails": [
+      "registrar@bau.edu.bd"
+    ],
+    "phone": "+880-91-66846, 01711786424",
+    "fax": "+880-91-66896"
+  },
+  {
+    "slug": "bangladesh-army-international-university-of-science-technologybaiust-comilla",
+    "ugc_id": 320,
+    "name_en": "Bangladesh Army International University of Science & Technology(BAIUST) ,Comilla",
+    "category": "private",
+    "established": 2015,
+    "website": "www.baiust.ac.bd",
+    "campus": "Village: Syedpur, Post: Sharatnagar, Adarsha Sadar, Cumilla",
+    "district": "cumilla",
+    "emails": [
+      "info@baiust.ac.bd"
+    ],
+    "phone": "02339334212"
+  },
+  {
+    "slug": "bangladesh-army-university-of-engineering-and-technology-bauet-qadirabad",
+    "ugc_id": 319,
+    "name_en": "Bangladesh Army University of Engineering and Technology (BAUET), Qadirabad",
+    "category": "private",
+    "established": 2015,
+    "website": "www.bauet.ac.bd",
+    "campus": "Dayarampur, Bagatipara, Qadirabad Cantoment, Natore-6431",
+    "district": "natore",
+    "emails": [
+      "registrarbauet@gmail.com",
+      "bauetqadirabad@gmail.com"
+    ],
+    "phone": "02-588879775, 01708503503"
+  },
+  {
+    "slug": "bangladesh-army-university-of-science-and-technology-baust-saidpur",
+    "ugc_id": 318,
+    "name_en": "Bangladesh Army University of Science and Technology (BAUST), Saidpur",
+    "category": "private",
+    "established": 2015,
+    "website": "www.baust.edu.bd",
+    "campus": "Saidpur Cantonment, Saidpur, Nilphamari",
+    "district": "nilphamari",
+    "emails": [
+      "registrar@baust.edu.bd"
+    ],
+    "phone": "02-588878201/01769-675551"
+  },
+  {
+    "slug": "bangladesh-army-university-of-science-and-technology-khulna",
+    "ugc_id": 345,
+    "name_en": "Bangladesh Army University of Science and Technology, Khulna",
+    "category": "private",
+    "established": 2023,
+    "website": "www.baustkhulna.ac.bd",
+    "campus": "Nurjahan Tower, holding 8 & 9, Atra, Gila tala, Fultala, Khulna.",
+    "district": "khulna",
+    "emails": [
+      "info@baustkhulna.ac.bd",
+      "registrar.baustkhulna.edu.bd@gmail.com"
+    ],
+    "phone": "+8801769564533",
+    "fax": "+880277707576"
+  },
+  {
+    "slug": "bangladesh-islami-university",
+    "ugc_id": 287,
+    "name_en": "Bangladesh Islami University",
+    "category": "private",
+    "established": 2005,
+    "website": "www.biu.ac.bd",
+    "campus": "Plot# 51, Block# B, Avenue# 03, Green Model Town, Manda, Mugda, Dhaka-1214",
+    "district": "dhaka",
+    "emails": [
+      "registrar@biu.ac.bd"
+    ],
+    "phone": "01915492003, 01915492005,01915492007 & 01915492008, 09666711456"
+  },
+  {
+    "slug": "bangladesh-maritime-university",
+    "ugc_id": 215,
+    "name_en": "Bangladesh Maritime University",
+    "category": "public",
+    "established": 2013,
+    "website": "https://bmu.edu.bd/",
+    "campus": "Bangladesh Maritime University, Hamidchar (Rangamatia and Bakolia Mouja), Bandar, Chittagong",
+    "district": "chattogram",
+    "emails": [
+      "registrar@bmu.edu.bd"
+    ],
+    "phone": "09666315200",
+    "fax": "+02 58051010"
+  },
+  {
+    "slug": "bangladesh-medical-university",
+    "ugc_id": 191,
+    "name_en": "Bangladesh Medical University",
+    "category": "public",
+    "established": 1998,
+    "website": "www.bsmmu.ac.bd",
+    "campus": "Bangladesh Medical University, Shahbag, Dhaka-1000, Bangladesh.",
+    "district": "dhaka",
+    "emails": [
+      "registrar@bsmmu.edu.bd"
+    ],
+    "phone": "9661065, 9661064",
+    "fax": "88-02-55165609"
+  },
+  {
+    "slug": "bangladesh-open-university",
+    "ugc_id": 190,
+    "name_en": "Bangladesh Open University",
+    "category": "public",
+    "established": 1992,
+    "website": "www.bou.ac.bd",
+    "campus": "Bangladesh Open University, Gazipur-1705",
+    "district": "gazipur",
+    "emails": [
+      "registrar@bou.ac.bd"
+    ],
+    "phone": "996691112, 09666730730 Ex.105",
+    "fax": "88-02-9291130"
+  },
+  {
+    "slug": "bangladesh-university",
+    "ugc_id": 255,
+    "name_en": "Bangladesh University",
+    "category": "private",
+    "established": 2001,
+    "website": "www.bu.edu.bd",
+    "campus": "5/B, Beribadh, Main Road, Adabor, Mohammadpur, Dhaka-1207",
+    "district": "dhaka",
+    "emails": [
+      "info@bu.edu.bd",
+      "admission@bu.edu.bd"
+    ],
+    "phone": "+88 0175555 9301, +88 0175555 9320, +88 0175555 9328",
+    "fax": "880-2-41023182"
+  },
+  {
+    "slug": "bangladesh-university-of-business-technology-bubt",
+    "ugc_id": 280,
+    "name_en": "Bangladesh University of Business & Technology (BUBT)",
+    "category": "private",
+    "established": 2003,
+    "website": "www.bubt.edu.bd",
+    "campus": "Plot No-77-78, Main Road, Rupnagar, Mirpur-2, Dhaka-1216, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "info@bubt.edu.bd"
+    ],
+    "phone": "02-48036351-3",
+    "fax": "88-02-48036355"
+  },
+  {
+    "slug": "bangladesh-university-of-engineering-technology",
+    "ugc_id": 183,
+    "name_en": "Bangladesh University of Engineering & Technology",
+    "category": "public",
+    "established": 1962,
+    "website": "www.buet.ac.bd",
+    "campus": "Bangladesh University of Engineering & Technology,Dhaka-1000, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "regtr@regtr.buet.ac.bd",
+      "regoffice@regtr.buet.ac.bd"
+    ],
+    "phone": "55666000-02, 01550072999, 02223365616",
+    "fax": "(880 2) 44612902"
+  },
+  {
+    "slug": "bangladesh-university-of-health-sciences",
+    "ugc_id": 305,
+    "name_en": "Bangladesh University of Health Sciences",
+    "category": "private",
+    "established": 2012,
+    "website": "www.buhs.ac.bd",
+    "campus": "125/1, Darus Slalam (Technical Crossing), Mirpur-1, Dhaka-1216, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "info@buhs.ac.bd"
+    ],
+    "phone": "+880-2-9010654; 9010952, 01791042087, 01552146362"
+  },
+  {
+    "slug": "bangladesh-university-of-professionals",
+    "ugc_id": 210,
+    "name_en": "Bangladesh University of Professionals",
+    "category": "public",
+    "established": 2009,
+    "website": "www.bup.edu.bd",
+    "campus": "Bangladesh University of Professionals, Mirpur Cantonment, Mirpur-12, Dhaka-1216, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "registrar@bup.edu.bd"
+    ],
+    "phone": "+8809666790799",
+    "fax": "+88-02-223373197"
+  },
+  {
+    "slug": "bangladesh-university-of-textiles",
+    "ugc_id": 212,
+    "name_en": "Bangladesh University of Textiles",
+    "category": "public",
+    "established": 2010,
+    "website": "www.butex.edu.bd",
+    "campus": "Bangladesh University of Textiles , 92 Shaheed Tajuddin Ahmed Sarani, Tejgaon, Dhaka-1208, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "vc@butex.edu.bd",
+      "registrar@butex.edu.bd"
+    ],
+    "phone": "+88 02 58151788, 01715-066387",
+    "fax": "+88 02 48112698"
+  },
+  {
+    "slug": "begum-rokeya-university-rangpur",
+    "ugc_id": 209,
+    "name_en": "Begum Rokeya University, Rangpur",
+    "category": "public",
+    "established": 2008,
+    "website": "www.brur.ac.bd",
+    "campus": "Begum Rokeya University, Modern Mor Road, Rangpur-5400, Bangladesh",
+    "district": "rangpur",
+    "emails": [
+      "office.registrar@brur.ac.bd"
+    ],
+    "phone": "+8801313013211"
+  },
+  {
+    "slug": "bgc-trust-university-bangladesh",
+    "ugc_id": 257,
+    "name_en": "BGC Trust University Bangladesh",
+    "category": "private",
+    "established": 2001,
+    "website": "www.bgctub.ac.bd",
+    "campus": "BGC Bidyanagar, P.O: Kanchannagar-4381, Upz: Chandanaish , Dist: Chattogram",
+    "district": "chattogram",
+    "emails": [
+      "info@bgctub.ac.bd"
+    ],
+    "phone": "88-03033-56192-3",
+    "fax": "880-31-2550224"
+  },
+  {
+    "slug": "bgmea-university-of-fashion-technologybuft",
+    "ugc_id": 293,
+    "name_en": "BGMEA University of Fashion & Technology(BUFT)",
+    "category": "private",
+    "established": 2012,
+    "website": "www.buft.edu.bd",
+    "campus": "Nishatnagar, Turag, Dhaka-1230",
+    "district": "dhaka",
+    "emails": [
+      "info@buft.edu.bd"
+    ],
+    "phone": "880-2-8919986",
+    "fax": "880-2-8919987",
+    "ugc_notes": [
+      {
+        "title": "Programs approved",
+        "description": "BGMEA University of Fashion & Technology (BUFT) এর পরিচালিত Bachelor of Appreal Merchandising and Management এবং Bachelor of Arts (B.A) in Fashion Studies প্রোগ্রাম দুটি ১০-০৩-২০২০ তারিখ থেকে কমিশন কর্তৃক অনুমোদিত বলে গন্য হবে।",
+        "type": "approval"
+      }
+    ]
+  },
+  {
+    "slug": "bogra-science-and-technology-university",
+    "ugc_id": 235,
+    "name_en": "Bogra Science and Technology University",
+    "category": "public",
+    "established": 2025,
+    "website": "bstu.ac.bd",
+    "emails": [
+      "vc@bstu.ac.bd"
+    ],
+    "phone": "01335-181113"
+  },
+  {
+    "slug": "brac-university",
+    "ugc_id": 254,
+    "name_en": "BRAC University",
+    "category": "private",
+    "established": 2001,
+    "website": "www.bracu.ac.bd",
+    "campus": "BRAC University, Progoti Soroni, KH 224, Merul Badda, Dhaka-1212",
+    "district": "dhaka",
+    "emails": [
+      "registrar@bracu.ac.bd"
+    ],
+    "phone": "+880-2-882-4051-4 , +88028810383,"
+  },
+  {
+    "slug": "brahmaputra-international-university",
+    "ugc_id": 312,
+    "name_en": "Brahmaputra International University",
+    "category": "private",
+    "established": 2013,
+    "website": "www.sfmu.ac.bd",
+    "campus": "Nayapara Pantch Raster Moor, Jamalpur-2000",
+    "district": "jamalpur",
+    "emails": [
+      "vc@sfmu.edu.bd",
+      "gmoula28@gmail.com",
+      "sfmuniversitybd@gmail.com"
+    ],
+    "phone": "88-0981 64912/0981-63604/Mob-01721084901"
+  },
+  {
+    "slug": "britannia-university",
+    "ugc_id": 303,
+    "name_en": "Britannia University",
+    "category": "private",
+    "established": 2012,
+    "website": "www.britannia.edu.bd",
+    "campus": "Padua Bazar, Biswaroad, Comilla",
+    "district": "cumilla",
+    "emails": [
+      "info@britannia.edu.bd"
+    ],
+    "phone": "017626222202"
+  },
+  {
+    "slug": "canadian-university-of-bangladesh",
+    "ugc_id": 322,
+    "name_en": "Canadian University of Bangladesh",
+    "category": "private",
+    "established": 2015,
+    "website": "www.cub.edu.bd",
+    "campus": "Rangs RL Square, Plot -Kha, 201/1, 203, 205/1, 205/3 Progoti Soroni, Moddhyo Badda, Dhaka",
+    "district": "dhaka",
+    "emails": [
+      "info@cub.edu.bd",
+      "registrar@cub.edu.bd"
+    ],
+    "phone": "02-55055281, 01707070280",
+    "fax": "02-9821351"
+  },
+  {
+    "slug": "ccn-university-of-science-technology",
+    "ugc_id": 317,
+    "name_en": "CCN University of Science & Technology",
+    "category": "private",
+    "established": 2014,
+    "website": "www.ccnust.ac.bd",
+    "campus": "Chowdhury Estate, CCN Road, Kotbari, P.O : Elahipur, Comilla Sadar South, Comilla",
+    "district": "cumilla",
+    "emails": [
+      "ccncomilla@yahoo.com",
+      "ccnust@gmail.com"
+    ],
+    "phone": "01715-451599, 01888-042667, 01888-042666,"
+  },
+  {
+    "slug": "central-university-of-science-and-technology",
+    "ugc_id": 327,
+    "name_en": "Central University of Science and Technology",
+    "category": "private",
+    "established": 2016,
+    "website": "www.cust.edu.bd",
+    "campus": "Plot- 1/9, Road-2, Block-D, Section-15, Mirpur, Dhaka-1216",
+    "district": "dhaka",
+    "emails": [
+      "info@cust.edu.bd"
+    ],
+    "phone": "01781331600"
+  },
+  {
+    "slug": "central-womens-university",
+    "ugc_id": 242,
+    "name_en": "Central Women's University",
+    "category": "private",
+    "established": 1993,
+    "website": "www.cwu.edu.bd",
+    "campus": "6, Hatkhola Road, Dhaka.",
+    "district": "dhaka",
+    "emails": [
+      "info@cwu.edu.bd"
+    ],
+    "phone": "223387499, 223359938, 01915727560"
+  },
+  {
+    "slug": "chandpur-science-and-technology-university",
+    "ugc_id": 226,
+    "name_en": "Chandpur Science and Technology University",
+    "category": "public",
+    "established": 2021,
+    "website": "www.cstu.ac.bd",
+    "emails": [
+      "registrar@cstu.ac.bd",
+      "info@cstu.ac.bd"
+    ],
+    "phone": "+88000 41090771"
+  },
+  {
+    "slug": "chattogram-bgmea-university-of-fashion-and-technology",
+    "ugc_id": 344,
+    "name_en": "Chattogram BGMEA University of Fashion and Technology",
+    "category": "private",
+    "established": 2022,
+    "website": "www.cbuft.edu.bd",
+    "campus": "BGMEA Building (5th Floor), 669/E, Jhautola Road, South Khulsi, Chattogram,Bangladesh",
+    "district": "chattogram",
+    "emails": [
+      "info@cbuft.edu.bd"
+    ],
+    "phone": "01841949179, 01894949159"
+  },
+  {
+    "slug": "chittagong-independent-university",
+    "ugc_id": 306,
+    "name_en": "Chittagong Independent University",
+    "category": "private",
+    "established": 2013,
+    "website": "www.ciu.edu.bd",
+    "campus": "12 Jamal Khan Road , PS: Kotwali ,Chittagong-4000",
+    "district": "chattogram",
+    "emails": [
+      "info@ciu.edu.bd",
+      "registrar@ciu.edu.bd"
+    ],
+    "phone": "031-611262,636484, 622946, 01716310017",
+    "fax": "031-610414"
+  },
+  {
+    "slug": "chittagong-medical-university",
+    "ugc_id": 217,
+    "name_en": "Chittagong Medical University",
+    "category": "public",
+    "established": 2016,
+    "website": "www.cmu.edu.bd",
+    "campus": "Chittagong",
+    "district": "chattogram",
+    "emails": [
+      "ismailbangladesh@yahoo.com",
+      "hasinanasreen28@gmail.com"
+    ],
+    "phone": "01720-964306, 017850922247"
+  },
+  {
+    "slug": "chittagong-university-of-engineering-technology-cuet",
+    "ugc_id": 197,
+    "name_en": "Chittagong University of Engineering & Technology (CUET)",
+    "category": "public",
+    "established": 2003,
+    "website": "www.cuet.ac.bd",
+    "campus": "Chittagong University of Engineering & Technology (CUET), Raozan, Chittagong-4349. Bangladesh.",
+    "district": "chattogram",
+    "emails": [
+      "registrar@cuet.ac.bd"
+    ],
+    "phone": "031-714946, 030-2556151, 01711-884043"
+  },
+  {
+    "slug": "chittagong-veterinary-and-animal-sciences-university",
+    "ugc_id": 205,
+    "name_en": "Chittagong Veterinary and Animal Sciences University",
+    "category": "public",
+    "established": 2006,
+    "website": "www.cvasu.ac.bd",
+    "campus": "Chittagong Veterinary and Animal Sciences University, Khulshi, Chittagong-4202, Bangladesh",
+    "district": "chattogram",
+    "emails": [
+      "registrar@cvasu.ac.bd",
+      "registrarcvasu@gmail.com"
+    ],
+    "phone": "+8802334466153, 01712771827,01731113838",
+    "fax": "+8802334466270"
+  },
+  {
+    "slug": "city-university",
+    "ugc_id": 265,
+    "name_en": "City University",
+    "category": "private",
+    "established": 2002,
+    "website": "www.cityuniversity.ac.bd",
+    "campus": "Khagan, Birulia, Savar, Dhaka",
+    "district": "dhaka",
+    "emails": [
+      "registrar@cityuniversity.ac.bd",
+      "mirakhter61@gmail.com"
+    ],
+    "phone": "01854640476, 01862213214"
+  },
+  {
+    "slug": "comilla-university",
+    "ugc_id": 203,
+    "name_en": "Comilla University",
+    "category": "public",
+    "established": 2006,
+    "website": "www.cou.ac.bd",
+    "campus": "Comilla University, Kotbari, Cumilla-3506, Bangladesh",
+    "district": "cumilla",
+    "emails": [
+      "registrar@cou.ac.bd"
+    ],
+    "phone": "02334411145",
+    "fax": "(+88) 02334411135"
+  },
+  {
+    "slug": "coxs-bazar-international-university",
+    "ugc_id": 313,
+    "name_en": "Cox's Bazar International University",
+    "category": "private",
+    "established": 2013,
+    "website": "www.cbiu.ac.bd",
+    "campus": "Dynamic Cox Kingdom, Kolatoli Circle, Cox’s Bazar-4700",
+    "district": "coxs-bazar",
+    "emails": [
+      "cbiu.bd@gmail.com",
+      "info@cbiu.ac.bd",
+      "registrar@cbiu.ac.bd"
+    ],
+    "phone": "+88 0341-52510, +88 01762686274-75",
+    "fax": "+88 0341-52511"
+  },
+  {
+    "slug": "daffodil-international-university",
+    "ugc_id": 262,
+    "name_en": "Daffodil International University",
+    "category": "private",
+    "established": 2002,
+    "website": "www.daffodilvarsity.edu.bd",
+    "campus": "Datta Para ,Chou Baria , Ashulia Model Town, Savar, Dhaka",
+    "district": "dhaka",
+    "emails": [
+      "registrar@daffodilvarsity.edu.bd"
+    ],
+    "phone": "+8802224441833 +8802224441834",
+    "fax": "+8802224441835"
+  },
+  {
+    "slug": "dhaka-central-university",
+    "ugc_id": 236,
+    "name_en": "Dhaka Central University",
+    "category": "public",
+    "established": 2026,
+    "website": "https://dcu.ac.bd",
+    "emails": [
+      "registrar@dcu.ac.bd"
+    ]
+  },
+  {
+    "slug": "dhaka-international-university",
+    "ugc_id": 252,
+    "name_en": "Dhaka International University",
+    "category": "private",
+    "established": 1995,
+    "website": "www.diu.ac",
+    "campus": "Satarkul, Badda, Dhaka-1212. Bangladesh.",
+    "district": "dhaka",
+    "emails": [
+      "admission@diu.net.bd",
+      "inf@diu-bd.net",
+      "info@diu.net.bd"
+    ],
+    "phone": "+88 01611348344, +88 01939851061"
+  },
+  {
+    "slug": "dhaka-university-of-engineering-technology-duet",
+    "ugc_id": 200,
+    "name_en": "Dhaka University of Engineering & Technology (DUET)",
+    "category": "public",
+    "established": 2003,
+    "website": "www.duet.ac.bd",
+    "campus": "Dhaka University of Engineering & Technology (DUET), Gazipur-1700, Bangladesh.",
+    "district": "gazipur",
+    "emails": [
+      "reg_duet@duet.ac.bd"
+    ],
+    "phone": "Tel: +88-02-49274003 PABX : +88-02-49274034-53 Extn: 1101 IP (Local) : 2124-003 & IP (Direct) : 0961",
+    "fax": "+88-02-49274001-02"
+  },
+  {
+    "slug": "dr-momtaz-begum-university-of-science-and-technology-must",
+    "ugc_id": 343,
+    "name_en": "Dr. Momtaz Begum University of Science and Technology (MUST)",
+    "category": "private",
+    "established": 2021,
+    "website": "www.must.ac.bd",
+    "campus": "Banshgari, Bhairab,Kishoreganj",
+    "district": "kishoreganj",
+    "emails": [
+      "info@must.ac.bd"
+    ],
+    "phone": "+88-01719607409, +88-01725147434"
+  },
+  {
+    "slug": "east-delta-university",
+    "ugc_id": 289,
+    "name_en": "East Delta University",
+    "category": "private",
+    "established": 2006,
+    "website": "www.eastdelta.edu.bd",
+    "campus": "Abdullah Al Noman Road, Noman Society, East Nasirabad, Khulshi, Chittagong: 4209",
+    "district": "chattogram",
+    "emails": [
+      "enquiry@eastdelta.edu.bd"
+    ],
+    "phone": "09638144413, 01714-102062"
+  },
+  {
+    "slug": "east-west-university",
+    "ugc_id": 247,
+    "name_en": "East West University",
+    "category": "private",
+    "established": 1996,
+    "website": "www.ewubd.edu",
+    "campus": "Plot A/2 Jahurul Islam Avenue Jahurul Islam City, Aftabnagar, Dhaka-1212",
+    "district": "dhaka",
+    "emails": [
+      "admissions@ewubd.edu"
+    ],
+    "phone": "09666775577",
+    "fax": "8812336"
+  },
+  {
+    "slug": "eastern-university",
+    "ugc_id": 274,
+    "name_en": "Eastern University",
+    "category": "private",
+    "established": 2003,
+    "website": "www.easternuni.edu.bd",
+    "campus": "Road-6, Block-B, Ashulia Model Town, Birulia, Dhaka",
+    "district": "dhaka",
+    "emails": [
+      "registrar@easternuni.edu.bd"
+    ],
+    "phone": "88-02-9676031-5",
+    "fax": "+(880-2)-9675981"
+  },
+  {
+    "slug": "european-university-of-bangladesh",
+    "ugc_id": 290,
+    "name_en": "European University of Bangladesh",
+    "category": "private",
+    "established": 2012,
+    "campus": "2/4, Gabtali, Mirpur, Dhaka-1216",
+    "district": "dhaka",
+    "ugc_notes": [
+      {
+        "title": "Board of Trustees dispute",
+        "description": "১) বিশ্ববিদ্যালয়ের বোর্ড অফ ট্রাস্টিজ (বিওটি) এর মালিকানা সংক্রান্ত দ্বন্দ্ব ও মামলা চলমান থাকা।",
+        "type": "warning"
+      },
+      {
+        "title": "Excess admission",
+        "description": "২) বিশ্ববিদ্যালয় কমিশন অনুমোদিত আসন সংখ্যার অতিরিক্ত আসনে শিক্ষার্থী ভর্তি করা।",
+        "type": "warning"
+      },
+      {
+        "title": "Campus land shortfall",
+        "description": "৩) শিক্ষা মন্ত্রণালয়ের ও কমিশনের নির্দেশনা এবং বেসরকারি বিশ্ববিদ্যালয় আইন ২০১০ এর ১১ ধারা অনুযায়ী ১২ (বারো) বছর অতিক্রান্ত হওয়ার পরও নির্ধারিত পরিমাণের কম জমিতে নির্মিত ক্যাম্পাসে শিক্ষা কার্যক্রম পরিচালনা করা।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "exim-bank-agricultural-university-bangladesh",
+    "ugc_id": 298,
+    "name_en": "Exim Bank Agricultural University, Bangladesh",
+    "category": "private",
+    "established": 2012,
+    "website": "www.ebaub.edu.bd",
+    "campus": "69-69/1 Sagar Tower, Boro Indara Moor, Chapainawabgonj 6300",
+    "district": "chapainababganj",
+    "emails": [
+      "hider@eximbankbd.com",
+      "admissions@ebaub.edu.bd"
+    ],
+    "phone": "0781-53525-29",
+    "fax": "0781-53531"
+  },
+  {
+    "slug": "fareast-international-university",
+    "ugc_id": 310,
+    "name_en": "Fareast International University",
+    "category": "private",
+    "established": 2013,
+    "website": "www.fiu.edu.bd",
+    "campus": "R.S.R Tower, House#50 , Road#11, Block-C Banani, Dhaka-1213, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "info@fiu.edu.bd"
+    ],
+    "phone": "+88029891453, +88029891576, +88029885165, +8801986810610, +8801986810710",
+    "fax": "+88029891845"
+  },
+  {
+    "slug": "feni-university",
+    "ugc_id": 302,
+    "name_en": "Feni University",
+    "category": "private",
+    "established": 2012,
+    "website": "www.feniuniversity.ac.bd",
+    "campus": "Barahipur, Plot No. 1845, Trunk Road, Feni 3900",
+    "district": "feni",
+    "emails": [
+      "registrar@feniuniversity.ac.bd",
+      "treasurer@feniuniversity.ac.bd"
+    ],
+    "phone": "023344-74194, 01711-504110",
+    "fax": "+88 0331-62194"
+  },
+  {
+    "slug": "first-capital-university-of-bangladesh",
+    "ugc_id": 295,
+    "name_en": "First Capital University of Bangladesh",
+    "category": "private",
+    "established": 2012,
+    "website": "www.fcub.edu.bd",
+    "campus": "Ghoramara, Alamdanga, Chuadanga Sadar, Chuadanga",
+    "district": "chuadanga",
+    "emails": [
+      "first_capital_bd@yahoo.com",
+      "info@fcub.edu.bd"
+    ],
+    "phone": "0761-62033, 0761-64199, 0761-62722",
+    "fax": "076162199"
+  },
+  {
+    "slug": "gazipur-agricultural-university",
+    "ugc_id": 192,
+    "name_en": "Gazipur Agricultural University",
+    "category": "public",
+    "established": 1998,
+    "website": "https://gau.edu.bd/",
+    "campus": "Salna, Gazipur",
+    "district": "gazipur",
+    "emails": [
+      "registrar@gau.edu.bd"
+    ],
+    "phone": "Phone: +8802996695323 PABX: +88029205310-14 Extn.-2058 IP Phone: 09612962058",
+    "fax": "029205333, 9205316"
+  },
+  {
+    "slug": "german-university-bangladesh",
+    "ugc_id": 315,
+    "name_en": "German University Bangladesh",
+    "category": "private",
+    "established": 2013,
+    "website": "www.gub.edu.bd",
+    "campus": "38, T&T Road, Telepara, P.O: Chandana , Chowrasta, Joydevpur, Gazipur Sadar, Gazipur-1702, Bangladesh",
+    "district": "gazipur",
+    "emails": [
+      "info@gub.edu.bd",
+      "saiful.edu410@gmail.com",
+      "gubregistrar@gmail.com"
+    ],
+    "phone": "+8802-224495059, 01743936787, 01718279905"
+  },
+  {
+    "slug": "global-university-bangladesh",
+    "ugc_id": 316,
+    "name_en": "Global University Bangladesh",
+    "category": "private",
+    "established": 2015,
+    "website": "www.globaluniversity.edu.bd",
+    "campus": "BN Tower, Sher-E-Bangla Sarak, Central Bus Terminal, Barisal",
+    "district": "barishal",
+    "emails": [
+      "info@globaluniversity.edu.bd",
+      "anisuzzamanphil@gmail.com",
+      "professormaq53@gmail.com"
+    ],
+    "phone": "0431-63332,01700 569030,",
+    "ugc_notes": [
+      {
+        "title": "Admission suspended",
+        "description": "কমিশন কর্তৃক পরবর্তী নির্দেশনা না দেওয়া পর্যন্ত গ্লোবাল ইউনিভার্সিটি বাংলাদেশ এর সকল প্রোগ্রামে আগামী জানুয়ারি ২০২৬ তারিখ হতে নতুন শিক্ষার্থী ভর্তি সম্পূর্ণরূপে বন্ধ রাখার জন্য নির্দেশ প্রদান করা হলো। তবে উক্ত তারিখের পূর্বে চলমান কোর্সে ভর্তিকৃত শিক্ষার্থীদের শিক্ষা কার্যকর্ম চলমান থাকবে।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "gono-bishwabidyalay",
+    "ugc_id": 249,
+    "name_en": "Gono Bishwabidyalay",
+    "category": "private",
+    "established": 1996,
+    "website": "www.gonouniversity.edu.bd",
+    "campus": "Nolam, Post- Mirzanagar, Savar, Dhaka-1344",
+    "district": "dhaka",
+    "emails": [
+      "gbidyalay@yahoo.com"
+    ],
+    "phone": "88-02-7792226-27",
+    "fax": "88-02-7792226"
+  },
+  {
+    "slug": "gopalganj-science-technology-university",
+    "ugc_id": 211,
+    "name_en": "Gopalganj Science & Technology University",
+    "category": "public",
+    "established": 2010,
+    "website": "www.bsmrstu.edu.bd",
+    "campus": "Gopalganj Science & Technology University, Gopalganj Town Road, Gopalganj-8100, Bangladesh",
+    "district": "gopalganj",
+    "emails": [
+      "registrar@bsmrstu.edu.bd",
+      "mhossain_adib@yahoo.com"
+    ],
+    "phone": "02-6682257, 01711-469237"
+  },
+  {
+    "slug": "grameen-university",
+    "ugc_id": 350,
+    "name_en": "Grameen University",
+    "category": "private",
+    "campus": "House no-06, Main Raod, Diabari South, Turag, Dhaka-1230",
+    "district": "dhaka"
+  },
+  {
+    "slug": "green-university-of-bangladesh",
+    "ugc_id": 269,
+    "name_en": "Green University of Bangladesh",
+    "category": "private",
+    "established": 2003,
+    "website": "www.green.edu.bd",
+    "campus": "220/D West Kafrul, Begum Rokeya Sarani, Dhaka-1207.Bangladesh",
+    "district": "dhaka",
+    "phone": "9014725, 8031031",
+    "fax": "8031032"
+  },
+  {
+    "slug": "hajee-mohammad-danesh-science-technology-university",
+    "ugc_id": 193,
+    "name_en": "Hajee Mohammad Danesh Science & Technology University",
+    "category": "public",
+    "established": 1999,
+    "website": "www.hstu.ac.bd",
+    "campus": "Hajee Mohammad Danesh Science & Technology University, Dinajpur-5200,Bangladesh",
+    "district": "dinajpur",
+    "emails": [
+      "registrar@hstu.ac.bd"
+    ],
+    "phone": "+8801713163351 +88-0531-61355(office)"
+  },
+  {
+    "slug": "hamdard-university-bangladesh",
+    "ugc_id": 292,
+    "name_en": "Hamdard University Bangladesh",
+    "category": "private",
+    "established": 2012,
+    "website": "www.hamdarduniversity.edu.bd",
+    "campus": "Hamdard Nagar, Gazaria, Munshiganj-1510 .",
+    "district": "munshiganj",
+    "emails": [
+      "hamdarduniversitybd@yahoo.com"
+    ],
+    "phone": "880-2-9665965-6, 8625194, 8627003",
+    "fax": "880-8616958"
+  },
+  {
+    "slug": "hobiganj-agricultural-university",
+    "ugc_id": 228,
+    "name_en": "Hobiganj Agricultural University",
+    "category": "public",
+    "established": 2021,
+    "website": "www.hau.ac.bd",
+    "campus": "Habiganj Agricultural University, Vadoi, Habiganj Sadar, Habiganj-3300",
+    "district": "habiganj",
+    "emails": [
+      "vc@hau.ac.bd",
+      "registraroffice@hau.ac.bd"
+    ],
+    "phone": "+8801326890712"
+  },
+  {
+    "slug": "ibais-university",
+    "ugc_id": 351,
+    "name_en": "IBAIS University",
+    "category": "private",
+    "established": 2002,
+    "ugc_notes": [
+      {
+        "title": "Approved address",
+        "description": "ইবাইস ইউনিভার্সিটির বাড়ি নম্বর-২১/এ, সড়ক নম্বর-১৬ (পুরাতন-২৭), ধানমন্ডি, ঢাকা-১২০৯ ঠিকানাটি মহামান্য হাইকোর্ট ডিভিশনের ১ বছরের স্থগিতাদেশ থাকার জন্য (রিট পিটিশন নং ১২০১৭/২০১৬) কমিশনের ওয়েবসাইটে আপলোড করা হয়েছিল। বর্তমানে উক্ত স্থগিতাদেশ এর কার্যকারিতা ভ্যাকেট হয়ে যাওয়ায় ইবাইস ইউনিভার্সিটির উক্ত ঠিকানা কমিশনের ওয়েবসাইট থেকে delete করা হলো। বর্তমানে বিশ্ববিদ্যালয়ের অনুমোদিত কোন ঠিকানা নেই।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "independent-university-bangladesh",
+    "ugc_id": 241,
+    "name_en": "Independent University, Bangladesh",
+    "category": "private",
+    "established": 1993,
+    "website": "www.iub.edu.bd",
+    "campus": "Plot -16, Aftabuddin Ahmed Road, Block-b, Bashundra R/A, Dhaka-1229.",
+    "district": "dhaka",
+    "emails": [
+      "info@iub.edu.bd"
+    ],
+    "phone": "+88-02-8401645-53, 8402065-76",
+    "fax": "+88-02-8401991"
+  },
+  {
+    "slug": "international-islami-university-of-science-and-technology-bangladesh-iiustb",
+    "ugc_id": 347,
+    "name_en": "International Islami University of Science and Technology Bangladesh (IIUSTB)",
+    "category": "private",
+    "established": 2023,
+    "website": "www.iiustb.ac.bd",
+    "campus": ".Baipail, Ashulia, Dhaka-1349",
+    "district": "dhaka",
+    "emails": [
+      "info@iiustb.ac.bd"
+    ],
+    "phone": "01329-728375"
+  },
+  {
+    "slug": "international-islamic-university-chittagong",
+    "ugc_id": 244,
+    "name_en": "International Islamic University Chittagong",
+    "category": "private",
+    "established": 1995,
+    "website": "www.iiuc.ac.bd",
+    "campus": "Kumira , Sitakunda, Chittagong-4318",
+    "district": "chattogram",
+    "emails": [
+      "info@iiuc.ac.bd"
+    ],
+    "phone": "03042-51154-9, 03042-51160",
+    "fax": "03042-51160"
+  },
+  {
+    "slug": "international-standard-university",
+    "ugc_id": 338,
+    "name_en": "International Standard University",
+    "category": "private",
+    "established": 2018,
+    "website": "www.isu.ac.bd",
+    "campus": "69 Mohakhalio C/A, Dhaka-1212",
+    "district": "dhaka",
+    "emails": [
+      "registrar@isu.ac.bd",
+      "mfk@isu.ac.bd"
+    ],
+    "phone": "+8809613737373, Ext: 120"
+  },
+  {
+    "slug": "international-university-of-business-agriculture-technology",
+    "ugc_id": 243,
+    "name_en": "International University of Business Agriculture & Technology",
+    "category": "private",
+    "established": 1993,
+    "website": "www.iubat.edu",
+    "campus": "4,Embankment Drive Road, Sector-10, Uttara Model Town, Dhaka-1230, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "info@iubat.edu"
+    ],
+    "phone": "(880 2) 896 3523-27, (880 2) 8923469-70, (880 2) 8918412, 0174014933, 55091801-5",
+    "fax": "(880 2) 8922625"
+  },
+  {
+    "slug": "ishakha-international-university-bangladesh",
+    "ugc_id": 296,
+    "name_en": "Ishakha International University, Bangladesh",
+    "category": "private",
+    "established": 2012,
+    "website": "www.ishakha.edu.bd",
+    "campus": "461, Nilganj Road, Sholakia, Kishoreganj",
+    "district": "kishoreganj",
+    "emails": [
+      "ishakhauniversity@gmail.com"
+    ],
+    "phone": "01776 181318, 01977 181318"
+  },
+  {
+    "slug": "islamic-arabic-university",
+    "ugc_id": 216,
+    "name_en": "Islamic Arabic University",
+    "category": "public",
+    "established": 2013,
+    "website": "www.iau.edu.bd",
+    "campus": "Islamic Arabic University, 124/22, Block-A, Road no-3, West Dhanmondi, Basila, Mohammadpur, Dhaka-1207",
+    "district": "dhaka",
+    "emails": [
+      "iauregistrar@gmail.com"
+    ],
+    "phone": "01705-408000-5, 02-55000237-6",
+    "fax": "02-55000278"
+  },
+  {
+    "slug": "islamic-university-bangladesh",
+    "ugc_id": 186,
+    "name_en": "Islamic University, Bangladesh",
+    "category": "public",
+    "established": 1979,
+    "website": "www.iu.ac.bd",
+    "campus": "Islamic University, Kushtia-7003",
+    "district": "kushtia",
+    "emails": [
+      "registerer@iu.ac.bd"
+    ],
+    "phone": "88 071 74904, 01711003242",
+    "fax": "8807174905"
+  },
+  {
+    "slug": "islamic-university-of-technology-iut-gazipur",
+    "ugc_id": 355,
+    "name_en": "Islamic University of Technology (IUT), Gazipur",
+    "category": "international",
+    "established": 1978,
+    "website": "www.iutoic-dhaka.edu",
+    "campus": "Islamic University of Technology (IUT), a subsidiary organ of OIC, Board Bazar, Gazipur-1704, Bangladesh",
+    "district": "gazipur",
+    "emails": [
+      "vc@iut-dhaka.edu",
+      "registrar@iut-dhaka.edu",
+      "establish@iut-dhaka.edu"
+    ],
+    "phone": "+880 2 996691250, +880 2 996691252, +880 2 9291254-59",
+    "fax": "+880 2 996691260"
+  },
+  {
+    "slug": "jagannath-university",
+    "ugc_id": 202,
+    "name_en": "Jagannath University",
+    "category": "public",
+    "established": 2005,
+    "website": "www.jnu.ac.bd",
+    "campus": "Jagannath University, Dhaka-1100, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "info@jnu.ac.bd"
+    ],
+    "phone": "+88-02-9534255, 7110415",
+    "fax": "+88-02-9534255"
+  },
+  {
+    "slug": "jahangirnagar-university",
+    "ugc_id": 185,
+    "name_en": "Jahangirnagar University",
+    "category": "public",
+    "established": 1970,
+    "website": "www.juniv.edu",
+    "campus": "Jahangirnagar University, Savar, Dhaka-1342, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "registrar@juniv.edu"
+    ],
+    "phone": "02224491040, 01720-38870",
+    "fax": "02224491052"
+  },
+  {
+    "slug": "jamalpur-science-and-technology-university",
+    "ugc_id": 223,
+    "name_en": "Jamalpur Science and Technology University",
+    "category": "public",
+    "established": 2018,
+    "website": "https://bsfmstu.ac.bd/",
+    "campus": "Jamalpur Science and Technology University, Jamalpur",
+    "district": "jamalpur",
+    "phone": "+8802-481100554-9"
+  },
+  {
+    "slug": "jatiya-kabi-kazi-nazrul-islam-university",
+    "ugc_id": 204,
+    "name_en": "Jatiya Kabi Kazi Nazrul Islam University",
+    "category": "public",
+    "established": 2006,
+    "website": "www.jkkniu.edu.bd",
+    "campus": "Jatiya Kabi Kazi Nazrul Islam University, Trishal, Mymensingh-2220",
+    "district": "mymensingh",
+    "emails": [
+      "registrar@jkkniu.edu.bd"
+    ],
+    "phone": "09032-56212, 56214, 56217, 56245, 56247, 56248, 56271",
+    "fax": "09032-56270"
+  },
+  {
+    "slug": "jessore-university-of-science-technology",
+    "ugc_id": 207,
+    "name_en": "Jessore University of Science & Technology",
+    "category": "public",
+    "established": 2010,
+    "website": "www.just.edu.bd",
+    "campus": "Jessore University of Science & Technology, Jessore-7408, Bangladesh",
+    "district": "jashore",
+    "emails": [
+      "registrar@just.edu.bd"
+    ],
+    "phone": "0421-61097-8. 62020, 02 42142171-76",
+    "fax": "02 42142012"
+  },
+  {
+    "slug": "justice-abu-zafar-siddiquie-science-and-technology-university-kustia",
+    "ugc_id": 349,
+    "name_en": "Justice Abu Zafar Siddiquie Science and Technology University, Kustia",
+    "category": "private",
+    "established": 2024,
+    "ugc_notes": [
+      {
+        "title": "Academic status",
+        "description": "Academic program has not started yet.",
+        "type": "information"
+      }
+    ]
+  },
+  {
+    "slug": "khulna-agricultural-university",
+    "ugc_id": 222,
+    "name_en": "Khulna Agricultural University",
+    "category": "public",
+    "established": 2015,
+    "website": "www.kau.edu.bd",
+    "emails": [
+      "registrar@kau.ac.bd"
+    ],
+    "phone": "+880 1309 000313, 01711341261"
+  },
+  {
+    "slug": "khulna-khan-bahadur-ahsanullah-university",
+    "ugc_id": 334,
+    "name_en": "Khulna Khan Bahadur Ahsanullah University",
+    "category": "private",
+    "established": 2018,
+    "website": "www.kkbau.ac.bd",
+    "campus": "198, M A Bari Road, Sonadanga, Khulna-9000 and 140, KDA, Khan Bahdaur Ahsanullah Road, Choto BoyraSonadanga Khulna-9000",
+    "district": "khulna",
+    "emails": [
+      "registrar@kkbau.ac.bd",
+      "registrar.kkbau@gmail.com",
+      "kkbau.edu.bd@gmail.com"
+    ],
+    "phone": "01920-090099, 01741238636, 01715950701"
+  },
+  {
+    "slug": "khulna-medical-university-khulna",
+    "ugc_id": 229,
+    "name_en": "Khulna Medical University, Khulna",
+    "category": "public",
+    "established": 2021,
+    "website": "www.shmu.ac.bd",
+    "emails": [
+      "drmahbub_87@yahoo.com"
+    ],
+    "phone": "01911840095"
+  },
+  {
+    "slug": "khulna-university",
+    "ugc_id": 188,
+    "name_en": "Khulna University",
+    "category": "public",
+    "established": 1987,
+    "website": "www.ku.ac.bd",
+    "campus": "Gollamari, Horintana Thana, Khulna",
+    "district": "khulna",
+    "emails": [
+      "registrar@ku.ac.bd",
+      "office@registrar.ku.ac.bd"
+    ],
+    "phone": "041-720663./5004, 02-47734140",
+    "fax": "88-02-477734138"
+  },
+  {
+    "slug": "khulna-university-of-engineering-technology-kuet",
+    "ugc_id": 199,
+    "name_en": "Khulna University of Engineering & Technology (KUET)",
+    "category": "public",
+    "established": 2003,
+    "website": "www.kuet.ac.bd",
+    "campus": "Khulna University of Engineering & Technology (KUET), Khulna-9203, Bangladesh.",
+    "district": "khulna",
+    "emails": [
+      "registrar@kuet.ac.bd"
+    ],
+    "phone": "+8802477732971 PABX:+8802477733351~70 Ext:113, 01747608304",
+    "fax": "+8802477733303"
+  },
+  {
+    "slug": "khwaja-yunus-ali-university",
+    "ugc_id": 300,
+    "name_en": "Khwaja Yunus Ali University",
+    "category": "private",
+    "established": 2012,
+    "website": "www.kyau.edu.bd",
+    "campus": "Enayetpur, Enayetpur sharif, Chowhali, Sirajgonj",
+    "district": "sirajganj",
+    "emails": [
+      "info@kyau.edu.bd"
+    ],
+    "phone": "8802588834442",
+    "fax": "8802588834441"
+  },
+  {
+    "slug": "kishoreganj-university",
+    "ugc_id": 227,
+    "name_en": "Kishoreganj University",
+    "category": "public",
+    "established": 2021,
+    "website": "bsmru.ac.bd.",
+    "emails": [
+      "info@bsmru.ac.bd",
+      "dilipbarua67@yahoo.com"
+    ],
+    "phone": "+88 01734331313, 01740071456, 01716033198"
+  },
+  {
+    "slug": "kurigram-agricultural-university",
+    "ugc_id": 230,
+    "name_en": "Kurigram Agricultural University",
+    "category": "public",
+    "established": 2021,
+    "website": "www.kuriau.edu.bd",
+    "emails": [
+      "vc@kuriau.edu.bd",
+      "registrar@kuriau.edu.bd"
+    ],
+    "phone": "+880-9611 678921"
+  },
+  {
+    "slug": "lakshmipur-science-technology-university",
+    "ugc_id": 238,
+    "name_en": "Lakshmipur Science & Technology University",
+    "category": "public",
+    "established": 2023,
+    "campus": "Lakshmipur",
+    "district": "lakshmipur"
+  },
+  {
+    "slug": "lalon-university-of-science-and-arts",
+    "ugc_id": 348,
+    "name_en": "Lalon University of Science and Arts",
+    "category": "private",
+    "established": 2023,
+    "website": "https://lusa.ac.bd",
+    "campus": "Zilla Parishad Bhaban ( 7th & 8th Floor), 128, NS Road, Kushtia 7000",
+    "district": "kushtia",
+    "emails": [
+      "info@lusa.ac.bd"
+    ],
+    "phone": "Mobile: 01332501414, 01332501410"
+  },
+  {
+    "slug": "leading-university",
+    "ugc_id": 256,
+    "name_en": "Leading University",
+    "category": "private",
+    "established": 2001,
+    "website": "www.lus.ac.bd",
+    "campus": "Ragib Nagar, Kamal Bazar, South Surma, Sylhet-3100",
+    "district": "sylhet",
+    "emails": [
+      "info@lus.ac.bd"
+    ],
+    "phone": "88 0821-720303-06, 0821 720307, 88-01313084499",
+    "fax": "+88 0821-720307"
+  },
+  {
+    "slug": "manarat-international-university",
+    "ugc_id": 253,
+    "name_en": "Manarat International University",
+    "category": "private",
+    "established": 2001,
+    "website": "www.manarat.ac.bd",
+    "campus": "Ashulia Model Town, Khagan, Ashulia,Dhaka",
+    "district": "dhaka",
+    "emails": [
+      "admission@manarat.ac.bd",
+      "admin@manarat.ac.bd"
+    ],
+    "phone": "+880255060025, 9862251, 01780364414-15,",
+    "fax": "88-02-9862224"
+  },
+  {
+    "slug": "mawlana-bhashani-science-technology-university",
+    "ugc_id": 194,
+    "name_en": "Mawlana Bhashani Science & Technology University",
+    "category": "public",
+    "established": 2001,
+    "website": "www.mbstu.ac.bd",
+    "campus": "Mawlana Bhashani Science & Technology University, Santosh, Tangail-1902",
+    "district": "tangail",
+    "emails": [
+      "registrar@mbstu.ac.bd"
+    ],
+    "phone": "880921-51899",
+    "fax": "+88092155400"
+  },
+  {
+    "slug": "meherpur-university",
+    "ugc_id": 234,
+    "name_en": "Meherpur University",
+    "category": "public",
+    "established": 2023,
+    "emails": [
+      "meherpuruniversity@gmail.com"
+    ]
+  },
+  {
+    "slug": "metropolitan-university",
+    "ugc_id": 275,
+    "name_en": "Metropolitan University",
+    "category": "private",
+    "established": 2003,
+    "website": "www.metrouni.edu.bd",
+    "campus": "Bateshwar, Sylhet-3104",
+    "district": "sylhet",
+    "emails": [
+      "info@metrouni.edu.bd",
+      "registrar@metrouni.edu.bd"
+    ],
+    "phone": "PABX: 88-0821-2870 321, 2870 328, 2870 329; 01313 050044, 01313 050066, 01715778123",
+    "fax": "88-0821-2870 331",
+    "ugc_notes": [
+      {
+        "title": "Department of Data Science",
+        "description": "The Program has been suspended since 10-02-2026",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "microland-university-of-science-and-technology",
+    "ugc_id": 341,
+    "name_en": "Microland University of Science and Technology",
+    "category": "private",
+    "ugc_notes": [
+      {
+        "title": "Academic status",
+        "description": "Academic programs have not yet started.",
+        "type": "information"
+      }
+    ]
+  },
+  {
+    "slug": "naogaon-university",
+    "ugc_id": 233,
+    "name_en": "Naogaon University",
+    "category": "public",
+    "established": 2023,
+    "emails": [
+      "drhasnat77@gmail.com"
+    ],
+    "phone": "01712884977"
+  },
+  {
+    "slug": "narayanganj-science-and-technology-university",
+    "ugc_id": 360,
+    "name_en": "Narayanganj Science and Technology University",
+    "category": "public"
+  },
+  {
+    "slug": "national-university",
+    "ugc_id": 189,
+    "name_en": "National University",
+    "category": "public",
+    "established": 1992,
+    "website": "www.nu.edu.bd",
+    "campus": "National University, Board Bazar, Gazipur-1704",
+    "district": "gazipur",
+    "emails": [
+      "registrar@nu.ac.bd"
+    ],
+    "phone": "01734790892"
+  },
+  {
+    "slug": "netrokona-university",
+    "ugc_id": 221,
+    "name_en": "Netrokona University",
+    "category": "public",
+    "established": 2018,
+    "website": "https://www.shu.edu.bd/",
+    "campus": "Netrokona University, Netrokona",
+    "district": "netrakona",
+    "emails": [
+      "registrar@shu.edu.bd"
+    ],
+    "phone": "+88 02997735003, +8802997735008, 01550059951"
+  },
+  {
+    "slug": "noakhali-science-technology-university",
+    "ugc_id": 201,
+    "name_en": "Noakhali Science & Technology University",
+    "category": "public",
+    "established": 2006,
+    "website": "www.nstu.edu.bd",
+    "campus": "Noakhali Science & Technology University, Sonapur, Noakhali-3814",
+    "district": "noakhali",
+    "emails": [
+      "registrar@office.nstu.edu.bd"
+    ],
+    "phone": "88-0321-71486, 01720-197824"
+  },
+  {
+    "slug": "north-bengal-international-university",
+    "ugc_id": 309,
+    "name_en": "North Bengal International University",
+    "category": "private",
+    "established": 2013,
+    "website": "www.nbiu.edu.bd",
+    "campus": "Choddopai, Natore Road, Motihar, Rajshahi.",
+    "district": "rajshahi",
+    "emails": [
+      "registrar@nbiu.edu.bd",
+      "nbiu.edu@gmail.com",
+      "info@nbiu.edu.bd"
+    ],
+    "phone": "01717013283, 0721-773561, 01789-908612, 01713072270, 01979908612"
+  },
+  {
+    "slug": "north-east-university-bangladesh",
+    "ugc_id": 294,
+    "name_en": "North East University Bangladesh",
+    "category": "private",
+    "established": 2012,
+    "website": "www.neub.edu.bd",
+    "campus": "Telihaor, Sheikghat, Sylhet, Bangladesh.",
+    "district": "sylhet",
+    "emails": [
+      "info@neub.edu.bd"
+    ],
+    "phone": "8802996631220-2, 01755566994, 01912402725",
+    "fax": "0821-710223",
+    "ugc_notes": [
+      {
+        "title": "Department of Law & Justice",
+        "description": "৩১ ডিসেম্বর ২০২২ তারিখ থেকে বন্ধ করা হলো।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Business Administration",
+        "description": "৩১ ডিসেম্বর ২০২২ তারিখ থেকে বন্ধ করা হলো।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Environmental Science",
+        "description": "৩১ ডিসেম্বর ২০২২ তারিখ থেকে বন্ধ করা হলো।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Mathematics & Informatics",
+        "description": "৩১ ডিসেম্বর ২০২২ তারিখ থেকে বন্ধ করা হলো।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Mathematics & Informatics",
+        "description": "৩১ ডিসেম্বর ২০২২ তারিখ থেকে বন্ধ করা হলো।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Applied Sociology & Social Work",
+        "description": "৩১ ডিসেম্বর ২০২২ তারিখ থেকে বন্ধ করা হলো।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "north-south-university",
+    "ugc_id": 239,
+    "name_en": "North South University",
+    "category": "private",
+    "established": 1992,
+    "website": "www.northsouth.edu",
+    "campus": "Plot#15, Block-B, Bashundhara, Baridhara, Dhaka-1229",
+    "district": "dhaka",
+    "emails": [
+      "registrar@northsouth.edu"
+    ],
+    "phone": "880255668200,",
+    "fax": "880255668202"
+  },
+  {
+    "slug": "north-western-university",
+    "ugc_id": 299,
+    "name_en": "North Western University",
+    "category": "private",
+    "established": 2012,
+    "website": "www.nwu.ac.bd",
+    "campus": "A.Mannan Tower ,236 M.A Bari Road ,Sonadanga , Khulna.",
+    "district": "khulna",
+    "emails": [
+      "info@nwu.ac.bd",
+      "registrar@nwu.ac.bd"
+    ],
+    "phone": "8802477726064-6",
+    "fax": "041-722744"
+  },
+  {
+    "slug": "northern-university-bangladesh",
+    "ugc_id": 267,
+    "name_en": "Northern University Bangladesh",
+    "category": "private",
+    "established": 2002,
+    "website": "www.nub.ac.bd",
+    "campus": "112/2, Kawla Jame Mosjid Road, Ashkona, Dakskin Khan, Dhaka",
+    "district": "dhaka",
+    "emails": [
+      "info@nub.ac.bd",
+      "registrar@nub.ac.bd"
+    ],
+    "phone": "9820859,9821493-5",
+    "fax": "02-9820720"
+  },
+  {
+    "slug": "northern-university-of-business-technology-khulna",
+    "ugc_id": 324,
+    "name_en": "Northern University of Business & Technology, Khulna",
+    "category": "private",
+    "established": 2015,
+    "website": "www.nubtkhulna.ac.bd",
+    "campus": "Akunjee Tower, 41-42 Mojid Sharani, Shibbari More, Sonadanga, Khulna-9100.",
+    "district": "khulna",
+    "emails": [
+      "admission@nubtkhulna.ac.bd"
+    ],
+    "phone": "+88-041-81344, 01755 514662-63,",
+    "fax": "81355"
+  },
+  {
+    "slug": "notre-dame-university-bangladesh",
+    "ugc_id": 307,
+    "name_en": "Notre Dame University Bangladesh",
+    "category": "private",
+    "established": 2013,
+    "website": "www.ndub.edu.bd",
+    "campus": "2/A, New Arambagh, Motijheel, PO Box 7, Dhaka-1000, Bangladesh",
+    "district": "dhaka",
+    "emails": [
+      "info@ndub.edu.bd"
+    ],
+    "phone": "+880-02-41070719,+880-02-41070720"
+  },
+  {
+    "slug": "npi-university-of-bangladesh",
+    "ugc_id": 323,
+    "name_en": "N.P.I University of Bangladesh",
+    "category": "private",
+    "established": 2015,
+    "website": "www.npiub.edu.bd",
+    "campus": "Basta, Singair, Manikganj, Dhaka",
+    "emails": [
+      "info@npiub.edu.bd"
+    ],
+    "phone": "01969992015"
+  },
+  {
+    "slug": "pabna-university-of-science-and-technology",
+    "ugc_id": 208,
+    "name_en": "Pabna University of Science and Technology",
+    "category": "public",
+    "established": 2008,
+    "website": "www.pust.ac.bd",
+    "campus": "Pabna University of Science and Technology, Rajapur, pabna-6600",
+    "district": "pabna",
+    "emails": [
+      "registrar@pust.ac.bd"
+    ],
+    "phone": "+8802588845193, 01715-229922"
+  },
+  {
+    "slug": "patuakhali-science-and-technology-university",
+    "ugc_id": 195,
+    "name_en": "Patuakhali Science And Technology University",
+    "category": "public",
+    "established": 2002,
+    "website": "www.pstu.ac.bd",
+    "campus": "Patuakhali Science And Technology University, Patuakhali-8602, Bangladesh",
+    "district": "patuakhali",
+    "emails": [
+      "registrar@pstu.ac.bd"
+    ],
+    "phone": "04427-56008/221, 02478883476",
+    "fax": "02478883472"
+  },
+  {
+    "slug": "pirojpur-science-technology-university",
+    "ugc_id": 232,
+    "name_en": "Pirojpur Science & Technology University",
+    "category": "public",
+    "established": 2022,
+    "website": "www.prstu.ac.bd",
+    "emails": [
+      "registrar@prstu.ac.bd"
+    ],
+    "phone": "+8802479938045"
+  },
+  {
+    "slug": "port-city-international-university",
+    "ugc_id": 304,
+    "name_en": "Port City International University",
+    "category": "private",
+    "established": 2012,
+    "website": "www.portcity.edu.bd",
+    "campus": "7-14, Nikonja Housing Society, South Khulshi, Chitagonj",
+    "emails": [
+      "admission@portcity.edu.bd"
+    ],
+    "phone": "880-31-2869877, 2869899. Cell: 01773-225500, 01773-225511",
+    "fax": "880-31-2869966"
+  },
+  {
+    "slug": "premier-university",
+    "ugc_id": 260,
+    "name_en": "Premier University",
+    "category": "private",
+    "established": 2002,
+    "website": "www.puc.ac.bd",
+    "campus": "541, O.R. Nizam Road, Panchlaish, Chittagong",
+    "district": "chattogram",
+    "emails": [
+      "vc@puc.ac.bd",
+      "info@puc.ac.bd",
+      "registrar@puc.ac.bd"
+    ],
+    "phone": "656917,657654,2554317,2554318, IP PABX +8809610828282, 01762220009, 01554333234",
+    "fax": "0088-031-657892"
+  },
+  {
+    "slug": "presidency-university",
+    "ugc_id": 281,
+    "name_en": "Presidency University",
+    "category": "private",
+    "established": 2003,
+    "website": "www.presidency.edu.bd, www.pu.edu.bd",
+    "campus": "Plot # 11/A, Road # 92, Gulshan-2, Dhaka-1212",
+    "district": "dhaka",
+    "emails": [
+      "info@pu.edu.bd",
+      "registrar@pu.edu.bd",
+      "admission@pu.edu.bd",
+      "controller@pu.edu.bd"
+    ],
+    "phone": "(02)-55052194-9, 8801766554433",
+    "fax": "880-2-8859142,"
+  },
+  {
+    "slug": "prime-university",
+    "ugc_id": 266,
+    "name_en": "Prime University",
+    "category": "private",
+    "established": 2002,
+    "website": "www.primeuniversity.edu.bd",
+    "campus": "114/116, Mazar Road, Mirpur-1, Dhaka-1216",
+    "district": "dhaka",
+    "emails": [
+      "info@primeuniversity.edu.bd",
+      "registrar@primeuniversity.edu.bd"
+    ],
+    "phone": "+880-2-9004957, +880-2-8031810,",
+    "fax": "+880-2-8055647"
+  },
+  {
+    "slug": "primeasia-university",
+    "ugc_id": 283,
+    "name_en": "Primeasia University",
+    "category": "private",
+    "established": 2003,
+    "website": "www.primeasia.edu.bd",
+    "campus": "Star Tower, 12 Kemal Ataturk Avenue, Banani , C/A, Dhaka-1213",
+    "district": "dhaka",
+    "emails": [
+      "info@primeasia.edu.bd",
+      "registrar@primeasia.edu.bd"
+    ],
+    "phone": "9822133, 9821498-501, Mob: 01817-035693",
+    "fax": "880-2-9820868,"
+  },
+  {
+    "slug": "pundra-university-of-science-technology",
+    "ugc_id": 270,
+    "name_en": "Pundra University of Science & Technology",
+    "category": "private",
+    "established": 2002,
+    "website": "www.pundrauniversity.ac.bd",
+    "campus": "Rangpur Road, Gokul, Bogura-5800",
+    "district": "bogura",
+    "emails": [
+      "info@pundrauniversity.ac.bd",
+      "itadmin@pundrauniversity.ac.bd",
+      "vc@pundrauniversity.ac.bd"
+    ],
+    "phone": "+88-051-78563, 01313377054",
+    "ugc_notes": [
+      {
+        "title": "Department of Business Administration",
+        "description": "উল্লিখিত প্রোগ্রাম দুটি (BBA (Hons.) in Management, BBA (Hons.) in Accounting) আপডেট করে Bachelor of Business Administration (BBA) (4 Years) (Revised) করা হয়েছে।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Information Technology and Networks",
+        "description": "B.Sc in Civil Engineering program has been approved instead of this program.So the Approval of this program has been cancelled.",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "queens-university",
+    "ugc_id": 353,
+    "name_en": "Queens University",
+    "category": "private",
+    "established": 1996,
+    "ugc_notes": [
+      {
+        "title": "Ministry approval condition",
+        "description": "The Ministry of Education approved the Queens University on 6/9/2015 to fulfillment of all conditions within one year. The deadline of compliance has been expired.",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "r-p-shaha-university",
+    "ugc_id": 314,
+    "name_en": "R. P. Shaha University",
+    "category": "private",
+    "established": 2013,
+    "website": "www.rpsu.edu.bd",
+    "campus": "25, Sultan Giasuddin Road, Sitalakhya, Naryanganj-1400",
+    "emails": [
+      "info@rpsu.edu.bd"
+    ],
+    "phone": "02-7635000, 01709-667104"
+  },
+  {
+    "slug": "rabindra-maitree-university-kushtia",
+    "ugc_id": 325,
+    "name_en": "Rabindra Maitree University, Kushtia",
+    "category": "private",
+    "established": 2015,
+    "campus": "109/95, Ram Chandra Roy Chowdhury Street, College More, Kushtia.",
+    "district": "kushtia",
+    "emails": [
+      "registrar@rub.ac.bd",
+      "vc@rub.ac.bd"
+    ],
+    "phone": "02588833525, 01819198081, 02588833521, 01711090742"
+  },
+  {
+    "slug": "rabindra-university-bangladesh",
+    "ugc_id": 219,
+    "name_en": "Rabindra University, Bangladesh",
+    "category": "public",
+    "established": 2017,
+    "website": "www.rub.ac.bd",
+    "campus": "Rabindra University, Bangladesh, Shahzadpur,Sirajganj",
+    "district": "sirajganj",
+    "emails": [
+      "vc@rub.ac.bd",
+      "registrar@rub.ac.bd"
+    ],
+    "phone": "02588833525, 01819198081 (Registrar), 02588833521, 01711090742 (PS to VC)"
+  },
+  {
+    "slug": "rajshahi-medical-university",
+    "ugc_id": 218,
+    "name_en": "Rajshahi Medical University",
+    "category": "public",
+    "established": 2016,
+    "website": "www.rmu.edu.bd",
+    "emails": [
+      "rmu.registrar@gmail.com",
+      "info@rmu.edu.bd"
+    ],
+    "phone": "0247811157, +880721-773453, 01713-048845"
+  },
+  {
+    "slug": "rajshahi-science-technology-university-rstu-natore",
+    "ugc_id": 311,
+    "name_en": "Rajshahi Science & Technology University (RSTU), Natore",
+    "category": "private",
+    "established": 2013,
+    "website": "www.rstu.edu.bd",
+    "campus": "VIP Tower, Holding # 112 Dhaka Road, Bara Harishpur, Natore Sadar Natore 6400",
+    "district": "natore",
+    "emails": [
+      "rstuniversity@yahoo.com"
+    ],
+    "phone": "07716496, 01713303183 (Cell)",
+    "fax": "07716496"
+  },
+  {
+    "slug": "rajshahi-university-of-engineering-technology-ruet",
+    "ugc_id": 198,
+    "name_en": "Rajshahi University of Engineering & Technology (RUET)",
+    "category": "public",
+    "established": 2003,
+    "website": "www.ruet.ac.bd",
+    "campus": "Rajshahi University of Engineering & Technology (RUET), Kazla, Rajshahi-6204, Bangladesh.",
+    "district": "rajshahi",
+    "emails": [
+      "registrar@ruet.ac.bd"
+    ],
+    "phone": "+880 2588866798, +88 0721 750 798",
+    "fax": "+880 2588867105"
+  },
+  {
+    "slug": "rangamati-science-and-technology-university",
+    "ugc_id": 214,
+    "name_en": "Rangamati Science and Technology University",
+    "category": "public",
+    "established": 2011,
+    "website": "www.rmstu.edu.bd",
+    "campus": "Rangamati Science and Technology University, Jhagrabil, Rangamati Sadar, Rangamati-4500",
+    "district": "rangamati",
+    "emails": [
+      "kamrulhasn@rmstu.ac.bd"
+    ],
+    "phone": "01558914066"
+  },
+  {
+    "slug": "royal-university-of-dhaka",
+    "ugc_id": 284,
+    "name_en": "Royal University of Dhaka",
+    "category": "private",
+    "established": 2003,
+    "website": "www.royal.edu.bd",
+    "campus": "Plot-404, Channel 24 Road, Tejgaon Industrial Area, Dhaka-1208.",
+    "district": "dhaka",
+    "emails": [
+      "info@royal.edu.bd",
+      "registrar@royal.edu.bd"
+    ],
+    "phone": "+880-2-223314607, 223314603, 01332544312, 01332544316, 01332544317, 01332544319",
+    "fax": "+880-2-9223314603"
+  },
+  {
+    "slug": "rtm-al-kabir-technical-university",
+    "ugc_id": 342,
+    "name_en": "R.T.M Al-Kabir Technical University",
+    "category": "private",
+    "established": 2020,
+    "website": "www.rtm-aktu.edu.bd",
+    "campus": "TB Gate, Tultikar Union, Sylhet - 3100",
+    "district": "sylhet",
+    "emails": [
+      "info@rtm-aktu.edu.bd"
+    ],
+    "phone": "018192 1947 9 / 017 66 857 322"
+  },
+  {
+    "slug": "rupayan-akm-shamsuzzoha-university",
+    "ugc_id": 330,
+    "name_en": "Rupayan A.K.M Shamsuzzoha University",
+    "category": "private",
+    "established": 2016,
+    "ugc_notes": [
+      {
+        "title": "Academic status",
+        "description": "Academic programs have not yet started.",
+        "type": "information"
+      }
+    ]
+  },
+  {
+    "slug": "shah-makhdum-management-university-rajshahi",
+    "ugc_id": 336,
+    "name_en": "Shah Makhdum Management University, Rajshahi",
+    "category": "private",
+    "established": 2018,
+    "ugc_notes": [
+      {
+        "title": "Academic status",
+        "description": "Academic programs have not yet started.",
+        "type": "information"
+      }
+    ]
+  },
+  {
+    "slug": "shahjalal-university-of-science-technology",
+    "ugc_id": 187,
+    "name_en": "Shahjalal University of Science & Technology",
+    "category": "public",
+    "established": 1986,
+    "website": "www.sust.edu",
+    "campus": "Shahjalal University of Science & Technology, Kumargaon, Sylhet-3114, Bangladesh",
+    "district": "sylhet",
+    "emails": [
+      "registrar@sust.edu"
+    ],
+    "phone": "PABX : +8802996636454,02996631379, 02996634850, 02996633825, 02996632210, 715393",
+    "fax": "+88-02996632057, 725050"
+  },
+  {
+    "slug": "shanto-mariam-university-of-creative-technology",
+    "ugc_id": 272,
+    "name_en": "Shanto-Mariam University of Creative Technology",
+    "category": "private",
+    "established": 2003,
+    "website": "www.smuct.ac.bd",
+    "campus": "Plot-6, Road-6, Sector-17/H1, Uttara, Dhaka-1230",
+    "district": "dhaka",
+    "emails": [
+      "smuctbd@yahoo.com"
+    ],
+    "phone": "880-2-8918932/8952610/7912713",
+    "fax": "(88-02)-8915308,"
+  },
+  {
+    "slug": "shariatpur-agricultural-university",
+    "ugc_id": 359,
+    "name_en": "Shariatpur Agricultural University",
+    "name_bn": "শরিয়তপুর কৃষি বিশ্ববিদ্যালয়",
+    "category": "public"
+  },
+  {
+    "slug": "sher-e-bangla-agricultural-university",
+    "ugc_id": 196,
+    "name_en": "Sher-e-Bangla Agricultural University",
+    "category": "public",
+    "established": 2001,
+    "website": "www.sau.edu.bd",
+    "campus": "Sher-e-Bangla Agricultural University, Sher-e-Bangla Nagar, Dhaka-1207",
+    "district": "dhaka",
+    "emails": [
+      "registrar@sau.edu.bd",
+      "registrar.sau01@gmail.com"
+    ],
+    "phone": "9131162/106, 44814006, 01819-201020"
+  },
+  {
+    "slug": "sonargaon-university",
+    "ugc_id": 301,
+    "name_en": "Sonargaon University",
+    "category": "private",
+    "established": 2012,
+    "website": "www.su.edu.bd",
+    "campus": "147/I, Green Road, Panthopath, Dhaka.",
+    "district": "dhaka",
+    "emails": [
+      "info@su.edu.bd"
+    ],
+    "phone": "01780330044, 01780220099, 01775000888, 9123564, 9123570, 9852134"
+  },
+  {
+    "slug": "south-asian-university",
+    "ugc_id": 357,
+    "name_en": "South Asian University",
+    "category": "international",
+    "established": 2008,
+    "website": "www.southasianuniversity.org",
+    "campus": "CRS Language Lab,JNU Old Campus Aruna Asaf Ali Road,New Delhi 110067,India"
+  },
+  {
+    "slug": "southeast-university",
+    "ugc_id": 261,
+    "name_en": "Southeast University",
+    "category": "private",
+    "established": 2002,
+    "website": "www.seu.edu.bd",
+    "campus": "252, Tejgaon Industrial Area Dhaka-1208",
+    "district": "dhaka",
+    "emails": [
+      "info@seu.edu.bd"
+    ],
+    "phone": "+8802226603610-17",
+    "fax": "+8802226603602"
+  },
+  {
+    "slug": "southern-university-bangladesh",
+    "ugc_id": 268,
+    "name_en": "Southern University Bangladesh",
+    "category": "private",
+    "established": 2002,
+    "website": "www.southern.edu.bd",
+    "campus": "New 471, Arefin Nagar, Ayazid Bostami, Chittagong",
+    "district": "chattogram",
+    "emails": [
+      "registrar@southern.ac.bd"
+    ],
+    "phone": "031-2851336-9, 626744, 02-41380103, 01958117605",
+    "fax": "+88-031-2851340,",
+    "ugc_notes": [
+      {
+        "title": "তারকা চিহ্ন প্রত্যাহার",
+        "description": "শিক্ষা মন্ত্রণালয়ের নির্দেশনা অনুযায়ী তারকা চিহ্ন প্রত্যাহার করা হয়েছে।",
+        "type": "information"
+      },
+      {
+        "title": "Remark (1)",
+        "description": "সাউদার্ণ ইউনিভার্সিটি বাংলাদেশঃ শিক্ষা মন্ত্রণালয়ের ২৮/০৭/২০১৯ এবং ০২/০৯/২০১৯ তারিখের পত্রের নির্দেশনা অনুযায়ী সাউদার্ণ ইউনিভার্সিটি বাংলাদেশ কর্তৃক দায়েরকৃত ১৮৭৮৪/২০১৭ নং রিট মামলায় মহামান্য আদালতের স্থগিতাদেশ থাকায় বিশ্ববিদ্যালয়টির স্বাভাবিক ছাত্র-ছাত্রী ভর্তি কার্যক্রম বন্ধ রাখা সংক্রান্ত কমিশনের ১৩/১২/২০১৭ তারিখের আদেশটি ০৯/০৯/২০১৯ তারিখ প্রত্যাহার করা হয়েছে। উল্লেখ্য, এই বিশ্ববিদ্যালয়ের নামে একাধিক মামলা মহামান্য আদালতে বিচারাধীন রয়েছে।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "stamford-university-bangladesh",
+    "ugc_id": 263,
+    "name_en": "Stamford University Bangladesh",
+    "category": "private",
+    "established": 2002,
+    "website": "www.stamforduniversity.edu.bd",
+    "campus": "Green Model Town, Sadhinata Sarani, Plot No. 05, Block-H, Thana-Mugda, Dhaka",
+    "district": "dhaka",
+    "emails": [
+      "registrar@stamforduniversity.edu.bd"
+    ],
+    "phone": "01819196206",
+    "fax": "+880-2-9143531"
+  },
+  {
+    "slug": "state-university-of-bangladesh-sub",
+    "ugc_id": 264,
+    "name_en": "State University of Bangladesh (SUB)",
+    "category": "private",
+    "established": 2002,
+    "website": "https://www.sub.ac.bd",
+    "campus": "Kendua, Kanchan, Rupganj, Narayanganj-1461",
+    "district": "narayanganj",
+    "emails": [
+      "info@subd.net"
+    ],
+    "phone": "8151782-5, 9140960, 9128329",
+    "fax": "8123296"
+  },
+  {
+    "slug": "sunamganj-science-and-technology-university",
+    "ugc_id": 231,
+    "name_en": "Sunamganj Science and Technology University",
+    "category": "public",
+    "established": 2020,
+    "website": "www.sstu.ac.bd",
+    "campus": "Sunamganj Science and Technology University, Sunamganj, Bangladesh",
+    "district": "sunamganj",
+    "emails": [
+      "registrar@sstu.ac.bd",
+      "hemayetmiah94@gmail.com",
+      "info@sstu.ac.bd"
+    ],
+    "phone": "+880 1716411748"
+  },
+  {
+    "slug": "sylhet-agricultural-university",
+    "ugc_id": 206,
+    "name_en": "Sylhet Agricultural University",
+    "category": "public",
+    "established": 2006,
+    "website": "www.sau.ac.bd",
+    "campus": "Sylhet Agricultural University, Taligor, Sylhet- 3100",
+    "district": "sylhet",
+    "emails": [
+      "registrar@sau.ac.bd"
+    ],
+    "phone": "0821-760930, +88 01712441708",
+    "fax": "+88 02996642081"
+  },
+  {
+    "slug": "sylhet-international-university",
+    "ugc_id": 258,
+    "name_en": "Sylhet International University",
+    "category": "private",
+    "established": 2001,
+    "website": "www.siu.edu.bd",
+    "campus": "Shamimabad, Bagbari, Sylhet",
+    "district": "sylhet",
+    "emails": [
+      "info@siu.edu.bd"
+    ],
+    "phone": "(0821) 720771, 717193",
+    "fax": "(0821)725644"
+  },
+  {
+    "slug": "sylhet-medical-university-sylhet",
+    "ugc_id": 224,
+    "name_en": "Sylhet Medical University, Sylhet",
+    "category": "public",
+    "established": 2018,
+    "website": "www.bsfmmu.edu.bd",
+    "campus": "Sylhet Medical University, Mollargaon, Dakshinsurma, Sylhet. Bangladesh",
+    "district": "sylhet",
+    "emails": [
+      "bsfmmusylhet@gmail.com"
+    ],
+    "phone": "+88 01715 770872"
+  },
+  {
+    "slug": "tagore-university-of-creative-arts-uttara-dhaka-bangladesh",
+    "ugc_id": 328,
+    "name_en": "Tagore University of Creative Arts, Uttara, Dhaka, Bangladesh",
+    "category": "private",
+    "established": 2016,
+    "website": "www.tuca.edu.bd",
+    "campus": "97 Shah Makhdum Avenue, Sector 12 Uttara, Dhaka-71230",
+    "district": "dhaka",
+    "emails": [
+      "hr@tuca.edu.bd"
+    ],
+    "phone": "880255086905, +880255086906, +8801323728881"
+  },
+  {
+    "slug": "teesta-university-rangpur",
+    "ugc_id": 346,
+    "name_en": "Teesta University, Rangpur",
+    "category": "private",
+    "established": 2023,
+    "website": "www.teestauniversity.ac.bd",
+    "emails": [
+      "teestauniversity@gmail.com"
+    ],
+    "phone": "018194403333, 018194402222"
+  },
+  {
+    "slug": "thakurgaon-university",
+    "ugc_id": 237,
+    "name_en": "Thakurgaon University",
+    "category": "public",
+    "established": 2023,
+    "campus": "Thakurgaon",
+    "district": "thakurgaon"
+  },
+  {
+    "slug": "the-millennium-university",
+    "ugc_id": 273,
+    "name_en": "The Millennium University",
+    "category": "private",
+    "established": 2003,
+    "website": "www.themillenniumuniversity.edu.bd",
+    "campus": "Momenbagh, Rajarbagh, Dhaka-1217.",
+    "district": "dhaka",
+    "emails": [
+      "info@themillenniumuniversity.edu.bd"
+    ],
+    "phone": "+8802-48320836",
+    "fax": "+8802-48315089"
+  },
+  {
+    "slug": "the-peoples-university-of-bangladesh",
+    "ugc_id": 250,
+    "name_en": "The People's University of Bangladesh",
+    "category": "private",
+    "established": 1996,
+    "website": "www.pub.ac.bd",
+    "campus": "3/2, Asad Avenue, Mohammadpur, Dhaka-1207",
+    "district": "dhaka",
+    "emails": [
+      "thepeoplesuniversity@yahoo.com"
+    ],
+    "phone": "9117454, 9127807",
+    "fax": "9128009",
+    "ugc_notes": [
+      {
+        "title": "Governance",
+        "description": "দি পিপল'স ইউনিভার্সিটি অব বাংলাদেশ-এর প্রতিষ্ঠাকালীন সময় হতে অদ্যাবধি আচার্য নিয়োগকৃত ট্রেজারার নিয়োজিত নাই। সেই সাথে প্রো-ভিসি নিয়োজিত নেই।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "the-university-of-comilla",
+    "ugc_id": 352,
+    "name_en": "The University of Comilla",
+    "category": "private",
+    "campus": "***9/b, Polwel Carnation, Sector-8, Uttara, Dhaka-1230.",
+    "district": "dhaka",
+    "ugc_notes": [
+      {
+        "title": "Department of Business",
+        "description": "মহামান্য সুপ্রিম কোর্টের আপিল বিভাগের আদেশ বলে উপরোক্ত ঠিকানা ও প্রোগ্রামসমূহ আপলোড করা হলো। বে: বিশ্ব: আইনানুযায়ী পরবর্তী নির্দেশনা চেয়ে শিক্ষা মন্ত্রণালয়ে পত্র প্রেরণ করা হয়েছে। কমিশন থেকে শিক্ষা কার্যক্রম পুনরায় শুরুর অনুমতি অদ্যাবধি প্রদান করা হয়নি।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Physical Education",
+        "description": "মহামান্য সুপ্রিম কোর্টের আপিল বিভাগের আদেশ বলে উপরোক্ত ঠিকানা ও প্রোগ্রামসমূহ আপলোড করা হলো। বে: বিশ্ব: আইনানুযায়ী পরবর্তী নির্দেশনা চেয়ে শিক্ষা মন্ত্রণালয়ে পত্র প্রেরণ করা হয়েছে। কমিশন থেকে শিক্ষা কার্যক্রম পুনরায় শুরুর অনুমতি অদ্যাবধি প্রদান করা হয়নি।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Liberal Arts",
+        "description": "মহামান্য সুপ্রিম কোর্টের আপিল বিভাগের আদেশ বলে উপরোক্ত ঠিকানা ও প্রোগ্রামসমূহ আপলোড করা হলো। বে: বিশ্ব: আইনানুযায়ী পরবর্তী নির্দেশনা চেয়ে শিক্ষা মন্ত্রণালয়ে পত্র প্রেরণ করা হয়েছে। কমিশন থেকে শিক্ষা কার্যক্রম পুনরায় শুরুর অনুমতি অদ্যাবধি প্রদান করা হয়নি।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Life Science",
+        "description": "মহামান্য সুপ্রিম কোর্টের আপিল বিভাগের আদেশ বলে উপরোক্ত ঠিকানা ও প্রোগ্রামসমূহ আপলোড করা হলো। বে: বিশ্ব: আইনানুযায়ী পরবর্তী নির্দেশনা চেয়ে শিক্ষা মন্ত্রণালয়ে পত্র প্রেরণ করা হয়েছে। কমিশন থেকে শিক্ষা কার্যক্রম পুনরায় শুরুর অনুমতি অদ্যাবধি প্রদান করা হয়নি।",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Science & Technology",
+        "description": "মহামান্য সুপ্রিম কোর্টের আপিল বিভাগের আদেশ বলে উপরোক্ত ঠিকানা ও প্রোগ্রামসমূহ আপলোড করা হলো। বে: বিশ্ব: আইনানুযায়ী পরবর্তী নির্দেশনা চেয়ে শিক্ষা মন্ত্রণালয়ে পত্র প্রেরণ করা হয়েছে। কমিশন থেকে শিক্ষা কার্যক্রম পুনরায় শুরুর অনুমতি অদ্যাবধি প্রদান করা হয়নি।",
+        "type": "warning"
+      },
+      {
+        "title": "Academic activities",
+        "description": "After shut down in 2006, the university has not been given permission to commence academic activities again.",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "times-university-bangladesh",
+    "ugc_id": 308,
+    "name_en": "Times University, Bangladesh",
+    "category": "private",
+    "established": 2013,
+    "website": "http://www.timesuniversitybd.com",
+    "campus": "651-652, West Khabashpur, Faridpur-7800",
+    "district": "faridpur",
+    "emails": [
+      "tubbangladesh@gmail.com"
+    ],
+    "phone": "+8801771766591-4"
+  },
+  {
+    "slug": "trust-university-barishal",
+    "ugc_id": 337,
+    "name_en": "Trust University, Barishal",
+    "category": "private",
+    "established": 2018,
+    "website": "www.trustuniversity.edu.bd",
+    "campus": "Shamima Mansion, Ruiya, Nobogram Road, Barishal-8200",
+    "district": "barishal",
+    "emails": [
+      "info@trustuniversity.edu.bd",
+      "registrar@trustuniversity.edu.bd"
+    ],
+    "phone": "+8804312178014, 8801844902018"
+  },
+  {
+    "slug": "ucsi-university-malaysia-bangladesh-campus",
+    "ugc_id": 358,
+    "name_en": "UCSI University, Malaysia ( Bangladesh Campus)",
+    "category": "cbhe",
+    "established": 2022,
+    "website": "www.bangladesh.ucsiuniversity.edu.my",
+    "emails": [
+      "info.ucsibd@ucsiuniversity.edu.my"
+    ],
+    "phone": "16798, 01949943444, 01844616515, 01844616516"
+  },
+  {
+    "slug": "united-international-university",
+    "ugc_id": 277,
+    "name_en": "United International University",
+    "category": "private",
+    "established": 2003,
+    "website": "www.uiu.ac.bd",
+    "campus": "United City, Madani Avenue, Satarkul, Badda, Dhaka 1212",
+    "district": "dhaka",
+    "emails": [
+      "info@uiu.ac.bd"
+    ],
+    "phone": "9125913-6, 9118213, 9144151",
+    "fax": "9118170, 8156911"
+  },
+  {
+    "slug": "university-of-asia-pacific",
+    "ugc_id": 248,
+    "name_en": "University of Asia Pacific",
+    "category": "private",
+    "established": 1996,
+    "website": "www.uap-bd.edu",
+    "campus": "74/A, Green Road, Dhaka-1205",
+    "district": "dhaka",
+    "emails": [
+      "uapadmin@uap-bd.edu",
+      "registrar@uap-bd.edu"
+    ],
+    "phone": "58157091-94",
+    "fax": "9664950, 58157097"
+  },
+  {
+    "slug": "university-of-barishal",
+    "ugc_id": 213,
+    "name_en": "University of Barishal",
+    "category": "public",
+    "established": 2011,
+    "website": "www.bu.ac.bd",
+    "campus": "Barishal University, Karnakathi, Barishal Sadar, Barishal.",
+    "district": "barishal",
+    "emails": [
+      "registrar@bu.ac.bd"
+    ],
+    "phone": "0431-2177771-77",
+    "fax": "0431-61117"
+  },
+  {
+    "slug": "university-of-brahmanbaria",
+    "ugc_id": 339,
+    "name_en": "University of Brahmanbaria",
+    "category": "private",
+    "established": 2019,
+    "website": "www.uob.edu.bd",
+    "campus": "1020/15, Bypass Road, Datiara (Beside LGED Office) Brahmanbaria-3400",
+    "district": "brahmanbaria",
+    "emails": [
+      "info@uob.edu.bd"
+    ],
+    "phone": "+880851517755 (Chairman of UoB)"
+  },
+  {
+    "slug": "university-of-chittagong",
+    "ugc_id": 184,
+    "name_en": "University of Chittagong",
+    "category": "public",
+    "established": 1966,
+    "website": "www.cu.ac.bd",
+    "campus": "University of Chittagong, Village: Fatepur, Post Office: University of Chittagong, Upazilla: Hathazari, District: Chattogram",
+    "district": "chattogram",
+    "emails": [
+      "vccu66@cu.ac.bd",
+      "registrarcu66@cu.ac.bd"
+    ],
+    "phone": "726311-14, 2606001-10, 2606015-27",
+    "fax": "88-031-2606014, 88-031-2606145"
+  },
+  {
+    "slug": "university-of-creative-technology-chittagong",
+    "ugc_id": 326,
+    "name_en": "University of Creative Technology, Chittagong",
+    "category": "private",
+    "established": 2015,
+    "website": "www.uctc.edu.bd",
+    "campus": "1084, Shah Amanat Bridge Connecting Road, Bahaddarhat, Chandgaon, Chattogram",
+    "district": "chattogram",
+    "emails": [
+      "info@uctc.edu.bd"
+    ],
+    "phone": "031-2555721-23/ 01707-507070",
+    "fax": "031-2555724"
+  },
+  {
+    "slug": "university-of-development-alternative",
+    "ugc_id": 259,
+    "name_en": "University of Development Alternative",
+    "category": "private",
+    "established": 2001,
+    "website": "www.uoda.edu.bd",
+    "campus": "80, Satmasjid Road, Dhanmondi, Dhaka-1209",
+    "district": "dhaka",
+    "emails": [
+      "registrar@uoda.org"
+    ],
+    "phone": "9145740, 9145741, 9138227",
+    "fax": "91247317, 8157339"
+  },
+  {
+    "slug": "university-of-dhaka",
+    "ugc_id": 180,
+    "name_en": "University of Dhaka",
+    "category": "public",
+    "established": 1921,
+    "website": "www.du.ac.bd",
+    "campus": "Dhaka University, Ramna, Dhaka-1000",
+    "district": "dhaka",
+    "emails": [
+      "vcoffice@du.ac.bd",
+      "registrar@du.ac.bd"
+    ],
+    "phone": "+88-09666911463",
+    "fax": "+880-2-9667222"
+  },
+  {
+    "slug": "university-of-frontier-technology-bangladesh",
+    "ugc_id": 220,
+    "name_en": "University of Frontier Technology, Bangladesh",
+    "category": "public",
+    "established": 2016,
+    "website": "www.uftb.ac.bd",
+    "campus": "University of Frontier Technology, Kaliakair, Gazipur-1750, Bangladesh.",
+    "district": "gazipur",
+    "emails": [
+      "registrar@uftb.ac.bd",
+      "info@uftb.ac.bd"
+    ],
+    "phone": "09666775534, 01894953700"
+  },
+  {
+    "slug": "university-of-global-village",
+    "ugc_id": 329,
+    "name_en": "University of Global Village",
+    "category": "private",
+    "established": 2016,
+    "website": "www.ugv.edu.bd",
+    "campus": "874/322, C&B Road, Barisal",
+    "district": "barishal",
+    "emails": [
+      "ugvbarisal@gmail.com"
+    ],
+    "phone": "0431-61521, 2175391, 2177470, 01877774010, 01877774021, 01877774083 01877774040, 01877774050, 018777"
+  },
+  {
+    "slug": "university-of-information-technology-sciences",
+    "ugc_id": 282,
+    "name_en": "University of Information Technology & Sciences",
+    "category": "private",
+    "established": 2003,
+    "website": "www.uits.edu.bd",
+    "campus": "Holding No-190, Road -5, Block- J, Baridhara, Moddho Noyanagar, Vatara, Dhaka",
+    "district": "dhaka",
+    "phone": "+8809678008487",
+    "fax": "8899753"
+  },
+  {
+    "slug": "university-of-liberal-arts-bangladesh",
+    "ugc_id": 285,
+    "name_en": "University of Liberal Arts Bangladesh",
+    "category": "private",
+    "established": 2003,
+    "website": "www.ulab.edu.bd",
+    "campus": "688, Beribadh Road, Mohammadpur, Dhaka-1207",
+    "district": "dhaka",
+    "phone": "88-02-9661255, 9661301",
+    "fax": "88-02-9660610"
+  },
+  {
+    "slug": "university-of-rajshahi",
+    "ugc_id": 181,
+    "name_en": "University of Rajshahi",
+    "category": "public",
+    "established": 1953,
+    "website": "www.ru.ac.bd",
+    "campus": "University of Rajshahi, Motihar, Kajla, Rajshahi-6205",
+    "district": "rajshahi",
+    "emails": [
+      "registrar@ru.ac.bd"
+    ],
+    "phone": "(+88 02) 588865011",
+    "fax": "+8802588866364"
+  },
+  {
+    "slug": "university-of-scholars",
+    "ugc_id": 321,
+    "name_en": "University of Scholars",
+    "category": "private",
+    "established": 2015,
+    "website": "www.ius.edu.bd",
+    "campus": "Bulu Ocean Tower, 40 Kemal Ataturk Avenue, Banani, Dhaka-1213",
+    "district": "dhaka",
+    "emails": [
+      "info@ius.edu.bd"
+    ],
+    "phone": "+8801885836715"
+  },
+  {
+    "slug": "university-of-science-technology-chittagong",
+    "ugc_id": 240,
+    "name_en": "University of Science & Technology Chittagong",
+    "category": "private",
+    "established": 1992,
+    "website": "www.ustc.edu.bd",
+    "campus": "Foy’s Lake, Khulshi, Zakir Hossain Road, Chattogram-4202",
+    "district": "chattogram",
+    "emails": [
+      "ustc.ctg@gmail.com",
+      "ustcbd10@gmail.com",
+      "ustcbd10@yahoo.com"
+    ],
+    "phone": "01872-738085",
+    "fax": "031-659545"
+  },
+  {
+    "slug": "university-of-skill-enrichment-and-technology",
+    "ugc_id": 340,
+    "name_en": "University of Skill Enrichment and Technology",
+    "category": "private",
+    "established": 2019,
+    "website": "www.uset.ac.bd",
+    "campus": "সরকার ও কমিশন কর্তৃক অনুমোদিত ঠিকানায় (সামাদবানু টাওয়ার, প্লট-২৯৮-২৯৯, খোর্দ ঘোষ পাড়া, উপজেলা- সিদ্ধিরগঞ্জ, জেলা- নারায়ণগঞ্জ) বিশ্ববিদ্যালয়ের কোনো কার্যক্রম চলমান নেই",
+    "emails": [
+      "uset.trust@gmail.com",
+      "info@uset.ac.bd"
+    ],
+    "phone": "09611195195",
+    "ugc_notes": [
+      {
+        "title": "Admission suspended",
+        "description": "কমিশন কর্তৃক পরবর্তী নির্দেশনা না দেওয়া পর্যন্ত ইউনিভার্সিটি অব স্কিল এনরিচমেণ্ট এন্ড টেকনোলজি এর সকল প্রোগ্রামে আগামী জানুয়ারি ২০২৬ তারিখ হতে নতুন শিক্ষার্থী ভর্তি সম্পূর্ণরূপে বন্ধ রাখার জন্য নির্দেশ প্রদান করা হলো। তবে উক্ত তারিখের পূর্বে চলমান কোর্সে ভর্তিকৃত শিক্ষার্থীদের শিক্ষা কার্যকর্ম চলমান থাকবে।",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "university-of-south-asia",
+    "ugc_id": 278,
+    "name_en": "University of South Asia",
+    "category": "private",
+    "established": 2003,
+    "website": "www.southasiauni.ac.bd",
+    "campus": "Amin Bazar, Savar, Dhaka-1348",
+    "district": "dhaka",
+    "emails": [
+      "mail@southasiauni.ac.bd"
+    ],
+    "phone": "02 550340091-2, 01966459818, 01763030636, 01686265125",
+    "fax": "8313308"
+  },
+  {
+    "slug": "uttara-university",
+    "ugc_id": 276,
+    "name_en": "Uttara University",
+    "category": "private",
+    "established": 2003,
+    "website": "www.uttarauniversity.edu.bd",
+    "campus": "Holding 77, Beribadh Road, Turag, Dhaka 1230",
+    "district": "dhaka",
+    "emails": [
+      "info@uttarauniversity.edu.bd"
+    ],
+    "phone": "58951116, 58955794, 58952280, 9009844, 9009895, 8932325, 8932325, 8932541, 58955310, 7913551,",
+    "fax": "58952047"
+  },
+  {
+    "slug": "varendra-university",
+    "ugc_id": 291,
+    "name_en": "Varendra University",
+    "category": "private",
+    "established": 2012,
+    "website": "www.vu.edu.bd",
+    "campus": "Varendra University, Rajshahi Bypass Road, Chandrima, Paba,Rajshahi-6204",
+    "district": "rajshahi",
+    "emails": [
+      "info@vu.edu.bd"
+    ],
+    "phone": "09677601070, Ext: 105",
+    "fax": "+88-0721-750748"
+  },
+  {
+    "slug": "victoria-university-of-bangladesh",
+    "ugc_id": 279,
+    "name_en": "Victoria University of Bangladesh",
+    "category": "private",
+    "established": 2003,
+    "website": "www.vub.edu.bd",
+    "campus": "Barek Mansion, 58/11/A Panthapath, Dhaka-1205",
+    "district": "dhaka",
+    "emails": [
+      "info@vub.edu.bd"
+    ],
+    "phone": "58615476, 58611783, 9634348, 01781 09 80 98,",
+    "ugc_notes": [
+      {
+        "title": "Campus",
+        "description": "Unapproved Building/Campus run by the Victoria University of Bangladesh.",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "world-university-of-bangladesh",
+    "ugc_id": 271,
+    "name_en": "World University of Bangladesh",
+    "category": "private",
+    "established": 2003,
+    "website": "www.wub.edu.bd",
+    "campus": "Plot-5-8, Avenue-6, Lake Drive Road, Sector-17/H, Uttara, Dhaka-1230",
+    "district": "dhaka",
+    "emails": [
+      "info@wub.edu.bd"
+    ],
+    "phone": "+880-2-9611410-13; +880-2-9667435-6,",
+    "ugc_notes": [
+      {
+        "title": "Department of Education",
+        "description": "The approval of this program was cancelled on 07-12-2021.",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Education",
+        "description": "The approval of this program was cancelled on 07-12-2021.",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Law",
+        "description": "The approval of this program was cancelled on 07-12-2021.",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Law",
+        "description": "The approval of this program was cancelled on 07-12-2021.",
+        "type": "warning"
+      },
+      {
+        "title": "Department of Computing & Information Science",
+        "description": "The approval of this program was cancelled on 07-12-2021.",
+        "type": "warning"
+      }
+    ]
+  },
+  {
+    "slug": "zh-sikder-university-of-science-technology",
+    "ugc_id": 297,
+    "name_en": "Z.H Sikder University of Science & Technology",
+    "category": "private",
+    "established": 2012,
+    "website": "www. zhsust.edu.bd",
+    "campus": "Vill. Madhupur. Post. Karticpur. P/S- Bhedergong, Dist. Shariaitpur"
+  },
+  {
+    "slug": "znrf-university-of-management-sciences",
+    "ugc_id": 332,
+    "name_en": "ZNRF University of Management Sciences",
+    "category": "private",
+    "established": 2018,
+    "website": "www.zums.edu.bd",
+    "campus": "200, Gulshan Avenue, Gulshan-2, Dhaka-1212",
+    "district": "dhaka",
+    "emails": [
+      "registrar@zums.edu.bd"
+    ],
+    "phone": "01877700205-06"
+  }
+]
