@@ -35,7 +35,7 @@ export function listMaritimeSignals(): MaritimeSignal[] {
 export function getMaritimeSignal(key: number | string): MaritimeSignal | undefined {
   if (typeof key === 'number') return maritimeByNumber.get(key);
   const num = parseInt(key, 10);
-  if (!isNaN(num) && maritimeByNumber.has(num)) return maritimeByNumber.get(num);
+  if (!Number.isNaN(num) && maritimeByNumber.has(num)) return maritimeByNumber.get(num);
   return maritimeBySlug.get(key.toLowerCase().trim());
 }
 
