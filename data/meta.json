@@ -279,6 +279,22 @@
     ]
   },
   {
+    "dataset": "mfs.providers",
+    "source": "Bangladesh Bank MFS regulations and official schedule of charges from licensed MFS providers (bKash, Nagad, Rocket, Upay, TAP)",
+    "source_url": "https://www.bb.org.bd/en/index.php/financialactivity/mfs",
+    "licence": "Public tariff information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Bangladesh Bank",
+      "bKash Limited",
+      "Nagad Limited",
+      "Dutch-Bangla Bank PLC",
+      "United Commercial Bank PLC",
+      "Trust Axiata Digital Limited"
+    ]
+  },
+  {
     "dataset": "mock.names",
     "source": "Common Bangladeshi given and family names compiled by desh-api contributors (no directory of real people used); tradition weights from the BBS Population and Housing Census 2022",
     "source_url": "https://en.prothomalo.com/bangladesh/at87h01ocn",

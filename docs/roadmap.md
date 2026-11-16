@@ -16,6 +16,7 @@ specs benefit from what was learned.
 | [`006-education`](../specs/006-education/) | 2 — Live data | 14 Education Data (universities) | **Built**: 181 UGC universities; programmes, education boards and Bangla names are follow-ups |
 | [`007-gold-zakat`](../specs/007-gold-zakat/) | 2 — Live data | 12 Gold Price & Zakat | **Built**: live BAJUS prices (no storage); BAJUS refuses some regions, which get the last good list from Workers KV (≤ 7 days old); price history would need a database |
 | [`009-market-prices`](../specs/009-market-prices/) | 2 — Live data | 10 Market Prices | **Built**: TCB daily Dhaka retail prices (live, KV fallback), monthly fuel prices; exchange rates blocked (Bangladesh Bank captcha) |
+| [`010-mfs`](../specs/010-mfs/) | 2 — Live data | 11 MFS Providers & Calculator | **Built**: bKash, Nagad, Rocket, Upay, TAP tariffs, USSD codes, fee calculation and ranking comparison |
 | `00x-…` | 2 — Live data | API keys & daily quotas | Not started |
 | `00x-expansion` | 3 — Expansion (months 4–6) | 16 Prayer Times, 17 Transport, 18 Health, 19 Weather/AQI/Flood, 20 Constituencies, 21 Tourism, 22 NLP, SDKs (npm, PyPI, Composer) | Not started |
 | `00x-ecosystem` | 4 — Ecosystem (6+ months) | Playground, bots, browser extension, form widgets, WordPress/Laravel plugins, Sheets add-on, dashboard, CLI | Not started |

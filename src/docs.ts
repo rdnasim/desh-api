@@ -93,5 +93,10 @@ export const OPENAPI_CONFIG = {
       description:
         "Today's retail prices of essential goods in Dhaka from the Trading Corporation of Bangladesh (read live from TCB's daily spreadsheet, with English names added), and the government's monthly fuel prices.",
     },
+    {
+      name: 'MFS',
+      description:
+        'Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariff schedules, USSD codes, transaction fee calculator and ranking comparison.',
+    },
   ],
 };

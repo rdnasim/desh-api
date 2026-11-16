@@ -1,0 +1,284 @@
+[
+  {
+    "slug": "bkash",
+    "name_en": "bKash",
+    "name_bn": "বিকাশ",
+    "parent_en": "BRAC Bank PLC",
+    "parent_bn": "ব্র্যাক ব্যাংক পিএলসি",
+    "ussd_code": "*247#",
+    "helpline": "16247",
+    "website": "https://www.bkash.com",
+    "charges": {
+      "cash_out": {
+        "app": {
+          "rate_percent": 1.75,
+          "per_thousand": 17.5,
+          "vat_included": true,
+          "notes_en": "Standard cash-out charge via bKash App (1.75%)",
+          "notes_bn": "বিকাশ অ্যাপের মাধ্যমে স্ট্যান্ডার্ড ক্যাশ আউট চার্জ (১.৭৫%)"
+        },
+        "ussd": {
+          "rate_percent": 1.85,
+          "per_thousand": 18.5,
+          "vat_included": true,
+          "notes_en": "Standard cash-out charge via USSD *247# (1.85%)",
+          "notes_bn": "ইউএসএসডি *২৪৭# এর মাধ্যমে ক্যাশ আউট চার্জ (১.৮৫%)"
+        },
+        "atm": {
+          "rate_percent": 1.49,
+          "per_thousand": 14.9,
+          "vat_included": true,
+          "notes_en": "Cash out from partner bank ATMs (1.49%)",
+          "notes_bn": "পার্টনার ব্যাংকের এটিএম থেকে ক্যাশ আউট চার্জ (১.৪৯%)"
+        },
+        "special": {
+          "rate_percent": 1.49,
+          "per_thousand": 14.9,
+          "vat_included": true,
+          "notes_en": "Priyo Agent cash out up to ৳25,000/month (1.49%)",
+          "notes_bn": "প্রিয় এজেন্ট ক্যাশ আউট প্রতি মাসে ২৫,০০০ টাকা পর্যন্ত (১.৪৯%)"
+        }
+      },
+      "send_money": {
+        "app": {
+          "fee_fixed": 5,
+          "free_conditions_en": "Free up to 5 Priyo numbers (up to ৳25,000/month or ৳100/day single transaction)",
+          "free_conditions_bn": "৫টি প্রিয় নম্বরে প্রতি মাসে ২৫,০০০ টাকা বা দৈনিক ১০০ টাকা পর্যন্ত ফ্রি",
+          "notes_en": "৳5 for non-priyo numbers or above free limits; ৳10 for amounts over ৳25,000",
+          "notes_bn": "নন-প্রিয় নম্বরে বা ফ্রি সীমার উপরে ৫ টাকা; ২৫,০০০ টাকার বেশি হলে ১০ টাকা"
+        },
+        "ussd": {
+          "fee_fixed": 5,
+          "free_conditions_en": "Free up to 5 Priyo numbers up to ৳100/day",
+          "free_conditions_bn": "৫টি প্রিয় নম্বরে দৈনিক ১০০ টাকা পর্যন্ত ফ্রি",
+          "notes_en": "Standard ৳5 per transaction",
+          "notes_bn": "স্ট্যান্ডার্ড ৫ টাকা প্রতি লেনদেনে"
+        }
+      }
+    },
+    "limits": {
+      "cash_out_max_per_txn": 25000,
+      "cash_out_daily_max": 25000,
+      "send_money_max_per_txn": 25000
+    },
+    "last_verified": "2026-11-16",
+    "source_url": "https://www.bkash.com/support/tariff-limits"
+  },
+  {
+    "slug": "nagad",
+    "name_en": "Nagad",
+    "name_bn": "নগদ",
+    "parent_en": "Bangladesh Post Office",
+    "parent_bn": "বাংলাদেশ ডাক বিভাগ",
+    "ussd_code": "*167#",
+    "helpline": "16167",
+    "website": "https://nagad.com.bd",
+    "charges": {
+      "cash_out": {
+        "app": {
+          "rate_percent": 1.149,
+          "per_thousand": 11.49,
+          "vat_included": true,
+          "notes_en": "৳9.99 per ৳1,000 + 15% VAT = ৳11.49 via Nagad App (1.149%)",
+          "notes_bn": "নগদ অ্যাপে প্রতি হাজারে ৯.৯৯ টাকা + ১৫% ভ্যাট = ১১.৪৯ টাকা (১.১৪৯%)"
+        },
+        "ussd": {
+          "rate_percent": 1.494,
+          "per_thousand": 14.94,
+          "vat_included": true,
+          "notes_en": "৳12.50 per ৳1,000 + 15% VAT = ৳14.94 via USSD *167# (1.494%)",
+          "notes_bn": "ইউএসএসডি *১৬৭# এ প্রতি হাজারে ১২.৫০ টাকা + ১৫% ভ্যাট = ১৪.৯৪ টাকা (১.৪৯৪%)"
+        }
+      },
+      "send_money": {
+        "app": {
+          "fee_fixed": 0,
+          "free_conditions_en": "Always free via Nagad App",
+          "free_conditions_bn": "নগদ অ্যাপের মাধ্যমে সেন্ড মানি সম্পূর্ণ ফ্রি",
+          "notes_en": "Free via Nagad App",
+          "notes_bn": "নগদ অ্যাপের মাধ্যমে ফ্রি"
+        },
+        "ussd": {
+          "fee_fixed": 4,
+          "free_conditions_en": "None",
+          "free_conditions_bn": "প্রযোজ্য নয়",
+          "notes_en": "৳4.00 inclusive of VAT per transaction via USSD",
+          "notes_bn": "ইউএসএসডিতে প্রতি লেনদেনে ভ্যাটসহ ৪ টাকা"
+        }
+      }
+    },
+    "limits": {
+      "cash_out_max_per_txn": 25000,
+      "cash_out_daily_max": 250000,
+      "send_money_max_per_txn": 25000
+    },
+    "last_verified": "2026-11-16",
+    "source_url": "https://nagad.com.bd/services/charges"
+  },
+  {
+    "slug": "rocket",
+    "name_en": "Rocket",
+    "name_bn": "রকেট",
+    "parent_en": "Dutch-Bangla Bank PLC",
+    "parent_bn": "ডাচ-বাংলা ব্যাংক পিএলসি",
+    "ussd_code": "*322#",
+    "helpline": "16216",
+    "website": "https://www.dutchbanglabank.com/rocket",
+    "charges": {
+      "cash_out": {
+        "app": {
+          "rate_percent": 1.67,
+          "per_thousand": 16.7,
+          "vat_included": true,
+          "notes_en": "Agent cash-out via Rocket App (1.67%)",
+          "notes_bn": "রকেট অ্যাপের মাধ্যমে এজেন্ট ক্যাশ আউট (১.৬৭%)"
+        },
+        "ussd": {
+          "rate_percent": 1.8,
+          "per_thousand": 18,
+          "vat_included": true,
+          "notes_en": "Agent cash-out via USSD *322# (1.80%)",
+          "notes_bn": "ইউএসএসডি *৩২২# এর মাধ্যমে এজেন্ট ক্যাশ আউট (১.৮০%)"
+        },
+        "atm": {
+          "rate_percent": 0.9,
+          "per_thousand": 9,
+          "vat_included": true,
+          "notes_en": "Cash out from DBBL Fast Track / ATM (0.90% or ৳9 per ৳1,000)",
+          "notes_bn": "ডিবিবিএল ফাস্ট ট্র্যাক / এটিএম থেকে ক্যাশ আউট (০.৯০% বা প্রতি হাজারে ৯ টাকা)"
+        }
+      },
+      "send_money": {
+        "app": {
+          "fee_fixed": 5,
+          "notes_en": "৳5 per transaction",
+          "notes_bn": "প্রতি লেনদেনে ৫ টাকা"
+        },
+        "ussd": {
+          "fee_fixed": 5,
+          "notes_en": "৳5 per transaction",
+          "notes_bn": "প্রতি লেনদেনে ৫ টাকা"
+        }
+      }
+    },
+    "limits": {
+      "cash_out_max_per_txn": 25000,
+      "cash_out_daily_max": 25000,
+      "send_money_max_per_txn": 25000
+    },
+    "last_verified": "2026-11-16",
+    "source_url": "https://www.dutchbanglabank.com/rocket/fees-charges.html"
+  },
+  {
+    "slug": "tap",
+    "name_en": "TAP",
+    "name_bn": "ট্যাপ",
+    "parent_en": "Trust Axiata Digital Limited",
+    "parent_bn": "ট্রাস্ট আজিয়াটা ডিজিটাল লিমিটেড",
+    "ussd_code": "*201#",
+    "helpline": "16727",
+    "website": "https://www.tap.com.bd",
+    "charges": {
+      "cash_out": {
+        "app": {
+          "rate_percent": 1.47,
+          "per_thousand": 14.7,
+          "vat_included": true,
+          "notes_en": "Agent cash-out via TAP App (1.47%)",
+          "notes_bn": "ট্যাপ অ্যাপে এজেন্ট ক্যাশ আউট (১.৪৭%)"
+        },
+        "ussd": {
+          "rate_percent": 1.47,
+          "per_thousand": 14.7,
+          "vat_included": true,
+          "notes_en": "Agent cash-out via USSD *201# (1.47%)",
+          "notes_bn": "ইউএসএসডি *২০১# এ এজেন্ট ক্যাশ আউট (১.৪৭%)"
+        },
+        "atm": {
+          "rate_percent": 0.8,
+          "per_thousand": 8,
+          "vat_included": true,
+          "notes_en": "Cash out from Trust Bank ATMs (0.80%)",
+          "notes_bn": "ট্রাস্ট ব্যাংক এটিএম থেকে ক্যাশ আউট (০.৮০%)"
+        }
+      },
+      "send_money": {
+        "app": {
+          "fee_fixed": 0,
+          "free_conditions_en": "Free via TAP App",
+          "free_conditions_bn": "ট্যাপ অ্যাপের মাধ্যমে সেন্ড মানি সম্পূর্ণ ফ্রি",
+          "notes_en": "Free via TAP App",
+          "notes_bn": "ট্যাপ অ্যাপের মাধ্যমে ফ্রি"
+        },
+        "ussd": {
+          "fee_fixed": 5,
+          "notes_en": "৳5 per transaction via USSD",
+          "notes_bn": "ইউএসএসডিতে প্রতি লেনদেনে ৫ টাকা"
+        }
+      }
+    },
+    "limits": {
+      "cash_out_max_per_txn": 25000,
+      "cash_out_daily_max": 25000,
+      "send_money_max_per_txn": 25000
+    },
+    "last_verified": "2026-11-16",
+    "source_url": "https://www.tap.com.bd/charges"
+  },
+  {
+    "slug": "upay",
+    "name_en": "Upay",
+    "name_bn": "উপায়",
+    "parent_en": "United Commercial Bank PLC",
+    "parent_bn": "ইউনাইটেড কমার্শিয়াল ব্যাংক পিএলসি",
+    "ussd_code": "*268#",
+    "helpline": "16268",
+    "website": "https://www.upay.bd",
+    "charges": {
+      "cash_out": {
+        "app": {
+          "rate_percent": 1.4,
+          "per_thousand": 14,
+          "vat_included": true,
+          "notes_en": "Agent cash-out via Upay App (1.40%)",
+          "notes_bn": "উপায় অ্যাপে এজেন্ট ক্যাশ আউট (১.৪০%)"
+        },
+        "ussd": {
+          "rate_percent": 1.4,
+          "per_thousand": 14,
+          "vat_included": true,
+          "notes_en": "Agent cash-out via USSD *268# (1.40%)",
+          "notes_bn": "ইউএসএসডি *২৬৮# এ এজেন্ট ক্যাশ আউট (১.৪০%)"
+        },
+        "atm": {
+          "rate_percent": 0.8,
+          "per_thousand": 8,
+          "vat_included": true,
+          "notes_en": "Cash out from UCB ATMs (0.80% or ৳8 per ৳1,000)",
+          "notes_bn": "ইউসিবি এটিএম থেকে ক্যাশ আউট (০.৮০% বা প্রতি হাজারে ৮ টাকা)"
+        }
+      },
+      "send_money": {
+        "app": {
+          "fee_fixed": 0,
+          "free_conditions_en": "Free via Upay App",
+          "free_conditions_bn": "উপায় অ্যাপের মাধ্যমে সেন্ড মানি সম্পূর্ণ ফ্রি",
+          "notes_en": "Free via Upay App",
+          "notes_bn": "উপায় অ্যাপের মাধ্যমে ফ্রি"
+        },
+        "ussd": {
+          "fee_fixed": 5,
+          "notes_en": "৳5 per transaction via USSD",
+          "notes_bn": "ইউএসএসডিতে প্রতি লেনদেনে ৫ টাকা"
+        }
+      }
+    },
+    "limits": {
+      "cash_out_max_per_txn": 25000,
+      "cash_out_daily_max": 25000,
+      "send_money_max_per_txn": 25000
+    },
+    "last_verified": "2026-11-16",
+    "source_url": "https://www.upay.bd/charges"
+  }
+]
