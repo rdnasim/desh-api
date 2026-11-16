@@ -141,6 +141,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Gold & zakat** | Today's BAJUS gold and silver prices per gram and per vori; zakat with the nisab from those prices | [`/v1/gold/prices`](https://deshapi.riadul.com/v1/gold/prices) |
 | **Market prices** | Today's TCB retail prices of essential goods in Dhaka (rice, oil, pulses, spices, fish, meat…) with week, month and year comparisons; government fuel prices | [`/v1/market/prices?category=edible-oil`](https://deshapi.riadul.com/v1/market/prices?category=edible-oil) |
 | **MFS** | Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariffs, USSD codes, cash-out calculator and comparison | [`/v1/mfs/providers`](https://deshapi.riadul.com/v1/mfs/providers) |
+| **Developer** | API key authentication, tiered rate limits (600 req/min), daily quota tracking and inspection | [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the
 [roadmap](docs/roadmap.md).
@@ -162,15 +163,32 @@ Errors use a stable `code`, a readable message (often in Bangla too), and the ri
 | Status | `code` | When |
 |---|---|---|
 | 400 | `invalid_parameter` | A parameter is missing, malformed or out of range |
+| 401 | `unauthorized` | Missing, invalid or inactive API key |
 | 404 | `not_found` | Unknown slug, postcode or route; a holiday year or tax year with no official source yet |
 | 413 | `payload_too_large` | Body over the limit (Bijoy: 100 KB; bulk phone: 100 numbers) |
-| 429 | `rate_limited` | More than 120 requests per minute from one IP (see `Retry-After`) |
+| 429 | `rate_limited` | Exceeded per-minute rate limit (see `Retry-After`) |
+| 429 | `quota_exceeded` | Exceeded daily request quota (resets at 00:00 UTC; see `Retry-After`) |
 | 503 | `upstream_unavailable` | A live source (gold prices from BAJUS, market prices from TCB) could not be read and no list from the last 7 days is saved |
 
-**Limits and caching.** No key is needed; the limit is 120 requests per minute per IP. Reference
-data and calculator results are cacheable for a day; gold prices for 10 minutes, market prices
-for 30; an income-tax
-answer that used the default (current) tax year for an hour. Validator responses and unseeded mock
+**Limits and developer tiers.** No key is required for public access; anonymous requests receive
+120 requests per minute per IP and 10,000 requests per day. Passing an optional API key via `X-API-Key`
+or `Authorization: Bearer <key>` unlocks higher tiers:
+
+- **Anonymous**: 120 req/min, 10,000 req/day
+- **Developer**: 600 req/min, 50,000 req/day
+- **Enterprise / Partner**: 1,800 req/min, 500,000 req/day
+
+Every response carries standard rate limit headers:
+- `X-RateLimit-Tier`: `anonymous` | `developer` | `enterprise`
+- `X-RateLimit-Limit-Minute`: Per-minute request limit
+- `X-RateLimit-Limit-Daily`: Daily request quota
+- `X-RateLimit-Remaining-Daily`: Remaining requests today
+- `X-RateLimit-Reset`: Seconds remaining until daily reset (00:00 UTC)
+
+Inspect your current quota and tier anytime at [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota).
+
+**Caching.** Reference data and calculator results are cacheable for a day; gold prices for 10 minutes, market prices
+for 30; an income-tax answer that used the default (current) tax year for an hour. Validator responses and unseeded mock
 data are never cached. CORS is open, so you can call the API straight from a browser.
 
 **Live data.** Gold prices (BAJUS) and market prices (TCB) are read when you ask, cached by

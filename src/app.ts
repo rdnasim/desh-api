@@ -12,6 +12,7 @@ import { rateLimit } from './lib/rate-limit';
 import { banglaRoutes } from './modules/bangla/routes';
 import { bankRoutes } from './modules/banks/routes';
 import { convertRoutes } from './modules/convert/routes';
+import { developerRoutes } from './modules/developer/routes';
 import { educationRoutes } from './modules/education/routes';
 import { financeRoutes } from './modules/finance/routes';
 import { funRoutes } from './modules/fun/routes';
@@ -111,6 +112,11 @@ const MODULES = [
       'Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariffs, USSD codes and calculator',
     path: '/v1/mfs/providers',
   },
+  {
+    name: 'Developer',
+    description: 'Developer rate limits, API keys, and daily request quota inspection',
+    path: '/v1/developer/quota',
+  },
 
 ];
 
@@ -157,6 +163,7 @@ app.route('/v1', educationRoutes);
 app.route('/v1', goldRoutes);
 app.route('/v1', marketRoutes);
 app.route('/v1', mfsRoutes);
+app.route('/v1', developerRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 
