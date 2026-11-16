@@ -137,13 +137,11 @@ export function getDailyPrayerTimes(
   const dateObj = new Date(Date.UTC(y, m - 1, d));
 
   const offsetInfo = findDistrictOffset(districtSlug) || findDistrictOffset('dhaka')!;
-  const geoInfo = geoDistrictsBySlug.get(offsetInfo.slug);
 
   // Compute baseline times for Dhaka
   const baseTimes = computeSolarTimes(y, m, d, DHAKA_LAT, DHAKA_LON, school);
 
   // Apply Islamic Foundation Bangladesh district minute offset
-  const offset = offsetInfo.sehri_offset_minutes;
   const times: SolarTimes = {
     sehri_cutoff: adjustMinutes(baseTimes.sehri_cutoff, offsetInfo.sehri_offset_minutes),
     fajr: adjustMinutes(baseTimes.fajr, offsetInfo.fajr_offset_minutes),
