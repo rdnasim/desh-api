@@ -96,7 +96,7 @@ export function resolveApiKey(keyString: string, envApiKeysJson?: string): ApiKe
         const found = parsed.find(
           (k: unknown) =>
             typeof k === 'object' && k !== null && (k as Record<string, unknown>).key === keyString,
-        ) as Record<string, any> | undefined;
+        ) as Record<string, unknown> | undefined;
         if (found) {
           const tier: ApiKeyTier =
             found.tier && TIERS[found.tier as ApiKeyTier] ? found.tier : 'developer';
