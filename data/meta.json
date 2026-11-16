@@ -317,6 +317,19 @@
     ]
   },
   {
+    "dataset": "prayer.district-offsets",
+    "source": "Islamic Foundation Bangladesh (IFB), Ministry of Religious Affairs: prayer and Ramadan timetable schedule and district time offset table",
+    "source_url": "https://islamicfoundation.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Islamic Foundation Bangladesh",
+      "Ministry of Religious Affairs, Bangladesh",
+      "desh-api contributors"
+    ]
+  },
+  {
     "dataset": "validate.vehicle-area-aliases",
     "source": "Abbreviations seen on BRTA registration plates (e.g. 'চট্ট মেট্রো' for Chattogram Metro); full area names come from geo.districts",
     "licence": "CC BY 4.0",

@@ -28,6 +28,7 @@ import { CommoditySchema, FuelMonthSchema } from '../src/modules/market/schemas'
 import { MfsProviderSchema } from '../src/modules/mfs/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
+import { DistrictOffsetSchema } from '../src/modules/prayer/schemas';
 import { routingCheckDigitOk } from '../src/modules/validate/routing';
 import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
 
@@ -201,6 +202,13 @@ export const datasets: DatasetSpec[] = [
     type: { name: 'MfsProvider', from: '../modules/mfs/schemas' },
   },
   {
+    key: 'prayer.district-offsets',
+    file: 'prayer/district-offsets.json',
+    schema: DistrictOffsetSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'DistrictOffset', from: '../modules/prayer/schemas' },
+  },
+  {
     key: 'market.fuel',
     file: 'market/fuel.json',
     schema: FuelMonthSchema,
@@ -274,6 +282,7 @@ export function derive(data: Record<string, any[]>): {
     }
   };
   fk('geo.districts', 'division', 'geo.divisions');
+  fk('prayer.district-offsets', 'division', 'geo.divisions');
   fk('geo.upazilas', 'district', 'geo.districts');
   fk('geo.unions', 'upazila', 'geo.upazilas');
   fk('geo.city-corporations', 'district', 'geo.districts');

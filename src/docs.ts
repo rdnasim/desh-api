@@ -99,6 +99,11 @@ export const OPENAPI_CONFIG = {
         'Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariff schedules, USSD codes, transaction fee calculator and ranking comparison.',
     },
     {
+      name: 'Prayer Times & Ramadan',
+      description:
+        'Daily 5 prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha), Sehri cutoff, and 30-day Ramadan timetable for all 64 districts based on Islamic Foundation Bangladesh standards.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

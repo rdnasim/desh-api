@@ -73,7 +73,7 @@ async function main() {
       return ka < kb ? -1 : ka > kb ? 1 : 0;
     });
     const canonical = formatJson(sorted);
-    if (raw !== canonical) {
+    if (raw.replace(/\r\n/g, '\n') !== canonical) {
       if (fix) {
         await writeFile(path, canonical);
         console.log(`fixed ${spec.file}`);

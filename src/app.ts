@@ -25,6 +25,7 @@ import { marketRoutes } from './modules/market/routes';
 import { mfsRoutes } from './modules/mfs/routes';
 import { mockRoutes } from './modules/mock/routes';
 import { phoneRoutes } from './modules/phone/routes';
+import { prayerRoutes } from './modules/prayer/routes';
 import { validateRoutes } from './modules/validate/routes';
 
 const MODULES = [
@@ -113,6 +114,12 @@ const MODULES = [
     path: '/v1/mfs/providers',
   },
   {
+    name: 'Prayer Times & Ramadan',
+    description:
+      'Daily 5 prayer times, Sehri cutoff, and 30-day Ramadan timetable for all 64 districts',
+    path: '/v1/prayer/times?district=dhaka',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -163,6 +170,7 @@ app.route('/v1', educationRoutes);
 app.route('/v1', goldRoutes);
 app.route('/v1', marketRoutes);
 app.route('/v1', mfsRoutes);
+app.route('/v1', prayerRoutes);
 app.route('/v1', developerRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);

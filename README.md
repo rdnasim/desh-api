@@ -30,7 +30,7 @@ every response**.
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 16 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities, gold & zakat, market prices, MFS
+- 17 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities, gold & zakat, market prices, MFS, prayer & Ramadan
 
 - Runs on Cloudflare's edge network, so responses are fast
 
@@ -116,6 +116,10 @@ curl 'https://deshapi.riadul.com/v1/banks/sonali-bank/branches?district=cumilla'
 # MFS cash-out comparison & USSD codes (bKash, Nagad, Rocket, Upay, TAP)
 curl 'https://deshapi.riadul.com/v1/mfs/compare?amount=5000&action=cash-out&channel=app'
 curl 'https://deshapi.riadul.com/v1/mfs/ussd'
+
+# Prayer times & Ramadan calendar (Islamic Foundation Bangladesh, 64 districts supported)
+curl 'https://deshapi.riadul.com/v1/prayer/times?district=chattogram'
+curl 'https://deshapi.riadul.com/v1/prayer/ramadan?district=sylhet'
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -141,6 +145,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Gold & zakat** | Today's BAJUS gold and silver prices per gram and per vori; zakat with the nisab from those prices | [`/v1/gold/prices`](https://deshapi.riadul.com/v1/gold/prices) |
 | **Market prices** | Today's TCB retail prices of essential goods in Dhaka (rice, oil, pulses, spices, fish, meat…) with week, month and year comparisons; government fuel prices | [`/v1/market/prices?category=edible-oil`](https://deshapi.riadul.com/v1/market/prices?category=edible-oil) |
 | **MFS** | Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariffs, USSD codes, cash-out calculator and comparison | [`/v1/mfs/providers`](https://deshapi.riadul.com/v1/mfs/providers) |
+| **Prayer & Ramadan** | 5 daily prayer times, Sehri cutoff, and 30-day Ramadan timetable for all 64 districts based on Islamic Foundation Bangladesh standards | [`/v1/prayer/times?district=dhaka`](https://deshapi.riadul.com/v1/prayer/times?district=dhaka) |
 | **Developer** | API key authentication, tiered rate limits (600 req/min), daily quota tracking and inspection | [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the
