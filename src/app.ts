@@ -94,7 +94,7 @@ const MODULES = [
   {
     name: 'Education',
     description:
-      'Universities listed by the University Grants Commission (public, private, international)',
+      'UGC universities, 11 statutory education boards, official GPA 5.0 grading scale and calculator',
     path: '/v1/universities?category=public',
   },
   {

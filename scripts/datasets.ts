@@ -2,7 +2,12 @@ import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
 import { BankSchema, BranchSchema } from '../src/modules/banks/schemas';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
-import { UniversityCategorySchema, UniversitySchema } from '../src/modules/education/schemas';
+import {
+  EducationBoardSchema,
+  GradeTierSchema,
+  UniversityCategorySchema,
+  UniversitySchema,
+} from '../src/modules/education/schemas';
 import { TaxCategorySchema, TaxYearSchema } from '../src/modules/finance/schemas';
 import {
   DishSchema,
@@ -159,6 +164,20 @@ export const datasets: DatasetSpec[] = [
     schema: BranchSchema,
     sortKey: (r) => r.id,
     type: { name: 'Branch', from: '../modules/banks/schemas' },
+  },
+  {
+    key: 'education.boards',
+    file: 'education/boards.json',
+    schema: EducationBoardSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'EducationBoard', from: '../modules/education/schemas' },
+  },
+  {
+    key: 'education.grading-scale',
+    file: 'education/grading-scale.json',
+    schema: GradeTierSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'GradeTier', from: '../modules/education/schemas' },
   },
   {
     key: 'education.universities',

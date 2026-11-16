@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "a-minus",
+    "grade": "A-",
+    "grade_point": 3.5,
+    "min_marks": 60,
+    "max_marks": 69,
+    "remark_en": "Very Good",
+    "remark_bn": "খুব ভালো"
+  },
+  {
+    "slug": "a-normal",
+    "grade": "A",
+    "grade_point": 4,
+    "min_marks": 70,
+    "max_marks": 79,
+    "remark_en": "Excellent",
+    "remark_bn": "চমৎকার"
+  },
+  {
+    "slug": "a-plus",
+    "grade": "A+",
+    "grade_point": 5,
+    "min_marks": 80,
+    "max_marks": 100,
+    "remark_en": "Outstanding",
+    "remark_bn": "অসাধারণ"
+  },
+  {
+    "slug": "b",
+    "grade": "B",
+    "grade_point": 3,
+    "min_marks": 50,
+    "max_marks": 59,
+    "remark_en": "Good",
+    "remark_bn": "ভালো"
+  },
+  {
+    "slug": "c",
+    "grade": "C",
+    "grade_point": 2,
+    "min_marks": 40,
+    "max_marks": 49,
+    "remark_en": "Satisfactory",
+    "remark_bn": "সন্তোষজনক"
+  },
+  {
+    "slug": "d",
+    "grade": "D",
+    "grade_point": 1,
+    "min_marks": 33,
+    "max_marks": 39,
+    "remark_en": "Pass",
+    "remark_bn": "ন্যূনতম পাস"
+  },
+  {
+    "slug": "f",
+    "grade": "F",
+    "grade_point": 0,
+    "min_marks": 0,
+    "max_marks": 32,
+    "remark_en": "Fail",
+    "remark_bn": "অনুত্তীর্ণ"
+  }
+]

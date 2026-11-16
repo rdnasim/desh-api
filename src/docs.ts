@@ -81,7 +81,7 @@ export const OPENAPI_CONFIG = {
     {
       name: 'Education',
       description:
-        'Universities listed by the University Grants Commission: category, founding year, website, campus address, institutional contacts and UGC notes on programmes. Names of officials are not included.',
+        'UGC universities, 11 statutory education boards (BISE, Madrasah, Technical) with district jurisdictions, and official GPA 5.0 grading scale reference and exam GPA calculator.',
     },
     {
       name: 'Gold & zakat',

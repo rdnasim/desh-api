@@ -34,6 +34,29 @@
     ]
   },
   {
+    "dataset": "education.boards",
+    "source": "Ministry of Education (moedu.gov.bd) and individual education board statutory portals (dhakaeducationboard.gov.bd, bmeb.gov.bd, bteb.gov.bd, etc.)",
+    "source_url": "https://moedu.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Ministry of Education, Bangladesh",
+      "Board of Intermediate and Secondary Education"
+    ]
+  },
+  {
+    "dataset": "education.grading-scale",
+    "source": "Ministry of Education, Bangladesh: uniform GPA 5.0 grading system for SSC/HSC and equivalent examinations",
+    "source_url": "https://moedu.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Ministry of Education, Bangladesh"
+    ]
+  },
+  {
     "dataset": "education.universities",
     "source": "University Grants Commission of Bangladesh (ugc.gov.bd): university lists and university pages (site updated 2026-11-12)",
     "source_url": "https://www.ugc.gov.bd/universities",
