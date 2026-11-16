@@ -242,7 +242,7 @@ educationRoutes.openapi(
   (c) => {
     const { marks } = c.req.valid('query');
     const score = Number(marks);
-    if (isNaN(score) || score < 0 || score > 100) {
+    if (Number.isNaN(score) || score < 0 || score > 100) {
       invalid('marks must be a number between 0 and 100');
     }
     const tier = lookupGrade(score);

@@ -25,10 +25,6 @@ const query = (name: string, description: string, example?: string) =>
     .optional()
     .openapi({ param: { name, in: 'query', description }, example });
 
-const notFound = (message: string): never => {
-  throw new ApiError('not_found', message);
-};
-
 export const constituencyRoutes = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
 
 const listRoute = createRoute({
