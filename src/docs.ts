@@ -5,7 +5,7 @@ export const OPENAPI_CONFIG = {
     title: 'Desh API',
     version: '1.0.0',
     description: [
-      "Free, open, bilingual API for Bangladesh: reference data (geo, banks, universities, holidays, hotlines), Bangla language tools, validators, and calculators (income tax, VAT, loans, zakat), and today's gold, market and fuel prices.",
+      "Free, open, bilingual API for Bangladesh: reference data (geo, banks, universities, holidays, hotlines), Bangla language tools, validators, and calculators (income tax, VAT, loans, zakat), today's gold, market and fuel prices, and mobile financial services (bKash, Nagad, Rocket, Upay, TAP).",
       '',
       '- Every response is `{ success, data, meta }`; `meta.source` and `meta.last_updated` say where the data came from.',
       '- Errors are `{ success: false, error: { code, message } }` with a matching HTTP status.',
@@ -92,6 +92,11 @@ export const OPENAPI_CONFIG = {
       name: 'Market prices',
       description:
         "Today's retail prices of essential goods in Dhaka from the Trading Corporation of Bangladesh (read live from TCB's daily spreadsheet, with English names added), and the government's monthly fuel prices.",
+    },
+    {
+      name: 'MFS',
+      description:
+        'Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariff schedules, USSD codes, transaction fee calculator and ranking comparison.',
     },
   ],
 };

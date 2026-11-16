@@ -21,6 +21,7 @@ import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
 import { marketRoutes } from './modules/market/routes';
+import { mfsRoutes } from './modules/mfs/routes';
 import { mockRoutes } from './modules/mock/routes';
 import { phoneRoutes } from './modules/phone/routes';
 import { validateRoutes } from './modules/validate/routes';
@@ -104,6 +105,13 @@ const MODULES = [
       "Today's TCB retail prices of essential goods in Dhaka, and government fuel prices",
     path: '/v1/market/prices?category=edible-oil',
   },
+  {
+    name: 'MFS',
+    description:
+      'Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariffs, USSD codes and calculator',
+    path: '/v1/mfs/providers',
+  },
+
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
@@ -148,6 +156,7 @@ app.route('/v1', bankRoutes);
 app.route('/v1', educationRoutes);
 app.route('/v1', goldRoutes);
 app.route('/v1', marketRoutes);
+app.route('/v1', mfsRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
 

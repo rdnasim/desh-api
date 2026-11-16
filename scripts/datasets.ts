@@ -25,6 +25,7 @@ import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schema
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { CommoditySchema, FuelMonthSchema } from '../src/modules/market/schemas';
+import { MfsProviderSchema } from '../src/modules/mfs/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 import { routingCheckDigitOk } from '../src/modules/validate/routing';
@@ -191,6 +192,13 @@ export const datasets: DatasetSpec[] = [
     schema: CommoditySchema,
     sortKey: (r) => r.slug,
     type: { name: 'Commodity', from: '../modules/market/schemas' },
+  },
+  {
+    key: 'mfs.providers',
+    file: 'mfs/providers.json',
+    schema: MfsProviderSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'MfsProvider', from: '../modules/mfs/schemas' },
   },
   {
     key: 'market.fuel',

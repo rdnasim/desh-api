@@ -30,8 +30,8 @@ every response**.
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 15 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays,
-  finance, mock data, banks, universities, gold & zakat, market prices
+- 16 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities, gold & zakat, market prices, MFS
+
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -112,6 +112,10 @@ curl 'https://deshapi.riadul.com/v1/fuel/prices'   # → diesel 135, octane 165,
 curl 'https://deshapi.riadul.com/v1/routing/010130065'
 # → Agrani Bank, Kachua Bazar branch, Kachua, Chandpur
 curl 'https://deshapi.riadul.com/v1/banks/sonali-bank/branches?district=cumilla'
+
+# MFS cash-out comparison & USSD codes (bKash, Nagad, Rocket, Upay, TAP)
+curl 'https://deshapi.riadul.com/v1/mfs/compare?amount=5000&action=cash-out&channel=app'
+curl 'https://deshapi.riadul.com/v1/mfs/ussd'
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -136,6 +140,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Education** | All 181 universities listed by the University Grants Commission (public, private, international, cross-border) with founding year, website, campus and contacts | [`/v1/universities?category=public`](https://deshapi.riadul.com/v1/universities?category=public) |
 | **Gold & zakat** | Today's BAJUS gold and silver prices per gram and per vori; zakat with the nisab from those prices | [`/v1/gold/prices`](https://deshapi.riadul.com/v1/gold/prices) |
 | **Market prices** | Today's TCB retail prices of essential goods in Dhaka (rice, oil, pulses, spices, fish, meat…) with week, month and year comparisons; government fuel prices | [`/v1/market/prices?category=edible-oil`](https://deshapi.riadul.com/v1/market/prices?category=edible-oil) |
+| **MFS** | Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariffs, USSD codes, cash-out calculator and comparison | [`/v1/mfs/providers`](https://deshapi.riadul.com/v1/mfs/providers) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the
 [roadmap](docs/roadmap.md).
