@@ -11,7 +11,6 @@ import {
   RiverportSignalSchema,
 } from './schemas';
 import {
-  getBanglaSeason,
   getMaritimeSignal,
   getRiverportSignal,
   listAqiCategories,
@@ -184,7 +183,7 @@ weatherRoutes.openapi(
   (c) => {
     const { value } = c.req.valid('query');
     const aqiNum = parseInt(value, 10);
-    if (isNaN(aqiNum) || aqiNum < 0) {
+    if (Number.isNaN(aqiNum) || aqiNum < 0) {
       invalid('value must be a non-negative integer');
     }
     const result = lookupAqi(aqiNum);
