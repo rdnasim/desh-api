@@ -24,7 +24,7 @@ describe('Health Service', () => {
 
     const coxsBazar = listHospitals({ district: 'coxs-bazar' });
     expect(coxsBazar).toHaveLength(1);
-    expect(coxsBazar[0].slug).toBe('coxs-bazar-sadar-hospital');
+    expect(coxsBazar[0]!.slug).toBe('coxs-bazar-sadar-hospital');
   });
 
   it('filters hospitals by type', () => {
@@ -40,9 +40,9 @@ describe('Health Service', () => {
   it('filters by search query matching name, address, or services', () => {
     const cardiac = listHospitals({ q: 'cardiac' });
     expect(cardiac.length).toBeGreaterThan(0);
-    expect(
-      cardiac.some((h) => h.slug === 'national-institute-of-cardiovascular-diseases'),
-    ).toBe(true);
+    expect(cardiac.some((h) => h.slug === 'national-institute-of-cardiovascular-diseases')).toBe(
+      true,
+    );
 
     const burn = listHospitals({ q: 'burn' });
     expect(burn.length).toBeGreaterThan(0);

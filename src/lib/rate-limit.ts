@@ -1,12 +1,12 @@
 import type { MiddlewareHandler } from 'hono';
 import type { AppEnv } from '../env';
 import {
-  TIERS,
   type ApiKeyRecord,
   type ApiKeyTier,
   checkAndIncrementQuota,
   extractApiKey,
   resolveApiKey,
+  TIERS,
 } from './api-key';
 import { ApiError } from './errors';
 

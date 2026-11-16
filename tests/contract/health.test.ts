@@ -1,9 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
-import {
-  EmergencyHealthSummarySchema,
-  HospitalSchema,
-} from '../../src/modules/health/schemas';
+import { EmergencyHealthSummarySchema, HospitalSchema } from '../../src/modules/health/schemas';
 import { call, expectError, expectOk } from './helpers';
 
 describe('GET /v1/health/hospitals', () => {
@@ -26,8 +23,16 @@ describe('GET /v1/health/hospitals', () => {
   });
 
   it('rejects invalid parameters with 400', async () => {
-    await expectError(await call('/v1/health/hospitals?division=atlantis'), 400, 'invalid_parameter');
-    await expectError(await call('/v1/health/hospitals?district=nowhere'), 400, 'invalid_parameter');
+    await expectError(
+      await call('/v1/health/hospitals?division=atlantis'),
+      400,
+      'invalid_parameter',
+    );
+    await expectError(
+      await call('/v1/health/hospitals?district=nowhere'),
+      400,
+      'invalid_parameter',
+    );
     await expectError(await call('/v1/health/hospitals?type=clinic'), 400, 'invalid_parameter');
   });
 });

@@ -1,14 +1,9 @@
-import districtOffsetsData from '../../generated/prayer.district-offsets';
 import geoDistrictsData from '../../generated/geo.districts';
+import districtOffsetsData from '../../generated/prayer.district-offsets';
 import { toBanglaDigits, toLatinDigits } from '../../lib/digits';
 import { toBanglaDate, todayInDhaka } from '../bangla/calendar';
 import { computeSolarTimes, type SolarTimes } from './astronomy';
-import type {
-  DailyPrayerTimes,
-  DistrictOffset,
-  RamadanDay,
-  RamadanSchedule,
-} from './schemas';
+import type { DailyPrayerTimes, DistrictOffset, RamadanDay, RamadanSchedule } from './schemas';
 
 const DHAKA_LAT = 23.8103;
 const DHAKA_LON = 90.4125;
@@ -44,23 +39,16 @@ const HIJRI_MONTHS_BN = [
 ] as const;
 
 export const districtOffsets: DistrictOffset[] = districtOffsetsData;
-const offsetsBySlug = new Map<string, DistrictOffset>(
-  districtOffsets.map((d) => [d.slug, d]),
-);
-const geoDistrictsBySlug = new Map(
-  geoDistrictsData.map((d) => [d.slug, d]),
-);
+const offsetsBySlug = new Map<string, DistrictOffset>(districtOffsets.map((d) => [d.slug, d]));
+const geoDistrictsBySlug = new Map(geoDistrictsData.map((d) => [d.slug, d]));
 
 export function findDistrictOffset(slugOrBbs: string): DistrictOffset | undefined {
   const key = slugOrBbs.trim().toLowerCase();
-  return (
-    offsetsBySlug.get(key) ||
-    districtOffsets.find((d) => d.bbs_code.toLowerCase() === key)
-  );
+  return offsetsBySlug.get(key) || districtOffsets.find((d) => d.bbs_code.toLowerCase() === key);
 }
 
 function adjustMinutes(timeStr: string, minutesDelta: number): string {
-  const [h, m] = timeStr.split(':').map(Number);
+  const [h = 0, m = 0] = timeStr.split(':').map(Number);
   let totalMinutes = h * 60 + m + minutesDelta;
   totalMinutes = ((totalMinutes % 1440) + 1440) % 1440;
   const hh = Math.floor(totalMinutes / 60);
@@ -69,14 +57,14 @@ function adjustMinutes(timeStr: string, minutesDelta: number): string {
 }
 
 function to12h(timeStr: string): string {
-  const [h, m] = timeStr.split(':').map(Number);
+  const [h = 0, m = 0] = timeStr.split(':').map(Number);
   const period = h >= 12 ? 'PM' : 'AM';
   const h12 = h % 12 === 0 ? 12 : h % 12;
   return `${String(h12).padStart(2, '0')}:${String(m).padStart(2, '0')} ${period}`;
 }
 
 function toBnTime(timeStr: string, isMaghribOrIftar = false): string {
-  const [h, m] = timeStr.split(':').map(Number);
+  const [h = 0, m = 0] = timeStr.split(':').map(Number);
   let periodBn = 'রাত';
   if (isMaghribOrIftar) {
     periodBn = 'সন্ধ্যা';
@@ -145,7 +133,7 @@ export function getDailyPrayerTimes(
   school: 'hanafi' | 'shafi' = 'hanafi',
 ): DailyPrayerTimes {
   const rawDate = dateIso ? toLatinDigits(dateIso.trim()) : todayInDhaka();
-  const [y, m, d] = rawDate.split('-').map(Number);
+  const [y = 2026, m = 1, d = 1] = rawDate.split('-').map(Number);
   const dateObj = new Date(Date.UTC(y, m - 1, d));
 
   const offsetInfo = findDistrictOffset(districtSlug) || findDistrictOffset('dhaka')!;
@@ -236,7 +224,7 @@ export function getRamadanSchedule(
   }
 
   const startDateIso = RAMADAN_STARTS[hijriYear] || '2026-02-18';
-  const [startY, startM, startD] = startDateIso.split('-').map(Number);
+  const [startY = 2026, startM = 2, startD = 18] = startDateIso.split('-').map(Number);
   const offsetInfo = findDistrictOffset(districtSlug) || findDistrictOffset('dhaka')!;
 
   const days: RamadanDay[] = [];
@@ -272,8 +260,7 @@ export function getRamadanSchedule(
     },
     disclaimer_en:
       'Dates are tentative and subject to the sighting of the moon (Islamic Foundation Bangladesh).',
-    disclaimer_bn:
-      'তারিখ চাঁদ দেখার ওপর নির্ভরশীল (ইসলামিক ফাউন্ডেশন বাংলাদেশ)।',
+    disclaimer_bn: 'তারিখ চাঁদ দেখার ওপর নির্ভরশীল (ইসলামিক ফাউন্ডেশন বাংলাদেশ)।',
     days,
   };
 }

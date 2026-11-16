@@ -71,7 +71,10 @@ weatherRoutes.openapi(
       params: z.object({
         number: z
           .string()
-          .openapi({ param: { name: 'number', in: 'path', description: 'Signal number (1 to 11) or slug' }, example: '10' }),
+          .openapi({
+            param: { name: 'number', in: 'path', description: 'Signal number (1 to 11) or slug' },
+            example: '10',
+          }),
       }),
     },
     responses: responses(MaritimeSignalSchema, 'Maritime signal details'),
@@ -117,7 +120,14 @@ weatherRoutes.openapi(
       params: z.object({
         number: z
           .string()
-          .openapi({ param: { name: 'number', in: 'path', description: 'Riverport signal number (1 to 4) or slug' }, example: '2' }),
+          .openapi({
+            param: {
+              name: 'number',
+              in: 'path',
+              description: 'Riverport signal number (1 to 4) or slug',
+            },
+            example: '2',
+          }),
       }),
     },
     responses: responses(RiverportSignalSchema, 'Riverport signal details'),
@@ -163,7 +173,10 @@ weatherRoutes.openapi(
       query: z.object({
         value: z
           .string()
-          .openapi({ param: { name: 'value', in: 'query', description: 'Numeric AQI value (0 to 500+)' }, example: '165' }),
+          .openapi({
+            param: { name: 'value', in: 'query', description: 'Numeric AQI value (0 to 500+)' },
+            example: '165',
+          }),
       }),
     },
     responses: responses(AqiLookupResponseSchema, 'AQI classification and advisory'),

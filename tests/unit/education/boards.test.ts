@@ -22,11 +22,11 @@ describe('Education Boards', () => {
 
     const madrasah = listEducationBoards({ type: 'madrasah' });
     expect(madrasah).toHaveLength(1);
-    expect(madrasah[0].code).toBe('MAD');
+    expect(madrasah[0]!.code).toBe('MAD');
 
     const technical = listEducationBoards({ type: 'technical' });
     expect(technical).toHaveLength(1);
-    expect(technical[0].code).toBe('TEC');
+    expect(technical[0]!.code).toBe('TEC');
   });
 
   it('filters boards by district jurisdiction', () => {
@@ -64,10 +64,10 @@ describe('Grading Scale & GPA Calculation', () => {
     const tiers = listGradingScale();
     expect(tiers).toHaveLength(7);
     expect(tiers.map((t) => t.grade)).toEqual(['A+', 'A', 'A-', 'B', 'C', 'D', 'F']);
-    expect(tiers[0].min_marks).toBe(80);
-    expect(tiers[0].grade_point).toBe(5.0);
-    expect(tiers[6].grade).toBe('F');
-    expect(tiers[6].grade_point).toBe(0.0);
+    expect(tiers[0]!.min_marks).toBe(80);
+    expect(tiers[0]!.grade_point).toBe(5.0);
+    expect(tiers[6]!.grade).toBe('F');
+    expect(tiers[6]!.grade_point).toBe(0.0);
   });
 
   it('looks up grade by marks', () => {

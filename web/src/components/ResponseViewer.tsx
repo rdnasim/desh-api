@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Copy, Check, Terminal, FileCode, Layers } from 'lucide-react';
+import { Check, Copy, FileCode, Layers, Terminal } from 'lucide-react';
+import type React from 'react';
+import { useState } from 'react';
 
 interface ResponseViewerProps {
   status: number | null;
@@ -46,7 +47,10 @@ export const ResponseViewer: React.FC<ResponseViewerProps> = ({
               {status} {statusText || (isSuccess ? 'OK' : 'Error')}
             </span>
           ) : (
-            <span className="status-badge" style={{ background: 'var(--border-subtle)', color: 'var(--text-muted)' }}>
+            <span
+              className="status-badge"
+              style={{ background: 'var(--border-subtle)', color: 'var(--text-muted)' }}
+            >
               Ready to Send
             </span>
           )}
@@ -65,7 +69,14 @@ export const ResponseViewer: React.FC<ResponseViewerProps> = ({
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <div style={{ display: 'flex', background: 'var(--bg-surface)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+          <div
+            style={{
+              display: 'flex',
+              background: 'var(--bg-surface)',
+              borderRadius: 'var(--radius-sm)',
+              border: '1px solid var(--border-subtle)',
+            }}
+          >
             <button
               onClick={() => setActiveTab('json')}
               style={{
@@ -124,8 +135,8 @@ export const ResponseViewer: React.FC<ResponseViewerProps> = ({
                 activeTab === 'curl'
                   ? curlCommand
                   : activeTab === 'headers'
-                  ? JSON.stringify(headers, null, 2)
-                  : jsonString;
+                    ? JSON.stringify(headers, null, 2)
+                    : jsonString;
               copyToClipboard(textToCopy);
             }}
             className="btn"

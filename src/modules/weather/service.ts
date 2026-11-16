@@ -78,7 +78,8 @@ export function lookupAqi(aqiValue: number): AqiLookupResponse | undefined {
     recEn = 'Wear a protective N95 mask outdoors; sensitive groups should stay indoors.';
     recBn = 'বাইরে এন৯৫ মাস্ক পরিধান করুন; সংবেদনশীল ব্যক্তিদের ঘরের ভেতরে থাকা উচিত।';
   } else if (category.slug === 'very-unhealthy') {
-    recEn = 'Avoid all outdoor exertion; keep indoor windows closed and run air purifiers if available.';
+    recEn =
+      'Avoid all outdoor exertion; keep indoor windows closed and run air purifiers if available.';
     recBn = 'বাইরে চলাচল যথাসম্ভব পরিহার করুন; ঘরের জানালা বন্ধ রাখুন এবং মাস্ক ব্যবহার করুন।';
   } else if (category.slug === 'hazardous') {
     recEn = 'Emergency conditions: remain indoors with windows shut; strictly avoid going outside.';

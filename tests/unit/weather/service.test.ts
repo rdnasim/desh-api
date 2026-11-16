@@ -110,8 +110,8 @@ describe('Bangla Seasons (ষড়ঋতু)', () => {
       'sheet',
       'basanta',
     ]);
-    expect(seasons[0].bangla_months).toEqual(['বৈশাখ', 'জ্যৈষ্ঠ']);
-    expect(seasons[5].bangla_months).toEqual(['ফাল্গুন', 'চৈত্র']);
+    expect(seasons[0]!.bangla_months).toEqual(['বৈশাখ', 'জ্যৈষ্ঠ']);
+    expect(seasons[5]!.bangla_months).toEqual(['ফাল্গুন', 'চৈত্র']);
   });
 
   it('gets a season by order or slug', () => {

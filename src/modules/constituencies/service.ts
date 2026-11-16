@@ -1,7 +1,7 @@
-import { toLatinDigits } from '../../lib/digits';
-import { normalizeForSearch, slugifyLatin } from '../../lib/normalize';
 import constituenciesData from '../../generated/geo.constituencies';
 import districtsData from '../../generated/geo.districts';
+import { toLatinDigits } from '../../lib/digits';
+import { normalizeForSearch, slugifyLatin } from '../../lib/normalize';
 import type { Constituency, DistrictConstituencies } from './schemas';
 
 export interface ListConstituenciesOptions {
@@ -70,10 +70,9 @@ export function getConstituency(identifier: string | number): Constituency | nul
   );
 }
 
-export function listDistrictBreakdowns(options: {
-  division?: string;
-  district?: string;
-} = {}): DistrictConstituencies[] {
+export function listDistrictBreakdowns(
+  options: { division?: string; district?: string } = {},
+): DistrictConstituencies[] {
   const districtMap = new Map<string, (typeof districtsData)[number]>();
   for (const d of districtsData) {
     districtMap.set(d.slug, d);

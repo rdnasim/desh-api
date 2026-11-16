@@ -1,10 +1,10 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import {
-  TIERS,
   checkAndIncrementQuota,
   clearDailyQuotaStore,
   extractApiKey,
   resolveApiKey,
+  TIERS,
 } from '../../../src/lib/api-key';
 
 describe('API Key and Quota Service', () => {

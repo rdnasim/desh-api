@@ -1,6 +1,10 @@
 :root {
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Bengali", "Nirmala UI", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans Bengali", "Nirmala UI", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
 
   /* Theme: Light */
   --bg-primary: #f8fafc;
@@ -12,8 +16,8 @@
   --text-main: #0f172a;
   --text-muted: #64748b;
   --text-subtle: #94a3b8;
-  
-  --crimson: #E4002B;
+
+  --crimson: #e4002b;
   --crimson-hover: #b80022;
   --crimson-subtle: #ffe4e6;
   --crimson-border: #fecdd3;
@@ -72,7 +76,10 @@ body {
   min-height: 100vh;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
 }
 
@@ -356,7 +363,8 @@ button, input, select, textarea {
   transition: all 0.15s;
 }
 
-.module-pill:hover, .module-pill.active {
+.module-pill:hover,
+.module-pill.active {
   background: var(--crimson);
   color: #ffffff;
   border-color: var(--crimson);

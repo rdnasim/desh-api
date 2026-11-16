@@ -10,13 +10,7 @@ import {
   MetroStationStatusSchema,
   MetroTimetableSchema,
 } from './schemas';
-import {
-  calculateFare,
-  getMetroLine,
-  getStation,
-  getTimetable,
-  listStations,
-} from './service';
+import { calculateFare, getMetroLine, getStation, getTimetable, listStations } from './service';
 
 const tags = ['Dhaka Metro Rail'];
 const meta = () => metaFor(['metro.stations']);
@@ -91,7 +85,10 @@ metroRoutes.openapi(
       params: z.object({
         slug: z
           .string()
-          .openapi({ param: { name: 'slug', in: 'path', description: 'Station slug or code' }, example: 'uttara-north' }),
+          .openapi({
+            param: { name: 'slug', in: 'path', description: 'Station slug or code' },
+            example: 'uttara-north',
+          }),
       }),
     },
     responses: responses(MetroStationSchema, 'Station details'),
@@ -119,10 +116,16 @@ metroRoutes.openapi(
       query: z.object({
         from: z
           .string()
-          .openapi({ param: { name: 'from', in: 'query', description: 'Origin station slug or code' }, example: 'uttara-north' }),
+          .openapi({
+            param: { name: 'from', in: 'query', description: 'Origin station slug or code' },
+            example: 'uttara-north',
+          }),
         to: z
           .string()
-          .openapi({ param: { name: 'to', in: 'query', description: 'Destination station slug or code' }, example: 'motijheel' }),
+          .openapi({
+            param: { name: 'to', in: 'query', description: 'Destination station slug or code' },
+            example: 'motijheel',
+          }),
       }),
     },
     responses: responses(MetroFareCalculationSchema, 'Fare calculation and travel summary'),

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Moon, Sun, BookOpen, Github, Server } from 'lucide-react';
+import { BookOpen, Github, Moon, Server, Sun } from 'lucide-react';
+import type React from 'react';
 
 interface NavbarProps {
   theme: 'light' | 'dark';
@@ -8,12 +8,7 @@ interface NavbarProps {
   setBaseUrl: (url: string) => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({
-  theme,
-  toggleTheme,
-  baseUrl,
-  setBaseUrl,
-}) => {
+export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, baseUrl, setBaseUrl }) => {
   return (
     <header className="navbar">
       <div className="nav-container">

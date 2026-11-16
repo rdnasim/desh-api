@@ -159,7 +159,6 @@ const MODULES = [
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
   },
-
 ];
 
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });

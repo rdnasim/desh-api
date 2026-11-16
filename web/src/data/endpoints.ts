@@ -19,6 +19,8 @@ export const API_MODULES = [
   'Land',
   'Mock Data',
   'Validation',
+  'Constituencies',
+  'Bangladesh Railway',
   'Developer',
 ] as const;
 
@@ -32,7 +34,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/developer/quota',
     defaultPathWithParams: '/v1/developer/quota',
-    description: 'Returns your current tier, remaining daily requests, per-minute rate limit, and reset time.',
+    description:
+      'Returns your current tier, remaining daily requests, per-minute rate limit, and reset time.',
   },
 
   // Geo
@@ -44,7 +47,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/divisions',
     defaultPathWithParams: '/v1/divisions',
-    description: 'List all 8 administrative divisions of Bangladesh with English and Bengali names and coordinates.',
+    description:
+      'List all 8 administrative divisions of Bangladesh with English and Bengali names and coordinates.',
   },
   {
     id: 'geo-districts',
@@ -54,9 +58,14 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/districts',
     defaultPathWithParams: '/v1/districts?division=chattogram',
-    description: 'Get all 64 districts or filter by division (dhaka, chattogram, rajshahi, khulna, barishal, sylhet, rangpur, mymensingh).',
+    description:
+      'Get all 64 districts or filter by division (dhaka, chattogram, rajshahi, khulna, barishal, sylhet, rangpur, mymensingh).',
     params: [
-      { name: 'division', type: 'string', description: 'Division slug (e.g. chattogram, dhaka, sylhet)' },
+      {
+        name: 'division',
+        type: 'string',
+        description: 'Division slug (e.g. chattogram, dhaka, sylhet)',
+      },
     ],
   },
   {
@@ -69,7 +78,13 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/districts/cumilla',
     description: 'Get detailed facts, BBS geocode, and upazila count for a specific district.',
     params: [
-      { name: 'slug', type: 'string', required: true, default: 'cumilla', description: 'District slug or legacy spelling (e.g. cumilla, bogura)' },
+      {
+        name: 'slug',
+        type: 'string',
+        required: true,
+        default: 'cumilla',
+        description: 'District slug or legacy spelling (e.g. cumilla, bogura)',
+      },
     ],
   },
   {
@@ -82,7 +97,11 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/upazilas?district=cumilla',
     description: 'List 495+ upazilas in Bangladesh, filterable by district.',
     params: [
-      { name: 'district', type: 'string', description: 'District slug (e.g. cumilla, chattogram, sylhet)' },
+      {
+        name: 'district',
+        type: 'string',
+        description: 'District slug (e.g. cumilla, chattogram, sylhet)',
+      },
     ],
   },
   {
@@ -93,9 +112,16 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/postcodes/:code',
     defaultPathWithParams: '/v1/postcodes/1205',
-    description: 'Find postal office name (English & Bengali), district, and upazila by 4-digit postcode.',
+    description:
+      'Find postal office name (English & Bengali), district, and upazila by 4-digit postcode.',
     params: [
-      { name: 'code', type: 'string', required: true, default: '1205', description: '4-digit postal code (e.g. 1205, 3500)' },
+      {
+        name: 'code',
+        type: 'string',
+        required: true,
+        default: '1205',
+        description: '4-digit postal code (e.g. 1205, 3500)',
+      },
     ],
   },
   {
@@ -106,9 +132,16 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/search',
     defaultPathWithParams: '/v1/search?q=comilla',
-    description: 'Fast fuzzy search across divisions, districts, upazilas, and unions with English and Bangla spelling support.',
+    description:
+      'Fast fuzzy search across divisions, districts, upazilas, and unions with English and Bangla spelling support.',
     params: [
-      { name: 'q', type: 'string', required: true, default: 'comilla', description: 'Search query in English or Bangla' },
+      {
+        name: 'q',
+        type: 'string',
+        required: true,
+        default: 'comilla',
+        description: 'Search query in English or Bangla',
+      },
     ],
   },
 
@@ -121,9 +154,15 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/prayer/times',
     defaultPathWithParams: '/v1/prayer/times?district=dhaka',
-    description: 'Astronomical Islamic prayer times for Fajr, Dhuhr, Asr, Maghrib, Isha, Sunrise & Iftar for all 64 districts.',
+    description:
+      'Astronomical Islamic prayer times for Fajr, Dhuhr, Asr, Maghrib, Isha, Sunrise & Iftar for all 64 districts.',
     params: [
-      { name: 'district', type: 'string', default: 'dhaka', description: 'District slug (e.g. dhaka, sylhet, rajshahi)' },
+      {
+        name: 'district',
+        type: 'string',
+        default: 'dhaka',
+        description: 'District slug (e.g. dhaka, sylhet, rajshahi)',
+      },
       { name: 'date', type: 'string', description: 'YYYY-MM-DD (defaults to today)' },
     ],
   },
@@ -135,10 +174,9 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/prayer/ramadan',
     defaultPathWithParams: '/v1/prayer/ramadan?district=dhaka',
-    description: 'Complete 30-day Ramadan calendar with Islamic Foundation Bangladesh Sehri and Iftar cutoffs.',
-    params: [
-      { name: 'district', type: 'string', default: 'dhaka', description: 'District slug' },
-    ],
+    description:
+      'Complete 30-day Ramadan calendar with Islamic Foundation Bangladesh Sehri and Iftar cutoffs.',
+    params: [{ name: 'district', type: 'string', default: 'dhaka', description: 'District slug' }],
   },
 
   // Dhaka Metro
@@ -150,7 +188,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/metro/stations',
     defaultPathWithParams: '/v1/metro/stations',
-    description: 'Official list of 16 MRT Line-6 stations with GPS coordinates, transfer hubs, and train schedules.',
+    description:
+      'Official list of 16 MRT Line-6 stations with GPS coordinates, transfer hubs, and train schedules.',
   },
   {
     id: 'metro-fare',
@@ -160,10 +199,23 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/metro/fare',
     defaultPathWithParams: '/v1/metro/fare?from=uttara-north&to=motijheel',
-    description: 'Calculate official single-journey ticket and Rapid Pass / MRT Pass discounted fare (10% off).',
+    description:
+      'Calculate official single-journey ticket and Rapid Pass / MRT Pass discounted fare (10% off).',
     params: [
-      { name: 'from', type: 'string', required: true, default: 'uttara-north', description: 'Origin station slug' },
-      { name: 'to', type: 'string', required: true, default: 'motijheel', description: 'Destination station slug' },
+      {
+        name: 'from',
+        type: 'string',
+        required: true,
+        default: 'uttara-north',
+        description: 'Origin station slug',
+      },
+      {
+        name: 'to',
+        type: 'string',
+        required: true,
+        default: 'motijheel',
+        description: 'Destination station slug',
+      },
     ],
   },
 
@@ -176,7 +228,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/gold/prices',
     defaultPathWithParams: '/v1/gold/prices',
-    description: 'Real-time gold and silver prices from Bangladesh Jewellers Association (22K, 21K, 18K, Traditional) per gram and vori.',
+    description:
+      'Real-time gold and silver prices from Bangladesh Jewellers Association (22K, 21K, 18K, Traditional) per gram and vori.',
   },
   {
     id: 'gold-zakat',
@@ -186,9 +239,16 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/zakat',
     defaultPathWithParams: '/v1/zakat?wealth=1000000',
-    description: 'Calculate Islamic Zakat (2.5%) evaluated against live Nisab threshold (7.5 vori gold or 52.5 vori silver).',
+    description:
+      'Calculate Islamic Zakat (2.5%) evaluated against live Nisab threshold (7.5 vori gold or 52.5 vori silver).',
     params: [
-      { name: 'wealth', type: 'number', required: true, default: '1000000', description: 'Net zakatable cash/wealth in BDT' },
+      {
+        name: 'wealth',
+        type: 'number',
+        required: true,
+        default: '1000000',
+        description: 'Net zakatable cash/wealth in BDT',
+      },
     ],
   },
 
@@ -201,9 +261,15 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/market/prices',
     defaultPathWithParams: '/v1/market/prices?category=edible-oil',
-    description: 'Daily retail commodity prices in Dhaka from Trading Corporation of Bangladesh (rice, oil, lentils, onions, beef, fish).',
+    description:
+      'Daily retail commodity prices in Dhaka from Trading Corporation of Bangladesh (rice, oil, lentils, onions, beef, fish).',
     params: [
-      { name: 'category', type: 'string', default: 'edible-oil', description: 'Category (rice, edible-oil, pulses, spices, meat-fish)' },
+      {
+        name: 'category',
+        type: 'string',
+        default: 'edible-oil',
+        description: 'Category (rice, edible-oil, pulses, spices, meat-fish)',
+      },
     ],
   },
   {
@@ -214,7 +280,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/fuel/prices',
     defaultPathWithParams: '/v1/fuel/prices',
-    description: 'Current BPC automated monthly fuel tariff for Diesel, Kerosene, Octane, and Petrol.',
+    description:
+      'Current BPC automated monthly fuel tariff for Diesel, Kerosene, Octane, and Petrol.',
   },
 
   // Bangla Toolkit
@@ -228,7 +295,13 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/bangla/taka-in-words?amount=1250.50',
     description: 'Convert numeric amounts into formal Bengali currency words with Poisha support.',
     params: [
-      { name: 'amount', type: 'number', required: true, default: '1250.50', description: 'Amount in Taka (supports decimals and Bangla numerals)' },
+      {
+        name: 'amount',
+        type: 'number',
+        required: true,
+        default: '1250.50',
+        description: 'Amount in Taka (supports decimals and Bangla numerals)',
+      },
     ],
   },
   {
@@ -241,7 +314,13 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/bangla/num-to-words?n=987654321',
     description: 'Convert numbers up to 100 Crore into standard Bengali words.',
     params: [
-      { name: 'n', type: 'number', required: true, default: '987654321', description: 'Number to convert' },
+      {
+        name: 'n',
+        type: 'number',
+        required: true,
+        default: '987654321',
+        description: 'Number to convert',
+      },
     ],
   },
   {
@@ -252,7 +331,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/bangla/date',
     defaultPathWithParams: '/v1/bangla/date',
-    description: 'Get today or convert any Gregorian date to revised Bengali Academy calendar (Bongabdo, season, month).',
+    description:
+      'Get today or convert any Gregorian date to revised Bengali Academy calendar (Bongabdo, season, month).',
     params: [
       { name: 'date', type: 'string', description: 'YYYY-MM-DD (defaults to current date)' },
     ],
@@ -267,7 +347,13 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/bangla/transliterate?text=ami%20banglay%20gaan%20gai',
     description: 'Phonetic English typing to clean Unicode Bangla conversion powered by Avro.',
     params: [
-      { name: 'text', type: 'string', required: true, default: 'ami banglay gaan gai', description: 'Phonetic text' },
+      {
+        name: 'text',
+        type: 'string',
+        required: true,
+        default: 'ami banglay gaan gai',
+        description: 'Phonetic text',
+      },
     ],
   },
 
@@ -279,12 +365,31 @@ export const ENDPOINTS: ApiEndpoint[] = [
     nameBn: 'আয়কর হিসাব (অর্থ আইন ২০২৬)',
     method: 'GET',
     path: '/v1/finance/income-tax',
-    defaultPathWithParams: '/v1/finance/income-tax?income=1200000&employment_income=1200000&taxpayer=general',
-    description: 'Calculate progressive income tax slabs, rebates, and minimum tax for general, female, senior, and disabled taxpayers.',
+    defaultPathWithParams:
+      '/v1/finance/income-tax?income=1200000&employment_income=1200000&taxpayer=general',
+    description:
+      'Calculate progressive income tax slabs, rebates, and minimum tax for general, female, senior, and disabled taxpayers.',
     params: [
-      { name: 'income', type: 'number', required: true, default: '1200000', description: 'Total gross annual income' },
-      { name: 'employment_income', type: 'number', default: '1200000', description: 'Salaried employment income' },
-      { name: 'taxpayer', type: 'string', default: 'general', options: ['general', 'female', 'senior', 'disabled', 'gazetted_freedom_fighter'], description: 'Taxpayer category' },
+      {
+        name: 'income',
+        type: 'number',
+        required: true,
+        default: '1200000',
+        description: 'Total gross annual income',
+      },
+      {
+        name: 'employment_income',
+        type: 'number',
+        default: '1200000',
+        description: 'Salaried employment income',
+      },
+      {
+        name: 'taxpayer',
+        type: 'string',
+        default: 'general',
+        options: ['general', 'female', 'senior', 'disabled', 'gazetted_freedom_fighter'],
+        description: 'Taxpayer category',
+      },
     ],
   },
   {
@@ -297,9 +402,27 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/finance/emi?principal=1000000&rate=9&months=60',
     description: 'Calculate Equated Monthly Installment (EMI), total interest, and amortization.',
     params: [
-      { name: 'principal', type: 'number', required: true, default: '1000000', description: 'Loan principal in BDT' },
-      { name: 'rate', type: 'number', required: true, default: '9', description: 'Annual interest rate (%)' },
-      { name: 'months', type: 'number', required: true, default: '60', description: 'Tenure in months' },
+      {
+        name: 'principal',
+        type: 'number',
+        required: true,
+        default: '1000000',
+        description: 'Loan principal in BDT',
+      },
+      {
+        name: 'rate',
+        type: 'number',
+        required: true,
+        default: '9',
+        description: 'Annual interest rate (%)',
+      },
+      {
+        name: 'months',
+        type: 'number',
+        required: true,
+        default: '60',
+        description: 'Tenure in months',
+      },
     ],
   },
 
@@ -312,9 +435,16 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/routing/:routing',
     defaultPathWithParams: '/v1/routing/010130065',
-    description: 'Inspect bank name, branch, district, and check digit validity for any Bangladesh BEFTN routing code.',
+    description:
+      'Inspect bank name, branch, district, and check digit validity for any Bangladesh BEFTN routing code.',
     params: [
-      { name: 'routing', type: 'string', required: true, default: '010130065', description: '9-digit BEFTN routing number' },
+      {
+        name: 'routing',
+        type: 'string',
+        required: true,
+        default: '010130065',
+        description: '9-digit BEFTN routing number',
+      },
     ],
   },
   {
@@ -325,9 +455,20 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/banks',
     defaultPathWithParams: '/v1/banks?category=state_owned_commercial',
-    description: 'All 61 scheduled commercial, specialized, and foreign banks registered with Bangladesh Bank.',
+    description:
+      'All 61 scheduled commercial, specialized, and foreign banks registered with Bangladesh Bank.',
     params: [
-      { name: 'category', type: 'string', options: ['state_owned_commercial', 'private_commercial', 'foreign_commercial', 'specialized'], description: 'Bank category' },
+      {
+        name: 'category',
+        type: 'string',
+        options: [
+          'state_owned_commercial',
+          'private_commercial',
+          'foreign_commercial',
+          'specialized',
+        ],
+        description: 'Bank category',
+      },
     ],
   },
 
@@ -340,7 +481,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/education/boards',
     defaultPathWithParams: '/v1/education/boards',
-    description: 'All 9 General BISE, Madrasah, and Technical education boards, jurisdictional districts, and contact portals.',
+    description:
+      'All 9 General BISE, Madrasah, and Technical education boards, jurisdictional districts, and contact portals.',
   },
   {
     id: 'edu-universities',
@@ -352,7 +494,13 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/universities?category=public',
     description: 'Public, private, and international universities approved by UGC Bangladesh.',
     params: [
-      { name: 'category', type: 'string', default: 'public', options: ['public', 'private', 'international'], description: 'University category' },
+      {
+        name: 'category',
+        type: 'string',
+        default: 'public',
+        options: ['public', 'private', 'international'],
+        description: 'University category',
+      },
     ],
   },
 
@@ -365,7 +513,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/health/emergency',
     defaultPathWithParams: '/v1/health/emergency',
-    description: '24-hour trauma, burn, pediatric, cardiac, and general emergency hotlines and hospital directories.',
+    description:
+      '24-hour trauma, burn, pediatric, cardiac, and general emergency hotlines and hospital directories.',
   },
   {
     id: 'health-hospitals',
@@ -375,9 +524,16 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/health/hospitals',
     defaultPathWithParams: '/v1/health/hospitals?type=medical_college',
-    description: 'Directory of major government hospitals with bed capacity and GPS coordinates from DGHS.',
+    description:
+      'Directory of major government hospitals with bed capacity and GPS coordinates from DGHS.',
     params: [
-      { name: 'type', type: 'string', default: 'medical_college', options: ['specialized_institute', 'medical_college', 'district_sadar', 'general_hospital'], description: 'Hospital type' },
+      {
+        name: 'type',
+        type: 'string',
+        default: 'medical_college',
+        options: ['specialized_institute', 'medical_college', 'district_sadar', 'general_hospital'],
+        description: 'Hospital type',
+      },
     ],
   },
 
@@ -390,7 +546,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/weather/signals/maritime',
     defaultPathWithParams: '/v1/weather/signals/maritime',
-    description: 'Official BMD 1-11 cautionary, warning, danger, and great danger signal meanings and protocols.',
+    description:
+      'Official BMD 1-11 cautionary, warning, danger, and great danger signal meanings and protocols.',
   },
   {
     id: 'weather-seasons',
@@ -400,7 +557,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/weather/seasons',
     defaultPathWithParams: '/v1/weather/seasons',
-    description: 'Grishma, Barsha, Sharat, Hemanta, Sheet, and Basanta with corresponding Bengali and Gregorian months.',
+    description:
+      'Grishma, Barsha, Sharat, Hemanta, Sheet, and Basanta with corresponding Bengali and Gregorian months.',
   },
 
   // Holidays
@@ -412,10 +570,9 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/holidays',
     defaultPathWithParams: '/v1/holidays?year=2027',
-    description: 'Official Ministry of Public Administration holiday calendar with executive-order, general, and optional religious dates.',
-    params: [
-      { name: 'year', type: 'number', default: '2027', description: 'Year (e.g. 2027)' },
-    ],
+    description:
+      'Official Ministry of Public Administration holiday calendar with executive-order, general, and optional religious dates.',
+    params: [{ name: 'year', type: 'number', default: '2027', description: 'Year (e.g. 2027)' }],
   },
   {
     id: 'holidays-check',
@@ -427,7 +584,13 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/is-holiday?date=2027-12-16',
     description: 'Quick check if a specific date is a weekend or official government holiday.',
     params: [
-      { name: 'date', type: 'string', required: true, default: '2027-12-16', description: 'Date in YYYY-MM-DD' },
+      {
+        name: 'date',
+        type: 'string',
+        required: true,
+        default: '2027-12-16',
+        description: 'Date in YYYY-MM-DD',
+      },
     ],
   },
 
@@ -440,7 +603,8 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/mfs/providers',
     defaultPathWithParams: '/v1/mfs/providers',
-    description: 'Registered mobile financial service providers (bKash, Nagad, Rocket, Upay, TAP) with official USSD codes.',
+    description:
+      'Registered mobile financial service providers (bKash, Nagad, Rocket, Upay, TAP) with official USSD codes.',
   },
   {
     id: 'mfs-compare',
@@ -450,11 +614,30 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/mfs/compare',
     defaultPathWithParams: '/v1/mfs/compare?amount=5000&action=cash-out&channel=app',
-    description: 'Compare exact transaction fee rankings across bKash, Nagad, Rocket, and Upay for app vs USSD.',
+    description:
+      'Compare exact transaction fee rankings across bKash, Nagad, Rocket, and Upay for app vs USSD.',
     params: [
-      { name: 'amount', type: 'number', required: true, default: '5000', description: 'Transaction amount' },
-      { name: 'action', type: 'string', default: 'cash-out', options: ['cash-out', 'send-money'], description: 'Transaction action' },
-      { name: 'channel', type: 'string', default: 'app', options: ['app', 'ussd'], description: 'Channel used' },
+      {
+        name: 'amount',
+        type: 'number',
+        required: true,
+        default: '5000',
+        description: 'Transaction amount',
+      },
+      {
+        name: 'action',
+        type: 'string',
+        default: 'cash-out',
+        options: ['cash-out', 'send-money'],
+        description: 'Transaction action',
+      },
+      {
+        name: 'channel',
+        type: 'string',
+        default: 'app',
+        options: ['app', 'ussd'],
+        description: 'Channel used',
+      },
     ],
   },
 
@@ -467,9 +650,16 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/hotlines',
     defaultPathWithParams: '/v1/hotlines?category=emergency',
-    description: 'Verified official emergency hotlines (999, 333, 109, 106, 16122) with verification timestamps.',
+    description:
+      'Verified official emergency hotlines (999, 333, 109, 106, 16122) with verification timestamps.',
     params: [
-      { name: 'category', type: 'string', default: 'emergency', options: ['emergency', 'helpline', 'women_children', 'legal_aid', 'disaster'], description: 'Category' },
+      {
+        name: 'category',
+        type: 'string',
+        default: 'emergency',
+        options: ['emergency', 'helpline', 'women_children', 'legal_aid', 'disaster'],
+        description: 'Category',
+      },
     ],
   },
 
@@ -482,11 +672,26 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/land/convert',
     defaultPathWithParams: '/v1/land/convert?value=5&from=katha&to=sqft',
-    description: 'Convert between Katha, Bigha, Shotok / Decimal, Acre, Square Feet, and Square Metres.',
+    description:
+      'Convert between Katha, Bigha, Shotok / Decimal, Acre, Square Feet, and Square Metres.',
     params: [
       { name: 'value', type: 'number', required: true, default: '5', description: 'Numeric value' },
-      { name: 'from', type: 'string', required: true, default: 'katha', options: ['katha', 'bigha', 'decimal', 'acre', 'sqft', 'sqm'], description: 'From unit' },
-      { name: 'to', type: 'string', required: true, default: 'sqft', options: ['sqft', 'katha', 'bigha', 'decimal', 'acre', 'sqm'], description: 'To unit' },
+      {
+        name: 'from',
+        type: 'string',
+        required: true,
+        default: 'katha',
+        options: ['katha', 'bigha', 'decimal', 'acre', 'sqft', 'sqm'],
+        description: 'From unit',
+      },
+      {
+        name: 'to',
+        type: 'string',
+        required: true,
+        default: 'sqft',
+        options: ['sqft', 'katha', 'bigha', 'decimal', 'acre', 'sqm'],
+        description: 'To unit',
+      },
     ],
   },
 
@@ -499,10 +704,16 @@ export const ENDPOINTS: ApiEndpoint[] = [
     method: 'GET',
     path: '/v1/mock/people',
     defaultPathWithParams: '/v1/mock/people?count=3&seed=demo',
-    description: 'Generate synthetic developer test profiles with realistic Bengali names, format-valid phones, NIDs, and addresses.',
+    description:
+      'Generate synthetic developer test profiles with realistic Bengali names, format-valid phones, NIDs, and addresses.',
     params: [
       { name: 'count', type: 'number', default: '3', description: 'Number of records (max 50)' },
-      { name: 'seed', type: 'string', default: 'demo', description: 'Seed for deterministic repeatable mock data' },
+      {
+        name: 'seed',
+        type: 'string',
+        default: 'demo',
+        description: 'Seed for deterministic repeatable mock data',
+      },
     ],
   },
 
@@ -517,7 +728,83 @@ export const ENDPOINTS: ApiEndpoint[] = [
     defaultPathWithParams: '/v1/validate/postcode/1205',
     description: 'Validates 4-digit postcodes in Latin or Bengali digits.',
     params: [
-      { name: 'code', type: 'string', required: true, default: '1205', description: 'Postcode to check' },
+      {
+        name: 'code',
+        type: 'string',
+        required: true,
+        default: '1205',
+        description: 'Postcode to check',
+      },
     ],
+  },
+
+  // Constituencies
+  {
+    id: 'constituencies-list',
+    module: 'Constituencies',
+    name: '300 Parliamentary Constituencies (Jatiya Sangsad)',
+    nameBn: '৩০০ জাতীয় সংসদীয় আসন ও সীমানা',
+    method: 'GET',
+    path: '/v1/constituencies',
+    defaultPathWithParams: '/v1/constituencies?district=dhaka',
+    description:
+      'All 300 single-member territorial constituencies of Jatiya Sangsad with official seat numbers (1-300), English/Bengali names, and administrative boundaries.',
+    params: [
+      {
+        name: 'district',
+        type: 'string',
+        default: 'dhaka',
+        description: 'Filter by district slug (e.g. dhaka, cumilla, sylhet)',
+      },
+      { name: 'division', type: 'string', description: 'Filter by division slug' },
+    ],
+  },
+  {
+    id: 'constituencies-single',
+    module: 'Constituencies',
+    name: 'Constituency by Number or Slug',
+    nameBn: 'নির্দিষ্ট সংসদীয় আসনের বিস্তারিত',
+    method: 'GET',
+    path: '/v1/constituencies/:id',
+    defaultPathWithParams: '/v1/constituencies/dhaka-10',
+    description: 'Lookup constituency details by seat number (e.g. 183) or slug (e.g. dhaka-10).',
+    params: [
+      {
+        name: 'id',
+        type: 'string',
+        required: true,
+        default: 'dhaka-10',
+        description: 'Seat number (1-300) or slug (e.g. dhaka-10)',
+      },
+    ],
+  },
+
+  // Bangladesh Railway
+  {
+    id: 'railway-trains',
+    module: 'Bangladesh Railway',
+    name: 'Intercity Express Trains & Schedules',
+    nameBn: 'আন্তঃনগর এক্সপ্রেস ট্রেন ও সাপ্তাহিক বন্ধ',
+    method: 'GET',
+    path: '/v1/railway/trains',
+    defaultPathWithParams: '/v1/railway/trains?origin=dhaka',
+    description:
+      'Bangladesh Railway intercity train directory with train numbers, origin, destination, departure/arrival times, and off-days.',
+    params: [
+      { name: 'origin', type: 'string', default: 'dhaka', description: 'Origin city or station' },
+      { name: 'destination', type: 'string', description: 'Destination city or station' },
+    ],
+  },
+  {
+    id: 'railway-stations',
+    module: 'Bangladesh Railway',
+    name: 'Major Railway Junction Stations',
+    nameBn: 'প্রধান রেলওয়ে জংশন ও স্টেশন',
+    method: 'GET',
+    path: '/v1/railway/stations',
+    defaultPathWithParams: '/v1/railway/stations?division=dhaka',
+    description:
+      'Major railway stations and junctions with division, gauge (broad, meter, dual), and station codes.',
+    params: [{ name: 'division', type: 'string', default: 'dhaka', description: 'Division slug' }],
   },
 ];

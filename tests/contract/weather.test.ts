@@ -58,8 +58,8 @@ describe('GET /v1/weather/aqi/categories and /v1/weather/aqi/lookup', () => {
     const res = await call('/v1/weather/aqi/categories');
     const body = await expectOk(res, z.array(AqiCategorySchema));
     expect(body.data).toHaveLength(6);
-    expect(body.data[0].slug).toBe('good');
-    expect(body.data[5].slug).toBe('hazardous');
+    expect(body.data?.[0]?.slug).toBe('good');
+    expect(body.data?.[5]?.slug).toBe('hazardous');
   });
 
   it('converts AQI score to category and advisory', async () => {
@@ -81,7 +81,7 @@ describe('GET /v1/weather/seasons', () => {
     const res = await call('/v1/weather/seasons');
     const body = await expectOk(res, z.array(BanglaSeasonSchema));
     expect(body.data).toHaveLength(6);
-    expect(body.data[0].slug).toBe('grishma');
-    expect(body.data[5].slug).toBe('basanta');
+    expect(body.data?.[0]?.slug).toBe('grishma');
+    expect(body.data?.[5]?.slug).toBe('basanta');
   });
 });

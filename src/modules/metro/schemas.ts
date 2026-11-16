@@ -66,9 +66,13 @@ export const MetroFareCalculationSchema = z
     discount_percent: z.number().openapi({ example: 10 }),
     currency: z.literal('BDT').openapi({ example: 'BDT' }),
     concessions: z.object({
-      children_under_3ft: z.string().openapi({ example: 'Free when accompanied by a paying guardian' }),
+      children_under_3ft: z
+        .string()
+        .openapi({ example: 'Free when accompanied by a paying guardian' }),
       freedom_fighters: z.string().openapi({ example: 'Free travel with valid certificate' }),
-      persons_with_disabilities: z.string().openapi({ example: 'Special concession on Rapid Pass' }),
+      persons_with_disabilities: z
+        .string()
+        .openapi({ example: 'Special concession on Rapid Pass' }),
     }),
   })
   .openapi('MetroFareCalculation', {

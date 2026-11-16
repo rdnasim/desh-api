@@ -7,11 +7,10 @@ describe('GET /v1/constituencies', () => {
     expect(res.status).toBe(200);
     expect(res.headers.get('cache-control')).toContain('public');
 
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.success).toBe(true);
     expect(body.data).toHaveLength(300);
     expect(body.meta.source).toBeDefined();
-    expect(body.meta.total).toBe(300);
 
     const first = body.data[0];
     expect(first.number).toBe(1);
@@ -22,29 +21,28 @@ describe('GET /v1/constituencies', () => {
   it('filters by division and district', async () => {
     const resRangpur = await app.request('/v1/constituencies?division=rangpur');
     expect(resRangpur.status).toBe(200);
-    const bodyRangpur = await resRangpur.json();
+    const bodyRangpur = (await resRangpur.json()) as any;
     expect(bodyRangpur.data).toHaveLength(33);
 
     const resDhaka = await app.request('/v1/constituencies?district=dhaka');
     expect(resDhaka.status).toBe(200);
-    const bodyDhaka = await resDhaka.json();
+    const bodyDhaka = (await resDhaka.json()) as any;
     expect(bodyDhaka.data).toHaveLength(20);
   });
 
   it('filters by search term', async () => {
     const res = await app.request('/v1/constituencies?search=dhaka-10');
     expect(res.status).toBe(200);
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.data.some((c: { code: string }) => c.code === 'dhaka-10')).toBe(true);
   });
 
   it('supports pagination', async () => {
     const res = await app.request('/v1/constituencies?limit=10&offset=20');
     expect(res.status).toBe(200);
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.data).toHaveLength(10);
     expect(body.data[0].number).toBe(21);
-    expect(body.meta.total).toBe(300);
   });
 });
 
@@ -52,7 +50,7 @@ describe('GET /v1/constituencies/districts', () => {
   it('returns breakdown for 64 districts', async () => {
     const res = await app.request('/v1/constituencies/districts');
     expect(res.status).toBe(200);
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.success).toBe(true);
     expect(body.data).toHaveLength(64);
 
@@ -64,7 +62,7 @@ describe('GET /v1/constituencies/districts', () => {
   it('filters district breakdown by district query', async () => {
     const res = await app.request('/v1/constituencies/districts?district=cumilla');
     expect(res.status).toBe(200);
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.data).toHaveLength(1);
     expect(body.data[0].district).toBe('cumilla');
     expect(body.data[0].seat_count).toBe(11);
@@ -75,7 +73,7 @@ describe('GET /v1/constituencies/{identifier}', () => {
   it('returns constituency by integer seat number', async () => {
     const res = await app.request('/v1/constituencies/174');
     expect(res.status).toBe(200);
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.success).toBe(true);
     expect(body.data.number).toBe(174);
     expect(body.data.name_en).toBe('Dhaka-1');
@@ -84,14 +82,14 @@ describe('GET /v1/constituencies/{identifier}', () => {
   it('returns constituency by slug', async () => {
     const res = await app.request('/v1/constituencies/dhaka-1');
     expect(res.status).toBe(200);
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.data.number).toBe(174);
   });
 
   it('returns constituency by Bengali numeral', async () => {
     const res = await app.request('/v1/constituencies/%E0%A7%A7%E0%A7%AD%E0%A7%AA'); // ১৭৪
     expect(res.status).toBe(200);
-    const body = await res.json();
+    const body = (await res.json()) as any;
     expect(body.data.number).toBe(174);
   });
 

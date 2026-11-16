@@ -156,10 +156,13 @@ prayerRoutes.openapi(
     path: '/prayer/offsets/{district}',
     tags,
     summary: 'District prayer time offset details',
-    description: 'Returns the official IFB minute offset for a single district by slug or BBS code.',
+    description:
+      'Returns the official IFB minute offset for a single district by slug or BBS code.',
     request: {
       params: z.object({
-        district: z.string().openapi({ param: { name: 'district', in: 'path' }, example: 'sylhet' }),
+        district: z
+          .string()
+          .openapi({ param: { name: 'district', in: 'path' }, example: 'sylhet' }),
       }),
     },
     responses: responses(DistrictOffsetSchema, 'District offset details'),

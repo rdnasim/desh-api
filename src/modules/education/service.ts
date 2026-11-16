@@ -166,4 +166,3 @@ export function calculateGpa(input: CalculateGpaRequest): CalculateGpaResponse {
     subjects: evaluations,
   };
 }
-

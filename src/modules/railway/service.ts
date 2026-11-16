@@ -1,14 +1,9 @@
+import type { z } from 'zod';
 import classes from '../../generated/railway.classes';
 import stations from '../../generated/railway.stations';
 import trains from '../../generated/railway.trains';
 import { normalizeForSearch } from '../../lib/normalize';
-import type {
-  RailwayClass,
-  RailwayClassCodeSchema,
-  RailwayStation,
-  RailwayTrain,
-} from './schemas';
-import type { z } from 'zod';
+import type { RailwayClass, RailwayClassCodeSchema, RailwayStation, RailwayTrain } from './schemas';
 
 const sortedTrains = [...trains].sort((a, b) => parseInt(a.number, 10) - parseInt(b.number, 10));
 const trainByNumber = new Map(trains.map((t) => [t.number, t]));

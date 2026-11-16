@@ -58,12 +58,16 @@ export const EducationBoardTypeSchema = z
 
 export const EducationBoardSchema = z
   .object({
-    slug: SlugSchema.openapi({ description: 'Canonical board slug (e.g. dhaka, chattogram, madrasah)' }),
+    slug: SlugSchema.openapi({
+      description: 'Canonical board slug (e.g. dhaka, chattogram, madrasah)',
+    }),
     code: z
       .string()
       .min(3)
       .max(3)
-      .openapi({ description: '3-letter board code used in exam portals (e.g. DHA, CHI, RAJ, MAD, TEC)' }),
+      .openapi({
+        description: '3-letter board code used in exam portals (e.g. DHA, CHI, RAJ, MAD, TEC)',
+      }),
     name_en: NameEnSchema,
     name_bn: NameBnSchema,
     short_name_en: z.string().min(1),
@@ -75,7 +79,8 @@ export const EducationBoardSchema = z
     phone: z.string().min(1),
     email: z.string().email(),
     districts: z.array(SlugSchema).openapi({
-      description: 'District slugs under this board’s territorial jurisdiction (all 64 for madrasah/technical)',
+      description:
+        'District slugs under this board’s territorial jurisdiction (all 64 for madrasah/technical)',
     }),
   })
   .openapi('EducationBoard', {
@@ -113,7 +118,11 @@ export const EducationBoardSchema = z
 export const GradeTierSchema = z
   .object({
     slug: SlugSchema,
-    grade: z.string().min(1).max(2).openapi({ description: 'Letter grade: A+, A, A-, B, C, D, or F' }),
+    grade: z
+      .string()
+      .min(1)
+      .max(2)
+      .openapi({ description: 'Letter grade: A+, A, A-, B, C, D, or F' }),
     grade_point: z.number().min(0).max(5).openapi({ description: 'Grade Point on 5.0 scale' }),
     min_marks: z.number().int().min(0).max(100),
     max_marks: z.number().int().min(0).max(100),
@@ -140,7 +149,10 @@ export const SubjectScoreInputSchema = z
       .min(0)
       .max(100)
       .optional()
-      .openapi({ description: 'Exam mark (0-100). Either marks or grade_point is required', example: 85 }),
+      .openapi({
+        description: 'Exam mark (0-100). Either marks or grade_point is required',
+        example: 85,
+      }),
     grade_point: z
       .number()
       .min(0)
@@ -185,7 +197,9 @@ export const SubjectEvaluationSchema = z
 export const CalculateGpaResponseSchema = z
   .object({
     gpa: z.number().min(0).max(5).openapi({ description: 'Final GPA (capped at 5.00)' }),
-    letter_grade: z.string().openapi({ description: 'Overall letter grade (A+, A, A-, B, C, D, F)' }),
+    letter_grade: z
+      .string()
+      .openapi({ description: 'Overall letter grade (A+, A, A-, B, C, D, F)' }),
     passed: z.boolean().openapi({ description: 'True if no mandatory subject failed (grade F)' }),
     golden_a_plus: z
       .boolean()
@@ -261,4 +275,4 @@ export type EducationBoard = z.infer<typeof EducationBoardSchema>;
 export type GradeTier = z.infer<typeof GradeTierSchema>;
 export type CalculateGpaRequest = z.infer<typeof CalculateGpaRequestSchema>;
 export type CalculateGpaResponse = z.infer<typeof CalculateGpaResponseSchema>;
-
+export type SubjectEvaluation = CalculateGpaResponse['subjects'][number];

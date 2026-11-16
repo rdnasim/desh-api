@@ -31,13 +31,7 @@ function julianDay(year: number, month: number, day: number): number {
   }
   const a = Math.floor(year / 100);
   const b = 2 - a + Math.floor(a / 4);
-  return (
-    Math.floor(365.25 * (year + 4716)) +
-    Math.floor(30.6001 * (month + 1)) +
-    day +
-    b -
-    1524.5
-  );
+  return Math.floor(365.25 * (year + 4716)) + Math.floor(30.6001 * (month + 1)) + day + b - 1524.5;
 }
 
 function sunPosition(jd: number): { declination: number; equationOfTime: number } {

@@ -185,9 +185,7 @@ educationRoutes.openapi(
       'Resolves education boards using official 3-letter result codes (e.g. DHA, CHI, RAJ, MAD, TEC) or board slugs (e.g. dhaka, chattogram, madrasah).',
     request: {
       params: z.object({
-        code: z
-          .string()
-          .openapi({ param: { name: 'code', in: 'path' }, example: 'DHA' }),
+        code: z.string().openapi({ param: { name: 'code', in: 'path' }, example: 'DHA' }),
       }),
     },
     responses: responses(EducationBoardSchema, 'Education board details'),
@@ -233,7 +231,10 @@ educationRoutes.openapi(
       query: z.object({
         marks: z
           .string()
-          .openapi({ param: { name: 'marks', in: 'query', description: 'Marks obtained (0-100)' }, example: '85' }),
+          .openapi({
+            param: { name: 'marks', in: 'query', description: 'Marks obtained (0-100)' },
+            example: '85',
+          }),
       }),
     },
     responses: responses(GradeTierSchema, 'Grade tier for marks'),
@@ -282,4 +283,3 @@ educationRoutes.openapi(
     return ok(c, result, gradeMeta());
   },
 );
-

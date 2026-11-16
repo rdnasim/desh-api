@@ -88,8 +88,7 @@ export const AqiCategorySchema = z
         'সকলের স্বাস্থ্য ঝুঁকি দেখা দিতে পারে; সংবেদনশীল জনগোষ্ঠীর ক্ষেত্রে মারাত্মক স্বাস্থ্য সমস্যা হতে পারে।',
       cautionary_statement_en:
         'Active children and adults, and people with respiratory disease, such as asthma, should avoid prolonged outdoor exertion.',
-      cautionary_statement_bn:
-        'শিশু, বয়োবৃদ্ধ ও শ্বাসকষ্টের রোগীদের দীর্ঘ সময় বাইরে পরিশ্রম পরিহার করা উচিত।',
+      cautionary_statement_bn: 'শিশু, বয়োবৃদ্ধ ও শ্বাসকষ্টের রোগীদের দীর্ঘ সময় বাইরে পরিশ্রম পরিহার করা উচিত।',
     },
   });
 
@@ -144,9 +143,8 @@ export const BanglaSeasonSchema = z
       bangla_months: ['বৈশাখ', 'জ্যৈষ্ঠ'],
       approx_gregorian_span: 'Mid-April to Mid-June',
       description_en:
-        "The hottest season with Kalbaishakhi thunderstorms and tropical fruit harvests.",
-      description_bn:
-        'তীব্র রোদ ও গরমের ঋতু; কালবৈশাখী ঝড় এবং মৌসুমি ফলের সমাহারে সমৃদ্ধ মধুমাস।',
+        'The hottest season with Kalbaishakhi thunderstorms and tropical fruit harvests.',
+      description_bn: 'তীব্র রোদ ও গরমের ঋতু; কালবৈশাখী ঝড় এবং মৌসুমি ফলের সমাহারে সমৃদ্ধ মধুমাস।',
     },
   });
 

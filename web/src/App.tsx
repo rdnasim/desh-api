@@ -1,11 +1,12 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Search, Send } from 'lucide-react';
-import { Navbar } from './components/Navbar';
-import { UsageBanner } from './components/UsageBanner';
-import { ResponseViewer } from './components/ResponseViewer';
+import type React from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { HistoryDrawer } from './components/HistoryDrawer';
-import { ENDPOINTS, API_MODULES } from './data/endpoints';
-import type { ApiEndpoint, RequestHistoryItem, HttpMethod } from './types';
+import { Navbar } from './components/Navbar';
+import { ResponseViewer } from './components/ResponseViewer';
+import { UsageBanner } from './components/UsageBanner';
+import { API_MODULES, ENDPOINTS } from './data/endpoints';
+import type { ApiEndpoint, HttpMethod, RequestHistoryItem } from './types';
 
 export const App: React.FC = () => {
   // Theme state
@@ -183,7 +184,9 @@ export const App: React.FC = () => {
       setSizeBytes(0);
       setResponse({
         error: 'Network Error',
-        message: err.message || 'Failed to reach API endpoint. Please check your internet connection or CORS.',
+        message:
+          err.message ||
+          'Failed to reach API endpoint. Please check your internet connection or CORS.',
       });
       setResponseHeaders({});
     } finally {
@@ -214,12 +217,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      <Navbar
-        theme={theme}
-        toggleTheme={toggleTheme}
-        baseUrl={baseUrl}
-        setBaseUrl={setBaseUrl}
-      />
+      <Navbar theme={theme} toggleTheme={toggleTheme} baseUrl={baseUrl} setBaseUrl={setBaseUrl} />
 
       <main className="main-content">
         {/* Real-time Usage & Quota Banner */}
@@ -261,7 +259,14 @@ export const App: React.FC = () => {
             {/* Endpoint List */}
             <div className="endpoint-list">
               {filteredEndpoints.length === 0 ? (
-                <div style={{ textAlign: 'center', padding: '24px 0', color: 'var(--text-muted)', fontSize: 13 }}>
+                <div
+                  style={{
+                    textAlign: 'center',
+                    padding: '24px 0',
+                    color: 'var(--text-muted)',
+                    fontSize: 13,
+                  }}
+                >
                   No endpoints matched your search.
                 </div>
               ) : (
@@ -272,16 +277,12 @@ export const App: React.FC = () => {
                     onClick={() => handleSelectEndpoint(ep)}
                   >
                     <div className="endpoint-top">
-                      <span className={`method-tag ${ep.method.toLowerCase()}`}>
-                        {ep.method}
-                      </span>
+                      <span className={`method-tag ${ep.method.toLowerCase()}`}>{ep.method}</span>
                       <span className="endpoint-path">{ep.path}</span>
                     </div>
                     <div className="endpoint-title">{ep.name}</div>
                     {ep.nameBn && (
-                      <div style={{ fontSize: 12, color: 'var(--text-subtle)' }}>
-                        {ep.nameBn}
-                      </div>
+                      <div style={{ fontSize: 12, color: 'var(--text-subtle)' }}>{ep.nameBn}</div>
                     )}
                   </div>
                 ))
@@ -424,10 +425,15 @@ export const App: React.FC = () => {
 
       <footer className="footer">
         <p>
-          <strong>Desh API Explorer</strong> · Open public API for Bangladesh reference data, Bangla language tools, and calculators.
+          <strong>Desh API Explorer</strong> · Open public API for Bangladesh reference data, Bangla
+          language tools, and calculators.
         </p>
         <p style={{ marginTop: 6, fontSize: 13, opacity: 0.8 }}>
-          Hosted at <a href="https://deshapi.riadul.com" target="_blank" rel="noreferrer">https://deshapi.riadul.com</a> · Code MIT · Data CC BY 4.0
+          Hosted at{' '}
+          <a href="https://deshapi.riadul.com" target="_blank" rel="noreferrer">
+            https://deshapi.riadul.com
+          </a>{' '}
+          · Code MIT · Data CC BY 4.0
         </p>
       </footer>
     </div>

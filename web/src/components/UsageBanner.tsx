@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { Activity, RefreshCw, Key, Clock } from 'lucide-react';
+import { Activity, Clock, Key, RefreshCw } from 'lucide-react';
+import type React from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import type { DeveloperQuota } from '../types';
 
 interface UsageBannerProps {
@@ -168,9 +169,7 @@ export const UsageBanner: React.FC<UsageBannerProps> = ({
 
             <div className="stat-card">
               <div className="stat-label">Requests Used Today</div>
-              <div className="stat-value">
-                {quota ? quota.daily_used.toLocaleString() : '0'}
-              </div>
+              <div className="stat-value">{quota ? quota.daily_used.toLocaleString() : '0'}</div>
               <div className="stat-subtext">{usedPercentage}% of daily allocation</div>
             </div>
 
@@ -179,7 +178,8 @@ export const UsageBanner: React.FC<UsageBannerProps> = ({
               <div className="stat-value">
                 {quota?.rate_limit_per_minute ?? 120}
                 <span style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-muted)' }}>
-                  {' '}req/min
+                  {' '}
+                  req/min
                 </span>
               </div>
               <div className="stat-subtext">Automatic IP burst protection</div>
@@ -208,7 +208,10 @@ export const UsageBanner: React.FC<UsageBannerProps> = ({
               <span>{usedPercentage}% used</span>
             </div>
             <div className="progress-container">
-              <div className={getProgressClass()} style={{ width: `${Math.max(usedPercentage, 1)}%` }} />
+              <div
+                className={getProgressClass()}
+                style={{ width: `${Math.max(usedPercentage, 1)}%` }}
+              />
             </div>
           </div>
         </>

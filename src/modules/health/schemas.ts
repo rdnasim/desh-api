@@ -20,7 +20,10 @@ export const HospitalSchema = z
       .min(6)
       .max(10)
       .optional()
-      .openapi({ description: 'Official DGHS 8-digit health facility identifier code', example: '10000033' }),
+      .openapi({
+        description: 'Official DGHS 8-digit health facility identifier code',
+        example: '10000033',
+      }),
     name_en: NameEnSchema.openapi({ example: 'Dhaka Medical College Hospital' }),
     name_bn: NameBnSchema.openapi({ example: 'ঢাকা মেডিকেল কলেজ হাসপাতাল' }),
     type: HospitalTypeSchema,
@@ -126,7 +129,8 @@ export const EmergencyHealthSummarySchema = z
       trauma_and_burn_centers: [
         {
           slug: 'national-institute-of-traumatology-and-orthopaedic-rehabilitation',
-          name_en: 'National Institute of Traumatology & Orthopaedic Rehabilitation (Pangu Hospital)',
+          name_en:
+            'National Institute of Traumatology & Orthopaedic Rehabilitation (Pangu Hospital)',
           name_bn: 'জাতীয় অর্থোপেডিক হাসপাতাল ও পুনর্বাসন প্রতিষ্ঠান',
           division: 'dhaka',
           emergency_phone: '+880-2-9114075',

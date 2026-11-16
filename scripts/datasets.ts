@@ -27,8 +27,8 @@ import {
   UnionSchema,
   UpazilaSchema,
 } from '../src/modules/geo/schemas';
-import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schemas';
 import { HospitalSchema } from '../src/modules/health/schemas';
+import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schemas';
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { CommoditySchema, FuelMonthSchema } from '../src/modules/market/schemas';

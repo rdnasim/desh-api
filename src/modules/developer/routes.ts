@@ -2,7 +2,7 @@ import { createRoute, OpenAPIHono } from '@hono/zod-openapi';
 import type { AppEnv } from '../../env';
 import { TIERS } from '../../lib/api-key';
 import { noStore } from '../../lib/cache';
-import { envelope, ErrorSchema, ok, staticMeta } from '../../lib/envelope';
+import { ErrorSchema, envelope, ok, staticMeta } from '../../lib/envelope';
 import { validationHook } from '../../lib/errors';
 import { DeveloperQuotaSchema } from './schemas';
 

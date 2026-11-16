@@ -4,16 +4,8 @@ import { cachePublic } from '../../lib/cache';
 import { ErrorSchema, envelope, metaFor, ok } from '../../lib/envelope';
 import { ApiError, validationHook } from '../../lib/errors';
 import { getDistrict, getDivision } from '../geo/service';
-import {
-  EmergencyHealthSummarySchema,
-  HospitalSchema,
-  HospitalTypeSchema,
-} from './schemas';
-import {
-  getEmergencyHealthSummary,
-  getHospital,
-  listHospitals,
-} from './service';
+import { EmergencyHealthSummarySchema, HospitalSchema, HospitalTypeSchema } from './schemas';
+import { getEmergencyHealthSummary, getHospital, listHospitals } from './service';
 
 const tags = ['Health'];
 const meta = () => metaFor(['health.hospitals']);
@@ -51,7 +43,11 @@ healthRoutes.openapi(
       query: z.object({
         division: query('division', 'Division slug, e.g. dhaka, chattogram', 'dhaka'),
         district: query('district', 'District slug, e.g. dhaka, coxs-bazar', 'dhaka'),
-        type: query('type', 'specialized_institute, medical_college, general_hospital, district_hospital', 'medical_college'),
+        type: query(
+          'type',
+          'specialized_institute, medical_college, general_hospital, district_hospital',
+          'medical_college',
+        ),
         has_emergency: query('has_emergency', 'true or false', 'true'),
         q: query('q', 'Search in hospital name, address or services', 'cardiac'),
       }),
@@ -108,7 +104,10 @@ healthRoutes.openapi(
       params: z.object({
         slug: z
           .string()
-          .openapi({ param: { name: 'slug', in: 'path' }, example: 'dhaka-medical-college-hospital' }),
+          .openapi({
+            param: { name: 'slug', in: 'path' },
+            example: 'dhaka-medical-college-hospital',
+          }),
       }),
     },
     responses: responses(HospitalSchema, 'Hospital details'),

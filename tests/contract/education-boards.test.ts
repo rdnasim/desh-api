@@ -29,7 +29,11 @@ describe('GET /v1/education/boards', () => {
 
   it('rejects invalid board type or district', async () => {
     await expectError(await call('/v1/education/boards?type=unknown'), 400, 'invalid_parameter');
-    await expectError(await call('/v1/education/boards?district=invalid_district'), 400, 'invalid_parameter');
+    await expectError(
+      await call('/v1/education/boards?district=invalid_district'),
+      400,
+      'invalid_parameter',
+    );
   });
 });
 
@@ -55,8 +59,8 @@ describe('GET /v1/education/grading-scale', () => {
     const res = await call('/v1/education/grading-scale');
     const body = await expectOk(res, z.array(GradeTierSchema));
     expect(body.data).toHaveLength(7);
-    expect(body.data[0].grade).toBe('A+');
-    expect(body.data[6].grade).toBe('F');
+    expect(body.data[0]!.grade).toBe('A+');
+    expect(body.data[6]!.grade).toBe('F');
   });
 });
 

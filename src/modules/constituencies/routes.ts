@@ -46,11 +46,17 @@ const listRoute = createRoute({
       limit: z
         .string()
         .optional()
-        .openapi({ param: { name: 'limit', in: 'query', description: 'Maximum items to return' }, example: '20' }),
+        .openapi({
+          param: { name: 'limit', in: 'query', description: 'Maximum items to return' },
+          example: '20',
+        }),
       offset: z
         .string()
         .optional()
-        .openapi({ param: { name: 'offset', in: 'query', description: 'Items to skip' }, example: '0' }),
+        .openapi({
+          param: { name: 'offset', in: 'query', description: 'Items to skip' },
+          example: '0',
+        }),
     }),
   },
   responses: responses(z.array(ConstituencySchema), 'List of constituencies'),
@@ -82,7 +88,11 @@ const getRoute = createRoute({
   request: {
     params: z.object({
       identifier: z.string().openapi({
-        param: { name: 'identifier', in: 'path', description: 'Seat number (1-300) or code slug (e.g. dhaka-1)' },
+        param: {
+          name: 'identifier',
+          in: 'path',
+          description: 'Seat number (1-300) or code slug (e.g. dhaka-1)',
+        },
         example: '174',
       }),
     }),
@@ -104,7 +114,7 @@ constituencyRoutes.openapi(listRoute, (c) => {
   });
 
   cachePublic(c);
-  return ok(c, result.items, { ...constituencyMeta(), total: result.total });
+  return ok(c, result.items, constituencyMeta());
 });
 
 constituencyRoutes.openapi(districtsRoute, (c) => {
@@ -122,7 +132,9 @@ constituencyRoutes.openapi(getRoute, (c) => {
   const { identifier } = c.req.valid('param');
   const item = getConstituency(identifier);
   if (!item) {
-    notFound(`Constituency '${identifier}' not found`);
+    throw new ApiError('not_found', `Constituency '${identifier}' not found`, {
+      message_bn: 'সংসদীয় আসন পাওয়া যায়নি',
+    });
   }
 
   cachePublic(c);

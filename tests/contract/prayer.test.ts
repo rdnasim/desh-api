@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { call, expectError, expectMeta } from './helpers';
+import { call, expectError } from './helpers';
 
 describe('GET /v1/prayer/times', () => {
   it('returns daily prayer times for Dhaka by default with IFB source', async () => {

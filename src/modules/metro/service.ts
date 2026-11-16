@@ -1,11 +1,6 @@
 import stationsData from '../../generated/metro.stations';
 import { toBanglaDigits } from '../../lib/digits';
-import type {
-  MetroFareCalculation,
-  MetroLine,
-  MetroStation,
-  MetroTimetable,
-} from './schemas';
+import type { MetroFareCalculation, MetroLine, MetroStation, MetroTimetable } from './schemas';
 
 export const stations: MetroStation[] = stationsData;
 
@@ -59,7 +54,10 @@ export function calculateFare(fromSlug: string, toSlug: string): MetroFareCalcul
     throw new Error('SAME_STATION: Origin and destination stations must be different');
   }
 
-  const distanceKm = Math.round(Math.abs(toStation.distance_from_start_km - fromStation.distance_from_start_km) * 100) / 100;
+  const distanceKm =
+    Math.round(
+      Math.abs(toStation.distance_from_start_km - fromStation.distance_from_start_km) * 100,
+    ) / 100;
   const stationsTraversed = Math.abs(toStation.order - fromStation.order);
 
   let singleFare = 20;
@@ -120,15 +118,7 @@ export function calculateFare(fromSlug: string, toSlug: string): MetroFareCalcul
 export function getTimetable(): MetroTimetable {
   return {
     line: 'MRT Line-6',
-    operating_days: [
-      'Saturday',
-      'Sunday',
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-    ],
+    operating_days: ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
     regular_service: {
       first_train_uttara_north: '07:10',
       last_train_uttara_north: '20:30',

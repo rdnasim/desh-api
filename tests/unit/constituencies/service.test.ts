@@ -11,13 +11,13 @@ describe('Constituencies Service', () => {
     expect(result.total).toBe(300);
     expect(result.items.length).toBe(300);
 
-    const first = result.items[0];
+    const first = result.items[0]!;
     expect(first.number).toBe(1);
     expect(first.code).toBe('panchagarh-1');
     expect(first.name_en).toBe('Panchagarh-1');
     expect(first.name_bn).toBe('পঞ্চগড়-১');
 
-    const last = result.items[299];
+    const last = result.items[299]!;
     expect(last.number).toBe(300);
     expect(last.code).toBe('bandarban');
   });
@@ -61,7 +61,7 @@ describe('Constituencies Service', () => {
   it('supports pagination with limit and offset', () => {
     const page = listConstituencies({ limit: 10, offset: 5 });
     expect(page.items.length).toBe(10);
-    expect(page.items[0].number).toBe(6);
+    expect(page.items[0]!.number).toBe(6);
     expect(page.total).toBe(300);
   });
 
@@ -117,6 +117,6 @@ describe('Constituencies Service', () => {
 
     const singleDistrict = listDistrictBreakdowns({ district: 'panchagarh' });
     expect(singleDistrict.length).toBe(1);
-    expect(singleDistrict[0].seat_count).toBe(2);
+    expect(singleDistrict[0]!.seat_count).toBe(2);
   });
 });

@@ -62,9 +62,9 @@ describe('Prayer Times & Ramadan Service', () => {
     const rajshahi = getDailyPrayerTimes('2026-03-20', 'rajshahi');
 
     // In Sylhet (-6 min), Iftar and Sehri are 6 minutes earlier than Dhaka
-    const [dhH, dhM] = dhaka.times.maghrib.split(':').map(Number);
-    const [syH, syM] = sylhet.times.maghrib.split(':').map(Number);
-    const [rjH, rjM] = rajshahi.times.maghrib.split(':').map(Number);
+    const [dhH = 0, dhM = 0] = dhaka.times.maghrib.split(':').map(Number);
+    const [syH = 0, syM = 0] = sylhet.times.maghrib.split(':').map(Number);
+    const [rjH = 0, rjM = 0] = rajshahi.times.maghrib.split(':').map(Number);
 
     const dhakaMin = dhH * 60 + dhM;
     const sylhetMin = syH * 60 + syM;
@@ -84,7 +84,7 @@ describe('Prayer Times & Ramadan Service', () => {
     expect(sched.year_hijri).toBe(1447);
     expect(sched.days).toHaveLength(30);
 
-    const day1 = sched.days[0];
+    const day1 = sched.days[0]!;
     expect(day1.day).toBe(1);
     expect(day1.sehri_cutoff).toBeDefined();
     expect(day1.iftar).toBeDefined();

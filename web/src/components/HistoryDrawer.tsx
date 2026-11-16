@@ -1,5 +1,5 @@
-import React from 'react';
-import { History, Trash2, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, History, Trash2 } from 'lucide-react';
+import type React from 'react';
 import type { RequestHistoryItem } from '../types';
 
 interface HistoryDrawerProps {
@@ -8,19 +8,24 @@ interface HistoryDrawerProps {
   onClear: () => void;
 }
 
-export const HistoryDrawer: React.FC<HistoryDrawerProps> = ({
-  history,
-  onSelect,
-  onClear,
-}) => {
+export const HistoryDrawer: React.FC<HistoryDrawerProps> = ({ history, onSelect, onClear }) => {
   if (history.length === 0) return null;
 
   return (
     <div className="card history-section">
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: 12,
+        }}
+      >
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <History size={16} style={{ color: 'var(--text-muted)' }} />
-          <h3 style={{ fontSize: 15, fontWeight: 700 }}>Recent Calls Telemetry ({history.length})</h3>
+          <h3 style={{ fontSize: 15, fontWeight: 700 }}>
+            Recent Calls Telemetry ({history.length})
+          </h3>
         </div>
         <button
           onClick={onClear}
@@ -54,7 +59,15 @@ export const HistoryDrawer: React.FC<HistoryDrawerProps> = ({
               >
                 {item.status}
               </span>
-              <span style={{ fontWeight: 600, color: 'var(--text-main)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              <span
+                style={{
+                  fontWeight: 600,
+                  color: 'var(--text-main)',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+              >
                 {item.url}
               </span>
             </div>

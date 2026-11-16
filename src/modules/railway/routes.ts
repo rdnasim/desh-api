@@ -57,7 +57,11 @@ railwayRoutes.openapi(
     request: {
       query: z.object({
         origin: query('origin', 'Origin station or city (e.g. dhaka, chattogram)', 'dhaka'),
-        destination: query('destination', 'Destination station or city (e.g. rajshahi, sylhet)', 'chattogram'),
+        destination: query(
+          'destination',
+          'Destination station or city (e.g. rajshahi, sylhet)',
+          'chattogram',
+        ),
         class: query('class', 'Coach class: SHOVON, S_CHAIR, SNIGDHA, AC_S, AC_B', 'SNIGDHA'),
         off_day: query('off_day', 'Weekly off day (e.g. Monday, Wednesday)', 'Monday'),
         q: query('q', 'Search train name, number, or intermediate halts', 'suborno'),
@@ -102,7 +106,14 @@ railwayRoutes.openapi(
       params: z.object({
         number: z
           .string()
-          .openapi({ param: { name: 'number', in: 'path', description: 'Train number (e.g. 701, 788) or slug' }, example: '701' }),
+          .openapi({
+            param: {
+              name: 'number',
+              in: 'path',
+              description: 'Train number (e.g. 701, 788) or slug',
+            },
+            example: '701',
+          }),
       }),
     },
     responses: responses(RailwayTrainSchema, 'Train route details'),
@@ -162,7 +173,11 @@ railwayRoutes.openapi(
       invalid(`district '${q.district}' is not a valid district slug`);
     }
     cachePublic(c);
-    return ok(c, listRailwayStations({ division: q.division, district: q.district, q: q.q }), stationMeta());
+    return ok(
+      c,
+      listRailwayStations({ division: q.division, district: q.district, q: q.q }),
+      stationMeta(),
+    );
   },
 );
 
@@ -178,7 +193,10 @@ railwayRoutes.openapi(
       params: z.object({
         code: z
           .string()
-          .openapi({ param: { name: 'code', in: 'path', description: 'Station code (e.g. DA, CG) or slug' }, example: 'DA' }),
+          .openapi({
+            param: { name: 'code', in: 'path', description: 'Station code (e.g. DA, CG) or slug' },
+            example: 'DA',
+          }),
       }),
     },
     responses: responses(RailwayStationSchema, 'Railway station details'),

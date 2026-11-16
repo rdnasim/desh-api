@@ -176,7 +176,8 @@ export const RamadanScheduleSchema = z
     year_gregorian: z.number().int().openapi({ example: 2026 }),
     district: PrayerDistrictSchema,
     disclaimer_en: z.string().openapi({
-      example: 'Dates are tentative and subject to the sighting of the moon (Islamic Foundation Bangladesh).',
+      example:
+        'Dates are tentative and subject to the sighting of the moon (Islamic Foundation Bangladesh).',
     }),
     disclaimer_bn: z.string().openapi({
       example: 'তারিখ চাঁদ দেখার ওপর নির্ভরশীল (ইসলামিক ফাউন্ডেশন বাংলাদেশ)।',
@@ -195,8 +196,7 @@ export const RamadanScheduleSchema = z
       },
       disclaimer_en:
         'Dates are tentative and subject to the sighting of the moon (Islamic Foundation Bangladesh).',
-      disclaimer_bn:
-        'তারিখ চাঁদ দেখার ওপর নির্ভরশীল (ইসলামিক ফাউন্ডেশন বাংলাদেশ)।',
+      disclaimer_bn: 'তারিখ চাঁদ দেখার ওপর নির্ভরশীল (ইসলামিক ফাউন্ডেশন বাংলাদেশ)।',
       days: [
         {
           day: 1,

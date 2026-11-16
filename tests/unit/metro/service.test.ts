@@ -11,10 +11,10 @@ describe('Metro Service Unit Tests', () => {
   it('lists 17 total stations in order, with 16 operational', () => {
     const all = listStations();
     expect(all).toHaveLength(17);
-    expect(all[0].slug).toBe('uttara-north');
-    expect(all[15].slug).toBe('motijheel');
-    expect(all[16].slug).toBe('kamalapur');
-    expect(all[16].status).toBe('under_construction');
+    expect(all[0]!.slug).toBe('uttara-north');
+    expect(all[15]!.slug).toBe('motijheel');
+    expect(all[16]!.slug).toBe('kamalapur');
+    expect(all[16]!.status).toBe('under_construction');
 
     const operational = listStations('operational');
     expect(operational).toHaveLength(16);
