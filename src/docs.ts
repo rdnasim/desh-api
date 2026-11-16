@@ -104,6 +104,11 @@ export const OPENAPI_CONFIG = {
         'Daily 5 prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha), Sehri cutoff, and 30-day Ramadan timetable for all 64 districts based on Islamic Foundation Bangladesh standards.',
     },
     {
+      name: 'Dhaka Metro Rail',
+      description:
+        'Dhaka Metro Rail (MRT Line-6) stations, GPS coordinates, fare calculator with 10% MRT Pass discount, timetables, and line overview from DMTCL.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

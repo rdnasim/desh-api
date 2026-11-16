@@ -279,6 +279,19 @@
     ]
   },
   {
+    "dataset": "metro.stations",
+    "source": "Dhaka Mass Transit Company Limited (DMTCL), Ministry of Road Transport and Bridges: MRT Line-6 station directory, coordinates and official fare chart",
+    "source_url": "https://dmtcl.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Dhaka Mass Transit Company Limited (DMTCL)",
+      "Road Transport and Highways Division, Bangladesh",
+      "desh-api contributors"
+    ]
+  },
+  {
     "dataset": "mfs.providers",
     "source": "Bangladesh Bank MFS regulations and official schedule of charges from licensed MFS providers (bKash, Nagad, Rocket, Upay, TAP)",
     "source_url": "https://www.bb.org.bd/en/index.php/financialactivity/mfs",

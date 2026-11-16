@@ -1,0 +1,348 @@
+[
+  {
+    "slug": "agargaon",
+    "order": 9,
+    "code": "AG",
+    "name_en": "Agargaon",
+    "name_bn": "আগারগাঁও",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7779,
+    "lon": 90.3778,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet",
+      "first_aid"
+    ],
+    "distance_from_start_km": 11.7
+  },
+  {
+    "slug": "bangladesh-secretariat",
+    "order": 15,
+    "code": "SEC",
+    "name_en": "Bangladesh Secretariat",
+    "name_bn": "বাংলাদেশ সচিবালয়",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7275,
+    "lon": 90.4062,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 18.9
+  },
+  {
+    "slug": "bijoy-sarani",
+    "order": 10,
+    "code": "BS",
+    "name_en": "Bijoy Sarani",
+    "name_bn": "বিজয় সরণি",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7663,
+    "lon": 90.3852,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 13.2
+  },
+  {
+    "slug": "dhaka-university",
+    "order": 14,
+    "code": "DU",
+    "name_en": "Dhaka University",
+    "name_bn": "ঢাকা বিশ্ববিদ্যালয়",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7314,
+    "lon": 90.3972,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 17.9
+  },
+  {
+    "slug": "farmgate",
+    "order": 11,
+    "code": "FG",
+    "name_en": "Farmgate",
+    "name_bn": "ফার্মগেট",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7571,
+    "lon": 90.3897,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 14.3
+  },
+  {
+    "slug": "kamalapur",
+    "order": 17,
+    "code": "KM",
+    "name_en": "Kamalapur",
+    "name_bn": "কমলাপুর",
+    "line": "MRT-6",
+    "status": "under_construction",
+    "lat": 23.7319,
+    "lon": 90.4258,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 21.26
+  },
+  {
+    "slug": "karwan-bazar",
+    "order": 12,
+    "code": "KB",
+    "name_en": "Karwan Bazar",
+    "name_bn": "কারওয়ান বাজার",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7505,
+    "lon": 90.3934,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 15.3
+  },
+  {
+    "slug": "kazipara",
+    "order": 7,
+    "code": "KZ",
+    "name_en": "Kazipara",
+    "name_bn": "কাজীপাড়া",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7979,
+    "lon": 90.3725,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 8.6
+  },
+  {
+    "slug": "mirpur-10",
+    "order": 6,
+    "code": "M10",
+    "name_en": "Mirpur 10",
+    "name_bn": "মিরপুর ১০",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.8073,
+    "lon": 90.3687,
+    "division": "dhaka",
+    "district": "dhaka",
+    "connecting_routes": [
+      "MRT Line-5 (Planned)"
+    ],
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 7.4
+  },
+  {
+    "slug": "mirpur-11",
+    "order": 5,
+    "code": "M11",
+    "name_en": "Mirpur 11",
+    "name_bn": "মিরপুর ১১",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.8229,
+    "lon": 90.3662,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 6.1
+  },
+  {
+    "slug": "motijheel",
+    "order": 16,
+    "code": "MJ",
+    "name_en": "Motijheel",
+    "name_bn": "মতিঝিল",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7261,
+    "lon": 90.4184,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet",
+      "customer_service"
+    ],
+    "distance_from_start_km": 20.1
+  },
+  {
+    "slug": "pallabi",
+    "order": 4,
+    "code": "PL",
+    "name_en": "Pallabi",
+    "name_bn": "পল্লবী",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.8347,
+    "lon": 90.3664,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 4.8
+  },
+  {
+    "slug": "shahbagh",
+    "order": 13,
+    "code": "SB",
+    "name_en": "Shahbagh",
+    "name_bn": "শাহবাগ",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7385,
+    "lon": 90.3957,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 16.9
+  },
+  {
+    "slug": "shewrapara",
+    "order": 8,
+    "code": "SW",
+    "name_en": "Shewrapara",
+    "name_bn": "শেওড়াপাড়া",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.7894,
+    "lon": 90.3742,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 9.6
+  },
+  {
+    "slug": "uttara-center",
+    "order": 2,
+    "code": "UC",
+    "name_en": "Uttara Center",
+    "name_bn": "উত্তরা সেন্টার",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.8642,
+    "lon": 90.3875,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 1.15
+  },
+  {
+    "slug": "uttara-north",
+    "order": 1,
+    "code": "UN",
+    "name_en": "Uttara North",
+    "name_bn": "উত্তরা উত্তর",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.8741,
+    "lon": 90.3857,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet",
+      "customer_service"
+    ],
+    "distance_from_start_km": 0
+  },
+  {
+    "slug": "uttara-south",
+    "order": 3,
+    "code": "US",
+    "name_en": "Uttara South",
+    "name_bn": "উত্তরা দক্ষিণ",
+    "line": "MRT-6",
+    "status": "operational",
+    "lat": 23.8543,
+    "lon": 90.3892,
+    "division": "dhaka",
+    "district": "dhaka",
+    "features": [
+      "elevator",
+      "escalator",
+      "ticket_vending_machine",
+      "accessible_toilet"
+    ],
+    "distance_from_start_km": 2.3
+  }
+]

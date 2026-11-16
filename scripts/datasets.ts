@@ -25,6 +25,7 @@ import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schema
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { CommoditySchema, FuelMonthSchema } from '../src/modules/market/schemas';
+import { MetroStationSchema } from '../src/modules/metro/schemas';
 import { MfsProviderSchema } from '../src/modules/mfs/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
@@ -216,6 +217,13 @@ export const datasets: DatasetSpec[] = [
     type: { name: 'FuelMonth', from: '../modules/market/schemas' },
   },
   {
+    key: 'metro.stations',
+    file: 'metro/stations.json',
+    schema: MetroStationSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'MetroStation', from: '../modules/metro/schemas' },
+  },
+  {
     key: 'mock.names',
     file: 'mock/names.json',
     schema: MockNameSchema,
@@ -283,6 +291,8 @@ export function derive(data: Record<string, any[]>): {
   };
   fk('geo.districts', 'division', 'geo.divisions');
   fk('prayer.district-offsets', 'division', 'geo.divisions');
+  fk('metro.stations', 'division', 'geo.divisions');
+  fk('metro.stations', 'district', 'geo.districts');
   fk('geo.upazilas', 'district', 'geo.districts');
   fk('geo.unions', 'upazila', 'geo.upazilas');
   fk('geo.city-corporations', 'district', 'geo.districts');

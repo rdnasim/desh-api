@@ -328,6 +328,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">15</div><h3>Market prices</h3><p>Today's retail prices of rice, oil, pulses, spices, fish, meat and more in Dhaka from the Trading Corporation of Bangladesh, with week, month and year comparisons; and government fuel prices.</p><a href="/v1/market/prices?category=edible-oil">/v1/market/prices?category=edible-oil</a></div>
         <div class="mod"><div class="k">16</div><h3>MFS</h3><p>Bangladesh Bank-licensed Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP): official tariff schedules, USSD codes, cash-out and send-money fee calculations, and provider cost comparison.</p><a href="/v1/mfs/compare?amount=5000&amp;action=cash-out&amp;channel=app">/v1/mfs/compare?amount=5000</a></div>
         <div class="mod"><div class="k">17</div><h3>Prayer &amp; Ramadan</h3><p>Daily 5 prayer times, Sehri cutoff, and 30-day Ramadan timetable for all 64 districts using Islamic Foundation Bangladesh conventions.</p><a href="/v1/prayer/times?district=dhaka">/v1/prayer/times</a></div>
+        <div class="mod"><div class="k">18</div><h3>Metro Rail</h3><p>Dhaka Metro Rail (MRT Line-6) 16 active stations, GPS coordinates, timetables, and station-to-station fare calculator with 10% MRT Pass discount.</p><a href="/v1/metro/stations">/v1/metro/stations</a></div>
       </div>
     </div>
   </div>
@@ -409,6 +410,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
           <tr><td>Fuel prices</td><td>Energy and Mineral Resources Division monthly notices (via <a href="https://bpc.gov.bd/">BPC</a>)</td></tr>
           <tr><td>MFS tariffs &amp; limits</td><td>Official schedules from <a href="https://www.bkash.com/en/charges">bKash</a>, <a href="https://nagad.com.bd/services/charges/">Nagad</a>, <a href="https://www.dutchbanglabank.com/rocket/rocket.html">Rocket</a>, <a href="https://www.upaybd.com/charges">Upay</a>, and <a href="https://www.tapnpay.com.bd/">TAP</a></td></tr>
           <tr><td>Prayer times &amp; Ramadan</td><td><a href="https://islamicfoundation.gov.bd">Islamic Foundation Bangladesh</a>, Ministry of Religious Affairs</td></tr>
+          <tr><td>Dhaka Metro Rail</td><td><a href="https://dmtcl.gov.bd">Dhaka Mass Transit Company Limited (DMTCL)</a></td></tr>
           <tr><td>Hotlines</td><td><a href="https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89">Bangladesh National Portal</a>, <a href="https://dghs.gov.bd/">DGHS</a></td></tr>
           <tr><td>GI foods</td><td><a href="https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf">Department of Patents, Designs and Trademarks</a></td></tr>
           <tr><td>Bijoy mapping</td><td>Derived from <a href="https://github.com/BinduLogic/bn-ansi-to-unicode">bn-ansi-to-unicode</a> (MIT)</td></tr>
@@ -477,6 +479,8 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'MFS USSD codes', method: 'GET', path: '/v1/mfs/ussd' },
     { label: 'Prayer times', method: 'GET', path: '/v1/prayer/times?district=dhaka' },
     { label: 'Ramadan calendar', method: 'GET', path: '/v1/prayer/ramadan?district=dhaka' },
+    { label: 'Metro fare', method: 'GET', path: '/v1/metro/fare?from=uttara-north&to=motijheel' },
+    { label: 'Metro stations', method: 'GET', path: '/v1/metro/stations' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
     { label: 'Bijoy to Unicode', method: 'POST', path: '/v1/convert/bijoy-to-unicode', body: '{"text":"Avgvi \\u2020mvbvi evsjv"}' },

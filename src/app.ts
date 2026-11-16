@@ -22,6 +22,7 @@ import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
 import { marketRoutes } from './modules/market/routes';
+import { metroRoutes } from './modules/metro/routes';
 import { mfsRoutes } from './modules/mfs/routes';
 import { mockRoutes } from './modules/mock/routes';
 import { phoneRoutes } from './modules/phone/routes';
@@ -120,6 +121,12 @@ const MODULES = [
     path: '/v1/prayer/times?district=dhaka',
   },
   {
+    name: 'Dhaka Metro Rail',
+    description:
+      'MRT Line-6 stations, GPS coordinates, timetables, and single-journey vs MRT Pass fare calculator',
+    path: '/v1/metro/stations',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -171,6 +178,7 @@ app.route('/v1', goldRoutes);
 app.route('/v1', marketRoutes);
 app.route('/v1', mfsRoutes);
 app.route('/v1', prayerRoutes);
+app.route('/v1', metroRoutes);
 app.route('/v1', developerRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);
