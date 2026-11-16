@@ -99,18 +99,25 @@ export function resolveApiKey(keyString: string, envApiKeysJson?: string): ApiKe
         ) as Record<string, unknown> | undefined;
         if (found) {
           const tier: ApiKeyTier =
-            found.tier && TIERS[found.tier as ApiKeyTier] ? found.tier : 'developer';
+            typeof found.tier === 'string' && TIERS[found.tier as ApiKeyTier]
+              ? (found.tier as ApiKeyTier)
+              : 'developer';
           const tierDefaults = TIERS[tier];
           return {
-            key: found.key,
-            name: found.name ?? `${tierDefaults.name} Key`,
+            key: String(found.key),
+            name: typeof found.name === 'string' ? found.name : `${tierDefaults.name} Key`,
             tier,
             active: found.active !== false,
             rate_limit_per_minute:
-              found.rate_limit_per_minute ?? tierDefaults.rate_limit_per_minute,
-            daily_quota: found.daily_quota ?? tierDefaults.daily_quota,
-            owner: found.owner,
-            created_at: found.created_at,
+              typeof found.rate_limit_per_minute === 'number'
+                ? found.rate_limit_per_minute
+                : tierDefaults.rate_limit_per_minute,
+            daily_quota:
+              typeof found.daily_quota === 'number'
+                ? found.daily_quota
+                : tierDefaults.daily_quota,
+            owner: typeof found.owner === 'string' ? found.owner : undefined,
+            created_at: typeof found.created_at === 'string' ? found.created_at : undefined,
           };
         }
       }
