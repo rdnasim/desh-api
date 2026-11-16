@@ -234,6 +234,18 @@
     ]
   },
   {
+    "dataset": "health.hospitals",
+    "source": "Directorate General of Health Services (DGHS) under Ministry of Health and Family Welfare (MOHFW), National Health Portal (dghs.gov.bd), and individual hospital statutory portals",
+    "source_url": "https://dghs.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Directorate General of Health Services (DGHS)",
+      "Ministry of Health and Family Welfare, Bangladesh"
+    ]
+  },
+  {
     "dataset": "holidays.holidays",
     "source": "Ministry of Public Administration holiday notifications (2027: No. 05.00.0000.175.08.0008.25-105, 5 Nov 2026)",
     "source_url": "https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740",

@@ -27,6 +27,7 @@ import {
   UpazilaSchema,
 } from '../src/modules/geo/schemas';
 import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schemas';
+import { HospitalSchema } from '../src/modules/health/schemas';
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';
 import { CommoditySchema, FuelMonthSchema } from '../src/modules/market/schemas';
@@ -129,6 +130,13 @@ export const datasets: DatasetSpec[] = [
     schema: VehicleAreaAliasSchema,
     sortKey: (r) => r.alias_bn,
     type: { name: 'VehicleAreaAlias', from: '../modules/validate/schemas' },
+  },
+  {
+    key: 'health.hospitals',
+    file: 'health/hospitals.json',
+    schema: HospitalSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'Hospital', from: '../modules/health/schemas' },
   },
   {
     key: 'hotlines',

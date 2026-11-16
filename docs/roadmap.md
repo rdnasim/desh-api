@@ -21,7 +21,8 @@ specs benefit from what was learned.
 | [`012-prayer-times`](../specs/012-prayer-times/) | 3 — Expansion | 16 Prayer Times & Ramadan Calendar | **Built**: IFB 5 daily prayers for all 64 districts, Sehri & Iftar timetable, Hijri + Bangla dates |
 | [`013-dhaka-metro`](../specs/013-dhaka-metro/) | 3 — Expansion | 17 Transport (Dhaka Metro Rail MRT-6) | **Built**: 16 stations, GPS coordinates, timetables, and single-journey vs MRT Pass fare calculator |
 | [`014-education-boards`](../specs/014-education-boards/) | 2 / 3 — Expansion | 14 Education Boards & Grading System | **Built**: 11 statutory education boards with district jurisdictions, GPA 5.0 scale & exam calculator |
-| `00x-expansion` | 3 — Expansion (months 4–6) | 18 Health, 19 Weather/AQI/Flood, 20 Constituencies, 21 Tourism, 22 NLP, SDKs (npm, PyPI, Composer) | Not started |
+| [`015-hospitals`](../specs/015-hospitals/) | 3 — Expansion | 18 Health (National Healthcare Directory) | **Built**: 23 tertiary hospitals & specialized institutes across all 8 divisions, bed counts, emergency lines |
+| `00x-expansion` | 3 — Expansion (months 4–6) | 19 Weather/AQI/Flood, 20 Constituencies, 21 Tourism, 22 NLP, SDKs (npm, PyPI, Composer) | Not started |
 | `00x-ecosystem` | 4 — Ecosystem (6+ months) | Playground, bots, browser extension, form widgets, WordPress/Laravel plugins, Sheets add-on, dashboard, CLI | Not started |
 
 ## Open follow-ups

@@ -1,0 +1,652 @@
+[
+  {
+    "slug": "bangabandhu-sheikh-mujib-medical-university",
+    "name_en": "Bangabandhu Sheikh Mujib Medical University",
+    "name_bn": "বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয়",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1998,
+    "bed_capacity": 1900,
+    "has_emergency_24h": true,
+    "phone": "+880-2-55165606",
+    "emergency_phone": "+880-2-55165611",
+    "email": "registrar@bsmmu.edu.bd",
+    "website": "https://bsmmu.ac.bd",
+    "address": "Shahbag, Dhaka-1000",
+    "coordinates": {
+      "latitude": 23.7389,
+      "longitude": 90.3957
+    },
+    "services": [
+      "Emergency & Casualty",
+      "Super Specialized Hospital",
+      "Cardiology",
+      "Neurology",
+      "Nephrology & Dialysis",
+      "Oncology",
+      "ICU & CCU",
+      "Organ Transplantation"
+    ]
+  },
+  {
+    "slug": "bangladesh-institute-of-tropical-and-infectious-diseases",
+    "name_en": "Bangladesh Institute of Tropical and Infectious Diseases",
+    "name_bn": "বাংলাদেশ ইনস্টিটিউট অব ট্রপিক্যাল অ্যান্ড ইনফেকশাস ডিজিজেস",
+    "type": "specialized_institute",
+    "division": "chattogram",
+    "district": "chattogram",
+    "established": 2013,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-31-2780430",
+    "emergency_phone": "+880-31-2780431",
+    "email": "bitidctg@gmail.com",
+    "website": "http://bitid.gov.bd",
+    "address": "Foujdarhat, Sitakunda, Chattogram",
+    "coordinates": {
+      "latitude": 22.4217,
+      "longitude": 91.7582
+    },
+    "services": [
+      "Infectious Diseases",
+      "Tropical Medicine",
+      "Isolation Units",
+      "Virology Laboratory",
+      "Emergency Care"
+    ]
+  },
+  {
+    "slug": "chattogram-medical-college-hospital",
+    "name_en": "Chattogram Medical College Hospital",
+    "name_bn": "চট্টগ্রাম মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "chattogram",
+    "district": "chattogram",
+    "established": 1957,
+    "bed_capacity": 2200,
+    "has_emergency_24h": true,
+    "phone": "+880-31-619400",
+    "emergency_phone": "+880-31-619401",
+    "email": "cmch@hospi.dghs.gov.bd",
+    "website": "https://cmch.gov.bd",
+    "address": "57 K.B. Fazlul Kader Road, Panchlaish, Chattogram-4203",
+    "coordinates": {
+      "latitude": 22.3592,
+      "longitude": 91.8286
+    },
+    "services": [
+      "Emergency & Trauma",
+      "Burn & Plastic Surgery",
+      "Cardiology & CCU",
+      "Nephrology & Dialysis",
+      "Pediatrics & NICU",
+      "Orthopedics",
+      "ICU"
+    ]
+  },
+  {
+    "slug": "coxs-bazar-sadar-hospital",
+    "name_en": "Cox's Bazar 250 Bed District Sadar Hospital",
+    "name_bn": "কক্সবাজার ২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "coxs-bazar",
+    "established": 1963,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-341-63806",
+    "emergency_phone": "+880-341-63806",
+    "email": "coxsbazar@hospi.dghs.gov.bd",
+    "website": "http://hospital.coxsbazar.gov.bd",
+    "address": "Hospital Road, Cox's Bazar Sadar, Cox's Bazar",
+    "coordinates": {
+      "latitude": 21.4398,
+      "longitude": 91.9765
+    },
+    "services": [
+      "Emergency & Casualty",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics",
+      "Maternity Care",
+      "Blood Bank"
+    ]
+  },
+  {
+    "slug": "dhaka-medical-college-hospital",
+    "name_en": "Dhaka Medical College Hospital",
+    "name_bn": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1946,
+    "bed_capacity": 2600,
+    "has_emergency_24h": true,
+    "phone": "+880-2-55165088",
+    "emergency_phone": "+880-2-55165088",
+    "email": "dmch@hospi.dghs.gov.bd",
+    "website": "https://dmch.gov.bd",
+    "address": "Secretariat Road, Ramna, Dhaka-1000",
+    "coordinates": {
+      "latitude": 23.7259,
+      "longitude": 90.3976
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Sheikh Hasina National Institute of Burn & Plastic Surgery affiliate",
+      "Cardiology & CCU",
+      "Neurosurgery",
+      "Nephrology & Dialysis",
+      "ICU, NICU, PICU",
+      "Bone Marrow Transplant"
+    ]
+  },
+  {
+    "slug": "khulna-medical-college-hospital",
+    "name_en": "Khulna Medical College Hospital",
+    "name_bn": "খুলনা মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "khulna",
+    "district": "khulna",
+    "established": 1992,
+    "bed_capacity": 1000,
+    "has_emergency_24h": true,
+    "phone": "+880-41-760350",
+    "emergency_phone": "+880-41-760351",
+    "email": "kmch@hospi.dghs.gov.bd",
+    "website": "http://kmc.gov.bd",
+    "address": "Boyra Main Road, Khulna-9000",
+    "coordinates": {
+      "latitude": 22.8427,
+      "longitude": 89.5401
+    },
+    "services": [
+      "Emergency & Trauma",
+      "Burn Unit",
+      "Cardiology",
+      "Nephrology",
+      "ICU & CCU",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "kurmitola-general-hospital",
+    "name_en": "Kurmitola General Hospital",
+    "name_bn": "কুর্মিটোলা জেনারেল হাসপাতাল",
+    "type": "general_hospital",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 2012,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-55067160",
+    "emergency_phone": "+880-2-55067161",
+    "email": "kgh@hospi.dghs.gov.bd",
+    "website": "https://kgh.gov.bd",
+    "address": "Airport Road, Dhaka Cantonment, Dhaka-1206",
+    "coordinates": {
+      "latitude": 23.8223,
+      "longitude": 90.4124
+    },
+    "services": [
+      "24/7 Emergency",
+      "ICU & HDU",
+      "Dialysis Center",
+      "General Surgery",
+      "Orthopedics",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "m-abdur-rahim-medical-college-hospital",
+    "name_en": "M Abdur Rahim Medical College Hospital",
+    "name_bn": "এম আব্দুর রহিম মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "rangpur",
+    "district": "dinajpur",
+    "established": 1992,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-531-65481",
+    "emergency_phone": "+880-531-65481",
+    "email": "marmch@hospi.dghs.gov.bd",
+    "website": "http://marmc.edu.bd",
+    "address": "Hospital Road, Dinajpur-5200",
+    "coordinates": {
+      "latitude": 25.6171,
+      "longitude": 88.6482
+    },
+    "services": [
+      "Emergency & Trauma",
+      "Cardiology",
+      "Nephrology",
+      "ICU",
+      "Orthopedic Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "mag-osmani-medical-college-hospital",
+    "name_en": "Sylhet MAG Osmani Medical College Hospital",
+    "name_bn": "সিলেট এম.এ.জি. ওসমানী মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "sylhet",
+    "district": "sylhet",
+    "established": 1962,
+    "bed_capacity": 1500,
+    "has_emergency_24h": true,
+    "phone": "+880-821-713487",
+    "emergency_phone": "+880-821-713487",
+    "email": "somch@hospi.dghs.gov.bd",
+    "website": "https://somc.edu.bd",
+    "address": "Kajolshah, Sylhet-3100",
+    "coordinates": {
+      "latitude": 24.8988,
+      "longitude": 91.8541
+    },
+    "services": [
+      "Emergency & Casualty",
+      "Burn Unit",
+      "Cardiology & CCU",
+      "Nephrology & Dialysis",
+      "ICU & NICU",
+      "Oncology",
+      "Orthopedics"
+    ]
+  },
+  {
+    "slug": "mugda-medical-college-hospital",
+    "name_en": "Mugda Medical College Hospital",
+    "name_bn": "মুগদা মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 2013,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-7278201",
+    "emergency_phone": "+880-2-7278202",
+    "email": "mumch@hospi.dghs.gov.bd",
+    "website": "http://mumc.gov.bd",
+    "address": "Mugda, Dhaka-1214",
+    "coordinates": {
+      "latitude": 23.7289,
+      "longitude": 90.4326
+    },
+    "services": [
+      "Emergency Care",
+      "Infectious Disease Unit",
+      "ICU & HDU",
+      "Dialysis Center",
+      "Pediatrics",
+      "Cardiology"
+    ]
+  },
+  {
+    "slug": "mymensingh-medical-college-hospital",
+    "name_en": "Mymensingh Medical College Hospital",
+    "name_bn": "ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "mymensingh",
+    "district": "mymensingh",
+    "established": 1962,
+    "bed_capacity": 2000,
+    "has_emergency_24h": true,
+    "phone": "+880-91-66063",
+    "emergency_phone": "+880-91-66064",
+    "email": "mmch@hospi.dghs.gov.bd",
+    "website": "http://mmch.gov.bd",
+    "address": "Medical College Road, Mymensingh-2200",
+    "coordinates": {
+      "latitude": 24.7434,
+      "longitude": 90.4121
+    },
+    "services": [
+      "Emergency & Trauma 24/7",
+      "Burn Unit",
+      "Cardiology & CCU",
+      "Nephrology & Dialysis",
+      "ICU & NICU",
+      "Pediatric Surgery",
+      "Orthopedics"
+    ]
+  },
+  {
+    "slug": "national-institute-of-cancer-research-and-hospital",
+    "name_en": "National Institute of Cancer Research & Hospital",
+    "name_bn": "জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট ও হাসপাতাল",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1982,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9880078",
+    "emergency_phone": "+880-2-9880079",
+    "email": "nicrh@hospi.dghs.gov.bd",
+    "website": "https://nicrh.gov.bd",
+    "address": "TB Gate, Mohakhali, Dhaka-1212",
+    "coordinates": {
+      "latitude": 23.7788,
+      "longitude": 90.4072
+    },
+    "services": [
+      "Medical Oncology",
+      "Radiation Oncology",
+      "Surgical Oncology",
+      "Chemotherapy Daycare",
+      "Palliative Care",
+      "ICU",
+      "Cancer Screening"
+    ]
+  },
+  {
+    "slug": "national-institute-of-cardiovascular-diseases",
+    "name_en": "National Institute of Cardiovascular Diseases",
+    "name_bn": "জাতীয় হৃদরোগ ইনস্টিটিউট ও হাসপাতাল",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1978,
+    "bed_capacity": 800,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9122560",
+    "emergency_phone": "+880-2-9122563",
+    "email": "nicvd@hospi.dghs.gov.bd",
+    "website": "https://nicvd.gov.bd",
+    "address": "Sher-e-Bangla Nagar, Dhaka-1207",
+    "coordinates": {
+      "latitude": 23.7712,
+      "longitude": 90.3695
+    },
+    "services": [
+      "Emergency Cardiac Care 24/7",
+      "Cardiac Surgery (Bypass & Valve)",
+      "Interventional Cardiology (Angiogram, Stenting)",
+      "Pediatric Cardiology",
+      "CCU & Post-operative ICU",
+      "Pacemaker Clinic"
+    ]
+  },
+  {
+    "slug": "national-institute-of-diseases-of-the-chest-and-hospital",
+    "name_en": "National Institute of Diseases of the Chest & Hospital",
+    "name_bn": "জাতীয় বক্ষব্যাধি ইনস্টিটিউট ও হাসপাতাল",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1955,
+    "bed_capacity": 670,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9880156",
+    "emergency_phone": "+880-2-9880157",
+    "email": "nidch@hospi.dghs.gov.bd",
+    "website": "https://nidch.gov.bd",
+    "address": "TB Gate, Mohakhali, Dhaka-1212",
+    "coordinates": {
+      "latitude": 23.7802,
+      "longitude": 90.4079
+    },
+    "services": [
+      "Pulmonology & Respiratory Medicine",
+      "Thoracic Surgery",
+      "Tuberculosis & MDR-TB Care",
+      "Respiratory ICU",
+      "Bronchoscopy & Sleep Lab"
+    ]
+  },
+  {
+    "slug": "national-institute-of-neurosciences-and-hospital",
+    "name_en": "National Institute of Neurosciences & Hospital",
+    "name_bn": "জাতীয় নিউরোসায়েন্সেস ইনস্টিটিউট ও হাসপাতাল",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 2012,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9140752",
+    "emergency_phone": "+880-2-9140753",
+    "email": "nins@hospi.dghs.gov.bd",
+    "website": "https://nins.gov.bd",
+    "address": "Sher-e-Bangla Nagar, Dhaka-1207",
+    "coordinates": {
+      "latitude": 23.7719,
+      "longitude": 90.3698
+    },
+    "services": [
+      "Emergency Stroke Care 24/7",
+      "Neurosurgery",
+      "Neurology & Epilepsy Care",
+      "Neuro-ICU & Stroke Unit",
+      "Interventional Neuroradiology",
+      "Pediatric Neurology"
+    ]
+  },
+  {
+    "slug": "national-institute-of-traumatology-and-orthopaedic-rehabilitation",
+    "name_en": "National Institute of Traumatology & Orthopaedic Rehabilitation",
+    "name_bn": "জাতীয় অর্থোপেডিক হাসপাতাল ও পুনর্বাসন প্রতিষ্ঠান",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1972,
+    "bed_capacity": 1000,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9114075",
+    "emergency_phone": "+880-2-9114075",
+    "email": "nitor@hospi.dghs.gov.bd",
+    "website": "https://nitor.gov.bd",
+    "address": "Sher-e-Bangla Nagar, Dhaka-1207",
+    "coordinates": {
+      "latitude": 23.7725,
+      "longitude": 90.3688
+    },
+    "services": [
+      "Emergency Trauma & Casualty 24/7",
+      "Orthopedic Surgery & Joint Replacement",
+      "Spine Surgery",
+      "Artificial Limb Center & Rehabilitation",
+      "Physiotherapy & Occupational Therapy",
+      "ICU"
+    ]
+  },
+  {
+    "slug": "rajshahi-medical-college-hospital",
+    "name_en": "Rajshahi Medical College Hospital",
+    "name_bn": "রাজশাহী মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "rajshahi",
+    "district": "rajshahi",
+    "established": 1958,
+    "bed_capacity": 1500,
+    "has_emergency_24h": true,
+    "phone": "+880-721-772150",
+    "emergency_phone": "+880-721-772151",
+    "email": "rmch@hospi.dghs.gov.bd",
+    "website": "http://rmch.gov.bd",
+    "address": "Laxmipur, Rajshahi-6000",
+    "coordinates": {
+      "latitude": 24.3725,
+      "longitude": 88.5878
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "Burn Unit",
+      "Nephrology & Dialysis",
+      "ICU & NICU",
+      "Orthopedic & General Surgery"
+    ]
+  },
+  {
+    "slug": "rangpur-medical-college-hospital",
+    "name_en": "Rangpur Medical College Hospital",
+    "name_bn": "রংপুর মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "rangpur",
+    "district": "rangpur",
+    "established": 1970,
+    "bed_capacity": 1000,
+    "has_emergency_24h": true,
+    "phone": "+880-521-62287",
+    "emergency_phone": "+880-521-62287",
+    "email": "rp_mch@hospi.dghs.gov.bd",
+    "website": "http://rpmc.gov.bd",
+    "address": "Dhap, Jail Road, Rangpur-5400",
+    "coordinates": {
+      "latitude": 25.7592,
+      "longitude": 89.2361
+    },
+    "services": [
+      "Emergency & Trauma",
+      "Burn Unit",
+      "Cardiology",
+      "Nephrology",
+      "ICU & CCU",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "shaheed-sheikh-abu-naser-specialized-hospital",
+    "name_en": "Shaheed Sheikh Abu Naser Specialized Hospital",
+    "name_bn": "শহীদ শেখ আবু নাসের বিশেষায়িত হাসপাতাল",
+    "type": "specialized_institute",
+    "division": "khulna",
+    "district": "khulna",
+    "established": 2010,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-41-761508",
+    "emergency_phone": "+880-41-761509",
+    "email": "ssanshk@hospi.dghs.gov.bd",
+    "website": "http://ssansh.gov.bd",
+    "address": "Gollamari, Khulna",
+    "coordinates": {
+      "latitude": 22.8089,
+      "longitude": 89.5398
+    },
+    "services": [
+      "Cardiology & Heart Surgery",
+      "Nephrology & Kidney Transplant",
+      "Neurology & Neurosurgery",
+      "ICU & CCU",
+      "Dialysis Center"
+    ]
+  },
+  {
+    "slug": "shaheed-suhrawardy-medical-college-hospital",
+    "name_en": "Shaheed Suhrawardy Medical College Hospital",
+    "name_bn": "শহীদ সোহরাওয়ার্দী মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 2006,
+    "bed_capacity": 1350,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9130800",
+    "emergency_phone": "+880-2-9130801",
+    "email": "shsmch@hospi.dghs.gov.bd",
+    "website": "https://shsmch.gov.bd",
+    "address": "Sher-e-Bangla Nagar, Dhaka-1207",
+    "coordinates": {
+      "latitude": 23.7702,
+      "longitude": 90.3708
+    },
+    "services": [
+      "24/7 Emergency & Casualty",
+      "ICU, CCU, HDU",
+      "Dialysis Unit",
+      "Pediatric Surgery",
+      "Cardiology",
+      "Orthopedics"
+    ]
+  },
+  {
+    "slug": "shaheed-ziaur-rahman-medical-college-hospital",
+    "name_en": "Shaheed Ziaur Rahman Medical College Hospital",
+    "name_bn": "শহীদ জিয়াউর রহমান মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "rajshahi",
+    "district": "bogura",
+    "established": 1992,
+    "bed_capacity": 1000,
+    "has_emergency_24h": true,
+    "phone": "+880-51-69004",
+    "emergency_phone": "+880-51-69004",
+    "email": "szrmch@hospi.dghs.gov.bd",
+    "website": "http://szrmc.gov.bd",
+    "address": "Silimpur, Bogura-5800",
+    "coordinates": {
+      "latitude": 24.8197,
+      "longitude": 89.3621
+    },
+    "services": [
+      "Emergency & Trauma",
+      "Cardiology",
+      "Nephrology",
+      "Burn Unit",
+      "ICU & CCU",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "sher-e-bangla-medical-college-hospital",
+    "name_en": "Sher-e-Bangla Medical College Hospital",
+    "name_bn": "শের-ই-বাংলা মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "barishal",
+    "district": "barishal",
+    "established": 1968,
+    "bed_capacity": 1000,
+    "has_emergency_24h": true,
+    "phone": "+880-431-2173544",
+    "emergency_phone": "+880-431-2173544",
+    "email": "sbmch@hospi.dghs.gov.bd",
+    "website": "http://sbmch.gov.bd",
+    "address": "Band Road, Barishal-8200",
+    "coordinates": {
+      "latitude": 22.6892,
+      "longitude": 90.3639
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Burn Unit",
+      "Cardiology & CCU",
+      "Nephrology & Dialysis",
+      "ICU & NICU",
+      "Pediatrics",
+      "Orthopedics"
+    ]
+  },
+  {
+    "slug": "sir-salimullah-medical-college-mitford-hospital",
+    "name_en": "Sir Salimullah Medical College Mitford Hospital",
+    "name_bn": "স্যার সলিমুল্লাহ মেডিকেল কলেজ মিটফোর্ড হাসপাতাল",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1858,
+    "bed_capacity": 900,
+    "has_emergency_24h": true,
+    "phone": "+880-2-57319002",
+    "emergency_phone": "+880-2-57319002",
+    "email": "ssmcmh@hospi.dghs.gov.bd",
+    "website": "http://ssmc.gov.bd",
+    "address": "Mitford Road, Old Dhaka, Dhaka-1100",
+    "coordinates": {
+      "latitude": 23.7121,
+      "longitude": 90.4005
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Toxicology & Poisoning Center",
+      "Cardiology",
+      "Nephrology & Dialysis",
+      "ICU & CCU",
+      "Pediatric Surgery",
+      "General Surgery"
+    ]
+  }
+]

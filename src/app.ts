@@ -18,6 +18,7 @@ import { financeRoutes } from './modules/finance/routes';
 import { funRoutes } from './modules/fun/routes';
 import { geoRoutes } from './modules/geo/routes';
 import { goldRoutes } from './modules/gold/routes';
+import { healthRoutes } from './modules/health/routes';
 import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
@@ -127,6 +128,12 @@ const MODULES = [
     path: '/v1/metro/stations',
   },
   {
+    name: 'Health',
+    description:
+      'National government hospitals, specialized institutes, bed capacities, emergency hotlines and GPS coordinates',
+    path: '/v1/health/hospitals?type=medical_college',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -179,6 +186,7 @@ app.route('/v1', marketRoutes);
 app.route('/v1', mfsRoutes);
 app.route('/v1', prayerRoutes);
 app.route('/v1', metroRoutes);
+app.route('/v1', healthRoutes);
 app.route('/v1', developerRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);

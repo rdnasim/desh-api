@@ -109,6 +109,11 @@ export const OPENAPI_CONFIG = {
         'Dhaka Metro Rail (MRT Line-6) stations, GPS coordinates, fare calculator with 10% MRT Pass discount, timetables, and line overview from DMTCL.',
     },
     {
+      name: 'Health',
+      description:
+        'National government hospitals, specialized medical institutes, bed capacities, emergency casualty hotlines, and GPS coordinates from DGHS.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

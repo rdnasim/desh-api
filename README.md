@@ -30,7 +30,7 @@ every response**.
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 18 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail
+- 19 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals
 
 - Runs on Cloudflare's edge network, so responses are fast
 
@@ -125,6 +125,10 @@ curl 'https://deshapi.riadul.com/v1/prayer/ramadan?district=sylhet'
 curl 'https://deshapi.riadul.com/v1/metro/fare?from=uttara-north&to=motijheel'
 # → ৳100 single ticket, ৳90 MRT Pass, 32 mins, 16 stations
 curl 'https://deshapi.riadul.com/v1/metro/stations'
+
+# Healthcare directory, emergency hotlines and hospital bed capacities
+curl 'https://deshapi.riadul.com/v1/health/emergency'
+curl 'https://deshapi.riadul.com/v1/health/hospitals?division=dhaka&type=specialized_institute'
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -152,6 +156,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **MFS** | Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariffs, USSD codes, cash-out calculator and comparison | [`/v1/mfs/providers`](https://deshapi.riadul.com/v1/mfs/providers) |
 | **Prayer & Ramadan** | 5 daily prayer times, Sehri cutoff, and 30-day Ramadan timetable for all 64 districts based on Islamic Foundation Bangladesh standards | [`/v1/prayer/times?district=dhaka`](https://deshapi.riadul.com/v1/prayer/times?district=dhaka) |
 | **Metro Rail** | Dhaka Metro Rail (MRT Line-6) 16 active stations, GPS coordinates, timetables, and station-to-station fare calculator with 10% MRT Pass discount | [`/v1/metro/stations`](https://deshapi.riadul.com/v1/metro/stations) |
+| **Health** | National government hospitals, specialized institutes (BSMMU, NICVD, DMCH), bed counts, 24/7 casualty hotlines and GPS coordinates | [`/v1/health/hospitals?type=medical_college`](https://deshapi.riadul.com/v1/health/hospitals?type=medical_college) |
 | **Developer** | API key authentication, tiered rate limits (600 req/min), daily quota tracking and inspection | [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the
