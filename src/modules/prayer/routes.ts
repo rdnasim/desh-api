@@ -6,7 +6,6 @@ import { ApiError, validationHook } from '../../lib/errors';
 import {
   DailyPrayerTimesSchema,
   DistrictOffsetSchema,
-  RamadanDaySchema,
   RamadanScheduleSchema,
 } from './schemas';
 import {

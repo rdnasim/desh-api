@@ -136,12 +136,13 @@ metroRoutes.openapi(
     try {
       const fare = calculateFare(from, to);
       return ok(c, fare, meta());
-    } catch (err: any) {
-      if (err.message.includes('UNKNOWN_STATION')) {
-        throw new ApiError('not_found', err.message);
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      if (msg.includes('UNKNOWN_STATION')) {
+        throw new ApiError('not_found', msg);
       }
-      if (err.message.includes('SAME_STATION')) {
-        throw new ApiError('invalid_parameter', err.message);
+      if (msg.includes('SAME_STATION')) {
+        throw new ApiError('invalid_parameter', msg);
       }
       throw err;
     }
