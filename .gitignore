@@ -5,6 +5,7 @@ dist/
 coverage/
 .dev.vars
 .env*
+.worktrees/
 *.log
 .DS_Store
 
