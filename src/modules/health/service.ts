@@ -4,7 +4,11 @@ import type { EmergencyHealthSummary, Hospital } from './schemas';
 
 const sortedHospitals = [...hospitals].sort((a, b) => a.name_en.localeCompare(b.name_en));
 const hospitalBySlug = new Map(hospitals.map((h) => [h.slug, h]));
-const hospitalByCode = new Map(hospitals.filter((h) => h.dghs_code).map((h) => [h.dghs_code!, h]));
+const hospitalByCode = new Map(
+  hospitals
+    .filter((h): h is Hospital & { dghs_code: string } => typeof h.dghs_code === 'string')
+    .map((h) => [h.dghs_code, h]),
+);
 
 export interface HospitalFilter {
   division?: string;
