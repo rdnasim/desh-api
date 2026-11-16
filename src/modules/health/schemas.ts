@@ -15,12 +15,19 @@ export const HospitalCoordinatesSchema = z
 export const HospitalSchema = z
   .object({
     slug: SlugSchema.openapi({ example: 'dhaka-medical-college-hospital' }),
+    dghs_code: z
+      .string()
+      .min(6)
+      .max(10)
+      .optional()
+      .openapi({ description: 'Official DGHS 8-digit health facility identifier code', example: '10000033' }),
     name_en: NameEnSchema.openapi({ example: 'Dhaka Medical College Hospital' }),
     name_bn: NameBnSchema.openapi({ example: 'ঢাকা মেডিকেল কলেজ হাসপাতাল' }),
     type: HospitalTypeSchema,
     division: SlugSchema.openapi({ example: 'dhaka' }),
     district: SlugSchema.openapi({ example: 'dhaka' }),
-    established: z.number().int().min(1800).max(2100).openapi({ example: 1946 }),
+    upazila: SlugSchema.optional().openapi({ example: 'ramna' }),
+    established: z.number().int().min(1800).max(2100).optional().openapi({ example: 1946 }),
     bed_capacity: z.number().int().positive().openapi({ example: 2600 }),
     has_emergency_24h: z.boolean().openapi({ example: true }),
     phone: z.string().min(1).openapi({ example: '+880-2-55165088' }),
@@ -42,6 +49,7 @@ export const HospitalSchema = z
   .openapi('Hospital', {
     example: {
       slug: 'dhaka-medical-college-hospital',
+      dghs_code: '10000033',
       name_en: 'Dhaka Medical College Hospital',
       name_bn: 'ঢাকা মেডিকেল কলেজ হাসপাতাল',
       type: 'medical_college',

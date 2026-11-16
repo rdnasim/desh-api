@@ -386,5 +386,52 @@
     "credits": [
       "desh-api contributors"
     ]
+  },
+  {
+    "dataset": "weather.aqi-categories",
+    "source": "Department of Environment (DoE), Ministry of Environment, Forest and Climate Change: Air Quality Index (AQI) categories, color codes, health effects and advisories",
+    "source_url": "http://case.doe.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Department of Environment (DoE), Bangladesh",
+      "Clean Air and Sustainable Environment (CASE) Project"
+    ]
+  },
+  {
+    "dataset": "weather.maritime-signals",
+    "source": "Bangladesh Meteorological Department (BMD), Ministry of Defence: standard maritime storm warning signals (1 to 11), wind speeds and coastal protocols",
+    "source_url": "https://bmd.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Bangladesh Meteorological Department (BMD)",
+      "Storm Warning Centre, Dhaka"
+    ]
+  },
+  {
+    "dataset": "weather.riverport-signals",
+    "source": "Bangladesh Meteorological Department (BMD) and Bangladesh Inland Water Transport Authority (BIWTA): inland riverport storm warning signals (1 to 4)",
+    "source_url": "https://bmd.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Bangladesh Meteorological Department (BMD)",
+      "Bangladesh Inland Water Transport Authority (BIWTA)"
+    ]
+  },
+  {
+    "dataset": "weather.seasons",
+    "source": "Bangla Academy and traditional astronomical Bengali calendar (ষড়ঋতু - six seasons)",
+    "licence": "Public cultural domain; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Bangla Academy",
+      "desh-api contributors"
+    ]
   }
 ]

@@ -330,6 +330,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">17</div><h3>Prayer &amp; Ramadan</h3><p>Daily 5 prayer times, Sehri cutoff, and 30-day Ramadan timetable for all 64 districts using Islamic Foundation Bangladesh conventions.</p><a href="/v1/prayer/times?district=dhaka">/v1/prayer/times</a></div>
         <div class="mod"><div class="k">18</div><h3>Metro Rail</h3><p>Dhaka Metro Rail (MRT Line-6) 16 active stations, GPS coordinates, timetables, and station-to-station fare calculator with 10% MRT Pass discount.</p><a href="/v1/metro/stations">/v1/metro/stations</a></div>
         <div class="mod"><div class="k">19</div><h3>Healthcare &amp; Hospitals</h3><p>National government hospitals, specialized institutes (BSMMU, NICVD, DMCH), bed counts, 24/7 emergency hotlines, and coordinates from DGHS.</p><a href="/v1/health/emergency">/v1/health/emergency</a></div>
+        <div class="mod"><div class="k">20</div><h3>Weather &amp; Disaster Signals</h3><p>BMD maritime storm signals (1–11), riverport signals (1–4), DoE Air Quality Index (AQI) categories and traditional 6 Bangla seasons.</p><a href="/v1/weather/signals/maritime">/v1/weather/signals/maritime</a></div>
       </div>
     </div>
   </div>

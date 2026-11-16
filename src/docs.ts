@@ -114,6 +114,11 @@ export const OPENAPI_CONFIG = {
         'National government hospitals, specialized medical institutes, bed capacities, emergency casualty hotlines, and GPS coordinates from DGHS.',
     },
     {
+      name: 'Weather & Disaster Signals',
+      description:
+        'Bangladesh Meteorological Department (BMD) maritime (1-11) and inland riverport (1-4) storm signals, Department of Environment AQI categories, and traditional 6 Bangla seasons.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

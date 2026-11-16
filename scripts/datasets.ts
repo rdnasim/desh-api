@@ -38,6 +38,12 @@ import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 import { DistrictOffsetSchema } from '../src/modules/prayer/schemas';
 import { routingCheckDigitOk } from '../src/modules/validate/routing';
 import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
+import {
+  AqiCategorySchema,
+  BanglaSeasonSchema,
+  MaritimeSignalSchema,
+  RiverportSignalSchema,
+} from '../src/modules/weather/schemas';
 
 export interface DatasetSpec {
   /** Key used in data/meta.json and for the generated module name. */
@@ -291,6 +297,34 @@ export const datasets: DatasetSpec[] = [
     schema: HistoryEventSchema,
     sortKey: (r) => r.id,
     type: { name: 'HistoryEvent', from: '../modules/fun/schemas' },
+  },
+  {
+    key: 'weather.maritime-signals',
+    file: 'weather/maritime-signals.json',
+    schema: MaritimeSignalSchema,
+    sortKey: (r) => String(r.number).padStart(2, '0'),
+    type: { name: 'MaritimeSignal', from: '../modules/weather/schemas' },
+  },
+  {
+    key: 'weather.riverport-signals',
+    file: 'weather/riverport-signals.json',
+    schema: RiverportSignalSchema,
+    sortKey: (r) => String(r.number).padStart(2, '0'),
+    type: { name: 'RiverportSignal', from: '../modules/weather/schemas' },
+  },
+  {
+    key: 'weather.aqi-categories',
+    file: 'weather/aqi-categories.json',
+    schema: AqiCategorySchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'AqiCategory', from: '../modules/weather/schemas' },
+  },
+  {
+    key: 'weather.seasons',
+    file: 'weather/seasons.json',
+    schema: BanglaSeasonSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'BanglaSeason', from: '../modules/weather/schemas' },
   },
 ];
 

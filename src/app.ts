@@ -29,6 +29,7 @@ import { mockRoutes } from './modules/mock/routes';
 import { phoneRoutes } from './modules/phone/routes';
 import { prayerRoutes } from './modules/prayer/routes';
 import { validateRoutes } from './modules/validate/routes';
+import { weatherRoutes } from './modules/weather/routes';
 
 const MODULES = [
   {
@@ -134,6 +135,12 @@ const MODULES = [
     path: '/v1/health/hospitals?type=medical_college',
   },
   {
+    name: 'Weather & Disaster Signals',
+    description:
+      'BMD maritime storm signals (1-11), inland riverport signals (1-4), DoE Air Quality Index (AQI) categories and 6 Bangla seasons',
+    path: '/v1/weather/signals/maritime',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -187,6 +194,7 @@ app.route('/v1', mfsRoutes);
 app.route('/v1', prayerRoutes);
 app.route('/v1', metroRoutes);
 app.route('/v1', healthRoutes);
+app.route('/v1', weatherRoutes);
 app.route('/v1', developerRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);

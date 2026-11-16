@@ -1,0 +1,80 @@
+[
+  {
+    "order": 2,
+    "slug": "barsha",
+    "name_en": "Monsoon",
+    "name_bn": "বর্ষা",
+    "bangla_months": [
+      "আষাঢ়",
+      "শ্রাবণ"
+    ],
+    "approx_gregorian_span": "Mid-June to Mid-August",
+    "description_en": "The rainy season characterized by heavy southwest monsoons, river swelling, lush green vegetation, and blooming Kadam flowers.",
+    "description_bn": "ভারী মৌসুমি বৃষ্টিপাত, নদী-নালার প্লাবন ও কদম ফুলের সমারোহে স্নিগ্ধ বর্ষাকাল।"
+  },
+  {
+    "order": 6,
+    "slug": "basanta",
+    "name_en": "Spring",
+    "name_bn": "বসন্ত",
+    "bangla_months": [
+      "ফাল্গুন",
+      "চৈত্র"
+    ],
+    "approx_gregorian_span": "Mid-February to Mid-April",
+    "description_en": "The king of seasons (ঋতুরাজ) with pleasant breezes, blooming Palash and Shimul flowers, singing cuckoos, and colorful cultural festivities.",
+    "description_bn": "ঋতুরাজ বসন্ত; দক্ষিণা বাতাস, পলাশ-শিমুলের রক্তিম আভা, কোকিলের কুহুতান ও ফাল্গুনী উৎসবের ঋতু।"
+  },
+  {
+    "order": 1,
+    "slug": "grishma",
+    "name_en": "Summer",
+    "name_bn": "গ্রীষ্ম",
+    "bangla_months": [
+      "বৈশাখ",
+      "জ্যৈষ্ঠ"
+    ],
+    "approx_gregorian_span": "Mid-April to Mid-June",
+    "description_en": "The hottest season with scorching sunshine, sudden Kalbaishakhi thunderstorms, and a bounty of juicy tropical fruits like mango, jackfruit, and litchi (মধুমাস).",
+    "description_bn": "তীব্র রোদ ও গরমের ঋতু; কালবৈশাখী ঝড় এবং আম, জাম, কাঁঠাল ও লিচুর সমাহারে সমৃদ্ধ মধুমাস।"
+  },
+  {
+    "order": 4,
+    "slug": "hemanta",
+    "name_en": "Late Autumn",
+    "name_bn": "হেমন্ত",
+    "bangla_months": [
+      "কার্তিক",
+      "অগ্রহায়ণ"
+    ],
+    "approx_gregorian_span": "Mid-October to Mid-December",
+    "description_en": "The harvest season marked by early morning mist, golden ripe Aman paddy fields, and rural Nabanna (new rice) festivals with traditional pitha.",
+    "description_bn": "সোনালী পাকা আমন ধানের গন্ধ, ভোরের হালকা কুয়াশা ও গ্রামবাংলার নবান্ন উৎসবের ঋতু।"
+  },
+  {
+    "order": 3,
+    "slug": "sharat",
+    "name_en": "Autumn",
+    "name_bn": "শরৎ",
+    "bangla_months": [
+      "ভাদ্র",
+      "আশ্বিন"
+    ],
+    "approx_gregorian_span": "Mid-August to Mid-October",
+    "description_en": "Clear blue skies with drifting white clouds, blooming white Kashful along riverbanks, pleasant sunny days, and Durga Puja festivals.",
+    "description_bn": "নীল আকাশে সাদা মেঘের ভেলা, নদীর তীরে কাশফুলের মেলা ও দুর্গাপূজার উৎসবের ঋতু।"
+  },
+  {
+    "order": 5,
+    "slug": "sheet",
+    "name_en": "Winter",
+    "name_bn": "শীত",
+    "bangla_months": [
+      "পৌষ",
+      "মাঘ"
+    ],
+    "approx_gregorian_span": "Mid-December to Mid-February",
+    "description_en": "Chilly weather with dense fog, date palm sap (খেজুরের রস), fresh winter vegetables, warm clothing, and traditional pitha-puli celebrations.",
+    "description_bn": "কুয়াশাচ্ছন্ন সকাল, শীতের কনকনে ঠান্ডা, মিষ্টি খেজুরের রস এবং সুস্বাদু পিঠা-পুলির ঋতু।"
+  }
+]

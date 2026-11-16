@@ -54,7 +54,8 @@
       "Isolation Units",
       "Virology Laboratory",
       "Emergency Care"
-    ]
+    ],
+    "dghs_code": "10002301"
   },
   {
     "slug": "chattogram-medical-college-hospital",
@@ -83,7 +84,8 @@
       "Pediatrics & NICU",
       "Orthopedics",
       "ICU"
-    ]
+    ],
+    "dghs_code": "10000756"
   },
   {
     "slug": "coxs-bazar-sadar-hospital",
@@ -111,7 +113,8 @@
       "Pediatrics",
       "Maternity Care",
       "Blood Bank"
-    ]
+    ],
+    "dghs_code": "10000922"
   },
   {
     "slug": "dhaka-medical-college-hospital",
@@ -140,7 +143,8 @@
       "Nephrology & Dialysis",
       "ICU, NICU, PICU",
       "Bone Marrow Transplant"
-    ]
+    ],
+    "dghs_code": "10000033"
   },
   {
     "slug": "khulna-medical-college-hospital",
@@ -168,7 +172,8 @@
       "Nephrology",
       "ICU & CCU",
       "Pediatrics"
-    ]
+    ],
+    "dghs_code": "10001807"
   },
   {
     "slug": "kurmitola-general-hospital",
@@ -224,7 +229,8 @@
       "ICU",
       "Orthopedic Surgery",
       "Pediatrics"
-    ]
+    ],
+    "dghs_code": "10002288"
   },
   {
     "slug": "mag-osmani-medical-college-hospital",
@@ -253,7 +259,8 @@
       "ICU & NICU",
       "Oncology",
       "Orthopedics"
-    ]
+    ],
+    "dghs_code": "10002195"
   },
   {
     "slug": "mugda-medical-college-hospital",
@@ -281,7 +288,8 @@
       "Dialysis Center",
       "Pediatrics",
       "Cardiology"
-    ]
+    ],
+    "dghs_code": "10013720"
   },
   {
     "slug": "mymensingh-medical-college-hospital",
@@ -310,7 +318,8 @@
       "ICU & NICU",
       "Pediatric Surgery",
       "Orthopedics"
-    ]
+    ],
+    "dghs_code": "10000397"
   },
   {
     "slug": "national-institute-of-cancer-research-and-hospital",
@@ -339,7 +348,8 @@
       "Palliative Care",
       "ICU",
       "Cancer Screening"
-    ]
+    ],
+    "dghs_code": "10000006"
   },
   {
     "slug": "national-institute-of-cardiovascular-diseases",
@@ -367,7 +377,8 @@
       "Pediatric Cardiology",
       "CCU & Post-operative ICU",
       "Pacemaker Clinic"
-    ]
+    ],
+    "dghs_code": "10000007"
   },
   {
     "slug": "national-institute-of-diseases-of-the-chest-and-hospital",
@@ -394,7 +405,8 @@
       "Tuberculosis & MDR-TB Care",
       "Respiratory ICU",
       "Bronchoscopy & Sleep Lab"
-    ]
+    ],
+    "dghs_code": "10000008"
   },
   {
     "slug": "national-institute-of-neurosciences-and-hospital",
@@ -422,7 +434,8 @@
       "Neuro-ICU & Stroke Unit",
       "Interventional Neuroradiology",
       "Pediatric Neurology"
-    ]
+    ],
+    "dghs_code": "10017210"
   },
   {
     "slug": "national-institute-of-traumatology-and-orthopaedic-rehabilitation",
@@ -450,7 +463,8 @@
       "Artificial Limb Center & Rehabilitation",
       "Physiotherapy & Occupational Therapy",
       "ICU"
-    ]
+    ],
+    "dghs_code": "10000013"
   },
   {
     "slug": "rajshahi-medical-college-hospital",
@@ -478,7 +492,8 @@
       "Nephrology & Dialysis",
       "ICU & NICU",
       "Orthopedic & General Surgery"
-    ]
+    ],
+    "dghs_code": "10001560"
   },
   {
     "slug": "rangpur-medical-college-hospital",
@@ -506,7 +521,8 @@
       "Nephrology",
       "ICU & CCU",
       "Pediatrics"
-    ]
+    ],
+    "dghs_code": "10001618"
   },
   {
     "slug": "shaheed-sheikh-abu-naser-specialized-hospital",
@@ -533,7 +549,8 @@
       "Neurology & Neurosurgery",
       "ICU & CCU",
       "Dialysis Center"
-    ]
+    ],
+    "dghs_code": "10001811"
   },
   {
     "slug": "shaheed-suhrawardy-medical-college-hospital",
@@ -561,7 +578,8 @@
       "Pediatric Surgery",
       "Cardiology",
       "Orthopedics"
-    ]
+    ],
+    "dghs_code": "10000051"
   },
   {
     "slug": "shaheed-ziaur-rahman-medical-college-hospital",
@@ -589,7 +607,8 @@
       "Burn Unit",
       "ICU & CCU",
       "Pediatrics"
-    ]
+    ],
+    "dghs_code": "10001110"
   },
   {
     "slug": "sher-e-bangla-medical-college-hospital",
@@ -618,7 +637,8 @@
       "ICU & NICU",
       "Pediatrics",
       "Orthopedics"
-    ]
+    ],
+    "dghs_code": "10001978"
   },
   {
     "slug": "sir-salimullah-medical-college-mitford-hospital",
@@ -647,6 +667,7 @@
       "ICU & CCU",
       "Pediatric Surgery",
       "General Surgery"
-    ]
+    ],
+    "dghs_code": "10000056"
   }
 ]

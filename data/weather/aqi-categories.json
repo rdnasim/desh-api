@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "caution",
+    "name_en": "Caution (Unhealthy for Sensitive Groups)",
+    "name_bn": "সংবেদনশীলদের জন্য অস্বাস্থ্যকর",
+    "min_aqi": 101,
+    "max_aqi": 150,
+    "color_hex": "#FF7E00",
+    "health_implication_en": "Members of sensitive groups may experience health effects. The general public is less likely to be affected.",
+    "health_implication_bn": "সংবেদনশীল ব্যক্তিদের (শিশু, বয়োবৃদ্ধ, হাঁপানি রোগী) স্বাস্থ্য সমস্যা দেখা দিতে পারে। সাধারণ মানুষের আক্রান্ত হওয়ার ঝুঁকি কম।",
+    "cautionary_statement_en": "Active children, older adults, and people with respiratory diseases should limit prolonged outdoor exertion.",
+    "cautionary_statement_bn": "শিশু, বয়স্ক ব্যক্তি ও শ্বাসকষ্টের রোগীদের দীর্ঘ সময় ধরে বাইরে থাকা সীমিত করা উচিত।"
+  },
+  {
+    "slug": "good",
+    "name_en": "Good",
+    "name_bn": "ভালো",
+    "min_aqi": 0,
+    "max_aqi": 50,
+    "color_hex": "#00E400",
+    "health_implication_en": "Air quality is considered satisfactory, and air pollution poses little or no risk.",
+    "health_implication_bn": "বাতাসের মান সন্তোষজনক এবং বায়ু দূষণ স্বাস্থ্য ঝুঁকির কারণ নয়।",
+    "cautionary_statement_en": "None. Outdoor activities can be enjoyed normally.",
+    "cautionary_statement_bn": "কোনো সতর্কতা নেই। স্বাভাবিকভাবে বাইরে চলাচল করা যাবে।"
+  },
+  {
+    "slug": "hazardous",
+    "name_en": "Hazardous (Extremely Unhealthy)",
+    "name_bn": "বিপজ্জনক",
+    "min_aqi": 301,
+    "max_aqi": 500,
+    "color_hex": "#7E0023",
+    "health_implication_en": "Health warning of emergency conditions. The entire population is likely to be affected seriously.",
+    "health_implication_bn": "জরুরি স্বাস্থ্য সতর্কতা। সামগ্রিক জনগোষ্ঠীর মারাত্মক স্বাস্থ্য ঝুঁকির মুখে পড়ার আশঙ্কা রয়েছে।",
+    "cautionary_statement_en": "Everyone should avoid all outdoor physical activity. People with heart or lung disease, older adults, and children should remain indoors and keep activity levels low.",
+    "cautionary_statement_bn": "সকলের বাইরে শারীরিক কার্যক্রম সম্পূর্ণ পরিহার করা উচিত। হৃদরোগ বা ফুসফুসের রোগী, বয়স্ক ও শিশুদের ঘরের ভেতরে অবস্থান করতে হবে।"
+  },
+  {
+    "slug": "moderate",
+    "name_en": "Moderate",
+    "name_bn": "মধ্যম",
+    "min_aqi": 51,
+    "max_aqi": 100,
+    "color_hex": "#FFFF00",
+    "health_implication_en": "Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of unusually sensitive people.",
+    "health_implication_bn": "বাতাসের মান গ্রহণযোগ্য; তবে অতি সংবেদনশীল ক্ষুদ্র অংশের জন্য মৃদু স্বাস্থ্য উদ্বেগ থাকতে পারে।",
+    "cautionary_statement_en": "Unusually sensitive people should consider reducing prolonged or heavy outdoor exertion.",
+    "cautionary_statement_bn": "অতিরিক্ত সংবেদনশীল ব্যক্তিদের দীর্ঘ সময় বাইরে ভারী পরিশ্রম পরিহার করার পরামর্শ দেওয়া হচ্ছে।"
+  },
+  {
+    "slug": "unhealthy",
+    "name_en": "Unhealthy",
+    "name_bn": "অস্বাস্থ্যকর",
+    "min_aqi": 151,
+    "max_aqi": 200,
+    "color_hex": "#FF0000",
+    "health_implication_en": "Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.",
+    "health_implication_bn": "সকলের স্বাস্থ্য ঝুঁকি দেখা দিতে পারে; সংবেদনশীল জনগোষ্ঠীর ক্ষেত্রে মারাত্মক স্বাস্থ্য সমস্যা হতে পারে।",
+    "cautionary_statement_en": "Active children and adults, and people with respiratory disease, such as asthma, should avoid prolonged outdoor exertion; everyone else should limit prolonged outdoor exertion.",
+    "cautionary_statement_bn": "শিশু, বয়োবৃদ্ধ ও শ্বাসকষ্টের রোগীদের দীর্ঘ সময় বাইরে পরিশ্রম পরিহার করা উচিত; সাধারণ মানুষদেরও বাইরে থাকা সীমিত রাখা উচিত।"
+  },
+  {
+    "slug": "very-unhealthy",
+    "name_en": "Very Unhealthy",
+    "name_bn": "খুব অস্বাস্থ্যকর",
+    "min_aqi": 201,
+    "max_aqi": 300,
+    "color_hex": "#8F3F97",
+    "health_implication_en": "Health alert: everyone may experience more serious health effects.",
+    "health_implication_bn": "স্বাস্থ্য সতর্কতা: সমগ্র জনগোষ্ঠী গুরুতর স্বাস্থ্য সমস্যার ঝুঁকিতে রয়েছে।",
+    "cautionary_statement_en": "Active children and adults, and people with respiratory disease should avoid all outdoor exertion; everyone else should avoid prolonged outdoor exertion.",
+    "cautionary_statement_bn": "সকল শিশু, বয়স্ক ও রোগীদের বাইরে সকল প্রকার পরিশ্রম পরিহার করতে হবে; অন্যদেরও বাইরে থাকা পরিহার করা বাঞ্ছনীয়।"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "number": 1,
+    "slug": "distant-cautionary-1",
+    "name_en": "Distant Cautionary Signal No. 1",
+    "name_bn": "দূরবর্তী সতর্ক সংকেত ১",
+    "severity": "low",
+    "wind_speed_kmh": "51–61 km/h",
+    "meaning_en": "A storm has formed in the distant deep sea where wind speed is 51–61 km/h. Ships leaving port may run into danger.",
+    "meaning_bn": "দূরবর্তী গভীর সাগরে একটি ঝড় সৃষ্টি হয়েছে যেখানে বাতাসের একটানা গতিবেগ ঘণ্টায় ৫১–৬১ কিমি। জাহাজসমূহ বিপদে পড়তে পারে।",
+    "action_required": "Ships leaving port should exercise caution and monitor weather advisories."
+  },
+  {
+    "number": 2,
+    "slug": "distant-warning-2",
+    "name_en": "Distant Warning Signal No. 2",
+    "name_bn": "দূরবর্তী হুঁশিয়ারি সংকেত ২",
+    "severity": "low",
+    "wind_speed_kmh": "62–88 km/h",
+    "meaning_en": "A cyclonic storm has formed in the deep sea with wind speed 62–88 km/h. Ships leaving port are in danger, though port itself is not yet directly threatened.",
+    "meaning_bn": "দূরে গভীর সাগরে একটি ঘূর্ণিঝড় সৃষ্টি হয়েছে যেখানে বাতাসের গতিবেগ ঘণ্টায় ৬২–৮৮ কিমি। বন্দর এখনই সরাসরি আক্রান্ত হবে না, তবে ছেড়ে যাওয়া জাহাজ বিপদে পড়তে পারে।",
+    "action_required": "Vessels in deep sea should seek shelter or proceed with extreme caution."
+  },
+  {
+    "number": 3,
+    "slug": "local-cautionary-3",
+    "name_en": "Local Cautionary Signal No. 3",
+    "name_bn": "স্থানীয় সতর্ক সংকেত ৩",
+    "severity": "moderate",
+    "wind_speed_kmh": "40–50 km/h",
+    "meaning_en": "Port is threatened by squally weather. A depression has formed in the sea that may affect the port with gusty winds.",
+    "meaning_bn": "বন্দর এলাকা দমকা বা ঝোড়ো হাওয়ার কবলে পড়তে পারে। সাগরে নিম্নচাপের প্রভাবে বন্দর আক্রান্ত হওয়ার আশঙ্কা রয়েছে।",
+    "action_required": "Small craft and fishing boats should remain close to the coast."
+  },
+  {
+    "number": 4,
+    "slug": "local-warning-4",
+    "name_en": "Local Warning Signal No. 4",
+    "name_bn": "স্থানীয় হুঁশিয়ারি সংকেত ৪",
+    "severity": "moderate",
+    "wind_speed_kmh": "51–61 km/h",
+    "meaning_en": "Port is threatened by a cyclonic storm with wind speed 51–61 km/h, but the danger is not yet considered sufficiently serious to justify drastic precautions.",
+    "meaning_bn": "বন্দর একটি ঘূর্ণিঝড় দ্বারা হুমকির সম্মুখীন (বাতাসের গতি ৫১–৬১ কিমি/ঘণ্টা), তবে এখনই চরম সতর্কতামূলক ব্যবস্থা নেওয়ার মতো তীব্র নয়।",
+    "action_required": "Vessels anchored in outer anchorage must be ready to put to sea at short notice."
+  },
+  {
+    "number": 5,
+    "slug": "danger-5",
+    "name_en": "Danger Signal No. 5",
+    "name_bn": "বিপদ সংকেত ৫",
+    "severity": "high",
+    "wind_speed_kmh": "62–88 km/h",
+    "meaning_en": "Port will experience severe weather from a storm of slight or moderate intensity expected to cross the coast keeping the port to its left (south or west).",
+    "meaning_bn": "বন্দরটি একটি মাঝারি তীব্রতার ঘূর্ণিঝড়ের (বাতাস ৬২–৮৮ কিমি/ঘণ্টা) কবলে পড়তে পারে যা বন্দরকে বামে রেখে উপকূল অতিক্রম করবে।",
+    "action_required": "All vessels should secure berths or move to safe anchorage; port cargo operations suspended."
+  },
+  {
+    "number": 6,
+    "slug": "danger-6",
+    "name_en": "Danger Signal No. 6",
+    "name_bn": "বিপদ সংকেত ৬",
+    "severity": "high",
+    "wind_speed_kmh": "62–88 km/h",
+    "meaning_en": "Port will experience severe weather from a storm of slight or moderate intensity expected to cross the coast keeping the port to its right (north or east).",
+    "meaning_bn": "বন্দরটি একটি মাঝারি তীব্রতার ঘূর্ণিঝড়ের (বাতাস ৬২–৮৮ কিমি/ঘণ্টা) কবলে পড়তে পারে যা বন্দরকে ডানে রেখে উপকূল অতিক্রম করবে।",
+    "action_required": "All vessels should secure berths or move to safe anchorage; port cargo operations suspended."
+  },
+  {
+    "number": 7,
+    "slug": "danger-7",
+    "name_en": "Danger Signal No. 7",
+    "name_bn": "বিপদ সংকেত ৭",
+    "severity": "high",
+    "wind_speed_kmh": "62–88 km/h",
+    "meaning_en": "Port will experience severe weather from a storm of slight or moderate intensity expected to cross the coast directly over or near the port.",
+    "meaning_bn": "বন্দরটি একটি মাঝারি তীব্রতার ঘূর্ণিঝড়ের কবলে পড়তে পারে যা সরাসরি বন্দরের উপর দিয়ে বা খুব নিকট দিয়ে উপকূল অতিক্রম করবে।",
+    "action_required": "Extreme danger at the port: complete shutdown of port activities; crew to seek shelter."
+  },
+  {
+    "number": 8,
+    "slug": "great-danger-8",
+    "name_en": "Great Danger Signal No. 8",
+    "name_bn": "মহাবিপদ সংকেত ৮",
+    "severity": "critical",
+    "wind_speed_kmh": "89 km/h or higher",
+    "meaning_en": "Port will experience severe weather from a cyclonic storm of great intensity with wind speed 89 km/h or higher, crossing the coast keeping the port to its left.",
+    "meaning_bn": "বন্দরটি একটি প্রচণ্ড তীব্রতার ঘূর্ণিঝড়ের (বাতাস ৮৯ কিমি/ঘণ্টা বা বেশি) কবলে পড়বে যা বন্দরকে বামে রেখে উপকূল অতিক্রম করবে।",
+    "action_required": "Disaster emergency: total suspension of all port activities; coastal communities evacuate to cyclone shelters."
+  },
+  {
+    "number": 9,
+    "slug": "great-danger-9",
+    "name_en": "Great Danger Signal No. 9",
+    "name_bn": "মহাবিপদ সংকেত ৯",
+    "severity": "critical",
+    "wind_speed_kmh": "89 km/h or higher",
+    "meaning_en": "Port will experience severe weather from a cyclonic storm of great intensity with wind speed 89 km/h or higher, crossing the coast keeping the port to its right.",
+    "meaning_bn": "বন্দরটি একটি প্রচণ্ড তীব্রতার ঘূর্ণিঝড়ের (বাতাস ৮৯ কিমি/ঘণ্টা বা বেশি) কবলে পড়বে যা বন্দরকে ডানে রেখে উপকূল অতিক্রম করবে।",
+    "action_required": "Disaster emergency: total suspension of all port activities; coastal communities evacuate to cyclone shelters."
+  },
+  {
+    "number": 10,
+    "slug": "great-danger-10",
+    "name_en": "Great Danger Signal No. 10",
+    "name_bn": "মহাবিপদ সংকেত ১০",
+    "severity": "extreme",
+    "wind_speed_kmh": "89 km/h or higher",
+    "meaning_en": "Port will experience severe weather from a cyclonic storm of great intensity expected to cross the coast directly over or very close to the port.",
+    "meaning_bn": "বন্দরটি একটি প্রচণ্ড তীব্রতার ঘূর্ণিঝড়ের কবলে পড়বে যা সরাসরি বন্দরের উপর দিয়ে বা খুব নিকট দিয়ে উপকূল অতিক্রম করবে।",
+    "action_required": "Catastrophic danger: entire port area and surrounding coastal population must take immediate shelter in cyclone centers."
+  },
+  {
+    "number": 11,
+    "slug": "communication-failure-11",
+    "name_en": "Communication Failure Signal No. 11",
+    "name_bn": "যোগাযোগ বিচ্ছিন্ন সংকেত ১১",
+    "severity": "extreme",
+    "wind_speed_kmh": "Unknown / Severe",
+    "meaning_en": "Communications with the Meteorological Warning Centre have broken down and local officers believe serious weather is imminent.",
+    "meaning_bn": "আবহাওয়া সতর্কীকরণ কেন্দ্রের সাথে সকল যোগাযোগ বিচ্ছিন্ন হয়ে গেছে এবং স্থানীয় কর্মকর্তারা মনে করছেন মারাত্মক দুর্যোগ অত্যাসন্ন।",
+    "action_required": "Assume maximum danger level; local authorities and residents must initiate emergency disaster protocols immediately."
+  }
+]

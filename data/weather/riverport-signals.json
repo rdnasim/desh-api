@@ -1,0 +1,46 @@
+[
+  {
+    "number": 1,
+    "slug": "cautionary-1",
+    "name_en": "Riverport Cautionary Signal No. 1",
+    "name_bn": "নদীবন্দর সতর্ক সংকেত ১",
+    "severity": "low",
+    "wind_speed_kmh": "Up to 65 km/h",
+    "meaning_en": "The riverport area is threatened by squally winds of transient nature with speeds up to 65 km/h.",
+    "meaning_bn": "নদীবন্দর এলাকায় অনধিক ৬৫ কিমি/ঘণ্টা বেগে দমকা বা ঝোড়ো হাওয়া বয়ে যাওয়ার আশঙ্কা রয়েছে।",
+    "vessel_guideline": "Vessels of length 65 feet or less must seek immediate shelter near the riverbank."
+  },
+  {
+    "number": 2,
+    "slug": "warning-2",
+    "name_en": "Riverport Warning Signal No. 2",
+    "name_bn": "নদীবন্দর হুঁশিয়ারি সংকেত ২",
+    "severity": "moderate",
+    "wind_speed_kmh": "65–88 km/h",
+    "meaning_en": "A squall or storm of wind speed 65–88 km/h will soon affect the riverport area.",
+    "meaning_bn": "নদীবন্দর এলাকায় ৬৫–৮৮ কিমি/ঘণ্টা বেগে ঝড় বয়ে যেতে পারে।",
+    "vessel_guideline": "Vessels of length 65 feet or less must remain in safe shelter; larger motorized launches may proceed with extreme caution."
+  },
+  {
+    "number": 3,
+    "slug": "danger-3",
+    "name_en": "Riverport Danger Signal No. 3",
+    "name_bn": "নদীবন্দর বিপদ সংকেত ৩",
+    "severity": "high",
+    "wind_speed_kmh": "89–117 km/h",
+    "meaning_en": "A storm of wind speed 89–117 km/h will soon affect the riverport area.",
+    "meaning_bn": "নদীবন্দর এলাকায় ৮৯–১১৭ কিমি/ঘণ্টা বেগে তীব্র ঝড় বয়ে যেতে পারে।",
+    "vessel_guideline": "All water vessels of any size must seek shelter immediately; all passenger and cargo operations suspended."
+  },
+  {
+    "number": 4,
+    "slug": "great-danger-4",
+    "name_en": "Riverport Great Danger Signal No. 4",
+    "name_bn": "নদীবন্দর মহাবিপদ সংকেত ৪",
+    "severity": "extreme",
+    "wind_speed_kmh": "118 km/h or higher",
+    "meaning_en": "A severe cyclonic storm with hurricane-force winds of 118 km/h or higher will soon strike the riverport area.",
+    "meaning_bn": "নদীবন্দর এলাকায় ১১৮ কিমি/ঘণ্টা বা তার বেশি বেগে প্রচণ্ড বিধ্বংসী ঘূর্ণিঝড় আঘাত হানবে।",
+    "vessel_guideline": "Catastrophic risk: all river movements strictly prohibited; all vessels must be securely tied up and crews evacuated."
+  }
+]
