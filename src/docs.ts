@@ -10,7 +10,7 @@ export const OPENAPI_CONFIG = {
       '- Every response is `{ success, data, meta }`; `meta.source` and `meta.last_updated` say where the data came from.',
       '- Errors are `{ success: false, error: { code, message } }` with a matching HTTP status.',
       '- Numbers can be sent in Latin (1250) or Bangla (১২৫০) digits.',
-      '- No API key needed. Limit: 120 requests per minute per IP.',
+      '- No API key required for public access (120 req/min, 10,000 req/day). Optional API key (X-API-Key) unlocks higher Developer and Enterprise quotas.',
       '- Validators check formats only and never store or log what you send.',
       '- Gold and market prices are read live (BAJUS, TCB). Where a source cannot be reached, the last list read (within 7 days) is served with `freshness: "last_known"`; with none, the API answers 503 `upstream_unavailable`.',
       '- Where an official source is English-only (bank branches, most universities), `name_bn` is omitted rather than invented.',
@@ -97,6 +97,11 @@ export const OPENAPI_CONFIG = {
       name: 'MFS',
       description:
         'Mobile Financial Services (bKash, Nagad, Rocket, Upay, TAP) tariff schedules, USSD codes, transaction fee calculator and ranking comparison.',
+    },
+    {
+      name: 'Developer',
+      description:
+        'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',
     },
   ],
 };

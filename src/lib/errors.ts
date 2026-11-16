@@ -5,10 +5,12 @@ import { staticMeta } from './envelope';
 
 export const ERROR_CODES = {
   invalid_parameter: 400,
+  unauthorized: 401,
   not_found: 404,
   method_not_allowed: 405,
   payload_too_large: 413,
   rate_limited: 429,
+  quota_exceeded: 429,
   internal_error: 500,
   upstream_unavailable: 503,
 } as const satisfies Record<string, ContentfulStatusCode>;
