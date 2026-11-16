@@ -136,7 +136,8 @@ export function getDailyPrayerTimes(
   const [y = 2026, m = 1, d = 1] = rawDate.split('-').map(Number);
   const dateObj = new Date(Date.UTC(y, m - 1, d));
 
-  const offsetInfo = findDistrictOffset(districtSlug) || findDistrictOffset('dhaka')!;
+  const offsetInfo = findDistrictOffset(districtSlug) || findDistrictOffset('dhaka');
+  if (!offsetInfo) throw new Error('District offset for Dhaka not found');
 
   // Compute baseline times for Dhaka
   const baseTimes = computeSolarTimes(y, m, d, DHAKA_LAT, DHAKA_LON, school);
@@ -223,7 +224,8 @@ export function getRamadanSchedule(
 
   const startDateIso = RAMADAN_STARTS[hijriYear] || '2026-02-18';
   const [startY = 2026, startM = 2, startD = 18] = startDateIso.split('-').map(Number);
-  const offsetInfo = findDistrictOffset(districtSlug) || findDistrictOffset('dhaka')!;
+  const offsetInfo = findDistrictOffset(districtSlug) || findDistrictOffset('dhaka');
+  if (!offsetInfo) throw new Error('District offset for Dhaka not found');
 
   const days: RamadanDay[] = [];
   for (let i = 0; i < 30; i++) {
