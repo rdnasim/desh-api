@@ -93,7 +93,10 @@ export function resolveApiKey(keyString: string, envApiKeysJson?: string): ApiKe
     try {
       const parsed = JSON.parse(envApiKeysJson);
       if (Array.isArray(parsed)) {
-        const found = parsed.find((k: any) => k.key === keyString);
+        const found = parsed.find(
+          (k: unknown) =>
+            typeof k === 'object' && k !== null && (k as Record<string, unknown>).key === keyString,
+        ) as Record<string, any> | undefined;
         if (found) {
           const tier: ApiKeyTier =
             found.tier && TIERS[found.tier as ApiKeyTier] ? found.tier : 'developer';
@@ -137,7 +140,7 @@ export interface QuotaCheckResult {
 
 export type QuotaKvStore = {
   get(key: string): Promise<string | null>;
-  put(key: string, value: string, options?: any): Promise<void | unknown>;
+  put(key: string, value: string, options?: Record<string, unknown>): Promise<unknown>;
 };
 
 /** Checks and increments the daily request quota for a key/IP. */

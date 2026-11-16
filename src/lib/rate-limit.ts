@@ -21,7 +21,7 @@ export const rateLimit: MiddlewareHandler<AppEnv> = async (c, next) => {
 
   if (rawKey) {
     const resolved = resolveApiKey(rawKey, c.env?.API_KEYS);
-    if (!resolved || !resolved.active) {
+    if (!resolved?.active) {
       throw new ApiError('unauthorized', 'Invalid or inactive API key', {
         message_bn: 'অবৈধ বা নিষ্ক্রিয় এপিআই কি',
       });
