@@ -140,6 +140,11 @@ curl 'https://deshapi.riadul.com/v1/railway/trains?origin=dhaka&destination=chat
 # → Suborno Express (702), Sonar Bangla Express (788)
 curl 'https://deshapi.riadul.com/v1/railway/trains/701'
 curl 'https://deshapi.riadul.com/v1/railway/classes'
+
+# Parliamentary constituencies (Jatiya Sangsad আসন ১–৩০০)
+curl 'https://deshapi.riadul.com/v1/constituencies/174'             # → Dhaka-1
+curl 'https://deshapi.riadul.com/v1/constituencies?district=dhaka'  # → Dhaka-1 through Dhaka-20
+curl 'https://deshapi.riadul.com/v1/constituencies/districts'       # → 64 districts breakdown
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -170,6 +175,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Health** | National government hospitals, specialized institutes (BSMMU, NICVD, DMCH), bed counts, 24/7 casualty hotlines and GPS coordinates | [`/v1/health/hospitals?type=medical_college`](https://deshapi.riadul.com/v1/health/hospitals?type=medical_college) |
 | **Weather & Signals** | BMD maritime storm signals (1–11), riverport signals (1–4), DoE Air Quality Index (AQI) categories and 6 traditional Bangla seasons | [`/v1/weather/signals/maritime`](https://deshapi.riadul.com/v1/weather/signals/maritime) |
 | **Railway** | Bangladesh Railway (BR) intercity trains (Suborno, Sonar Bangla, Parabat, Silk City), schedules, off-days, coach classes, and major stations | [`/v1/railway/trains?origin=dhaka&destination=chattogram`](https://deshapi.riadul.com/v1/railway/trains?origin=dhaka&destination=chattogram) |
+| **Constituencies** | 300 general parliamentary constituencies (Jatiya Sangsad আসন ১–৩০০) with official boundaries, upazila/thana coverage, and district seat distributions | [`/v1/constituencies?district=dhaka`](https://deshapi.riadul.com/v1/constituencies?district=dhaka) |
 | **Developer** | API key authentication, tiered rate limits (600 req/min), daily quota tracking and inspection | [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the

@@ -24,7 +24,8 @@ specs benefit from what was learned.
 | [`015-hospitals`](../specs/015-hospitals/) | 3 — Expansion | 18 Health (National Healthcare Directory) | **Built**: 23 tertiary hospitals & specialized institutes across all 8 divisions, bed counts, emergency lines |
 | [`016-weather-aqi`](../specs/016-weather-aqi/) | 3 — Expansion | 19 Weather & Disaster Signals | **Built**: BMD maritime (1–11) & riverport (1–4) storm signals, DoE AQI categories & lookup, 6 Bangla seasons |
 | [`017-railway`](../specs/017-railway/) | 3 — Expansion | 20 Transport (Bangladesh Railway) | **Built**: Intercity express trains, coach classes, route timetables & major junction stations |
-| `00x-expansion` | 3 — Expansion (months 4–6) | 21 Constituencies, 22 Tourism, 23 NLP, SDKs (npm, PyPI, Composer) | Not started |
+| [`018-constituencies`](../specs/018-constituencies/) | 3 — Expansion | 21 Constituencies (Jatiya Sangsad) | **Built**: 300 general parliamentary seats (১–৩০০), bilingual names, upazila boundaries, and district distributions |
+| `00x-expansion` | 3 — Expansion (months 4–6) | 22 Tourism, 23 NLP, SDKs (npm, PyPI, Composer) | Not started |
 | `00x-ecosystem` | 4 — Ecosystem (6+ months) | Playground, bots, browser extension, form widgets, WordPress/Laravel plugins, Sheets add-on, dashboard, CLI | Not started |
 
 ## Open follow-ups

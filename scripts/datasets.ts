@@ -1,6 +1,7 @@
 import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
 import { BankSchema, BranchSchema } from '../src/modules/banks/schemas';
+import { ConstituencySchema } from '../src/modules/constituencies/schemas';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
 import {
   EducationBoardSchema,
@@ -113,6 +114,13 @@ export const datasets: DatasetSpec[] = [
     schema: PostOfficeSchema,
     sortKey: (r: PostOffice) => `${r.postcode}/${r.name_en}`,
     type: { name: 'PostOffice', from: GEO },
+  },
+  {
+    key: 'geo.constituencies',
+    file: 'geo/constituencies.json',
+    schema: ConstituencySchema,
+    sortKey: (r) => r.number,
+    type: { name: 'Constituency', from: '../modules/constituencies/schemas' },
   },
   {
     key: 'phone.prefixes',
@@ -377,6 +385,8 @@ export function derive(data: Record<string, any[]>): {
     }
   };
   fk('geo.districts', 'division', 'geo.divisions');
+  fk('geo.constituencies', 'division', 'geo.divisions');
+  fk('geo.constituencies', 'district', 'geo.districts');
   fk('prayer.district-offsets', 'division', 'geo.divisions');
   fk('metro.stations', 'division', 'geo.divisions');
   fk('metro.stations', 'district', 'geo.districts');

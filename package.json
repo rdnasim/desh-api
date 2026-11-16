@@ -23,7 +23,9 @@
     "cf-typegen": "wrangler types src/worker-configuration.d.ts",
     "data:docs": "tsx scripts/data-sources-doc.ts",
     "smoke": "tsx scripts/smoke.ts",
-    "cf:api-host-rule": "tsx scripts/cloudflare-api-host-rule.ts"
+    "cf:api-host-rule": "tsx scripts/cloudflare-api-host-rule.ts",
+    "web:dev": "npm run dev --prefix web",
+    "web:build": "npm run build --prefix web"
   },
   "dependencies": {
     "@hono/zod-openapi": "^1.6.3",

@@ -332,6 +332,7 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">19</div><h3>Healthcare &amp; Hospitals</h3><p>National government hospitals, specialized institutes (BSMMU, NICVD, DMCH), bed counts, 24/7 emergency hotlines, and coordinates from DGHS.</p><a href="/v1/health/emergency">/v1/health/emergency</a></div>
         <div class="mod"><div class="k">20</div><h3>Weather &amp; Disaster Signals</h3><p>BMD maritime storm signals (1–11), riverport signals (1–4), DoE Air Quality Index (AQI) categories and traditional 6 Bangla seasons.</p><a href="/v1/weather/signals/maritime">/v1/weather/signals/maritime</a></div>
         <div class="mod"><div class="k">21</div><h3>Railway</h3><p>Bangladesh Railway intercity trains (Suborno, Sonar Bangla, Parabat), coach classes (AC Berth, Snigdha, Shovon Chair), route timetables, and major junction stations.</p><a href="/v1/railway/trains">/v1/railway/trains</a></div>
+        <div class="mod"><div class="k">22</div><h3>Constituencies</h3><p>300 general parliamentary constituencies (Jatiya Sangsad আসন ১–৩০০) with official boundaries, upazila/thana coverage, and district seat distributions.</p><a href="/v1/constituencies?district=dhaka">/v1/constituencies?district=dhaka</a></div>
       </div>
     </div>
   </div>
@@ -485,6 +486,7 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'Metro fare', method: 'GET', path: '/v1/metro/fare?from=uttara-north&to=motijheel' },
     { label: 'Metro stations', method: 'GET', path: '/v1/metro/stations' },
     { label: 'Railway trains', method: 'GET', path: '/v1/railway/trains' },
+    { label: 'Constituencies', method: 'GET', path: '/v1/constituencies?district=dhaka' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
     { label: 'Bijoy to Unicode', method: 'POST', path: '/v1/convert/bijoy-to-unicode', body: '{"text":"Avgvi \\u2020mvbvi evsjv"}' },

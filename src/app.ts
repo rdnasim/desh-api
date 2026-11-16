@@ -11,6 +11,7 @@ import { logger } from './lib/logger';
 import { rateLimit } from './lib/rate-limit';
 import { banglaRoutes } from './modules/bangla/routes';
 import { bankRoutes } from './modules/banks/routes';
+import { constituencyRoutes } from './modules/constituencies/routes';
 import { convertRoutes } from './modules/convert/routes';
 import { developerRoutes } from './modules/developer/routes';
 import { educationRoutes } from './modules/education/routes';
@@ -148,6 +149,12 @@ const MODULES = [
     path: '/v1/railway/trains?origin=dhaka&destination=chattogram',
   },
   {
+    name: 'Constituencies',
+    description:
+      '300 general single-member territorial constituencies (Jatiya Sangsad আসন ১-৩০০) with seat counts by district',
+    path: '/v1/constituencies?district=dhaka',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -203,6 +210,7 @@ app.route('/v1', metroRoutes);
 app.route('/v1', healthRoutes);
 app.route('/v1', weatherRoutes);
 app.route('/v1', railwayRoutes);
+app.route('/v1', constituencyRoutes);
 app.route('/v1', developerRoutes);
 
 app.doc31('/openapi.json', OPENAPI_CONFIG);

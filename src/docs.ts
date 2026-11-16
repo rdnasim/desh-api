@@ -124,6 +124,11 @@ export const OPENAPI_CONFIG = {
         'Bangladesh Railway (BR) intercity express trains, train schedules, weekly off-days, standard coach classes, and major railway junction stations.',
     },
     {
+      name: 'Constituencies',
+      description:
+        '300 general single-member territorial constituencies of Jatiya Sangsad (জাতীয় সংসদীয় আসন ১-৩০০) with seat numbers, boundaries, and district breakdowns from the Bangladesh Election Commission.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',
