@@ -36,6 +36,11 @@ import { MfsProviderSchema } from '../src/modules/mfs/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 import { DistrictOffsetSchema } from '../src/modules/prayer/schemas';
+import {
+  RailwayClassSchema,
+  RailwayStationSchema,
+  RailwayTrainSchema,
+} from '../src/modules/railway/schemas';
 import { routingCheckDigitOk } from '../src/modules/validate/routing';
 import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
 import {
@@ -325,6 +330,27 @@ export const datasets: DatasetSpec[] = [
     schema: BanglaSeasonSchema,
     sortKey: (r) => r.slug,
     type: { name: 'BanglaSeason', from: '../modules/weather/schemas' },
+  },
+  {
+    key: 'railway.classes',
+    file: 'railway/classes.json',
+    schema: RailwayClassSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'RailwayClass', from: '../modules/railway/schemas' },
+  },
+  {
+    key: 'railway.stations',
+    file: 'railway/stations.json',
+    schema: RailwayStationSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'RailwayStation', from: '../modules/railway/schemas' },
+  },
+  {
+    key: 'railway.trains',
+    file: 'railway/trains.json',
+    schema: RailwayTrainSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'RailwayTrain', from: '../modules/railway/schemas' },
   },
 ];
 

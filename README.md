@@ -30,7 +30,7 @@ every response**.
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 20 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals
+- 21 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway
 
 - Runs on Cloudflare's edge network, so responses are fast
 
@@ -134,6 +134,12 @@ curl 'https://deshapi.riadul.com/v1/health/hospitals?division=dhaka&type=special
 curl 'https://deshapi.riadul.com/v1/weather/signals/maritime/10'
 curl 'https://deshapi.riadul.com/v1/weather/aqi/lookup?value=165'
 curl 'https://deshapi.riadul.com/v1/weather/seasons'
+
+# Bangladesh Railway intercity express trains and schedules
+curl 'https://deshapi.riadul.com/v1/railway/trains?origin=dhaka&destination=chattogram'
+# → Suborno Express (702), Sonar Bangla Express (788)
+curl 'https://deshapi.riadul.com/v1/railway/trains/701'
+curl 'https://deshapi.riadul.com/v1/railway/classes'
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -163,6 +169,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Metro Rail** | Dhaka Metro Rail (MRT Line-6) 16 active stations, GPS coordinates, timetables, and station-to-station fare calculator with 10% MRT Pass discount | [`/v1/metro/stations`](https://deshapi.riadul.com/v1/metro/stations) |
 | **Health** | National government hospitals, specialized institutes (BSMMU, NICVD, DMCH), bed counts, 24/7 casualty hotlines and GPS coordinates | [`/v1/health/hospitals?type=medical_college`](https://deshapi.riadul.com/v1/health/hospitals?type=medical_college) |
 | **Weather & Signals** | BMD maritime storm signals (1–11), riverport signals (1–4), DoE Air Quality Index (AQI) categories and 6 traditional Bangla seasons | [`/v1/weather/signals/maritime`](https://deshapi.riadul.com/v1/weather/signals/maritime) |
+| **Railway** | Bangladesh Railway (BR) intercity trains (Suborno, Sonar Bangla, Parabat, Silk City), schedules, off-days, coach classes, and major stations | [`/v1/railway/trains?origin=dhaka&destination=chattogram`](https://deshapi.riadul.com/v1/railway/trains?origin=dhaka&destination=chattogram) |
 | **Developer** | API key authentication, tiered rate limits (600 req/min), daily quota tracking and inspection | [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the

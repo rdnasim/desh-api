@@ -378,6 +378,41 @@
     ]
   },
   {
+    "dataset": "railway.classes",
+    "source": "Bangladesh Railway (BR), Ministry of Railways: passenger coach and berth classification schedule",
+    "source_url": "https://railway.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Bangladesh Railway (BR)",
+      "Ministry of Railways, Bangladesh"
+    ]
+  },
+  {
+    "dataset": "railway.stations",
+    "source": "Bangladesh Railway (BR): station codes, junction network and operational division stations",
+    "source_url": "https://railway.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Bangladesh Railway (BR)"
+    ]
+  },
+  {
+    "dataset": "railway.trains",
+    "source": "Bangladesh Railway (BR) official passenger timetable, train schedule and e-ticketing portal (eticket.railway.gov.bd)",
+    "source_url": "https://eticket.railway.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "credits": [
+      "Bangladesh Railway (BR)",
+      "Ministry of Railways, Bangladesh"
+    ]
+  },
+  {
     "dataset": "validate.vehicle-area-aliases",
     "source": "Abbreviations seen on BRTA registration plates (e.g. 'চট্ট মেট্রো' for Chattogram Metro); full area names come from geo.districts",
     "licence": "CC BY 4.0",

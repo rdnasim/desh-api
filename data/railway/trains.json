@@ -1,0 +1,618 @@
+[
+  {
+    "number": "763",
+    "slug": "chitra-express-763",
+    "name_en": "Chitra Express",
+    "name_bn": "চিত্রা এক্সপ্রেস",
+    "origin_station": "khulna",
+    "destination_station": "dhaka",
+    "origin_city": "Khulna",
+    "destination_city": "Dhaka",
+    "departure_time": "09:00",
+    "arrival_time": "17:30",
+    "off_day_en": "Monday",
+    "off_day_bn": "সোমবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Khulna",
+      "Jashore",
+      "Kotchandpur",
+      "Chuadanga",
+      "Poradaha",
+      "Ishwardi Bypass",
+      "Jamuna Bridge East",
+      "Joydebpur",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "764",
+    "slug": "chitra-express-764",
+    "name_en": "Chitra Express",
+    "name_bn": "চিত্রা এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "khulna",
+    "origin_city": "Dhaka",
+    "destination_city": "Khulna",
+    "departure_time": "19:00",
+    "arrival_time": "03:40",
+    "off_day_en": "Monday",
+    "off_day_bn": "সোমবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Joydebpur",
+      "Jamuna Bridge East",
+      "Ishwardi Bypass",
+      "Poradaha",
+      "Chuadanga",
+      "Kotchandpur",
+      "Jashore",
+      "Khulna"
+    ]
+  },
+  {
+    "number": "797",
+    "slug": "kurigram-express-797",
+    "name_en": "Kurigram Express",
+    "name_bn": "কুড়িগ্রাম এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "kurigram",
+    "origin_city": "Dhaka",
+    "destination_city": "Kurigram",
+    "departure_time": "20:45",
+    "arrival_time": "06:15",
+    "off_day_en": "Wednesday",
+    "off_day_bn": "বুধবার",
+    "classes": [
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Joydebpur",
+      "Natun Jamuna Setu",
+      "Santahar",
+      "Bogura",
+      "Gaibandha",
+      "Kaunia",
+      "Kurigram"
+    ]
+  },
+  {
+    "number": "798",
+    "slug": "kurigram-express-798",
+    "name_en": "Kurigram Express",
+    "name_bn": "কুড়িগ্রাম এক্সপ্রেস",
+    "origin_station": "kurigram",
+    "destination_station": "dhaka",
+    "origin_city": "Kurigram",
+    "destination_city": "Dhaka",
+    "departure_time": "07:15",
+    "arrival_time": "17:25",
+    "off_day_en": "Wednesday",
+    "off_day_bn": "বুধবার",
+    "classes": [
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Kurigram",
+      "Kaunia",
+      "Gaibandha",
+      "Bogura",
+      "Santahar",
+      "Natun Jamuna Setu",
+      "Joydebpur",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "759",
+    "slug": "padma-express-759",
+    "name_en": "Padma Express",
+    "name_bn": "পদ্মা এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "rajshahi",
+    "origin_city": "Dhaka",
+    "destination_city": "Rajshahi",
+    "departure_time": "23:00",
+    "arrival_time": "04:30",
+    "off_day_en": "Tuesday",
+    "off_day_bn": "মঙ্গলবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Joydebpur",
+      "Bangabandhu Setu East",
+      "Ullapara",
+      "Ishwardi Bypass",
+      "Abdulpur",
+      "Rajshahi"
+    ]
+  },
+  {
+    "number": "760",
+    "slug": "padma-express-760",
+    "name_en": "Padma Express",
+    "name_bn": "পদ্মা এক্সপ্রেস",
+    "origin_station": "rajshahi",
+    "destination_station": "dhaka",
+    "origin_city": "Rajshahi",
+    "destination_city": "Dhaka",
+    "departure_time": "16:00",
+    "arrival_time": "21:40",
+    "off_day_en": "Tuesday",
+    "off_day_bn": "মঙ্গলবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Rajshahi",
+      "Abdulpur",
+      "Ishwardi Bypass",
+      "Ullapara",
+      "Bangabandhu Setu East",
+      "Joydebpur",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "709",
+    "slug": "parabat-express-709",
+    "name_en": "Parabat Express",
+    "name_bn": "পারাবত এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "sylhet",
+    "origin_city": "Dhaka",
+    "destination_city": "Sylhet",
+    "departure_time": "06:20",
+    "arrival_time": "13:00",
+    "off_day_en": "Tuesday",
+    "off_day_bn": "মঙ্গলবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Bhairab Bazar",
+      "Brahmanbaria",
+      "Akhaura",
+      "Shaistaganj",
+      "Sreemangal",
+      "Kulaura",
+      "Maijgaon",
+      "Sylhet"
+    ]
+  },
+  {
+    "number": "710",
+    "slug": "parabat-express-710",
+    "name_en": "Parabat Express",
+    "name_bn": "পারাবত এক্সপ্রেস",
+    "origin_station": "sylhet",
+    "destination_station": "dhaka",
+    "origin_city": "Sylhet",
+    "destination_city": "Dhaka",
+    "departure_time": "15:45",
+    "arrival_time": "22:40",
+    "off_day_en": "Tuesday",
+    "off_day_bn": "মঙ্গলবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Sylhet",
+      "Maijgaon",
+      "Kulaura",
+      "Sreemangal",
+      "Shaistaganj",
+      "Akhaura",
+      "Brahmanbaria",
+      "Bhairab Bazar",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "771",
+    "slug": "rangpur-express-771",
+    "name_en": "Rangpur Express",
+    "name_bn": "রংপুর এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "rangpur",
+    "origin_city": "Dhaka",
+    "destination_city": "Rangpur",
+    "departure_time": "09:10",
+    "arrival_time": "19:05",
+    "off_day_en": "Monday",
+    "off_day_bn": "সোমবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Joydebpur",
+      "Bangabandhu Setu East",
+      "Santahar",
+      "Bogura",
+      "Gaibandha",
+      "Kaunia",
+      "Rangpur"
+    ]
+  },
+  {
+    "number": "772",
+    "slug": "rangpur-express-772",
+    "name_en": "Rangpur Express",
+    "name_bn": "রংপুর এক্সপ্রেস",
+    "origin_station": "rangpur",
+    "destination_station": "dhaka",
+    "origin_city": "Rangpur",
+    "destination_city": "Dhaka",
+    "departure_time": "20:20",
+    "arrival_time": "06:05",
+    "off_day_en": "Sunday",
+    "off_day_bn": "রবিবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Rangpur",
+      "Kaunia",
+      "Gaibandha",
+      "Bogura",
+      "Santahar",
+      "Bangabandhu Setu East",
+      "Joydebpur",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "753",
+    "slug": "silk-city-express-753",
+    "name_en": "Silk City Express",
+    "name_bn": "সিল্কসিটি এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "rajshahi",
+    "origin_city": "Dhaka",
+    "destination_city": "Rajshahi",
+    "departure_time": "14:45",
+    "arrival_time": "20:35",
+    "off_day_en": "Sunday",
+    "off_day_bn": "রবিবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Joydebpur",
+      "Tangail",
+      "Bangabandhu Setu East",
+      "Jamtail",
+      "Ullapara",
+      "Ishwardi Bypass",
+      "Abdulpur",
+      "Rajshahi"
+    ]
+  },
+  {
+    "number": "754",
+    "slug": "silk-city-express-754",
+    "name_en": "Silk City Express",
+    "name_bn": "সিল্কসিটি এক্সপ্রেস",
+    "origin_station": "rajshahi",
+    "destination_station": "dhaka",
+    "origin_city": "Rajshahi",
+    "destination_city": "Dhaka",
+    "departure_time": "07:40",
+    "arrival_time": "13:30",
+    "off_day_en": "Sunday",
+    "off_day_bn": "রবিবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Rajshahi",
+      "Abdulpur",
+      "Ishwardi Bypass",
+      "Ullapara",
+      "Jamtail",
+      "Bangabandhu Setu East",
+      "Tangail",
+      "Joydebpur",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "787",
+    "slug": "sonar-bangla-express-787",
+    "name_en": "Sonar Bangla Express",
+    "name_bn": "সোনার বাংলা এক্সপ্রেস",
+    "origin_station": "chattogram",
+    "destination_station": "dhaka",
+    "origin_city": "Chattogram",
+    "destination_city": "Dhaka",
+    "departure_time": "17:00",
+    "arrival_time": "22:10",
+    "off_day_en": "Wednesday",
+    "off_day_bn": "বুধবার",
+    "classes": [
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Chattogram",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "788",
+    "slug": "sonar-bangla-express-788",
+    "name_en": "Sonar Bangla Express",
+    "name_bn": "সোনার বাংলা এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "chattogram",
+    "origin_city": "Dhaka",
+    "destination_city": "Chattogram",
+    "departure_time": "07:00",
+    "arrival_time": "12:15",
+    "off_day_en": "Wednesday",
+    "off_day_bn": "বুধবার",
+    "classes": [
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Chattogram"
+    ]
+  },
+  {
+    "number": "701",
+    "slug": "suborno-express-701",
+    "name_en": "Suborno Express",
+    "name_bn": "সুবর্ণ এক্সপ্রেস",
+    "origin_station": "chattogram",
+    "destination_station": "dhaka",
+    "origin_city": "Chattogram",
+    "destination_city": "Dhaka",
+    "departure_time": "07:00",
+    "arrival_time": "12:15",
+    "off_day_en": "Monday",
+    "off_day_bn": "সোমবার",
+    "classes": [
+      "S_CHAIR",
+      "SNIGDHA"
+    ],
+    "major_halts": [
+      "Chattogram",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "702",
+    "slug": "suborno-express-702",
+    "name_en": "Suborno Express",
+    "name_bn": "সুবর্ণ এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "chattogram",
+    "origin_city": "Dhaka",
+    "destination_city": "Chattogram",
+    "departure_time": "16:30",
+    "arrival_time": "21:50",
+    "off_day_en": "Monday",
+    "off_day_bn": "সোমবার",
+    "classes": [
+      "S_CHAIR",
+      "SNIGDHA"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Chattogram"
+    ]
+  },
+  {
+    "number": "725",
+    "slug": "sundarban-express-725",
+    "name_en": "Sundarban Express",
+    "name_bn": "সুন্দরবন এক্সপ্রেস",
+    "origin_station": "khulna",
+    "destination_station": "dhaka",
+    "origin_city": "Khulna",
+    "destination_city": "Dhaka",
+    "departure_time": "21:45",
+    "arrival_time": "05:10",
+    "off_day_en": "Tuesday",
+    "off_day_bn": "মঙ্গলবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Khulna",
+      "Jashore",
+      "Kotchandpur",
+      "Chuadanga",
+      "Poradaha",
+      "Ishwardi Bypass",
+      "Jamuna Bridge East",
+      "Joydebpur",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  },
+  {
+    "number": "726",
+    "slug": "sundarban-express-726",
+    "name_en": "Sundarban Express",
+    "name_bn": "সুন্দরবন এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "khulna",
+    "origin_city": "Dhaka",
+    "destination_city": "Khulna",
+    "departure_time": "08:15",
+    "arrival_time": "15:50",
+    "off_day_en": "Wednesday",
+    "off_day_bn": "বুধবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Joydebpur",
+      "Jamuna Bridge East",
+      "Ishwardi Bypass",
+      "Poradaha",
+      "Chuadanga",
+      "Kotchandpur",
+      "Jashore",
+      "Khulna"
+    ]
+  },
+  {
+    "number": "739",
+    "slug": "upaban-express-739",
+    "name_en": "Upaban Express",
+    "name_bn": "উপবন এক্সপ্রেস",
+    "origin_station": "dhaka",
+    "destination_station": "sylhet",
+    "origin_city": "Dhaka",
+    "destination_city": "Sylhet",
+    "departure_time": "20:30",
+    "arrival_time": "05:00",
+    "off_day_en": "Wednesday",
+    "off_day_bn": "বুধবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Dhaka (Kamalapur)",
+      "Dhaka Airport",
+      "Bhairab Bazar",
+      "Brahmanbaria",
+      "Akhaura",
+      "Shaistaganj",
+      "Sreemangal",
+      "Bhanugach",
+      "Kulaura",
+      "Maijgaon",
+      "Sylhet"
+    ]
+  },
+  {
+    "number": "740",
+    "slug": "upaban-express-740",
+    "name_en": "Upaban Express",
+    "name_bn": "উপবন এক্সপ্রেস",
+    "origin_station": "sylhet",
+    "destination_station": "dhaka",
+    "origin_city": "Sylhet",
+    "destination_city": "Dhaka",
+    "departure_time": "23:30",
+    "arrival_time": "06:45",
+    "off_day_en": "Monday",
+    "off_day_bn": "সোমবার",
+    "classes": [
+      "SHOVON",
+      "S_CHAIR",
+      "SNIGDHA",
+      "AC_S",
+      "AC_B"
+    ],
+    "major_halts": [
+      "Sylhet",
+      "Maijgaon",
+      "Kulaura",
+      "Bhanugach",
+      "Sreemangal",
+      "Shaistaganj",
+      "Akhaura",
+      "Brahmanbaria",
+      "Bhairab Bazar",
+      "Dhaka Airport",
+      "Dhaka (Kamalapur)"
+    ]
+  }
+]

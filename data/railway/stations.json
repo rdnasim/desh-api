@@ -1,0 +1,146 @@
+[
+  {
+    "code": "AKH",
+    "slug": "akhaura",
+    "name_en": "Akhaura Junction",
+    "name_bn": "আখাউড়া জংশন",
+    "division": "chattogram",
+    "district": "brahmanbaria",
+    "coordinates": {
+      "latitude": 23.8732,
+      "longitude": 91.2177
+    }
+  },
+  {
+    "code": "CG",
+    "slug": "chattogram",
+    "name_en": "Chattogram Railway Station",
+    "name_bn": "চট্টগ্রাম রেলওয়ে স্টেশন",
+    "division": "chattogram",
+    "district": "chattogram",
+    "coordinates": {
+      "latitude": 22.3354,
+      "longitude": 91.8262
+    }
+  },
+  {
+    "code": "DA",
+    "slug": "dhaka",
+    "name_en": "Dhaka Railway Station (Kamalapur)",
+    "name_bn": "ঢাকা রেলওয়ে স্টেশন (কমলাপুর)",
+    "division": "dhaka",
+    "district": "dhaka",
+    "coordinates": {
+      "latitude": 23.7314,
+      "longitude": 90.4267
+    }
+  },
+  {
+    "code": "AIR",
+    "slug": "dhaka-airport",
+    "name_en": "Dhaka Airport Railway Station",
+    "name_bn": "ঢাকা বিমানবন্দর রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "dhaka",
+    "coordinates": {
+      "latitude": 23.8517,
+      "longitude": 90.4078
+    }
+  },
+  {
+    "code": "DIN",
+    "slug": "dinajpur",
+    "name_en": "Dinajpur Railway Station",
+    "name_bn": "দিনাজপুর রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "dinajpur",
+    "coordinates": {
+      "latitude": 25.6268,
+      "longitude": 88.6437
+    }
+  },
+  {
+    "code": "ISD",
+    "slug": "ishwardi",
+    "name_en": "Ishwardi Junction",
+    "name_bn": "ঈশ্বরদী জংশন",
+    "division": "rajshahi",
+    "district": "pabna",
+    "coordinates": {
+      "latitude": 24.1278,
+      "longitude": 89.0682
+    }
+  },
+  {
+    "code": "KLN",
+    "slug": "khulna",
+    "name_en": "Khulna Railway Station",
+    "name_bn": "খুলনা রেলওয়ে স্টেশন",
+    "division": "khulna",
+    "district": "khulna",
+    "coordinates": {
+      "latitude": 22.8188,
+      "longitude": 89.5654
+    }
+  },
+  {
+    "code": "PBT",
+    "slug": "parbatipur",
+    "name_en": "Parbatipur Junction",
+    "name_bn": "পার্বতীপুর জংশন",
+    "division": "rangpur",
+    "district": "dinajpur",
+    "coordinates": {
+      "latitude": 25.6592,
+      "longitude": 88.9288
+    }
+  },
+  {
+    "code": "RAJ",
+    "slug": "rajshahi",
+    "name_en": "Rajshahi Railway Station",
+    "name_bn": "রাজশাহী রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "rajshahi",
+    "coordinates": {
+      "latitude": 24.3739,
+      "longitude": 88.6045
+    }
+  },
+  {
+    "code": "RP",
+    "slug": "rangpur",
+    "name_en": "Rangpur Railway Station",
+    "name_bn": "রংপুর রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "rangpur",
+    "coordinates": {
+      "latitude": 25.7482,
+      "longitude": 89.2618
+    }
+  },
+  {
+    "code": "SNT",
+    "slug": "santahar",
+    "name_en": "Santahar Junction",
+    "name_bn": "সান্তাহার জংশন",
+    "division": "rajshahi",
+    "district": "bogura",
+    "coordinates": {
+      "latitude": 24.7877,
+      "longitude": 88.9712
+    }
+  },
+  {
+    "code": "SYL",
+    "slug": "sylhet",
+    "name_en": "Sylhet Railway Station",
+    "name_bn": "সিলেট রেলওয়ে স্টেশন",
+    "division": "sylhet",
+    "district": "sylhet",
+    "coordinates": {
+      "latitude": 24.8824,
+      "longitude": 91.8687
+    }
+  }
+]

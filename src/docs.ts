@@ -119,6 +119,11 @@ export const OPENAPI_CONFIG = {
         'Bangladesh Meteorological Department (BMD) maritime (1-11) and inland riverport (1-4) storm signals, Department of Environment AQI categories, and traditional 6 Bangla seasons.',
     },
     {
+      name: 'Bangladesh Railway',
+      description:
+        'Bangladesh Railway (BR) intercity express trains, train schedules, weekly off-days, standard coach classes, and major railway junction stations.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

@@ -1,0 +1,65 @@
+[
+  {
+    "code": "AC_B",
+    "slug": "ac-berth",
+    "name_en": "AC Berth",
+    "name_bn": "এসি বার্থ",
+    "is_ac": true,
+    "description_en": "Air-conditioned sleeping berth compartment with full bedding provided.",
+    "description_bn": "শীতাতপ নিয়ন্ত্রিত স্লিপিং বার্থ কেবিন (বিছানাপত্রসহ)।"
+  },
+  {
+    "code": "AC_S",
+    "slug": "ac-seat",
+    "name_en": "AC Seat",
+    "name_bn": "এসি সিট",
+    "is_ac": true,
+    "description_en": "Air-conditioned cabin seat for daytime travel.",
+    "description_bn": "শীতাতপ নিয়ন্ত্রিত কেবিনের দিনের বসার আসন।"
+  },
+  {
+    "code": "FIRST_BERTH",
+    "slug": "first-berth",
+    "name_en": "First Class Berth",
+    "name_bn": "প্রথম শ্রেণি বার্থ",
+    "is_ac": false,
+    "description_en": "Non-AC private coupe/compartment with sleeping berths.",
+    "description_bn": "নন-এসি প্রথম শ্রেণির প্রাইভেট স্লিপিং বার্থ কেবিন।"
+  },
+  {
+    "code": "FIRST_SEAT",
+    "slug": "first-seat",
+    "name_en": "First Class Seat",
+    "name_bn": "প্রথম শ্রেণি আসন",
+    "is_ac": false,
+    "description_en": "Non-AC first class comfortable seating.",
+    "description_bn": "নন-এসি প্রথম শ্রেণির আরামদায়ক আসন।"
+  },
+  {
+    "code": "SHOVON",
+    "slug": "shovon",
+    "name_en": "Shovon",
+    "name_bn": "শোভন",
+    "is_ac": false,
+    "description_en": "Standard second-class non-AC general seating.",
+    "description_bn": "সাধারণ দ্বিতীয় শ্রেণি নন-এসি আসন।"
+  },
+  {
+    "code": "S_CHAIR",
+    "slug": "shovon-chair",
+    "name_en": "Shovon Chair",
+    "name_bn": "শোভন চেয়ার",
+    "is_ac": false,
+    "description_en": "Second-class individual chair car seating, the most widely used intercity coach.",
+    "description_bn": "দ্বিতীয় শ্রেণি চেয়ার কার; আন্তঃনগর ট্রেনের সর্বাধিক ব্যবহৃত আসন।"
+  },
+  {
+    "code": "SNIGDHA",
+    "slug": "snigdha",
+    "name_en": "Snigdha (AC Chair)",
+    "name_bn": "স্নিগ্ধা",
+    "is_ac": true,
+    "description_en": "Air-conditioned individual reclining chair car seating.",
+    "description_bn": "শীতাতপ নিয়ন্ত্রিত রিক্লাইনিং চেয়ার কার আসন।"
+  }
+]
