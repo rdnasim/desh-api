@@ -104,16 +104,14 @@ railwayRoutes.openapi(
       'Returns complete route details, departure and arrival times, intermediate major halts, and available coach classes.',
     request: {
       params: z.object({
-        number: z
-          .string()
-          .openapi({
-            param: {
-              name: 'number',
-              in: 'path',
-              description: 'Train number (e.g. 701, 788) or slug',
-            },
-            example: '701',
-          }),
+        number: z.string().openapi({
+          param: {
+            name: 'number',
+            in: 'path',
+            description: 'Train number (e.g. 701, 788) or slug',
+          },
+          example: '701',
+        }),
       }),
     },
     responses: responses(RailwayTrainSchema, 'Train route details'),
@@ -191,12 +189,10 @@ railwayRoutes.openapi(
       'Returns station details, station code (e.g. DA, CG, AIR, SYL, SNT), and GPS coordinates.',
     request: {
       params: z.object({
-        code: z
-          .string()
-          .openapi({
-            param: { name: 'code', in: 'path', description: 'Station code (e.g. DA, CG) or slug' },
-            example: 'DA',
-          }),
+        code: z.string().openapi({
+          param: { name: 'code', in: 'path', description: 'Station code (e.g. DA, CG) or slug' },
+          example: 'DA',
+        }),
       }),
     },
     responses: responses(RailwayStationSchema, 'Railway station details'),

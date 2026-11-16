@@ -68,12 +68,10 @@ weatherRoutes.openapi(
       'Returns details of a specific maritime storm signal including Bengali nomenclature, port danger level, wind speeds, and evacuation directions.',
     request: {
       params: z.object({
-        number: z
-          .string()
-          .openapi({
-            param: { name: 'number', in: 'path', description: 'Signal number (1 to 11) or slug' },
-            example: '10',
-          }),
+        number: z.string().openapi({
+          param: { name: 'number', in: 'path', description: 'Signal number (1 to 11) or slug' },
+          example: '10',
+        }),
       }),
     },
     responses: responses(MaritimeSignalSchema, 'Maritime signal details'),
@@ -117,16 +115,14 @@ weatherRoutes.openapi(
       'Returns riverport signal details including 65-foot vessel navigation rules, squall thresholds, and safety measures.',
     request: {
       params: z.object({
-        number: z
-          .string()
-          .openapi({
-            param: {
-              name: 'number',
-              in: 'path',
-              description: 'Riverport signal number (1 to 4) or slug',
-            },
-            example: '2',
-          }),
+        number: z.string().openapi({
+          param: {
+            name: 'number',
+            in: 'path',
+            description: 'Riverport signal number (1 to 4) or slug',
+          },
+          example: '2',
+        }),
       }),
     },
     responses: responses(RiverportSignalSchema, 'Riverport signal details'),
@@ -170,12 +166,10 @@ weatherRoutes.openapi(
       'Maps any Air Quality Index value (0 to 500+) to its corresponding DoE classification with actionable outdoor and mask recommendations.',
     request: {
       query: z.object({
-        value: z
-          .string()
-          .openapi({
-            param: { name: 'value', in: 'query', description: 'Numeric AQI value (0 to 500+)' },
-            example: '165',
-          }),
+        value: z.string().openapi({
+          param: { name: 'value', in: 'query', description: 'Numeric AQI value (0 to 500+)' },
+          example: '165',
+        }),
       }),
     },
     responses: responses(AqiLookupResponseSchema, 'AQI classification and advisory'),

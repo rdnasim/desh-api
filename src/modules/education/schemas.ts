@@ -61,13 +61,9 @@ export const EducationBoardSchema = z
     slug: SlugSchema.openapi({
       description: 'Canonical board slug (e.g. dhaka, chattogram, madrasah)',
     }),
-    code: z
-      .string()
-      .min(3)
-      .max(3)
-      .openapi({
-        description: '3-letter board code used in exam portals (e.g. DHA, CHI, RAJ, MAD, TEC)',
-      }),
+    code: z.string().min(3).max(3).openapi({
+      description: '3-letter board code used in exam portals (e.g. DHA, CHI, RAJ, MAD, TEC)',
+    }),
     name_en: NameEnSchema,
     name_bn: NameBnSchema,
     short_name_en: z.string().min(1),
@@ -144,15 +140,10 @@ export const GradeTierSchema = z
 export const SubjectScoreInputSchema = z
   .object({
     name: z.string().optional().openapi({ description: 'Subject name or code', example: 'Bangla' }),
-    marks: z
-      .number()
-      .min(0)
-      .max(100)
-      .optional()
-      .openapi({
-        description: 'Exam mark (0-100). Either marks or grade_point is required',
-        example: 85,
-      }),
+    marks: z.number().min(0).max(100).optional().openapi({
+      description: 'Exam mark (0-100). Either marks or grade_point is required',
+      example: 85,
+    }),
     grade_point: z
       .number()
       .min(0)

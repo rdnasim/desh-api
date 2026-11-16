@@ -102,12 +102,10 @@ healthRoutes.openapi(
       'Returns complete hospital details including bed capacity, 24/7 casualty hotline, specialized facilities, and GPS coordinates.',
     request: {
       params: z.object({
-        slug: z
-          .string()
-          .openapi({
-            param: { name: 'slug', in: 'path' },
-            example: 'dhaka-medical-college-hospital',
-          }),
+        slug: z.string().openapi({
+          param: { name: 'slug', in: 'path' },
+          example: 'dhaka-medical-college-hospital',
+        }),
       }),
     },
     responses: responses(HospitalSchema, 'Hospital details'),

@@ -229,12 +229,10 @@ educationRoutes.openapi(
       'Looks up the grade tier, grade point (0.0 to 5.0), and performance assessment for a given mark.',
     request: {
       query: z.object({
-        marks: z
-          .string()
-          .openapi({
-            param: { name: 'marks', in: 'query', description: 'Marks obtained (0-100)' },
-            example: '85',
-          }),
+        marks: z.string().openapi({
+          param: { name: 'marks', in: 'query', description: 'Marks obtained (0-100)' },
+          example: '85',
+        }),
       }),
     },
     responses: responses(GradeTierSchema, 'Grade tier for marks'),

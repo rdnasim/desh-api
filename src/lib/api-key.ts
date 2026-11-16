@@ -113,9 +113,7 @@ export function resolveApiKey(keyString: string, envApiKeysJson?: string): ApiKe
                 ? found.rate_limit_per_minute
                 : tierDefaults.rate_limit_per_minute,
             daily_quota:
-              typeof found.daily_quota === 'number'
-                ? found.daily_quota
-                : tierDefaults.daily_quota,
+              typeof found.daily_quota === 'number' ? found.daily_quota : tierDefaults.daily_quota,
             owner: typeof found.owner === 'string' ? found.owner : undefined,
             created_at: typeof found.created_at === 'string' ? found.created_at : undefined,
           };

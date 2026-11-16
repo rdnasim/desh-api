@@ -15,15 +15,10 @@ export const HospitalCoordinatesSchema = z
 export const HospitalSchema = z
   .object({
     slug: SlugSchema.openapi({ example: 'dhaka-medical-college-hospital' }),
-    dghs_code: z
-      .string()
-      .min(6)
-      .max(10)
-      .optional()
-      .openapi({
-        description: 'Official DGHS 8-digit health facility identifier code',
-        example: '10000033',
-      }),
+    dghs_code: z.string().min(6).max(10).optional().openapi({
+      description: 'Official DGHS 8-digit health facility identifier code',
+      example: '10000033',
+    }),
     name_en: NameEnSchema.openapi({ example: 'Dhaka Medical College Hospital' }),
     name_bn: NameBnSchema.openapi({ example: 'ঢাকা মেডিকেল কলেজ হাসপাতাল' }),
     type: HospitalTypeSchema,

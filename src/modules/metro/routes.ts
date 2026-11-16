@@ -83,12 +83,10 @@ metroRoutes.openapi(
       'Returns full station information including GPS coordinates, accessibility features, order, and connection routes by station slug or code.',
     request: {
       params: z.object({
-        slug: z
-          .string()
-          .openapi({
-            param: { name: 'slug', in: 'path', description: 'Station slug or code' },
-            example: 'uttara-north',
-          }),
+        slug: z.string().openapi({
+          param: { name: 'slug', in: 'path', description: 'Station slug or code' },
+          example: 'uttara-north',
+        }),
       }),
     },
     responses: responses(MetroStationSchema, 'Station details'),
@@ -114,18 +112,14 @@ metroRoutes.openapi(
       'Calculates the official DMTCL fare between any two stations on MRT Line-6, comparing Single Journey Ticket price against the 10% MRT Pass / Rapid Pass discount, and includes estimated travel time.',
     request: {
       query: z.object({
-        from: z
-          .string()
-          .openapi({
-            param: { name: 'from', in: 'query', description: 'Origin station slug or code' },
-            example: 'uttara-north',
-          }),
-        to: z
-          .string()
-          .openapi({
-            param: { name: 'to', in: 'query', description: 'Destination station slug or code' },
-            example: 'motijheel',
-          }),
+        from: z.string().openapi({
+          param: { name: 'from', in: 'query', description: 'Origin station slug or code' },
+          example: 'uttara-north',
+        }),
+        to: z.string().openapi({
+          param: { name: 'to', in: 'query', description: 'Destination station slug or code' },
+          example: 'motijheel',
+        }),
       }),
     },
     responses: responses(MetroFareCalculationSchema, 'Fare calculation and travel summary'),

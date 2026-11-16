@@ -3,11 +3,7 @@ import type { AppEnv } from '../../env';
 import { cachePublic } from '../../lib/cache';
 import { ErrorSchema, envelope, metaFor, ok } from '../../lib/envelope';
 import { ApiError, validationHook } from '../../lib/errors';
-import {
-  DailyPrayerTimesSchema,
-  DistrictOffsetSchema,
-  RamadanScheduleSchema,
-} from './schemas';
+import { DailyPrayerTimesSchema, DistrictOffsetSchema, RamadanScheduleSchema } from './schemas';
 import {
   districtOffsets,
   findDistrictOffset,
