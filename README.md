@@ -30,8 +30,8 @@ every response**.
 - No sign-up, no API key
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 15 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays,
-  finance, mock data, banks, universities, gold & zakat, market prices
+- 16 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities, gold & zakat, market prices, MFS
+
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -112,6 +112,10 @@ curl 'https://deshapi.riadul.com/v1/fuel/prices'   # → diesel 135, octane 165,
 curl 'https://deshapi.riadul.com/v1/routing/010130065'
 # → Agrani Bank, Kachua Bazar branch, Kachua, Chandpur
 curl 'https://deshapi.riadul.com/v1/banks/sonali-bank/branches?district=cumilla'
+
+# MFS cash-out comparison & USSD codes (bKash, Nagad, Rocket, Upay, TAP)
+curl 'https://deshapi.riadul.com/v1/mfs/compare?amount=5000&action=cash-out&channel=app'
+curl 'https://deshapi.riadul.com/v1/mfs/ussd'
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a

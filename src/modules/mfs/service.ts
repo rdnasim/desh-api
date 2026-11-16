@@ -3,8 +3,8 @@ import type { MfsProvider, MfsUssdEntry } from './schemas';
 
 const providerBySlug = new Map(providers.map((p) => [p.slug, p]));
 
-export function listProviders(): readonly MfsProvider[] {
-  return providers;
+export function listProviders(): MfsProvider[] {
+  return providers as unknown as MfsProvider[];
 }
 
 export function getProvider(slug: string): MfsProvider | undefined {

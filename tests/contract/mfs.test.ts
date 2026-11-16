@@ -24,7 +24,7 @@ describe('MFS API routes', () => {
     const res = await call('/v1/mfs/providers?q=BRAC');
     const { data } = await expectOk(res, z.array(MfsProviderSchema));
     expect(data.length).toBe(1);
-    expect(data[0].slug).toBe('bkash');
+    expect(data[0]?.slug).toBe('bkash');
   });
 
   it('GET /v1/mfs/providers/{provider} returns details for single provider', async () => {
@@ -42,7 +42,9 @@ describe('MFS API routes', () => {
   });
 
   it('GET /v1/mfs/charges calculates fee for cash-out', async () => {
-    const res = await call('/v1/mfs/charges?provider=bkash&amount=5000&action=cash-out&channel=app');
+    const res = await call(
+      '/v1/mfs/charges?provider=bkash&amount=5000&action=cash-out&channel=app',
+    );
     const { data } = await expectOk(res, MfsChargeCalculationSchema);
     expect(data.provider).toBe('bkash');
     expect(data.amount).toBe(5000);
@@ -51,7 +53,9 @@ describe('MFS API routes', () => {
   });
 
   it('GET /v1/mfs/charges accepts Bangla digits', async () => {
-    const res = await call('/v1/mfs/charges?provider=bkash&amount=৫০০০&action=cash-out&channel=app');
+    const res = await call(
+      '/v1/mfs/charges?provider=bkash&amount=৫০০০&action=cash-out&channel=app',
+    );
     const { data } = await expectOk(res, MfsChargeCalculationSchema);
     expect(data.amount).toBe(5000);
     expect(data.fee).toBe(87.5);
@@ -76,7 +80,7 @@ describe('MFS API routes', () => {
     expect(data.amount).toBe(10000);
     expect(data.rankings.length).toBeGreaterThanOrEqual(4);
     // Nagad should be cheapest for standard app cash-out
-    expect(data.rankings[0].provider).toBe('nagad');
+    expect(data.rankings[0]?.provider).toBe('nagad');
   });
 
   it('GET /v1/mfs/ussd returns quick USSD directory', async () => {

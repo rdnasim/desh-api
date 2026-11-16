@@ -32,10 +32,6 @@ const query = (name: string, description: string, example?: string) =>
     .optional()
     .openapi({ param: { name, in: 'query', description }, example });
 
-const invalid = (message: string): never => {
-  throw new ApiError('invalid_parameter', message);
-};
-
 export const mfsRoutes = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
 
 mfsRoutes.openapi(
@@ -54,17 +50,18 @@ mfsRoutes.openapi(
     responses: responses(z.array(MfsProviderSchema), 'List of MFS providers'),
   }),
   (c) => {
-    cachePublic(c, '1d');
-    const q = c.req.query('q')?.toLowerCase().trim();
+    cachePublic(c);
+    const { q } = c.req.valid('query');
+    const term = q?.toLowerCase().trim();
     let items = listProviders();
-    if (q) {
+    if (term) {
       items = items.filter(
         (p) =>
-          p.slug.includes(q) ||
-          p.name_en.toLowerCase().includes(q) ||
-          p.name_bn.includes(q) ||
-          p.parent_en.toLowerCase().includes(q) ||
-          p.parent_bn.includes(q),
+          p.slug.includes(term) ||
+          p.name_en.toLowerCase().includes(term) ||
+          p.name_bn.includes(term) ||
+          p.parent_en.toLowerCase().includes(term) ||
+          p.parent_bn.includes(term),
       );
     }
     return ok(c, items, meta());
@@ -79,16 +76,14 @@ mfsRoutes.openapi(
     summary: 'Get details and fee schedule for a specific MFS provider',
     request: {
       params: z.object({
-        provider: z
-          .string()
-          .openapi({ param: { name: 'provider', in: 'path' }, example: 'bkash' }),
+        provider: z.string().openapi({ param: { name: 'provider', in: 'path' }, example: 'bkash' }),
       }),
     },
     responses: responses(MfsProviderSchema, 'Provider details'),
   }),
   (c) => {
-    cachePublic(c, '1d');
-    const slug = c.req.param('provider');
+    cachePublic(c);
+    const { provider: slug } = c.req.valid('param');
     const provider = getProvider(slug);
     if (!provider) {
       const available = listProviders()
@@ -110,18 +105,32 @@ mfsRoutes.openapi(
       'Calculates transaction fees (cash-out or send-money) based on published tariffs. Accepts Latin or Bangla digits for amount.',
     request: {
       query: z.object({
-        provider: z
-          .string()
-          .openapi({ param: { name: 'provider', in: 'query', description: 'Provider slug' }, example: 'bkash' }),
-        amount: z
-          .string()
-          .openapi({ param: { name: 'amount', in: 'query', description: 'Transaction amount in BDT (accepts Bangla or Latin digits)' }, example: '5000' }),
+        provider: z.string().openapi({
+          param: { name: 'provider', in: 'query', description: 'Provider slug' },
+          example: 'bkash',
+        }),
+        amount: z.string().openapi({
+          param: {
+            name: 'amount',
+            in: 'query',
+            description: 'Transaction amount in BDT (accepts Bangla or Latin digits)',
+          },
+          example: '5000',
+        }),
         action: MfsActionSchema.default('cash-out').openapi({
-          param: { name: 'action', in: 'query', description: 'Transaction action: cash-out or send-money' },
+          param: {
+            name: 'action',
+            in: 'query',
+            description: 'Transaction action: cash-out or send-money',
+          },
           example: 'cash-out',
         }),
         channel: MfsChannelSchema.default('app').openapi({
-          param: { name: 'channel', in: 'query', description: 'Channel: app, ussd, atm, or special (e.g. priyo agent)' },
+          param: {
+            name: 'channel',
+            in: 'query',
+            description: 'Channel: app, ussd, atm, or special (e.g. priyo agent)',
+          },
           example: 'app',
         }),
       }),
@@ -129,14 +138,12 @@ mfsRoutes.openapi(
     responses: responses(MfsChargeCalculationSchema, 'Fee calculation result'),
   }),
   (c) => {
-    cachePublic(c, '1d');
-    const slug = c.req.query('provider');
-    const rawAmount = c.req.query('amount');
-    const action = (c.req.query('action') || 'cash-out') as any;
-    const channel = (c.req.query('channel') || 'app') as any;
-
-    if (!slug) invalid("Query parameter 'provider' is required.");
-    if (!rawAmount) invalid("Query parameter 'amount' is required.");
+    cachePublic(c);
+    const query = c.req.valid('query');
+    const slug = query.provider;
+    const rawAmount = query.amount;
+    const action = query.action;
+    const channel = query.channel;
 
     const provider = getProvider(slug);
     if (!provider) {
@@ -148,7 +155,8 @@ mfsRoutes.openapi(
 
     const calc = calculateMfsFee({ provider, action, channel, amount: rawAmount });
     if (!calc) {
-      invalid(
+      throw new ApiError(
+        'invalid_parameter',
         `Invalid calculation parameters. Ensure amount is a positive number and channel '${channel}' is supported for action '${action}' by ${provider.name_en}.`,
       );
     }
@@ -167,11 +175,20 @@ mfsRoutes.openapi(
       'Compares fees across all supported providers for a given amount, ranked from lowest fee to highest.',
     request: {
       query: z.object({
-        amount: z
-          .string()
-          .openapi({ param: { name: 'amount', in: 'query', description: 'Transaction amount in BDT (accepts Bangla or Latin digits)' }, example: '10000' }),
+        amount: z.string().openapi({
+          param: {
+            name: 'amount',
+            in: 'query',
+            description: 'Transaction amount in BDT (accepts Bangla or Latin digits)',
+          },
+          example: '10000',
+        }),
         action: MfsActionSchema.default('cash-out').openapi({
-          param: { name: 'action', in: 'query', description: 'Transaction action: cash-out or send-money' },
+          param: {
+            name: 'action',
+            in: 'query',
+            description: 'Transaction action: cash-out or send-money',
+          },
           example: 'cash-out',
         }),
         channel: MfsChannelSchema.default('app').openapi({
@@ -183,16 +200,18 @@ mfsRoutes.openapi(
     responses: responses(MfsComparisonResultSchema, 'Comparison ranking across providers'),
   }),
   (c) => {
-    cachePublic(c, '1d');
-    const rawAmount = c.req.query('amount');
-    const action = (c.req.query('action') || 'cash-out') as any;
-    const channel = (c.req.query('channel') || 'app') as any;
-
-    if (!rawAmount) invalid("Query parameter 'amount' is required.");
+    cachePublic(c);
+    const query = c.req.valid('query');
+    const rawAmount = query.amount;
+    const action = query.action;
+    const channel = query.channel;
 
     const comparison = compareMfsFees(listProviders(), action, channel, rawAmount);
     if (!comparison) {
-      invalid("Invalid amount. Must be a valid positive number in Latin or Bangla digits.");
+      throw new ApiError(
+        'invalid_parameter',
+        'Invalid amount. Must be a valid positive number in Latin or Bangla digits.',
+      );
     }
 
     return ok(c, comparison, meta());
@@ -208,7 +227,7 @@ mfsRoutes.openapi(
     responses: responses(z.array(MfsUssdEntrySchema), 'USSD codes and helplines'),
   }),
   (c) => {
-    cachePublic(c, '1d');
+    cachePublic(c);
     return ok(c, listUssdCodes(), meta());
   },
 );
