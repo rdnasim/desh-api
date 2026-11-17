@@ -6,7 +6,7 @@ name: Data Freshness & Upstream Health
 on:
   schedule:
     # 04:00 UTC = 10:00 AM Bangladesh Standard Time (UTC+6)
-    - cron: '0 4 * * *'
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 jobs:
