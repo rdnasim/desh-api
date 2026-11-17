@@ -166,6 +166,11 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.prices?.diesel > 0 ? true : 'no fuel prices'),
   },
   {
+    name: '13l airports',
+    path: '/v1/airports?type=international',
+    check: (_, b) => (b.data?.length === 3 ? true : `expected 3 international airports, got ${b.data?.length}`),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>
