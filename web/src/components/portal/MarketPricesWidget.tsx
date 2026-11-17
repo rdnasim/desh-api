@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShoppingBag, Fuel, Sparkles, TrendingUp } from 'lucide-react';
+import { ShoppingBag, Fuel, Sparkles, TrendingUp, Calendar } from 'lucide-react';
 import type { ApiCallDetails } from '../ApiInspectorModal';
 
 interface MarketPricesWidgetProps {
@@ -20,10 +20,10 @@ export const MarketPricesWidget: React.FC<MarketPricesWidgetProps> = ({
   onInspectApi,
 }) => {
   const [activeCategory, setActiveCategory] = useState<string>('edible-oil');
-  const [marketItems, setMarketItems] = useState<any[]>([]);
-  const [fuelItems, setFuelItems] = useState<any[]>([]);
+  const [marketData, setMarketData] = useState<any>(null);
+  const [fuelData, setFuelData] = useState<any>(null);
   const [loadingMarket, setLoadingMarket] = useState<boolean>(true);
-  const [marketApiCall, setMarketApiCall] = useState<ApiCallDetails | null>(null);
+  const [apiCall, setApiCall] = useState<ApiCallDetails | null>(null);
 
   // Fetch Market Prices
   useEffect(() => {
@@ -38,8 +38,8 @@ export const MarketPricesWidget: React.FC<MarketPricesWidgetProps> = ({
         const duration = Math.round(performance.now() - t0);
 
         if (isCurrent && json.success) {
-          setMarketItems(json.data?.items || []);
-          setMarketApiCall({
+          setMarketData(json.data);
+          setApiCall({
             method: 'GET',
             url,
             path: `/v1/market/prices?category=${activeCategory}`,
@@ -71,7 +71,7 @@ export const MarketPricesWidget: React.FC<MarketPricesWidgetProps> = ({
         const res = await fetch(url);
         const json = await res.json();
         if (isCurrent && json.success) {
-          setFuelItems(json.data?.fuels || []);
+          setFuelData(json.data);
         }
       } catch (err) {
         console.error('Failed to fetch fuel prices', err);
@@ -83,45 +83,58 @@ export const MarketPricesWidget: React.FC<MarketPricesWidgetProps> = ({
     };
   }, [baseUrl]);
 
+  const fuelPrices = fuelData?.prices;
+  const items = marketData?.items || [];
+
   return (
     <div className="portal-card">
       <div className="portal-card-header">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div className="portal-icon-badge" style={{ background: 'var(--amber-subtle)', color: 'var(--amber)' }}>
-            <ShoppingBag size={18} />
+            <ShoppingBag size={20} />
           </div>
           <div>
             <h3 className="portal-card-title">Daily Market & Fuel Prices</h3>
-            <p className="portal-card-sub">টিসিবি বাজারদর ও সরকারি জ্বালানি তেলের দাম</p>
+            <p className="portal-card-sub">টিসিবি দৈনিক নিত্যপ্রয়োজনীয় বাজারদর ও সরকারি জ্বালানি তেলের মূল্য</p>
           </div>
         </div>
 
-        {marketApiCall && (
+        {apiCall && (
           <button
-            onClick={() => onInspectApi(marketApiCall)}
+            onClick={() => onInspectApi(apiCall)}
             className="api-call-badge"
             title="Inspect underlying API call and response"
           >
             <Sparkles size={11} />
-            <span>API ({marketApiCall.durationMs}ms)</span>
+            <span>API ({apiCall.durationMs}ms)</span>
           </button>
         )}
       </div>
 
       {/* Fuel Quick Rates Strip */}
-      {fuelItems.length > 0 && (
+      {fuelPrices && (
         <div className="fuel-strip">
           <div className="fuel-label">
-            <Fuel size={14} style={{ color: 'var(--crimson)' }} />
-            <span>Government Fuel Tariffs (BPC):</span>
+            <Fuel size={15} style={{ color: 'var(--crimson)' }} />
+            <span>জ্বালানি তেলের দাম (কার্যকর {fuelData.effective_from || 'চলতি মাস'}):</span>
           </div>
           <div className="fuel-tags">
-            {fuelItems.map((f: any) => (
-              <div key={f.code} className="fuel-tag">
-                <span className="fuel-name">{f.name_en}</span>
-                <span className="fuel-price">৳{f.price_bdt}/L</span>
-              </div>
-            ))}
+            <div className="fuel-tag">
+              <span className="fuel-name">অকটেন (Octane)</span>
+              <span className="fuel-price">৳{fuelPrices.octane}/L</span>
+            </div>
+            <div className="fuel-tag">
+              <span className="fuel-name">পেট্রোল (Petrol)</span>
+              <span className="fuel-price">৳{fuelPrices.petrol}/L</span>
+            </div>
+            <div className="fuel-tag">
+              <span className="fuel-name">ডিজেল (Diesel)</span>
+              <span className="fuel-price">৳{fuelPrices.diesel}/L</span>
+            </div>
+            <div className="fuel-tag">
+              <span className="fuel-name">কেরোসিন (Kerosene)</span>
+              <span className="fuel-price">৳{fuelPrices.kerosene}/L</span>
+            </div>
           </div>
         </div>
       )}
@@ -141,21 +154,21 @@ export const MarketPricesWidget: React.FC<MarketPricesWidgetProps> = ({
 
       {/* Market Items Table */}
       {loadingMarket ? (
-        <div className="portal-loading">Fetching today's commodity prices…</div>
-      ) : marketItems.length > 0 ? (
+        <div className="portal-loading">Fetching today's commodity prices from TCB…</div>
+      ) : items.length > 0 ? (
         <div className="commodity-grid">
-          {marketItems.slice(0, 6).map((item: any, idx: number) => (
+          {items.slice(0, 6).map((item: any, idx: number) => (
             <div key={idx} className="commodity-card">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div>
                   <div className="commodity-name-bn">{item.item_bn || item.item_en}</div>
-                  <div className="commodity-name-en">{item.item_en} ({item.unit})</div>
+                  <div className="commodity-name-en">{item.item_en}</div>
                 </div>
-                <TrendingUp size={14} style={{ opacity: 0.5 }} />
+                <TrendingUp size={14} style={{ opacity: 0.4, color: 'var(--emerald)' }} />
               </div>
               <div className="commodity-price-row">
                 <span className="commodity-price">
-                  ৳{item.price_min}{item.price_max !== item.price_min ? ` - ৳${item.price_max}` : ''}
+                  ৳{item.price_min}{item.price_max !== item.price_min ? ` – ৳${item.price_max}` : ''}
                 </span>
                 <span className="commodity-unit">/ {item.unit}</span>
               </div>
@@ -169,7 +182,11 @@ export const MarketPricesWidget: React.FC<MarketPricesWidgetProps> = ({
       )}
 
       <div className="portal-footer-note">
-        <span>সূত্র: ট্রেডিং কর্পোরেশন অব বাংলাদেশ (TCB) ও বাংলাদেশ পেট্রোলিয়াম কর্পোরেশন (BPC)</span>
+        <span>
+          <Calendar size={13} style={{ verticalAlign: 'middle', marginRight: 4 }} />
+          রিপোর্ট তারিখ: {marketData?.date || 'আজকের বাজার'} · উৎস: ট্রেডিং কর্পোরেশন অব বাংলাদেশ (TCB)
+        </span>
+        <span>বাংলাদেশ পেট্রোলিয়াম কর্পোরেশন (BPC)</span>
       </div>
     </div>
   );

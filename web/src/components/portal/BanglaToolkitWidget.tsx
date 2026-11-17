@@ -67,7 +67,7 @@ export const BanglaToolkitWidget: React.FC<BanglaToolkitWidgetProps> = ({
         const json = await res.json();
         const duration = Math.round(performance.now() - t0);
         if (isCurrent && json.success) {
-          setAvroOutput(json.data?.unicode || json.data?.converted || '');
+          setAvroOutput(json.data?.output || json.data?.unicode || json.data?.converted || '');
           setApiCall({
             method: 'GET',
             url,
@@ -95,11 +95,24 @@ export const BanglaToolkitWidget: React.FC<BanglaToolkitWidgetProps> = ({
     let isCurrent = true;
     const fetchDate = async () => {
       const url = `${baseUrl}/v1/bangla/date`;
+      const t0 = performance.now();
       try {
         const res = await fetch(url);
         const json = await res.json();
+        const duration = Math.round(performance.now() - t0);
         if (isCurrent && json.success) {
           setBanglaDate(json.data);
+          if (activeTab === 'date') {
+            setApiCall({
+              method: 'GET',
+              url,
+              path: '/v1/bangla/date',
+              status: res.status,
+              durationMs: duration,
+              data: json,
+              title: 'Bangla Calendar & Date Conversion',
+            });
+          }
         }
       } catch (err) {
         console.error('Failed to fetch bangla date', err);
@@ -109,7 +122,7 @@ export const BanglaToolkitWidget: React.FC<BanglaToolkitWidgetProps> = ({
     return () => {
       isCurrent = false;
     };
-  }, [baseUrl]);
+  }, [baseUrl, activeTab]);
 
   const copyResult = (text: string) => {
     navigator.clipboard.writeText(text);
@@ -234,10 +247,10 @@ export const BanglaToolkitWidget: React.FC<BanglaToolkitWidgetProps> = ({
             <Calendar size={28} style={{ color: 'var(--crimson)' }} />
             <div>
               <div className="date-bn-big">
-                {banglaDate.day_bn} {banglaDate.month?.name_bn} {banglaDate.year_bn} বঙ্গাব্দ
+                {banglaDate.formatted_bn || `${banglaDate.day_bn} ${banglaDate.month?.name_bn} ${banglaDate.year_bn} বঙ্গাব্দ`}
               </div>
               <div className="date-bn-sub">
-                ঋতু: {banglaDate.season?.name_bn} · গ্রেগরিয়ান: {banglaDate.gregorian_date}
+                ঋতু: {banglaDate.season?.name_bn || 'ষড়ঋতু'} · বার: {banglaDate.weekday || ''} · খ্রিস্টাব্দ: {banglaDate.gregorian || ''}
               </div>
             </div>
           </div>

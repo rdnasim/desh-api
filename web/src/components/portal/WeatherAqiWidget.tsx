@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CloudSun, Wind, Sparkles } from 'lucide-react';
+import { CloudSun, Wind, Sparkles, AlertTriangle, ShieldCheck } from 'lucide-react';
 import type { ApiCallDetails } from '../ApiInspectorModal';
 
 interface WeatherAqiWidgetProps {
@@ -14,6 +14,7 @@ export const WeatherAqiWidget: React.FC<WeatherAqiWidgetProps> = ({
   const [aqiValue, setAqiValue] = useState<number>(165);
   const [aqiData, setAqiData] = useState<any>(null);
   const [seasons, setSeasons] = useState<any[]>([]);
+  const [activeSeason, setActiveSeason] = useState<number>(0);
   const [apiCall, setApiCall] = useState<ApiCallDetails | null>(null);
 
   // AQI lookup
@@ -71,14 +72,7 @@ export const WeatherAqiWidget: React.FC<WeatherAqiWidgetProps> = ({
     };
   }, [baseUrl]);
 
-  const getAqiColor = (score: number) => {
-    if (score <= 50) return '#10b981'; // Good
-    if (score <= 100) return '#f59e0b'; // Moderate
-    if (score <= 150) return '#f97316'; // Unhealthy for sensitive
-    if (score <= 200) return '#ef4444'; // Unhealthy
-    if (score <= 300) return '#8b5cf6'; // Very unhealthy
-    return '#7f1d1d'; // Hazardous
-  };
+  const categoryColor = aqiData?.category?.color_hex || '#ef4444';
 
   return (
     <div className="portal-card">
@@ -109,10 +103,10 @@ export const WeatherAqiWidget: React.FC<WeatherAqiWidgetProps> = ({
       <div className="aqi-box">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Wind size={16} style={{ color: getAqiColor(aqiValue) }} />
-            <span style={{ fontSize: 14, fontWeight: 700 }}>Dhaka Air Quality Level:</span>
+            <Wind size={16} style={{ color: categoryColor }} />
+            <span style={{ fontSize: 14, fontWeight: 700 }}>Dhaka Realtime Air Quality Index:</span>
           </div>
-          <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>Score: {aqiValue}</span>
+          <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-muted)' }}>Score: {aqiValue}</span>
         </div>
 
         <input
@@ -121,19 +115,30 @@ export const WeatherAqiWidget: React.FC<WeatherAqiWidgetProps> = ({
           max="350"
           value={aqiValue}
           onChange={(e) => setAqiValue(parseInt(e.target.value, 10))}
-          style={{ width: '100%', accentColor: getAqiColor(aqiValue), cursor: 'pointer' }}
+          style={{ width: '100%', accentColor: categoryColor, cursor: 'pointer' }}
         />
 
         {aqiData && (
-          <div className="aqi-card" style={{ borderLeftColor: getAqiColor(aqiValue) }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div>
-                <span className="aqi-status" style={{ color: getAqiColor(aqiValue) }}>
-                  {aqiData.category?.name_bn || aqiData.category?.name_en} ({aqiData.category?.name_en})
-                </span>
-                <p className="aqi-desc">{aqiData.category?.health_advisory_bn || aqiData.recommendation_en}</p>
+          <div className="aqi-card" style={{ borderLeft: `4px solid ${categoryColor}` }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+                  <span className="aqi-status" style={{ color: categoryColor, fontWeight: 700, fontSize: 16 }}>
+                    {aqiData.category?.name_bn} ({aqiData.category?.name_en})
+                  </span>
+                  <span style={{ fontSize: 11, padding: '2px 8px', borderRadius: 12, background: 'var(--bg-card-subtle)', color: 'var(--text-muted)' }}>
+                    রেঞ্জ: {aqiData.category?.min_aqi} - {aqiData.category?.max_aqi}
+                  </span>
+                </div>
+                <p className="aqi-desc" style={{ marginBottom: 4, fontWeight: 500 }}>
+                  {aqiData.category?.health_implication_bn || aqiData.category?.health_implication_en}
+                </p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--crimson)', fontWeight: 600 }}>
+                  <AlertTriangle size={13} />
+                  <span>পরামর্শ: {aqiData.recommendation_bn || aqiData.recommendation_en}</span>
+                </div>
               </div>
-              <div className="aqi-score-badge" style={{ background: getAqiColor(aqiValue) }}>
+              <div className="aqi-score-badge" style={{ background: categoryColor, color: '#fff', padding: '6px 14px', borderRadius: 8, fontWeight: 800, fontSize: 18, minWidth: 50, textAlign: 'center' }}>
                 {aqiValue}
               </div>
             </div>
@@ -143,18 +148,43 @@ export const WeatherAqiWidget: React.FC<WeatherAqiWidgetProps> = ({
 
       {/* 6 Seasons Strip */}
       {seasons.length > 0 && (
-        <div style={{ marginTop: 16 }}>
-          <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase' }}>
-            বাংলার ষড়ঋতু চক্র (Traditional Six Seasons):
-          </span>
+        <div style={{ marginTop: 18 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+            <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase' }}>
+              বাংলার ষড়ঋতু চক্র (Traditional Six Seasons):
+            </span>
+            <span style={{ fontSize: 12, color: 'var(--emerald)', display: 'flex', alignItems: 'center', gap: 4 }}>
+              <ShieldCheck size={13} />
+              বাংলা একাডেমি বর্ষপঞ্জি
+            </span>
+          </div>
+
           <div className="seasons-strip">
-            {seasons.map((s: any) => (
-              <div key={s.slug} className="season-item">
-                <span className="season-name-bn">{s.name_bn}</span>
+            {seasons.map((s: any, idx: number) => (
+              <div
+                key={s.slug}
+                onClick={() => setActiveSeason(idx)}
+                className={`season-item ${activeSeason === idx ? 'active' : ''}`}
+                style={{
+                  cursor: 'pointer',
+                  borderColor: activeSeason === idx ? 'var(--emerald)' : 'var(--border)',
+                  background: activeSeason === idx ? 'var(--bg-card-subtle)' : 'transparent',
+                }}
+              >
+                <span className="season-name-bn" style={{ fontWeight: 700 }}>{s.name_bn}</span>
                 <span className="season-name-en">{s.name_en}</span>
+                <span style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 2 }}>
+                  {s.bangla_months?.join('-')}
+                </span>
               </div>
             ))}
           </div>
+
+          {seasons[activeSeason] && (
+            <div style={{ marginTop: 10, padding: '10px 14px', borderRadius: 8, background: 'var(--bg-card-subtle)', fontSize: 13, border: '1px solid var(--border)' }}>
+              <strong>{seasons[activeSeason].name_bn} ঋতু ({seasons[activeSeason].name_en}):</strong> {seasons[activeSeason].description_bn} · <em>{seasons[activeSeason].approx_gregorian_span}</em>
+            </div>
+          )}
         </div>
       )}
 

@@ -76,23 +76,30 @@ export const App: React.FC = () => {
     let isCurrent = true;
     const fetchTickers = async () => {
       try {
-        const [dRes, hRes] = await Promise.all([
-          fetch(`${baseUrl}/v1/bangla/date`),
-          fetch(`${baseUrl}/v1/is-holiday`),
-        ]);
+        // Fetch bangla date
+        const dRes = await fetch(`${baseUrl}/v1/bangla/date`);
         const dJson = await dRes.json();
-        const hJson = await hRes.json();
-
         if (isCurrent && dJson.success && dJson.data) {
           const d = dJson.data;
-          setBanglaDateStr(`${d.day_bn} ${d.month?.name_bn} ${d.year_bn} বঙ্গাব্দ (${d.season?.name_bn} ঋতু)`);
+          setBanglaDateStr(d.formatted_bn || `${d.day_bn} ${d.month?.name_bn} ${d.year_bn} বঙ্গাব্দ (${d.season?.name_bn} ঋতু)`);
         }
-        if (isCurrent && hJson.success && hJson.data) {
-          const isHol = hJson.data.is_holiday;
-          setHolidayStatus(isHol ? 'আজ সরকারি ছুটি (Holiday)' : 'আজ সাধারণ কর্মদিবস (Working Day)');
+
+        // Fetch upcoming public holiday or check date
+        const hRes = await fetch(`${baseUrl}/v1/holidays?year=2027`);
+        const hJson = await hRes.json();
+        if (isCurrent && hJson.success && Array.isArray(hJson.data)) {
+          const generalHolidays = hJson.data.filter((h: any) => h.type === 'general');
+          const firstHoliday = generalHolidays[0];
+          if (firstHoliday) {
+            setHolidayStatus(`আসন্ন জাতীয় ছুটি: ${firstHoliday.name_bn} (${firstHoliday.dates?.[0]})`);
+          } else {
+            setHolidayStatus('সরকারি ছুটির ক্যালেন্ডার ২০২৭ সক্রিয়');
+          }
         }
       } catch (err) {
-        // graceful fallback
+        if (isCurrent) {
+          setHolidayStatus('গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের উন্মুক্ত ডেটা পোর্টাল');
+        }
       }
     };
 

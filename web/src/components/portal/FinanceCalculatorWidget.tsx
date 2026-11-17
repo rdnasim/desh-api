@@ -175,30 +175,67 @@ export const FinanceCalculatorWidget: React.FC<FinanceCalculatorWidgetProps> = (
           </div>
 
           {taxResult && (
-            <div className="finance-result-grid">
-              <div className="stat-card" style={{ borderLeft: '4px solid var(--crimson)' }}>
-                <div className="stat-label">বার্ষিক প্রদেয় কর (Net Tax Payable)</div>
-                <div className="stat-value" style={{ color: 'var(--crimson)' }}>
-                  ৳{taxResult.net_tax_payable?.toLocaleString() ?? 0}
+            <div>
+              <div className="finance-result-grid">
+                <div className="stat-card" style={{ borderLeft: '4px solid var(--crimson)' }}>
+                  <div className="stat-label">বার্ষিক প্রদেয় কর (Net Tax Payable)</div>
+                  <div className="stat-value" style={{ color: 'var(--crimson)' }}>
+                    ৳{Math.round(taxResult.tax_payable ?? 0).toLocaleString()}
+                  </div>
+                  <div className="stat-subtext">করবর্ষ: {taxResult.tax_year || '2027-28'} · কার্যকর হার: {taxResult.effective_rate}%</div>
                 </div>
-                <div className="stat-subtext">করবর্ষ: {taxResult.tax_year || '2026-2027'}</div>
+
+                <div className="stat-card">
+                  <div className="stat-label">মাসিক কর্তনযোগ্য কর (Monthly TDS)</div>
+                  <div className="stat-value">
+                    ৳{Math.round((taxResult.tax_payable ?? 0) / 12).toLocaleString()}
+                  </div>
+                  <div className="stat-subtext">প্রতি মাসের বেতন থেকে কর্তনযোগ্য</div>
+                </div>
+
+                <div className="stat-card">
+                  <div className="stat-label">করমুক্ত আয়ের সীমা (Exemption Ceiling)</div>
+                  <div className="stat-value" style={{ color: 'var(--emerald)' }}>
+                    ৳{(taxResult.tax_free_threshold ?? 400000).toLocaleString()}
+                  </div>
+                  <div className="stat-subtext">সর্বনিম্ন কর: ৳{taxResult.minimum_tax?.toLocaleString() || '5,000'}</div>
+                </div>
               </div>
 
-              <div className="stat-card">
-                <div className="stat-label">মাসিক কর্তনযোগ্য কর (Monthly TDS)</div>
-                <div className="stat-value">
-                  ৳{Math.round((taxResult.net_tax_payable ?? 0) / 12).toLocaleString()}
+              {/* Slabs breakdown */}
+              {taxResult.slabs && taxResult.slabs.length > 0 && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', marginBottom: 6, textTransform: 'uppercase' }}>
+                    কর স্ল্যাব বিভাজন (Tax Slabs Breakdown):
+                  </div>
+                  <div style={{ overflowX: 'auto' }}>
+                    <table style={{ width: '100%', fontSize: 12, borderCollapse: 'collapse', textAlign: 'left' }}>
+                      <thead>
+                        <tr style={{ background: 'var(--bg-card-subtle)', borderBottom: '1px solid var(--border)' }}>
+                          <th style={{ padding: '6px 10px' }}>স্ল্যাব সীমা (Range)</th>
+                          <th style={{ padding: '6px 10px' }}>কর হার (Rate)</th>
+                          <th style={{ padding: '6px 10px' }}>করযোগ্য অংশ (Taxed)</th>
+                          <th style={{ padding: '6px 10px', textAlign: 'right' }}>কর পরিমাণ (Tax)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {taxResult.slabs.map((slab: any, idx: number) => (
+                          <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
+                            <td style={{ padding: '6px 10px' }}>
+                              ৳{slab.from?.toLocaleString()} - {slab.to ? `৳${slab.to.toLocaleString()}` : 'অবশিষ্টাংশ'}
+                            </td>
+                            <td style={{ padding: '6px 10px', fontWeight: 600 }}>{slab.rate}%</td>
+                            <td style={{ padding: '6px 10px' }}>৳{slab.taxed?.toLocaleString()}</td>
+                            <td style={{ padding: '6px 10px', textAlign: 'right', fontWeight: 700, color: slab.tax > 0 ? 'var(--crimson)' : 'inherit' }}>
+                              ৳{slab.tax?.toLocaleString()}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div className="stat-subtext">প্রতি মাসের বেতন থেকে কর্তন</div>
-              </div>
-
-              <div className="stat-card">
-                <div className="stat-label">করমুক্ত আয়ের সীমা (Exemption Ceiling)</div>
-                <div className="stat-value" style={{ color: 'var(--emerald)' }}>
-                  ৳{taxResult.tax_free_ceiling?.toLocaleString() ?? '3,50,000'}
-                </div>
-                <div className="stat-subtext">প্রযোজ্য সর্বনিম্ন কর: ৳৫,০০০ (ঢাকা/চট্টগ্রাম)</div>
-              </div>
+              )}
             </div>
           )}
         </div>
@@ -261,9 +298,9 @@ export const FinanceCalculatorWidget: React.FC<FinanceCalculatorWidgetProps> = (
               <div className="stat-card">
                 <div className="stat-label">মোট প্রদেয় অর্থ (Total Payment)</div>
                 <div className="stat-value">
-                  ৳{emiResult.total_payable?.toLocaleString() ?? 0}
+                  ৳{Math.round(emiResult.total_payment ?? emiResult.total_payable ?? 0).toLocaleString()}
                 </div>
-                <div className="stat-subtext">আসল + সুদ সহ</div>
+                <div className="stat-subtext">আসল + সুদ সহ মোট পরিশোধ্য</div>
               </div>
             </div>
           )}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Moon, Sparkles, MapPin } from 'lucide-react';
+import { Moon, Sparkles, MapPin, Compass } from 'lucide-react';
 import type { ApiCallDetails } from '../ApiInspectorModal';
 
 interface PrayerWidgetProps {
@@ -18,12 +18,14 @@ const DISTRICT_OPTIONS = [
   { slug: 'mymensingh', name: 'Mymensingh (ময়মনসিংহ)' },
   { slug: 'cumilla', name: 'Cumilla (কুমিল্লা)' },
   { slug: 'bogura', name: 'Bogura (বগুড়া)' },
+  { slug: 'coxs-bazar', name: "Cox's Bazar (কক্সবাজার)" },
 ];
 
 export const PrayerWidget: React.FC<PrayerWidgetProps> = ({ baseUrl, onInspectApi }) => {
   const [district, setDistrict] = useState<string>('dhaka');
   const [prayerData, setPrayerData] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [timeFormat, setTimeFormat] = useState<'12h' | '24h' | 'bn'>('12h');
   const [apiCall, setApiCall] = useState<ApiCallDetails | null>(null);
 
   useEffect(() => {
@@ -63,15 +65,19 @@ export const PrayerWidget: React.FC<PrayerWidgetProps> = ({ baseUrl, onInspectAp
     };
   }, [baseUrl, district]);
 
-  const times = prayerData?.times;
-  const times12 = prayerData?.times_12h;
+  const getTime = (key: string) => {
+    if (!prayerData) return '--:--';
+    if (timeFormat === 'bn') return prayerData.times_bn?.[key] ?? prayerData.times?.[key];
+    if (timeFormat === '12h') return prayerData.times_12h?.[key] ?? prayerData.times?.[key];
+    return prayerData.times?.[key] ?? '--:--';
+  };
 
   return (
     <div className="portal-card">
       <div className="portal-card-header">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div className="portal-icon-badge" style={{ background: 'var(--emerald-subtle)', color: 'var(--emerald)' }}>
-            <Moon size={18} />
+            <Moon size={20} />
           </div>
           <div>
             <h3 className="portal-card-title">Daily Prayer & Ramadan Timings</h3>
@@ -79,9 +85,9 @@ export const PrayerWidget: React.FC<PrayerWidgetProps> = ({ baseUrl, onInspectAp
           </div>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 4, background: 'var(--bg-elevated)', padding: '4px 8px', borderRadius: 'var(--radius-sm)' }}>
-            <MapPin size={13} style={{ color: 'var(--crimson)' }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 4, background: 'var(--bg-elevated)', padding: '5px 10px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+            <MapPin size={14} style={{ color: 'var(--crimson)' }} />
             <select
               value={district}
               onChange={(e) => setDistrict(e.target.value)}
@@ -94,6 +100,51 @@ export const PrayerWidget: React.FC<PrayerWidgetProps> = ({ baseUrl, onInspectAp
                 </option>
               ))}
             </select>
+          </div>
+
+          <div style={{ display: 'flex', background: 'var(--bg-elevated)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)', overflow: 'hidden' }}>
+            <button
+              onClick={() => setTimeFormat('12h')}
+              style={{
+                border: 'none',
+                background: timeFormat === '12h' ? 'var(--emerald)' : 'transparent',
+                color: timeFormat === '12h' ? '#fff' : 'var(--text-muted)',
+                padding: '4px 8px',
+                fontSize: 11,
+                fontWeight: 600,
+                cursor: 'pointer',
+              }}
+            >
+              12H
+            </button>
+            <button
+              onClick={() => setTimeFormat('24h')}
+              style={{
+                border: 'none',
+                background: timeFormat === '24h' ? 'var(--emerald)' : 'transparent',
+                color: timeFormat === '24h' ? '#fff' : 'var(--text-muted)',
+                padding: '4px 8px',
+                fontSize: 11,
+                fontWeight: 600,
+                cursor: 'pointer',
+              }}
+            >
+              24H
+            </button>
+            <button
+              onClick={() => setTimeFormat('bn')}
+              style={{
+                border: 'none',
+                background: timeFormat === 'bn' ? 'var(--emerald)' : 'transparent',
+                color: timeFormat === 'bn' ? '#fff' : 'var(--text-muted)',
+                padding: '4px 8px',
+                fontSize: 11,
+                fontWeight: 600,
+                cursor: 'pointer',
+              }}
+            >
+              বাংলা
+            </button>
           </div>
 
           {apiCall && (
@@ -111,49 +162,52 @@ export const PrayerWidget: React.FC<PrayerWidgetProps> = ({ baseUrl, onInspectAp
 
       {loading ? (
         <div className="portal-loading">Loading prayer times…</div>
-      ) : times ? (
+      ) : prayerData ? (
         <>
           <div className="prayer-grid">
             <div className="prayer-cell highlight">
               <span className="prayer-name">Sehri Cutoff (সাহরি শেষ)</span>
-              <span className="prayer-time">{times.sehri_cutoff}</span>
-              <span className="prayer-sub">{times12?.sehri_cutoff}</span>
+              <span className="prayer-time">{getTime('sehri_cutoff')}</span>
+              <span className="prayer-sub">তাহাজ্জুদ শেষ</span>
             </div>
             <div className="prayer-cell">
               <span className="prayer-name">Fajr (ফজর)</span>
-              <span className="prayer-time">{times.fajr}</span>
-              <span className="prayer-sub">{times12?.fajr}</span>
+              <span className="prayer-time">{getTime('fajr')}</span>
+              <span className="prayer-sub">শুরু</span>
             </div>
             <div className="prayer-cell">
               <span className="prayer-name">Sunrise (সূর্যোদয়)</span>
-              <span className="prayer-time">{times.sunrise}</span>
-              <span className="prayer-sub">{times12?.sunrise}</span>
+              <span className="prayer-time">{getTime('sunrise')}</span>
+              <span className="prayer-sub">ইশরাক শুরু</span>
             </div>
             <div className="prayer-cell">
               <span className="prayer-name">Dhuhr (যোহর)</span>
-              <span className="prayer-time">{times.dhuhr}</span>
-              <span className="prayer-sub">{times12?.dhuhr}</span>
+              <span className="prayer-time">{getTime('dhuhr')}</span>
+              <span className="prayer-sub">মধ্যাহ্ন</span>
             </div>
             <div className="prayer-cell">
               <span className="prayer-name">Asr (আসর)</span>
-              <span className="prayer-time">{times.asr}</span>
-              <span className="prayer-sub">{times12?.asr}</span>
+              <span className="prayer-time">{getTime('asr')}</span>
+              <span className="prayer-sub">হানাফি মাযহাব</span>
             </div>
             <div className="prayer-cell highlight-maghrib">
               <span className="prayer-name">Maghrib / Iftar (ইফতার)</span>
-              <span className="prayer-time">{times.maghrib}</span>
-              <span className="prayer-sub">{times12?.maghrib}</span>
+              <span className="prayer-time">{getTime('maghrib')}</span>
+              <span className="prayer-sub">সূর্যাস্ত ও ইফতার</span>
             </div>
             <div className="prayer-cell">
               <span className="prayer-name">Isha (এশা)</span>
-              <span className="prayer-time">{times.isha}</span>
-              <span className="prayer-sub">{times12?.isha}</span>
+              <span className="prayer-time">{getTime('isha')}</span>
+              <span className="prayer-sub">তারাবিহ শুরু</span>
             </div>
           </div>
 
           <div className="portal-footer-note">
-            <span>আজকের তারিখ: {prayerData.date_bangla} ({prayerData.date})</span>
-            <span style={{ marginLeft: 'auto' }}>হানাফি পদ্ধতি · ইসলামিক ফাউন্ডেশন বাংলাদেশ</span>
+            <span>
+              <Compass size={13} style={{ verticalAlign: 'middle', marginRight: 4, color: 'var(--emerald)' }} />
+              {prayerData.bangla_date || 'বাংলা পঞ্জিকা'} · হিজরি: {prayerData.hijri_date_bn || prayerData.hijri_date}
+            </span>
+            <span>ইসলামিক ফাউন্ডেশন বাংলাদেশ মানদণ্ড</span>
           </div>
         </>
       ) : (

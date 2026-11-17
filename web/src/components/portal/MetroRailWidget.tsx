@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Train, ArrowRight, Sparkles, Clock, Ticket } from 'lucide-react';
+import { Train, ArrowRight, Sparkles, Clock, Ticket, ShieldCheck } from 'lucide-react';
 import type { ApiCallDetails } from '../ApiInspectorModal';
 
 interface MetroRailWidgetProps {
@@ -57,7 +57,7 @@ export const MetroRailWidget: React.FC<MetroRailWidgetProps> = ({
             status: res.status,
             durationMs: duration,
             data: json,
-            title: `MRT-6 Fare: ${fromStation} -> ${toStation}`,
+            title: `MRT-6 Transit Fare: ${fromStation} -> ${toStation}`,
           });
         }
       } catch (err) {
@@ -76,13 +76,13 @@ export const MetroRailWidget: React.FC<MetroRailWidgetProps> = ({
   return (
     <div className="portal-card">
       <div className="portal-card-header">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div className="portal-icon-badge" style={{ background: '#dbeafe', color: '#1d4ed8' }}>
-            <Train size={18} />
+            <Train size={20} />
           </div>
           <div>
-            <h3 className="portal-card-title">Dhaka Metro Rail (MRT Line-6) Transit Guide</h3>
-            <p className="portal-card-sub">স্টেশন নির্বাচন ও দ্রুত পাস / একক যাত্রার ভাড়া ক্যালকুলেটর</p>
+            <h3 className="portal-card-title">Dhaka Metro Rail (MRT Line-6) Navigator</h3>
+            <p className="portal-card-sub">স্টেশন নির্বাচন, ভ্রমণ সময় ও একক যাত্রা বনাম এমআরটি পাস ডিসকাউন্টেড ভাড়া</p>
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export const MetroRailWidget: React.FC<MetroRailWidgetProps> = ({
       {/* Station Selectors Row */}
       <div className="metro-selectors-row">
         <div className="metro-select-group">
-          <label className="metro-label">যাত্রা শুরু (Origin):</label>
+          <label className="metro-label">যাত্রা শুরু (Origin Station):</label>
           <select
             className="portal-select"
             value={fromStation}
@@ -116,11 +116,11 @@ export const MetroRailWidget: React.FC<MetroRailWidgetProps> = ({
         </div>
 
         <div className="metro-arrow">
-          <ArrowRight size={20} />
+          <ArrowRight size={22} />
         </div>
 
         <div className="metro-select-group">
-          <label className="metro-label">গন্তব্য (Destination):</label>
+          <label className="metro-label">গন্তব্য (Destination Station):</label>
           <select
             className="portal-select"
             value={toStation}
@@ -137,50 +137,58 @@ export const MetroRailWidget: React.FC<MetroRailWidgetProps> = ({
 
       {/* Fare Cards */}
       {loading ? (
-        <div className="portal-loading">Calculating MRT fare…</div>
+        <div className="portal-loading">Calculating MRT fare route…</div>
       ) : fareData ? (
-        <div className="metro-fare-grid">
-          <div className="metro-fare-card highlight-pass">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span className="fare-badge-pass">MRT Pass / Rapid Pass (১০% ছাড়)</span>
-              <Ticket size={16} style={{ color: 'var(--emerald)' }} />
+        <>
+          <div className="metro-fare-grid">
+            <div className="metro-fare-card highlight-pass">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span className="fare-badge-pass">MRT Pass / Rapid Pass (১০% ছাড়)</span>
+                <Ticket size={18} style={{ color: 'var(--emerald)' }} />
+              </div>
+              <div className="fare-amount-row">
+                <span className="fare-amount" style={{ color: 'var(--emerald)' }}>
+                  ৳{fareData.mrt_pass_fare}
+                </span>
+                <span className="fare-sub">({fareData.mrt_pass_fare_bn} টাকা)</span>
+              </div>
             </div>
-            <div className="fare-amount-row">
-              <span className="fare-amount">৳{fareData.fare_mrt_pass ?? fareData.discounted_fare}</span>
-              <span className="fare-sub">ডিসকাউন্টেড ভাড়া</span>
+
+            <div className="metro-fare-card">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span className="fare-badge-reg">Single Journey Ticket (সাধারণ টিকিট)</span>
+                <Ticket size={18} style={{ opacity: 0.5 }} />
+              </div>
+              <div className="fare-amount-row">
+                <span className="fare-amount">৳{fareData.single_journey_fare}</span>
+                <span className="fare-sub">({fareData.single_journey_fare_bn} টাকা)</span>
+              </div>
+            </div>
+
+            <div className="metro-fare-card info-card">
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <Clock size={16} style={{ color: 'var(--sky)' }} />
+                <span style={{ fontSize: 13, fontWeight: 700 }}>ভ্রমণ সময় ও দূরত্ব:</span>
+              </div>
+              <div className="fare-amount-row">
+                <span className="fare-amount" style={{ fontSize: 22 }}>
+                  ~{fareData.estimated_time_minutes} মিনিট
+                </span>
+                <span className="fare-sub">({fareData.distance_km} কি.মি., {fareData.stations_traversed} স্টেশন)</span>
+              </div>
             </div>
           </div>
 
-          <div className="metro-fare-card">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span className="fare-badge-reg">Single Journey Ticket (সাধারণ)</span>
-              <Ticket size={16} style={{ opacity: 0.5 }} />
-            </div>
-            <div className="fare-amount-row">
-              <span className="fare-amount">৳{fareData.fare_single_journey ?? fareData.regular_fare}</span>
-              <span className="fare-sub">একক যাত্রা টিকিট</span>
-            </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--text-muted)' }}>
+            <ShieldCheck size={14} style={{ color: 'var(--emerald)' }} />
+            <span>বীর মুক্তিযোদ্ধা ও ৩ ফুটের কম শিশুদের জন্য অভিভাবকের সাথে ভ্রমণ সম্পূর্ণ ফ্রি।</span>
           </div>
-
-          <div className="metro-fare-card info-card">
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <Clock size={15} style={{ color: 'var(--sky)' }} />
-              <span style={{ fontSize: 13, fontWeight: 600 }}>আনুমানিক ভ্রমণ সময়:</span>
-            </div>
-            <div className="fare-amount-row">
-              <span className="fare-amount" style={{ fontSize: 20 }}>
-                ~{fareData.duration_minutes ?? Math.abs(METRO_STATIONS.findIndex(s=>s.slug===fromStation) - METRO_STATIONS.findIndex(s=>s.slug===toStation)) * 2.5} মিনিট
-              </span>
-              <span className="fare-sub">
-                {fareData.stations_count ?? Math.abs(METRO_STATIONS.findIndex(s=>s.slug===fromStation) - METRO_STATIONS.findIndex(s=>s.slug===toStation)) + 1} টি স্টেশন
-              </span>
-            </div>
-          </div>
-        </div>
+        </>
       ) : null}
 
       <div className="portal-footer-note">
-        <span>সূত্র: ঢাকা ম্যাস ট্রানজিট কোম্পানি লিমিটেড (DMTCL) · সকাল ৭:১০ থেকে রাত ৯:৪০ পর্যন্ত চলমান</span>
+        <span>সূত্র: ঢাকা ম্যাস ট্রানজিট কোম্পানি লিমিটেড (DMTCL) · ১৬টি স্টেশন পূর্ণাঙ্গ কার্যকর</span>
+        <span>সকাল ৭:১০ – রাত ৯:৪০ (শুক্রবার বন্ধ)</span>
       </div>
     </div>
   );

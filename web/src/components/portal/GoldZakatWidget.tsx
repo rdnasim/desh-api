@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Coins, Sparkles, Scale } from 'lucide-react';
+import { Coins, Sparkles, Scale, Calendar } from 'lucide-react';
 import type { ApiCallDetails } from '../ApiInspectorModal';
 
 interface GoldZakatWidgetProps {
@@ -74,16 +74,19 @@ export const GoldZakatWidget: React.FC<GoldZakatWidgetProps> = ({
     };
   }, [baseUrl, wealthInput]);
 
+  const gold = goldPrices?.gold;
+  const silver = goldPrices?.silver;
+
   return (
     <div className="portal-card">
       <div className="portal-card-header">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div className="portal-icon-badge" style={{ background: '#fef3c7', color: '#b45309' }}>
-            <Coins size={18} />
+            <Coins size={20} />
           </div>
           <div>
-            <h3 className="portal-card-title">Gold Prices & Zakat Calculator</h3>
-            <p className="portal-card-sub">বাজুস নির্ধারিত আজকের সোনার দাম ও লাইভ নিসাবভিত্তিক যাকাত</p>
+            <h3 className="portal-card-title">Gold & Silver Rates · Zakat Calculator</h3>
+            <p className="portal-card-sub">বাজুস নির্ধারিত সোনার দর ও ইসলামিক স্বর্ণ/রৌপ্য নিসাবভিত্তিক যাকাত</p>
           </div>
         </div>
 
@@ -100,47 +103,47 @@ export const GoldZakatWidget: React.FC<GoldZakatWidgetProps> = ({
       </div>
 
       {/* Gold Rates Grid */}
-      {goldPrices ? (
+      {gold ? (
         <div className="gold-grid">
           <div className="gold-card highlight-gold">
-            <span className="gold-type">22 Karat (ক্যাডমিয়াম)</span>
-            <span className="gold-price-big">৳{goldPrices.gold_22k?.per_vori?.toLocaleString() || '1,42,000'}</span>
-            <span className="gold-sub">প্রতি ভরি (৳{goldPrices.gold_22k?.per_gram?.toLocaleString() || '12,174'}/গ্রাম)</span>
+            <span className="gold-type">২২ ক্যারেট (22K Gold)</span>
+            <span className="gold-price-big">৳{gold['22k']?.per_vori?.toLocaleString() || '2,17,592'}</span>
+            <span className="gold-sub">প্রতি ভরি (৳{gold['22k']?.per_gram?.toLocaleString()}/গ্রাম)</span>
           </div>
 
           <div className="gold-card">
-            <span className="gold-type">21 Karat</span>
-            <span className="gold-price-big">৳{goldPrices.gold_21k?.per_vori?.toLocaleString() || '1,35,000'}</span>
-            <span className="gold-sub">প্রতি ভরি (৳{goldPrices.gold_21k?.per_gram?.toLocaleString() || '11,575'}/গ্রাম)</span>
+            <span className="gold-type">২১ ক্যারেট (21K Gold)</span>
+            <span className="gold-price-big">৳{gold['21k']?.per_vori?.toLocaleString() || '2,07,794'}</span>
+            <span className="gold-sub">প্রতি ভরি (৳{gold['21k']?.per_gram?.toLocaleString()}/গ্রাম)</span>
           </div>
 
           <div className="gold-card">
-            <span className="gold-type">18 Karat</span>
-            <span className="gold-price-big">৳{goldPrices.gold_18k?.per_vori?.toLocaleString() || '1,16,000'}</span>
-            <span className="gold-sub">প্রতি ভরি (৳{goldPrices.gold_18k?.per_gram?.toLocaleString() || '9,945'}/গ্রাম)</span>
+            <span className="gold-type">১৮ ক্যারেট (18K Gold)</span>
+            <span className="gold-price-big">৳{gold['18k']?.per_vori?.toLocaleString() || '1,78,459'}</span>
+            <span className="gold-sub">প্রতি ভরি (৳{gold['18k']?.per_gram?.toLocaleString()}/গ্রাম)</span>
           </div>
 
           <div className="gold-card">
-            <span className="gold-type">22K Silver (রুপা)</span>
-            <span className="gold-price-big">৳{goldPrices.silver_22k?.per_vori?.toLocaleString() || '2,741'}</span>
-            <span className="gold-sub">প্রতি ভরি (৳{goldPrices.silver_22k?.per_gram?.toLocaleString() || '235'}/গ্রাম)</span>
+            <span className="gold-type">২২K রুপা (22K Silver)</span>
+            <span className="gold-price-big">৳{silver?.['22k']?.per_vori?.toLocaleString() || '3,499'}</span>
+            <span className="gold-sub">প্রতি ভরি (৳{silver?.['22k']?.per_gram?.toLocaleString()}/গ্রাম)</span>
           </div>
         </div>
       ) : (
-        <div className="portal-loading">Loading BAJUS rates…</div>
+        <div className="portal-loading">Loading live BAJUS bullion rates…</div>
       )}
 
       {/* Interactive Zakat Calculator Section */}
       <div className="zakat-calculator-box">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
           <Scale size={16} style={{ color: 'var(--crimson)' }} />
-          <span style={{ fontSize: 14, fontWeight: 700 }}>Live Zakat Calculator (যাকাত হিসাব):</span>
+          <span style={{ fontSize: 14, fontWeight: 700 }}>যাকাত ক্যালকুলেটর (Zakat Calculator):</span>
         </div>
 
         <div className="zakat-input-row">
-          <div style={{ flex: 1 }}>
-            <label style={{ fontSize: 12, color: 'var(--text-muted)', display: 'block', marginBottom: 4 }}>
-              Net Zakatable Wealth / Cash (সঞ্চয় ও নগদ অর্থ BDT)
+          <div style={{ flex: 1, minWidth: 200 }}>
+            <label style={{ fontSize: 12, color: 'var(--text-muted)', display: 'block', marginBottom: 6 }}>
+              মোট যাকাতযোগ্য সম্পদ ও নগদ অর্থ (Net Zakatable Wealth in BDT):
             </label>
             <input
               type="number"
@@ -152,15 +155,15 @@ export const GoldZakatWidget: React.FC<GoldZakatWidgetProps> = ({
           </div>
 
           {zakatResult && (
-            <div className="zakat-result-card">
-              <span className="zakat-result-label">
-                {zakatResult.is_zakat_due ? 'যাকাত প্রযোজ্য (Zakat Due)' : 'নিসাব পূর্ণ হয়নি'}
+            <div className="zakat-result-card" style={{ borderColor: zakatResult.due ? 'var(--emerald)' : 'var(--border-strong)' }}>
+              <span className="zakat-result-label" style={{ color: zakatResult.due ? 'var(--emerald)' : 'var(--text-muted)' }}>
+                {zakatResult.due ? '✓ যাকাত ফরজ হয়েছে (Zakat Due)' : 'নিসাব অতিক্রম করেনি'}
               </span>
               <span className="zakat-result-value">
-                ৳{zakatResult.zakat_payable_bdt?.toLocaleString() || '0'}
+                ৳{zakatResult.zakat?.toLocaleString() || '0'}
               </span>
               <span className="zakat-result-sub">
-                নিসাব: ৳{zakatResult.silver_nisab_bdt?.toLocaleString()} (রৌপ্য নিসাব)
+                রৌপ্য নিসাব: ৳{Math.round(zakatResult.nisab_value)?.toLocaleString()} ({zakatResult.basis})
               </span>
             </div>
           )}
@@ -168,7 +171,11 @@ export const GoldZakatWidget: React.FC<GoldZakatWidgetProps> = ({
       </div>
 
       <div className="portal-footer-note">
-        <span>সূত্র: বাংলাদেশ জুয়েলার্স অ্যাসোসিয়েশন (BAJUS) · নিসাব: ৫২.৫ তোলা রুপা বা ৭.৫ তোলা সোনা</span>
+        <span>
+          <Calendar size={13} style={{ verticalAlign: 'middle', marginRight: 4 }} />
+          কার্যকর তারিখ: {goldPrices?.effective_date || 'সর্বশেষ আপডেট'} · সূত্র: বাংলাদেশ জুয়েলার্স অ্যাসোসিয়েশন (BAJUS)
+        </span>
+        <span>হিসাবের হার: ২.৫%</span>
       </div>
     </div>
   );

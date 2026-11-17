@@ -164,7 +164,22 @@ const MODULES = [
 const app = new OpenAPIHono<AppEnv>({ defaultHook: validationHook });
 
 app.use('*', logger);
-app.use('*', cors({ origin: '*', allowMethods: ['GET', 'POST', 'OPTIONS'] }));
+app.use(
+  '*',
+  cors({
+    origin: '*',
+    allowMethods: ['GET', 'POST', 'OPTIONS'],
+    allowHeaders: ['Content-Type', 'Authorization', 'X-API-Key', 'X-Requested-With'],
+    exposeHeaders: [
+      'X-RateLimit-Tier',
+      'X-RateLimit-Limit-Minute',
+      'X-RateLimit-Limit-Daily',
+      'X-RateLimit-Remaining-Daily',
+      'X-RateLimit-Reset',
+      'ETag',
+    ],
+  }),
+);
 app.use('*', defaultNoStore);
 app.use('*', etag());
 app.use('/v1/*', rateLimit);

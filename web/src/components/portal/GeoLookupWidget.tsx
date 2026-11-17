@@ -219,19 +219,23 @@ export const GeoLookupWidget: React.FC<GeoLookupWidgetProps> = ({
             />
           </div>
 
-          {postcodeResult && (
+          {postcodeResult && postcodeResult.post_offices && postcodeResult.post_offices.length > 0 && (
             <div className="lookup-result-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--emerald)', marginBottom: 6 }}>
                 <CheckCircle2 size={16} />
-                <span style={{ fontWeight: 700, fontSize: 14 }}>পোস্টকোড পাওয়া গেছে:</span>
+                <span style={{ fontWeight: 700, fontSize: 14 }}>পোস্টকোড নিশ্চিতকরণ:</span>
               </div>
-              <div className="lookup-title-row">
-                <span className="lookup-title-bn">{postcodeResult.post_office_bn || postcodeResult.name_bn}</span>
-                <span className="lookup-badge">{postcodeResult.postcode}</span>
-              </div>
-              <p className="lookup-meta">
-                পোস্ট অফিস: {postcodeResult.post_office_en} · উপজেলা: {postcodeResult.upazila_en} · জেলা: {postcodeResult.district_en}
-              </p>
+              {postcodeResult.post_offices.map((po: any, idx: number) => (
+                <div key={idx} style={{ marginBottom: idx > 0 ? 8 : 0, paddingTop: idx > 0 ? 8 : 0, borderTop: idx > 0 ? '1px dashed var(--border)' : 'none' }}>
+                  <div className="lookup-title-row">
+                    <span className="lookup-title-bn">{po.name_bn || po.name_en}</span>
+                    <span className="lookup-badge">পোস্টকোড {po.postcode}</span>
+                  </div>
+                  <p className="lookup-meta">
+                    ইংরেজি নাম: {po.name_en} · থানা: {po.thana_en} · জেলা: <span style={{ textTransform: 'capitalize' }}>{po.district}</span> {po.city_corporation ? `· সিটি কর্পোরেশন: ${po.city_corporation}` : ''}
+                  </p>
+                </div>
+              ))}
             </div>
           )}
         </div>
@@ -261,11 +265,11 @@ export const GeoLookupWidget: React.FC<GeoLookupWidgetProps> = ({
                 <span style={{ fontWeight: 700, fontSize: 14 }}>বাংলাদেশ ব্যাংক শাখা যাচাইকৃত:</span>
               </div>
               <div className="lookup-title-row">
-                <span className="lookup-title-bn">{routingResult.bank_name || routingResult.bank}</span>
-                <span className="lookup-badge">{routingResult.routing_no || routingNumber}</span>
+                <span className="lookup-title-bn">{routingResult.bank?.name_en || 'Scheduled Bank'}</span>
+                <span className="lookup-badge">{routingResult.routing_number || routingNumber}</span>
               </div>
               <p className="lookup-meta">
-                শাখা (Branch): {routingResult.branch_name || routingResult.branch} · জেলা: {routingResult.district} · রাউটিং কোড: {routingResult.routing_no}
+                শাখা (Branch): <strong>{routingResult.name_en}</strong> · জেলা: {routingResult.district?.name_bn || routingResult.district?.name_en} ({routingResult.division?.name_bn || routingResult.division?.name_en}) · থানা: {routingResult.thana}
               </p>
             </div>
           )}
@@ -293,14 +297,17 @@ export const GeoLookupWidget: React.FC<GeoLookupWidgetProps> = ({
             <div className="lookup-result-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--emerald)', marginBottom: 6 }}>
                 <Vote size={16} />
-                <span style={{ fontWeight: 700, fontSize: 14 }}>জাতীয় সংসদীয় আসন:</span>
+                <span style={{ fontWeight: 700, fontSize: 14 }}>জাতীয় সংসদীয় আসন বিবরণ:</span>
               </div>
               <div className="lookup-title-row">
-                <span className="lookup-title-bn">{constituencyResult.name_bn || constituencyResult.name_en}</span>
-                <span className="lookup-badge">আসন নং {constituencyResult.number}</span>
+                <span className="lookup-title-bn">{constituencyResult.name_bn} ({constituencyResult.name_en})</span>
+                <span className="lookup-badge">আসন নং {constituencyResult.number_bn || constituencyResult.number}</span>
               </div>
               <p className="lookup-meta">
-                আসন কোড: {constituencyResult.code} · নির্বাচনী সীমানা: {constituencyResult.area_description_bn || constituencyResult.area_description_en || 'উপজেলা/ওয়ার্ড অন্তর্ভুক্ত'}
+                সীমানা (বাংলা): <strong>{constituencyResult.area_bn}</strong>
+              </p>
+              <p className="lookup-meta" style={{ marginTop: 4, color: 'var(--text-muted)' }}>
+                Territory (EN): {constituencyResult.area_en} · জেলা: {constituencyResult.district} · কোড: {constituencyResult.code}
               </p>
             </div>
           )}
@@ -308,7 +315,7 @@ export const GeoLookupWidget: React.FC<GeoLookupWidgetProps> = ({
       )}
 
       <div className="portal-footer-note">
-        <span>সূত্র: বাংলাদেশ ডাক বিভাগ, বাংলাদেশ ব্যাংক (১১,৫৩৩ শাখা) ও বাংলাদেশ নির্বাচন কমিশন</span>
+        <span>সূত্র: বাংলাদেশ ডাক বিভাগ, বাংলাদেশ ব্যাংক (১১,৫৩৩ শাখা) ও বাংলাদেশ নির্বাচন কমিশন গেজেট</span>
       </div>
     </div>
   );
