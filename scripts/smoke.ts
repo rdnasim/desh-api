@@ -181,6 +181,11 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.some((r: any) => r.slug === 'padma') ? true : 'expected Padma river'),
   },
   {
+    name: '13o land ports',
+    path: '/v1/ports/land/BEN',
+    check: (_, b) => (b.data?.code === 'BEN' ? true : 'expected Benapole land port'),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

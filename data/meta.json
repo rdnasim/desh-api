@@ -402,6 +402,18 @@
     ]
   },
   {
+    "dataset": "ports.land-ports",
+    "source": "Bangladesh Land Port Authority (BLPA - bsbk.gov.bd / bangladeshlandport.gov.bd), Ministry of Shipping",
+    "source_url": "http://www.bsbk.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-17",
+    "last_updated": "2026-11-17",
+    "credits": [
+      "Bangladesh Land Port Authority (BLPA)",
+      "Ministry of Shipping, Bangladesh"
+    ]
+  },
+  {
     "dataset": "prayer.district-offsets",
     "source": "Islamic Foundation Bangladesh (IFB), Ministry of Religious Affairs: prayer and Ramadan timetable schedule and district time offset table",
     "source_url": "https://islamicfoundation.gov.bd",

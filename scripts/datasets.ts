@@ -38,6 +38,7 @@ import { MetroStationSchema } from '../src/modules/metro/schemas';
 import { MfsProviderSchema } from '../src/modules/mfs/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
+import { LandPortSchema } from '../src/modules/ports/schemas';
 import { DistrictOffsetSchema } from '../src/modules/prayer/schemas';
 import {
   RailwayClassSchema,
@@ -96,6 +97,13 @@ export const datasets: DatasetSpec[] = [
     schema: RiverSchema,
     sortKey: (r) => r.slug,
     type: { name: 'River', from: '../modules/rivers/schemas' },
+  },
+  {
+    key: 'ports.land-ports',
+    file: 'ports/land-ports.json',
+    schema: LandPortSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'LandPort', from: '../modules/ports/schemas' },
   },
   {
     key: 'geo.divisions',
@@ -413,6 +421,8 @@ export function derive(data: Record<string, any[]>): {
   fk('airports.airports', 'district', 'geo.districts');
   fk('heritage.sites', 'division', 'geo.divisions');
   fk('heritage.sites', 'district', 'geo.districts');
+  fk('ports.land-ports', 'division', 'geo.divisions');
+  fk('ports.land-ports', 'district', 'geo.districts');
   const fkArray = (key: string, field: string, target: string) => {
     const known = slugs(target);
     for (const r of data[key] ?? []) {

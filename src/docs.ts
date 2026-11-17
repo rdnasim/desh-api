@@ -144,6 +144,11 @@ export const OPENAPI_CONFIG = {
         'Major river networks of Bangladesh (BWDB & Banglapedia): origins, outflows, traversed districts, lengths, and transboundary relations.',
     },
     {
+      name: 'Ports',
+      description:
+        'Statutory land ports and border customs stations across Bangladesh (Bangladesh Land Port Authority - BLPA).',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

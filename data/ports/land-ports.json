@@ -1,0 +1,694 @@
+[
+  {
+    "slug": "akhaura",
+    "code": "AKH",
+    "name_en": "Akhaura Land Port",
+    "name_bn": "আখাউড়া স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2010,
+    "division": "chattogram",
+    "district": "brahmanbaria",
+    "upazila": "Akhaura",
+    "counterpart_indian_lcs": "Agartala (West Tripura, Tripura)",
+    "counterpart_state": "Tripura",
+    "key_commodities": [
+      "Processed food products",
+      "Plastic and PVC goods",
+      "Fresh fish",
+      "Cement and stone",
+      "Steel rods"
+    ],
+    "facilities": [
+      "Integrated Check Post (ICP)",
+      "Cross-border Akhaura-Agartala international rail link",
+      "Modern passenger immigration terminal",
+      "Truck parking yard and weighbridge"
+    ],
+    "has_rail_link": true,
+    "has_passenger_immigration": true,
+    "description_en": "Foremost trade gateway between eastern Bangladesh and Tripura, handling significant exports of Bangladeshi manufacturing goods and cross-border rail transit.",
+    "description_bn": "পূর্বাঞ্চলীয় বাংলাদেশ ও ত্রিপুরার মধ্যে প্রধান বাণিজ্য ও যাত্রী পারাপার কেন্দ্র, যা আখাউড়া-আগরতলা রেলপথের সাথে যুক্ত।"
+  },
+  {
+    "slug": "banglabandha",
+    "code": "BGB",
+    "name_en": "Banglabandha Land Port",
+    "name_bn": "বাংলাবান্ধা স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "private_bot",
+    "established_year": 2011,
+    "division": "rangpur",
+    "district": "panchagarh",
+    "upazila": "Tetulia",
+    "counterpart_indian_lcs": "Phulbari (Jalpaiguri, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Stone boulders and gravel from Bhutan",
+      "Agricultural commodities and pulses from Nepal",
+      "Fertilizer and raw yarn",
+      "Juice, batteries, and melamine products"
+    ],
+    "facilities": [
+      "Quadri-country transit point (Bangladesh, India, Nepal, Bhutan)",
+      "Zero point passenger terminal",
+      "Full immigration checkpost",
+      "Private BOT cargo handling terminal"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "The northernmost land port in Bangladesh, serving as a strategic quadri-nation transit corridor connecting Bangladesh with India, Nepal, and Bhutan.",
+    "description_bn": "বাংলাদেশের সর্বউত্তরের স্থলবন্দর, যা ভারত, নেপাল ও ভুটানের সাথে চতুর্দেশীয় বাণিজ্য ও ট্রানজিট কেন্দ্র হিসেবে ব্যবহৃত হয়।"
+  },
+  {
+    "slug": "belonia",
+    "code": "BLN",
+    "name_en": "Belonia Land Port",
+    "name_bn": "বিলোনিয়া স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2018,
+    "division": "chattogram",
+    "district": "feni",
+    "upazila": "Parshuram",
+    "counterpart_indian_lcs": "Belonia (South Tripura, Tripura)",
+    "counterpart_state": "Tripura",
+    "key_commodities": [
+      "Cement and building bricks",
+      "Plastic household products",
+      "Dry fish",
+      "Broken stone and tiles"
+    ],
+    "facilities": [
+      "Customs clearance shed",
+      "Digital weighbridge",
+      "Cargo stack yard"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Land port situated on the Muhuri river border in Feni, connecting southern Tripura directly to Bangladesh industrial corridors.",
+    "description_bn": "ফেনী জেলার মুহুরী নদীর তীরবর্তী সীমান্ত স্থলবন্দর, যা দক্ষিণ ত্রিপুরার সাথে বাণিজ্য পরিচালনা করে।"
+  },
+  {
+    "slug": "benapole",
+    "code": "BEN",
+    "name_en": "Benapole Land Port",
+    "name_bn": "বেনাপোল স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2002,
+    "division": "khulna",
+    "district": "jashore",
+    "upazila": "Sharsha",
+    "counterpart_indian_lcs": "Petrapole (North 24 Parganas, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Garments & textile fabric",
+      "Industrial machinery and equipment",
+      "Automobiles, chassis, and spare parts",
+      "Chemicals and raw materials",
+      "Foodgrains and perishables"
+    ],
+    "facilities": [
+      "Integrated Check Post (ICP)",
+      "Dedicated international passenger immigration terminal",
+      "Rail container freight yard (Petrapole-Benapole rail route)",
+      "Automated digital cargo gatepass system"
+    ],
+    "has_rail_link": true,
+    "has_passenger_immigration": true,
+    "description_en": "The largest and busiest land port in Bangladesh, handling over 80% of total land-route bilateral trade with India.",
+    "description_bn": "বাংলাদেশের বৃহত্তম ও ব্যস্ততম স্থলবন্দর, যা ভারত-বাংলাদেশ স্থল বাণিজ্যের ৮০ শতাংশেরও বেশি পরিচালনা করে।"
+  },
+  {
+    "slug": "bholaganj",
+    "code": "BHG",
+    "name_en": "Bholaganj Land Port",
+    "name_bn": "ভোলাগঞ্জ স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2023,
+    "division": "sylhet",
+    "district": "sylhet",
+    "upazila": "Companiganj",
+    "counterpart_indian_lcs": "Majai (Cherrapunji, East Khasi Hills, Meghalaya)",
+    "counterpart_state": "Meghalaya",
+    "key_commodities": [
+      "Limestone and stone boulders",
+      "Coal",
+      "Fruit and ginger"
+    ],
+    "facilities": [
+      "Modern cargo handling yard",
+      "Industrial weighbridges",
+      "Historic Chhatak ropeway terminal nearby"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Northern Sylhet mineral port providing high-grade limestone directly from the Meghalaya plateau to domestic cement manufacturing plants.",
+    "description_bn": "সিলেটের অন্যতম প্রধান খনিজ পণ্য আমদানির স্থলবন্দর, যা মেঘালয় থেকে চুনাপাথর ও কয়লা সরবরাহ করে।"
+  },
+  {
+    "slug": "bhomra",
+    "code": "BHM",
+    "name_en": "Bhomra Land Port",
+    "name_bn": "ভোমরা স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2013,
+    "division": "khulna",
+    "district": "satkhira",
+    "upazila": "Satkhira Sadar",
+    "counterpart_indian_lcs": "Ghojadanga (North 24 Parganas, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Stone boulders and construction aggregate",
+      "Thermal power plant fly ash",
+      "Onions, garlic, and fresh spices",
+      "Marble slabs and tiles"
+    ],
+    "facilities": [
+      "Sprawling open storage stack yard",
+      "High-capacity digital weighbridges",
+      "BLPA administrative complex"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Strategic southwest border port situated under 75 km from Kolkata, serving as a primary lower-congestion alternative to Benapole for bulk cargo.",
+    "description_bn": "কলকাতা থেকে মাত্র ৭৫ কিমি দূরবর্তী সুবিধাজনক স্থলবন্দর, যা পাথর, পেঁয়াজ ও ফ্লাই অ্যাশ আমদানির অন্যতম প্রধান কেন্দ্র।"
+  },
+  {
+    "slug": "bibirbazar",
+    "code": "BBB",
+    "name_en": "Bibirbazar Land Port",
+    "name_bn": "বিবিরবাজার স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2009,
+    "division": "chattogram",
+    "district": "cumilla",
+    "upazila": "Cumilla Adarsha Sadar",
+    "counterpart_indian_lcs": "Srimantapur (Sepahijala, Tripura)",
+    "counterpart_state": "Tripura",
+    "key_commodities": [
+      "Portland cement",
+      "Crushed stone",
+      "PVC pipes and plastic furniture",
+      "Bakery and confectionary food"
+    ],
+    "facilities": [
+      "Warehouse and open stack yard",
+      "Electronic weighbridge",
+      "Border customs station"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Key export corridor in central-eastern Bangladesh supplying industrial construction goods directly to southern Tripura.",
+    "description_bn": "কুমিল্লার সীমান্ত বন্দর, যার মাধ্যমে ত্রিপুরায় উল্লেখযোগ্য পরিমাণ সিমেন্ট, রড ও প্লাস্টিক পণ্য রপ্তানি হয়।"
+  },
+  {
+    "slug": "biral",
+    "code": "BRL",
+    "name_en": "Biral Land Port",
+    "name_bn": "বিরল স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "railway_joint",
+    "established_year": 2017,
+    "division": "rangpur",
+    "district": "dinajpur",
+    "upazila": "Biral",
+    "counterpart_indian_lcs": "Radhikapur (Uttar Dinajpur, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Stone boulders and ballast",
+      "Maize and animal feed ingredients",
+      "Wheat and rice",
+      "Fly ash"
+    ],
+    "facilities": [
+      "Broad-gauge international rail interchange",
+      "Railway freight marshalling yard",
+      "Customs rail cargo examination platform"
+    ],
+    "has_rail_link": true,
+    "has_passenger_immigration": false,
+    "description_en": "Major rail-based transit land port linking northwestern Bangladesh directly with the Indian and Nepalese railway freight systems.",
+    "description_bn": "দিনাজপুরের গুরুত্বপূর্ণ রেলভিত্তিক আন্তর্জাতিক স্থলবন্দর, যা নেপাল ও ভারতের সাথে পণ্যবাহী রেল যোগাযোগের মাধ্যম।"
+  },
+  {
+    "slug": "burimari",
+    "code": "BUR",
+    "name_en": "Burimari Land Port",
+    "name_bn": "বুড়িমারী স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2002,
+    "division": "rangpur",
+    "district": "lalmonirhat",
+    "upazila": "Patgram",
+    "counterpart_indian_lcs": "Changrabandha (Cooch Behar, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Crushed stone boulders and dolomite",
+      "Coal and limestone from Bhutan",
+      "Timber and wood pulp",
+      "Fresh fruit (apples, oranges)"
+    ],
+    "facilities": [
+      "Tri-nation transit gateway (Bangladesh, India, Bhutan)",
+      "Heavy truck parking yard",
+      "Dedicated passenger immigration lounge",
+      "Customs cargo examination warehouse"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Essential tri-nation trade gateway connecting Bangladesh with Bhutan and northern West Bengal, primarily handling Bhutanese minerals.",
+    "description_bn": "ভুটান ও ভারতের সাথে সংযোগ স্থাপনকারী অন্যতম বৃহৎ স্থলবন্দর, যা পাথর ও কয়লা আমদানির জন্য সুপরিচিত।"
+  },
+  {
+    "slug": "chilahati",
+    "code": "CLH",
+    "name_en": "Chilahati Land Port",
+    "name_bn": "চিলাহাটি স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "railway_joint",
+    "established_year": 2021,
+    "division": "rangpur",
+    "district": "nilphamari",
+    "upazila": "Domar",
+    "counterpart_indian_lcs": "Haldibari (Cooch Behar, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Stone boulders and aggregates",
+      "Foodgrains and wheat",
+      "Chemical fertilizers",
+      "International passenger train (Mitali Express)"
+    ],
+    "facilities": [
+      "Restored historic broad-gauge rail corridor",
+      "International railway passenger platform",
+      "Automated rail cargo inspection"
+    ],
+    "has_rail_link": true,
+    "has_passenger_immigration": true,
+    "description_en": "Historic rail corridor revived in 2021 for the Dhaka-New Jalpaiguri Mitali Express passenger train and cross-border freight traffic.",
+    "description_bn": "ঐতিহাসিক চিলাহাটি-হলদিবাড়ি রেলপথ, যার মাধ্যমে মিতালী এক্সপ্রেস ট্রেন এবং ভারী পণ্যবাহী ট্রেন চলাচল করে।"
+  },
+  {
+    "slug": "darshana",
+    "code": "DAR",
+    "name_en": "Darshana Land Port",
+    "name_bn": "দর্শনা স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "railway_joint",
+    "established_year": 2002,
+    "division": "khulna",
+    "district": "chuadanga",
+    "upazila": "Damurhuda",
+    "counterpart_indian_lcs": "Gede (Nadia, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Sugar and foodgrains",
+      "Industrial chemical raw materials",
+      "Fertilizer",
+      "Maitree Express international passenger train"
+    ],
+    "facilities": [
+      "Major broad-gauge railway border interchange",
+      "Maitree Express passenger immigration complex",
+      "Heavy rail freight sidings"
+    ],
+    "has_rail_link": true,
+    "has_passenger_immigration": true,
+    "description_en": "Premier historic international rail corridor linking Kolkata with Dhaka via the Maitree Express and extensive rail freight.",
+    "description_bn": "ঐতিহাসিক দর্শনা-গেদে রেলওয়ে বন্দর, যা মৈত্রী এক্সপ্রেস ও মালবাহী ট্রেনের অন্যতম প্রধান সীমান্ত পয়েন্ট।"
+  },
+  {
+    "slug": "daulatpur",
+    "code": "DLP",
+    "name_en": "Daulatpur Land Port",
+    "name_bn": "দৌলতপুর স্থলবন্দর",
+    "status": "under_development",
+    "operator_type": "blpa_operated",
+    "established_year": 2016,
+    "division": "khulna",
+    "district": "kushtia",
+    "upazila": "Daulatpur",
+    "counterpart_indian_lcs": "Murshidabad (Murshidabad, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Agricultural commodities",
+      "Fruits",
+      "Consumer goods"
+    ],
+    "facilities": [
+      "Proposed customs and cargo terminal infrastructure"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Planned land port facility situated on the Kushtia-Murshidabad border to facilitate cross-border agro trade.",
+    "description_bn": "কুষ্টিয়া ও মুর্শিদাবাদ সীমান্তের প্রস্তাবিত স্থলবন্দর প্রকল্প।"
+  },
+  {
+    "slug": "dhanua-kamalpur",
+    "code": "DHK",
+    "name_en": "Dhanua Kamalpur Land Port",
+    "name_bn": "ধানুয়া কামালপুর স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2015,
+    "division": "mymensingh",
+    "district": "jamalpur",
+    "upazila": "Bakshiganj",
+    "counterpart_indian_lcs": "Mahendraganj (South West Garo Hills, Meghalaya)",
+    "counterpart_state": "Meghalaya",
+    "key_commodities": [
+      "Coal",
+      "Stone boulders",
+      "Limestone",
+      "Spices"
+    ],
+    "facilities": [
+      "Open coal and mineral stockyard",
+      "Digital weighbridge",
+      "Customs office complex"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Historic 1971 war sector border crossing in Jamalpur, now functioning as a key mineral import port from Meghalaya.",
+    "description_bn": "জামালপুর জেলার ঐতিহাসিক সীমান্ত স্থলবন্দর, যা মেঘালয়ের মহেন্দ্রগঞ্জের সাথে কয়লা ও পাথর বাণিজ্যে যুক্ত।"
+  },
+  {
+    "slug": "gobrakura-karaitoli",
+    "code": "GKK",
+    "name_en": "Gobrakura-Karaitoli Land Port",
+    "name_bn": "গোবরাকুড়া-কড়ইতলী স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2023,
+    "division": "mymensingh",
+    "district": "mymensingh",
+    "upazila": "Haluaghat",
+    "counterpart_indian_lcs": "Gasuapara (South Garo Hills, Meghalaya)",
+    "counterpart_state": "Meghalaya",
+    "key_commodities": [
+      "Coal",
+      "Limestone",
+      "Stone aggregate"
+    ],
+    "facilities": [
+      "Dual-terminal layout (Gobrakura and Karaitoli yards)",
+      "Digital truck weighbridges",
+      "Customs administrative facilities"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Major energy and mineral port supplying Meghalaya coal and limestone to central Bangladesh brickfields and cement manufacturers.",
+    "description_bn": "ময়মনসিংহের হালুয়াঘাটে অবস্থিত কয়লা ও চুনাপাথর আমদানির অন্যতম গুরুত্বপূর্ণ দ্বৈত টার্মিনাল বিশিষ্ট স্থলবন্দর।"
+  },
+  {
+    "slug": "hili",
+    "code": "HIL",
+    "name_en": "Hili Land Port",
+    "name_bn": "হিলি স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "private_bot",
+    "established_year": 2007,
+    "division": "rangpur",
+    "district": "dinajpur",
+    "upazila": "Hakimpur",
+    "counterpart_indian_lcs": "Hili (Dakshin Dinajpur, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Wheat and rice",
+      "Pulses and lentils",
+      "Onions and garlic",
+      "Raw cotton and yarn",
+      "Stone boulders"
+    ],
+    "facilities": [
+      "Private BOT cargo terminal",
+      "Close proximity to Hili railway station",
+      "Multiple electronic weighbridges"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Vital agricultural foodgrain and essential food commodity port connecting northern Bangladesh with West Bengal.",
+    "description_bn": "খাদ্যশস্য, চাল, ডাল, পেঁয়াজ ও পাথর আমদানির অন্যতম প্রধান উত্তরাঞ্চলীয় বেসরকারি স্থলবন্দর।"
+  },
+  {
+    "slug": "mujibnagar",
+    "code": "MJB",
+    "name_en": "Mujibnagar Land Port",
+    "name_bn": "মুজিবনগর স্থলবন্দর",
+    "status": "under_development",
+    "operator_type": "blpa_operated",
+    "established_year": 2019,
+    "division": "khulna",
+    "district": "meherpur",
+    "upazila": "Mujibnagar",
+    "counterpart_indian_lcs": "Hridaypur (Nadia, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Fresh vegetables and horticulture",
+      "Fruit",
+      "Light industrial products"
+    ],
+    "facilities": [
+      "Proposed border checkpost and terminal"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Developing land port located near the historic Mujibnagar Memorial complex to expand regional agro-trade with Nadia district.",
+    "description_bn": "ঐতিহাসিক মেহেরপুরের মুজিবনগরে অবস্থিত প্রস্তাবিত স্থলবন্দর।"
+  },
+  {
+    "slug": "nakugaon",
+    "code": "NAK",
+    "name_en": "Nakugaon Land Port",
+    "name_bn": "নাকুগাঁও স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2015,
+    "division": "mymensingh",
+    "district": "sherpur",
+    "upazila": "Nalitabari",
+    "counterpart_indian_lcs": "Dalu (West Garo Hills, Meghalaya)",
+    "counterpart_state": "Meghalaya",
+    "key_commodities": [
+      "Coal",
+      "Limestone and boulders",
+      "Ginger and fruit",
+      "Raw chemical stone"
+    ],
+    "facilities": [
+      "Enclosed cargo warehouse",
+      "Truck parking yard",
+      "Automated weighbridge"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Northern mineral transit hub in Sherpur facilitating industrial fuel and raw materials from the Garo Hills of Meghalaya.",
+    "description_bn": "শেরপুরের নালিতাবাড়ীতে অবস্থিত কয়লা ও পাথর আমদানির গুরুত্বপূর্ণ স্থলবন্দর।"
+  },
+  {
+    "slug": "ramgarh",
+    "code": "RMG",
+    "name_en": "Ramgarh Land Port",
+    "name_bn": "রামগড় স্থলবন্দর",
+    "status": "under_development",
+    "operator_type": "blpa_operated",
+    "established_year": 2018,
+    "division": "chattogram",
+    "district": "khagrachhari",
+    "upazila": "Ramgarh",
+    "counterpart_indian_lcs": "Sabroom (South Tripura, Tripura)",
+    "counterpart_state": "Tripura",
+    "key_commodities": [
+      "Cement and steel rods",
+      "Ceramic tiles and tableware",
+      "Packaged consumer foods",
+      "Machinery"
+    ],
+    "facilities": [
+      "Maitri Setu (1.9 km international bridge over Feni river)",
+      "Modern Integrated Check Post (ICP) terminal",
+      "Direct highway corridor to Chattogram Port (80 km)"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Strategically located border port connected by the Maitri Setu bridge, providing Tripura and northeastern India nearest highway access to Chattogram Port.",
+    "description_bn": "মৈত্রী সেতুর মাধ্যমে যুক্ত ভারত-বাংলাদেশ কৌশলগত স্থলবন্দর, যার মাধ্যমে ত্রিপুরা থেকে চট্টগ্রাম বন্দরের দূরত্ব মাত্র ৮০ কিমি।"
+  },
+  {
+    "slug": "sheola",
+    "code": "SHL",
+    "name_en": "Sheola Land Port",
+    "name_bn": "শ্যাওলা স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2023,
+    "division": "sylhet",
+    "district": "sylhet",
+    "upazila": "Beanibazar",
+    "counterpart_indian_lcs": "Sutarkandi (Karimganj, Assam)",
+    "counterpart_state": "Assam",
+    "key_commodities": [
+      "Coal and stone aggregate",
+      "Fresh fruit (oranges, apples)",
+      "Limestone",
+      "Ceramics, melamine, and plastic"
+    ],
+    "facilities": [
+      "Modern World Bank-assisted Integrated Check Post terminal",
+      "Multi-bay inspection sheds",
+      "Full passenger immigration complex"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "State-of-the-art modern Integrated Check Post (ICP) on the Sylhet-Assam border developed under the BBIN regional transport corridor project.",
+    "description_bn": "বিশ্বব্যাংকের সহায়তায় নির্মিত অত্যাধুনিক সমন্বিত চেকপোস্ট (আইসিপি) স্থলবন্দর, যা আসামের সাথে বাণিজ্য জোরদার করেছে।"
+  },
+  {
+    "slug": "sonahat",
+    "code": "SNH",
+    "name_en": "Sonahat Land Port",
+    "name_bn": "সোনাহাট স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2017,
+    "division": "rangpur",
+    "district": "kurigram",
+    "upazila": "Bhurungamari",
+    "counterpart_indian_lcs": "Golakganj (Dhubri, Assam)",
+    "counterpart_state": "Assam",
+    "key_commodities": [
+      "Coal",
+      "Stone boulders",
+      "Fresh fruits and ginger",
+      "Garlic"
+    ],
+    "facilities": [
+      "Cargo storage stack yard",
+      "Digital weighbridge",
+      "Customs clearing station"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Kurigram border land port providing heavy industrial stone and coal from western Assam to the Rangpur division.",
+    "description_bn": "কুড়িগ্রামের ভূরুঙ্গামারীতে অবস্থিত আসাম-বাংলাদেশ সীমান্ত স্থলবন্দর, যা কয়লা ও পাথর আমদানিতে নিয়োজিত।"
+  },
+  {
+    "slug": "sonamasjid",
+    "code": "SON",
+    "name_en": "Sonamasjid Land Port",
+    "name_bn": "সোনামসজিদ স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "private_bot",
+    "established_year": 2006,
+    "division": "rajshahi",
+    "district": "chapainababganj",
+    "upazila": "Shibganj",
+    "counterpart_indian_lcs": "Mahadipur (Malda, West Bengal)",
+    "counterpart_state": "West Bengal",
+    "key_commodities": [
+      "Stone boulders and construction gravel",
+      "Onions, spices, and fresh fruits",
+      "Fly ash and cement clinker",
+      "Maize and oilcake"
+    ],
+    "facilities": [
+      "Private BOT port terminal (Panama Sonamasjid Port Link Ltd)",
+      "Heavy truck holding yards",
+      "Multi-axle weighbridges"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "The second largest land port in Bangladesh by cargo volume, handling massive imports of stones and agricultural goods from northern West Bengal.",
+    "description_bn": "পণ্য পরিবহনের দিক থেকে দেশের দ্বিতীয় বৃহত্তম স্থলবন্দর, যা চাঁপাইনবাবগঞ্জের ঐতিহাসিক সোনামসজিদের কাছে অবস্থিত।"
+  },
+  {
+    "slug": "tamabil",
+    "code": "TAM",
+    "name_en": "Tamabil Land Port",
+    "name_bn": "তামাবিল স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "blpa_operated",
+    "established_year": 2017,
+    "division": "sylhet",
+    "district": "sylhet",
+    "upazila": "Gowainghat",
+    "counterpart_indian_lcs": "Dawki (West Jaintia Hills, Meghalaya)",
+    "counterpart_state": "Meghalaya",
+    "key_commodities": [
+      "Coal",
+      "Limestone and stone boulders",
+      "Fruits and spices",
+      "Plastic, ceramic, and food exports"
+    ],
+    "facilities": [
+      "23-acre modern Integrated Check Post terminal",
+      "Electronic weighbridges and testing laboratories",
+      "Modern passenger immigration terminal"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Premier modern Integrated Check Post (ICP) in the northeast, linking Bangladesh highway network directly with Meghalaya, Assam, and Shillong.",
+    "description_bn": "সিলেটের অন্যতম প্রধান আধুনিক সমন্বিত চেকপোস্ট (আইসিপি) স্থলবন্দর, যা ডাউকি ও শিলং-এর প্রবেশদ্বার।"
+  },
+  {
+    "slug": "tegamukh",
+    "code": "TGM",
+    "name_en": "Tegamukh Land Port",
+    "name_bn": "তেগামুখ স্থলবন্দর",
+    "status": "under_development",
+    "operator_type": "blpa_operated",
+    "established_year": 2013,
+    "division": "chattogram",
+    "district": "rangamati",
+    "upazila": "Barkal",
+    "counterpart_indian_lcs": "Kawrpuichhuah (Lunglei, Mizoram)",
+    "counterpart_state": "Mizoram",
+    "key_commodities": [
+      "Bamboo and timber",
+      "Citrus fruits and spices",
+      "Handicrafts"
+    ],
+    "facilities": [
+      "Planned riverine and highway transit facilities along Karnaphuli river"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": false,
+    "description_en": "Strategic developing land port planned to link the Chittagong Hill Tracts directly to the landlocked Indian state of Mizoram.",
+    "description_bn": "রাঙ্গামাটির বরকলে অবস্থিত প্রস্তাবিত স্থলবন্দর, যা মিজোরামের সাথে বাণিজ্য স্থাপনের উদ্দেশ্যে তৈরি হচ্ছে।"
+  },
+  {
+    "slug": "teknaf",
+    "code": "TKF",
+    "name_en": "Teknaf Land Port",
+    "name_bn": "টেকনাফ স্থলবন্দর",
+    "status": "operational",
+    "operator_type": "private_bot",
+    "established_year": 2006,
+    "division": "chattogram",
+    "district": "coxs-bazar",
+    "upazila": "Teknaf",
+    "counterpart_indian_lcs": "Maungdaw (Rakhine State, Myanmar)",
+    "counterpart_state": "Rakhine State (Myanmar)",
+    "key_commodities": [
+      "Timber and wood",
+      "Ginger, onions, and garlic",
+      "Betel nuts",
+      "Dried fish and fresh marine fish"
+    ],
+    "facilities": [
+      "River jetty terminal along Naf river",
+      "Enclosed bonded customs warehouses",
+      "Passenger and crew immigration clearance"
+    ],
+    "has_rail_link": false,
+    "has_passenger_immigration": true,
+    "description_en": "Bangladesh only operational land/river border port directly facilitating international trade and passenger movement with Myanmar.",
+    "description_bn": "মায়ানমারের সাথে বাণিজ্য পরিচালনাকারী বাংলাদেশের একমাত্র কার্যকর নদী/স্থলবন্দর, যা নাফ নদীর তীরে অবস্থিত।"
+  }
+]

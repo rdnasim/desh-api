@@ -965,4 +965,67 @@ export const ENDPOINTS: ApiEndpoint[] = [
       },
     ],
   },
+  {
+    id: 'ports-land-list',
+    module: 'Ports & Logistics',
+    name: 'Statutory Land Ports & Customs Stations',
+    nameBn: 'বাংলাদেশ স্থলবন্দর ও কাস্টমস স্টেশনসমূহ',
+    method: 'GET',
+    path: '/v1/ports/land',
+    defaultPathWithParams: '/v1/ports/land?status=operational',
+    description:
+      'Directory of Bangladesh Land Port Authority (BLPA) declared statutory land ports and border customs stations with Indian/Myanmar LCS counterparts, rail linkages, and key trade commodities.',
+    params: [
+      {
+        name: 'division',
+        type: 'string',
+        description: 'Division slug (e.g. khulna, rangpur, sylhet, chattogram)',
+      },
+      {
+        name: 'district',
+        type: 'string',
+        description: 'District slug (e.g. jashore, lalmonirhat, sylhet, chapai-nawabganj)',
+      },
+      {
+        name: 'status',
+        type: 'string',
+        default: 'operational',
+        description: 'Port status: operational, under_development, or proposed',
+      },
+      {
+        name: 'has_rail_link',
+        type: 'string',
+        description: 'Filter by rail link availability: "true" or "false"',
+      },
+      {
+        name: 'has_passenger_immigration',
+        type: 'string',
+        description: 'Filter by passenger immigration facility: "true" or "false"',
+      },
+      {
+        name: 'q',
+        type: 'string',
+        description: 'Search by port name, 3-letter code, Indian counterpart LCS, or commodities',
+      },
+    ],
+  },
+  {
+    id: 'ports-land-lookup',
+    module: 'Ports & Logistics',
+    name: 'Land Port Details by Code or Slug',
+    nameBn: 'কোড বা স্লাগ অনুযায়ী স্থলবন্দরের বিস্তারিত',
+    method: 'GET',
+    path: '/v1/ports/land/:identifier',
+    defaultPathWithParams: '/v1/ports/land/BEN',
+    description:
+      'Look up comprehensive land port details by its 3-letter code (e.g. BEN, BUR, TAM, BHM, HIL) or slug (e.g. benapole, burimari, tamabil).',
+    params: [
+      {
+        name: 'identifier',
+        type: 'string',
+        default: 'BEN',
+        description: '3-letter port code (BEN, BUR, TAM) or slug (benapole, burimari)',
+      },
+    ],
+  },
 ];
