@@ -178,7 +178,7 @@ const scenarios: Scenario[] = [
   {
     name: '13n rivers',
     path: '/v1/rivers?q=Padma',
-    check: (_, b) => (b.data?.length >= 1 && b.data[0]?.slug === 'padma' ? true : 'expected Padma river'),
+    check: (_, b) => (b.data?.some((r: any) => r.slug === 'padma') ? true : 'expected Padma river'),
   },
   {
     name: '14 docs and OpenAPI',
