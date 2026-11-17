@@ -28,7 +28,8 @@
     "web:dev": "npm run dev --prefix web",
     "web:build": "npm run build --prefix web",
     "client:build": "tsc -p packages/client/tsconfig.json",
-    "cli:build": "tsc -p packages/cli/tsconfig.json"
+    "cli:build": "tsc -p packages/cli/tsconfig.json",
+    "widgets:build": "tsc -p packages/widgets/tsconfig.json"
   },
   "dependencies": {
     "@hono/zod-openapi": "^1.6.3",
