@@ -1,0 +1,17 @@
+{
+  "name": "@deshapi/widgets",
+  "version": "0.1.0",
+  "description": "Zero-dependency embeddable Web Components for Bangladesh forms (address selector, phone, NID)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "~5.9.3"
+  },
+  "license": "MIT"
+}

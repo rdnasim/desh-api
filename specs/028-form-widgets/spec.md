@@ -1,7 +1,7 @@
 # Feature Specification: 028-form-widgets (Embeddable Form Web Components)
 
 **Feature Branch**: `028-form-widgets`  
-**Status**: Planned  
+**Status**: Built  
 
 ---
 
@@ -13,11 +13,22 @@ E-commerce websites, government portals, and SaaS signup forms in Bangladesh rep
 
 ---
 
-## 2. Components
+## 2. Components & Packages
 
-1. `<desh-address-selector>`: Cascading Division, District, Upazila, and Union selectors with optional auto-filling postcodes.
-2. `<desh-phone-input>`: Phone input with automatic `+880` formatting, live operator identification badge (Grameenphone, Banglalink, Robi, Airtel, Teletalk), and instant validation.
-3. `<desh-nid-input>`: National ID input enforcing 10 (smart), 13 (old), or 17 (birth-year prefixed) format rules.
+1. **Web Components (`@deshapi/widgets`)**:
+   - `<desh-address-selector>`: Cascading Division, District, Upazila, and Union selectors with optional auto-filling postcodes.
+   - `<desh-phone-input>`: Phone input with automatic `+880` formatting, live operator identification badge (Grameenphone, Banglalink, Robi, Airtel, Teletalk), and instant validation.
+   - `<desh-nid-input>`: National ID input enforcing 10 (smart), 13 (old), or 17 (birth-year prefixed) format rules.
+
+2. **Flutter / Dart SDK & Widgets (`desh_api` on pub.dev)**:
+   - `DeshPhoneField`: Native Flutter `TextField` with automatic `+880` badge and real-time operator detection chip.
+   - `DeshNidField`: Form-validated Flutter `TextFormField` enforcing 10/13/17 digit formats.
+   - `DeshApiClient`: Strongly-typed Dart HTTP client for queries.
+
+3. **React Native Library (`@deshapi/react-native`)**:
+   - `DeshPhoneInput`: React Native component with live operator badges.
+   - `DeshNidInput`: React Native component with instant format validation.
+   - `useDeshApi`: Reusable React hook with loading, error states, and automatic base URL/API key injection.
 
 ---
 
