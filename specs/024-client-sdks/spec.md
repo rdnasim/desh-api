@@ -1,7 +1,7 @@
 # Feature Specification: 024-client-sdks (Official Client SDKs)
 
 **Feature Branch**: `024-client-sdks`  
-**Status**: Planned  
+**Status**: Built  
 **Input**: Official multi-language client libraries for Desh API: TypeScript/JavaScript (`@deshapi/client`), Python (`desh-api`), PHP (`deshapi/sdk`), and Go (`github.com/desh-api/desh-go`).
 
 ---

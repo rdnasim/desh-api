@@ -1,0 +1,46 @@
+{
+  "name": "@deshapi/client",
+  "version": "1.0.0",
+  "description": "Official TypeScript & JavaScript client for Desh API (https://deshapi.riadul.com)",
+  "keywords": [
+    "bangladesh",
+    "desh-api",
+    "bangla",
+    "nid",
+    "taka",
+    "postcode",
+    "prayer-times",
+    "dhaka-metro",
+    "railway",
+    "gold-price",
+    "mfs",
+    "bkash",
+    "nagad"
+  ],
+  "author": "Desh API Contributors",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.0"
+  }
+}
