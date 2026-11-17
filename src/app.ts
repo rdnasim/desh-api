@@ -9,6 +9,7 @@ import { defaultNoStore } from './lib/cache';
 import { errorHandler, notFoundHandler, validationHook } from './lib/errors';
 import { logger } from './lib/logger';
 import { rateLimit } from './lib/rate-limit';
+import { airportRoutes } from './modules/airports/routes';
 import { banglaRoutes } from './modules/bangla/routes';
 import { bankRoutes } from './modules/banks/routes';
 import { constituencyRoutes } from './modules/constituencies/routes';
@@ -155,6 +156,12 @@ const MODULES = [
     path: '/v1/constituencies?district=dhaka',
   },
   {
+    name: 'Airports',
+    description:
+      'Civil Aviation Authority of Bangladesh (CAAB) international and domestic airports, IATA/ICAO codes, coordinates, and runway dimensions',
+    path: '/v1/airports',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -224,6 +231,7 @@ app.route('/v1', metroRoutes);
 app.route('/v1', healthRoutes);
 app.route('/v1', weatherRoutes);
 app.route('/v1', railwayRoutes);
+app.route('/v1', airportRoutes);
 app.route('/v1', constituencyRoutes);
 app.route('/v1', developerRoutes);
 

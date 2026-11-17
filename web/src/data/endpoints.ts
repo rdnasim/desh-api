@@ -21,6 +21,7 @@ export const API_MODULES = [
   'Validation',
   'Constituencies',
   'Bangladesh Railway',
+  'Airports & Aviation',
   'Developer',
 ] as const;
 
@@ -806,5 +807,50 @@ export const ENDPOINTS: ApiEndpoint[] = [
     description:
       'Major railway stations and junctions with division, gauge (broad, meter, dual), and station codes.',
     params: [{ name: 'division', type: 'string', default: 'dhaka', description: 'Division slug' }],
+  },
+
+  // Airports & Aviation
+  {
+    id: 'airports-list',
+    module: 'Airports & Aviation',
+    name: 'Airports & CAAB Aviation Facilities',
+    nameBn: 'আন্তর্জাতিক ও অভ্যন্তরীণ বিমানবন্দরসমূহ',
+    method: 'GET',
+    path: '/v1/airports',
+    defaultPathWithParams: '/v1/airports?type=international',
+    description:
+      'Civil Aviation Authority of Bangladesh (CAAB) directory of international and domestic airports with IATA/ICAO codes, runway lengths, and coordinates.',
+    params: [
+      {
+        name: 'type',
+        type: 'string',
+        default: 'international',
+        description: 'international, domestic, short_takeoff, military_airstrip',
+      },
+      {
+        name: 'division',
+        type: 'string',
+        description: 'Division slug (e.g. dhaka, chattogram, sylhet)',
+      },
+    ],
+  },
+  {
+    id: 'airports-lookup',
+    module: 'Airports & Aviation',
+    name: 'Airport Details by IATA/ICAO Code',
+    nameBn: 'আইএটিএ বা আইসিএও কোড অনুযায়ী বিমানবন্দর',
+    method: 'GET',
+    path: '/v1/airports/:identifier',
+    defaultPathWithParams: '/v1/airports/DAC',
+    description:
+      'Look up complete airport details by IATA code (e.g. DAC, CGP, ZYL), ICAO code (e.g. VGHS, VGEG), or slug.',
+    params: [
+      {
+        name: 'identifier',
+        type: 'string',
+        default: 'DAC',
+        description: 'IATA code, ICAO code, or slug',
+      },
+    ],
   },
 ];

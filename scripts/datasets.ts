@@ -1,5 +1,6 @@
 import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
+import { AirportSchema } from '../src/modules/airports/schemas';
 import { BankSchema, BranchSchema } from '../src/modules/banks/schemas';
 import { ConstituencySchema } from '../src/modules/constituencies/schemas';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
@@ -73,6 +74,13 @@ export interface DerivedOutput {
 const GEO = '../modules/geo/schemas';
 
 export const datasets: DatasetSpec[] = [
+  {
+    key: 'airports.airports',
+    file: 'airports/airports.json',
+    schema: AirportSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'Airport', from: '../modules/airports/schemas' },
+  },
   {
     key: 'geo.divisions',
     file: 'geo/divisions.json',
@@ -385,6 +393,8 @@ export function derive(data: Record<string, any[]>): {
     }
   };
   fk('geo.districts', 'division', 'geo.divisions');
+  fk('airports.airports', 'division', 'geo.divisions');
+  fk('airports.airports', 'district', 'geo.districts');
   fk('geo.constituencies', 'division', 'geo.divisions');
   fk('geo.constituencies', 'district', 'geo.districts');
   fk('prayer.district-offsets', 'division', 'geo.divisions');

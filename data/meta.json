@@ -1,5 +1,16 @@
 [
   {
+    "dataset": "airports.airports",
+    "source": "Civil Aviation Authority of Bangladesh (CAAB - caab.gov.bd) Aeronautical Information Publication (AIP) and international IATA/ICAO registries",
+    "source_url": "https://caab.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-17",
+    "last_updated": "2026-11-17",
+    "credits": [
+      "Civil Aviation Authority of Bangladesh (CAAB)"
+    ]
+  },
+  {
     "dataset": "banks.banks",
     "source": "Bangladesh Bank, Banking Statistics Division: list of bank branches by district and thana, as on 31 August 2026 (econdata/bs/geo_bank.pdf)",
     "source_url": "https://www.bb.org.bd/econdata/bs/geo_bank.pdf",

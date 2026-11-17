@@ -1,0 +1,357 @@
+[
+  {
+    "slug": "barishal-airport",
+    "iata_code": "BZL",
+    "icao_code": "VGBR",
+    "name_en": "Barishal Airport",
+    "name_bn": "বরিশাল বিমানবন্দর",
+    "type": "domestic",
+    "status": "operational",
+    "division": "barishal",
+    "district": "barishal",
+    "city": "Barishal",
+    "coordinates": {
+      "latitude": 22.8011,
+      "longitude": 90.3014
+    },
+    "elevation_ft": 23,
+    "runways": [
+      {
+        "length_ft": 6000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "bogura-airport",
+    "icao_code": "VGBG",
+    "name_en": "Bogura Airport",
+    "name_bn": "বগুড়া বিমানবন্দর",
+    "type": "domestic",
+    "status": "under_development",
+    "division": "rajshahi",
+    "district": "bogura",
+    "city": "Bogura",
+    "coordinates": {
+      "latitude": 24.8667,
+      "longitude": 89.3167
+    },
+    "elevation_ft": 65,
+    "runways": [
+      {
+        "length_ft": 4000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "coxs-bazar-airport",
+    "iata_code": "CXB",
+    "icao_code": "VGCB",
+    "name_en": "Cox's Bazar Airport",
+    "name_bn": "কক্সবাজার বিমানবন্দর",
+    "type": "domestic",
+    "status": "operational",
+    "division": "chattogram",
+    "district": "coxs-bazar",
+    "city": "Cox's Bazar",
+    "coordinates": {
+      "latitude": 21.4522,
+      "longitude": 91.9639
+    },
+    "elevation_ft": 12,
+    "runways": [
+      {
+        "length_ft": 10000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "hazrat-shahjalal-international-airport",
+    "iata_code": "DAC",
+    "icao_code": "VGHS",
+    "name_en": "Hazrat Shahjalal International Airport",
+    "name_bn": "হযরত শাহজালাল আন্তর্জাতিক বিমানবন্দর",
+    "type": "international",
+    "status": "operational",
+    "division": "dhaka",
+    "district": "dhaka",
+    "city": "Dhaka",
+    "coordinates": {
+      "latitude": 23.8433,
+      "longitude": 90.3978
+    },
+    "elevation_ft": 30,
+    "runways": [
+      {
+        "length_ft": 10500,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "ishwardi-airport",
+    "iata_code": "IRD",
+    "icao_code": "VGIS",
+    "name_en": "Ishwardi Airport",
+    "name_bn": "ঈশ্বরদী বিমানবন্দর",
+    "type": "domestic",
+    "status": "inactive",
+    "division": "rajshahi",
+    "district": "pabna",
+    "city": "Ishwardi",
+    "coordinates": {
+      "latitude": 24.1528,
+      "longitude": 89.0497
+    },
+    "elevation_ft": 45,
+    "runways": [
+      {
+        "length_ft": 4700,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "jashore-airport",
+    "iata_code": "JSR",
+    "icao_code": "VGJR",
+    "name_en": "Jashore Airport",
+    "name_bn": "যশোর বিমানবন্দর",
+    "type": "domestic",
+    "status": "operational",
+    "division": "khulna",
+    "district": "jashore",
+    "city": "Jashore",
+    "coordinates": {
+      "latitude": 23.1838,
+      "longitude": 89.1608
+    },
+    "elevation_ft": 20,
+    "runways": [
+      {
+        "length_ft": 8000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "khan-jahan-ali-airport",
+    "name_en": "Khan Jahan Ali Airport",
+    "name_bn": "খান জাহান আলী বিমানবন্দর",
+    "type": "domestic",
+    "status": "under_development",
+    "division": "khulna",
+    "district": "bagerhat",
+    "city": "Khulna / Bagerhat",
+    "coordinates": {
+      "latitude": 22.6167,
+      "longitude": 89.65
+    },
+    "elevation_ft": 15,
+    "runways": [
+      {
+        "length_ft": 6000,
+        "surface": "Concrete"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "lalmonirhat-airport",
+    "icao_code": "VGLM",
+    "name_en": "Lalmonirhat Airport",
+    "name_bn": "লালমনিরহাট বিমানবন্দর",
+    "type": "military_airstrip",
+    "status": "inactive",
+    "division": "rangpur",
+    "district": "lalmonirhat",
+    "city": "Lalmonirhat",
+    "coordinates": {
+      "latitude": 25.9833,
+      "longitude": 89.4333
+    },
+    "elevation_ft": 200,
+    "runways": [
+      {
+        "length_ft": 5000,
+        "surface": "Bitumen"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "osmani-international-airport",
+    "iata_code": "ZYL",
+    "icao_code": "VGSY",
+    "name_en": "Osmani International Airport",
+    "name_bn": "ওসমানী আন্তর্জাতিক বিমানবন্দর",
+    "type": "international",
+    "status": "operational",
+    "division": "sylhet",
+    "district": "sylhet",
+    "city": "Sylhet",
+    "coordinates": {
+      "latitude": 24.9632,
+      "longitude": 91.8714
+    },
+    "elevation_ft": 50,
+    "runways": [
+      {
+        "length_ft": 9842,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "saidpur-airport",
+    "iata_code": "SPD",
+    "icao_code": "VGSD",
+    "name_en": "Saidpur Airport",
+    "name_bn": "সৈয়দপুর বিমানবন্দর",
+    "type": "domestic",
+    "status": "operational",
+    "division": "rangpur",
+    "district": "nilphamari",
+    "city": "Saidpur",
+    "coordinates": {
+      "latitude": 25.7592,
+      "longitude": 88.9086
+    },
+    "elevation_ft": 125,
+    "runways": [
+      {
+        "length_ft": 6000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "shah-amanat-international-airport",
+    "iata_code": "CGP",
+    "icao_code": "VGEG",
+    "name_en": "Shah Amanat International Airport",
+    "name_bn": "শাহ আমানত আন্তর্জাতিক বিমানবন্দর",
+    "type": "international",
+    "status": "operational",
+    "division": "chattogram",
+    "district": "chattogram",
+    "city": "Chattogram",
+    "coordinates": {
+      "latitude": 22.2496,
+      "longitude": 91.8133
+    },
+    "elevation_ft": 14,
+    "runways": [
+      {
+        "length_ft": 9646,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "shah-makhdum-airport",
+    "iata_code": "RJH",
+    "icao_code": "VGRJ",
+    "name_en": "Shah Makhdum Airport",
+    "name_bn": "শাহ মখদুম বিমানবন্দর",
+    "type": "domestic",
+    "status": "operational",
+    "division": "rajshahi",
+    "district": "rajshahi",
+    "city": "Rajshahi",
+    "coordinates": {
+      "latitude": 24.4442,
+      "longitude": 88.6164
+    },
+    "elevation_ft": 55,
+    "runways": [
+      {
+        "length_ft": 6000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "shamshernagar-airport",
+    "iata_code": "ZHM",
+    "icao_code": "VGSH",
+    "name_en": "Shamshernagar Airport",
+    "name_bn": "শমশেরনগর বিমানবন্দর",
+    "type": "domestic",
+    "status": "inactive",
+    "division": "sylhet",
+    "district": "moulvibazar",
+    "city": "Shamshernagar",
+    "coordinates": {
+      "latitude": 24.3967,
+      "longitude": 91.9167
+    },
+    "elevation_ft": 56,
+    "runways": [
+      {
+        "length_ft": 6000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "tejgaon-airport",
+    "icao_code": "VGTJ",
+    "name_en": "Tejgaon Airport",
+    "name_bn": "তেজগাঁও বিমানবন্দর",
+    "type": "military_airstrip",
+    "status": "operational",
+    "division": "dhaka",
+    "district": "dhaka",
+    "city": "Dhaka",
+    "coordinates": {
+      "latitude": 23.7744,
+      "longitude": 90.3831
+    },
+    "elevation_ft": 24,
+    "runways": [
+      {
+        "length_ft": 9300,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  },
+  {
+    "slug": "thakurgaon-airport",
+    "iata_code": "TKR",
+    "icao_code": "VGSG",
+    "name_en": "Thakurgaon Airport",
+    "name_bn": "ঠাকুরগাঁও বিমানবন্দর",
+    "type": "domestic",
+    "status": "inactive",
+    "division": "rangpur",
+    "district": "thakurgaon",
+    "city": "Thakurgaon",
+    "coordinates": {
+      "latitude": 26.0158,
+      "longitude": 88.4042
+    },
+    "elevation_ft": 215,
+    "runways": [
+      {
+        "length_ft": 4000,
+        "surface": "Asphalt"
+      }
+    ],
+    "website": "https://caab.gov.bd"
+  }
+]

@@ -129,6 +129,11 @@ export const OPENAPI_CONFIG = {
         '300 general single-member territorial constituencies of Jatiya Sangsad (জাতীয় সংসদীয় আসন ১-৩০০) with seat numbers, boundaries, and district breakdowns from the Bangladesh Election Commission.',
     },
     {
+      name: 'Airports',
+      description:
+        'Civil Aviation Authority of Bangladesh (CAAB) international airports, domestic operational airports, STOL airstrips, IATA/ICAO codes, coordinates, and runway dimensions.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

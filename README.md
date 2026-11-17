@@ -32,7 +32,7 @@ every response**.
 - No sign-up, no API key required for public use (120 req/min, 10,000 req/day)
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 23 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway, constituencies, and developer quota telemetries.
+- 24 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway, airports & aviation, constituencies, and developer quota telemetries.
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -279,7 +279,7 @@ A companion public web application is deployed at **[`portal.deshapi.riadul.com`
   - **Geographic & Institutional Registry:** Postcode locator, Bangladesh Bank 9-digit BEFTN routing validator, and 300 parliamentary constituencies.
   - **Weather, AQI & Seasons:** Real-time Air Quality Index gauge with health advisories and the 6 traditional Bengali seasons (ষড়ঋতু).
 - **Developer API Explorer:**
-  - Interactive API console to execute endpoints across all 23 modules.
+  - Interactive API console to execute endpoints across all 24 modules.
   - Real-time rate-limit and daily quota monitor directly from response headers (`120 req/min`, `10,000 req/day`).
   - Response headers inspector, formatted JSON preview, and copy-ready cURL command generator.
   - One-click **"Inspect API"** on every portal widget to inspect latency (`ms`), status, and payload.
