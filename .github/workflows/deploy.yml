@@ -31,8 +31,17 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm data:build
-      - name: Deploy
+      - name: Deploy API Worker
         run: pnpm exec wrangler deploy --var VERSION:${{ github.event.workflow_run.head_sha || github.sha }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Build Web Portal
+        run: |
+          npm --prefix web install
+          npm --prefix web run build
+      - name: Deploy Web Portal to portal.deshapi.riadul.com
+        run: pnpm exec wrangler deploy --cwd web
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
