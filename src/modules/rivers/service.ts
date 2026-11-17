@@ -13,12 +13,7 @@ export interface RiverFilter {
   q?: string;
 }
 
-export function listRivers({
-  division,
-  district,
-  is_transboundary,
-  q,
-}: RiverFilter = {}): River[] {
+export function listRivers({ division, district, is_transboundary, q }: RiverFilter = {}): River[] {
   const query = q === undefined ? undefined : normalizeForSearch(q);
 
   return sortedRivers.filter((r) => {

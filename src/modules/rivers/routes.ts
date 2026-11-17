@@ -94,9 +94,7 @@ riverRoutes.openapi(
       'Resolves a single river by its unique slug (e.g. padma, meghna, jamuna, karnaphuli, halda, teesta).',
     request: {
       params: z.object({
-        slug: z
-          .string()
-          .openapi({ param: { name: 'slug', in: 'path' }, example: 'padma' }),
+        slug: z.string().openapi({ param: { name: 'slug', in: 'path' }, example: 'padma' }),
       }),
     },
     responses: responses(RiverSchema, 'Single river details'),

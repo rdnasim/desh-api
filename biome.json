@@ -10,6 +10,8 @@
       "!.claude",
       "!coverage",
       "!data",
+      "!dist",
+      "!**/dist",
       "!web",
       "!**/*.md"
     ]

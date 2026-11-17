@@ -75,14 +75,16 @@ export async function runCli(args: string[]): Promise<number> {
 
   let baseUrl = DEFAULT_BASE_URL;
   const baseUrlIdx = args.indexOf('--base-url');
-  if (baseUrlIdx !== -1 && args[baseUrlIdx + 1]) {
-    baseUrl = args[baseUrlIdx + 1];
+  const customBaseUrl = baseUrlIdx !== -1 ? args[baseUrlIdx + 1] : undefined;
+  if (customBaseUrl) {
+    baseUrl = customBaseUrl;
   }
 
   let district = 'dhaka';
   const districtIdx = args.indexOf('--district');
-  if (districtIdx !== -1 && args[districtIdx + 1]) {
-    district = args[districtIdx + 1];
+  const customDistrict = districtIdx !== -1 ? args[districtIdx + 1] : undefined;
+  if (customDistrict) {
+    district = customDistrict;
   }
 
   let toUnit: string | undefined;

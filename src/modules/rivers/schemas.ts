@@ -12,9 +12,19 @@ export const RiverSchema = z
     }),
     outflow: z.string().openapi({ example: 'Lower Meghna River near Chandpur' }),
     length_km: z.number().positive().openapi({ example: 120 }),
-    divisions: z.array(SlugSchema).openapi({ example: ['rajshahi', 'dhaka', 'khulna', 'barishal'] }),
+    divisions: z
+      .array(SlugSchema)
+      .openapi({ example: ['rajshahi', 'dhaka', 'khulna', 'barishal'] }),
     districts: z.array(SlugSchema).openapi({
-      example: ['chapainababganj', 'rajshahi', 'pabna', 'kushtia', 'rajbari', 'faridpur', 'munshiganj'],
+      example: [
+        'chapainababganj',
+        'rajshahi',
+        'pabna',
+        'kushtia',
+        'rajbari',
+        'faridpur',
+        'munshiganj',
+      ],
     }),
     tributaries: z.array(z.string()).openapi({ example: ['Mahananda', 'Jamuna'] }),
     distributaries: z.array(z.string()).openapi({ example: ['Gorai', 'Madhumati', 'Arialkhan'] }),
@@ -24,8 +34,7 @@ export const RiverSchema = z
         'One of the three principal rivers of the Bengal Delta, carrying the combined flows of the Ganges and Jamuna to the Bay of Bengal.',
     }),
     description_bn: z.string().openapi({
-      example:
-        'বঙ্গীয় বদ্বীপের অন্যতম প্রধান নদী, যা গঙ্গা ও যমুনার সম্মিলিত জলধারা বহন করে মেঘনায় পতিত হয়।',
+      example: 'বঙ্গীয় বদ্বীপের অন্যতম প্রধান নদী, যা গঙ্গা ও যমুনার সম্মিলিত জলধারা বহন করে মেঘনায় পতিত হয়।',
     }),
     special_features: z.array(z.string()).openapi({
       example: [

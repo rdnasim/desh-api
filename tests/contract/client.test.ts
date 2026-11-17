@@ -21,7 +21,7 @@ describe('Official Client SDK: @deshapi/client', () => {
           data: [{ slug: 'dhaka' }],
           meta: { source: 'BBS', last_updated: '2026-11-17', version: 'v1' },
         }),
-        { status: 200, headers: { 'Content-Type': 'application/json' } }
+        { status: 200, headers: { 'Content-Type': 'application/json' } },
       );
     });
 
@@ -45,7 +45,7 @@ describe('Official Client SDK: @deshapi/client', () => {
           data: { tier: 'developer' },
           meta: { source: 'desh-api', last_updated: '2026-11-17', version: 'v1' },
         }),
-        { status: 200, headers: { 'Content-Type': 'application/json' } }
+        { status: 200, headers: { 'Content-Type': 'application/json' } },
       );
     });
 
@@ -66,7 +66,7 @@ describe('Official Client SDK: @deshapi/client', () => {
           error: { code: 'not_found', message: 'District not found', message_bn: 'জেলা পাওয়া যায়নি' },
           meta: { version: 'v1' },
         }),
-        { status: 404, headers: { 'Content-Type': 'application/json' } }
+        { status: 404, headers: { 'Content-Type': 'application/json' } },
       );
     });
 
@@ -93,7 +93,7 @@ describe('Official Client SDK: @deshapi/client', () => {
           data: { input: 'ছাত্রদেরকে', stem: 'ছাত্র', suffix: 'দেরকে' },
           meta: { source: 'Bangla Academy', last_updated: '2026-11-17', version: 'v1' },
         }),
-        { status: 200, headers: { 'Content-Type': 'application/json' } }
+        { status: 200, headers: { 'Content-Type': 'application/json' } },
       );
     });
 

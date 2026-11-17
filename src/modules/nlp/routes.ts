@@ -1,4 +1,4 @@
-import { createRoute, OpenAPIHono, z } from '@hono/zod-openapi';
+import { createRoute, OpenAPIHono, type z } from '@hono/zod-openapi';
 import type { AppEnv } from '../../env';
 import { cachePublic, noStore } from '../../lib/cache';
 import { ErrorSchema, envelope, metaFor, ok } from '../../lib/envelope';
@@ -59,7 +59,7 @@ nlpRoutes.openapi(
       limit: query.limit,
       offset: query.offset,
     });
-    cachePublic(c, 86400);
+    cachePublic(c);
     return ok(c, result, metaStopwords());
   },
 );

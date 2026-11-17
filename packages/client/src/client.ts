@@ -24,7 +24,7 @@ export class DeshClient {
       query?: Record<string, string | number | boolean | undefined>;
       body?: unknown;
       headers?: Record<string, string>;
-    } = {}
+    } = {},
   ): Promise<ApiResponse<T>> {
     let url = `${this.baseUrl}${path.startsWith('/') ? path : `/${path}`}`;
     if (options.query) {
@@ -85,7 +85,10 @@ export class DeshClient {
 
         const json = (await res.json()) as any;
         if (!res.ok || json.success === false) {
-          throw new DeshApiError(res.status, json.error || { code: 'request_failed', message: res.statusText });
+          throw new DeshApiError(
+            res.status,
+            json.error || { code: 'request_failed', message: res.statusText },
+          );
         }
 
         return json as ApiResponse<T>;
@@ -93,7 +96,10 @@ export class DeshClient {
         clearTimeout(timer);
         if (err instanceof DeshApiError) throw err;
         if (attempts > this.maxRetries) {
-          throw new DeshApiError(0, { code: 'network_error', message: err.message || 'Network request failed' });
+          throw new DeshApiError(0, {
+            code: 'network_error',
+            message: err.message || 'Network request failed',
+          });
         }
       }
     }
@@ -112,17 +118,24 @@ export class DeshClient {
     upazila: (upz: string) => this.request<any>(`/v1/upazilas/${upz}`),
     unions: (upz?: string) => this.request<any[]>('/v1/unions', { query: { upazila: upz } }),
     postcode: (code: string | number) => this.request<any>(`/v1/postcodes/${code}`),
-    search: (q: string, limit?: number) => this.request<any[]>('/v1/search', { query: { q, limit } }),
-    nearest: (lat: number, lon: number) => this.request<any>('/v1/nearest', { query: { lat, lon } }),
+    search: (q: string, limit?: number) =>
+      this.request<any[]>('/v1/search', { query: { q, limit } }),
+    nearest: (lat: number, lon: number) =>
+      this.request<any>('/v1/nearest', { query: { lat, lon } }),
   };
 
   // ==================== 2. Bangla Toolkit ====================
   readonly bangla = {
-    numToWords: (n: number | string) => this.request<any>('/v1/bangla/num-to-words', { query: { n } }),
-    takaInWords: (amount: number | string) => this.request<any>('/v1/bangla/taka-in-words', { query: { amount } }),
-    digits: (text: string, to: 'bn' | 'en') => this.request<any>('/v1/bangla/digits', { query: { text, to } }),
-    formatNumber: (n: number | string) => this.request<any>('/v1/bangla/format-number', { query: { n } }),
-    transliterate: (text: string) => this.request<any>('/v1/bangla/transliterate', { query: { text } }),
+    numToWords: (n: number | string) =>
+      this.request<any>('/v1/bangla/num-to-words', { query: { n } }),
+    takaInWords: (amount: number | string) =>
+      this.request<any>('/v1/bangla/taka-in-words', { query: { amount } }),
+    digits: (text: string, to: 'bn' | 'en') =>
+      this.request<any>('/v1/bangla/digits', { query: { text, to } }),
+    formatNumber: (n: number | string) =>
+      this.request<any>('/v1/bangla/format-number', { query: { n } }),
+    transliterate: (text: string) =>
+      this.request<any>('/v1/bangla/transliterate', { query: { text } }),
     date: (date?: string) => this.request<any>('/v1/bangla/date', { query: { date } }),
     ordinal: (n: number | string) => this.request<any>('/v1/bangla/ordinal', { query: { n } }),
     slug: (text: string) => this.request<any>('/v1/bangla/slug', { query: { text } }),
@@ -131,14 +144,18 @@ export class DeshClient {
   // ==================== 3. Phone Validator ====================
   readonly phone = {
     validate: (number: string) => this.request<any>(`/v1/phone/${number}`),
-    validatePost: (number: string) => this.request<any>('/v1/phone/validate', { method: 'POST', body: { number } }),
-    bulk: (numbers: string[]) => this.request<any[]>('/v1/phone/bulk', { method: 'POST', body: { numbers } }),
+    validatePost: (number: string) =>
+      this.request<any>('/v1/phone/validate', { method: 'POST', body: { number } }),
+    bulk: (numbers: string[]) =>
+      this.request<any[]>('/v1/phone/bulk', { method: 'POST', body: { numbers } }),
   };
 
   // ==================== 4. Bijoy Converter ====================
   readonly convert = {
-    bijoyToUnicode: (text: string) => this.request<any>('/v1/convert/bijoy-to-unicode', { method: 'POST', body: { text } }),
-    unicodeToBijoy: (text: string) => this.request<any>('/v1/convert/unicode-to-bijoy', { method: 'POST', body: { text } }),
+    bijoyToUnicode: (text: string) =>
+      this.request<any>('/v1/convert/bijoy-to-unicode', { method: 'POST', body: { text } }),
+    unicodeToBijoy: (text: string) =>
+      this.request<any>('/v1/convert/unicode-to-bijoy', { method: 'POST', body: { text } }),
   };
 
   // ==================== 5. Land Units ====================
@@ -170,22 +187,28 @@ export class DeshClient {
     riddle: (seed?: string) => this.request<any>('/v1/fun/riddle/random', { query: { seed } }),
     food: (seed?: string) => this.request<any>('/v1/fun/food/random', { query: { seed } }),
     todayInHistory: () => this.request<any[]>('/v1/fun/today-in-history'),
-    quiz: (topic?: string, seed?: string) => this.request<any>('/v1/fun/quiz', { query: { topic, seed } }),
+    quiz: (topic?: string, seed?: string) =>
+      this.request<any>('/v1/fun/quiz', { query: { topic, seed } }),
   };
 
   // ==================== 9. Holidays ====================
   readonly holidays = {
     years: () => this.request<any[]>('/v1/holidays/years'),
-    list: (year?: number | string, opts?: { type?: string; community?: string; closed?: boolean }) =>
-      this.request<any[]>('/v1/holidays', { query: { year, ...opts } }),
+    list: (
+      year?: number | string,
+      opts?: { type?: string; community?: string; closed?: boolean },
+    ) => this.request<any[]>('/v1/holidays', { query: { year, ...opts } }),
     check: (date: string) => this.request<any>('/v1/holidays/check', { query: { date } }),
-    workingDays: (from: string, to: string) => this.request<any>('/v1/working-days', { query: { from, to } }),
+    workingDays: (from: string, to: string) =>
+      this.request<any>('/v1/working-days', { query: { from, to } }),
   };
 
   // ==================== 10. Finance Calculators ====================
   readonly finance = {
-    incomeTax: (income: number | string, opts?: { tax_year?: string; category?: string; monthly?: boolean }) =>
-      this.request<any>('/v1/finance/income-tax', { query: { income, ...opts } }),
+    incomeTax: (
+      income: number | string,
+      opts?: { tax_year?: string; category?: string; monthly?: boolean },
+    ) => this.request<any>('/v1/finance/income-tax', { query: { income, ...opts } }),
     vat: (amount: number | string, opts?: { standard_rate?: boolean; rate?: number }) =>
       this.request<any>('/v1/finance/vat', { query: { amount, ...opts } }),
     emi: (principal: number, rate: number, months: number) =>
@@ -198,8 +221,10 @@ export class DeshClient {
 
   // ==================== 11. Mock Data ====================
   readonly mock = {
-    people: (count?: number, seed?: string) => this.request<any[]>('/v1/mock/people', { query: { count, seed } }),
-    addresses: (count?: number, seed?: string) => this.request<any[]>('/v1/mock/addresses', { query: { count, seed } }),
+    people: (count?: number, seed?: string) =>
+      this.request<any[]>('/v1/mock/people', { query: { count, seed } }),
+    addresses: (count?: number, seed?: string) =>
+      this.request<any[]>('/v1/mock/addresses', { query: { count, seed } }),
   };
 
   // ==================== 12. Banks ====================
@@ -227,13 +252,18 @@ export class DeshClient {
   // ==================== 14. Gold & Zakat ====================
   readonly gold = {
     prices: () => this.request<any>('/v1/gold/prices'),
-    zakat: (opts?: { assets_bdt?: number; gold_gram?: number; silver_gram?: number; cash_bdt?: number }) =>
-      this.request<any>('/v1/zakat', { query: opts }),
+    zakat: (opts?: {
+      assets_bdt?: number;
+      gold_gram?: number;
+      silver_gram?: number;
+      cash_bdt?: number;
+    }) => this.request<any>('/v1/zakat', { query: opts }),
   };
 
   // ==================== 15. Market Prices ====================
   readonly market = {
-    prices: (category?: string) => this.request<any[]>('/v1/market/prices', { query: { category } }),
+    prices: (category?: string) =>
+      this.request<any[]>('/v1/market/prices', { query: { category } }),
     fuel: (month?: string) => this.request<any>('/v1/fuel/prices', { query: { month } }),
   };
 
@@ -282,49 +312,80 @@ export class DeshClient {
 
   // ==================== 21. Bangladesh Railway ====================
   readonly railway = {
-    trains: (opts?: { origin?: string; destination?: string; class?: string; off_day?: string; q?: string }) =>
-      this.request<any[]>('/v1/railway/trains', { query: opts }),
-    train: (numberOrSlug: string | number) => this.request<any>(`/v1/railway/trains/${numberOrSlug}`),
+    trains: (opts?: {
+      origin?: string;
+      destination?: string;
+      class?: string;
+      off_day?: string;
+      q?: string;
+    }) => this.request<any[]>('/v1/railway/trains', { query: opts }),
+    train: (numberOrSlug: string | number) =>
+      this.request<any>(`/v1/railway/trains/${numberOrSlug}`),
     classes: () => this.request<any[]>('/v1/railway/classes'),
     stations: () => this.request<any[]>('/v1/railway/stations'),
   };
 
   // ==================== 22. Constituencies ====================
   readonly constituencies = {
-    list: (opts?: { division?: string; district?: string; q?: string; limit?: number; offset?: number }) =>
-      this.request<any[]>('/v1/constituencies', { query: opts }),
+    list: (opts?: {
+      division?: string;
+      district?: string;
+      q?: string;
+      limit?: number;
+      offset?: number;
+    }) => this.request<any[]>('/v1/constituencies', { query: opts }),
     get: (idOrSlug: string | number) => this.request<any>(`/v1/constituencies/${idOrSlug}`),
-    districts: (district?: string) => this.request<any[]>('/v1/constituencies/districts', { query: { district } }),
+    districts: (district?: string) =>
+      this.request<any[]>('/v1/constituencies/districts', { query: { district } }),
   };
 
   // ==================== 23. Airports ====================
   readonly airports = {
-    list: (opts?: { division?: string; district?: string; type?: string; status?: string; q?: string }) =>
-      this.request<any[]>('/v1/airports', { query: opts }),
+    list: (opts?: {
+      division?: string;
+      district?: string;
+      type?: string;
+      status?: string;
+      q?: string;
+    }) => this.request<any[]>('/v1/airports', { query: opts }),
     get: (codeOrSlug: string) => this.request<any>(`/v1/airports/${codeOrSlug}`),
     types: () => this.request<any[]>('/v1/airports/types'),
   };
 
   // ==================== 24. Heritage & Tourism ====================
   readonly heritage = {
-    list: (opts?: { division?: string; district?: string; category?: string; type?: string; q?: string }) =>
-      this.request<any[]>('/v1/heritage', { query: opts }),
+    list: (opts?: {
+      division?: string;
+      district?: string;
+      category?: string;
+      type?: string;
+      q?: string;
+    }) => this.request<any[]>('/v1/heritage', { query: opts }),
     get: (slugOrId: string | number) => this.request<any>(`/v1/heritage/${slugOrId}`),
     unesco: () => this.request<any[]>('/v1/heritage/unesco'),
   };
 
   // ==================== 25. Rivers ====================
   readonly rivers = {
-    list: (opts?: { division?: string; district?: string; is_transboundary?: boolean; q?: string }) =>
-      this.request<any[]>('/v1/rivers', { query: opts }),
+    list: (opts?: {
+      division?: string;
+      district?: string;
+      is_transboundary?: boolean;
+      q?: string;
+    }) => this.request<any[]>('/v1/rivers', { query: opts }),
     get: (slug: string) => this.request<any>(`/v1/rivers/${slug}`),
     transboundary: () => this.request<any[]>('/v1/rivers/transboundary'),
   };
 
   // ==================== 26. Ports ====================
   readonly ports = {
-    land: (opts?: { division?: string; district?: string; status?: string; has_rail_link?: boolean; q?: string }) =>
-      this.request<any[]>('/v1/ports/land', { query: opts }),
+    land: (opts?: {
+      division?: string;
+      district?: string;
+      status?: string;
+      has_rail_link?: boolean;
+      q?: string;
+    }) => this.request<any[]>('/v1/ports/land', { query: opts }),
     landPort: (codeOrSlug: string) => this.request<any>(`/v1/ports/land/${codeOrSlug}`),
   };
 

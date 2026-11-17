@@ -1,7 +1,6 @@
 import type { z } from 'zod';
 import { normalizeForSearch } from '../src/lib/normalize';
 import { AirportSchema } from '../src/modules/airports/schemas';
-import { HeritageSiteSchema } from '../src/modules/heritage/schemas';
 import { BankSchema, BranchSchema } from '../src/modules/banks/schemas';
 import { ConstituencySchema } from '../src/modules/constituencies/schemas';
 import { BijoyMapEntrySchema } from '../src/modules/convert/schemas';
@@ -30,6 +29,7 @@ import {
   UpazilaSchema,
 } from '../src/modules/geo/schemas';
 import { HospitalSchema } from '../src/modules/health/schemas';
+import { HeritageSiteSchema } from '../src/modules/heritage/schemas';
 import { HolidaySchema, HolidayYearSchema } from '../src/modules/holidays/schemas';
 import { HotlineSchema } from '../src/modules/hotlines/schemas';
 import { LandUnitSchema } from '../src/modules/land/schemas';

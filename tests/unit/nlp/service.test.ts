@@ -129,8 +129,8 @@ describe('NLP Service: Stemmer', () => {
   it('supports batch word stemming', () => {
     const batch = stemWords(['ছাত্রদেরকে', 'বইগুলো', 'স্বাভাবিকভাবে']);
     expect(batch).toHaveLength(3);
-    expect(batch[0].stem).toBe('ছাত্র');
-    expect(batch[1].stem).toBe('বই');
-    expect(batch[2].stem).toBe('স্বাভাবিক');
+    expect(batch[0]?.stem).toBe('ছাত্র');
+    expect(batch[1]?.stem).toBe('বই');
+    expect(batch[2]?.stem).toBe('স্বাভাবিক');
   });
 });

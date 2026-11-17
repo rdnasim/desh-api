@@ -94,15 +94,7 @@ describe('Bangla NLP Contract Tests', () => {
       400,
       'invalid_parameter',
     );
-    await expectError(
-      await callPost('/v1/nlp/normalize', { text: '' }),
-      400,
-      'invalid_parameter',
-    );
-    await expectError(
-      await callPost('/v1/nlp/tokenize', { text: '' }),
-      400,
-      'invalid_parameter',
-    );
+    await expectError(await callPost('/v1/nlp/normalize', { text: '' }), 400, 'invalid_parameter');
+    await expectError(await callPost('/v1/nlp/tokenize', { text: '' }), 400, 'invalid_parameter');
   });
 });

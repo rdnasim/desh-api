@@ -43,25 +43,41 @@ export const BanglaSuffixSchema = z
 export type BanglaSuffix = z.infer<typeof BanglaSuffixSchema>;
 
 export const StopwordsQuerySchema = z.object({
-  category: z.string().optional().openapi({
-    param: { name: 'category', in: 'query' },
-    example: 'conjunction',
-    description: 'Filter stopwords by grammatical category',
-  }),
-  limit: z.coerce.number().int().positive().max(1000).optional().openapi({
-    param: { name: 'limit', in: 'query' },
-    example: 100,
-  }),
-  offset: z.coerce.number().int().nonnegative().optional().openapi({
-    param: { name: 'offset', in: 'query' },
-    example: 0,
-  }),
+  category: z
+    .string()
+    .optional()
+    .openapi({
+      param: { name: 'category', in: 'query' },
+      example: 'conjunction',
+      description: 'Filter stopwords by grammatical category',
+    }),
+  limit: z.coerce
+    .number()
+    .int()
+    .positive()
+    .max(1000)
+    .optional()
+    .openapi({
+      param: { name: 'limit', in: 'query' },
+      example: 100,
+    }),
+  offset: z.coerce
+    .number()
+    .int()
+    .nonnegative()
+    .optional()
+    .openapi({
+      param: { name: 'offset', in: 'query' },
+      example: 0,
+    }),
 });
 
 export const StopwordsResponseSchema = z
   .object({
     count: z.number().int().openapi({ example: 550 }),
-    categories: z.array(z.string()).openapi({ example: ['conjunction', 'pronoun', 'postposition'] }),
+    categories: z
+      .array(z.string())
+      .openapi({ example: ['conjunction', 'pronoun', 'postposition'] }),
     words: z.array(z.string()).openapi({ example: ['এবং', 'কিন্তু', 'বা', 'সুতরাং'] }),
   })
   .openapi('StopwordsResponse', {
@@ -138,7 +154,8 @@ export const TokenizeRequestSchema = z
     }),
     mode: z.enum(['word', 'sentence']).optional().default('word').openapi({
       example: 'sentence',
-      description: 'Tokenization mode: "word" splits on word boundaries, "sentence" splits on Bengali sentence terminals (।, ?, !)',
+      description:
+        'Tokenization mode: "word" splits on word boundaries, "sentence" splits on Bengali sentence terminals (।, ?, !)',
     }),
   })
   .openapi('TokenizeRequest');
@@ -148,20 +165,14 @@ export const TokenizeResponseSchema = z
     mode: z.enum(['word', 'sentence']).openapi({ example: 'sentence' }),
     count: z.number().int().openapi({ example: 2 }),
     tokens: z.array(z.string()).openapi({
-      example: [
-        'আমার সোনার বাংলা, আমি তোমায় ভালোবাসি',
-        'চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি',
-      ],
+      example: ['আমার সোনার বাংলা, আমি তোমায় ভালোবাসি', 'চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি'],
     }),
   })
   .openapi('TokenizeResponse', {
     example: {
       mode: 'sentence',
       count: 2,
-      tokens: [
-        'আমার সোনার বাংলা, আমি তোমায় ভালোবাসি',
-        'চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি',
-      ],
+      tokens: ['আমার সোনার বাংলা, আমি তোমায় ভালোবাসি', 'চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি'],
     },
   });
 
@@ -180,14 +191,21 @@ export const StemRequestSchema = z
       example: 'ছাত্রদেরকে',
       description: 'Single Bengali word to stem',
     }),
-    words: z.array(z.string().min(1)).max(100).optional().openapi({
-      example: ['ছাত্রদেরকে', 'বইগুলো', 'স্বাভাবিকভাবে'],
-      description: 'Array of Bengali words to stem in bulk (max 100)',
-    }),
+    words: z
+      .array(z.string().min(1))
+      .max(100)
+      .optional()
+      .openapi({
+        example: ['ছাত্রদেরকে', 'বইগুলো', 'স্বাভাবিকভাবে'],
+        description: 'Array of Bengali words to stem in bulk (max 100)',
+      }),
   })
-  .refine((data) => data.word !== undefined || (data.words !== undefined && data.words.length > 0), {
-    message: 'Either "word" or non-empty "words" array must be provided',
-  })
+  .refine(
+    (data) => data.word !== undefined || (data.words !== undefined && data.words.length > 0),
+    {
+      message: 'Either "word" or non-empty "words" array must be provided',
+    },
+  )
   .openapi('StemRequest');
 
 export const StemResponseSchema = z

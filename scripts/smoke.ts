@@ -168,12 +168,14 @@ const scenarios: Scenario[] = [
   {
     name: '13l airports',
     path: '/v1/airports?type=international',
-    check: (_, b) => (b.data?.length === 3 ? true : `expected 3 international airports, got ${b.data?.length}`),
+    check: (_, b) =>
+      b.data?.length === 3 ? true : `expected 3 international airports, got ${b.data?.length}`,
   },
   {
     name: '13m heritage sites',
     path: '/v1/heritage?type=unesco_world_heritage',
-    check: (_, b) => (b.data?.length === 3 ? true : `expected 3 UNESCO sites, got ${b.data?.length}`),
+    check: (_, b) =>
+      b.data?.length === 3 ? true : `expected 3 UNESCO sites, got ${b.data?.length}`,
   },
   {
     name: '13n rivers',

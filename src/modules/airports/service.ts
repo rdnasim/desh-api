@@ -1,7 +1,7 @@
+import type { z } from 'zod';
 import airports from '../../generated/airports.airports';
 import { normalizeForSearch } from '../../lib/normalize';
 import type { Airport, AirportStatusSchema, AirportTypeSchema } from './schemas';
-import type { z } from 'zod';
 
 const sortedAirports = [...airports].sort((a, b) => a.name_en.localeCompare(b.name_en));
 

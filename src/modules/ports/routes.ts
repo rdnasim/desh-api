@@ -44,7 +44,11 @@ portRoutes.openapi(
         division: query('division', 'Division slug, e.g. khulna, rangpur, sylhet', 'khulna'),
         district: query('district', 'District slug, e.g. jashore, lalmonirhat, sylhet', 'jashore'),
         status: query('status', 'operational, under_development, inactive', 'operational'),
-        has_rail_link: query('has_rail_link', 'Filter by rail connection: "true" or "false"', 'true'),
+        has_rail_link: query(
+          'has_rail_link',
+          'Filter by rail connection: "true" or "false"',
+          'true',
+        ),
         has_passenger_immigration: query(
           'has_passenger_immigration',
           'Filter by passenger immigration: "true" or "false"',

@@ -1,7 +1,7 @@
+import type { z } from 'zod';
 import heritageSites from '../../generated/heritage.sites';
 import { normalizeForSearch } from '../../lib/normalize';
 import type { HeritageCategorySchema, HeritageSite, HeritageTypeSchema } from './schemas';
-import type { z } from 'zod';
 
 const sortedSites = [...heritageSites].sort((a, b) => a.name_en.localeCompare(b.name_en));
 

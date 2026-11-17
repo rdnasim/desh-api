@@ -1,7 +1,7 @@
+import type { z } from 'zod';
 import landPorts from '../../generated/ports.land-ports';
 import { normalizeForSearch } from '../../lib/normalize';
 import type { LandPort, LandPortStatusSchema } from './schemas';
-import type { z } from 'zod';
 
 const sortedPorts = [...landPorts].sort((a, b) => a.name_en.localeCompare(b.name_en));
 
@@ -48,7 +48,14 @@ export function listLandPorts({
         normalizeForSearch(p.description_en).includes(query) ||
         normalizeForSearch(p.description_bn).includes(query);
       const matchCommodity = p.key_commodities.some((c) => normalizeForSearch(c).includes(query));
-      if (!matchName && !matchCode && !matchIndianLcs && !matchState && !matchDesc && !matchCommodity)
+      if (
+        !matchName &&
+        !matchCode &&
+        !matchIndianLcs &&
+        !matchState &&
+        !matchDesc &&
+        !matchCommodity
+      )
         return false;
     }
     return true;

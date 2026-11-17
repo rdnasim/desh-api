@@ -50,8 +50,8 @@ export function removeStopwords(text: string) {
   const tokenRegex = /([\u0980-\u09FFa-zA-Z0-9]+|[^\u0980-\u09FFa-zA-Z0-9\s]+|\s+)/gu;
   const parts: string[] = [];
 
-  let match: RegExpExecArray | null;
-  while ((match = tokenRegex.exec(normalized)) !== null) {
+  let match = tokenRegex.exec(normalized);
+  while (match !== null) {
     const chunk = match[0];
     const cleanWord = chunk.trim().normalize('NFC');
     if (cleanWord && stopwordSet.has(cleanWord)) {
@@ -60,6 +60,7 @@ export function removeStopwords(text: string) {
     } else {
       parts.push(chunk);
     }
+    match = tokenRegex.exec(normalized);
   }
 
   // Clean up multiple spaces left by removed words

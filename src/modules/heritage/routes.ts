@@ -4,11 +4,7 @@ import { cachePublic } from '../../lib/cache';
 import { ErrorSchema, envelope, metaFor, ok } from '../../lib/envelope';
 import { ApiError, validationHook } from '../../lib/errors';
 import { getDistrict, getDivision } from '../geo/service';
-import {
-  HeritageCategorySchema,
-  HeritageSiteSchema,
-  HeritageTypeSchema,
-} from './schemas';
+import { HeritageCategorySchema, HeritageSiteSchema, HeritageTypeSchema } from './schemas';
 import { getHeritageSite, listHeritageSites } from './service';
 
 const tags = ['Heritage'];

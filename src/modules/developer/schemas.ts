@@ -33,11 +33,15 @@ export type DeveloperQuota = z.infer<typeof DeveloperQuotaSchema>;
 export const TierPlanSchema = z.object({
   tier: z.string().openapi({ example: 'developer' }),
   name: z.string().openapi({ example: 'Developer' }),
-  description: z.string().openapi({ example: 'For personal projects, mobile apps, and startup backends' }),
+  description: z
+    .string()
+    .openapi({ example: 'For personal projects, mobile apps, and startup backends' }),
   rate_limit_per_minute: z.number().openapi({ example: 600 }),
   daily_quota: z.number().openapi({ example: 50000 }),
   price_bdt: z.number().openapi({ example: 0 }),
-  features: z.array(z.string()).openapi({ example: ['50k requests / day', '600 req/min burst', 'Commercial use allowed'] }),
+  features: z
+    .array(z.string())
+    .openapi({ example: ['50k requests / day', '600 req/min burst', 'Commercial use allowed'] }),
 });
 
 export const DeveloperTiersResponseSchema = z
@@ -63,7 +67,12 @@ export const DeveloperTiersResponseSchema = z
           rate_limit_per_minute: 600,
           daily_quota: 50000,
           price_bdt: 0,
-          features: ['Free API Key', '50k requests / day', '600 req/min burst', 'Telemetry & Quota Monitoring'],
+          features: [
+            'Free API Key',
+            '50k requests / day',
+            '600 req/min burst',
+            'Telemetry & Quota Monitoring',
+          ],
         },
         {
           tier: 'enterprise',
@@ -72,7 +81,12 @@ export const DeveloperTiersResponseSchema = z
           rate_limit_per_minute: 1800,
           daily_quota: 500000,
           price_bdt: 0,
-          features: ['500k+ requests / day', 'Dedicated edge priority', 'Direct Slack/Discord channel', 'Custom endpoints'],
+          features: [
+            '500k+ requests / day',
+            'Dedicated edge priority',
+            'Direct Slack/Discord channel',
+            'Custom endpoints',
+          ],
         },
       ],
     },
@@ -94,7 +108,8 @@ export const GeneratedKeyResponseSchema = z
     daily_quota: z.number().openapi({ example: 50000 }),
     created_at: z.string().openapi({ example: '2026-11-17T16:00:00.000Z' }),
     instructions: z.string().openapi({
-      example: 'Pass your key in HTTP header: X-API-Key: desh_dev_a1b2c3d4e5f6g7h8 or Authorization: Bearer desh_dev_a1b2c3d4e5f6g7h8',
+      example:
+        'Pass your key in HTTP header: X-API-Key: desh_dev_a1b2c3d4e5f6g7h8 or Authorization: Bearer desh_dev_a1b2c3d4e5f6g7h8',
     }),
   })
   .openapi('GeneratedKeyResponse', {
@@ -105,7 +120,8 @@ export const GeneratedKeyResponseSchema = z
       rate_limit_per_minute: 600,
       daily_quota: 50000,
       created_at: '2026-11-17T16:00:00.000Z',
-      instructions: 'Pass your key in HTTP header: X-API-Key: desh_dev_a1b2c3d4e5f6g7h8 or Authorization: Bearer desh_dev_a1b2c3d4e5f6g7h8',
+      instructions:
+        'Pass your key in HTTP header: X-API-Key: desh_dev_a1b2c3d4e5f6g7h8 or Authorization: Bearer desh_dev_a1b2c3d4e5f6g7h8',
     },
   });
 

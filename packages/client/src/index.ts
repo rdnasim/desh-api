@@ -1,4 +1,4 @@
-export { DeshClient, createDeshClient } from './client.js';
+export { createDeshClient, DeshClient } from './client.js';
 export { DeshApiError, type DeshErrorPayload } from './errors.js';
 export type { ApiResponse, ApiResponseMeta, ClientConfig } from './types.js';
 

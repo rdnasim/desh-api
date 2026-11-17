@@ -7,8 +7,8 @@ import { validationHook } from '../../lib/errors';
 import {
   DeveloperQuotaSchema,
   DeveloperTiersResponseSchema,
-  GenerateKeyRequestSchema,
   GeneratedKeyResponseSchema,
+  GenerateKeyRequestSchema,
 } from './schemas';
 
 const tags = ['Developer'];
@@ -89,7 +89,8 @@ developerRoutes.openapi(
         {
           tier: 'anonymous',
           name: TIERS.anonymous.name,
-          description: 'Instant zero-configuration access for quick testing, scripts, and open web apps.',
+          description:
+            'Instant zero-configuration access for quick testing, scripts, and open web apps.',
           rate_limit_per_minute: TIERS.anonymous.rate_limit_per_minute,
           daily_quota: TIERS.anonymous.daily_quota,
           price_bdt: 0,
@@ -118,7 +119,8 @@ developerRoutes.openapi(
         {
           tier: 'enterprise',
           name: TIERS.enterprise.name,
-          description: 'For high-volume fintechs, government portals, and national telecom platforms.',
+          description:
+            'For high-volume fintechs, government portals, and national telecom platforms.',
           rate_limit_per_minute: TIERS.enterprise.rate_limit_per_minute,
           daily_quota: TIERS.enterprise.daily_quota,
           price_bdt: 0,
