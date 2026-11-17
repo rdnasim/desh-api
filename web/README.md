@@ -74,21 +74,21 @@ The optimized static bundle will be generated in `web/dist/`.
 
 ---
 
-## Deployment Options
+## Production Deployment
 
-This app is a static SPA and can be deployed anywhere with zero backend configuration:
+The production portal is live at **[`https://portal.deshapi.riadul.com`](https://portal.deshapi.riadul.com)**.
 
-### Deploy to Cloudflare Pages:
+### Deploy to Cloudflare (Worker Static Assets):
 ```bash
-npx wrangler pages deploy web/dist --project-name desh-api-explorer
+# From the repository root
+npm run web:build
+npx wrangler deploy --cwd web
 ```
 
-### Deploy to Vercel:
+### Deploy to Vercel or Netlify:
 ```bash
+npm run web:build
 npx vercel web/dist
-```
-
-### Deploy to Netlify:
-```bash
+# or
 npx netlify deploy --dir=web/dist --prod
 ```

@@ -10,6 +10,7 @@
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green.svg)](LICENSE-DATA)
 
+[**Web Portal**](https://portal.deshapi.riadul.com) ·
 [**Live API**](https://deshapi.riadul.com) ·
 [**Interactive docs**](https://deshapi.riadul.com/docs) ·
 [OpenAPI](https://deshapi.riadul.com/openapi.json) ·
@@ -26,12 +27,12 @@ regex, a bank-branch picker, an income-tax calculator. Desh API puts them behind
 documented API, free to use, with **English and Bangla names** and **the source of every fact in
 every response**.
 
-- Base URL: **`https://deshapi.riadul.com`** (the older `desh-api.riadul.workers.dev` address also works)
-- No sign-up, no API key
+- Web Portal: **[`https://portal.deshapi.riadul.com`](https://portal.deshapi.riadul.com)** (Interactive citizen widgets + Developer API Explorer)
+- API Base URL: **`https://deshapi.riadul.com`** (the older `desh-api.riadul.workers.dev` address also works)
+- No sign-up, no API key required for public use (120 req/min, 10,000 req/day)
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 21 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway
-
+- 23 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway, constituencies, and developer quota telemetries.
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -262,6 +263,26 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 
 If something is wrong, please [report it](https://github.com/rdnasim/desh-api/issues/new/choose)
 with a source. Facts that reliable sources disagree on are left out rather than guessed.
+
+## Web Portal & Live Explorer
+
+A companion public web application is deployed at **[`portal.deshapi.riadul.com`](https://portal.deshapi.riadul.com)**:
+
+- **Citizen & Consumer Services Portal:**
+  - **Islamic Prayer Times & Ramadan Calendar:** 64-district prayer calculator with 12h/24h/Bangla format toggles.
+  - **Live Essential Market & Fuel Prices:** Real-time TCB daily retail commodity rates & official BPC fuel tariffs.
+  - **Gold, Silver & Zakat Calculator:** Real-time BAJUS rates and automated Nisab threshold calculation.
+  - **Dhaka Metro Rail (MRT Line-6):** Station navigation, single-journey vs MRT Pass (10% discount) fares, travel duration.
+  - **Bangla Linguistic Toolkit:** Number/Taka in formal Bengali words, Avro phonetic transliteration, and traditional Bengali calendar (বঙ্গাব্দ).
+  - **Finance & Tax 2026:** Multi-tier individual income tax slab breakdown (Finance Act 2026) and bank loan EMI amortizer.
+  - **Emergency Healthcare Directory:** Direct-dial DGHS national emergency hotlines (999, 16263, 10655), 24/7 trauma hospitals, and ambulances.
+  - **Geographic & Institutional Registry:** Postcode locator, Bangladesh Bank 9-digit BEFTN routing validator, and 300 parliamentary constituencies.
+  - **Weather, AQI & Seasons:** Real-time Air Quality Index gauge with health advisories and the 6 traditional Bengali seasons (ষড়ঋতু).
+- **Developer API Explorer:**
+  - Interactive API console to execute endpoints across all 23 modules.
+  - Real-time rate-limit and daily quota monitor directly from response headers (`120 req/min`, `10,000 req/day`).
+  - Response headers inspector, formatted JSON preview, and copy-ready cURL command generator.
+  - One-click **"Inspect API"** on every portal widget to inspect latency (`ms`), status, and payload.
 
 ## Run it yourself
 
