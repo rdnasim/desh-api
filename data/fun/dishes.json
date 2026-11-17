@@ -1,5 +1,15 @@
 [
   {
+    "slug": "ashwina-aam",
+    "name_en": "Ashwina mango of Chapainawabganj",
+    "name_bn": "চাঁপাইনবাবগঞ্জের আশ্বিনা আম",
+    "district": "chapainababganj",
+    "gi_application": "জি আই-১২",
+    "description_en": "Late-season aromatic mango variety officially registered as a Geographical Indication (GI) product of Bangladesh.",
+    "description_bn": "দেরিতে পাকা সুস্বাদু আম যা বাংলাদেশের নিবন্ধিত ভৌগোলিক নির্দেশক (জিআই) পণ্য।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
     "slug": "austagram-ponir",
     "name_en": "Cheese (ponir) of Austagram",
     "name_bn": "অষ্টগ্রামের পনির",
@@ -25,6 +35,16 @@
     "gi_application": "জি আই-০২",
     "description_en": "Registered Geographical Indication (GI) product of Bangladesh.",
     "description_bn": "বাংলাদেশের নিবন্ধিত ভৌগোলিক নির্দেশক (জিআই) পণ্য।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
+    "slug": "barishal-amra",
+    "name_en": "Hog plum (amra) of Barishal",
+    "name_bn": "বরিশালের আমড়া",
+    "district": "barishal",
+    "gi_application": "জি আই-৩০",
+    "description_en": "Renowned succulent and tart hog plum variety cultivated across the southern delta districts.",
+    "description_bn": "দক্ষিণাঞ্চলের সুস্বাদু ও পুষ্টিকর ফল যা ভৌগোলিক নির্দেশক হিসেবে স্বীকৃত।",
     "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
   },
   {
@@ -58,6 +78,24 @@
     "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
   },
   {
+    "slug": "chattogram-mezbani-gosht",
+    "name_en": "Mezbani beef of Chattogram",
+    "name_bn": "চট্টগ্রামের মেজবানি মাংস",
+    "district": "chattogram",
+    "description_en": "Traditional aromatic spiced beef curry cooked with white mustard paste and radhuni for historic community banquets.",
+    "description_bn": "ঐতিহ্যবাহী সামাজিক ভোজ মেজবানের প্রধান পদ, যা বিশেষ মসলা ও সাদা সরিষা দিয়ে রান্না করা হয়।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
+    "slug": "coxs-bazar-rupchanda-shutki",
+    "name_en": "Rupchanda dry fish of Cox's Bazar",
+    "name_bn": "কক্সবাজারের রূপচাঁদা শুঁটকি",
+    "district": "coxs-bazar",
+    "description_en": "Sun-dried silver pomfret prepared traditionally along the coastal shores of Cox's Bazar.",
+    "description_bn": "উপকূলীয় ঐতিহ্যবাহী পদ্ধতিতে প্রক্রিয়াজাতকৃত রূপচাঁদা শুঁটকি।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
     "slug": "cumilla-roshmalai",
     "name_en": "Roshmalai of Cumilla",
     "name_bn": "কুমিল্লার রসমালাই",
@@ -65,6 +103,26 @@
     "gi_application": "জিআই-৪২",
     "description_en": "Registered Geographical Indication (GI) product of Bangladesh.",
     "description_bn": "বাংলাদেশের নিবন্ধিত ভৌগোলিক নির্দেশক (জিআই) পণ্য।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
+    "slug": "dhakai-bakarkhani",
+    "name_en": "Dhakai bakarkhani of Old Dhaka",
+    "name_bn": "ঢাকার বাকরখানি",
+    "district": "dhaka",
+    "gi_application": "জি আই-২৪",
+    "description_en": "Flaky spiced flatbread baked in traditional clay tandoors, an iconic Mughal heritage food of Old Dhaka.",
+    "description_bn": "পুরান ঢাকার শতবর্ষ প্রাচীন মোগলাই ঐতিহ্যবাহী খাস্তা রুটি, যা মাটির তন্দুরে সেঁকা হয়।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
+    "slug": "dinajpur-kataribhog",
+    "name_en": "Kataribhog aromatic rice of Dinajpur",
+    "name_bn": "দিনাজপুরের কাটারিভোগ চাল",
+    "district": "dinajpur",
+    "gi_application": "জি আই-০৪",
+    "description_en": "Fine-grained fragrant indigenous rice cultivar originating from the silt soils of Dinajpur district.",
+    "description_bn": "দিনাজপুরের সুগন্ধি ও চিকন চাল যা বাংলাদেশের নিবন্ধিত ভৌগোলিক নির্দেশক (জিআই) পণ্য।",
     "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
   },
   {
@@ -85,6 +143,25 @@
     "gi_application": "জিআই-৪৫",
     "description_en": "Registered Geographical Indication (GI) product of Bangladesh.",
     "description_bn": "বাংলাদেশের নিবন্ধিত ভৌগোলিক নির্দেশক (জিআই) পণ্য।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
+    "slug": "kalijira-rice",
+    "name_en": "Kalijira aromatic rice of Bangladesh",
+    "name_bn": "বাংলাদেশের সুগন্ধি কালোজিরা চাল",
+    "gi_application": "জি আই-০৫",
+    "description_en": "Small aromatic rice known as the \"prince of rice\", cherished for traditional pulao, firni, and festive dishes.",
+    "description_bn": "পোলাও, পায়েস ও উৎসবের মিষ্টি তৈরিতে ব্যবহৃত সুগন্ধি ক্ষুদ্র দানার ধান।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
+    "slug": "khirshapat-aam",
+    "name_en": "Khirshapat (Himsagar) mango of Chapainawabganj",
+    "name_bn": "চাঁপাইনবাবগঞ্জের ক্ষীরশাপাত আম",
+    "district": "chapainababganj",
+    "gi_application": "জি আই-০৩",
+    "description_en": "Sweet, fiberless, thin-skinned premier mango cultivar certified as a Geographical Indication product.",
+    "description_bn": "চাঁপাইনবাবগঞ্জের আঁশবিহীন ও মিষ্টি সুস্বাদু আম যা বাংলাদেশের তৃতীয় নিবন্ধিত জিআই পণ্য।",
     "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
   },
   {
@@ -198,6 +275,16 @@
     "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
   },
   {
+    "slug": "rajshahi-fazli-aam",
+    "name_en": "Fazli mango of Rajshahi",
+    "name_bn": "রাজশাহীর ফজলি আম",
+    "district": "rajshahi",
+    "gi_application": "জি আই-১৩",
+    "description_en": "Large succulent sweet mango cultivar famously harvested in the orchards of Rajshahi.",
+    "description_bn": "রাজশাহীর সুবৃহৎ ও মিষ্টি জাতের আম, নিবন্ধিত ভৌগোলিক নির্দেশক (জিআই) পণ্য।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
     "slug": "sherpur-chhanar-payesh",
     "name_en": "Chhana payesh of Sherpur",
     "name_bn": "শেরপুরের ছানার পায়েস",
@@ -215,6 +302,16 @@
     "gi_application": "জিআই-২৫",
     "description_en": "Registered Geographical Indication (GI) product of Bangladesh.",
     "description_bn": "বাংলাদেশের নিবন্ধিত ভৌগোলিক নির্দেশক (জিআই) পণ্য।",
+    "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
+  },
+  {
+    "slug": "tangail-sari",
+    "name_en": "Tangail handloom sari",
+    "name_bn": "টাঙ্গাইল শাড়ি",
+    "district": "tangail",
+    "gi_application": "জি আই-৩৩",
+    "description_en": "Intricately woven jacquard and handloom cotton and silk textile produced by hereditary Basak weavers of Tangail.",
+    "description_bn": "টাঙ্গাইলের বসাক তাঁতিদের নিপুণ হাতের কারুকাজে তৈরি আন্তর্জাতিকভাবে সমাদৃত ঐতিহ্যবাহী শাড়ি।",
     "source": "https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf"
   }
 ]

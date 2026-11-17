@@ -18,6 +18,24 @@
     "tradition": "buddhist"
   },
   {
+    "name_en": "Mogh",
+    "name_bn": "মগ",
+    "kind": "family",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Tanchangya",
+    "name_bn": "তঞ্চঙ্গ্যা",
+    "kind": "family",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Tripura",
+    "name_bn": "ত্রিপুরা",
+    "kind": "family",
+    "tradition": "buddhist"
+  },
+  {
     "name_en": "Ananda",
     "name_bn": "আনন্দ",
     "kind": "given",
@@ -25,8 +43,43 @@
     "tradition": "buddhist"
   },
   {
+    "name_en": "Bodhipriya",
+    "name_bn": "বোধিপ্রিয়",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Champa",
+    "name_bn": "চম্পা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "buddhist"
+  },
+  {
     "name_en": "Jyotirmoy",
     "name_bn": "জ্যোতির্ময়",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Khin",
+    "name_bn": "খিন",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Maitree",
+    "name_bn": "মৈত্রী",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Mong",
+    "name_bn": "মং",
     "kind": "given",
     "gender": "male",
     "tradition": "buddhist"
@@ -60,6 +113,13 @@
     "tradition": "buddhist"
   },
   {
+    "name_en": "Shantimoy",
+    "name_bn": "শান্তিময়",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "buddhist"
+  },
+  {
     "name_en": "Sujit",
     "name_bn": "সুজিত",
     "kind": "given",
@@ -71,6 +131,20 @@
     "name_bn": "সুমিত্রা",
     "kind": "given",
     "gender": "female",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Supriti",
+    "name_bn": "সুপ্রীতি",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "buddhist"
+  },
+  {
+    "name_en": "Ujjal",
+    "name_bn": "উজ্জ্বল",
+    "kind": "given",
+    "gender": "male",
     "tradition": "buddhist"
   },
   {
@@ -92,8 +166,26 @@
     "tradition": "christian"
   },
   {
+    "name_en": "Gonsalves",
+    "name_bn": "গনসালভেস",
+    "kind": "family",
+    "tradition": "christian"
+  },
+  {
     "name_en": "Halder",
     "name_bn": "হালদার",
+    "kind": "family",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Peris",
+    "name_bn": "পেরিস",
+    "kind": "family",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Rodrigues",
+    "name_bn": "রদ্রিগেজ",
     "kind": "family",
     "tradition": "christian"
   },
@@ -101,6 +193,48 @@
     "name_en": "Rozario",
     "name_bn": "রোজারিও",
     "kind": "family",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Agnes",
+    "name_bn": "অ্যাগনেস",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Antony",
+    "name_bn": "অ্যান্টনি",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Clara",
+    "name_bn": "ক্লারা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Dominic",
+    "name_bn": "ডমিনিক",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Francis",
+    "name_bn": "ফ্রান্সিস",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Gabriel",
+    "name_bn": "গ্যাব্রিয়েল",
+    "kind": "given",
+    "gender": "male",
     "tradition": "christian"
   },
   {
@@ -115,6 +249,13 @@
     "name_bn": "জন",
     "kind": "given",
     "gender": "male",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Lucy",
+    "name_bn": "লুসি",
+    "kind": "given",
+    "gender": "female",
     "tradition": "christian"
   },
   {
@@ -160,8 +301,27 @@
     "tradition": "christian"
   },
   {
+    "name_en": "Theresa",
+    "name_bn": "তেরেসা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "christian"
+  },
+  {
+    "name_en": "Adhikari",
+    "name_bn": "অধিকারী",
+    "kind": "family",
+    "tradition": "hindu"
+  },
+  {
     "name_en": "Bhattacharjee",
     "name_bn": "ভট্টাচার্য",
+    "kind": "family",
+    "tradition": "hindu"
+  },
+  {
+    "name_en": "Bhowmik",
+    "name_bn": "ভৌমিক",
     "kind": "family",
     "tradition": "hindu"
   },
@@ -192,6 +352,18 @@
   {
     "name_en": "Ghosh",
     "name_bn": "ঘোষ",
+    "kind": "family",
+    "tradition": "hindu"
+  },
+  {
+    "name_en": "Karmakar",
+    "name_bn": "কর্মকার",
+    "kind": "family",
+    "tradition": "hindu"
+  },
+  {
+    "name_en": "Majumder",
+    "name_bn": "মজুমদার",
     "kind": "family",
     "tradition": "hindu"
   },
@@ -247,8 +419,29 @@
     "tradition": "hindu"
   },
   {
+    "name_en": "Avishek",
+    "name_bn": "অভিষেক",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "hindu"
+  },
+  {
+    "name_en": "Barnali",
+    "name_bn": "বর্ণালী",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "hindu"
+  },
+  {
     "name_en": "Bikash",
     "name_bn": "বিকাশ",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "hindu"
+  },
+  {
+    "name_en": "Debashis",
+    "name_bn": "দেবাশীষ",
     "kind": "given",
     "gender": "male",
     "tradition": "hindu"
@@ -275,6 +468,13 @@
     "tradition": "hindu"
   },
   {
+    "name_en": "Kakoli",
+    "name_bn": "কাকলী",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "hindu"
+  },
+  {
     "name_en": "Lipika",
     "name_bn": "লিপিকা",
     "kind": "given",
@@ -296,6 +496,13 @@
     "tradition": "hindu"
   },
   {
+    "name_en": "Mousumi",
+    "name_bn": "মৌসুমী",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "hindu"
+  },
+  {
     "name_en": "Pradip",
     "name_bn": "প্রদীপ",
     "kind": "given",
@@ -303,8 +510,22 @@
     "tradition": "hindu"
   },
   {
+    "name_en": "Pranab",
+    "name_bn": "প্রণব",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "hindu"
+  },
+  {
     "name_en": "Priya",
     "name_bn": "প্রিয়া",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "hindu"
+  },
+  {
+    "name_en": "Priyanka",
+    "name_bn": "প্রিয়াঙ্কা",
     "kind": "given",
     "gender": "female",
     "tradition": "hindu"
@@ -352,8 +573,22 @@
     "tradition": "hindu"
   },
   {
+    "name_en": "Sharmila",
+    "name_bn": "শর্মিলা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "hindu"
+  },
+  {
     "name_en": "Shuvo",
     "name_bn": "শুভ",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "hindu"
+  },
+  {
+    "name_en": "Sourav",
+    "name_bn": "সৌরভ",
     "kind": "given",
     "gender": "male",
     "tradition": "hindu"
@@ -396,6 +631,12 @@
   {
     "name_en": "Ahmed",
     "name_bn": "আহমেদ",
+    "kind": "family",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Akand",
+    "name_bn": "আকন্দ",
     "kind": "family",
     "tradition": "muslim"
   },
@@ -474,6 +715,12 @@
     "tradition": "muslim"
   },
   {
+    "name_en": "Khandakar",
+    "name_bn": "খন্দকার",
+    "kind": "family",
+    "tradition": "muslim"
+  },
+  {
     "name_en": "Khatun",
     "name_bn": "খাতুন",
     "kind": "family",
@@ -496,6 +743,12 @@
   {
     "name_en": "Molla",
     "name_bn": "মোল্লা",
+    "kind": "family",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Munshi",
+    "name_bn": "মুন্সী",
     "kind": "family",
     "tradition": "muslim"
   },
@@ -544,6 +797,13 @@
     "tradition": "muslim"
   },
   {
+    "name_en": "Afia",
+    "name_bn": "আফিয়া",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "muslim"
+  },
+  {
     "name_en": "Afroza",
     "name_bn": "আফরোজা",
     "kind": "given",
@@ -567,6 +827,13 @@
   {
     "name_en": "Arif",
     "name_bn": "আরিফ",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Ashiq",
+    "name_bn": "আশিক",
     "kind": "given",
     "gender": "male",
     "tradition": "muslim"
@@ -602,6 +869,13 @@
   {
     "name_en": "Farhana",
     "name_bn": "ফারহানা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Farzana",
+    "name_bn": "ফারজানা",
     "kind": "given",
     "gender": "female",
     "tradition": "muslim"
@@ -691,6 +965,20 @@
     "tradition": "muslim"
   },
   {
+    "name_en": "Lubna",
+    "name_bn": "লুবনা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Mahmud",
+    "name_bn": "মাহমুদ",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "muslim"
+  },
+  {
     "name_en": "Maliha",
     "name_bn": "মালিহা",
     "kind": "given",
@@ -714,6 +1002,13 @@
   {
     "name_en": "Mehjabin",
     "name_bn": "মেহজাবিন",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Mehnaz",
+    "name_bn": "মেহনাজ",
     "kind": "given",
     "gender": "female",
     "tradition": "muslim"
@@ -810,6 +1105,13 @@
     "tradition": "muslim"
   },
   {
+    "name_en": "Rifat",
+    "name_bn": "রিফাত",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "muslim"
+  },
+  {
     "name_en": "Riyad",
     "name_bn": "রিয়াদ",
     "kind": "given",
@@ -838,10 +1140,24 @@
     "tradition": "muslim"
   },
   {
+    "name_en": "Sabrina",
+    "name_bn": "সাবরিনা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "muslim"
+  },
+  {
     "name_en": "Sadia",
     "name_bn": "সাদিয়া",
     "kind": "given",
     "gender": "female",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Saif",
+    "name_bn": "সাইফ",
+    "kind": "given",
+    "gender": "male",
     "tradition": "muslim"
   },
   {
@@ -854,6 +1170,13 @@
   {
     "name_en": "Salma",
     "name_bn": "সালমা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Samira",
+    "name_bn": "সামিরা",
     "kind": "given",
     "gender": "female",
     "tradition": "muslim"
@@ -901,10 +1224,24 @@
     "tradition": "muslim"
   },
   {
+    "name_en": "Sultana",
+    "name_bn": "সুলতানা",
+    "kind": "given",
+    "gender": "female",
+    "tradition": "muslim"
+  },
+  {
     "name_en": "Sumaiya",
     "name_bn": "সুমাইয়া",
     "kind": "given",
     "gender": "female",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Tamim",
+    "name_bn": "তামিম",
+    "kind": "given",
+    "gender": "male",
     "tradition": "muslim"
   },
   {
@@ -952,6 +1289,13 @@
   {
     "name_en": "Zahid",
     "name_bn": "জাহিদ",
+    "kind": "given",
+    "gender": "male",
+    "tradition": "muslim"
+  },
+  {
+    "name_en": "Zubair",
+    "name_bn": "জুবায়ের",
     "kind": "given",
     "gender": "male",
     "tradition": "muslim"

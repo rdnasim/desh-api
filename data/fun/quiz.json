@@ -726,5 +726,577 @@
     ],
     "answer_index": 0,
     "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
+  },
+  {
+    "id": "quiz-0029",
+    "topic": "liberation-war",
+    "question_bn": "১৯৭১ সালে মুক্তিযুদ্ধের সময় সমগ্র বাংলাদেশকে কতটি প্রশাসনিক সেক্টরে বিভক্ত করা হয়েছিল?",
+    "question_en": "How many operational sectors was Bangladesh divided into during the 1971 Liberation War?",
+    "options": [
+      {
+        "bn": "১১টি সেক্টর",
+        "en": "11 sectors"
+      },
+      {
+        "bn": "৯টি সেক্টর",
+        "en": "9 sectors"
+      },
+      {
+        "bn": "৭টি সেক্টর",
+        "en": "7 sectors"
+      },
+      {
+        "bn": "১৪টি সেক্টর",
+        "en": "14 sectors"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Forces_Sector_Headquarters"
+  },
+  {
+    "id": "quiz-0030",
+    "topic": "liberation-war",
+    "question_bn": "১৯৭১ সালের মুক্তিযুদ্ধে মুক্তিবাহিনীর প্রধান সেনাপতি কে ছিলেন?",
+    "question_en": "Who served as the Commander-in-Chief of Bangladesh Forces during the 1971 Liberation War?",
+    "options": [
+      {
+        "bn": "জেনারেল এম. এ. জি. ওসমানী",
+        "en": "General M. A. G. Osmani"
+      },
+      {
+        "bn": "মেজর জিয়াউর রহমান",
+        "en": "Major Ziaur Rahman"
+      },
+      {
+        "bn": "মেজর কে. এম. শফিউল্লাহ",
+        "en": "Major K. M. Shafiullah"
+      },
+      {
+        "bn": "মেজর সি. আর. দত্ত",
+        "en": "Major C. R. Dutta"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/M._A._G._Osmani"
+  },
+  {
+    "id": "quiz-0031",
+    "topic": "liberation-war",
+    "question_bn": "বাংলাদেশের মুক্তিযুদ্ধে সর্বোচ্চ সামরিক বীরত্বসূচক খেতাব \"বীরশ্রেষ্ঠ\" কতজনকে প্রদান করা হয়?",
+    "question_en": "How many martyrs were awarded the Bir Sreshtho, Bangladesh's highest military award for gallantry?",
+    "options": [
+      {
+        "bn": "৭ জন",
+        "en": "7 heroes"
+      },
+      {
+        "bn": "১১ জন",
+        "en": "11 heroes"
+      },
+      {
+        "bn": "২১ জন",
+        "en": "21 heroes"
+      },
+      {
+        "bn": "১৪ জন",
+        "en": "14 heroes"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Bir_Sreshtho"
+  },
+  {
+    "id": "quiz-0032",
+    "topic": "liberation-war",
+    "question_bn": "১৯৭১ সালের ১৬ ডিসেম্বর পাকিস্তানি সামরিক বাহিনীর পক্ষে আত্মসমর্পণ দলিলে কে স্বাক্ষর করেন?",
+    "question_en": "Who signed the Instrument of Surrender on behalf of the Pakistan Armed Forces on 16 December 1971?",
+    "options": [
+      {
+        "bn": "লেফটেন্যান্ট জেনারেল এ. এ. কে. নিয়াজী",
+        "en": "Lt. Gen. A. A. K. Niazi"
+      },
+      {
+        "bn": "জেনারেল টিক্কা খান",
+        "en": "General Tikka Khan"
+      },
+      {
+        "bn": "জেনারেল ইয়াহিয়া খান",
+        "en": "General Yahya Khan"
+      },
+      {
+        "bn": "মেজর জেনারেল রাও ফরমান আলী",
+        "en": "Maj. Gen. Rao Farman Ali"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Instrument_of_Surrender_(1971)"
+  },
+  {
+    "id": "quiz-0033",
+    "topic": "liberation-war",
+    "question_bn": "মুক্তিযুদ্ধে নৌ-কমান্ডোদের পরিচালিত সফল আক্রমণের সাঙ্কেতিক নাম কী ছিল?",
+    "question_en": "What was the code name of the naval commando operation conducted by the Mukti Bahini in 1971?",
+    "options": [
+      {
+        "bn": "অপারেশন জ্যাকপট",
+        "en": "Operation Jackpot"
+      },
+      {
+        "bn": "অপারেশন সার্চলাইট",
+        "en": "Operation Searchlight"
+      },
+      {
+        "bn": "অপারেশন ওমেগা",
+        "en": "Operation Omega"
+      },
+      {
+        "bn": "অপারেশন ক্লিনহার্ট",
+        "en": "Operation Clean Heart"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Operation_Jackpot"
+  },
+  {
+    "id": "quiz-0034",
+    "topic": "liberation-war",
+    "question_bn": "১৯৭১ সালের ৬ ডিসেম্বর প্রথম শত্রুমুক্ত জেলা কোনটি ছিল?",
+    "question_en": "Which was the first district of Bangladesh to be completely liberated on 6 December 1971?",
+    "options": [
+      {
+        "bn": "যশোর",
+        "en": "Jashore"
+      },
+      {
+        "bn": "কুষ্টিয়া",
+        "en": "Kushtia"
+      },
+      {
+        "bn": "দিনাজপুর",
+        "en": "Dinajpur"
+      },
+      {
+        "bn": "কুমিল্লা",
+        "en": "Cumilla"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+  },
+  {
+    "id": "quiz-0035",
+    "topic": "geography",
+    "question_bn": "বাংলাদেশের একমাত্র প্রবাল দ্বীপ কোনটি?",
+    "question_en": "Which is the only coral island in Bangladesh?",
+    "options": [
+      {
+        "bn": "সেন্ট মার্টিন্স দ্বীপ (নারিকেল জিঞ্জিরা)",
+        "en": "St. Martin's Island (Narikel Jinjira)"
+      },
+      {
+        "bn": "হাতিয়া দ্বীপ",
+        "en": "Hatiya Island"
+      },
+      {
+        "bn": "সন্দ্বীপ",
+        "en": "Sandwip"
+      },
+      {
+        "bn": "মনপুরা দ্বীপ",
+        "en": "Manpura Island"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/St._Martin%27s_Island"
+  },
+  {
+    "id": "quiz-0036",
+    "topic": "geography",
+    "question_bn": "পদ্মা ও যমুনা নদী কোন স্থানে মিলিত হয়েছে?",
+    "question_en": "At which confluence do the Padma and Jamuna rivers meet?",
+    "options": [
+      {
+        "bn": "গোয়ালন্দ (দৌলতদিয়া)",
+        "en": "Goalando (Daulatdia)"
+      },
+      {
+        "bn": "চাঁদপুর",
+        "en": "Chandpur"
+      },
+      {
+        "bn": "ভৈরব",
+        "en": "Bhairab"
+      },
+      {
+        "bn": "আরিচা",
+        "en": "Aricha"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Padma_River"
+  },
+  {
+    "id": "quiz-0037",
+    "topic": "geography",
+    "question_bn": "বিশ্বের বৃহত্তম ম্যানগ্রোভ বন সুন্দরবনের সিংহভাগ (প্রায় ৬০%) কোন দেশে অবস্থিত?",
+    "question_en": "In which country is the larger portion (approximately 60%) of the world's largest mangrove forest, the Sundarbans, located?",
+    "options": [
+      {
+        "bn": "বাংলাদেশ",
+        "en": "Bangladesh"
+      },
+      {
+        "bn": "ভারত",
+        "en": "India"
+      },
+      {
+        "bn": "মিয়ানমার",
+        "en": "Myanmar"
+      },
+      {
+        "bn": "শ্রীলঙ্কা",
+        "en": "Sri Lanka"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Sundarbans"
+  },
+  {
+    "id": "quiz-0038",
+    "topic": "geography",
+    "question_bn": "কক্সবাজার সমুদ্র সৈকতের দৈর্ঘ্য প্রায় কত কিলোমিটার?",
+    "question_en": "Approximately how long is the unbroken natural sandy sea beach of Cox's Bazar?",
+    "options": [
+      {
+        "bn": "১২০ কিলোমিটার",
+        "en": "120 kilometers"
+      },
+      {
+        "bn": "৮০ কিলোমিটার",
+        "en": "80 kilometers"
+      },
+      {
+        "bn": "২০০ কিলোমিটার",
+        "en": "200 kilometers"
+      },
+      {
+        "bn": "৫০ কিলোমিটার",
+        "en": "50 kilometers"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Cox%27s_Bazar_Beach"
+  },
+  {
+    "id": "quiz-0039",
+    "topic": "geography",
+    "question_bn": "বাংলাদেশের সর্বোচ্চ পর্বতশৃঙ্গ হিসেবে স্বীকৃত সাকা হাফং (মওদক মুয়াল) কোন জেলায় অবস্থিত?",
+    "question_en": "In which district is Saka Haphong (Mowdok Mual), widely recognized as the highest peak in Bangladesh, located?",
+    "options": [
+      {
+        "bn": "বান্দরবান",
+        "en": "Bandarban"
+      },
+      {
+        "bn": "রাঙ্গামাটি",
+        "en": "Rangamati"
+      },
+      {
+        "bn": "খাগড়াছড়ি",
+        "en": "Khagrachhari"
+      },
+      {
+        "bn": "মৌলভীবাজার",
+        "en": "Moulvibazar"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Saka_Haphong"
+  },
+  {
+    "id": "quiz-0040",
+    "topic": "history",
+    "question_bn": "নওগাঁর পাহাড়পুরে অবস্থিত অষ্টম শতকের ঐতিহাসিক সোমপুর মহাবিহার কোন পাল সম্রাট নির্মাণ করেছিলেন?",
+    "question_en": "Which Pala emperor founded the 8th-century Somapura Mahavihara at Paharpur, Naogaon?",
+    "options": [
+      {
+        "bn": "ধর্মপাল",
+        "en": "Dharmapala"
+      },
+      {
+        "bn": "গোপাল",
+        "en": "Gopala"
+      },
+      {
+        "bn": "দেবপাল",
+        "en": "Devapala"
+      },
+      {
+        "bn": "মহীপাল",
+        "en": "Mahipala"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Somapura_Mahavihara"
+  },
+  {
+    "id": "quiz-0041",
+    "topic": "history",
+    "question_bn": "১৭৫৭ সালের ২৩ জুন পলাশীর যুদ্ধে ব্রিটিশ ইস্ট ইন্ডিয়া কোম্পানির কাছে কে পরাজিত হন?",
+    "question_en": "Who was defeated by the British East India Company at the Battle of Plassey on 23 June 1757?",
+    "options": [
+      {
+        "bn": "নবাব সিরাজউদ্দৌলা",
+        "en": "Nawab Siraj ud-Daulah"
+      },
+      {
+        "bn": "নবাব আলীবর্দী খান",
+        "en": "Nawab Alivardi Khan"
+      },
+      {
+        "bn": "মীর জাফর",
+        "en": "Mir Jafar"
+      },
+      {
+        "bn": "মীর কাসিম",
+        "en": "Mir Qasim"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Battle_of_Plassey"
+  },
+  {
+    "id": "quiz-0042",
+    "topic": "history",
+    "question_bn": "বঙ্গভঙ্গ (Partition of Bengal) কোন সালে কার্যকর করা হয়েছিল?",
+    "question_en": "In which year did the first Partition of Bengal take place under Lord Curzon?",
+    "options": [
+      {
+        "bn": "১৯০৫ সাল",
+        "en": "1905"
+      },
+      {
+        "bn": "১৯৪৭ সাল",
+        "en": "1947"
+      },
+      {
+        "bn": "১৯১১ সাল",
+        "en": "1911"
+      },
+      {
+        "bn": "১৮৫৭ সাল",
+        "en": "1857"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Partition_of_Bengal_(1905)"
+  },
+  {
+    "id": "quiz-0043",
+    "topic": "history",
+    "question_bn": "সুলতানি আমলে বাংলার বারো ভূঁইয়ার প্রধান নেতা কে ছিলেন?",
+    "question_en": "Who was the chief leader of the Baro-Bhuiyans of Bengal who resisted Mughal expansion from Sonargaon?",
+    "options": [
+      {
+        "bn": "ঈসা খাঁ",
+        "en": "Isa Khan"
+      },
+      {
+        "bn": "প্রতাপাদিত্য",
+        "en": "Pratapaditya"
+      },
+      {
+        "bn": "কেদার রায়",
+        "en": "Kedar Roy"
+      },
+      {
+        "bn": "মুসা খাঁ",
+        "en": "Musa Khan"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Isa_Khan"
+  },
+  {
+    "id": "quiz-0044",
+    "topic": "history",
+    "question_bn": "বাংলা ভাষায় প্রকাশিত প্রথম মুদ্রিত সাপ্তাহিক সংবাদপত্রের নাম কী?",
+    "question_en": "What was the name of the first printed weekly newspaper published in the Bengali language?",
+    "options": [
+      {
+        "bn": "সমাচার দর্পণ (১৮১৮)",
+        "en": "Samachar Darpan (1818)"
+      },
+      {
+        "bn": "বেঙ্গল গেজেট",
+        "en": "Bengal Gazette"
+      },
+      {
+        "bn": "সংবাদ প্রভাকর",
+        "en": "Sangbad Prabhakar"
+      },
+      {
+        "bn": "তত্ত্ববোধিনী পত্রিকা",
+        "en": "Tattwabodhini Patrika"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Samachar_Darpan"
+  },
+  {
+    "id": "quiz-0045",
+    "topic": "culture",
+    "question_bn": "বাংলা নববর্ষে ঢাকা বিশ্ববিদ্যালয়ের চারুকলা অনুষদ থেকে বের হওয়া ঐতিহ্যবাহী মঙ্গল শোভাযাত্রা কোন সালে ইউনেস্কোর ইনট্যানজিবল কালচারাল হেরিটেজ হিসেবে স্বীকৃতি পায়?",
+    "question_en": "In which year was the Mangal Shobhajatra on Pahela Baishakh inscribed onto the UNESCO Intangible Cultural Heritage list?",
+    "options": [
+      {
+        "bn": "২০১৬ সাল",
+        "en": "2016"
+      },
+      {
+        "bn": "২০১২ সাল",
+        "en": "2012"
+      },
+      {
+        "bn": "২০০৮ সাল",
+        "en": "2008"
+      },
+      {
+        "bn": "২০২০ সাল",
+        "en": "2020"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Mangal_Shobhajatra"
+  },
+  {
+    "id": "quiz-0046",
+    "topic": "culture",
+    "question_bn": "বাউল গানের প্রখ্যাত মরমি সাধক লালন শাহের মাজার কোন জেলায় অবস্থিত?",
+    "question_en": "In which district of Bangladesh is the shrine (akhra) of mystic philosopher and Baul saint Lalon Shah located?",
+    "options": [
+      {
+        "bn": "কুষ্টিয়া (ছেউড়িয়া)",
+        "en": "Kushtia (Cheuriya)"
+      },
+      {
+        "bn": "মেহেরপুর",
+        "en": "Meherpur"
+      },
+      {
+        "bn": "চুয়াডাঙ্গা",
+        "en": "Chuadanga"
+      },
+      {
+        "bn": "ঝিনাইদহ",
+        "en": "Jhenaidah"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Lalon"
+  },
+  {
+    "id": "quiz-0047",
+    "topic": "culture",
+    "question_bn": "শীতকালে ও নবান্ন উৎসবে বাংলার গ্রামীণ সংস্কৃতিতে তৈরি ঐতিহ্যবাহী খাবারের প্রধান উপাদান কোনটি?",
+    "question_en": "Which is the core ingredient used in making traditional Bengali pithas during winter and the Nobanno harvest festival?",
+    "options": [
+      {
+        "bn": "চালের গুঁড়া ও খেজুরের গুড়",
+        "en": "Rice flour and date-palm molasses"
+      },
+      {
+        "bn": "ময়দা ও চিনি",
+        "en": "Wheat flour and refined sugar"
+      },
+      {
+        "bn": "সুজি ও মধু",
+        "en": "Semolina and honey"
+      },
+      {
+        "bn": "বেসন ও ঘি",
+        "en": "Gram flour and ghee"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Pitha"
+  },
+  {
+    "id": "quiz-0048",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের কোন লোকশিল্প ফর্মটি ইউনেস্কোর অপরিমেয় সাংস্কৃতিক ঐতিহ্য হিসেবে স্বীকৃত?",
+    "question_en": "Which traditional handicraft of Bangladesh is officially inscribed as a UNESCO Intangible Cultural Heritage?",
+    "options": [
+      {
+        "bn": "জামদানি বয়নশিল্প",
+        "en": "Jamdani weaving"
+      },
+      {
+        "bn": "মৃৎশিল্প",
+        "en": "Terracotta pottery"
+      },
+      {
+        "bn": "বাঁশশিল্প",
+        "en": "Bamboo craft"
+      },
+      {
+        "bn": "নকশিকাঁথা বয়ন",
+        "en": "Nakshi kantha embroidery"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Jamdani"
+  },
+  {
+    "id": "quiz-0049",
+    "topic": "culture",
+    "question_bn": "বাংলাদেশের জাতীয় নাট্যশালা এবং বাংলাদেশ শিল্পকলা একাডেমি ঢাকার কোন এলাকায় অবস্থিত?",
+    "question_en": "In which area of Dhaka is the Bangladesh Shilpakala Academy and National Theatre hall located?",
+    "options": [
+      {
+        "bn": "সেগুনবাগিচা",
+        "en": "Segunbagicha"
+      },
+      {
+        "bn": "শাহবাগ",
+        "en": "Shahbag"
+      },
+      {
+        "bn": "ধানমন্ডি",
+        "en": "Dhanmondi"
+      },
+      {
+        "bn": "গুলশান",
+        "en": "Gulshan"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Shilpakala_Academy"
+  },
+  {
+    "id": "quiz-0050",
+    "topic": "history",
+    "question_bn": "ঢাকার লালবাগের ঐতিহাসিক কেল্লা (আওরঙ্গবাদ দুর্গ) নির্মাণ কাজ কে শুরু করেছিলেন?",
+    "question_en": "Who initiated the construction of the historic Lalbagh Fort (Fort Aurangabad) in Dhaka in 1678?",
+    "options": [
+      {
+        "bn": "সুবেদার মুহাম্মদ আজম শাহ",
+        "en": "Subahdar Muhammad Azam Shah"
+      },
+      {
+        "bn": "সুবেদার শায়েস্তা খাঁ",
+        "en": "Subahdar Shaista Khan"
+      },
+      {
+        "bn": "সম্রাট বাবর",
+        "en": "Emperor Babur"
+      },
+      {
+        "bn": "মীর জুমলা",
+        "en": "Mir Jumla"
+      }
+    ],
+    "answer_index": 0,
+    "source": "https://en.wikipedia.org/wiki/Lalbagh_Fort"
   }
 ]

@@ -96,5 +96,117 @@
     "answer_bn": "ডাব",
     "answer_en": "A green coconut",
     "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0015",
+    "question_bn": "আলো পেলে সঙ্গে থাকে, আঁধার হলে পালিয়ে যায়।",
+    "answer_bn": "ছায়া",
+    "answer_en": "Shadow",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0016",
+    "question_bn": "খোসা আছে ফল নেই, পাতা আছে গাছ নেই।",
+    "answer_bn": "বই",
+    "answer_en": "Book",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0017",
+    "question_bn": "পা নেই তবু হাঁটে, চোখ নেই তবু কাঁদে।",
+    "answer_bn": "মেঘ",
+    "answer_en": "Cloud",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0018",
+    "question_bn": "এক পা বিশিষ্ট মানুষ, মাথায় টুপি দিয়ে দাঁড়িয়ে থাকে।",
+    "answer_bn": "ছাতা",
+    "answer_en": "Umbrella",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0019",
+    "question_bn": "বাইরে দেখতে শক্ত খোল, ভেতরে মিষ্টি জলের দোল।",
+    "answer_bn": "নারিকেল",
+    "answer_en": "Coconut",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0020",
+    "question_bn": "কাঁচা হলে সবুজ, পাকা হলে লাল, ঝাল লেগে জিভ জ্বলে করে হালহাল।",
+    "answer_bn": "মরিচ",
+    "answer_en": "Chili pepper",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0021",
+    "question_bn": "মুখে নেই কথা, চোখে নেই জল, তবু কাঁদে অবিরল।",
+    "answer_bn": "কলম",
+    "answer_en": "Pen (writing with ink)",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0022",
+    "question_bn": "মাথার ওপর পাখা ঘোরে, বাতাস দেয় ঘরে ঘরে।",
+    "answer_bn": "সিলিং ফ্যান",
+    "answer_en": "Ceiling fan",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0023",
+    "question_bn": "লাঠি দিয়ে মারলে আওয়াজ করে, না মারলে চুপ করে থাকে।",
+    "answer_bn": "ঢোল",
+    "answer_en": "Drum (dhol)",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0024",
+    "question_bn": "গাছে ধরে না, মাটিতে ফলে না, তবু মানুষ আকাশ থেকে কুড়িয়ে খায়।",
+    "answer_bn": "শিলাবৃষ্টি",
+    "answer_en": "Hailstone",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0025",
+    "question_bn": "সকালে চার পায়ে হাঁটে, দুপুরে দুই পায়ে, সন্ধ্যায় তিন পায়ে।",
+    "answer_bn": "মানুষ (শৈশব, যৌবন ও বার্ধক্য)",
+    "answer_en": "Human being (infancy, youth, old age with cane)",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0026",
+    "question_bn": "এক গাছে বারো ফল, ফলে ফলে কত জল।",
+    "answer_bn": "বছর ও বারো মাস",
+    "answer_en": "Year and twelve months",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0027",
+    "question_bn": "যত টানবে তত ছোট হয়।",
+    "answer_bn": "বিড়ি / সিগারেট",
+    "answer_en": "Cigarette / bidi",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0028",
+    "question_bn": "ছোট্ট একটা ফুলকি থেকে, গোটা বন পুড়ে খাক।",
+    "answer_bn": "দাবানল (আগুন)",
+    "answer_en": "Wildfire (spark)",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0029",
+    "question_bn": "লাল টুকটুকে রাজা, মাথায় তার মুকুট সাজা।",
+    "answer_bn": "মোরগ",
+    "answer_en": "Rooster",
+    "source": "Traditional (public domain)"
+  },
+  {
+    "id": "riddle-0030",
+    "question_bn": "সারা গায়ে কাটা ভরা, পাকা হলে মিষ্টি ঘ্রাণে মাতোয়ারা।",
+    "answer_bn": "কাঁঠাল",
+    "answer_en": "Jackfruit",
+    "source": "Traditional (public domain)"
   }
 ]
