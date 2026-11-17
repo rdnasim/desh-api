@@ -42,6 +42,28 @@ export const ENDPOINTS: ApiEndpoint[] = [
     description:
       'Returns your current tier, remaining daily requests, per-minute rate limit, and reset time.',
   },
+  {
+    id: 'developer-tiers',
+    module: 'Developer',
+    name: 'Platform Access Tiers & Limits',
+    nameBn: 'প্ল্যাটফর্ম টিয়ার ও সীমা',
+    method: 'GET',
+    path: '/v1/developer/tiers',
+    defaultPathWithParams: '/v1/developer/tiers',
+    description:
+      'Returns all platform access tiers (Anonymous, Developer, Enterprise) with rate limits, daily quotas, and capabilities.',
+  },
+  {
+    id: 'developer-key-gen',
+    module: 'Developer',
+    name: 'Generate Developer Sandbox Key',
+    nameBn: 'ডেভেলপার স্যান্ডবক্স কি তৈরি',
+    method: 'POST',
+    path: '/v1/developer/keys/generate',
+    defaultPathWithParams: '/v1/developer/keys/generate',
+    description:
+      'Creates a developer API key token for immediate use in testing, local development, and CI environments.',
+  },
 
   // Geo
   {

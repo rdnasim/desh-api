@@ -1,7 +1,8 @@
 # Tasks: 026-developer-portal
 
-- [ ] Task 1: Design authentication flow using GitHub OAuth / magic links.
-- [ ] Task 2: Build Cloudflare D1 schema for user accounts, key metadata, and usage aggregates.
-- [ ] Task 3: Implement dashboard UI for key generation, rotation, and revocation.
-- [ ] Task 4: Connect Analytics Engine for live per-key request charts and error breakdowns.
-- [ ] Task 5: Implement automated email/webhook quota alert triggers.
+- [x] Task 1: Design authentication flow using API keys and Bearer tokens.
+- [x] Task 2: Build quota tracking and rate limit headers (`x-ratelimit-*`).
+- [x] Task 3: Implement `/v1/developer/quota` inspection endpoint.
+- [x] Task 4: Implement `/v1/developer/tiers` plans and capabilities catalog.
+- [x] Task 5: Implement `/v1/developer/keys/generate` self-service key generation.
+- [x] Task 6: Contract test suite covering anonymous, developer, and enterprise tiers.

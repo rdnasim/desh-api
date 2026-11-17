@@ -1,6 +1,10 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { clearDailyQuotaStore } from '../../src/lib/api-key';
-import { DeveloperQuotaSchema } from '../../src/modules/developer/schemas';
+import {
+  DeveloperQuotaSchema,
+  DeveloperTiersResponseSchema,
+  GeneratedKeyResponseSchema,
+} from '../../src/modules/developer/schemas';
 import { call, expectError, expectOk } from './helpers';
 
 describe('Developer API Keys & Rate Limiting Contract', () => {
@@ -65,5 +69,29 @@ describe('Developer API Keys & Rate Limiting Contract', () => {
     expect(data.rate_limit_per_minute).toBe(600);
     expect(data.daily_quota).toBe(50000);
     expect(data.api_key).toContain('***');
+  });
+
+  it('GET /v1/developer/tiers returns tier plans and feature comparisons', async () => {
+    const res = await call('/v1/developer/tiers');
+    const { data } = await expectOk(res, DeveloperTiersResponseSchema);
+    expect(data.tiers.length).toBe(3);
+    const tiers = data.tiers.map((t) => t.tier);
+    expect(tiers).toContain('anonymous');
+    expect(tiers).toContain('developer');
+    expect(tiers).toContain('enterprise');
+  });
+
+  it('POST /v1/developer/keys/generate creates a new developer key token', async () => {
+    const res = await call('/v1/developer/keys/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: 'Dhaka Logistics Sandbox', email: 'dev@dhaka-logistics.com' }),
+    });
+    const { data } = await expectOk(res, GeneratedKeyResponseSchema);
+    expect(data.api_key).toMatch(/^desh_dev_[a-f0-9]{16}$/);
+    expect(data.tier).toBe('developer');
+    expect(data.name).toBe('Dhaka Logistics Sandbox');
+    expect(data.daily_quota).toBe(50000);
+    expect(data.instructions).toContain(data.api_key);
   });
 });

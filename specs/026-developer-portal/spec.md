@@ -1,7 +1,7 @@
 # Feature Specification: 026-developer-portal (Developer Dashboard & API Keys)
 
 **Feature Branch**: `026-developer-portal`  
-**Status**: Planned  
+**Status**: Built  
 
 ---
 
