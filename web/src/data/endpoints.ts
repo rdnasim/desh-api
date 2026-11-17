@@ -22,6 +22,7 @@ export const API_MODULES = [
   'Constituencies',
   'Bangladesh Railway',
   'Airports & Aviation',
+  'Heritage & Tourism',
   'Developer',
 ] as const;
 
@@ -850,6 +851,61 @@ export const ENDPOINTS: ApiEndpoint[] = [
         type: 'string',
         default: 'DAC',
         description: 'IATA code, ICAO code, or slug',
+      },
+    ],
+  },
+
+  // Heritage & Tourism
+  {
+    id: 'heritage-list',
+    module: 'Heritage & Tourism',
+    name: 'Heritage Sites & Tourist Destinations',
+    nameBn: 'ঐতিহাসিক ও দর্শনীয় পর্যটন স্থানসমূহ',
+    method: 'GET',
+    path: '/v1/heritage',
+    defaultPathWithParams: '/v1/heritage?type=unesco_world_heritage',
+    description:
+      'UNESCO World Heritage sites, archaeological monuments, eco-tourism reserves, and national landmarks verified against Department of Archaeology and BPC.',
+    params: [
+      {
+        name: 'type',
+        type: 'string',
+        default: 'unesco_world_heritage',
+        description: 'unesco_world_heritage, national_heritage, eco_tourism, landmark',
+      },
+      {
+        name: 'category',
+        type: 'string',
+        description: 'archaeological, historical, natural, cultural, monument',
+      },
+      {
+        name: 'division',
+        type: 'string',
+        description: 'Division slug (e.g. rajshahi, khulna, chattogram, dhaka)',
+      },
+      {
+        name: 'q',
+        type: 'string',
+        description: 'Search by site name, description, or historical period',
+      },
+    ],
+  },
+  {
+    id: 'heritage-lookup',
+    module: 'Heritage & Tourism',
+    name: 'Heritage Site Details by Slug or UNESCO ID',
+    nameBn: 'স্লাগ বা ইউনেস্কো আইডি অনুযায়ী ঐতিহাসিক স্থান',
+    method: 'GET',
+    path: '/v1/heritage/:identifier',
+    defaultPathWithParams: '/v1/heritage/somapura-mahavihara',
+    description:
+      'Look up detailed historical era, entry fees, highlights, and coordinates by slug (e.g. somapura-mahavihara, shat-gombuj-mosque, sundarbans) or UNESCO ID (322, 421, 798).',
+    params: [
+      {
+        name: 'identifier',
+        type: 'string',
+        default: 'somapura-mahavihara',
+        description: 'Site slug or UNESCO ID (e.g. somapura-mahavihara, 322, sundarbans)',
       },
     ],
   },

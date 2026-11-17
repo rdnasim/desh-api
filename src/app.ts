@@ -21,6 +21,7 @@ import { funRoutes } from './modules/fun/routes';
 import { geoRoutes } from './modules/geo/routes';
 import { goldRoutes } from './modules/gold/routes';
 import { healthRoutes } from './modules/health/routes';
+import { heritageRoutes } from './modules/heritage/routes';
 import { holidayRoutes } from './modules/holidays/routes';
 import { hotlineRoutes } from './modules/hotlines/routes';
 import { landRoutes } from './modules/land/routes';
@@ -162,6 +163,12 @@ const MODULES = [
     path: '/v1/airports',
   },
   {
+    name: 'Heritage',
+    description:
+      'UNESCO World Heritage sites, archaeological monuments, eco-tourism reserves, and national landmarks',
+    path: '/v1/heritage',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -232,6 +239,7 @@ app.route('/v1', healthRoutes);
 app.route('/v1', weatherRoutes);
 app.route('/v1', railwayRoutes);
 app.route('/v1', airportRoutes);
+app.route('/v1', heritageRoutes);
 app.route('/v1', constituencyRoutes);
 app.route('/v1', developerRoutes);
 

@@ -270,6 +270,19 @@
     ]
   },
   {
+    "dataset": "heritage.sites",
+    "source": "Department of Archaeology (archaeology.gov.bd), Bangladesh Parjatan Corporation (parjatan.gov.bd), and UNESCO World Heritage Centre",
+    "source_url": "http://www.archaeology.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-17",
+    "last_updated": "2026-11-17",
+    "credits": [
+      "Department of Archaeology, Ministry of Cultural Affairs",
+      "Bangladesh Parjatan Corporation (BPC)",
+      "UNESCO World Heritage Centre"
+    ]
+  },
+  {
     "dataset": "holidays.holidays",
     "source": "Ministry of Public Administration holiday notifications (2027: No. 05.00.0000.175.08.0008.25-105, 5 Nov 2026)",
     "source_url": "https://mopa.gov.bd/pages/go-ultimates/6aec1a0f47e3ef92265ec740",

@@ -134,6 +134,11 @@ export const OPENAPI_CONFIG = {
         'Civil Aviation Authority of Bangladesh (CAAB) international airports, domestic operational airports, STOL airstrips, IATA/ICAO codes, coordinates, and runway dimensions.',
     },
     {
+      name: 'Heritage',
+      description:
+        'UNESCO World Heritage sites, archaeological monuments, eco-tourism reserves, and national landmarks (Department of Archaeology & Bangladesh Parjatan Corporation).',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

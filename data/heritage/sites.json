@@ -1,0 +1,992 @@
+[
+  {
+    "slug": "ahsan-manzil",
+    "name_en": "Ahsan Manzil",
+    "name_bn": "আহসান মঞ্জিল",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "British Era (1872 CE)",
+    "division": "dhaka",
+    "district": "dhaka",
+    "upazila": "Kotwali",
+    "coordinates": {
+      "latitude": 23.7086,
+      "longitude": 90.406
+    },
+    "description_en": "The iconic Pink Palace on the bank of the Buriganga, the official residential palace and seat of the Nawab of Dhaka, now a national museum.",
+    "description_bn": "বুড়িগঙ্গার তীরে অবস্থিত ঢাকার নবাবদের বিখ্যাত গোলাপী প্রাসাদ ও বর্তমান জাতীয় জাদুঘর।",
+    "highlights": [
+      "Indo-Saracenic Revival architecture",
+      "Grand dome and octagonal room",
+      "23 galleries of Nawab heirlooms",
+      "Birthplace of the All-India Muslim League concept"
+    ],
+    "best_time_to_visit": "Throughout the year",
+    "entry_fee": {
+      "citizen_bdt": 40,
+      "saarc_bdt": 300,
+      "foreign_bdt": 500,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "bagha-mosque",
+    "name_en": "Bagha Mosque",
+    "name_bn": "বাঘা মসজিদ",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "Sultanate of Bengal (1523 CE)",
+    "division": "rajshahi",
+    "district": "rajshahi",
+    "upazila": "Bagha",
+    "coordinates": {
+      "latitude": 24.1972,
+      "longitude": 88.835
+    },
+    "description_en": "Renowned 16th-century brick mosque built by Sultan Nusrat Shah, famous for its magnificent terracotta floral plaques depicted on the 50 Taka currency note.",
+    "description_bn": "১৫২৩ সালে সুলতান নাসিরউদ্দিন নুসরত শাহ নির্মিত প্রাচীন মসজিদ, যার দৃষ্টিনন্দন পোড়ামাটির কারুকাজ ৫০ টাকার নোটে অঙ্কিত।",
+    "highlights": [
+      "Depicted on Bangladesh 50 Taka currency note",
+      "Ten ornate domes and massive terracotta mihrabs",
+      "Historic Bagha Dighi reservoir",
+      "Annual Eid fair tradition dating 500 years"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "bichanakandi",
+    "name_en": "Bichanakandi",
+    "name_bn": "বিছনাকান্দি",
+    "category": "natural",
+    "type": "landmark",
+    "period_era": "Natural",
+    "division": "sylhet",
+    "district": "sylhet",
+    "upazila": "Rustompur",
+    "coordinates": {
+      "latitude": 25.1764,
+      "longitude": 91.8847
+    },
+    "description_en": "A stunning landscape where multiple cascading streams from the Khasi hills converge into a wide riverbed covered in round river boulders.",
+    "description_bn": "খাসিয়া পাহাড়ের ঝরনাধারা ও পিয়াইন নদীর মোহনায় পাথুরে নদী ও স্ফটিকস্বচ্ছ জলের প্রাকৃতিক মিলনমেলা।",
+    "highlights": [
+      "Tiered waterfalls flowing from Indian hills",
+      "Crystal-clear shallow streams over smooth stones",
+      "Country boat ride through meandering wetlands",
+      "Dramatic mountain backdrop"
+    ],
+    "best_time_to_visit": "June to October",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "birishiri-ceramic-hills",
+    "name_en": "Birishiri Ceramic Hills & Shomeshwari River",
+    "name_bn": "বিরিশিরি চীনামাটির পাহাড়",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural / Geological",
+    "division": "mymensingh",
+    "district": "netrakona",
+    "upazila": "Durgapur",
+    "coordinates": {
+      "latitude": 25.125,
+      "longitude": 90.6833
+    },
+    "description_en": "Dramatic white porcelain clay hills and turquoise-blue ceramic water lake situated in Netrakona near the Garo Hills of the Meghalaya border.",
+    "description_bn": "নেত্রকোনার দুর্গাপুরে অবস্থিত মনোহর চীনামাটির নীল জলের হ্রদ ও গারো পাহাড়ের অপরূপ প্রাকৃতিক দৃশ্য।",
+    "highlights": [
+      "Turquoise mineral lake surrounded by white china clay cliffs",
+      "Shomeshwari river crystal waters",
+      "Tribal Cultural Academy and Garo indigenous hamlets",
+      "Ranikhong historic Catholic church on hillock"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "boga-lake",
+    "name_en": "Boga Lake (Bagakain Lake)",
+    "name_bn": "বগা লেক",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural / Geological",
+    "division": "chattogram",
+    "district": "bandarban",
+    "upazila": "Ruma",
+    "coordinates": {
+      "latitude": 21.9833,
+      "longitude": 92.5167
+    },
+    "description_en": "Enigmatic natural volcanic-crater freshwater lake situated at 1,200 ft elevation, gateway for treks to Keokradong and shrouded in indigenous Bawm folklore.",
+    "description_bn": "বান্দরবানের রুমা উপজেলায় সমুদ্রপৃষ্ঠ থেকে ১,২০০ ফুট উঁচুতে অবস্থিত রহস্যময় প্রাকৃতিক মিঠা পানির হ্রদ।",
+    "highlights": [
+      "High-altitude pristine blue freshwater lake",
+      "Indigenous Bawm tribal village homestays",
+      "Base camp for trekking to Keokradong peak",
+      "Geological mystery with unexplained water color changes"
+    ],
+    "best_time_to_visit": "November to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "central-shaheed-minar",
+    "name_en": "Central Shaheed Minar",
+    "name_bn": "কেন্দ্রীয় শহীদ মিনার",
+    "category": "monument",
+    "type": "national_heritage",
+    "period_era": "1963 CE",
+    "division": "dhaka",
+    "district": "dhaka",
+    "upazila": "Shahbagh",
+    "coordinates": {
+      "latitude": 23.7278,
+      "longitude": 90.3986
+    },
+    "description_en": "National monument designed by Hamidur Rahman commemorating the martyrs killed on 21 February 1952 during the historic Bengali Language Movement.",
+    "description_bn": "১৯৫২ সালের ২১শে ফেব্রুয়ারি মাতৃভাষা বাংলার দাবিতে শহীদ হওয়া বীর ভাষা শহীদদের স্মরণে নির্মিত জাতীয় শহীদ মিনার।",
+    "highlights": [
+      "Iconic mother and fallen sons architectural motif",
+      "Epicenter of International Mother Language Day celebrations",
+      "Dhaka Medical College premises setting",
+      "Historic cradle of Bangladesh cultural identity"
+    ],
+    "best_time_to_visit": "Throughout the year",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "chotta-sona-mosque",
+    "name_en": "Chotta Sona Mosque (Small Golden Mosque)",
+    "name_bn": "ছোট সোনা মসজিদ",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "Sultanate of Bengal (1493-1519 CE)",
+    "division": "rajshahi",
+    "district": "chapainababganj",
+    "upazila": "Shibganj",
+    "coordinates": {
+      "latitude": 24.8,
+      "longitude": 88.15
+    },
+    "description_en": "Jewel of Sultanate architecture built during Sultan Alauddin Husain Shah reign, adorned with fifteen gilded domes and finely carved black basalt stone.",
+    "description_bn": "সুলতান আলাউদ্দিন হোসেন শাহের আমলে নির্মিত সুলতানি স্থাপত্যের রত্ন, যাতে ১৫টি গম্বুজ এবং সূক্ষ্ম কালো ব্যাসল্ট পাথরের কারুকাজ রয়েছে।",
+    "highlights": [
+      "15 stone domes (once gilded with gold)",
+      "Intricate stone carving on exterior walls",
+      "Tomb of Bir Sreshtho Captain Mohiuddin Jahangir in compound",
+      "Historic Gaur city remains"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "coxs-bazar-sea-beach",
+    "name_en": "Cox's Bazar Sea Beach",
+    "name_bn": "কক্সবাজার সমুদ্র সৈকত",
+    "category": "natural",
+    "type": "landmark",
+    "period_era": "Natural",
+    "division": "chattogram",
+    "district": "coxs-bazar",
+    "upazila": "Cox's Bazar Sadar",
+    "coordinates": {
+      "latitude": 21.4272,
+      "longitude": 91.9701
+    },
+    "description_en": "The world longest unbroken natural sandy sea beach spanning 120 km along the Bay of Bengal, known for scenic sunsets and surfing.",
+    "description_bn": "বঙ্গোপসাগরের কোল ঘেঁষে অবস্থিত ১২০ কিলোমিটার দীর্ঘ বিশ্বের দীর্ঘতম অবিচ্ছিন্ন প্রাকৃতিক বালুকাময় সমুদ্র সৈকত।",
+    "highlights": [
+      "Laboni, Sugandha, and Kolatoli beach points",
+      "Inani coral stone beach",
+      "Marine Drive coastal scenic highway",
+      "Himchari national park and waterfall"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "curzon-hall",
+    "name_en": "Curzon Hall",
+    "name_bn": "কার্জন হল",
+    "category": "historical",
+    "type": "landmark",
+    "period_era": "British Era (1904 CE)",
+    "division": "dhaka",
+    "district": "dhaka",
+    "upazila": "Shahbagh",
+    "coordinates": {
+      "latitude": 23.7269,
+      "longitude": 90.4042
+    },
+    "description_en": "Red brick landmark building blending Indo-Saracenic and European architectural styles, seat of the Faculty of Science of University of Dhaka.",
+    "description_bn": "১৯০৪ সালে নির্মিত ইন্দো-সারাসেনিক ও ইউরোপীয় স্থাপত্যের অনন্য লাল ইটের ঐতিহাসিক ভবন ও ঢাকা বিশ্ববিদ্যালয়ের বিজ্ঞান অনুষদ।",
+    "highlights": [
+      "First site of public resistance against Urdu as sole state language (1948)",
+      "Elaborate decorative arches and chattris",
+      "Botanical garden and historic pond",
+      "Premier architectural landmark of Dhaka"
+    ],
+    "best_time_to_visit": "Throughout the year",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "dhakeshwari-national-temple",
+    "name_en": "Dhakeshwari National Temple",
+    "name_bn": "ঢাকেশ্বরী জাতীয় মন্দির",
+    "category": "cultural",
+    "type": "national_heritage",
+    "period_era": "12th century CE",
+    "division": "dhaka",
+    "district": "dhaka",
+    "upazila": "Lalbagh",
+    "coordinates": {
+      "latitude": 23.7231,
+      "longitude": 90.3908
+    },
+    "description_en": "State-designated national Hindu temple of Bangladesh, founded in the 12th century by Sena king Ballal Sena, from which the name Dhaka is believed to derive.",
+    "description_bn": "দ্বাদশ শতাব্দীতে সেন রাজা বল্লাল সেন প্রতিষ্ঠিত বাংলাদেশের জাতীয় হিন্দু মন্দির, যার নামানুসারে ঢাকা নামের উৎপত্তি বলে বিশ্বাস করা হয়।",
+    "highlights": [
+      "National temple designation by legislation",
+      "Four 16th-century Shiva temples around pond",
+      "Central venue for national Durga Puja festival",
+      "Sacred tank and temple courtyard"
+    ],
+    "best_time_to_visit": "Throughout the year",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "jaflong",
+    "name_en": "Jaflong",
+    "name_bn": "জাফলং",
+    "category": "natural",
+    "type": "landmark",
+    "period_era": "Natural",
+    "division": "sylhet",
+    "district": "sylhet",
+    "upazila": "Gowainghat",
+    "coordinates": {
+      "latitude": 25.1633,
+      "longitude": 92.0197
+    },
+    "description_en": "Picturesque hill station on the border where the crystal clear Piyain river flows from Meghalaya into Bangladesh over pebble beds.",
+    "description_bn": "মেঘালয় পাহাড়ের কোলে অবস্থিত পিয়াইন নদীর স্বচ্ছ জল ও পাথুরে নদীর মোহময় মিলনস্থল।",
+    "highlights": [
+      "Zero point on Bangladesh-India border",
+      "Pebble collection and clear waters",
+      "Khasia Punji tribal indigenous village and betel leaf gardens",
+      "Danki hanging bridge view"
+    ],
+    "best_time_to_visit": "October to April",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "kantajew-temple",
+    "name_en": "Kantajew Temple (Kantanagar Temple)",
+    "name_bn": "কান্তজীউ মন্দির",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "Late medieval (1752 CE)",
+    "division": "rangpur",
+    "district": "dinajpur",
+    "upazila": "Kaharole",
+    "coordinates": {
+      "latitude": 25.7915,
+      "longitude": 88.6677
+    },
+    "description_en": "Magnificent 18th-century brick terracotta temple built by Maharaja Ramnath, renowned as the finest example of terracotta ornamentation in Bengal.",
+    "description_bn": "১৮শ শতকে মহারাজা প্রাণনাথ ও রামনাথ নির্মিত বাংলার পোড়ামাটির স্থাপত্যের অনন্য নিদর্শন নবরত্ন মন্দির।",
+    "highlights": [
+      "Intricate Mahabharata and Ramayana terracotta panels",
+      "Navaratna (nine-spire) architectural design",
+      "Annual Kantanagar Rash Mela",
+      "Dhepa riverbank setting"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "keokradong-peak",
+    "name_en": "Keokradong Peak",
+    "name_bn": "কেওক্রাডং শৃঙ্গ",
+    "category": "natural",
+    "type": "landmark",
+    "period_era": "Natural",
+    "division": "chattogram",
+    "district": "bandarban",
+    "upazila": "Ruma",
+    "coordinates": {
+      "latitude": 21.95,
+      "longitude": 92.5333
+    },
+    "description_en": "One of the highest and most iconic mountain peaks of Bangladesh rising to 3,235 ft (986 m), a premier destination for hiking and trekking adventures.",
+    "description_bn": "বাংলাদেশের অন্যতম শীর্ষ পর্বতশৃঙ্গ (৩,২৩৫ ফুট), যা ট্র্যাকার এবং অভিযাত্রীদের প্রধান প্রিয় গন্তব্য।",
+    "highlights": [
+      "986 m (3,235 ft) summit with military survey monument",
+      "Stunning panoramic vistas above the clouds",
+      "Passing through Darjeeling Para (highest village of Bangladesh)",
+      "Popular wilderness hiking trail from Boga Lake"
+    ],
+    "best_time_to_visit": "November to February",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "kuakata-sea-beach",
+    "name_en": "Kuakata Sea Beach",
+    "name_bn": "কুয়াকাটা সমুদ্র সৈকত",
+    "category": "natural",
+    "type": "landmark",
+    "period_era": "Natural",
+    "division": "barishal",
+    "district": "patuakhali",
+    "upazila": "Kalapara",
+    "coordinates": {
+      "latitude": 21.82,
+      "longitude": 90.1186
+    },
+    "description_en": "Panoramic 18-km sandy beach known as 'Sagar Kanya' (Daughter of the Sea), one of the rare places in Asia offering views of both sunrise and sunset.",
+    "description_bn": "১৮ কিলোমিটার দীর্ঘ প্রাকৃতিক সমুদ্র সৈকত, যা সাগরকন্যা নামে পরিচিত এবং যেখান থেকে সূর্যোদয় ও সূর্যাস্ত উভয়ই দেখা যায়।",
+    "highlights": [
+      "Unobstructed sunrise and sunset vantage points",
+      "Fatrar Bon mangrove forest",
+      "Ancient Buddhist temple and giant Gautama Buddha statue",
+      "Jhaukhaon and Gangamati mangrove point"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "lalbagh-fort",
+    "name_en": "Lalbagh Fort (Fort Aurangabad)",
+    "name_bn": "লালবাগ কেল্লা",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "Mughal Era (1678 CE)",
+    "division": "dhaka",
+    "district": "dhaka",
+    "upazila": "Lalbagh",
+    "coordinates": {
+      "latitude": 23.7196,
+      "longitude": 90.3881
+    },
+    "description_en": "Uncompleted 17th-century Mughal fort complex initiated by Prince Muhammad Azam and continued by Shaista Khan on the Buriganga river.",
+    "description_bn": "১৬৭৮ সালে যুবরাজ মুহাম্মদ আজম ও পরে শায়েস্তা খাঁ কর্তৃক নির্মিত সপ্তদশ শতকের বিখ্যাত মুঘল দুর্গ।",
+    "highlights": [
+      "Tomb of Pari Bibi with marble dome",
+      "Diwan-i-Aam and Hammam",
+      "Lalbagh Fort three-domed mosque",
+      "Mughal reservoir garden"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "lawachara-national-park",
+    "name_en": "Lawachara National Park",
+    "name_bn": "লাউয়াছড়া জাতীয় উদ্যান",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Protected reserve (1996)",
+    "division": "sylhet",
+    "district": "moulvibazar",
+    "upazila": "Kamalganj",
+    "coordinates": {
+      "latitude": 24.3275,
+      "longitude": 91.785
+    },
+    "description_en": "Semi-evergreen tropical rainforest sanctuary famous for the critically endangered western hoolock gibbon and scenic railway line passing through.",
+    "description_bn": "মৌলভীবাজারে অবস্থিত চিরসবুজ ও আধা-চিরসবুজ ক্রান্তীয় রেইনফরেস্ট এবং বিপন্ন উল্লুকের প্রধান প্রাকৃতিক আবাস।",
+    "highlights": [
+      "Western hoolock gibbon (ulluk) sanctuary",
+      "Historic Dhaka-Sylhet railway line cutting through dense canopy",
+      "Guided jungle trekking trails",
+      "Khasia and Manipuri tribal settlements"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 50,
+      "saarc_bdt": 100,
+      "foreign_bdt": 500,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "madhabkunda-waterfall",
+    "name_en": "Madhabkunda Waterfall",
+    "name_bn": "মাধবকুণ্ড জলপ্রপাত",
+    "category": "natural",
+    "type": "landmark",
+    "period_era": "Natural",
+    "division": "sylhet",
+    "district": "moulvibazar",
+    "upazila": "Barlekha",
+    "coordinates": {
+      "latitude": 24.6406,
+      "longitude": 92.2239
+    },
+    "description_en": "One of the largest and most famous waterfalls in Bangladesh with a sheer vertical drop of 200 feet (61 m) amidst lush tea estates and reserve forest.",
+    "description_bn": "মৌলভীবাজারের বড়লেখায় অবস্থিত বাংলাদেশের অন্যতম বৃহত্তম ও সুবিখ্যাত ২০০ ফুট উঁচু প্রাকৃতিক জলপ্রপাত।",
+    "highlights": [
+      "200-foot natural mountain cascade",
+      "Eco-park with natural subtropical reserve forest",
+      "Historic Madhabeshwar Shiva temple pilgrimage site",
+      "Surrounding rolling green tea gardens"
+    ],
+    "best_time_to_visit": "July to November",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "mahasthangarh",
+    "name_en": "Mahasthangarh",
+    "name_bn": "মহাস্থানগড়",
+    "category": "archaeological",
+    "type": "national_heritage",
+    "period_era": "Maurya to Pala period (3rd century BCE to 12th century CE)",
+    "division": "rajshahi",
+    "district": "bogura",
+    "upazila": "Shibganj",
+    "coordinates": {
+      "latitude": 24.9608,
+      "longitude": 89.3444
+    },
+    "description_en": "Bangladesh earliest fortified urban archaeological site, the ancient capital city of Pundranagara on the Karatoya river.",
+    "description_bn": "প্রাচীন পুণ্ড্রবর্ধনের রাজধানী পুণ্ড্রনগর, যা বাংলাদেশের প্রাচীনতম সুরক্ষিত নগর প্রত্নতাত্ত্বিক নিদর্শন।",
+    "highlights": [
+      "Brahmi inscription (3rd century BCE)",
+      "Bairagir Bhita and Govinda Bhita",
+      "Mazar of Shah Sultan Balkhi Mahisawar",
+      "Gokul Medh (Behula-Lakhindar Basor Ghar)"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "mainamati-shalban-vihara",
+    "name_en": "Mainamati & Shalban Vihara",
+    "name_bn": "ময়নামতি ও শালবন বিহার",
+    "category": "archaeological",
+    "type": "national_heritage",
+    "period_era": "Deva and Chandra dynasties (8th to 12th century CE)",
+    "division": "chattogram",
+    "district": "cumilla",
+    "upazila": "Adarsha Sadar",
+    "coordinates": {
+      "latitude": 23.4328,
+      "longitude": 91.1336
+    },
+    "description_en": "Extensive ancient Buddhist complex in the Lalmai Hills with 115 monastic cells, central shrine, terracotta bas-reliefs, and museum.",
+    "description_bn": "লালমাই পাহাড়ে ৮ম শতাব্দীর ১১৫টি ভিক্ষুকক্ষ বিশিষ্ট প্রাচীন বৌদ্ধ বিহার ও প্রত্নতাত্ত্বিক জাদুঘর।",
+    "highlights": [
+      "Shalban Vihara cruciform stupa",
+      "Kutila Mura and Charpatra Mura",
+      "Mainamati archaeological museum",
+      "Commonwealth War Cemetery nearby"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "mujibnagar-memorial",
+    "name_en": "Mujibnagar Memorial Complex",
+    "name_bn": "মুজিবনগর মুক্তিযুদ্ধ স্মৃতি কমপ্লেক্স",
+    "category": "monument",
+    "type": "national_heritage",
+    "period_era": "1971 CE (monument 1987)",
+    "division": "khulna",
+    "district": "meherpur",
+    "upazila": "Mujibnagar",
+    "coordinates": {
+      "latitude": 23.6558,
+      "longitude": 88.5833
+    },
+    "description_en": "Historical mango grove of Baidyanathtala where the first Provisional Government of Bangladesh took oath of office on 17 April 1971 during the Liberation War.",
+    "description_bn": "বৈদ্যনাথতলার ঐতিহাসিক আম্রকানন, যেখানে ১৯৭১ সালের ১৭ই এপ্রিল গণপ্রজাতন্ত্রী বাংলাদেশের প্রথম সরকার শপথ গ্রহণ করে।",
+    "highlights": [
+      "Oath-taking site of the First Government of Bangladesh",
+      "23-pillar monument symbolizing 23 years of Pakistani struggle",
+      "Large open-air relief map of 1971 war sectors",
+      "Historic Amrokanon (mango orchard)"
+    ],
+    "best_time_to_visit": "October to April",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "national-martyrs-memorial",
+    "name_en": "National Martyrs' Memorial (Jatiya Smriti Soudho)",
+    "name_bn": "জাতীয় স্মৃতিসৌধ",
+    "category": "monument",
+    "type": "national_heritage",
+    "period_era": "1982 CE",
+    "division": "dhaka",
+    "district": "dhaka",
+    "upazila": "Savar",
+    "coordinates": {
+      "latitude": 23.9117,
+      "longitude": 90.2547
+    },
+    "description_en": "Monument designed by Syed Mainul Hossain with 7 pairs of triangular prisms rising to 150 ft, commemorating martyrs of the 1971 Bangladesh Liberation War.",
+    "description_bn": "সৈয়দ মাইনুল হোসেনের নকশায় নির্মিত সাত জোড়া ত্রিভুজাকার স্তম্ভ বিশিষ্ট মহান মুক্তিযুদ্ধের শহীদদের স্মরণে জাতীয় স্মৃতিসৌধ।",
+    "highlights": [
+      "150-foot monument symbolizing seven historical milestones",
+      "Surrounding reflecting pool and landscaped gardens",
+      "Mass graves of 1971 martyrs",
+      "National site of State wreath-laying ceremonies"
+    ],
+    "best_time_to_visit": "Throughout the year",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "nijhum-dwip-national-park",
+    "name_en": "Nijhum Dwip National Park",
+    "name_bn": "নিঝুম দ্বীপ জাতীয় উদ্যান",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural (emerged 1950s)",
+    "division": "chattogram",
+    "district": "noakhali",
+    "upazila": "Hatiya",
+    "coordinates": {
+      "latitude": 22.07,
+      "longitude": 91
+    },
+    "description_en": "Isolated deltaic offshore island in the Bay of Bengal, designated as a national park in 2001 and famous for hosting thousands of wild spotted deer (chital).",
+    "description_bn": "বঙ্গোপসাগরের বুকে জেগে ওঠা নিভৃত দ্বীপ ও জাতীয় উদ্যান, যা হাজার হাজার মায়াবী চিত্রা হরিণের অন্যতম প্রধান প্রাকৃতিক আবাসভূমি।",
+    "highlights": [
+      "Wild population of over 40,000 spotted deer (Chital)",
+      "Keora mangrove forest and virgin intertidal mudflats",
+      "Winter habitat for migratory Asian shorebirds and Indian skimmer",
+      "Tranquil secluded beaches and fisherman lifestyle"
+    ],
+    "best_time_to_visit": "November to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "nilgiri-bandarban",
+    "name_en": "Nilgiri",
+    "name_bn": "নীলগিরি",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural",
+    "division": "chattogram",
+    "district": "bandarban",
+    "upazila": "Thanchi",
+    "coordinates": {
+      "latitude": 21.9214,
+      "longitude": 92.3275
+    },
+    "description_en": "High mountain resort situated 2,400 feet above sea level in the Thanchi hills, enveloped by swirling fog and virgin cloud forest.",
+    "description_bn": "বান্দরবানের থানচি উপজেলায় সমুদ্রপৃষ্ঠ থেকে ২,৪০০ ফুট উঁচুতে অবস্থিত মেঘ ছুঁয়ে দেখার অনন্য শৈলনিবাস।",
+    "highlights": [
+      "360-degree hill tract panorama",
+      "Chimbuk Hill and Shailopropat waterfall on the way",
+      "Cloud cover in monsoon and winter",
+      "Resorts managed by Bangladesh Army"
+    ],
+    "best_time_to_visit": "August to February",
+    "entry_fee": {
+      "citizen_bdt": 50,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "panam-nagar-sonargaon",
+    "name_en": "Panam City & Sonargaon",
+    "name_bn": "পানাম নগর ও সোনারগাঁও",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "Sultanate to Colonial period (13th to early 20th century)",
+    "division": "dhaka",
+    "district": "narayanganj",
+    "upazila": "Sonargaon",
+    "coordinates": {
+      "latitude": 23.6492,
+      "longitude": 90.6017
+    },
+    "description_en": "Medieval capital of Bengal under Isa Khan and historic colonial merchant settlement featuring 52 well-preserved British-era mansions.",
+    "description_bn": "মধ্যযুগে ঈসা খাঁর রাজধানী এবং পরবর্তীতে ঔপনিবেশিক যুগে গড়ে ওঠা ঐতিহাসিক বণিক শহর পানাম নগর।",
+    "highlights": [
+      "52 ornate European-neoclassical merchant residences",
+      "Bangladesh Folk Art and Crafts Museum (Zainul Abedin Museum)",
+      "Goaldi Mosque (1519 CE)",
+      "Sonargaon royal waterways"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "puthia-temple-complex",
+    "name_en": "Puthia Temple Complex",
+    "name_bn": "পুঠিয়া রাজবাড়ি ও মন্দির চত্বর",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "18th-19th century CE",
+    "division": "rajshahi",
+    "district": "rajshahi",
+    "upazila": "Puthia",
+    "coordinates": {
+      "latitude": 24.3644,
+      "longitude": 88.8375
+    },
+    "description_en": "The largest cluster of historic Hindu temples in Bangladesh, including the Pancharatna Govinda Temple and the ornate Bhubaneshwar Shiva Temple.",
+    "description_bn": "বাংলাদেশে সবচেয়ে বেশি সংখ্যক ঐতিহাসিক হিন্দু মন্দিরের সমাবেশ ও পুঠিয়া রাজবাড়ি চত্বর।",
+    "highlights": [
+      "Pancharatna Govinda Temple terracotta work",
+      "Bhubaneshwar Shiva Temple beside Shiv Sagar lake",
+      "Puthia Rajbari palace",
+      "Dol Mancha"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "ratargul-swamp-forest",
+    "name_en": "Ratargul Swamp Forest",
+    "name_bn": "রাতারগুল সোয়াম্প ফরেস্ট",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural",
+    "division": "sylhet",
+    "district": "sylhet",
+    "upazila": "Gowainghat",
+    "coordinates": {
+      "latitude": 25.0069,
+      "longitude": 91.9317
+    },
+    "description_en": "The only freshwater swamp forest in Bangladesh and one of few in South Asia, where evergreen Koroch and Hijal trees stay submerged underwater during monsoon.",
+    "description_bn": "বাংলাদেশের একমাত্র স্বাদু পানির সোয়াম্প ফরেস্ট, যা বর্ষাকালে জলমগ্ন বনভূমিতে পরিণত হয়।",
+    "highlights": [
+      "Submerged Koroch and Hijal forest canopy",
+      "Wooden country boat navigation through flooded tree canopies",
+      "Watch tower overlooking the swamp canopy",
+      "Biodiversity hotspot with monkeys, snakes, and birds"
+    ],
+    "best_time_to_visit": "July to October",
+    "entry_fee": {
+      "citizen_bdt": 50,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "saint-martins-island",
+    "name_en": "Saint Martin's Island (Narikel Jinjira)",
+    "name_bn": "সেন্ট মার্টিন্স দ্বীপ",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural / Coral formation",
+    "division": "chattogram",
+    "district": "coxs-bazar",
+    "upazila": "Teknaf",
+    "coordinates": {
+      "latitude": 20.6272,
+      "longitude": 92.3228
+    },
+    "description_en": "Bangladesh only coral island, located in the northeastern Bay of Bengal, featuring crystal-clear waters, coconut groves, and sea turtle nesting grounds.",
+    "description_bn": "উত্তর-পূর্ব বঙ্গোপসাগরে অবস্থিত বাংলাদেশের একমাত্র প্রবাল দ্বীপ ও সামুদ্রিক বাস্তুতন্ত্র।",
+    "highlights": [
+      "Chera Dwip coral rock formation",
+      "Live coral reefs and marine sanctuary",
+      "Olive ridley turtle nesting sanctuary",
+      "Fresh coconut water and sea fish"
+    ],
+    "best_time_to_visit": "November to February",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "sajek-valley",
+    "name_en": "Sajek Valley",
+    "name_bn": "সাজেক ভ্যালি",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural",
+    "division": "chattogram",
+    "district": "rangamati",
+    "upazila": "Baghaichhari",
+    "coordinates": {
+      "latitude": 23.382,
+      "longitude": 92.2938
+    },
+    "description_en": "Lush hill resort nestled 1,800 feet above sea level in the Chittagong Hill Tracts, famous as the 'Roof of Rangamati' and for walking among clouds.",
+    "description_bn": "সমুদ্রপৃষ্ঠ থেকে ১,৮০০ ফুট উঁচুতে অবস্থিত মেঘের রাজ্য খ্যাত রাঙ্গামাটির অন্যতম প্রধান শৈলনিবাস।",
+    "highlights": [
+      "Konglak Peak panoramic view",
+      "Morning cloud sea (cloud canopy)",
+      "Indigenous Lushei and Tripura settlements",
+      "Scenic army escort convoy from Dighinala"
+    ],
+    "best_time_to_visit": "September to February",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "shashi-lodge",
+    "name_en": "Shashi Lodge (Mymensingh Rajbari)",
+    "name_bn": "শশী লজ",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "Late 19th - Early 20th century (1905 CE)",
+    "division": "mymensingh",
+    "district": "mymensingh",
+    "upazila": "Mymensingh Sadar",
+    "coordinates": {
+      "latitude": 24.7578,
+      "longitude": 90.4128
+    },
+    "description_en": "Ornate royal residence of the Muktagacha zamindar Maharaja Shashikanta Acharya, featuring classical Greco-Roman architecture and musical dancing hall.",
+    "description_bn": "মুক্তাগাছার জমিদার মহারাজা শশীকান্ত আচার্য নির্মিত ধ্রুপদী গ্রিক-রোমান স্থাপত্যশৈলীর রাজবাড়ি।",
+    "highlights": [
+      "Protected antiquity under Dept. of Archaeology",
+      "Imported French crystal chandeliers and marble statues",
+      "Statue of Venus in front garden pond",
+      "Glass dance hall and royal bathing pool"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "shat-gombuj-mosque",
+    "name_en": "Sixty Dome Mosque (Shat Gombuj Masjid)",
+    "name_bn": "ষাট গম্বুজ মসজিদ",
+    "category": "historical",
+    "type": "unesco_world_heritage",
+    "unesco_id": 421,
+    "period_era": "Sultanate of Bengal (mid-15th century CE)",
+    "division": "khulna",
+    "district": "bagerhat",
+    "upazila": "Bagerhat Sadar",
+    "coordinates": {
+      "latitude": 22.6743,
+      "longitude": 89.7417
+    },
+    "description_en": "15th-century multi-domed brick mosque built by Turkish general Khan Jahan Ali, featuring 77 low domes and 4 corner dome towers (81 total domes).",
+    "description_bn": "১৫শ শতকে হজরত খান জাহান আলী নির্মিত প্রাচীন বহু-গম্বুজবিশিষ্ট মসজিদ, যাতে ৭৭টি নিচু গম্বুজ এবং ৪টি মিনার শীর্ষে ৪টি সহ মোট ৮১টি গম্বুজ রয়েছে।",
+    "highlights": [
+      "UNESCO World Heritage site (1985)",
+      "Historic Mosque City of Bagerhat",
+      "Tughlaq architectural influence",
+      "Grave of Khan Jahan Ali nearby"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "somapura-mahavihara",
+    "name_en": "Somapura Mahavihara (Paharpur Buddhist Vihara)",
+    "name_bn": "সোমপুর মহাবিহার (পাহাড়পুর বৌদ্ধ বিহার)",
+    "category": "archaeological",
+    "type": "unesco_world_heritage",
+    "unesco_id": 322,
+    "period_era": "Pala Empire (late 8th century CE)",
+    "division": "rajshahi",
+    "district": "naogaon",
+    "upazila": "Badalgachhi",
+    "coordinates": {
+      "latitude": 25.0315,
+      "longitude": 88.9769
+    },
+    "description_en": "8th-century Buddhist monastery complex built by King Dharmapala, among the largest south of the Himalayas and a UNESCO World Heritage site.",
+    "description_bn": "রাজা ধর্মপাল কর্তৃক নির্মিত ৮ম শতাব্দীর অন্যতম বৃহত্তম বৌদ্ধ মঠ ও বিহার এবং ইউনেস্কো বিশ্ব ঐতিহ্যবাহী স্থান।",
+    "highlights": [
+      "UNESCO World Heritage site (1985)",
+      "Central cruciform stupa",
+      "Over 2,000 terracotta plaques",
+      "Site museum"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "sundarbans",
+    "name_en": "The Sundarbans Mangrove Forest",
+    "name_bn": "সুন্দরবন ম্যানগ্রোভ বন",
+    "category": "natural",
+    "type": "unesco_world_heritage",
+    "unesco_id": 798,
+    "period_era": "Ancient / Natural formation",
+    "division": "khulna",
+    "district": "bagerhat",
+    "upazila": "Mongla",
+    "coordinates": {
+      "latitude": 21.9497,
+      "longitude": 89.1833
+    },
+    "description_en": "The world largest contiguous tidal halophytic mangrove forest, home to the Royal Bengal tiger, saltwater crocodile, and Ganges river dolphin.",
+    "description_bn": "বিশ্বের বৃহত্তম অবিচ্ছিন্ন জোয়ারধৌত ম্যানগ্রোভ বন, যা রয়েল বেঙ্গল টাইগার, লোনাপানির কুমির এবং ডলফিনের প্রধান প্রাকৃতিক আবাসভূমি।",
+    "highlights": [
+      "UNESCO Natural World Heritage site (1997)",
+      "Ramsar wetland",
+      "Kotka and Hiron Point wildlife sanctuaries",
+      "Karamjal ecotourism centre"
+    ],
+    "best_time_to_visit": "November to February",
+    "entry_fee": {
+      "citizen_bdt": 150,
+      "saarc_bdt": 1000,
+      "foreign_bdt": 2000,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "tajhat-palace",
+    "name_en": "Tajhat Palace & Museum",
+    "name_bn": "তাজহাট রাজবাড়ি",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "Early 20th century (1917 CE)",
+    "division": "rangpur",
+    "district": "rangpur",
+    "upazila": "Rangpur Sadar",
+    "coordinates": {
+      "latitude": 25.7208,
+      "longitude": 89.2667
+    },
+    "description_en": "Magnificent European neoclassical palace built by Maharaja Kumar Gopal Lal Roy, now maintained as a protected antiquities museum.",
+    "description_bn": "মহারাজা গোপাল লাল রায় কর্তৃক ১৯১৭ সালে নির্মিত মনোমুগ্ধকর ইউরোপীয় ধ্রুপদী রাজপ্রাসাদ ও প্রত্নতাত্ত্বিক জাদুঘর।",
+    "highlights": [
+      "Grand Italian imported white marble staircase",
+      "Protected site museum under Dept. of Archaeology",
+      "Terracotta artifacts, Sanskrit manuscripts, and Mughal coins",
+      "Four ornate fishponds and sprawling lawns"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  },
+  {
+    "slug": "tanguar-haor",
+    "name_en": "Tanguar Haor",
+    "name_bn": "টাঙ্গুয়ার হাওর",
+    "category": "natural",
+    "type": "eco_tourism",
+    "period_era": "Natural / Wetland",
+    "division": "sylhet",
+    "district": "sunamganj",
+    "upazila": "Tahirpur",
+    "coordinates": {
+      "latitude": 25.15,
+      "longitude": 91.0667
+    },
+    "description_en": "Ramsar wetland ecosystem spanning 100 sq km at the foothills of the Meghalaya range, sanctuary for over 200 species of migratory birds.",
+    "description_bn": "মেঘালয় পাহাড়ের পাদদেশে অবস্থিত ১০০ বর্গকিলোমিটার আয়তনের আন্তর্জাতিক রামসার জলাভূমি ও অতিথি পাখির অভয়ারণ্য।",
+    "highlights": [
+      "Bangladesh second Ramsar site (2000)",
+      "Over 200 species of migratory waterfowl",
+      "Houseboat cruising through freshwater haor",
+      "Watch tower at Rowa Beel and Niladri lake nearby"
+    ],
+    "best_time_to_visit": "November to February",
+    "entry_fee": {
+      "is_free": true
+    }
+  },
+  {
+    "slug": "uttara-gonobhobon",
+    "name_en": "Uttara Gonobhobon (Dighapatia Palace)",
+    "name_bn": "উত্তরা গণভবন",
+    "category": "historical",
+    "type": "national_heritage",
+    "period_era": "18th-19th century (1734-1897 CE)",
+    "division": "rajshahi",
+    "district": "natore",
+    "upazila": "Natore Sadar",
+    "coordinates": {
+      "latitude": 24.4333,
+      "longitude": 89.0167
+    },
+    "description_en": "Royal palace of the Dighapatia Raj dynasty, designated by Bangabandhu Sheikh Mujibur Rahman as the official northern residence of the President of Bangladesh.",
+    "description_bn": "দিঘাপতিয়া রাজাদের ঐতিহাসিক প্রাসাদ, যা জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান কর্তৃক উত্তরাঞ্চলের আনুষ্ঠানিক রাষ্ট্রপতি ভবন হিসেবে ঘোষিত।",
+    "highlights": [
+      "Designated northern official presidential retreat",
+      "Spectacular iron clock tower gateway",
+      "Italian marble statues and manicured miniature gardens",
+      "Collection of antique weaponry and royal coaches"
+    ],
+    "best_time_to_visit": "October to March",
+    "entry_fee": {
+      "citizen_bdt": 30,
+      "saarc_bdt": 100,
+      "foreign_bdt": 300,
+      "is_free": false
+    }
+  }
+]
