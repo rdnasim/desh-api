@@ -1,4 +1,4 @@
-import { BookOpen, Github, Moon, Server, Sun } from 'lucide-react';
+import { BookOpen, Github, Moon, Server, Sun, Globe, Terminal } from 'lucide-react';
 import type React from 'react';
 
 interface NavbarProps {
@@ -6,17 +6,46 @@ interface NavbarProps {
   toggleTheme: () => void;
   baseUrl: string;
   setBaseUrl: (url: string) => void;
+  currentView: 'portal' | 'explorer';
+  setCurrentView: (view: 'portal' | 'explorer') => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, baseUrl, setBaseUrl }) => {
+export const Navbar: React.FC<NavbarProps> = ({
+  theme,
+  toggleTheme,
+  baseUrl,
+  setBaseUrl,
+  currentView,
+  setCurrentView,
+}) => {
   return (
     <header className="navbar">
       <div className="nav-container">
-        <a href="/" className="nav-brand">
-          <span className="brand-disc" aria-hidden="true" />
-          <span className="brand-title">Desh API Explorer</span>
-          <span className="brand-badge">Live Usage</span>
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <a href="/" className="nav-brand" onClick={(e) => { e.preventDefault(); setCurrentView('portal'); }}>
+            <span className="brand-disc" aria-hidden="true" />
+            <span className="brand-title">Desh Portal</span>
+            <span className="brand-badge">Live API Driven</span>
+          </a>
+
+          {/* Mode Switcher: Real Website vs API Explorer */}
+          <div className="nav-mode-pill">
+            <button
+              className={`mode-btn ${currentView === 'portal' ? 'active' : ''}`}
+              onClick={() => setCurrentView('portal')}
+            >
+              <Globe size={14} />
+              <span>Consumer Website</span>
+            </button>
+            <button
+              className={`mode-btn ${currentView === 'explorer' ? 'active' : ''}`}
+              onClick={() => setCurrentView('explorer')}
+            >
+              <Terminal size={14} />
+              <span>API Explorer</span>
+            </button>
+          </div>
+        </div>
 
         <div className="nav-controls">
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13 }}>
@@ -40,7 +69,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, baseUrl, set
             title="Open Scalar OpenAPI Docs"
           >
             <BookOpen size={16} />
-            <span>Docs</span>
+            <span className="hide-mobile">Docs</span>
           </a>
 
           <a
@@ -51,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, baseUrl, set
             title="View Source on GitHub"
           >
             <Github size={16} />
-            <span>GitHub</span>
+            <span className="hide-mobile">GitHub</span>
           </a>
 
           <button

@@ -1,12 +1,22 @@
-import { Search, Send } from 'lucide-react';
-import type React from 'react';
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import { HistoryDrawer } from './components/HistoryDrawer';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { Sparkles, Calendar, CheckCircle, Terminal } from 'lucide-react';
 import { Navbar } from './components/Navbar';
-import { ResponseViewer } from './components/ResponseViewer';
 import { UsageBanner } from './components/UsageBanner';
-import { API_MODULES, ENDPOINTS } from './data/endpoints';
-import type { ApiEndpoint, HttpMethod, RequestHistoryItem } from './types';
+import { ExplorerView } from './components/ExplorerView';
+import { ApiInspectorModal, type ApiCallDetails } from './components/ApiInspectorModal';
+
+import { PrayerWidget } from './components/portal/PrayerWidget';
+import { MarketPricesWidget } from './components/portal/MarketPricesWidget';
+import { GoldZakatWidget } from './components/portal/GoldZakatWidget';
+import { MetroRailWidget } from './components/portal/MetroRailWidget';
+import { BanglaToolkitWidget } from './components/portal/BanglaToolkitWidget';
+import { FinanceCalculatorWidget } from './components/portal/FinanceCalculatorWidget';
+import { EmergencyHealthWidget } from './components/portal/EmergencyHealthWidget';
+import { GeoLookupWidget } from './components/portal/GeoLookupWidget';
+import { WeatherAqiWidget } from './components/portal/WeatherAqiWidget';
+
+import { ENDPOINTS } from './data/endpoints';
+import type { ApiEndpoint, RequestHistoryItem, HttpMethod } from './types';
 
 export const App: React.FC = () => {
   // Theme state
@@ -29,14 +39,22 @@ export const App: React.FC = () => {
   const [baseUrl, setBaseUrl] = useState<string>('https://deshapi.riadul.com');
   const [apiKey, setApiKey] = useState<string>('');
 
-  // Endpoint Navigation
+  // Active View: Consumer Website Portal vs Developer API Explorer
+  const [currentView, setCurrentView] = useState<'portal' | 'explorer'>('portal');
+
+  // Inspector Modal state
+  const [inspectorDetails, setInspectorDetails] = useState<ApiCallDetails | null>(null);
+
+  // Live Portal Tickers
+  const [banglaDateStr, setBanglaDateStr] = useState<string>('');
+  const [holidayStatus, setHolidayStatus] = useState<string>('');
+
+  // Explorer State
   const [selectedModule, setSelectedModule] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [selectedEndpoint, setSelectedEndpoint] = useState<ApiEndpoint>(ENDPOINTS[1]); // default: Geo divisions or districts
-
-  // Request Console State
+  const [selectedEndpoint, setSelectedEndpoint] = useState<ApiEndpoint>(ENDPOINTS[1] || ENDPOINTS[0]);
   const [requestMethod, setRequestMethod] = useState<HttpMethod>('GET');
-  const [requestPath, setRequestPath] = useState<string>(ENDPOINTS[1].defaultPathWithParams);
+  const [requestPath, setRequestPath] = useState<string>(ENDPOINTS[1]?.defaultPathWithParams || '/v1/divisions');
   const [paramValues, setParamValues] = useState<Record<string, string>>({});
   const [requestBody, setRequestBody] = useState<string>('');
 
@@ -53,14 +71,44 @@ export const App: React.FC = () => {
   // History
   const [history, setHistory] = useState<RequestHistoryItem[]>([]);
 
-  // When selected endpoint changes, reset path and params
+  // Fetch today's Bangla date and holiday check for the Hero ticker
+  useEffect(() => {
+    let isCurrent = true;
+    const fetchTickers = async () => {
+      try {
+        const [dRes, hRes] = await Promise.all([
+          fetch(`${baseUrl}/v1/bangla/date`),
+          fetch(`${baseUrl}/v1/is-holiday`),
+        ]);
+        const dJson = await dRes.json();
+        const hJson = await hRes.json();
+
+        if (isCurrent && dJson.success && dJson.data) {
+          const d = dJson.data;
+          setBanglaDateStr(`${d.day_bn} ${d.month?.name_bn} ${d.year_bn} বঙ্গাব্দ (${d.season?.name_bn} ঋতু)`);
+        }
+        if (isCurrent && hJson.success && hJson.data) {
+          const isHol = hJson.data.is_holiday;
+          setHolidayStatus(isHol ? 'আজ সরকারি ছুটি (Holiday)' : 'আজ সাধারণ কর্মদিবস (Working Day)');
+        }
+      } catch (err) {
+        // graceful fallback
+      }
+    };
+
+    fetchTickers();
+    return () => {
+      isCurrent = false;
+    };
+  }, [baseUrl]);
+
+  // When selected endpoint changes in Explorer, reset path and params
   const handleSelectEndpoint = (ep: ApiEndpoint) => {
     setSelectedEndpoint(ep);
     setRequestMethod(ep.method);
     setRequestPath(ep.defaultPathWithParams);
     setRequestBody(ep.bodyExample || '');
 
-    // initialize params
     const initialParams: Record<string, string> = {};
     if (ep.params) {
       ep.params.forEach((p) => {
@@ -70,7 +118,7 @@ export const App: React.FC = () => {
     setParamValues(initialParams);
   };
 
-  // Filtered endpoints
+  // Filtered endpoints for explorer
   const filteredEndpoints = useMemo(() => {
     return ENDPOINTS.filter((ep) => {
       const matchModule = selectedModule === 'All' || ep.module === selectedModule;
@@ -85,16 +133,14 @@ export const App: React.FC = () => {
     });
   }, [selectedModule, searchQuery]);
 
-  // Update URL when a parameter changes in the input fields
+  // Update URL when a parameter changes
   const handleParamChange = (name: string, val: string) => {
     const updated = { ...paramValues, [name]: val };
     setParamValues(updated);
 
-    // Reconstruct URL path
     let newPath = selectedEndpoint.path;
     const queryParts: string[] = [];
 
-    // Replace path variables like :slug or :code
     Object.entries(updated).forEach(([k, v]) => {
       if (newPath.includes(`:${k}`)) {
         newPath = newPath.replace(`:${k}`, encodeURIComponent(v));
@@ -110,7 +156,7 @@ export const App: React.FC = () => {
     setRequestPath(newPath);
   };
 
-  // Send request
+  // Send request in Explorer
   const handleSend = useCallback(async () => {
     setIsSending(true);
     setResponseStatus(null);
@@ -139,7 +185,6 @@ export const App: React.FC = () => {
       const text = await res.text();
       const bytes = new Blob([text]).size;
 
-      // Collect response headers
       const collectedHeaders: Record<string, string> = {};
       res.headers.forEach((val, key) => {
         collectedHeaders[key] = val;
@@ -160,7 +205,6 @@ export const App: React.FC = () => {
       setResponseHeaders(collectedHeaders);
       setLastRequestTime(Date.now());
 
-      // Add to session history
       const historyItem: RequestHistoryItem = {
         id: Math.random().toString(36).substring(2, 9),
         timestamp: new Date().toLocaleTimeString(),
@@ -184,9 +228,7 @@ export const App: React.FC = () => {
       setSizeBytes(0);
       setResponse({
         error: 'Network Error',
-        message:
-          err.message ||
-          'Failed to reach API endpoint. Please check your internet connection or CORS.',
+        message: err.message || 'Failed to reach API endpoint.',
       });
       setResponseHeaders({});
     } finally {
@@ -210,17 +252,19 @@ export const App: React.FC = () => {
     return cmd;
   }, [baseUrl, requestPath, requestMethod, apiKey, requestBody]);
 
-  // Execute initial request on mount
-  useEffect(() => {
-    handleSend();
-  }, []);
-
   return (
     <div className="app-layout">
-      <Navbar theme={theme} toggleTheme={toggleTheme} baseUrl={baseUrl} setBaseUrl={setBaseUrl} />
+      <Navbar
+        theme={theme}
+        toggleTheme={toggleTheme}
+        baseUrl={baseUrl}
+        setBaseUrl={setBaseUrl}
+        currentView={currentView}
+        setCurrentView={setCurrentView}
+      />
 
       <main className="main-content">
-        {/* Real-time Usage & Quota Banner */}
+        {/* Real-time Usage & Quota Bar */}
         <UsageBanner
           baseUrl={baseUrl}
           apiKey={apiKey}
@@ -228,212 +272,139 @@ export const App: React.FC = () => {
           lastRequestTime={lastRequestTime}
         />
 
-        {/* Explorer Two-Column Workspace */}
-        <div className="explorer-grid">
-          {/* Left Sidebar: Endpoints Catalog & Search */}
-          <aside className="sidebar">
-            <div className="search-box">
-              <Search size={16} className="search-icon" />
-              <input
-                type="text"
-                className="search-input"
-                placeholder="Search endpoints, modules, Bangla..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </div>
-
-            {/* Category Filter Pills */}
-            <div className="module-pills">
-              {API_MODULES.map((mod) => (
-                <button
-                  key={mod}
-                  className={`module-pill ${selectedModule === mod ? 'active' : ''}`}
-                  onClick={() => setSelectedModule(mod)}
-                >
-                  {mod}
-                </button>
-              ))}
-            </div>
-
-            {/* Endpoint List */}
-            <div className="endpoint-list">
-              {filteredEndpoints.length === 0 ? (
-                <div
-                  style={{
-                    textAlign: 'center',
-                    padding: '24px 0',
-                    color: 'var(--text-muted)',
-                    fontSize: 13,
-                  }}
-                >
-                  No endpoints matched your search.
-                </div>
-              ) : (
-                filteredEndpoints.map((ep) => (
-                  <div
-                    key={ep.id}
-                    className={`endpoint-item ${selectedEndpoint.id === ep.id ? 'selected' : ''}`}
-                    onClick={() => handleSelectEndpoint(ep)}
-                  >
-                    <div className="endpoint-top">
-                      <span className={`method-tag ${ep.method.toLowerCase()}`}>{ep.method}</span>
-                      <span className="endpoint-path">{ep.path}</span>
-                    </div>
-                    <div className="endpoint-title">{ep.name}</div>
-                    {ep.nameBn && (
-                      <div style={{ fontSize: 12, color: 'var(--text-subtle)' }}>{ep.nameBn}</div>
-                    )}
-                  </div>
-                ))
-              )}
-            </div>
-          </aside>
-
-          {/* Right Main Console: Request Builder & Live Response */}
-          <div className="console-panel">
-            <div className="card">
-              <div className="card-header">
+        {currentView === 'portal' ? (
+          <>
+            {/* Real Website Hero Section */}
+            <div className="portal-hero">
+              <div className="hero-title-row">
                 <div>
-                  <h1 className="card-title">{selectedEndpoint.name}</h1>
-                  {selectedEndpoint.nameBn && (
-                    <div style={{ fontSize: 14, color: 'var(--crimson)', fontWeight: 600 }}>
-                      {selectedEndpoint.nameBn}
-                    </div>
-                  )}
-                  <p className="card-subtitle">{selectedEndpoint.description}</p>
+                  <h1 className="hero-heading">আমার দেশ · Bangladesh Digital Services Portal</h1>
+                  <p className="hero-subheading">লাইভ ডেটা ও নাগরিক সেবা সম্বলিত মুক্ত পোর্টাল</p>
+                  <p className="hero-desc">
+                    বাংলাদেশের প্রশাসনিক তথ্য, ওয়াক্ত ও সাহরি-ইফতারের সময়সূচি, নিত্যপ্রয়োজনীয় বাজারদর, স্বর্ণের দর ও যাকাত, মেট্রোরেলের টিকিট, বাংলা ভাষার টুলস এবং জরুরি সেবার সমন্বিত ওয়েব প্ল্যাটফর্ম — সম্পূর্ণ ওপেন <strong>Desh API</strong> দ্বারা পরিচালিত।
+                  </p>
                 </div>
 
-                <div style={{ display: 'flex', gap: 8 }}>
-                  <button
-                    onClick={handleSend}
-                    disabled={isSending}
-                    className="btn btn-primary"
-                    style={{ minWidth: 140 }}
-                  >
-                    <Send size={15} />
-                    <span>{isSending ? 'Sending…' : 'Send Request'}</span>
-                  </button>
-                </div>
+                <button
+                  onClick={() => setCurrentView('explorer')}
+                  className="btn btn-primary"
+                  style={{ gap: 8, padding: '10px 18px', fontSize: 14 }}
+                >
+                  <Terminal size={16} />
+                  <span>Developer API Explorer</span>
+                </button>
               </div>
 
-              {/* URL Bar */}
-              <div className="url-bar-container">
-                <span className="base-selector">{baseUrl}</span>
-                <input
-                  type="text"
-                  className="url-input"
-                  value={requestPath}
-                  onChange={(e) => setRequestPath(e.target.value)}
-                  placeholder="/v1/..."
-                />
+              {/* Real-time ticker badges */}
+              <div className="hero-pills-row">
+                {banglaDateStr && (
+                  <div className="hero-pill" style={{ borderColor: 'var(--crimson)' }}>
+                    <Calendar size={14} style={{ color: 'var(--crimson)' }} />
+                    <span>{banglaDateStr}</span>
+                  </div>
+                )}
+                {holidayStatus && (
+                  <div className="hero-pill">
+                    <CheckCircle size={14} style={{ color: 'var(--emerald)' }} />
+                    <span>{holidayStatus}</span>
+                  </div>
+                )}
+                <div className="hero-pill" style={{ background: 'var(--bg-elevated)' }}>
+                  <Sparkles size={14} style={{ color: 'var(--amber)' }} />
+                  <span>Public Rate Limit: 120 req/min · 10,000 req/day</span>
+                </div>
               </div>
-
-              {/* Dynamic Query & Path Parameters */}
-              {selectedEndpoint.params && selectedEndpoint.params.length > 0 && (
-                <div className="params-section">
-                  <div className="section-label">Parameters</div>
-                  {selectedEndpoint.params.map((p) => (
-                    <div key={p.name} className="param-row">
-                      <div className="param-name">
-                        <span>{p.name}</span>
-                        {p.required && <span style={{ color: 'var(--crimson)' }}> *</span>}
-                        <div style={{ fontSize: 11, color: 'var(--text-muted)', fontWeight: 400 }}>
-                          {p.description}
-                        </div>
-                      </div>
-
-                      {p.options ? (
-                        <select
-                          className="param-input"
-                          value={paramValues[p.name] ?? p.default ?? ''}
-                          onChange={(e) => handleParamChange(p.name, e.target.value)}
-                        >
-                          {p.options.map((opt) => (
-                            <option key={opt} value={opt}>
-                              {opt}
-                            </option>
-                          ))}
-                        </select>
-                      ) : (
-                        <input
-                          type="text"
-                          className="param-input"
-                          placeholder={p.default || `Enter ${p.name}`}
-                          value={paramValues[p.name] ?? ''}
-                          onChange={(e) => handleParamChange(p.name, e.target.value)}
-                        />
-                      )}
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {/* POST Request Body Editor if needed */}
-              {requestMethod === 'POST' && (
-                <div className="params-section">
-                  <div className="section-label">JSON Request Body</div>
-                  <textarea
-                    rows={4}
-                    value={requestBody}
-                    onChange={(e) => setRequestBody(e.target.value)}
-                    style={{
-                      width: '100%',
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: 13,
-                      padding: 12,
-                      borderRadius: 'var(--radius-sm)',
-                      border: '1px solid var(--border-strong)',
-                      background: 'var(--bg-input)',
-                      color: 'var(--text-main)',
-                      resize: 'vertical',
-                    }}
-                  />
-                </div>
-              )}
-
-              {/* Response Viewer */}
-              <ResponseViewer
-                status={responseStatus}
-                statusText={responseStatusText}
-                durationMs={durationMs}
-                sizeBytes={sizeBytes}
-                response={response}
-                headers={responseHeaders}
-                curlCommand={curlCommand}
-              />
             </div>
 
-            {/* Recent Request History Drawer */}
-            <HistoryDrawer
-              history={history}
-              onSelect={(item) => {
-                setRequestPath(item.url);
-                setRequestMethod(item.method);
-                setResponseStatus(item.status);
-                setResponseStatusText(item.statusText);
-                setDurationMs(item.durationMs);
-                setSizeBytes(item.sizeBytes);
-                setResponse(item.response);
-                setResponseHeaders(item.headers);
-              }}
-              onClear={() => setHistory([])}
-            />
-          </div>
-        </div>
+            {/* Portal Consumer Widgets Grid */}
+            <div className="portal-grid">
+              {/* 1. Prayer Times & Ramadan */}
+              <PrayerWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 2. Market Prices & Fuel */}
+              <MarketPricesWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 3. Gold & Zakat Calculator */}
+              <GoldZakatWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 4. Dhaka Metro Rail Transit Guide */}
+              <MetroRailWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 5. Bangla Language Toolkit */}
+              <BanglaToolkitWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 6. Finance & Tax Calculator */}
+              <FinanceCalculatorWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 7. Emergency & Health Hotline Directory */}
+              <EmergencyHealthWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 8. Geographic & Institutional Registry */}
+              <GeoLookupWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+
+              {/* 9. Weather & AQI Advisory */}
+              <div style={{ gridColumn: '1 / -1' }}>
+                <WeatherAqiWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+              </div>
+            </div>
+          </>
+        ) : (
+          /* Developer API Explorer View */
+          <ExplorerView
+            baseUrl={baseUrl}
+            selectedModule={selectedModule}
+            setSelectedModule={setSelectedModule}
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+            filteredEndpoints={filteredEndpoints}
+            selectedEndpoint={selectedEndpoint}
+            handleSelectEndpoint={handleSelectEndpoint}
+            requestPath={requestPath}
+            setRequestPath={setRequestPath}
+            requestMethod={requestMethod}
+            paramValues={paramValues}
+            handleParamChange={handleParamChange}
+            requestBody={requestBody}
+            setRequestBody={setRequestBody}
+            handleSend={handleSend}
+            isSending={isSending}
+            response={response}
+            responseHeaders={responseHeaders}
+            responseStatus={responseStatus}
+            responseStatusText={responseStatusText}
+            durationMs={durationMs}
+            sizeBytes={sizeBytes}
+            curlCommand={curlCommand}
+            history={history}
+            setHistory={setHistory}
+            setRequestMethod={setRequestMethod}
+            setResponseStatus={setResponseStatus}
+            setResponseStatusText={setResponseStatusText}
+            setDurationMs={setDurationMs}
+            setSizeBytes={setSizeBytes}
+            setResponse={setResponse}
+            setResponseHeaders={setResponseHeaders}
+          />
+        )}
       </main>
+
+      {/* Real API Call Inspector Modal */}
+      <ApiInspectorModal
+        details={inspectorDetails}
+        onClose={() => setInspectorDetails(null)}
+        onOpenInExplorer={(path) => {
+          setRequestPath(path);
+          setCurrentView('explorer');
+          handleSend();
+        }}
+      />
 
       <footer className="footer">
         <p>
-          <strong>Desh API Explorer</strong> · Open public API for Bangladesh reference data, Bangla
-          language tools, and calculators.
+          <strong>Desh Portal</strong> · Real-world Bangladesh Public Services Portal powered by <a href="https://deshapi.riadul.com" target="_blank" rel="noreferrer">Desh API</a>.
         </p>
         <p style={{ marginTop: 6, fontSize: 13, opacity: 0.8 }}>
-          Hosted at{' '}
-          <a href="https://deshapi.riadul.com" target="_blank" rel="noreferrer">
-            https://deshapi.riadul.com
-          </a>{' '}
-          · Code MIT · Data CC BY 4.0
+          Bilingual Bengali & English reference data · Open Source MIT · Open Data CC BY 4.0
         </p>
       </footer>
     </div>
