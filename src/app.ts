@@ -32,6 +32,7 @@ import { mockRoutes } from './modules/mock/routes';
 import { phoneRoutes } from './modules/phone/routes';
 import { prayerRoutes } from './modules/prayer/routes';
 import { railwayRoutes } from './modules/railway/routes';
+import { riverRoutes } from './modules/rivers/routes';
 import { validateRoutes } from './modules/validate/routes';
 import { weatherRoutes } from './modules/weather/routes';
 
@@ -169,6 +170,12 @@ const MODULES = [
     path: '/v1/heritage',
   },
   {
+    name: 'Rivers',
+    description:
+      'Major river networks (Padma, Meghna, Jamuna, Karnaphuli, Halda), lengths, origins, and traversed districts',
+    path: '/v1/rivers',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -240,6 +247,7 @@ app.route('/v1', weatherRoutes);
 app.route('/v1', railwayRoutes);
 app.route('/v1', airportRoutes);
 app.route('/v1', heritageRoutes);
+app.route('/v1', riverRoutes);
 app.route('/v1', constituencyRoutes);
 app.route('/v1', developerRoutes);
 

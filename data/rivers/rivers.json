@@ -1,0 +1,942 @@
+[
+  {
+    "slug": "atrayee",
+    "name_en": "Atrayee",
+    "name_bn": "আত্রাই",
+    "origin": "Siliguri (West Bengal, India), enters Bangladesh at Panchagarh",
+    "outflow": "Chalan Beel and Hurasagar to Jamuna",
+    "length_km": 222,
+    "divisions": [
+      "rangpur",
+      "rajshahi"
+    ],
+    "districts": [
+      "panchagarh",
+      "dinajpur",
+      "naogaon",
+      "natore",
+      "pabna"
+    ],
+    "tributaries": [
+      "Punarbhaba",
+      "Dhepa"
+    ],
+    "distributaries": [
+      "Baral",
+      "Hurasagar"
+    ],
+    "is_transboundary": true,
+    "description_en": "Ancient transboundary river passing through the Chalan Beel wetland basin, immortalized in Tagore literature written at Patisar.",
+    "description_bn": "চলনবিল জলাভূমির মধ্য দিয়ে প্রবাহিত প্রাচীন আন্তঃসীমান্ত নদী, যা বিশ্বকবি রবীন্দ্রনাথ ঠাকুরের স্মৃতিবিজড়িত।",
+    "special_features": [
+      "Flows through the historic Chalan Beel wetland ecosystem",
+      "Associated with Rabindranath Tagore estate at Patisar",
+      "Vital agricultural water resource for northwestern barind tract"
+    ]
+  },
+  {
+    "slug": "bhairab",
+    "name_en": "Bhairab",
+    "name_bn": "ভৈরব",
+    "origin": "Offtake of Ganges in Murshidabad / Meherpur border",
+    "outflow": "Rupsha River at Khulna",
+    "length_km": 160,
+    "divisions": [
+      "khulna"
+    ],
+    "districts": [
+      "meherpur",
+      "chuadanga",
+      "jhenaidah",
+      "jashore",
+      "khulna"
+    ],
+    "tributaries": [
+      "Kobadak",
+      "Chitra"
+    ],
+    "distributaries": [
+      "Rupsha",
+      "Atai"
+    ],
+    "is_transboundary": true,
+    "description_en": "Ancient deltaic river flowing through historic southwest towns of Meherpur, Jashore, and Khulna.",
+    "description_bn": "দক্ষিণ-পশ্চিমাঞ্চলের মেহেরপুর, চুয়াডাঙ্গা, ঝিনাইদহ, যশোর ও খুলনার ওপর দিয়ে প্রবাহিত প্রাচীন নদী।",
+    "special_features": [
+      "Sanskrit name signifying tremendous or formidable",
+      "Historic waterway of Michael Madhusudan Dutt home district",
+      "Major industrial transport route leading to Khulna port"
+    ]
+  },
+  {
+    "slug": "brahmaputra",
+    "name_en": "Old Brahmaputra",
+    "name_bn": "পুরাতন ব্রহ্মপুত্র",
+    "origin": "Offtake of Jamuna River north of Bahadurabad",
+    "outflow": "Upper Meghna River near Bhairab Bazar",
+    "length_km": 276,
+    "divisions": [
+      "mymensingh",
+      "dhaka"
+    ],
+    "districts": [
+      "jamalpur",
+      "sherpur",
+      "mymensingh",
+      "kishoreganj",
+      "narsingdi"
+    ],
+    "tributaries": [
+      "Jhinai",
+      "Kangsha"
+    ],
+    "distributaries": [
+      "Shitalakshya",
+      "Banshi"
+    ],
+    "is_transboundary": false,
+    "description_en": "Historical main course of the Brahmaputra before the catastrophic 1787 tectonic earthquake and flood diverted flow into the Jamuna.",
+    "description_bn": "১৭৮৭ সালের ভূমিকম্প ও বন্যার পূর্বে ব্রহ্মপুত্র নদের মূল প্রবাহ, যা জামালপুর, ময়মনসিংহ ও কিশোরগঞ্জের বুক চিরে প্রবাহিত।",
+    "special_features": [
+      "Historical main channel before the creation of the Jamuna channel in 1787",
+      "Flows alongside Mymensingh city and Bangladesh Agricultural University",
+      "Subject of historic riverine trade and folk ballads"
+    ]
+  },
+  {
+    "slug": "buriganga",
+    "name_en": "Buriganga",
+    "name_bn": "বুড়িগঙ্গা",
+    "origin": "Offtake of Dhaleshwari River near Savar",
+    "outflow": "Meets Dhaleshwari near Munshiganj",
+    "length_km": 18,
+    "divisions": [
+      "dhaka"
+    ],
+    "districts": [
+      "dhaka",
+      "narayanganj",
+      "munshiganj"
+    ],
+    "tributaries": [
+      "Turag",
+      "Karanatali"
+    ],
+    "distributaries": [],
+    "is_transboundary": false,
+    "description_en": "The historic economic lifeline of Dhaka since the Mughal foundation of Jahangirnagar in 1610.",
+    "description_bn": "১৬১০ সালে মুঘল সুবাদার ইসলাম খাঁ কর্তৃক জাহাঙ্গীরনগর প্রতিষ্ঠার পর থেকে ঢাকার ঐতিহাসিক প্রাণপ্রবাহ ও বাণিজ্যিক নদী।",
+    "special_features": [
+      "Historical waterfront of Dhaka with Lalbagh Fort and Ahsan Manzil",
+      "Houses Sadarghat launch terminal, the busiest passenger inland port in Bangladesh",
+      "Spanned by multiple landmark bridges including Babubazar and Postogola bridges"
+    ]
+  },
+  {
+    "slug": "dhaleshwari",
+    "name_en": "Dhaleshwari",
+    "name_bn": "ধলেশ্বরী",
+    "origin": "Distributary of Jamuna River in Tangail",
+    "outflow": "Meghna River near Munshiganj",
+    "length_km": 160,
+    "divisions": [
+      "dhaka"
+    ],
+    "districts": [
+      "tangail",
+      "manikganj",
+      "dhaka",
+      "narayanganj",
+      "munshiganj"
+    ],
+    "tributaries": [
+      "Elengjani",
+      "Turag"
+    ],
+    "distributaries": [
+      "Buriganga",
+      "Kaliganga"
+    ],
+    "is_transboundary": false,
+    "description_en": "Major distributary of the Jamuna and parent river to the Buriganga, forming a vital cargo corridor south of Dhaka.",
+    "description_bn": "যমুনার অন্যতম প্রধান শাখা নদী এবং বুড়িগঙ্গার মূল উৎস, যা ঢাকা ও নারায়ণগঞ্জের অন্যতম নৌবাণিজ্য পথ।",
+    "special_features": [
+      "Supplies water to the Buriganga and surrounding delta waterways",
+      "Spanned by Muktarpur Bridge connecting Dhaka to Munshiganj",
+      "Key route for inland cement, aggregate, and container barges"
+    ]
+  },
+  {
+    "slug": "dharla",
+    "name_en": "Dharla",
+    "name_bn": "ধরলা",
+    "origin": "Himalayas in Bhutan / India as Jaldhaka, enters at Lalmonirhat",
+    "outflow": "Brahmaputra River near Kurigram",
+    "length_km": 75,
+    "divisions": [
+      "rangpur"
+    ],
+    "districts": [
+      "lalmonirhat",
+      "kurigram"
+    ],
+    "tributaries": [
+      "Gidari",
+      "Nilkumar"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Fast-flowing Himalayan transboundary river carrying mountain runoff across Lalmonirhat and Kurigram.",
+    "description_bn": "হিমালয় থেকে নেমে আসা পাহাড়ি আন্তঃসীমান্ত নদী, যা লালমনিরহাট ও কুড়িগ্রাম জেলায় প্রবাহিত।",
+    "special_features": [
+      "Himalayan snowmelt origin with swift seasonal current",
+      "Dharla Bridge links eastern Kurigram to the national road network",
+      "Important fish breeding ground for local cold-water species"
+    ]
+  },
+  {
+    "slug": "dudhkumar",
+    "name_en": "Dudhkumar",
+    "name_bn": "দুধকুমার",
+    "origin": "Bhutan Himalayas through Assam, enters at Bhurungamari",
+    "outflow": "Brahmaputra River at Nageshwari (Kurigram)",
+    "length_km": 52,
+    "divisions": [
+      "rangpur"
+    ],
+    "districts": [
+      "kurigram"
+    ],
+    "tributaries": [
+      "Gangadhar",
+      "Fulbari"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Pristine border river carrying crystal-clear snowmelt waters into northern Kurigram.",
+    "description_bn": "ভুটান ও আসাম সীমান্ত পার হয়ে কুড়িগ্রামের ভূরুঙ্গামারীতে প্রবেশ করা অন্যতম স্বচ্ছ পাহাড়ি নদী।",
+    "special_features": [
+      "Known for its milk-clear freshwater mountain flow",
+      "Forms parts of the international frontier in northern Kurigram",
+      "Confluences into the mighty Brahmaputra at Nageshwari"
+    ]
+  },
+  {
+    "slug": "feny",
+    "name_en": "Feni",
+    "name_bn": "ফেনী",
+    "origin": "Hill ranges of South Tripura (India), forms international border",
+    "outflow": "Bay of Bengal",
+    "length_km": 116,
+    "divisions": [
+      "chattogram"
+    ],
+    "districts": [
+      "khagrachhari",
+      "feni",
+      "chattogram"
+    ],
+    "tributaries": [
+      "Muhuri",
+      "Choto Feni"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Transboundary border river with the historic Feni River closure dam and the bilateral Maitri Setu bridge.",
+    "description_bn": "ত্রিপুরা পাহাড় থেকে উৎপন্ন হয়ে বাংলাদেশ-ভারত সীমান্ত দিয়ে বঙ্গোপসাগরে পতিত হওয়া ঐতিহাসিক নদী।",
+    "special_features": [
+      "Site of Maitri Setu (Friendship Bridge) connecting Sabroom and Ramgarh",
+      "Feni River Closure Dam at Sonagazi forms a massive freshwater reservoir",
+      "Crucial for flood control and winter irrigation in the Feni-Noakhali plain"
+    ]
+  },
+  {
+    "slug": "gorai",
+    "name_en": "Gorai",
+    "name_bn": "গড়াই",
+    "origin": "Offtake of Padma River at Talbaria (Kushtia)",
+    "outflow": "Becomes Madhumati River",
+    "length_km": 80,
+    "divisions": [
+      "khulna"
+    ],
+    "districts": [
+      "kushtia",
+      "rajbari",
+      "magura"
+    ],
+    "tributaries": [],
+    "distributaries": [
+      "Madhumati",
+      "Kumar"
+    ],
+    "is_transboundary": false,
+    "description_en": "The primary distributary supplying freshwater from the Padma to the southwest coastal belt and Sundarbans mangroves.",
+    "description_bn": "পদ্মা নদী থেকে উৎপন্ন হয়ে দক্ষিণ-পশ্চিমাঞ্চল ও সুন্দরবনে মিঠাপানি সরবরাহকারী অন্যতম প্রধান নদী।",
+    "special_features": [
+      "Critical freshwater barrier against sea salinity intrusion into the Sundarbans",
+      "Site of ongoing national capital dredging restoration projects",
+      "Flows beneath the historic Gorai Railway Bridge at Kushtia"
+    ]
+  },
+  {
+    "slug": "halda",
+    "name_en": "Halda",
+    "name_bn": "হালদা",
+    "origin": "Badnatali Hill ranges in Chittagong Hill Tracts (Ramgarh / Khagrachhari)",
+    "outflow": "Karnaphuli River at Kalurghat (Chattogram)",
+    "length_km": 98,
+    "divisions": [
+      "chattogram"
+    ],
+    "districts": [
+      "khagrachhari",
+      "chattogram"
+    ],
+    "tributaries": [
+      "Dhorkhal",
+      "Manikchhari",
+      "Fatika"
+    ],
+    "distributaries": [],
+    "is_transboundary": false,
+    "description_en": "The world's only tidal river where major Indian carps (Ruhi, Catla, Mrigal) spawn naturally in mass quantities, declared Bangabandhu Fisheries Heritage.",
+    "description_bn": "বিশ্বের একমাত্র জোয়ার-ভাটার নদী যেখানে রুই জাতীয় মাছ প্রাকৃতিক পরিবেশে ডিম ছাড়ে, যা বঙ্গবন্ধু মৎস্য হেরিটেজ হিসেবে ঘোষিত।",
+    "special_features": [
+      "Declared Bangabandhu Fisheries Heritage (বঙ্গবন্ধু মৎস্য হেরিটেজ) in 2020",
+      "Sole natural source of wild carp fry for aquaculture in Bangladesh and South Asia",
+      "Strictly protected environmental sanctuary for Ganges river dolphins"
+    ]
+  },
+  {
+    "slug": "jamuna",
+    "name_en": "Jamuna",
+    "name_bn": "যমুনা",
+    "origin": "Chemayungdung Glacier (Tibet as Yarlung Tsangpo), enters Kurigram as Brahmaputra",
+    "outflow": "Padma River at Goalondo Ghat",
+    "length_km": 205,
+    "divisions": [
+      "rangpur",
+      "rajshahi",
+      "mymensingh",
+      "dhaka"
+    ],
+    "districts": [
+      "kurigram",
+      "gaibandha",
+      "bogura",
+      "jamalpur",
+      "sirajganj",
+      "tangail",
+      "pabna",
+      "manikganj"
+    ],
+    "tributaries": [
+      "Teesta",
+      "Dharla",
+      "Karatoya"
+    ],
+    "distributaries": [
+      "Dhaleshwari",
+      "Old Brahmaputra"
+    ],
+    "is_transboundary": true,
+    "description_en": "The colossal braided main stem of the Brahmaputra system in Bangladesh, up to 12 km wide and carrying massive sediment loads.",
+    "description_bn": "ব্রহ্মপুত্রের প্রধান বিনুনি নদীপ্রবাহ, যা চরাঞ্চল বেষ্টিত এবং গড়ে ৮-১২ কিমি পর্যন্ত প্রশস্ত।",
+    "special_features": [
+      "Classic braided river system with dynamic shifting sand chars (river islands)",
+      "Spanned by the 4.8 km Bangabandhu Bridge (Jamuna Multipurpose Bridge)",
+      "Discharges an average monsoon flood flow exceeding 100,000 m³/s"
+    ]
+  },
+  {
+    "slug": "kangsha",
+    "name_en": "Kangsha",
+    "name_bn": "কংস",
+    "origin": "Offtake of Garo foothills streams in Sherpur",
+    "outflow": "Baulai River in the Sunamganj haor network",
+    "length_km": 120,
+    "divisions": [
+      "mymensingh"
+    ],
+    "districts": [
+      "sherpur",
+      "mymensingh",
+      "netrakona"
+    ],
+    "tributaries": [
+      "Someshwari",
+      "Guneshwari"
+    ],
+    "distributaries": [],
+    "is_transboundary": false,
+    "description_en": "Meandering river linking the northern plains of Mymensingh with the eastern haor wetlands.",
+    "description_bn": "ময়মনসিংহের পূর্বাঞ্চল ও নেত্রকোনার হাওরাঞ্চলের অন্যতম প্রধান নৌযোগাযোগের নদী।",
+    "special_features": [
+      "Key water highway for boat transportation in Netrakona",
+      "Rich indigenous freshwater fish habitat during monsoon flooding",
+      "Provides natural drainage from the Garo foothill valleys"
+    ]
+  },
+  {
+    "slug": "karatoya",
+    "name_en": "Karatoya",
+    "name_bn": "করতোয়া",
+    "origin": "Himalayan foothills in Jalpaiguri, enters at Panchagarh",
+    "outflow": "Bengai-Fuljhor river network to Jamuna",
+    "length_km": 187,
+    "divisions": [
+      "rangpur",
+      "rajshahi"
+    ],
+    "districts": [
+      "panchagarh",
+      "dinajpur",
+      "bogura",
+      "sirajganj"
+    ],
+    "tributaries": [
+      "Atrai",
+      "Jamuneshwari"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Ancient river mentioned in the Mahabharata, upon whose banks the fortified city of Pundranagara (Mahasthangarh) was built.",
+    "description_bn": "মহাভারতে উল্লেখিত অতি প্রাচীন নদী, যার তীরে খ্রিস্টপূর্ব ৩য় শতকে গড়ে উঠেছিল পুণ্ড্রনগর (মহাস্থানগড়)।",
+    "special_features": [
+      "Sacred river in ancient Bengal historical texts",
+      "Flanks the ramparts and citadels of Mahasthangarh in Bogura",
+      "Historic boundary between Pundravardhana and Kamarupa kingdoms"
+    ]
+  },
+  {
+    "slug": "karnaphuli",
+    "name_en": "Karnaphuli",
+    "name_bn": "কর্ণফুলী",
+    "origin": "Lushei Hills (Mizoram, India), enters at Barkal (Rangamati)",
+    "outflow": "Bay of Bengal near Patenga (Chattogram)",
+    "length_km": 180,
+    "divisions": [
+      "chattogram"
+    ],
+    "districts": [
+      "rangamati",
+      "chattogram"
+    ],
+    "tributaries": [
+      "Halda",
+      "Kasalong",
+      "Chengi",
+      "Rinkhyong"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "The lifeblood of maritime trade hosting Chattogram Port and Bangladesh only hydroelectric power plant at Kaptai Dam.",
+    "description_bn": "চট্টগ্রাম সমুদ্রবন্দরের প্রবেশদ্বার ও প্রাণপ্রবাহ, যার ওপর কাপ্তাই জলবিদ্যুৎ কেন্দ্র ও কর্ণফুলী টানেল নির্মিত।",
+    "special_features": [
+      "Hosts Chattogram Port, handling over 90% of Bangladesh maritime international trade",
+      "Dammed at Kaptai creating the vast Kaptai Lake and 230 MW hydroelectric station",
+      "Traversed by Bangabandhu Sheikh Mujibur Rahman Tunnel, South Asia first underwater expressway"
+    ]
+  },
+  {
+    "slug": "kushiyara",
+    "name_en": "Kushiyara",
+    "name_bn": "কুশিয়ারা",
+    "origin": "Southern branch of Barak River at Amalshid on Indian border",
+    "outflow": "Merges with Surma at Markuli to form Kalni/Meghna",
+    "length_km": 228,
+    "divisions": [
+      "sylhet"
+    ],
+    "districts": [
+      "sylhet",
+      "moulvibazar",
+      "habiganj"
+    ],
+    "tributaries": [
+      "Manu",
+      "Khowai",
+      "Juri"
+    ],
+    "distributaries": [
+      "Bibiyana"
+    ],
+    "is_transboundary": true,
+    "description_en": "Major transboundary river in Sylhet division draining tea estates and gas fields, governed by bilateral water-sharing pacts.",
+    "description_bn": "সিলেট বিভাগের অন্যতম প্রধান আন্তঃসীমান্ত নদী, যা মনু ও খোয়াই নদীর জলধারা গ্রহণ করে মেঘনায় মিলিত হয়।",
+    "special_features": [
+      "Site of the landmark bilateral Bangladesh-India Kushiyara water withdrawal treaty (2022)",
+      "Meanders through the Bibiyana gas field basin and haor wetlands",
+      "Vital navigation route for timber, stone, and tea transport"
+    ]
+  },
+  {
+    "slug": "madhumati",
+    "name_en": "Madhumati",
+    "name_bn": "মধুমতী",
+    "origin": "Continuation of the Gorai River near Magura",
+    "outflow": "Baleshwar River to Bay of Bengal",
+    "length_km": 190,
+    "divisions": [
+      "khulna",
+      "dhaka",
+      "barishal"
+    ],
+    "districts": [
+      "magura",
+      "faridpur",
+      "narail",
+      "gopalganj",
+      "bagerhat",
+      "pirojpur"
+    ],
+    "tributaries": [
+      "Naboganga",
+      "Kumar"
+    ],
+    "distributaries": [
+      "Baleshwar",
+      "Kaliganga"
+    ],
+    "is_transboundary": false,
+    "description_en": "Scenic delta river dividing active and moribund delta zones, spanned by the 6-lane Madhumati Bridge on Asian Highway 1.",
+    "description_bn": "গড়াই নদীর ভাটিপ্রবাহ, যা মাগুরা, নড়াইল ও গোপালগঞ্জের বুক চিরে বঙ্গোপসাগরের মুখে বালেশ্বরে রূপ নেয়।",
+    "special_features": [
+      "Spanned by the historic 6-lane Madhumati Bridge (Kalna Bridge) on Asian Highway AH1",
+      "Tungipara mausoleum complex of Bangabandhu lies along its floodplain in Gopalganj",
+      "Traditional waterway for paddle steamers (Rocket steamers)"
+    ]
+  },
+  {
+    "slug": "matamuhuri",
+    "name_en": "Matamuhuri",
+    "name_bn": "মাতামুহুরী",
+    "origin": "Moyvar Hills on the border of Myanmar",
+    "outflow": "Bay of Bengal near Chiringa (Cox's Bazar)",
+    "length_km": 146,
+    "divisions": [
+      "chattogram"
+    ],
+    "districts": [
+      "bandarban",
+      "coxs-bazar"
+    ],
+    "tributaries": [
+      "Lama Khal",
+      "Alikadam Khal"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Fast-flowing hill tract river draining the scenic remote valleys of Alikadam, Lama, and Chakaria.",
+    "description_bn": "মায়ানমার সীমান্ত থেকে বান্দরবানের আলীকদম ও লামা হয়ে কক্সবাজারের চকরিয়ায় পতিত হওয়া পাহাড়ি নদী।",
+    "special_features": [
+      "Entire upper course cuts through virgin rainforest valleys and gorges",
+      "Source of freshwater for tobacco, paddy, and fisheries in Chakaria delta",
+      "Navigable by indigenous motorized shallow boats called Chandar Gadi"
+    ]
+  },
+  {
+    "slug": "meghna",
+    "name_en": "Meghna",
+    "name_bn": "মেঘনা",
+    "origin": "Confluence of Surma and Kushiyara rivers via Kalni/Dhanu",
+    "outflow": "Bay of Bengal",
+    "length_km": 330,
+    "divisions": [
+      "sylhet",
+      "dhaka",
+      "chattogram",
+      "barishal"
+    ],
+    "districts": [
+      "kishoreganj",
+      "brahmanbaria",
+      "narsingdi",
+      "narayanganj",
+      "munshiganj",
+      "cumilla",
+      "chandpur",
+      "lakshmipur",
+      "noakhali",
+      "bhola"
+    ],
+    "tributaries": [
+      "Padma",
+      "Gumti",
+      "Titas",
+      "Dakatia"
+    ],
+    "distributaries": [
+      "Tetulia",
+      "Shahbazpur channel"
+    ],
+    "is_transboundary": true,
+    "description_en": "The widest river in Bangladesh, forming the greatest freshwater discharge estuary in the world at its confluence with the Padma at Chandpur.",
+    "description_bn": "বাংলাদেশের সর্বাপেক্ষা প্রশস্ত নদী, যা চাঁদপুরে পদ্মার সাথে মিলিত হয়ে বিশাল মোহনা সৃষ্টি করে বঙ্গোপসাগরে পতিত হয়েছে।",
+    "special_features": [
+      "Widest river in Bangladesh, expanding over 12 km across near Bhola and Hatiya",
+      "Produces the iconic Chandpur Hilsa (ইলিশ) fish of national culinary fame",
+      "Spanned by major infrastructure including Meghna Bridge and Meghna-Gumti Bridge"
+    ]
+  },
+  {
+    "slug": "mohanonda",
+    "name_en": "Mohanonda",
+    "name_bn": "মহানন্দা",
+    "origin": "Mahaldiram Hills (Darjeeling, India), enters at Tetulia",
+    "outflow": "Padma River at Godagari (Rajshahi)",
+    "length_km": 95,
+    "divisions": [
+      "rangpur",
+      "rajshahi"
+    ],
+    "districts": [
+      "panchagarh",
+      "chapainababganj",
+      "rajshahi"
+    ],
+    "tributaries": [
+      "Dahuk",
+      "Mechi"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Transboundary river defining northern and western borders, famous for round riverbed pebbles and Chapainababganj mango orchards.",
+    "description_bn": "দার্জিলিং থেকে তেঁতুলিয়া হয়ে চাঁপাইনবাবগঞ্জ ও রাজশাহীতে পদ্মায় মিলিত হওয়া আন্তঃসীমান্ত নদী।",
+    "special_features": [
+      "Marks the northernmost boundary of Bangladesh at Banglabandha zero point",
+      "Source of high-quality construction gravel mined from riverbed in Panchagarh",
+      "Flows past the historic mango-producing belt of Chapainababganj"
+    ]
+  },
+  {
+    "slug": "naf",
+    "name_en": "Naf",
+    "name_bn": "নাফ",
+    "origin": "Arakan Hills in Myanmar",
+    "outflow": "Bay of Bengal",
+    "length_km": 62,
+    "divisions": [
+      "chattogram"
+    ],
+    "districts": [
+      "coxs-bazar"
+    ],
+    "tributaries": [],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Tidal international border river separating the southeastern tip of Bangladesh (Teknaf) from Myanmar.",
+    "description_bn": "বাংলাদেশ ও মায়ানমারের মধ্যবর্তী প্রাকৃতিক আন্তর্জাতিক সীমারেখা নির্ধারণকারী জোয়ারধৌত নদী।",
+    "special_features": [
+      "Serves as the international boundary line between Bangladesh and Myanmar",
+      "Waterway corridor for sea cruise vessels heading from Teknaf to Saint Martin Island",
+      "Mangrove and intertidal creek sanctuary for estuarine biodiversity"
+    ]
+  },
+  {
+    "slug": "padma",
+    "name_en": "Padma",
+    "name_bn": "পদ্মা",
+    "origin": "Himalayas (Gangotri Glacier), enters at Shibganj (Chapainababganj)",
+    "outflow": "Lower Meghna River near Chandpur",
+    "length_km": 120,
+    "divisions": [
+      "rajshahi",
+      "dhaka",
+      "khulna",
+      "barishal"
+    ],
+    "districts": [
+      "chapainababganj",
+      "rajshahi",
+      "pabna",
+      "kushtia",
+      "rajbari",
+      "faridpur",
+      "manikganj",
+      "munshiganj",
+      "shariatpur",
+      "chandpur"
+    ],
+    "tributaries": [
+      "Mohanonda",
+      "Jamuna"
+    ],
+    "distributaries": [
+      "Gorai",
+      "Madhumati",
+      "Arialkhan"
+    ],
+    "is_transboundary": true,
+    "description_en": "The legendary central river of Bangladesh carrying the combined waters of the Ganges and Jamuna, spanned by the historic Padma Bridge.",
+    "description_bn": "গঙ্গা ও যমুনার মিলিত জলধারা বহনকারী বাংলাদেশের অন্যতম প্রধান নদী, যার ওপর ৬.১৫ কিমি দীর্ঘ পদ্মা সেতু নির্মিত।",
+    "special_features": [
+      "Combined massive confluence with the Jamuna at Goalondo Ghat",
+      "Spanned by the 6.15 km double-deck rail-road Padma Multipurpose Bridge",
+      "Spanned upstream by the historic Hardinge Bridge (1915) and Lalon Shah Bridge at Paksey"
+    ]
+  },
+  {
+    "slug": "poshur",
+    "name_en": "Poshur",
+    "name_bn": "পশুর",
+    "origin": "Continuation of the Rupsha River south of Khulna",
+    "outflow": "Bay of Bengal at Akram Point",
+    "length_km": 142,
+    "divisions": [
+      "khulna"
+    ],
+    "districts": [
+      "khulna",
+      "bagerhat"
+    ],
+    "tributaries": [
+      "Mongla",
+      "Bhairab"
+    ],
+    "distributaries": [
+      "Shela",
+      "Marjat"
+    ],
+    "is_transboundary": false,
+    "description_en": "Deep navigation river passing through the Sundarbans mangrove forest, serving Mongla Port ocean vessels.",
+    "description_bn": "খুলনার রূপসা থেকে সুন্দরবনের ভেতর দিয়ে বঙ্গোপসাগরে পতিত হওয়া গভীর নৌপথ ও মোংলা বন্দরের জীবনরেখা।",
+    "special_features": [
+      "Main international maritime shipping channel accessing Mongla Port",
+      "Major river channel traversing the UNESCO World Heritage Sundarbans reserve",
+      "Crucial corridor for domestic and bilateral Indo-Bangladesh river transit protocol"
+    ]
+  },
+  {
+    "slug": "rupsha",
+    "name_en": "Rupsha",
+    "name_bn": "রূপসা",
+    "origin": "Confluence of Bhairab and Atai rivers in Khulna",
+    "outflow": "Becomes Poshur River at Chalna",
+    "length_km": 19,
+    "divisions": [
+      "khulna"
+    ],
+    "districts": [
+      "khulna"
+    ],
+    "tributaries": [
+      "Bhairab",
+      "Atai"
+    ],
+    "distributaries": [
+      "Poshur"
+    ],
+    "is_transboundary": false,
+    "description_en": "Bustling industrial river of Khulna city, center of the national frozen shrimp and fish export processing sector.",
+    "description_bn": "খুলনা শহরের পাশ দিয়ে প্রবাহিত রূপসা নদী, যা বাংলাদেশের হিমায়িত চিংড়ি ও মৎস্য রপ্তানি শিল্পের প্রধান কেন্দ্র।",
+    "special_features": [
+      "Hub of Bangladesh frozen seafood and tiger shrimp processing industries",
+      "Spanned by the 1.36 km Khan Jahan Ali Bridge (Rupsha Bridge)",
+      "Connects the Khulna inland port facilities with southern maritime routes"
+    ]
+  },
+  {
+    "slug": "sangu",
+    "name_en": "Sangu",
+    "name_bn": "সাঙ্গু",
+    "origin": "North Arakan Hills (Myanmar border), flows through Bandarban",
+    "outflow": "Bay of Bengal near Anwara (Chattogram)",
+    "length_km": 173,
+    "divisions": [
+      "chattogram"
+    ],
+    "districts": [
+      "bandarban",
+      "chattogram"
+    ],
+    "tributaries": [
+      "Tindu Khal",
+      "Ruma Khal"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "The only major river whose entire watershed lies within the Chittagong Hill Tracts, renowned for dramatic rocky gorges and indigenous culture.",
+    "description_bn": "পার্বত্য চট্টগ্রামের একমাত্র প্রধান পাহাড়ি নদী, যা বান্দরবানের রোমাঞ্চকর পাহাড় ও পাথুরে গিরিখাতের মধ্য দিয়ে প্রবাহিত।",
+    "special_features": [
+      "Entire upper watershed contained inside the high mountain ridges of Bandarban",
+      "Spectacular rocky rapids at Boro Pathor and Tindu in Thanchi",
+      "Principal transport artery for Marma, Bawm, and Murong indigenous hill communities"
+    ]
+  },
+  {
+    "slug": "shitalakshya",
+    "name_en": "Shitalakshya",
+    "name_bn": "শীতলক্ষ্যা",
+    "origin": "Offtake of Old Brahmaputra near Toke (Gazipur)",
+    "outflow": "Dhaleshwari River at Narayanganj",
+    "length_km": 110,
+    "divisions": [
+      "dhaka"
+    ],
+    "districts": [
+      "gazipur",
+      "narsingdi",
+      "narayanganj",
+      "munshiganj"
+    ],
+    "tributaries": [
+      "Brahmaputra offtake"
+    ],
+    "distributaries": [],
+    "is_transboundary": false,
+    "description_en": "Historically acclaimed for transparent cool waters that nurtured the legendary Dhakai Jamdani and Muslin weaving arts in Demra and Rupganj.",
+    "description_bn": "স্বচ্ছ ও শীতল পানির জন্য খ্যাত নদী, যার অববাহিকায় গড়ে উঠেছিল বিশ্বখ্যাত ঢাকাই মসলিন ও জামদানি শিল্প।",
+    "special_features": [
+      "Historic cradle of Jamdani weaving, recognized as UNESCO Intangible Cultural Heritage",
+      "Hosts Narayanganj River Port, historically called the Dandy of the East for jute trade",
+      "Spanned by the landmark Kanchpur Bridge and 3rd Shitalakshya Bridge"
+    ]
+  },
+  {
+    "slug": "someshwari",
+    "name_en": "Someshwari",
+    "name_bn": "সোমেশ্বরী",
+    "origin": "Garo Hills (Meghalaya, India), enters at Durgapur",
+    "outflow": "Kangsha River in Netrakona",
+    "length_km": 50,
+    "divisions": [
+      "mymensingh"
+    ],
+    "districts": [
+      "netrakona"
+    ],
+    "tributaries": [
+      "Baghchhara"
+    ],
+    "distributaries": [],
+    "is_transboundary": true,
+    "description_en": "Scenic border river known for crystalline waters flowing past the turquoise ceramic lakes and white china clay hills of Birishiri.",
+    "description_bn": "মেঘালয়ের গারো পাহাড় থেকে নেত্রকোনার দুর্গাপুরে প্রবেশ করা স্বচ্ছ পানির নদী, যা বিরিশিরির চীনামাটির পাহাড়ের কোল ঘেঁষে প্রবাহিত।",
+    "special_features": [
+      "Crystal-clear waters washing over smooth quartzite and silica sands",
+      "Flanks the turquoise mineral water lake and white china clay cliffs of Birishiri",
+      "Primary cultural waterway of the indigenous Garo and Hajong communities"
+    ]
+  },
+  {
+    "slug": "surma",
+    "name_en": "Surma",
+    "name_bn": "সুরমা",
+    "origin": "Northern branch of Barak River at Amalshid on Indian border",
+    "outflow": "Meets Kushiyara River to form Kalni / Meghna",
+    "length_km": 250,
+    "divisions": [
+      "sylhet"
+    ],
+    "districts": [
+      "sylhet",
+      "sunamganj",
+      "habiganj"
+    ],
+    "tributaries": [
+      "Jadukata",
+      "Piyain",
+      "Sari-Gowain"
+    ],
+    "distributaries": [
+      "Balu"
+    ],
+    "is_transboundary": true,
+    "description_en": "The iconic river bisecting Sylhet city beneath the historic Keane Bridge, nourishing the vast wetland haor ecosystem.",
+    "description_bn": "সিলেট শহরের মধ্য দিয়ে প্রবাহিত ঐতিহাসিক নদী, যার ওপর ১৯৩৬ সালে নির্মিত ঐতিহ্যবাহী কিন ব্রিজ অবস্থিত।",
+    "special_features": [
+      "Flows beneath the historic 1936 steel Keane Bridge (কিন ব্রিজ) in Sylhet",
+      "Nourishes the biodiversity of the northern haor wetland basin",
+      "Receives clear mountain streams from Jaflong and the Meghalaya plateau"
+    ]
+  },
+  {
+    "slug": "teesta",
+    "name_en": "Teesta",
+    "name_bn": "তিস্তা",
+    "origin": "Pauhunri Glacier (Sikkim, Himalayas), enters at Nilphamari",
+    "outflow": "Jamuna River at Chilmari (Kurigram)",
+    "length_km": 115,
+    "divisions": [
+      "rangpur"
+    ],
+    "districts": [
+      "nilphamari",
+      "lalmonirhat",
+      "rangpur",
+      "kurigram",
+      "gaibandha"
+    ],
+    "tributaries": [
+      "Rangpo",
+      "Lachung"
+    ],
+    "distributaries": [
+      "Ghaghot",
+      "Manas"
+    ],
+    "is_transboundary": true,
+    "description_en": "The vital agricultural lifeline of northern Bangladesh, regulated by the Teesta Barrage at Dalia.",
+    "description_bn": "উত্তরাঞ্চলের কৃষি ও সেচ ব্যবস্থার প্রধান প্রাণরেখা, যার ওপর ডালিয়ায় তিস্তা ব্যারেজ প্রকল্প নির্মিত।",
+    "special_features": [
+      "Site of the Teesta Barrage at Dalia, the largest canal irrigation project in Bangladesh",
+      "Crucial agricultural lifeline for five northern districts in Rangpur division",
+      "Rapid seasonal transition from torrential summer monsoon flow to braided winter channels"
+    ]
+  },
+  {
+    "slug": "titas",
+    "name_en": "Titas",
+    "name_bn": "তিতাস",
+    "origin": "Offtake of Meghna River in Brahmanbaria",
+    "outflow": "Re-enters Meghna River",
+    "length_km": 98,
+    "divisions": [
+      "chattogram"
+    ],
+    "districts": [
+      "brahmanbaria"
+    ],
+    "tributaries": [
+      "Haora"
+    ],
+    "distributaries": [],
+    "is_transboundary": false,
+    "description_en": "Immortalized in Adwaita Mallabarman novel 'A River Called Titas' (তিতাস একটি নদীর নাম), cradle of deltaic Malo fisherman culture.",
+    "description_bn": "অদ্বৈত মল্লবর্মণের কালজয়ী উপন্যাস \"তিতাস একটি নদীর নাম\"-এ অমর হয়ে থাকা ব্রাহ্মণবাড়িয়ার ঐতিহাসিক নদী।",
+    "special_features": [
+      "Immortalized in classic Bengali literature and Ritwik Ghatak film",
+      "Forms a unique circular loop flowing through Brahmanbaria back into the Meghna",
+      "Major natural gas reservoirs discovered and extracted along its basin"
+    ]
+  },
+  {
+    "slug": "turag",
+    "name_en": "Turag",
+    "name_bn": "তুরাগ",
+    "origin": "Offtake of Bangshi River in Gazipur",
+    "outflow": "Buriganga River at Mirpur (Dhaka)",
+    "length_km": 63,
+    "divisions": [
+      "dhaka"
+    ],
+    "districts": [
+      "gazipur",
+      "dhaka"
+    ],
+    "tributaries": [
+      "Salda"
+    ],
+    "distributaries": [],
+    "is_transboundary": false,
+    "description_en": "Northern aquatic border of Dhaka city, venue of the world-renowned annual Bishwa Ijtema at Tongi.",
+    "description_bn": "ঢাকার উত্তরাঞ্চলের নদী, যার তীরে টঙ্গীতে বিশ্বের দ্বিতীয় বৃহত্তম মুসলিম সমাবেশ বিশ্ব ইজতেমা অনুষ্ঠিত হয়।",
+    "special_features": [
+      "Hosts the annual Bishwa Ijtema at Tongi, the second largest Muslim congregation in the world",
+      "Defines the northern boundary of the Dhaka metropolitan area",
+      "Historical connectivity linking Gazipur agro-industrial belt to Sadarghat"
+    ]
+  }
+]

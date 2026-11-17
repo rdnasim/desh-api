@@ -139,6 +139,11 @@ export const OPENAPI_CONFIG = {
         'UNESCO World Heritage sites, archaeological monuments, eco-tourism reserves, and national landmarks (Department of Archaeology & Bangladesh Parjatan Corporation).',
     },
     {
+      name: 'Rivers',
+      description:
+        'Major river networks of Bangladesh (BWDB & Banglapedia): origins, outflows, traversed districts, lengths, and transboundary relations.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

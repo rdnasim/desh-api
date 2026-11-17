@@ -176,6 +176,11 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.length === 3 ? true : `expected 3 UNESCO sites, got ${b.data?.length}`),
   },
   {
+    name: '13n rivers',
+    path: '/v1/rivers?q=Padma',
+    check: (_, b) => (b.data?.length >= 1 && b.data[0]?.slug === 'padma' ? true : 'expected Padma river'),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

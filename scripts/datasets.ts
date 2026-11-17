@@ -44,6 +44,7 @@ import {
   RailwayStationSchema,
   RailwayTrainSchema,
 } from '../src/modules/railway/schemas';
+import { RiverSchema } from '../src/modules/rivers/schemas';
 import { routingCheckDigitOk } from '../src/modules/validate/routing';
 import { VehicleAreaAliasSchema } from '../src/modules/validate/schemas';
 import {
@@ -88,6 +89,13 @@ export const datasets: DatasetSpec[] = [
     schema: HeritageSiteSchema,
     sortKey: (r) => r.slug,
     type: { name: 'HeritageSite', from: '../modules/heritage/schemas' },
+  },
+  {
+    key: 'rivers.rivers',
+    file: 'rivers/rivers.json',
+    schema: RiverSchema,
+    sortKey: (r) => r.slug,
+    type: { name: 'River', from: '../modules/rivers/schemas' },
   },
   {
     key: 'geo.divisions',
@@ -405,6 +413,18 @@ export function derive(data: Record<string, any[]>): {
   fk('airports.airports', 'district', 'geo.districts');
   fk('heritage.sites', 'division', 'geo.divisions');
   fk('heritage.sites', 'district', 'geo.districts');
+  const fkArray = (key: string, field: string, target: string) => {
+    const known = slugs(target);
+    for (const r of data[key] ?? []) {
+      for (const val of r[field] ?? []) {
+        if (!known.has(val)) {
+          errors.push(`${key}: ${r.slug} has unknown ${field} element '${val}'`);
+        }
+      }
+    }
+  };
+  fkArray('rivers.rivers', 'divisions', 'geo.divisions');
+  fkArray('rivers.rivers', 'districts', 'geo.districts');
   fk('geo.constituencies', 'division', 'geo.divisions');
   fk('geo.constituencies', 'district', 'geo.districts');
   fk('prayer.district-offsets', 'division', 'geo.divisions');

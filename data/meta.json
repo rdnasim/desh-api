@@ -450,6 +450,19 @@
     ]
   },
   {
+    "dataset": "rivers.rivers",
+    "source": "Bangladesh Water Development Board (BWDB - bwdb.gov.bd / hydrologydataportal.bwdb.gov.bd) and Banglapedia",
+    "source_url": "https://www.bwdb.gov.bd",
+    "licence": "Public government information; compilation CC BY 4.0",
+    "retrieved": "2026-11-17",
+    "last_updated": "2026-11-17",
+    "credits": [
+      "Bangladesh Water Development Board (BWDB)",
+      "Ministry of Water Resources, Bangladesh",
+      "Banglapedia (National Encyclopedia of Bangladesh)"
+    ]
+  },
+  {
     "dataset": "validate.vehicle-area-aliases",
     "source": "Abbreviations seen on BRTA registration plates (e.g. 'চট্ট মেট্রো' for Chattogram Metro); full area names come from geo.districts",
     "licence": "CC BY 4.0",

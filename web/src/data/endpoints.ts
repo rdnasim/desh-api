@@ -23,6 +23,7 @@ export const API_MODULES = [
   'Bangladesh Railway',
   'Airports & Aviation',
   'Heritage & Tourism',
+  'Rivers & Waterways',
   'Developer',
 ] as const;
 
@@ -906,6 +907,61 @@ export const ENDPOINTS: ApiEndpoint[] = [
         type: 'string',
         default: 'somapura-mahavihara',
         description: 'Site slug or UNESCO ID (e.g. somapura-mahavihara, 322, sundarbans)',
+      },
+    ],
+  },
+
+  // Rivers & Waterways
+  {
+    id: 'rivers-list',
+    module: 'Rivers & Waterways',
+    name: 'Major Rivers of Bangladesh (নদীমাতৃক বাংলাদেশ)',
+    nameBn: 'বাংলাদেশের প্রধান নদ-নদীসমূহ',
+    method: 'GET',
+    path: '/v1/rivers',
+    defaultPathWithParams: '/v1/rivers?division=dhaka',
+    description:
+      'Directory of principal rivers, origins, outflows, traversed districts, lengths, and transboundary relations verified against Bangladesh Water Development Board (BWDB).',
+    params: [
+      {
+        name: 'division',
+        type: 'string',
+        default: 'dhaka',
+        description: 'Division slug (e.g. dhaka, chattogram, rajshahi, sylhet)',
+      },
+      {
+        name: 'district',
+        type: 'string',
+        description: 'District slug (e.g. kurigram, chandpur, bogura)',
+      },
+      {
+        name: 'is_transboundary',
+        type: 'string',
+        description: 'Filter by transboundary status: "true" or "false"',
+      },
+      {
+        name: 'q',
+        type: 'string',
+        description: 'Search by river name, origin, outflow, or description',
+      },
+    ],
+  },
+  {
+    id: 'rivers-lookup',
+    module: 'Rivers & Waterways',
+    name: 'River Details by Slug',
+    nameBn: 'স্লাগ অনুযায়ী নদীর বিস্তারিত তথ্য',
+    method: 'GET',
+    path: '/v1/rivers/:slug',
+    defaultPathWithParams: '/v1/rivers/padma',
+    description:
+      'Look up comprehensive river details including origins, outflows, traversed districts, tributaries, and special features by slug (e.g. padma, meghna, jamuna, halda, karnaphuli).',
+    params: [
+      {
+        name: 'slug',
+        type: 'string',
+        default: 'padma',
+        description: 'River slug (e.g. padma, meghna, jamuna, halda, karnaphuli)',
       },
     ],
   },
