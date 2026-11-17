@@ -1,0 +1,27 @@
+name: Data Freshness & Upstream Health
+
+# Daily monitor for live scrapers (BAJUS, TCB) and dataset freshness.
+# Runs every day at 04:00 UTC (10:00 AM BST) after morning rates are published.
+
+on:
+  schedule:
+    # 04:00 UTC = 10:00 AM Bangladesh Standard Time (UTC+6)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  check-freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build generated data
+        run: pnpm data:build
+      - name: Verify live data upstreams & static datasets
+        run: pnpm check:live

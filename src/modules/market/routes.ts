@@ -5,8 +5,8 @@ import fuel from '../../generated/market.fuel';
 import { cachePublic } from '../../lib/cache';
 import { ErrorSchema, envelope, metaFor, ok, staticMeta } from '../../lib/envelope';
 import { ApiError, validationHook } from '../../lib/errors';
-import { lastGood } from '../../lib/last-good';
 import { normalizeForSearch } from '../../lib/normalize';
+import { recall, remember } from './last-good';
 import {
   CommodityCategorySchema,
   FuelMonthSchema,
@@ -16,7 +16,6 @@ import {
 import { fetchTcb, type ParsedMarket, TCB_LIST_URL } from './tcb';
 
 const SOURCE = 'Trading Corporation of Bangladesh (TCB), daily retail prices in Dhaka';
-const store = lastGood<ParsedMarket>('market:tcb:last-good', (m) => m.date);
 
 const responses = <T extends z.ZodTypeAny>(schema: T, description: string, extra = {}) => ({
   200: { description, content: { 'application/json': { schema: envelope(schema) } } },
@@ -40,7 +39,7 @@ async function marketPrices(c: Context<AppEnv>): Promise<MarketPrices> {
   const kv = c.env?.LIVE_DATA;
   try {
     const live = await fetchTcb();
-    const saving = store.remember(kv, live);
+    const saving = remember(kv, live);
     try {
       c.executionCtx.waitUntil(saving);
     } catch {
@@ -49,7 +48,7 @@ async function marketPrices(c: Context<AppEnv>): Promise<MarketPrices> {
     return { ...live, fetched_at: new Date().toISOString(), freshness: 'live' };
   } catch (error) {
     console.error(JSON.stringify({ level: 'error', name: 'tcb', message: String(error) }));
-    const saved = await store.recall(kv);
+    const saved = await recall(kv);
     if (saved) return { ...saved.data, fetched_at: saved.fetched_at, freshness: 'last_known' };
     throw new ApiError(
       'upstream_unavailable',

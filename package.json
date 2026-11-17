@@ -23,6 +23,7 @@
     "cf-typegen": "wrangler types src/worker-configuration.d.ts",
     "data:docs": "tsx scripts/data-sources-doc.ts",
     "smoke": "tsx scripts/smoke.ts",
+    "check:live": "tsx scripts/check-live-sources.ts",
     "cf:api-host-rule": "tsx scripts/cloudflare-api-host-rule.ts",
     "web:dev": "npm run dev --prefix web",
     "web:build": "npm run build --prefix web"

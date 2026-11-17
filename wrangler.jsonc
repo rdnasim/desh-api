@@ -7,6 +7,11 @@
   // The workers.dev address stays enabled so older links keep working.
   "routes": [{ "pattern": "deshapi.riadul.com", "custom_domain": true }],
   "workers_dev": true,
+  // Scheduled warmup of live datasets (BAJUS gold and TCB daily retail prices)
+  // Runs at 03:00 and 06:00 UTC (09:00 and 12:00 BST).
+  "triggers": {
+    "crons": ["0 3,6 * * *"]
+  },
   "observability": {
     "enabled": true,
     // Invocation logs record full request URLs, which can contain NID/phone numbers.
