@@ -37,6 +37,7 @@ import { CommoditySchema, FuelMonthSchema } from '../src/modules/market/schemas'
 import { MetroStationSchema } from '../src/modules/metro/schemas';
 import { MfsProviderSchema } from '../src/modules/mfs/schemas';
 import { MockNameSchema } from '../src/modules/mock/schemas';
+import { BanglaSuffixSchema, StopwordSchema } from '../src/modules/nlp/schemas';
 import { OperatorPrefixSchema } from '../src/modules/phone/schemas';
 import { LandPortSchema } from '../src/modules/ports/schemas';
 import { DistrictOffsetSchema } from '../src/modules/prayer/schemas';
@@ -104,6 +105,20 @@ export const datasets: DatasetSpec[] = [
     schema: LandPortSchema,
     sortKey: (r) => r.slug,
     type: { name: 'LandPort', from: '../modules/ports/schemas' },
+  },
+  {
+    key: 'nlp.stopwords',
+    file: 'nlp/stopwords.json',
+    schema: StopwordSchema,
+    sortKey: (r) => r.word,
+    type: { name: 'Stopword', from: '../modules/nlp/schemas' },
+  },
+  {
+    key: 'nlp.suffixes',
+    file: 'nlp/suffixes.json',
+    schema: BanglaSuffixSchema,
+    sortKey: (r) => r.suffix,
+    type: { name: 'BanglaSuffix', from: '../modules/nlp/schemas' },
   },
   {
     key: 'geo.divisions',

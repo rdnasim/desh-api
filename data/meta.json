@@ -530,5 +530,29 @@
       "Bangla Academy",
       "desh-api contributors"
     ]
+  },
+  {
+    "dataset": "nlp.stopwords",
+    "source": "Bangla Academy grammatical lexicons, standard Bengali computational linguistics corpora, and desh-api curation",
+    "source_url": "https://banglaacademy.gov.bd",
+    "licence": "Public linguistic information; compilation CC BY 4.0",
+    "retrieved": "2026-11-17",
+    "last_updated": "2026-11-17",
+    "credits": [
+      "Bangla Academy",
+      "desh-api contributors"
+    ]
+  },
+  {
+    "dataset": "nlp.suffixes",
+    "source": "Bangla Academy modern Bengali grammar rules for inflectional case markers, plurals, and verbal conjugations",
+    "source_url": "https://banglaacademy.gov.bd",
+    "licence": "Public linguistic information; compilation CC BY 4.0",
+    "retrieved": "2026-11-17",
+    "last_updated": "2026-11-17",
+    "credits": [
+      "Bangla Academy",
+      "desh-api contributors"
+    ]
   }
 ]

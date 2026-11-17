@@ -149,6 +149,11 @@ export const OPENAPI_CONFIG = {
         'Statutory land ports and border customs stations across Bangladesh (Bangladesh Land Port Authority - BLPA).',
     },
     {
+      name: 'Bangla NLP',
+      description:
+        'Natural Language Processing tools for Bengali: canonical stopwords, Unicode text normalizer, sentence and word tokenization, and rule-based affix-stripping stemmer.',
+    },
+    {
       name: 'Developer',
       description:
         'Developer authentication, API key validation, daily request quotas, and rate limit inspection.',

@@ -29,6 +29,7 @@ import { marketRoutes } from './modules/market/routes';
 import { metroRoutes } from './modules/metro/routes';
 import { mfsRoutes } from './modules/mfs/routes';
 import { mockRoutes } from './modules/mock/routes';
+import { nlpRoutes } from './modules/nlp/routes';
 import { phoneRoutes } from './modules/phone/routes';
 import { portRoutes } from './modules/ports/routes';
 import { prayerRoutes } from './modules/prayer/routes';
@@ -183,6 +184,12 @@ const MODULES = [
     path: '/v1/ports/land',
   },
   {
+    name: 'Bangla NLP',
+    description:
+      'Bengali natural language processing: canonical stopwords, Unicode normalizer, sentence/word tokenizer, and rule-based stemmer',
+    path: '/v1/nlp/stopwords',
+  },
+  {
     name: 'Developer',
     description: 'Developer rate limits, API keys, and daily request quota inspection',
     path: '/v1/developer/quota',
@@ -256,6 +263,7 @@ app.route('/v1', airportRoutes);
 app.route('/v1', heritageRoutes);
 app.route('/v1', riverRoutes);
 app.route('/v1', portRoutes);
+app.route('/v1', nlpRoutes);
 app.route('/v1', constituencyRoutes);
 app.route('/v1', developerRoutes);
 

@@ -267,7 +267,7 @@ footer p { margin: 0 0 6px; }
     <h1>Bangladesh reference data, Bangla tools and calculators, as a free API.</h1>
     <div class="disc-big" aria-hidden="true"></div>
     <p class="bn" lang="bn">বাংলাদেশের তথ্য, বাংলা ভাষার টুলস ও ক্যালকুলেটর — ফ্রি, ওপেন সোর্স API।</p>
-    <p class="lede">Divisions to unions and postcodes, bank branches and routing numbers, UGC universities, public holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat, today's gold and market prices, MFS tariffs, Dhaka Metro Rail, emergency healthcare, CAAB airports, UNESCO heritage sites, river waterways, and BLPA land ports. English and Bangla names, and the source of every fact in every response. No sign-up, no API key.</p>
+    <p class="lede">Divisions to unions and postcodes, bank branches and routing numbers, UGC universities, public holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat, today's gold and market prices, MFS tariffs, Dhaka Metro Rail, emergency healthcare, CAAB airports, UNESCO heritage sites, river waterways, BLPA land ports, and Bangla NLP tools. English and Bangla names, and the source of every fact in every response. No sign-up, no API key.</p>
     <div class="base">
       <div class="url"><span id="base-url">https://deshapi.riadul.com</span><button class="copy" type="button" data-copy-from="base-url">Copy</button></div>
       <a class="btn primary" href="https://portal.deshapi.riadul.com" target="_blank" rel="noreferrer">Open Web Portal ↗</a>
@@ -279,7 +279,7 @@ footer p { margin: 0 0 6px; }
 
 <div class="wrap counts" aria-label="What the data covers">
   <div class="grid">
-    <div class="count"><span class="n">27</span><span class="l">modules</span></div>
+    <div class="count"><span class="n">28</span><span class="l">modules</span></div>
     <div class="count"><span class="n">4,540</span><span class="l">unions</span></div>
     <div class="count"><span class="n">1,349</span><span class="l">post offices</span></div>
     <div class="count"><span class="n">11,533</span><span class="l">bank branches</span></div>

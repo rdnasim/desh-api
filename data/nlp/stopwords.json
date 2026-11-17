@@ -1,0 +1,2202 @@
+[
+  {
+    "word": "অতএব",
+    "category": "conjunction"
+  },
+  {
+    "word": "অতি",
+    "category": "adverb"
+  },
+  {
+    "word": "অতিরিক্ত",
+    "category": "quantifier"
+  },
+  {
+    "word": "অত্যন্ত",
+    "category": "adverb"
+  },
+  {
+    "word": "অথচ",
+    "category": "conjunction"
+  },
+  {
+    "word": "অথবা",
+    "category": "conjunction"
+  },
+  {
+    "word": "অধিক",
+    "category": "quantifier"
+  },
+  {
+    "word": "অনুযায়ী",
+    "category": "postposition"
+  },
+  {
+    "word": "অনুসারে",
+    "category": "postposition"
+  },
+  {
+    "word": "অনেক",
+    "category": "quantifier"
+  },
+  {
+    "word": "অনেকটাই",
+    "category": "quantifier"
+  },
+  {
+    "word": "অন্য",
+    "category": "determiner"
+  },
+  {
+    "word": "অন্যকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "অন্যথায়",
+    "category": "conjunction"
+  },
+  {
+    "word": "অন্যান্য",
+    "category": "determiner"
+  },
+  {
+    "word": "অন্যের",
+    "category": "pronoun"
+  },
+  {
+    "word": "অপর",
+    "category": "determiner"
+  },
+  {
+    "word": "অপরদিকে",
+    "category": "conjunction"
+  },
+  {
+    "word": "অপেক্ষা",
+    "category": "postposition"
+  },
+  {
+    "word": "অবশেষে",
+    "category": "adverb"
+  },
+  {
+    "word": "অবশ্যই",
+    "category": "adverb"
+  },
+  {
+    "word": "অবিলম্বে",
+    "category": "adverb"
+  },
+  {
+    "word": "অল্প",
+    "category": "quantifier"
+  },
+  {
+    "word": "অসীম",
+    "category": "quantifier"
+  },
+  {
+    "word": "আগামীকাল",
+    "category": "adverb"
+  },
+  {
+    "word": "আগে",
+    "category": "adverb"
+  },
+  {
+    "word": "আছি",
+    "category": "verb"
+  },
+  {
+    "word": "আছে",
+    "category": "verb"
+  },
+  {
+    "word": "আছেন",
+    "category": "verb"
+  },
+  {
+    "word": "আছো",
+    "category": "verb"
+  },
+  {
+    "word": "আজ",
+    "category": "adverb"
+  },
+  {
+    "word": "আজকাল",
+    "category": "adverb"
+  },
+  {
+    "word": "আজকে",
+    "category": "adverb"
+  },
+  {
+    "word": "আপন",
+    "category": "pronoun"
+  },
+  {
+    "word": "আপনা",
+    "category": "pronoun"
+  },
+  {
+    "word": "আপনাকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "আপনাদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "আপনাদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "আপনার",
+    "category": "pronoun"
+  },
+  {
+    "word": "আপনারা",
+    "category": "pronoun"
+  },
+  {
+    "word": "আপনি",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমাকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমাদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমাদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমায়",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমার",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমারে",
+    "category": "pronoun"
+  },
+  {
+    "word": "আমি",
+    "category": "pronoun"
+  },
+  {
+    "word": "আর",
+    "category": "conjunction"
+  },
+  {
+    "word": "আসল",
+    "category": "adverb"
+  },
+  {
+    "word": "আসলে",
+    "category": "adverb"
+  },
+  {
+    "word": "আস্তে",
+    "category": "adverb"
+  },
+  {
+    "word": "ই",
+    "category": "particle"
+  },
+  {
+    "word": "ইতিপূর্বে",
+    "category": "adverb"
+  },
+  {
+    "word": "ইতিমধ্যে",
+    "category": "adverb"
+  },
+  {
+    "word": "ইনি",
+    "category": "pronoun"
+  },
+  {
+    "word": "উনি",
+    "category": "pronoun"
+  },
+  {
+    "word": "উপর",
+    "category": "postposition"
+  },
+  {
+    "word": "উপরন্তু",
+    "category": "postposition"
+  },
+  {
+    "word": "উপরে",
+    "category": "postposition"
+  },
+  {
+    "word": "এ",
+    "category": "pronoun"
+  },
+  {
+    "word": "এঁকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "এঁদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "এঁদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "এঁর",
+    "category": "pronoun"
+  },
+  {
+    "word": "এঁরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "এই",
+    "category": "determiner"
+  },
+  {
+    "word": "একটু",
+    "category": "quantifier"
+  },
+  {
+    "word": "একান্ত",
+    "category": "adverb"
+  },
+  {
+    "word": "একান্তই",
+    "category": "adverb"
+  },
+  {
+    "word": "একে",
+    "category": "pronoun"
+  },
+  {
+    "word": "একেক",
+    "category": "determiner"
+  },
+  {
+    "word": "একেবারে",
+    "category": "adverb"
+  },
+  {
+    "word": "এখন",
+    "category": "adverb"
+  },
+  {
+    "word": "এখনই",
+    "category": "adverb"
+  },
+  {
+    "word": "এখনো",
+    "category": "adverb"
+  },
+  {
+    "word": "এখানে",
+    "category": "adverb"
+  },
+  {
+    "word": "এগুলি",
+    "category": "determiner"
+  },
+  {
+    "word": "এগুলো",
+    "category": "determiner"
+  },
+  {
+    "word": "এটা",
+    "category": "determiner"
+  },
+  {
+    "word": "এটি",
+    "category": "determiner"
+  },
+  {
+    "word": "এথায়",
+    "category": "adverb"
+  },
+  {
+    "word": "এদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "এদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "এবং",
+    "category": "conjunction"
+  },
+  {
+    "word": "এমন",
+    "category": "determiner"
+  },
+  {
+    "word": "এমনকি",
+    "category": "determiner"
+  },
+  {
+    "word": "এর",
+    "category": "pronoun"
+  },
+  {
+    "word": "এরপর",
+    "category": "adverb"
+  },
+  {
+    "word": "এরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "এসব",
+    "category": "determiner"
+  },
+  {
+    "word": "ঐ",
+    "category": "determiner"
+  },
+  {
+    "word": "ও",
+    "category": "conjunction"
+  },
+  {
+    "word": "ওঁকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওঁদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওঁদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওঁর",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওঁরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওই",
+    "category": "determiner"
+  },
+  {
+    "word": "ওকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওখানে",
+    "category": "adverb"
+  },
+  {
+    "word": "ওগুলি",
+    "category": "determiner"
+  },
+  {
+    "word": "ওগুলো",
+    "category": "determiner"
+  },
+  {
+    "word": "ওটা",
+    "category": "determiner"
+  },
+  {
+    "word": "ওটি",
+    "category": "determiner"
+  },
+  {
+    "word": "ওদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওর",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "ওসব",
+    "category": "determiner"
+  },
+  {
+    "word": "কখন",
+    "category": "interrogative"
+  },
+  {
+    "word": "কখনও",
+    "category": "adverb"
+  },
+  {
+    "word": "কখনো",
+    "category": "adverb"
+  },
+  {
+    "word": "কত",
+    "category": "quantifier"
+  },
+  {
+    "word": "কতো",
+    "category": "quantifier"
+  },
+  {
+    "word": "কবে",
+    "category": "interrogative"
+  },
+  {
+    "word": "কম",
+    "category": "quantifier"
+  },
+  {
+    "word": "কয়েক",
+    "category": "quantifier"
+  },
+  {
+    "word": "কয়েকজন",
+    "category": "quantifier"
+  },
+  {
+    "word": "কয়েকটি",
+    "category": "quantifier"
+  },
+  {
+    "word": "করছ",
+    "category": "verb"
+  },
+  {
+    "word": "করছি",
+    "category": "verb"
+  },
+  {
+    "word": "করছিল",
+    "category": "verb"
+  },
+  {
+    "word": "করছিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "করছে",
+    "category": "verb"
+  },
+  {
+    "word": "করছেন",
+    "category": "verb"
+  },
+  {
+    "word": "করত",
+    "category": "verb"
+  },
+  {
+    "word": "করতাম",
+    "category": "verb"
+  },
+  {
+    "word": "করতে",
+    "category": "verb"
+  },
+  {
+    "word": "করতেন",
+    "category": "verb"
+  },
+  {
+    "word": "করতো",
+    "category": "verb"
+  },
+  {
+    "word": "করব",
+    "category": "verb"
+  },
+  {
+    "word": "করবে",
+    "category": "verb"
+  },
+  {
+    "word": "করবেন",
+    "category": "verb"
+  },
+  {
+    "word": "করবো",
+    "category": "verb"
+  },
+  {
+    "word": "করল",
+    "category": "verb"
+  },
+  {
+    "word": "করলাম",
+    "category": "verb"
+  },
+  {
+    "word": "করলে",
+    "category": "verb"
+  },
+  {
+    "word": "করলেও",
+    "category": "verb"
+  },
+  {
+    "word": "করলেন",
+    "category": "verb"
+  },
+  {
+    "word": "করলো",
+    "category": "verb"
+  },
+  {
+    "word": "করা",
+    "category": "verb"
+  },
+  {
+    "word": "করার",
+    "category": "verb"
+  },
+  {
+    "word": "করি",
+    "category": "verb"
+  },
+  {
+    "word": "করিতে",
+    "category": "verb"
+  },
+  {
+    "word": "করে",
+    "category": "verb"
+  },
+  {
+    "word": "করেছ",
+    "category": "verb"
+  },
+  {
+    "word": "করেছি",
+    "category": "verb"
+  },
+  {
+    "word": "করেছিল",
+    "category": "verb"
+  },
+  {
+    "word": "করেছিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "করেছে",
+    "category": "verb"
+  },
+  {
+    "word": "করেছেন",
+    "category": "verb"
+  },
+  {
+    "word": "করেন",
+    "category": "verb"
+  },
+  {
+    "word": "করো",
+    "category": "verb"
+  },
+  {
+    "word": "কর্তৃক",
+    "category": "postposition"
+  },
+  {
+    "word": "কাউকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "কাকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "কাছাকাছি",
+    "category": "postposition"
+  },
+  {
+    "word": "কাছে",
+    "category": "postposition"
+  },
+  {
+    "word": "কাজেই",
+    "category": "conjunction"
+  },
+  {
+    "word": "কাদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "কাদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "কার",
+    "category": "pronoun"
+  },
+  {
+    "word": "কারও",
+    "category": "pronoun"
+  },
+  {
+    "word": "কারণে",
+    "category": "postposition"
+  },
+  {
+    "word": "কারা",
+    "category": "pronoun"
+  },
+  {
+    "word": "কারো",
+    "category": "pronoun"
+  },
+  {
+    "word": "কারোর",
+    "category": "pronoun"
+  },
+  {
+    "word": "কাল",
+    "category": "adverb"
+  },
+  {
+    "word": "কালে",
+    "category": "adverb"
+  },
+  {
+    "word": "কি",
+    "category": "interrogative"
+  },
+  {
+    "word": "কিংবা",
+    "category": "conjunction"
+  },
+  {
+    "word": "কিছু",
+    "category": "quantifier"
+  },
+  {
+    "word": "কিছুই",
+    "category": "quantifier"
+  },
+  {
+    "word": "কিন্তু",
+    "category": "conjunction"
+  },
+  {
+    "word": "কিভাবে",
+    "category": "interrogative"
+  },
+  {
+    "word": "কিসে",
+    "category": "interrogative"
+  },
+  {
+    "word": "কী",
+    "category": "interrogative"
+  },
+  {
+    "word": "কীসে",
+    "category": "interrogative"
+  },
+  {
+    "word": "কে",
+    "category": "pronoun"
+  },
+  {
+    "word": "কেন",
+    "category": "interrogative"
+  },
+  {
+    "word": "কেবল",
+    "category": "adverb"
+  },
+  {
+    "word": "কেবলমাত্র",
+    "category": "adverb"
+  },
+  {
+    "word": "কেমন",
+    "category": "interrogative"
+  },
+  {
+    "word": "কেমনে",
+    "category": "interrogative"
+  },
+  {
+    "word": "কোথা",
+    "category": "interrogative"
+  },
+  {
+    "word": "কোথাও",
+    "category": "interrogative"
+  },
+  {
+    "word": "কোথাটিকে",
+    "category": "interrogative"
+  },
+  {
+    "word": "কোথায়",
+    "category": "interrogative"
+  },
+  {
+    "word": "কোন",
+    "category": "determiner"
+  },
+  {
+    "word": "কোনও",
+    "category": "determiner"
+  },
+  {
+    "word": "কোনো",
+    "category": "determiner"
+  },
+  {
+    "word": "ক্রমশ",
+    "category": "adverb"
+  },
+  {
+    "word": "খানা",
+    "category": "classifier"
+  },
+  {
+    "word": "খানি",
+    "category": "classifier"
+  },
+  {
+    "word": "খুব",
+    "category": "adverb"
+  },
+  {
+    "word": "গতকাল",
+    "category": "adverb"
+  },
+  {
+    "word": "গা",
+    "category": "particle"
+  },
+  {
+    "word": "গাছ",
+    "category": "classifier"
+  },
+  {
+    "word": "গাছা",
+    "category": "classifier"
+  },
+  {
+    "word": "গাছি",
+    "category": "classifier"
+  },
+  {
+    "word": "গিয়ে",
+    "category": "verb"
+  },
+  {
+    "word": "গিয়েছিল",
+    "category": "verb"
+  },
+  {
+    "word": "গিয়েছিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "গিয়েছে",
+    "category": "verb"
+  },
+  {
+    "word": "গিয়েছেন",
+    "category": "verb"
+  },
+  {
+    "word": "গেছে",
+    "category": "verb"
+  },
+  {
+    "word": "গেছেন",
+    "category": "verb"
+  },
+  {
+    "word": "গেল",
+    "category": "verb"
+  },
+  {
+    "word": "গেলাম",
+    "category": "verb"
+  },
+  {
+    "word": "গেলে",
+    "category": "verb"
+  },
+  {
+    "word": "গেলেও",
+    "category": "verb"
+  },
+  {
+    "word": "গেলেন",
+    "category": "verb"
+  },
+  {
+    "word": "গেলো",
+    "category": "verb"
+  },
+  {
+    "word": "গো",
+    "category": "particle"
+  },
+  {
+    "word": "চাইতে",
+    "category": "postposition"
+  },
+  {
+    "word": "চেয়ে",
+    "category": "postposition"
+  },
+  {
+    "word": "ছাড়া",
+    "category": "postposition"
+  },
+  {
+    "word": "ছিল",
+    "category": "verb"
+  },
+  {
+    "word": "ছিলাম",
+    "category": "verb"
+  },
+  {
+    "word": "ছিলে",
+    "category": "verb"
+  },
+  {
+    "word": "ছিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "জন",
+    "category": "classifier"
+  },
+  {
+    "word": "জনার",
+    "category": "classifier"
+  },
+  {
+    "word": "জন্য",
+    "category": "postposition"
+  },
+  {
+    "word": "জন্যে",
+    "category": "postposition"
+  },
+  {
+    "word": "টা",
+    "category": "classifier"
+  },
+  {
+    "word": "টি",
+    "category": "classifier"
+  },
+  {
+    "word": "টুক",
+    "category": "particle"
+  },
+  {
+    "word": "টুকরো",
+    "category": "quantifier"
+  },
+  {
+    "word": "টুকু",
+    "category": "particle"
+  },
+  {
+    "word": "টুকুন",
+    "category": "particle"
+  },
+  {
+    "word": "তখন",
+    "category": "adverb"
+  },
+  {
+    "word": "তখনই",
+    "category": "adverb"
+  },
+  {
+    "word": "তবে",
+    "category": "conjunction"
+  },
+  {
+    "word": "তাঁকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তাঁদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "তাঁদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তাঁর",
+    "category": "pronoun"
+  },
+  {
+    "word": "তাঁরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "তাই",
+    "category": "conjunction"
+  },
+  {
+    "word": "তাকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তাদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "তাদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তায়",
+    "category": "pronoun"
+  },
+  {
+    "word": "তার",
+    "category": "pronoun"
+  },
+  {
+    "word": "তারপর",
+    "category": "adverb"
+  },
+  {
+    "word": "তারা",
+    "category": "pronoun"
+  },
+  {
+    "word": "তিনি",
+    "category": "pronoun"
+  },
+  {
+    "word": "তুই",
+    "category": "pronoun"
+  },
+  {
+    "word": "তুমি",
+    "category": "pronoun"
+  },
+  {
+    "word": "তৃতীয়ত",
+    "category": "adverb"
+  },
+  {
+    "word": "তেমন",
+    "category": "determiner"
+  },
+  {
+    "word": "তো",
+    "category": "particle"
+  },
+  {
+    "word": "তোকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোমরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোমাকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোমাদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোমাদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোমায়",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোমার",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোর",
+    "category": "pronoun"
+  },
+  {
+    "word": "তোরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "থাকত",
+    "category": "verb"
+  },
+  {
+    "word": "থাকতেন",
+    "category": "verb"
+  },
+  {
+    "word": "থাকতো",
+    "category": "verb"
+  },
+  {
+    "word": "থাকবে",
+    "category": "verb"
+  },
+  {
+    "word": "থাকবেন",
+    "category": "verb"
+  },
+  {
+    "word": "থাকলে",
+    "category": "verb"
+  },
+  {
+    "word": "থাকলেও",
+    "category": "verb"
+  },
+  {
+    "word": "থাকা",
+    "category": "verb"
+  },
+  {
+    "word": "থাকায়",
+    "category": "verb"
+  },
+  {
+    "word": "থাকি",
+    "category": "verb"
+  },
+  {
+    "word": "থাকে",
+    "category": "verb"
+  },
+  {
+    "word": "থাকেন",
+    "category": "verb"
+  },
+  {
+    "word": "থাকো",
+    "category": "verb"
+  },
+  {
+    "word": "থেকে",
+    "category": "postposition"
+  },
+  {
+    "word": "দাও",
+    "category": "verb"
+  },
+  {
+    "word": "দিই",
+    "category": "verb"
+  },
+  {
+    "word": "দিতে",
+    "category": "verb"
+  },
+  {
+    "word": "দিয়া",
+    "category": "postposition"
+  },
+  {
+    "word": "দিয়ে",
+    "category": "postposition"
+  },
+  {
+    "word": "দিয়েছিল",
+    "category": "verb"
+  },
+  {
+    "word": "দিয়েছিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "দিয়েছে",
+    "category": "verb"
+  },
+  {
+    "word": "দিয়েছেন",
+    "category": "verb"
+  },
+  {
+    "word": "দিল",
+    "category": "verb"
+  },
+  {
+    "word": "দিলাম",
+    "category": "verb"
+  },
+  {
+    "word": "দিলে",
+    "category": "verb"
+  },
+  {
+    "word": "দিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "দিলো",
+    "category": "verb"
+  },
+  {
+    "word": "দেওয়া",
+    "category": "verb"
+  },
+  {
+    "word": "দেওয়ার",
+    "category": "verb"
+  },
+  {
+    "word": "দেন",
+    "category": "verb"
+  },
+  {
+    "word": "দেবে",
+    "category": "verb"
+  },
+  {
+    "word": "দেবেন",
+    "category": "verb"
+  },
+  {
+    "word": "দেয়",
+    "category": "verb"
+  },
+  {
+    "word": "দ্বারা",
+    "category": "postposition"
+  },
+  {
+    "word": "দ্বিতীয়ত",
+    "category": "adverb"
+  },
+  {
+    "word": "দ্রুত",
+    "category": "adverb"
+  },
+  {
+    "word": "ধরে",
+    "category": "postposition"
+  },
+  {
+    "word": "ধীরে",
+    "category": "adverb"
+  },
+  {
+    "word": "নই",
+    "category": "negative"
+  },
+  {
+    "word": "নও",
+    "category": "negative"
+  },
+  {
+    "word": "নচেৎ",
+    "category": "conjunction"
+  },
+  {
+    "word": "নতুবা",
+    "category": "conjunction"
+  },
+  {
+    "word": "নন",
+    "category": "negative"
+  },
+  {
+    "word": "নয়",
+    "category": "negative"
+  },
+  {
+    "word": "নয়কো",
+    "category": "negative"
+  },
+  {
+    "word": "নয়তো",
+    "category": "conjunction"
+  },
+  {
+    "word": "নহে",
+    "category": "negative"
+  },
+  {
+    "word": "না",
+    "category": "negative"
+  },
+  {
+    "word": "নাই",
+    "category": "verb"
+  },
+  {
+    "word": "নাও",
+    "category": "verb"
+  },
+  {
+    "word": "নাকি",
+    "category": "adverb"
+  },
+  {
+    "word": "নাহলে",
+    "category": "conjunction"
+  },
+  {
+    "word": "নি",
+    "category": "negative"
+  },
+  {
+    "word": "নিই",
+    "category": "verb"
+  },
+  {
+    "word": "নিকটে",
+    "category": "postposition"
+  },
+  {
+    "word": "নিচে",
+    "category": "postposition"
+  },
+  {
+    "word": "নিজে",
+    "category": "pronoun"
+  },
+  {
+    "word": "নিজেই",
+    "category": "pronoun"
+  },
+  {
+    "word": "নিজেকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "নিজেদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "নিজের",
+    "category": "pronoun"
+  },
+  {
+    "word": "নিতান্ত",
+    "category": "adverb"
+  },
+  {
+    "word": "নিতান্তই",
+    "category": "adverb"
+  },
+  {
+    "word": "নিতে",
+    "category": "verb"
+  },
+  {
+    "word": "নিত্য",
+    "category": "adverb"
+  },
+  {
+    "word": "নিমিত্ত",
+    "category": "postposition"
+  },
+  {
+    "word": "নিয়মিত",
+    "category": "adverb"
+  },
+  {
+    "word": "নিয়ে",
+    "category": "postposition"
+  },
+  {
+    "word": "নিয়েছে",
+    "category": "verb"
+  },
+  {
+    "word": "নিয়েছেন",
+    "category": "verb"
+  },
+  {
+    "word": "নিল",
+    "category": "verb"
+  },
+  {
+    "word": "নিলে",
+    "category": "verb"
+  },
+  {
+    "word": "নিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "নিলো",
+    "category": "verb"
+  },
+  {
+    "word": "নিশ্চয়",
+    "category": "adverb"
+  },
+  {
+    "word": "নিশ্চয়ই",
+    "category": "adverb"
+  },
+  {
+    "word": "নীচে",
+    "category": "postposition"
+  },
+  {
+    "word": "নেই",
+    "category": "verb"
+  },
+  {
+    "word": "নেওয়া",
+    "category": "verb"
+  },
+  {
+    "word": "নেওয়ার",
+    "category": "verb"
+  },
+  {
+    "word": "নেন",
+    "category": "verb"
+  },
+  {
+    "word": "নেবে",
+    "category": "verb"
+  },
+  {
+    "word": "নেবেন",
+    "category": "verb"
+  },
+  {
+    "word": "নেয়",
+    "category": "verb"
+  },
+  {
+    "word": "পক্ষান্তরে",
+    "category": "conjunction"
+  },
+  {
+    "word": "পক্ষে",
+    "category": "postposition"
+  },
+  {
+    "word": "পরবর্তীতে",
+    "category": "adverb"
+  },
+  {
+    "word": "পরশু",
+    "category": "adverb"
+  },
+  {
+    "word": "পরস্পর",
+    "category": "pronoun"
+  },
+  {
+    "word": "পরিবর্তে",
+    "category": "postposition"
+  },
+  {
+    "word": "পরিশেষে",
+    "category": "adverb"
+  },
+  {
+    "word": "পরে",
+    "category": "adverb"
+  },
+  {
+    "word": "পর্যন্ত",
+    "category": "postposition"
+  },
+  {
+    "word": "পর্যাপ্ত",
+    "category": "quantifier"
+  },
+  {
+    "word": "পারতে",
+    "category": "verb"
+  },
+  {
+    "word": "পারবে",
+    "category": "verb"
+  },
+  {
+    "word": "পারবেন",
+    "category": "verb"
+  },
+  {
+    "word": "পারল",
+    "category": "verb"
+  },
+  {
+    "word": "পারলেন",
+    "category": "verb"
+  },
+  {
+    "word": "পারা",
+    "category": "verb"
+  },
+  {
+    "word": "পারার",
+    "category": "verb"
+  },
+  {
+    "word": "পারি",
+    "category": "verb"
+  },
+  {
+    "word": "পারে",
+    "category": "verb"
+  },
+  {
+    "word": "পারেন",
+    "category": "verb"
+  },
+  {
+    "word": "পারো",
+    "category": "verb"
+  },
+  {
+    "word": "পাশে",
+    "category": "postposition"
+  },
+  {
+    "word": "পিছনে",
+    "category": "postposition"
+  },
+  {
+    "word": "পিছে",
+    "category": "postposition"
+  },
+  {
+    "word": "পুরোপুরি",
+    "category": "adverb"
+  },
+  {
+    "word": "পূর্বে",
+    "category": "adverb"
+  },
+  {
+    "word": "পূর্বেকার",
+    "category": "adverb"
+  },
+  {
+    "word": "পেছনে",
+    "category": "postposition"
+  },
+  {
+    "word": "প্রকৃতপক্ষে",
+    "category": "adverb"
+  },
+  {
+    "word": "প্রতি",
+    "category": "preposition"
+  },
+  {
+    "word": "প্রত্যেক",
+    "category": "quantifier"
+  },
+  {
+    "word": "প্রথমত",
+    "category": "adverb"
+  },
+  {
+    "word": "প্রধানত",
+    "category": "adverb"
+  },
+  {
+    "word": "প্রধানতঃ",
+    "category": "adverb"
+  },
+  {
+    "word": "প্রায়",
+    "category": "adverb"
+  },
+  {
+    "word": "প্রায়শ",
+    "category": "adverb"
+  },
+  {
+    "word": "প্রায়শই",
+    "category": "adverb"
+  },
+  {
+    "word": "ফলে",
+    "category": "conjunction"
+  },
+  {
+    "word": "বটে",
+    "category": "adverb"
+  },
+  {
+    "word": "বদলে",
+    "category": "postposition"
+  },
+  {
+    "word": "বনাম",
+    "category": "postposition"
+  },
+  {
+    "word": "বরং",
+    "category": "conjunction"
+  },
+  {
+    "word": "বরাবর",
+    "category": "postposition"
+  },
+  {
+    "word": "বলতে",
+    "category": "verb"
+  },
+  {
+    "word": "বলবে",
+    "category": "verb"
+  },
+  {
+    "word": "বলবেন",
+    "category": "verb"
+  },
+  {
+    "word": "বলল",
+    "category": "verb"
+  },
+  {
+    "word": "বললাম",
+    "category": "verb"
+  },
+  {
+    "word": "বললে",
+    "category": "verb"
+  },
+  {
+    "word": "বললেন",
+    "category": "verb"
+  },
+  {
+    "word": "বললো",
+    "category": "verb"
+  },
+  {
+    "word": "বলা",
+    "category": "verb"
+  },
+  {
+    "word": "বলার",
+    "category": "verb"
+  },
+  {
+    "word": "বলি",
+    "category": "verb"
+  },
+  {
+    "word": "বলে",
+    "category": "verb"
+  },
+  {
+    "word": "বলেছি",
+    "category": "verb"
+  },
+  {
+    "word": "বলেছিল",
+    "category": "verb"
+  },
+  {
+    "word": "বলেছিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "বলেছে",
+    "category": "verb"
+  },
+  {
+    "word": "বলেছেন",
+    "category": "verb"
+  },
+  {
+    "word": "বলেন",
+    "category": "verb"
+  },
+  {
+    "word": "বলো",
+    "category": "verb"
+  },
+  {
+    "word": "বস্তুত",
+    "category": "adverb"
+  },
+  {
+    "word": "বস্তুতঃ",
+    "category": "adverb"
+  },
+  {
+    "word": "বা",
+    "category": "conjunction"
+  },
+  {
+    "word": "বাইরে",
+    "category": "postposition"
+  },
+  {
+    "word": "বাবদ",
+    "category": "postposition"
+  },
+  {
+    "word": "বিনা",
+    "category": "postposition"
+  },
+  {
+    "word": "বিনে",
+    "category": "postposition"
+  },
+  {
+    "word": "বিপক্ষে",
+    "category": "postposition"
+  },
+  {
+    "word": "বিশেষত",
+    "category": "adverb"
+  },
+  {
+    "word": "বিশেষতঃ",
+    "category": "adverb"
+  },
+  {
+    "word": "বেশি",
+    "category": "quantifier"
+  },
+  {
+    "word": "বেশী",
+    "category": "quantifier"
+  },
+  {
+    "word": "বৈকি",
+    "category": "adverb"
+  },
+  {
+    "word": "বোধহয়",
+    "category": "adverb"
+  },
+  {
+    "word": "ব্যতীত",
+    "category": "postposition"
+  },
+  {
+    "word": "ভিতরে",
+    "category": "postposition"
+  },
+  {
+    "word": "ভেতরে",
+    "category": "postposition"
+  },
+  {
+    "word": "মধ্যে",
+    "category": "postposition"
+  },
+  {
+    "word": "মাঝে",
+    "category": "postposition"
+  },
+  {
+    "word": "মাত্র",
+    "category": "adverb"
+  },
+  {
+    "word": "মারফত",
+    "category": "postposition"
+  },
+  {
+    "word": "মূলত",
+    "category": "adverb"
+  },
+  {
+    "word": "মূলতঃ",
+    "category": "adverb"
+  },
+  {
+    "word": "মোটামুটি",
+    "category": "adverb"
+  },
+  {
+    "word": "মোটেও",
+    "category": "adverb"
+  },
+  {
+    "word": "মোটের",
+    "category": "adverb"
+  },
+  {
+    "word": "মোটেরউপর",
+    "category": "adverb"
+  },
+  {
+    "word": "মোতাবেক",
+    "category": "postposition"
+  },
+  {
+    "word": "মোদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "মোরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "যখন",
+    "category": "adverb"
+  },
+  {
+    "word": "যখনই",
+    "category": "adverb"
+  },
+  {
+    "word": "যথেষ্ট",
+    "category": "quantifier"
+  },
+  {
+    "word": "যদি",
+    "category": "conjunction"
+  },
+  {
+    "word": "যদিও",
+    "category": "conjunction"
+  },
+  {
+    "word": "যাঁকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "যাঁদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "যাঁদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "যাঁর",
+    "category": "pronoun"
+  },
+  {
+    "word": "যাঁরা",
+    "category": "pronoun"
+  },
+  {
+    "word": "যাই",
+    "category": "verb"
+  },
+  {
+    "word": "যাইতে",
+    "category": "verb"
+  },
+  {
+    "word": "যাও",
+    "category": "verb"
+  },
+  {
+    "word": "যাওয়া",
+    "category": "verb"
+  },
+  {
+    "word": "যাওয়ার",
+    "category": "verb"
+  },
+  {
+    "word": "যাকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "যাতে",
+    "category": "conjunction"
+  },
+  {
+    "word": "যাদের",
+    "category": "pronoun"
+  },
+  {
+    "word": "যাদেরকে",
+    "category": "pronoun"
+  },
+  {
+    "word": "যান",
+    "category": "verb"
+  },
+  {
+    "word": "যাব",
+    "category": "verb"
+  },
+  {
+    "word": "যাবতীয়",
+    "category": "quantifier"
+  },
+  {
+    "word": "যাবে",
+    "category": "verb"
+  },
+  {
+    "word": "যাবেন",
+    "category": "verb"
+  },
+  {
+    "word": "যাবো",
+    "category": "verb"
+  },
+  {
+    "word": "যায়",
+    "category": "verb"
+  },
+  {
+    "word": "যার",
+    "category": "pronoun"
+  },
+  {
+    "word": "যারা",
+    "category": "pronoun"
+  },
+  {
+    "word": "যিনি",
+    "category": "pronoun"
+  },
+  {
+    "word": "যে",
+    "category": "pronoun"
+  },
+  {
+    "word": "যেকোনোখানে",
+    "category": "adverb"
+  },
+  {
+    "word": "যেখানে",
+    "category": "adverb"
+  },
+  {
+    "word": "যেতে",
+    "category": "verb"
+  },
+  {
+    "word": "যেথায়",
+    "category": "adverb"
+  },
+  {
+    "word": "যেন",
+    "category": "conjunction"
+  },
+  {
+    "word": "যেমন",
+    "category": "determiner"
+  },
+  {
+    "word": "রে",
+    "category": "particle"
+  },
+  {
+    "word": "শীঘ্রই",
+    "category": "adverb"
+  },
+  {
+    "word": "শুধু",
+    "category": "adverb"
+  },
+  {
+    "word": "শুধুই",
+    "category": "adverb"
+  },
+  {
+    "word": "শুধুমাত্র",
+    "category": "adverb"
+  },
+  {
+    "word": "সকল",
+    "category": "quantifier"
+  },
+  {
+    "word": "সকলের",
+    "category": "quantifier"
+  },
+  {
+    "word": "সঙ্গে",
+    "category": "postposition"
+  },
+  {
+    "word": "সত্যি",
+    "category": "adverb"
+  },
+  {
+    "word": "সত্যিকার",
+    "category": "adverb"
+  },
+  {
+    "word": "সদা",
+    "category": "adverb"
+  },
+  {
+    "word": "সব",
+    "category": "quantifier"
+  },
+  {
+    "word": "সবাই",
+    "category": "quantifier"
+  },
+  {
+    "word": "সবাইকে",
+    "category": "quantifier"
+  },
+  {
+    "word": "সবার",
+    "category": "quantifier"
+  },
+  {
+    "word": "সমগ্র",
+    "category": "quantifier"
+  },
+  {
+    "word": "সমস্ত",
+    "category": "quantifier"
+  },
+  {
+    "word": "সমেত",
+    "category": "postposition"
+  },
+  {
+    "word": "সম্পর্কে",
+    "category": "postposition"
+  },
+  {
+    "word": "সম্পূর্ণ",
+    "category": "adverb"
+  },
+  {
+    "word": "সম্প্রতি",
+    "category": "adverb"
+  },
+  {
+    "word": "সম্ভবত",
+    "category": "adverb"
+  },
+  {
+    "word": "সম্ভবতঃ",
+    "category": "adverb"
+  },
+  {
+    "word": "সম্মুখে",
+    "category": "postposition"
+  },
+  {
+    "word": "সর্বত্র",
+    "category": "adverb"
+  },
+  {
+    "word": "সর্বদা",
+    "category": "adverb"
+  },
+  {
+    "word": "সর্বদাই",
+    "category": "adverb"
+  },
+  {
+    "word": "সহ",
+    "category": "postposition"
+  },
+  {
+    "word": "সাথে",
+    "category": "postposition"
+  },
+  {
+    "word": "সাধারণত",
+    "category": "adverb"
+  },
+  {
+    "word": "সাধারণতঃ",
+    "category": "adverb"
+  },
+  {
+    "word": "সামনে",
+    "category": "postposition"
+  },
+  {
+    "word": "সামান্য",
+    "category": "quantifier"
+  },
+  {
+    "word": "সুতরাং",
+    "category": "conjunction"
+  },
+  {
+    "word": "সে",
+    "category": "pronoun"
+  },
+  {
+    "word": "সেই",
+    "category": "determiner"
+  },
+  {
+    "word": "সেখানে",
+    "category": "adverb"
+  },
+  {
+    "word": "সেগুলি",
+    "category": "determiner"
+  },
+  {
+    "word": "সেগুলো",
+    "category": "determiner"
+  },
+  {
+    "word": "সেটা",
+    "category": "determiner"
+  },
+  {
+    "word": "সেটি",
+    "category": "determiner"
+  },
+  {
+    "word": "সেথায়",
+    "category": "adverb"
+  },
+  {
+    "word": "সেসব",
+    "category": "determiner"
+  },
+  {
+    "word": "স্বল্প",
+    "category": "quantifier"
+  },
+  {
+    "word": "হই",
+    "category": "verb"
+  },
+  {
+    "word": "হইতে",
+    "category": "postposition"
+  },
+  {
+    "word": "হও",
+    "category": "verb"
+  },
+  {
+    "word": "হওয়া",
+    "category": "verb"
+  },
+  {
+    "word": "হওয়ার",
+    "category": "verb"
+  },
+  {
+    "word": "হচ্ছিল",
+    "category": "verb"
+  },
+  {
+    "word": "হচ্ছে",
+    "category": "verb"
+  },
+  {
+    "word": "হঠাৎ",
+    "category": "adverb"
+  },
+  {
+    "word": "হতে",
+    "category": "postposition"
+  },
+  {
+    "word": "হন",
+    "category": "verb"
+  },
+  {
+    "word": "হবার",
+    "category": "verb"
+  },
+  {
+    "word": "হবে",
+    "category": "verb"
+  },
+  {
+    "word": "হবেন",
+    "category": "verb"
+  },
+  {
+    "word": "হয়",
+    "category": "verb"
+  },
+  {
+    "word": "হয়ত",
+    "category": "adverb"
+  },
+  {
+    "word": "হয়তো",
+    "category": "adverb"
+  },
+  {
+    "word": "হয়ে",
+    "category": "verb"
+  },
+  {
+    "word": "হয়েছিল",
+    "category": "verb"
+  },
+  {
+    "word": "হয়েছিলেন",
+    "category": "verb"
+  },
+  {
+    "word": "হয়েছে",
+    "category": "verb"
+  },
+  {
+    "word": "হয়েছেন",
+    "category": "verb"
+  },
+  {
+    "word": "হল",
+    "category": "verb"
+  },
+  {
+    "word": "হলে",
+    "category": "verb"
+  },
+  {
+    "word": "হলেও",
+    "category": "verb"
+  },
+  {
+    "word": "হলো",
+    "category": "verb"
+  },
+  {
+    "word": "হে",
+    "category": "particle"
+  },
+  {
+    "word": "হেতু",
+    "category": "postposition"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "suffix": "এর",
+    "type": "case_marker",
+    "priority": 40,
+    "description": "Genitive case marker"
+  },
+  {
+    "suffix": "কে",
+    "type": "case_marker",
+    "priority": 40,
+    "description": "Accusative/dative case marker"
+  },
+  {
+    "suffix": "গণ",
+    "type": "plural",
+    "priority": 20,
+    "description": "Formal plural marker"
+  },
+  {
+    "suffix": "গণের",
+    "type": "plural",
+    "priority": 10,
+    "description": "Formal plural genitive marker"
+  },
+  {
+    "suffix": "গুলি",
+    "type": "plural",
+    "priority": 20,
+    "description": "Plural marker"
+  },
+  {
+    "suffix": "গুলিকে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural accusative marker"
+  },
+  {
+    "suffix": "গুলিতে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural locative marker"
+  },
+  {
+    "suffix": "গুলির",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural genitive marker"
+  },
+  {
+    "suffix": "গুলো",
+    "type": "plural",
+    "priority": 20,
+    "description": "Plural marker"
+  },
+  {
+    "suffix": "গুলোকে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural accusative marker"
+  },
+  {
+    "suffix": "গুলোতে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural locative marker"
+  },
+  {
+    "suffix": "গুলোর",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural genitive marker"
+  },
+  {
+    "suffix": "ছিলেন",
+    "type": "verbal",
+    "priority": 15,
+    "description": "Past continuous/perfect 3rd person honorific"
+  },
+  {
+    "suffix": "ছেন",
+    "type": "verbal",
+    "priority": 35,
+    "description": "Present continuous/perfect 3rd person honorific"
+  },
+  {
+    "suffix": "তে",
+    "type": "case_marker",
+    "priority": 40,
+    "description": "Locative case marker"
+  },
+  {
+    "suffix": "তেন",
+    "type": "verbal",
+    "priority": 35,
+    "description": "Past habitual 3rd person honorific"
+  },
+  {
+    "suffix": "দের",
+    "type": "plural",
+    "priority": 20,
+    "description": "Plural personal marker"
+  },
+  {
+    "suffix": "দেরও",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural personal marker with inclusive particle"
+  },
+  {
+    "suffix": "দেরকে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Plural personal accusative marker"
+  },
+  {
+    "suffix": "পূর্বক",
+    "type": "adverbial",
+    "priority": 25,
+    "description": "Manner adverbial suffix"
+  },
+  {
+    "suffix": "পূর্ব্বক",
+    "type": "adverbial",
+    "priority": 25,
+    "description": "Manner adverbial suffix"
+  },
+  {
+    "suffix": "বর্গ",
+    "type": "plural",
+    "priority": 20,
+    "description": "Collective plural marker"
+  },
+  {
+    "suffix": "বর্গকে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Collective plural accusative marker"
+  },
+  {
+    "suffix": "বর্গের",
+    "type": "plural",
+    "priority": 10,
+    "description": "Collective plural genitive marker"
+  },
+  {
+    "suffix": "ভাবে",
+    "type": "adverbial",
+    "priority": 25,
+    "description": "Manner adverbial suffix"
+  },
+  {
+    "suffix": "মত",
+    "type": "general",
+    "priority": 30,
+    "description": "Resemblance suffix"
+  },
+  {
+    "suffix": "মতো",
+    "type": "general",
+    "priority": 30,
+    "description": "Resemblance suffix"
+  },
+  {
+    "suffix": "সমূহ",
+    "type": "plural",
+    "priority": 20,
+    "description": "Inanimate formal plural marker"
+  },
+  {
+    "suffix": "সমূহকে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Inanimate formal plural accusative marker"
+  },
+  {
+    "suffix": "সমূহে",
+    "type": "plural",
+    "priority": 10,
+    "description": "Inanimate formal plural locative marker"
+  },
+  {
+    "suffix": "সমূহের",
+    "type": "plural",
+    "priority": 10,
+    "description": "Inanimate formal plural genitive marker"
+  },
+  {
+    "suffix": "য়ে",
+    "type": "case_marker",
+    "priority": 40,
+    "description": "Locative case with antastha ya"
+  },
+  {
+    "suffix": "য়ের",
+    "type": "case_marker",
+    "priority": 30,
+    "description": "Genitive case with antastha ya"
+  },
+  {
+    "suffix": "য়েরা",
+    "type": "plural",
+    "priority": 30,
+    "description": "Plural nominative with ya"
+  }
+]

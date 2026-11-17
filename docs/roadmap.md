@@ -29,7 +29,7 @@ specs benefit from what was learned.
 | [`020-heritage`](../specs/020-heritage/) | 3 — Expansion | 23 Tourism & Heritage (UNESCO & Archaeology) | **Built**: 35 national archaeological and tourism landmarks, UNESCO World Heritage sites, bilingual briefs, and visitor fees |
 | [`021-rivers`](../specs/021-rivers/) | 3 — Expansion | 24 Geography (Major Rivers & Waterways) | **Built**: 30 principal rivers with BWDB hydrological markers, transboundary status, origin/outflow, and river basins |
 | [`022-ports`](../specs/022-ports/) | 3 — Expansion | 25 Logistics (Statutory Land Ports & Customs) | **Built**: 24 statutory BLPA land ports, operating status, border checkpoints, counterpart LCS, and commodity profiles |
-| [`023-bangla-nlp`](../specs/023-bangla-nlp/) | 3 — Expansion | 26 Bangla NLP Toolkit | **Planned**: 400+ Bangla stopwords, rule-based stemmer, word/sentence tokenizer, Unicode normalizer, and POS dictionary |
+| [`023-bangla-nlp`](../specs/023-bangla-nlp/) | 3 — Expansion | 26 Bangla NLP Toolkit | **Built**: 550 canonical Bangla stopwords, rule-based stemmer, word/sentence tokenizer, and Unicode NFC normalizer |
 | [`024-client-sdks`](../specs/024-client-sdks/) | 3 — Expansion | Official Client SDKs | **Planned**: Zero-dependency typed TypeScript (`@deshapi/client` on npm), Python (`desh-api` on PyPI), PHP/Laravel (`deshapi/sdk`), and Go |
 | [`025-web-portal`](../specs/025-web-portal/) | 4 — Ecosystem | Consumer Portal & Playground | **Built & Live** at https://portal.deshapi.riadul.com: interactive test consoles, live API inspector, query generator |
 | [`026-developer-portal`](../specs/026-developer-portal/) | 4 — Ecosystem | Developer Dashboard & Analytics | **Planned**: Self-service API key portal, usage telemetry, rate limit tracking, webhook alerts, and audit logs |
@@ -89,7 +89,7 @@ Phase 3 extends Desh API from core reference data and live daily feeds into comp
   - **Unicode Normalizer**: NFC normalization, zero-width joiner (ZWJ `\u200D`) and non-joiner (ZWNJ `\u200C`) cleanup, hasant/nukta standardization (`POST /v1/nlp/normalize`).
   - **Tokenization**: Sentence splitter respecting Bengali sentence terminators (`।`, `?`, `!`) and punctuation; word tokenizer respecting conjunctive ligatures (`POST /v1/nlp/tokenize`).
   - **Stemming**: Rule-based affix-stripping stemmer for common nominal cases, plurals (`-গুলো`, `-দেরকে`), and verb conjugations (`POST /v1/nlp/stem`).
-- **Status**: **Planned (ready for spec & implementation)**.
+- **Status**: **Built and verified** (all contract & unit tests passing).
 
 ### 024 — Official Client SDKs (`specs/024-client-sdks`)
 - **Objective**: Strongly-typed, ergonomic client libraries across major software ecosystems:

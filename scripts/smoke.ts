@@ -186,6 +186,11 @@ const scenarios: Scenario[] = [
     check: (_, b) => (b.data?.code === 'BEN' ? true : 'expected Benapole land port'),
   },
   {
+    name: '13p bangla nlp stopwords',
+    path: '/v1/nlp/stopwords?category=conjunction',
+    check: (_, b) => (b.data?.words?.includes('এবং') ? true : 'expected stopwords with এবং'),
+  },
+  {
     name: '14 docs and OpenAPI',
     path: '/openapi.json',
     check: (_, b: any) =>

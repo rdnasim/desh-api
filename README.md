@@ -32,7 +32,7 @@ every response**.
 - No sign-up, no API key required for public use (120 req/min, 10,000 req/day)
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 27 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway, parliamentary constituencies, airports & aviation, UNESCO heritage & tourism, rivers & waterways, statutory land ports, and developer quota telemetries.
+- 28 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway, parliamentary constituencies, airports & aviation, UNESCO heritage & tourism, rivers & waterways, statutory land ports, Bangla NLP, and developer quota telemetries.
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -162,6 +162,10 @@ curl 'https://deshapi.riadul.com/v1/rivers/padma'                    # → lengt
 # Statutory land ports & customs stations (BLPA)
 curl 'https://deshapi.riadul.com/v1/ports/land?status=operational'
 curl 'https://deshapi.riadul.com/v1/ports/land/BEN'                 # → Benapole / Petrapole LCS
+
+# Bangla NLP toolkit (canonical stopwords, Unicode normalizer, sentence tokenizer, stemmer)
+curl 'https://deshapi.riadul.com/v1/nlp/stopwords?category=conjunction'
+curl -X POST 'https://deshapi.riadul.com/v1/nlp/stem' -H 'Content-Type: application/json' -d '{"word":"ছাত্রদেরকে"}'
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -197,6 +201,7 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Heritage** | 35 UNESCO World Heritage sites, archaeological monuments, and eco-tourism reserves with historical epochs and conservation status | [`/v1/heritage?type=unesco_world_heritage`](https://deshapi.riadul.com/v1/heritage?type=unesco_world_heritage) |
 | **Rivers** | 30 principal rivers verified against BWDB/Banglapedia: origins, outflows, lengths, transboundary status and traversed districts | [`/v1/rivers?division=dhaka`](https://deshapi.riadul.com/v1/rivers?division=dhaka) |
 | **Ports** | 24 statutory BLPA land ports & customs stations: Indian/Myanmar counterpart LCS, rail freight connectivity, passenger immigration | [`/v1/ports/land?status=operational`](https://deshapi.riadul.com/v1/ports/land?status=operational) |
+| **Bangla NLP** | 550 canonical stopwords, Unicode NFC text normalizer, sentence/word tokenizer, and rule-based affix-stripping stemmer | [`/v1/nlp/stopwords`](https://deshapi.riadul.com/v1/nlp/stopwords) |
 | **Developer** | API key authentication, tiered rate limits (600 req/min), daily quota tracking and inspection | [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the

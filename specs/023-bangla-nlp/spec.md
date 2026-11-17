@@ -1,7 +1,7 @@
 # Feature Specification: 023-bangla-nlp (Bangla NLP Toolkit)
 
 **Feature Branch**: `023-bangla-nlp`  
-**Status**: Planned (Spec Ready)  
+**Status**: Built  
 **Input**: Bangla NLP Toolkit: Stopwords list, lightweight rule-based stemmer, word and sentence tokenizers, Unicode normalizer, and parts-of-speech lexical lookups.
 
 ---

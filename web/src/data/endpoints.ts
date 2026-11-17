@@ -25,6 +25,7 @@ export const API_MODULES = [
   'Heritage & Tourism',
   'Rivers & Waterways',
   'Ports & Logistics',
+  'Bangla NLP',
   'Developer',
 ] as const;
 
@@ -1028,5 +1029,76 @@ export const ENDPOINTS: ApiEndpoint[] = [
         description: '3-letter port code (BEN, BUR, TAM) or slug (benapole, burimari)',
       },
     ],
+  },
+
+  // Bangla NLP
+  {
+    id: 'nlp-stopwords',
+    module: 'Bangla NLP',
+    name: 'List Bangla Stopwords',
+    nameBn: 'বাংলা স্টপওয়ার্ড তালিকা',
+    method: 'GET',
+    path: '/v1/nlp/stopwords',
+    defaultPathWithParams: '/v1/nlp/stopwords?category=conjunction',
+    description:
+      'Curated corpus of 500+ high-frequency Bengali functional stopwords categorized by part-of-speech (conjunctions, pronouns, adverbs, postpositions, auxiliaries).',
+    params: [
+      {
+        name: 'category',
+        type: 'string',
+        default: 'conjunction',
+        description: 'Filter by grammatical category (e.g. conjunction, pronoun, adverb, postposition)',
+      },
+      {
+        name: 'limit',
+        type: 'number',
+        default: '50',
+        description: 'Maximum number of stopwords to return',
+      },
+    ],
+  },
+  {
+    id: 'nlp-stopwords-remove',
+    module: 'Bangla NLP',
+    name: 'Remove Stopwords from Text',
+    nameBn: 'টেক্সট থেকে স্টপওয়ার্ড অপসারণ',
+    method: 'POST',
+    path: '/v1/nlp/stopwords/remove',
+    defaultPathWithParams: '/v1/nlp/stopwords/remove',
+    description:
+      'Strips canonical Bengali functional stopwords from input text and reports inventory of removed tokens.',
+  },
+  {
+    id: 'nlp-normalize',
+    module: 'Bangla NLP',
+    name: 'Normalize Bangla Text',
+    nameBn: 'বাংলা ইউনিকোড টেক্সট নরমালাইজার',
+    method: 'POST',
+    path: '/v1/nlp/normalize',
+    defaultPathWithParams: '/v1/nlp/normalize',
+    description:
+      'Normalizes Bengali text to canonical Unicode NFC representation, cleans redundant zero-width joiners/non-joiners, composite nukta glyphs (ড়, ঢ়, য়), and standardizes spacing.',
+  },
+  {
+    id: 'nlp-tokenize',
+    module: 'Bangla NLP',
+    name: 'Tokenize Words or Sentences',
+    nameBn: 'শব্দ ও বাক্য টোকেনাইজার',
+    method: 'POST',
+    path: '/v1/nlp/tokenize',
+    defaultPathWithParams: '/v1/nlp/tokenize',
+    description:
+      'Linguistically splits Bengali text into sentence tokens (delimited by Dari "।", Double Dari "॥", "?", "!", and line breaks) or word tokens respecting conjunctive ligatures.',
+  },
+  {
+    id: 'nlp-stem',
+    module: 'Bangla NLP',
+    name: 'Affix-Stripping Stemmer',
+    nameBn: 'বাংলা প্রত্যয় বিচ্ছেদ ও স্টেমার',
+    method: 'POST',
+    path: '/v1/nlp/stem',
+    defaultPathWithParams: '/v1/nlp/stem',
+    description:
+      'Deterministic rule-based stemmer that strips common nominal case markers (-দেরকে, -গুলোকে, -য়ের), plural suffixes (-গুলো, -গণ, -সমূহ), and verbal inflections (-ছিলেন, -ছেন, -লেন).',
   },
 ];

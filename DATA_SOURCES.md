@@ -53,6 +53,8 @@ upstream sources below.
 | `weather.maritime-signals` | [Bangladesh Meteorological Department (BMD), Ministry of Defence: standard maritime storm warning signals (1 to 11), wind speeds and coastal protocols](https://bmd.gov.bd) | Public government information; compilation CC BY 4.0 | 2026-11-16 | 2026-11-16 | Bangladesh Meteorological Department (BMD); Storm Warning Centre, Dhaka |
 | `weather.riverport-signals` | [Bangladesh Meteorological Department (BMD) and Bangladesh Inland Water Transport Authority (BIWTA): inland riverport storm warning signals (1 to 4)](https://bmd.gov.bd) | Public government information; compilation CC BY 4.0 | 2026-11-16 | 2026-11-16 | Bangladesh Meteorological Department (BMD); Bangladesh Inland Water Transport Authority (BIWTA) |
 | `weather.seasons` | Bangla Academy and traditional astronomical Bengali calendar (ষড়ঋতু - six seasons) | Public cultural domain; compilation CC BY 4.0 | 2026-11-16 | 2026-11-16 | Bangla Academy; desh-api contributors |
+| `nlp.stopwords` | [Bangla Academy grammatical lexicons, standard Bengali computational linguistics corpora, and desh-api curation](https://banglaacademy.gov.bd) | Public linguistic information; compilation CC BY 4.0 | 2026-11-17 | 2026-11-17 | Bangla Academy; desh-api contributors |
+| `nlp.suffixes` | [Bangla Academy modern Bengali grammar rules for inflectional case markers, plurals, and verbal conjugations](https://banglaacademy.gov.bd) | Public linguistic information; compilation CC BY 4.0 | 2026-11-17 | 2026-11-17 | Bangla Academy; desh-api contributors |
 
 ## Live sources
 
