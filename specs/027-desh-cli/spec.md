@@ -1,7 +1,7 @@
 # Feature Specification: 027-desh-cli (Desh Terminal Command-Line Interface)
 
 **Feature Branch**: `027-desh-cli`  
-**Status**: Planned  
+**Status**: Built  
 
 ---
 

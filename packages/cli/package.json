@@ -1,0 +1,20 @@
+{
+  "name": "@deshapi/cli",
+  "version": "0.1.0",
+  "description": "Fast terminal CLI for Desh API — The open developer API for Bangladesh",
+  "type": "module",
+  "bin": {
+    "desh": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@deshapi/client": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "~5.9.3"
+  },
+  "license": "MIT"
+}
