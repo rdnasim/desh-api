@@ -249,6 +249,7 @@ footer p { margin: 0 0 6px; }
         <a href="#try" class="opt">Try it</a>
         <a href="#modules" class="opt">Modules</a>
         <a href="/docs">Docs</a>
+        <a href="https://portal.deshapi.riadul.com" target="_blank" rel="noreferrer" style="color:var(--red);font-weight:600">Web Portal ↗</a>
         <a href="https://github.com/rdnasim/desh-api" class="opt">GitHub</a>
       </nav>
       <div class="theme" role="group" aria-label="Colour theme">
@@ -266,10 +267,11 @@ footer p { margin: 0 0 6px; }
     <h1>Bangladesh reference data, Bangla tools and calculators, as a free API.</h1>
     <div class="disc-big" aria-hidden="true"></div>
     <p class="bn" lang="bn">বাংলাদেশের তথ্য, বাংলা ভাষার টুলস ও ক্যালকুলেটর — ফ্রি, ওপেন সোর্স API।</p>
-    <p class="lede">Divisions to unions and postcodes, bank branches and routing numbers, universities, official holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat, today's gold and market prices, and mobile financial services (bKash, Nagad, Rocket, Upay, TAP). English and Bangla names, and the source of every fact in every response. No sign-up, no API key.</p>
+    <p class="lede">Divisions to unions and postcodes, bank branches and routing numbers, UGC universities, public holidays, taka in words, Bangla dates, Bijoy to Unicode, phone validation, income tax, zakat, today's gold and market prices, MFS tariffs, Dhaka Metro Rail, emergency healthcare, CAAB airports, UNESCO heritage sites, river waterways, and BLPA land ports. English and Bangla names, and the source of every fact in every response. No sign-up, no API key.</p>
     <div class="base">
       <div class="url"><span id="base-url">https://deshapi.riadul.com</span><button class="copy" type="button" data-copy-from="base-url">Copy</button></div>
-      <a class="btn primary" href="/docs">Open the docs</a>
+      <a class="btn primary" href="https://portal.deshapi.riadul.com" target="_blank" rel="noreferrer">Open Web Portal ↗</a>
+      <a class="btn" href="/docs">Interactive Docs</a>
       <a class="btn" href="https://github.com/rdnasim/desh-api">View on GitHub</a>
     </div>
   </div>
@@ -277,12 +279,12 @@ footer p { margin: 0 0 6px; }
 
 <div class="wrap counts" aria-label="What the data covers">
   <div class="grid">
-    <div class="count"><span class="n">16</span><span class="l">modules</span></div>
+    <div class="count"><span class="n">27</span><span class="l">modules</span></div>
     <div class="count"><span class="n">4,540</span><span class="l">unions</span></div>
     <div class="count"><span class="n">1,349</span><span class="l">post offices</span></div>
     <div class="count"><span class="n">11,533</span><span class="l">bank branches</span></div>
     <div class="count"><span class="n">181</span><span class="l">universities</span></div>
-    <div class="count note"><span class="l">From BBS geocodes, Bangladesh Bank and the University Grants Commission; every response names its source.</span></div>
+    <div class="count note"><span class="l">From BBS, Bangladesh Bank, UGC, CAAB, BWDB and BLPA; every response names its statutory source.</span></div>
   </div>
 </div>
 
@@ -333,6 +335,11 @@ footer p { margin: 0 0 6px; }
         <div class="mod"><div class="k">20</div><h3>Weather &amp; Disaster Signals</h3><p>BMD maritime storm signals (1–11), riverport signals (1–4), DoE Air Quality Index (AQI) categories and traditional 6 Bangla seasons.</p><a href="/v1/weather/signals/maritime">/v1/weather/signals/maritime</a></div>
         <div class="mod"><div class="k">21</div><h3>Railway</h3><p>Bangladesh Railway intercity trains (Suborno, Sonar Bangla, Parabat), coach classes (AC Berth, Snigdha, Shovon Chair), route timetables, and major junction stations.</p><a href="/v1/railway/trains">/v1/railway/trains</a></div>
         <div class="mod"><div class="k">22</div><h3>Constituencies</h3><p>300 general parliamentary constituencies (Jatiya Sangsad আসন ১–৩০০) with official boundaries, upazila/thana coverage, and district seat distributions.</p><a href="/v1/constituencies?district=dhaka">/v1/constituencies?district=dhaka</a></div>
+        <div class="mod"><div class="k">23</div><h3>Airports</h3><p>15 CAAB international, domestic and STOLport facilities with IATA/ICAO codes, runway dimensions, elevation, coordinates and operational status.</p><a href="/v1/airports?type=international">/v1/airports?type=international</a></div>
+        <div class="mod"><div class="k">24</div><h3>Heritage</h3><p>35 UNESCO World Heritage sites, archaeological monuments, and eco-tourism reserves with historical epochs and conservation status.</p><a href="/v1/heritage?type=unesco_world_heritage">/v1/heritage?type=unesco_world_heritage</a></div>
+        <div class="mod"><div class="k">25</div><h3>Rivers</h3><p>30 principal river networks of Bangladesh verified against BWDB/Banglapedia: origins, outflows, lengths, transboundary status and traversed districts.</p><a href="/v1/rivers?division=dhaka">/v1/rivers?division=dhaka</a></div>
+        <div class="mod"><div class="k">26</div><h3>Land Ports</h3><p>24 statutory BLPA land ports and customs stations: Indian/Myanmar counterpart LCS, rail freight connectivity, and passenger immigration facilities.</p><a href="/v1/ports/land?status=operational">/v1/ports/land?status=operational</a></div>
+        <div class="mod"><div class="k">27</div><h3>Developer</h3><p>API key authentication, tiered rate limits (600 req/min), daily quota inspection, and telemetry headers.</p><a href="/v1/developer/quota">/v1/developer/quota</a></div>
       </div>
     </div>
   </div>
@@ -416,6 +423,10 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
           <tr><td>Prayer times &amp; Ramadan</td><td><a href="https://islamicfoundation.gov.bd">Islamic Foundation Bangladesh</a>, Ministry of Religious Affairs</td></tr>
           <tr><td>Dhaka Metro Rail</td><td><a href="https://dmtcl.gov.bd">Dhaka Mass Transit Company Limited (DMTCL)</a></td></tr>
           <tr><td>Hotlines</td><td><a href="https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89">Bangladesh National Portal</a>, <a href="https://dghs.gov.bd/">DGHS</a></td></tr>
+          <tr><td>Airports &amp; aviation</td><td><a href="https://caab.portal.gov.bd/">Civil Aviation Authority of Bangladesh (CAAB)</a></td></tr>
+          <tr><td>Heritage &amp; archaeological sites</td><td><a href="https://whc.unesco.org/">UNESCO World Heritage Centre</a> and <a href="http://archaeology.portal.gov.bd/">Department of Archaeology</a></td></tr>
+          <tr><td>Rivers &amp; waterways</td><td><a href="https://bwdb.portal.gov.bd/">Bangladesh Water Development Board (BWDB)</a> and <a href="https://en.banglapedia.org/">Banglapedia</a></td></tr>
+          <tr><td>Land ports &amp; customs</td><td><a href="https://bsbk.portal.gov.bd/">Bangladesh Land Port Authority (BLPA)</a> and <a href="https://nbr.gov.bd/">NBR Customs</a></td></tr>
           <tr><td>GI foods</td><td><a href="https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf">Department of Patents, Designs and Trademarks</a></td></tr>
           <tr><td>Bijoy mapping</td><td>Derived from <a href="https://github.com/BinduLogic/bn-ansi-to-unicode">bn-ansi-to-unicode</a> (MIT)</td></tr>
         </tbody>
@@ -487,6 +498,10 @@ console.log(data.map((d) =&gt; d.name_bn), meta.source);</pre></div>
     { label: 'Metro stations', method: 'GET', path: '/v1/metro/stations' },
     { label: 'Railway trains', method: 'GET', path: '/v1/railway/trains' },
     { label: 'Constituencies', method: 'GET', path: '/v1/constituencies?district=dhaka' },
+    { label: 'Airports', method: 'GET', path: '/v1/airports?type=international' },
+    { label: 'Heritage', method: 'GET', path: '/v1/heritage?type=unesco_world_heritage' },
+    { label: 'Rivers', method: 'GET', path: '/v1/rivers/padma' },
+    { label: 'Land ports', method: 'GET', path: '/v1/ports/land?status=operational' },
     { label: 'Land units', method: 'GET', path: '/v1/land/convert?value=5&from=katha&to=sqft' },
     { label: 'Phone', method: 'POST', path: '/v1/phone/validate', body: '{"number":"+8801712345678"}' },
     { label: 'Bijoy to Unicode', method: 'POST', path: '/v1/convert/bijoy-to-unicode', body: '{"text":"Avgvi \\u2020mvbvi evsjv"}' },
