@@ -24,6 +24,7 @@ export const API_MODULES = [
   'Airports & Aviation',
   'Heritage & Tourism',
   'Rivers & Waterways',
+  'Ports & Logistics',
   'Developer',
 ] as const;
 

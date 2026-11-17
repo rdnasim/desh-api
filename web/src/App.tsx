@@ -14,6 +14,7 @@ import { FinanceCalculatorWidget } from './components/portal/FinanceCalculatorWi
 import { EmergencyHealthWidget } from './components/portal/EmergencyHealthWidget';
 import { GeoLookupWidget } from './components/portal/GeoLookupWidget';
 import { WeatherAqiWidget } from './components/portal/WeatherAqiWidget';
+import { TravelGeographyWidget } from './components/portal/TravelGeographyWidget';
 
 import { ENDPOINTS } from './data/endpoints';
 import type { ApiEndpoint, RequestHistoryItem, HttpMethod } from './types';
@@ -288,7 +289,7 @@ export const App: React.FC = () => {
                   <h1 className="hero-heading">আমার দেশ · Bangladesh Digital Services Portal</h1>
                   <p className="hero-subheading">লাইভ ডেটা ও নাগরিক সেবা সম্বলিত মুক্ত পোর্টাল</p>
                   <p className="hero-desc">
-                    বাংলাদেশের প্রশাসনিক তথ্য, ওয়াক্ত ও সাহরি-ইফতারের সময়সূচি, নিত্যপ্রয়োজনীয় বাজারদর, স্বর্ণের দর ও যাকাত, মেট্রোরেলের টিকিট, বাংলা ভাষার টুলস এবং জরুরি সেবার সমন্বিত ওয়েব প্ল্যাটফর্ম — সম্পূর্ণ ওপেন <strong>Desh API</strong> দ্বারা পরিচালিত।
+                    বাংলাদেশের প্রশাসনিক তথ্য, ওয়াক্ত ও সাহরি-ইফতারের সময়সূচি, নিত্যপ্রয়োজনীয় বাজারদর, স্বর্ণের দর ও যাকাত, মেট্রোরেল, সিভিল এভিয়েশন বিমানবন্দর, ইউনেস্কো হেরিটেজ ও পর্যটন, নদ-নদী, স্থলবন্দর, বাংলা ভাষার টুলস এবং জরুরি সেবার সমন্বিত ওয়েব প্ল্যাটফর্ম — সম্পূর্ণ ওপেন <strong>Desh API</strong> দ্বারা পরিচালিত।
                   </p>
                 </div>
 
@@ -352,6 +353,11 @@ export const App: React.FC = () => {
               {/* 9. Weather & AQI Advisory */}
               <div style={{ gridColumn: '1 / -1' }}>
                 <WeatherAqiWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
+              </div>
+
+              {/* 10. Travel, Waterways & Ports */}
+              <div style={{ gridColumn: '1 / -1' }}>
+                <TravelGeographyWidget baseUrl={baseUrl} onInspectApi={setInspectorDetails} />
               </div>
             </div>
           </>

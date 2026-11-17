@@ -32,7 +32,7 @@ every response**.
 - No sign-up, no API key required for public use (120 req/min, 10,000 req/day)
 - Send numbers in Latin or Bangla digits (`1250` or `১২৫০`)
 - Validators check formats only and never store what you send
-- 24 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway, airports & aviation, constituencies, and developer quota telemetries.
+- 27 modules: geo, Bangla toolkit, phone, Bijoy, land, validators, hotlines, fun, holidays, finance, mock data, banks, universities & education boards, gold & zakat, market prices, MFS, prayer & Ramadan, Dhaka Metro Rail, healthcare & hospitals, weather & disaster signals, Bangladesh Railway, parliamentary constituencies, airports & aviation, UNESCO heritage & tourism, rivers & waterways, statutory land ports, and developer quota telemetries.
 - Runs on Cloudflare's edge network, so responses are fast
 
 ## Try it now
@@ -146,6 +146,22 @@ curl 'https://deshapi.riadul.com/v1/railway/classes'
 curl 'https://deshapi.riadul.com/v1/constituencies/174'             # → Dhaka-1
 curl 'https://deshapi.riadul.com/v1/constituencies?district=dhaka'  # → Dhaka-1 through Dhaka-20
 curl 'https://deshapi.riadul.com/v1/constituencies/districts'       # → 64 districts breakdown
+
+# Airports and aviation directory (CAAB)
+curl 'https://deshapi.riadul.com/v1/airports?type=international'    # → DAC, CGP, ZYL
+curl 'https://deshapi.riadul.com/v1/airports/DAC'                   # → Hazrat Shahjalal International
+
+# Heritage & UNESCO archaeological tourism
+curl 'https://deshapi.riadul.com/v1/heritage?type=unesco_world_heritage' # → Sundarbans, Bagerhat, Paharpur
+curl 'https://deshapi.riadul.com/v1/heritage/somapura-mahavihara'
+
+# Rivers and waterways of Bangladesh (BWDB)
+curl 'https://deshapi.riadul.com/v1/rivers?division=dhaka'
+curl 'https://deshapi.riadul.com/v1/rivers/padma'                    # → length 366 km, origin Himalayas/Ganges
+
+# Statutory land ports & customs stations (BLPA)
+curl 'https://deshapi.riadul.com/v1/ports/land?status=operational'
+curl 'https://deshapi.riadul.com/v1/ports/land/BEN'                 # → Benapole / Petrapole LCS
 ```
 
 The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with a
@@ -177,6 +193,10 @@ The [interactive docs](https://deshapi.riadul.com/docs) list every endpoint with
 | **Weather & Signals** | BMD maritime storm signals (1–11), riverport signals (1–4), DoE Air Quality Index (AQI) categories and 6 traditional Bangla seasons | [`/v1/weather/signals/maritime`](https://deshapi.riadul.com/v1/weather/signals/maritime) |
 | **Railway** | Bangladesh Railway (BR) intercity trains (Suborno, Sonar Bangla, Parabat, Silk City), schedules, off-days, coach classes, and major stations | [`/v1/railway/trains?origin=dhaka&destination=chattogram`](https://deshapi.riadul.com/v1/railway/trains?origin=dhaka&destination=chattogram) |
 | **Constituencies** | 300 general parliamentary constituencies (Jatiya Sangsad আসন ১–৩০০) with official boundaries, upazila/thana coverage, and district seat distributions | [`/v1/constituencies?district=dhaka`](https://deshapi.riadul.com/v1/constituencies?district=dhaka) |
+| **Airports** | 15 CAAB international, domestic and STOLport facilities with IATA/ICAO codes, runway dimensions, elevation, coordinates and operational status | [`/v1/airports?type=international`](https://deshapi.riadul.com/v1/airports?type=international) |
+| **Heritage** | 35 UNESCO World Heritage sites, archaeological monuments, and eco-tourism reserves with historical epochs and conservation status | [`/v1/heritage?type=unesco_world_heritage`](https://deshapi.riadul.com/v1/heritage?type=unesco_world_heritage) |
+| **Rivers** | 30 principal rivers verified against BWDB/Banglapedia: origins, outflows, lengths, transboundary status and traversed districts | [`/v1/rivers?division=dhaka`](https://deshapi.riadul.com/v1/rivers?division=dhaka) |
+| **Ports** | 24 statutory BLPA land ports & customs stations: Indian/Myanmar counterpart LCS, rail freight connectivity, passenger immigration | [`/v1/ports/land?status=operational`](https://deshapi.riadul.com/v1/ports/land?status=operational) |
 | **Developer** | API key authentication, tiered rate limits (600 req/min), daily quota tracking and inspection | [`/v1/developer/quota`](https://deshapi.riadul.com/v1/developer/quota) |
 
 Coming next: exchange rates (Bangladesh Bank's site blocks automated reads) and the bank holiday calendar. See the
@@ -258,6 +278,10 @@ Every dataset lists its source, licence and retrieval date in [`data/meta.json`]
 | Fuel prices | Energy and Mineral Resources Division monthly notices (via [BPC](https://bpc.gov.bd/)) |
 | VAT, gratuity | VAT and Supplementary Duty Act 2012 (s. 15); Bangladesh Labour Act 2006 (s. 2(10)) |
 | GI foods | [Department of Patents, Designs and Trademarks](https://dpdt.gov.bd/pages/static-pages/6922dff0933eb65569e24bcf) |
+| Airports & aviation | [Civil Aviation Authority of Bangladesh (CAAB)](https://caab.portal.gov.bd/) Aeronautical Information Publication (AIP) |
+| Heritage & archaeological sites | [UNESCO World Heritage Centre](https://whc.unesco.org/) and [Department of Archaeology](http://archaeology.portal.gov.bd/) |
+| Rivers & waterways | [Bangladesh Water Development Board (BWDB)](https://bwdb.portal.gov.bd/) and [Banglapedia](https://en.banglapedia.org/) |
+| Land ports & customs stations | [Bangladesh Land Port Authority (BLPA)](https://bsbk.portal.gov.bd/) and [National Board of Revenue (NBR)](https://nbr.gov.bd/) |
 | Bijoy mapping | Derived from [bn-ansi-to-unicode](https://github.com/BinduLogic/bn-ansi-to-unicode) (MIT) |
 | Transliteration | [@subhesadek/avro-phonetic](https://github.com/SubheSadek/avro-phonetic) (MPL-2.0) |
 
@@ -278,8 +302,9 @@ A companion public web application is deployed at **[`portal.deshapi.riadul.com`
   - **Emergency Healthcare Directory:** Direct-dial DGHS national emergency hotlines (999, 16263, 10655), 24/7 trauma hospitals, and ambulances.
   - **Geographic & Institutional Registry:** Postcode locator, Bangladesh Bank 9-digit BEFTN routing validator, and 300 parliamentary constituencies.
   - **Weather, AQI & Seasons:** Real-time Air Quality Index gauge with health advisories and the 6 traditional Bengali seasons (ষড়ঋতু).
+  - **Travel, Waterways & Land Ports:** CAAB international/domestic airports (runways, IATA/ICAO), UNESCO & archaeological monuments, river lifeline statistics, and 24 statutory BLPA border customs stations.
 - **Developer API Explorer:**
-  - Interactive API console to execute endpoints across all 24 modules.
+  - Interactive API console to execute endpoints across all 27 modules.
   - Real-time rate-limit and daily quota monitor directly from response headers (`120 req/min`, `10,000 req/day`).
   - Response headers inspector, formatted JSON preview, and copy-ready cURL command generator.
   - One-click **"Inspect API"** on every portal widget to inspect latency (`ms`), status, and payload.
