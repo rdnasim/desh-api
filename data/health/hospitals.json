@@ -1,5 +1,61 @@
 [
   {
+    "slug": "bagerhat-sadar-hospital",
+    "dghs_code": "10001001",
+    "name_en": "250 Bed District Sadar Hospital Bagerhat",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল বাগেরহাট",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "bagerhat",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-468-62222",
+    "emergency_phone": "+880-468-62222",
+    "email": "bagerhat@hospi.dghs.gov.bd",
+    "website": "http://hospital.bagerhat.gov.bd",
+    "address": "Hospital Road, Bagerhat Sadar, Bagerhat-9300",
+    "coordinates": {
+      "latitude": 22.6602,
+      "longitude": 89.7895
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "General Surgery",
+      "Gynae & Obs",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "bandarban-sadar-hospital",
+    "dghs_code": "10001002",
+    "name_en": "100 Bed Sadar Hospital Bandarban",
+    "name_bn": "১০০ শয্যা বিশিষ্ট সদর হাসপাতাল বান্দরবান",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "bandarban",
+    "established": 1985,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-361-62255",
+    "emergency_phone": "+880-361-62255",
+    "email": "bandarban@hospi.dghs.gov.bd",
+    "website": "http://hospital.bandarban.gov.bd",
+    "address": "Sadar Hospital Road, Bandarban-4600",
+    "coordinates": {
+      "latitude": 22.1953,
+      "longitude": 92.2184
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics",
+      "Tribal Healthcare"
+    ]
+  },
+  {
     "slug": "bangabandhu-sheikh-mujib-medical-university",
     "name_en": "Bangabandhu Sheikh Mujib Medical University",
     "name_bn": "বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয়",
@@ -58,6 +114,144 @@
     "dghs_code": "10002301"
   },
   {
+    "slug": "barguna-general-hospital",
+    "dghs_code": "10001003",
+    "name_en": "100 Bed District Hospital Barguna",
+    "name_bn": "১০০ শয্যা বিশিষ্ট জেলা হাসপাতাল বরগুনা",
+    "type": "district_hospital",
+    "division": "barishal",
+    "district": "barguna",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-448-62345",
+    "emergency_phone": "+880-448-62345",
+    "email": "barguna@hospi.dghs.gov.bd",
+    "website": "http://hospital.barguna.gov.bd",
+    "address": "Hospital Road, Barguna Sadar, Barguna-8700",
+    "coordinates": {
+      "latitude": 22.1587,
+      "longitude": 90.1265
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "General Surgery",
+      "Gynae & Obs"
+    ]
+  },
+  {
+    "slug": "bhola-sadar-hospital",
+    "dghs_code": "10001004",
+    "name_en": "250 Bed General Hospital Bhola",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল ভোলা",
+    "type": "district_hospital",
+    "division": "barishal",
+    "district": "bhola",
+    "established": 1986,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-491-61333",
+    "emergency_phone": "+880-491-61333",
+    "email": "bhola@hospi.dghs.gov.bd",
+    "website": "http://hospital.bhola.gov.bd",
+    "address": "Hospital Road, Ukil Para, Bhola-8300",
+    "coordinates": {
+      "latitude": 22.6859,
+      "longitude": 90.6441
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "General Surgery",
+      "Pediatrics",
+      "Blood Bank"
+    ]
+  },
+  {
+    "slug": "brahmanbaria-general-hospital",
+    "dghs_code": "10001005",
+    "name_en": "250 Bed District Hospital Brahmanbaria",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল ব্রাহ্মণবাড়িয়া",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "brahmanbaria",
+    "established": 1983,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-851-58200",
+    "emergency_phone": "+880-851-58200",
+    "email": "brahmanbaria@hospi.dghs.gov.bd",
+    "website": "http://hospital.brahmanbaria.gov.bd",
+    "address": "Hospital Road, Brahmanbaria Sadar, Brahmanbaria-3400",
+    "coordinates": {
+      "latitude": 23.9745,
+      "longitude": 91.1118
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "Surgery",
+      "Pediatrics",
+      "Orthopedics"
+    ]
+  },
+  {
+    "slug": "chandpur-general-hospital",
+    "dghs_code": "10001006",
+    "name_en": "250 Bed District Hospital Chandpur",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল চাঁদপুর",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "chandpur",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-841-63456",
+    "emergency_phone": "+880-841-63456",
+    "email": "chandpur@hospi.dghs.gov.bd",
+    "website": "http://hospital.chandpur.gov.bd",
+    "address": "Hospital Road, Chandpur Sadar, Chandpur-3600",
+    "coordinates": {
+      "latitude": 23.2325,
+      "longitude": 90.6635
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Gynae & Obs",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "chapainababganj-modern-sadar-hospital",
+    "dghs_code": "10001007",
+    "name_en": "100 Bed Modern Sadar Hospital Chapainawabganj",
+    "name_bn": "১০০ শয্যা বিশিষ্ট আধুনিক সদর হাসপাতাল চাঁপাইনবাবগঞ্জ",
+    "type": "district_hospital",
+    "division": "rajshahi",
+    "district": "chapainababganj",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-781-52345",
+    "emergency_phone": "+880-781-52345",
+    "email": "chapainababganj@hospi.dghs.gov.bd",
+    "website": "http://hospital.chapainababganj.gov.bd",
+    "address": "Hospital Road, Chapainawabganj-6300",
+    "coordinates": {
+      "latitude": 24.5965,
+      "longitude": 88.2778
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "General Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
     "slug": "chattogram-medical-college-hospital",
     "name_en": "Chattogram Medical College Hospital",
     "name_bn": "চট্টগ্রাম মেডিকেল কলেজ হাসপাতাল",
@@ -88,6 +282,33 @@
     "dghs_code": "10000756"
   },
   {
+    "slug": "chuadanga-sadar-hospital",
+    "dghs_code": "10001008",
+    "name_en": "100 Bed Sadar Hospital Chuadanga",
+    "name_bn": "১০০ শয্যা বিশিষ্ট সদর হাসপাতাল চুয়াডাঙ্গা",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "chuadanga",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-761-62234",
+    "emergency_phone": "+880-761-62234",
+    "email": "chuadanga@hospi.dghs.gov.bd",
+    "website": "http://hospital.chuadanga.gov.bd",
+    "address": "Hospital Road, Chuadanga Sadar, Chuadanga-7200",
+    "coordinates": {
+      "latitude": 23.6428,
+      "longitude": 88.8529
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Maternal Health"
+    ]
+  },
+  {
     "slug": "coxs-bazar-sadar-hospital",
     "name_en": "Cox's Bazar 250 Bed District Sadar Hospital",
     "name_bn": "কক্সবাজার ২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল",
@@ -115,6 +336,34 @@
       "Blood Bank"
     ],
     "dghs_code": "10000922"
+  },
+  {
+    "slug": "cumilla-medical-college-hospital",
+    "dghs_code": "10001009",
+    "name_en": "Cumilla Medical College Hospital",
+    "name_bn": "কুমিল্লা মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "chattogram",
+    "district": "cumilla",
+    "established": 1992,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-81-65562",
+    "emergency_phone": "+880-81-65562",
+    "email": "cumc@hospi.dghs.gov.bd",
+    "website": "http://cumc.gov.bd",
+    "address": "Kuchaitoli, Cumilla-3500",
+    "coordinates": {
+      "latitude": 23.4475,
+      "longitude": 91.1842
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "Neurology",
+      "Pediatric Surgery",
+      "Nephrology & Dialysis"
+    ]
   },
   {
     "slug": "dhaka-medical-college-hospital",
@@ -147,6 +396,337 @@
     "dghs_code": "10000033"
   },
   {
+    "slug": "faridpur-medical-college-hospital",
+    "dghs_code": "10001010",
+    "name_en": "Bangabandhu Sheikh Mujib Medical College Hospital, Faridpur",
+    "name_bn": "বঙ্গবন্ধু শেখ মুজিব মেডিকেল কলেজ হাসপাতাল, ফরিদপুর",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "faridpur",
+    "established": 1992,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-631-62233",
+    "emergency_phone": "+880-631-62233",
+    "email": "bsmmchf@hospi.dghs.gov.bd",
+    "website": "http://bsmmc.gov.bd",
+    "address": "Mujib Sarak, Faridpur-7800",
+    "coordinates": {
+      "latitude": 23.6052,
+      "longitude": 89.8431
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "ICU & CCU",
+      "General Surgery",
+      "Orthopedics"
+    ]
+  },
+  {
+    "slug": "feni-general-hospital",
+    "dghs_code": "10001011",
+    "name_en": "250 Bed District Hospital Feni",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল ফেনী",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "feni",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-331-74050",
+    "emergency_phone": "+880-331-74050",
+    "email": "feni@hospi.dghs.gov.bd",
+    "website": "http://hospital.feni.gov.bd",
+    "address": "Hospital Road, Feni Sadar, Feni-3900",
+    "coordinates": {
+      "latitude": 23.0189,
+      "longitude": 91.3972
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "General Surgery",
+      "Gynae & Obs",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "gaibandha-general-hospital",
+    "dghs_code": "10001012",
+    "name_en": "200 Bed General Hospital Gaibandha",
+    "name_bn": "২০০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল গাইবান্ধা",
+    "type": "district_hospital",
+    "division": "rangpur",
+    "district": "gaibandha",
+    "established": 1984,
+    "bed_capacity": 200,
+    "has_emergency_24h": true,
+    "phone": "+880-541-61555",
+    "emergency_phone": "+880-541-61555",
+    "email": "gaibandha@hospi.dghs.gov.bd",
+    "website": "http://hospital.gaibandha.gov.bd",
+    "address": "Sadar Hospital Road, Gaibandha-5700",
+    "coordinates": {
+      "latitude": 25.3289,
+      "longitude": 89.5412
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "gazipur-shahid-tajuddin-ahmad-medical-college-hospital",
+    "dghs_code": "10001013",
+    "name_en": "Shaheed Tajuddin Ahmad Medical College Hospital",
+    "name_bn": "শহীদ তাজউদ্দীন আহমদ মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "gazipur",
+    "established": 2013,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9261234",
+    "emergency_phone": "+880-2-9261234",
+    "email": "stamch@hospi.dghs.gov.bd",
+    "website": "http://stamc.gov.bd",
+    "address": "Tajuddin Ahmad Sarani, Gazipur-1700",
+    "coordinates": {
+      "latitude": 23.9995,
+      "longitude": 90.4208
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "General Surgery",
+      "Burn Care",
+      "Orthopedics"
+    ]
+  },
+  {
+    "slug": "gopalganj-sheikh-sayera-khatun-medical-college-hospital",
+    "dghs_code": "10001014",
+    "name_en": "Sheikh Sayera Khatun Medical College Hospital",
+    "name_bn": "শেখ সায়েরা খাতুন মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "gopalganj",
+    "established": 2011,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-6685412",
+    "emergency_phone": "+880-2-6685412",
+    "email": "sskmch@hospi.dghs.gov.bd",
+    "website": "http://sskmc.gov.bd",
+    "address": "Gopalganj Sadar, Gopalganj-8100",
+    "coordinates": {
+      "latitude": 23.0062,
+      "longitude": 89.8273
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "Surgery",
+      "Pediatrics",
+      "ICU"
+    ]
+  },
+  {
+    "slug": "habiganj-modern-district-sadar-hospital",
+    "dghs_code": "10001015",
+    "name_en": "250 Bed Modern District Sadar Hospital Habiganj",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট আধুনিক জেলা সদর হাসপাতাল হবিগঞ্জ",
+    "type": "district_hospital",
+    "division": "sylhet",
+    "district": "habiganj",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-831-62345",
+    "emergency_phone": "+880-831-62345",
+    "email": "habiganj@hospi.dghs.gov.bd",
+    "website": "http://hospital.habiganj.gov.bd",
+    "address": "Hospital Road, Habiganj Sadar, Habiganj-3300",
+    "coordinates": {
+      "latitude": 24.3752,
+      "longitude": 91.4158
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "jamalpur-sheikh-hasina-medical-college-hospital",
+    "dghs_code": "10001016",
+    "name_en": "Jamalpur 250 Bed General Hospital & Medical College",
+    "name_bn": "জামালপুর ২৫০ শয্যা জেনারেল হাসপাতাল ও মেডিকেল কলেজ",
+    "type": "medical_college",
+    "division": "mymensingh",
+    "district": "jamalpur",
+    "established": 2014,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-981-63214",
+    "emergency_phone": "+880-981-63214",
+    "email": "jamalpur@hospi.dghs.gov.bd",
+    "website": "http://hospital.jamalpur.gov.bd",
+    "address": "Bokultola, Jamalpur Sadar, Jamalpur-2000",
+    "coordinates": {
+      "latitude": 24.9381,
+      "longitude": 89.9385
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Gynae & Obs",
+      "Blood Bank"
+    ]
+  },
+  {
+    "slug": "jashore-general-hospital",
+    "dghs_code": "10001017",
+    "name_en": "250 Bed General Hospital Jashore",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল যশোর",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "jashore",
+    "established": 1963,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-421-68500",
+    "emergency_phone": "+880-421-68500",
+    "email": "jashore@hospi.dghs.gov.bd",
+    "website": "http://hospital.jashore.gov.bd",
+    "address": "Hospital Road, Jashore Sadar, Jashore-7400",
+    "coordinates": {
+      "latitude": 23.1672,
+      "longitude": 89.2145
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "Orthopedics",
+      "Dialysis",
+      "Surgery"
+    ]
+  },
+  {
+    "slug": "jhalokati-sadar-hospital",
+    "dghs_code": "10001018",
+    "name_en": "100 Bed Sadar Hospital Jhalokati",
+    "name_bn": "১০০ শয্যা বিশিষ্ট সদর হাসপাতাল ঝালকাঠি",
+    "type": "district_hospital",
+    "division": "barishal",
+    "district": "jhalokati",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-498-62432",
+    "emergency_phone": "+880-498-62432",
+    "email": "jhalokati@hospi.dghs.gov.bd",
+    "website": "http://hospital.jhalokati.gov.bd",
+    "address": "Hospital Road, Jhalokati Sadar, Jhalokati-8400",
+    "coordinates": {
+      "latitude": 22.6425,
+      "longitude": 90.2014
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Gynae & Obs"
+    ]
+  },
+  {
+    "slug": "jhenaidah-sadar-hospital",
+    "dghs_code": "10001019",
+    "name_en": "250 Bed Sadar Hospital Jhenaidah",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট সদর হাসপাতাল ঝিনাইদহ",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "jhenaidah",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-451-62345",
+    "emergency_phone": "+880-451-62345",
+    "email": "jhenaidah@hospi.dghs.gov.bd",
+    "website": "http://hospital.jhenaidah.gov.bd",
+    "address": "Hospital Road, Jhenaidah Sadar, Jhenaidah-7300",
+    "coordinates": {
+      "latitude": 23.5451,
+      "longitude": 89.1538
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "joypurhat-modern-district-hospital",
+    "dghs_code": "10001020",
+    "name_en": "Modern District Hospital Joypurhat",
+    "name_bn": "আধুনিক জেলা হাসপাতাল জয়পুরহাট",
+    "type": "district_hospital",
+    "division": "rajshahi",
+    "district": "joypurhat",
+    "established": 1984,
+    "bed_capacity": 150,
+    "has_emergency_24h": true,
+    "phone": "+880-571-62234",
+    "emergency_phone": "+880-571-62234",
+    "email": "joypurhat@hospi.dghs.gov.bd",
+    "website": "http://hospital.joypurhat.gov.bd",
+    "address": "Hospital Road, Joypurhat Sadar, Joypurhat-5900",
+    "coordinates": {
+      "latitude": 25.1018,
+      "longitude": 89.0285
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "khagrachhari-modern-district-hospital",
+    "dghs_code": "10001021",
+    "name_en": "Modern District Hospital Khagrachhari",
+    "name_bn": "আধুনিক জেলা সদর হাসপাতাল খাগড়াছড়ি",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "khagrachhari",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-371-61633",
+    "emergency_phone": "+880-371-61633",
+    "email": "khagrachhari@hospi.dghs.gov.bd",
+    "website": "http://hospital.khagrachhari.gov.bd",
+    "address": "Hospital Road, Khagrachhari Sadar, Khagrachhari-4400",
+    "coordinates": {
+      "latitude": 23.1075,
+      "longitude": 91.9845
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Hill Tracts Healthcare"
+    ]
+  },
+  {
     "slug": "khulna-medical-college-hospital",
     "name_en": "Khulna Medical College Hospital",
     "name_bn": "খুলনা মেডিকেল কলেজ হাসপাতাল",
@@ -176,6 +756,61 @@
     "dghs_code": "10001807"
   },
   {
+    "slug": "kishoreganj-shahid-syed-nazrul-islam-medical-college-hospital",
+    "dghs_code": "10001022",
+    "name_en": "Shaheed Syed Nazrul Islam Medical College Hospital",
+    "name_bn": "শহীদ সৈয়দ নজরুল ইসলাম মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "kishoreganj",
+    "established": 2011,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-941-61456",
+    "emergency_phone": "+880-941-61456",
+    "email": "ssnimch@hospi.dghs.gov.bd",
+    "website": "http://ssnimc.gov.bd",
+    "address": "Jashodal, Kishoreganj-2300",
+    "coordinates": {
+      "latitude": 24.4452,
+      "longitude": 90.7772
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "kurigram-general-hospital",
+    "dghs_code": "10001023",
+    "name_en": "250 Bed General Hospital Kurigram",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল কুড়িগ্রাম",
+    "type": "district_hospital",
+    "division": "rangpur",
+    "district": "kurigram",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-581-61345",
+    "emergency_phone": "+880-581-61345",
+    "email": "kurigram@hospi.dghs.gov.bd",
+    "website": "http://hospital.kurigram.gov.bd",
+    "address": "Hospital Road, Kurigram Sadar, Kurigram-5600",
+    "coordinates": {
+      "latitude": 25.8058,
+      "longitude": 89.6367
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Maternal Health"
+    ]
+  },
+  {
     "slug": "kurmitola-general-hospital",
     "name_en": "Kurmitola General Hospital",
     "name_bn": "কুর্মিটোলা জেনারেল হাসপাতাল",
@@ -200,6 +835,88 @@
       "Dialysis Center",
       "General Surgery",
       "Orthopedics",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "kushtia-general-hospital",
+    "dghs_code": "10001024",
+    "name_en": "250 Bed General Hospital Kushtia",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল কুষ্টিয়া",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "kushtia",
+    "established": 1963,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-71-62400",
+    "emergency_phone": "+880-71-62400",
+    "email": "kushtia@hospi.dghs.gov.bd",
+    "website": "http://hospital.kushtia.gov.bd",
+    "address": "Hospital Road, Kushtia-7000",
+    "coordinates": {
+      "latitude": 23.9092,
+      "longitude": 89.1225
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "General Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "lakshmipur-sadar-hospital",
+    "dghs_code": "10001025",
+    "name_en": "100 Bed Sadar Hospital Lakshmipur",
+    "name_bn": "১০০ শয্যা বিশিষ্ট সদর হাসপাতাল লক্ষ্মীপুর",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "lakshmipur",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-381-62432",
+    "emergency_phone": "+880-381-62432",
+    "email": "lakshmipur@hospi.dghs.gov.bd",
+    "website": "http://hospital.lakshmipur.gov.bd",
+    "address": "Hospital Road, Lakshmipur Sadar, Lakshmipur-3700",
+    "coordinates": {
+      "latitude": 22.9431,
+      "longitude": 90.8412
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "General Surgery",
+      "Gynae & Obs"
+    ]
+  },
+  {
+    "slug": "lalmonirhat-sadar-hospital",
+    "dghs_code": "10001026",
+    "name_en": "100 Bed Sadar Hospital Lalmonirhat",
+    "name_bn": "১০০ শয্যা বিশিষ্ট সদর হাসপাতাল লালমনিরহাট",
+    "type": "district_hospital",
+    "division": "rangpur",
+    "district": "lalmonirhat",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-591-61345",
+    "emergency_phone": "+880-591-61345",
+    "email": "lalmonirhat@hospi.dghs.gov.bd",
+    "website": "http://hospital.lalmonirhat.gov.bd",
+    "address": "Hospital Road, Lalmonirhat Sadar, Lalmonirhat-5500",
+    "coordinates": {
+      "latitude": 25.9194,
+      "longitude": 89.4452
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
       "Pediatrics"
     ]
   },
@@ -233,6 +950,33 @@
     "dghs_code": "10002288"
   },
   {
+    "slug": "madaripur-sadar-hospital",
+    "dghs_code": "10001027",
+    "name_en": "250 Bed District Sadar Hospital Madaripur",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল মাদারীপুর",
+    "type": "district_hospital",
+    "division": "dhaka",
+    "district": "madaripur",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-661-61234",
+    "emergency_phone": "+880-661-61234",
+    "email": "madaripur@hospi.dghs.gov.bd",
+    "website": "http://hospital.madaripur.gov.bd",
+    "address": "Hospital Road, Madaripur Sadar, Madaripur-7900",
+    "coordinates": {
+      "latitude": 23.1685,
+      "longitude": 90.1872
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Gynae & Obs"
+    ]
+  },
+  {
     "slug": "mag-osmani-medical-college-hospital",
     "name_en": "Sylhet MAG Osmani Medical College Hospital",
     "name_bn": "সিলেট এম.এ.জি. ওসমানী মেডিকেল কলেজ হাসপাতাল",
@@ -261,6 +1005,116 @@
       "Orthopedics"
     ],
     "dghs_code": "10002195"
+  },
+  {
+    "slug": "magura-sadar-hospital",
+    "dghs_code": "10001028",
+    "name_en": "250 Bed Sadar Hospital Magura",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট সদর হাসপাতাল মাগুরা",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "magura",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-488-62544",
+    "emergency_phone": "+880-488-62544",
+    "email": "magura@hospi.dghs.gov.bd",
+    "website": "http://hospital.magura.gov.bd",
+    "address": "Hospital Road, Magura Sadar, Magura-7600",
+    "coordinates": {
+      "latitude": 23.4867,
+      "longitude": 89.4189
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "manikganj-col-malek-medical-college-hospital",
+    "dghs_code": "10001029",
+    "name_en": "Colonel Malek Medical College Hospital, Manikganj",
+    "name_bn": "কর্নেল মালেক মেডিকেল কলেজ হাসপাতাল, মানিকগঞ্জ",
+    "type": "medical_college",
+    "division": "dhaka",
+    "district": "manikganj",
+    "established": 2014,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-7711234",
+    "emergency_phone": "+880-2-7711234",
+    "email": "cmmchm@hospi.dghs.gov.bd",
+    "website": "http://cmmc.gov.bd",
+    "address": "Dipu, Manikganj-1800",
+    "coordinates": {
+      "latitude": 23.8615,
+      "longitude": 90.0042
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "Surgery",
+      "Pediatrics",
+      "ICU"
+    ]
+  },
+  {
+    "slug": "meherpur-general-hospital",
+    "dghs_code": "10001030",
+    "name_en": "250 Bed General Hospital Meherpur",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল মেহেরপুর",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "meherpur",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-791-52311",
+    "emergency_phone": "+880-791-52311",
+    "email": "meherpur@hospi.dghs.gov.bd",
+    "website": "http://hospital.meherpur.gov.bd",
+    "address": "Hospital Road, Meherpur-7100",
+    "coordinates": {
+      "latitude": 23.7745,
+      "longitude": 88.6321
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "moulvibazar-250-bed-district-sadar-hospital",
+    "dghs_code": "10001031",
+    "name_en": "250 Bed District Sadar Hospital Moulvibazar",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল মৌলভীবাজার",
+    "type": "district_hospital",
+    "division": "sylhet",
+    "district": "moulvibazar",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-861-52345",
+    "emergency_phone": "+880-861-52345",
+    "email": "moulvibazar@hospi.dghs.gov.bd",
+    "website": "http://hospital.moulvibazar.gov.bd",
+    "address": "Hospital Road, Moulvibazar Sadar, Moulvibazar-3200",
+    "coordinates": {
+      "latitude": 24.4831,
+      "longitude": 91.7682
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
   },
   {
     "slug": "mugda-medical-college-hospital",
@@ -292,6 +1146,33 @@
     "dghs_code": "10013720"
   },
   {
+    "slug": "munshiganj-general-hospital",
+    "dghs_code": "10001032",
+    "name_en": "250 Bed General Hospital Munshiganj",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল মুন্সীগঞ্জ",
+    "type": "district_hospital",
+    "division": "dhaka",
+    "district": "munshiganj",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-2-7612345",
+    "emergency_phone": "+880-2-7612345",
+    "email": "munshiganj@hospi.dghs.gov.bd",
+    "website": "http://hospital.munshiganj.gov.bd",
+    "address": "Hospital Road, Munshiganj-1500",
+    "coordinates": {
+      "latitude": 23.5422,
+      "longitude": 90.5312
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Gynae & Obs"
+    ]
+  },
+  {
     "slug": "mymensingh-medical-college-hospital",
     "name_en": "Mymensingh Medical College Hospital",
     "name_bn": "ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল",
@@ -320,6 +1201,115 @@
       "Orthopedics"
     ],
     "dghs_code": "10000397"
+  },
+  {
+    "slug": "naogaon-general-hospital",
+    "dghs_code": "10001033",
+    "name_en": "250 Bed General Hospital Naogaon",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল নওগাঁ",
+    "type": "district_hospital",
+    "division": "rajshahi",
+    "district": "naogaon",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-741-62544",
+    "emergency_phone": "+880-741-62544",
+    "email": "naogaon@hospi.dghs.gov.bd",
+    "website": "http://hospital.naogaon.gov.bd",
+    "address": "Hospital Road, Naogaon Sadar, Naogaon-6500",
+    "coordinates": {
+      "latitude": 24.8115,
+      "longitude": 88.9452
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "narail-modern-sadar-hospital",
+    "dghs_code": "10001034",
+    "name_en": "100 Bed Modern Sadar Hospital Narail",
+    "name_bn": "১০০ শয্যা বিশিষ্ট আধুনিক সদর হাসপাতাল নড়াইল",
+    "type": "district_hospital",
+    "division": "khulna",
+    "district": "narail",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-481-62432",
+    "emergency_phone": "+880-481-62432",
+    "email": "narail@hospi.dghs.gov.bd",
+    "website": "http://hospital.narail.gov.bd",
+    "address": "Hospital Road, Narail Sadar, Narail-7500",
+    "coordinates": {
+      "latitude": 23.1765,
+      "longitude": 89.5042
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "narayanganj-300-bed-hospital",
+    "dghs_code": "10001035",
+    "name_en": "300 Bed Hospital Narayanganj",
+    "name_bn": "৩০০ শয্যা হাসপাতাল নারায়ণগঞ্জ",
+    "type": "general_hospital",
+    "division": "dhaka",
+    "district": "narayanganj",
+    "established": 1983,
+    "bed_capacity": 300,
+    "has_emergency_24h": true,
+    "phone": "+880-2-7645123",
+    "emergency_phone": "+880-2-7645123",
+    "email": "narayanganj@hospi.dghs.gov.bd",
+    "website": "http://hospital.narayanganj.gov.bd",
+    "address": "Khanpur, Narayanganj-1400",
+    "coordinates": {
+      "latitude": 23.6212,
+      "longitude": 90.5015
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "General Surgery",
+      "Burn Unit",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "narsingdi-sadar-hospital",
+    "dghs_code": "10001036",
+    "name_en": "100 Bed District Hospital Narsingdi",
+    "name_bn": "১০০ শয্যা বিশিষ্ট জেলা হাসপাতাল নরসিংদী",
+    "type": "district_hospital",
+    "division": "dhaka",
+    "district": "narsingdi",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9462345",
+    "emergency_phone": "+880-2-9462345",
+    "email": "narsingdi@hospi.dghs.gov.bd",
+    "website": "http://hospital.narsingdi.gov.bd",
+    "address": "Hospital Road, Narsingdi Sadar, Narsingdi-1600",
+    "coordinates": {
+      "latitude": 23.9215,
+      "longitude": 90.7182
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
   },
   {
     "slug": "national-institute-of-cancer-research-and-hospital",
@@ -409,6 +1399,62 @@
     "dghs_code": "10000008"
   },
   {
+    "slug": "national-institute-of-kidney-diseases-and-urology",
+    "dghs_code": "10000046",
+    "name_en": "National Institute of Kidney Diseases and Urology",
+    "name_bn": "জাতীয় কিডনি ডিজিজেস অ্যান্ড ইউরোলজি ইনস্টিটিউট",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 2001,
+    "bed_capacity": 300,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9118175",
+    "emergency_phone": "+880-2-9118175",
+    "email": "nikdu@hospi.dghs.gov.bd",
+    "website": "http://nikdu.org.bd",
+    "address": "Sher-e-Bangla Nagar, Dhaka-1207",
+    "coordinates": {
+      "latitude": 23.7718,
+      "longitude": 90.3685
+    },
+    "services": [
+      "Emergency Dialysis 24/7",
+      "Nephrology",
+      "Urology",
+      "Kidney Transplantation",
+      "Pediatric Nephrology"
+    ]
+  },
+  {
+    "slug": "national-institute-of-mental-health",
+    "dghs_code": "10000045",
+    "name_en": "National Institute of Mental Health and Hospital",
+    "name_bn": "জাতীয় মানসিক স্বাস্থ্য ইনস্টিটিউট ও হাসপাতাল",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 2001,
+    "bed_capacity": 200,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9118171",
+    "emergency_phone": "+880-2-9118171",
+    "email": "nimh@hospi.dghs.gov.bd",
+    "website": "http://nimh.gov.bd",
+    "address": "Sher-e-Bangla Nagar, Dhaka-1207",
+    "coordinates": {
+      "latitude": 23.7712,
+      "longitude": 90.3698
+    },
+    "services": [
+      "Emergency Psychiatry 24/7",
+      "Adult Psychiatry",
+      "Child & Adolescent Psychiatry",
+      "Psychotherapy",
+      "Addiction Treatment"
+    ]
+  },
+  {
     "slug": "national-institute-of-neurosciences-and-hospital",
     "name_en": "National Institute of Neurosciences & Hospital",
     "name_bn": "জাতীয় নিউরোসায়েন্সেস ইনস্টিটিউট ও হাসপাতাল",
@@ -436,6 +1482,35 @@
       "Pediatric Neurology"
     ],
     "dghs_code": "10017210"
+  },
+  {
+    "slug": "national-institute-of-ophthalmology",
+    "dghs_code": "10000047",
+    "name_en": "National Institute of Ophthalmology and Hospital",
+    "name_bn": "জাতীয় চক্ষু বিজ্ঞান ইনস্টিটিউট ও হাসপাতাল",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 1978,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-2-9118176",
+    "emergency_phone": "+880-2-9118176",
+    "email": "nioh@hospi.dghs.gov.bd",
+    "website": "http://nio.gov.bd",
+    "address": "Sher-e-Bangla Nagar, Dhaka-1207",
+    "coordinates": {
+      "latitude": 23.7725,
+      "longitude": 90.3672
+    },
+    "services": [
+      "Emergency Eye Care 24/7",
+      "Cataract Surgery",
+      "Retina & Vitreous",
+      "Glaucoma",
+      "Cornea Transplantation",
+      "Pediatric Ophthalmology"
+    ]
   },
   {
     "slug": "national-institute-of-traumatology-and-orthopaedic-rehabilitation",
@@ -467,6 +1542,252 @@
     "dghs_code": "10000013"
   },
   {
+    "slug": "natore-modern-sadar-hospital",
+    "dghs_code": "10001037",
+    "name_en": "100 Bed Modern Sadar Hospital Natore",
+    "name_bn": "১০০ শয্যা বিশিষ্ট আধুনিক সদর হাসপাতাল নাটোর",
+    "type": "district_hospital",
+    "division": "rajshahi",
+    "district": "natore",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-771-66789",
+    "emergency_phone": "+880-771-66789",
+    "email": "natore@hospi.dghs.gov.bd",
+    "website": "http://hospital.natore.gov.bd",
+    "address": "Hospital Road, Natore Sadar, Natore-6400",
+    "coordinates": {
+      "latitude": 24.4178,
+      "longitude": 88.9868
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "netrakona-modern-sadar-hospital",
+    "dghs_code": "10001038",
+    "name_en": "100 Bed Modern Sadar Hospital Netrakona",
+    "name_bn": "১০০ শয্যা বিশিষ্ট আধুনিক সদর হাসপাতাল নেত্রকোণা",
+    "type": "district_hospital",
+    "division": "mymensingh",
+    "district": "netrakona",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-951-61543",
+    "emergency_phone": "+880-951-61543",
+    "email": "netrakona@hospi.dghs.gov.bd",
+    "website": "http://hospital.netrakona.gov.bd",
+    "address": "Hospital Road, Netrakona Sadar, Netrakona-2400",
+    "coordinates": {
+      "latitude": 24.8768,
+      "longitude": 90.7285
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "nilphamari-general-hospital",
+    "dghs_code": "10001039",
+    "name_en": "250 Bed General Hospital Nilphamari",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল নীলফামারী",
+    "type": "district_hospital",
+    "division": "rangpur",
+    "district": "nilphamari",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-551-61456",
+    "emergency_phone": "+880-551-61456",
+    "email": "nilphamari@hospi.dghs.gov.bd",
+    "website": "http://hospital.nilphamari.gov.bd",
+    "address": "Hospital Road, Nilphamari Sadar, Nilphamari-5300",
+    "coordinates": {
+      "latitude": 25.9322,
+      "longitude": 88.8565
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "noakhali-general-hospital",
+    "dghs_code": "10001040",
+    "name_en": "250 Bed General Hospital Noakhali",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল নোয়াখালী",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "noakhali",
+    "established": 1974,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-321-61234",
+    "emergency_phone": "+880-321-61234",
+    "email": "noakhali@hospi.dghs.gov.bd",
+    "website": "http://hospital.noakhali.gov.bd",
+    "address": "Maijdee Court, Noakhali-3800",
+    "coordinates": {
+      "latitude": 22.8715,
+      "longitude": 91.0978
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "General Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "pabna-general-hospital",
+    "dghs_code": "10001041",
+    "name_en": "250 Bed General Hospital Pabna",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল পাবনা",
+    "type": "district_hospital",
+    "division": "rajshahi",
+    "district": "pabna",
+    "established": 1965,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-731-65432",
+    "emergency_phone": "+880-731-65432",
+    "email": "pabna@hospi.dghs.gov.bd",
+    "website": "http://hospital.pabna.gov.bd",
+    "address": "Hospital Road, Pabna Sadar, Pabna-6600",
+    "coordinates": {
+      "latitude": 24.0131,
+      "longitude": 89.2492
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "Surgery",
+      "Pediatrics",
+      "Mental Health ward affiliate"
+    ]
+  },
+  {
+    "slug": "panchagarh-modern-sadar-hospital",
+    "dghs_code": "10001042",
+    "name_en": "100 Bed Modern Sadar Hospital Panchagarh",
+    "name_bn": "১০০ শয্যা বিশিষ্ট আধুনিক সদর হাসপাতাল পঞ্চগড়",
+    "type": "district_hospital",
+    "division": "rangpur",
+    "district": "panchagarh",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-568-61234",
+    "emergency_phone": "+880-568-61234",
+    "email": "panchagarh@hospi.dghs.gov.bd",
+    "website": "http://hospital.panchagarh.gov.bd",
+    "address": "Hospital Road, Panchagarh Sadar, Panchagarh-5000",
+    "coordinates": {
+      "latitude": 26.3359,
+      "longitude": 88.5581
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "patuakhali-medical-college-hospital",
+    "dghs_code": "10001043",
+    "name_en": "Patuakhali Medical College Hospital",
+    "name_bn": "পটুয়াখালী মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "barishal",
+    "district": "patuakhali",
+    "established": 2014,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-441-62432",
+    "emergency_phone": "+880-441-62432",
+    "email": "pkmch@hospi.dghs.gov.bd",
+    "website": "http://pkmc.gov.bd",
+    "address": "Patuakhali Sadar, Patuakhali-8600",
+    "coordinates": {
+      "latitude": 22.3582,
+      "longitude": 90.3341
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "General Surgery",
+      "Gynae & Obs",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "pirojpur-district-hospital",
+    "dghs_code": "10001044",
+    "name_en": "100 Bed District Hospital Pirojpur",
+    "name_bn": "১০০ শয্যা বিশিষ্ট জেলা হাসপাতাল পিরোজপুর",
+    "type": "district_hospital",
+    "division": "barishal",
+    "district": "pirojpur",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-461-62544",
+    "emergency_phone": "+880-461-62544",
+    "email": "pirojpur@hospi.dghs.gov.bd",
+    "website": "http://hospital.pirojpur.gov.bd",
+    "address": "Hospital Road, Pirojpur Sadar, Pirojpur-8500",
+    "coordinates": {
+      "latitude": 22.5815,
+      "longitude": 89.9752
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Gynae & Obs"
+    ]
+  },
+  {
+    "slug": "rajbari-sadar-hospital",
+    "dghs_code": "10001045",
+    "name_en": "100 Bed Sadar Hospital Rajbari",
+    "name_bn": "১০০ শয্যা বিশিষ্ট সদর হাসপাতাল রাজবাড়ী",
+    "type": "district_hospital",
+    "division": "dhaka",
+    "district": "rajbari",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-641-65432",
+    "emergency_phone": "+880-641-65432",
+    "email": "rajbari@hospi.dghs.gov.bd",
+    "website": "http://hospital.rajbari.gov.bd",
+    "address": "Hospital Road, Rajbari Sadar, Rajbari-7700",
+    "coordinates": {
+      "latitude": 23.7578,
+      "longitude": 89.6451
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
     "slug": "rajshahi-medical-college-hospital",
     "name_en": "Rajshahi Medical College Hospital",
     "name_bn": "রাজশাহী মেডিকেল কলেজ হাসপাতাল",
@@ -496,6 +1817,33 @@
     "dghs_code": "10001560"
   },
   {
+    "slug": "rangamati-general-hospital",
+    "dghs_code": "10001046",
+    "name_en": "100 Bed General Hospital Rangamati",
+    "name_bn": "১০০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল রাঙ্গামাটি",
+    "type": "district_hospital",
+    "division": "chattogram",
+    "district": "rangamati",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-351-62255",
+    "emergency_phone": "+880-351-62255",
+    "email": "rangamati@hospi.dghs.gov.bd",
+    "website": "http://hospital.rangamati.gov.bd",
+    "address": "Hospital Road, Rangamati Sadar, Rangamati-4500",
+    "coordinates": {
+      "latitude": 22.6533,
+      "longitude": 92.1753
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Hill Tracts Healthcare"
+    ]
+  },
+  {
     "slug": "rangpur-medical-college-hospital",
     "name_en": "Rangpur Medical College Hospital",
     "name_bn": "রংপুর মেডিকেল কলেজ হাসপাতাল",
@@ -523,6 +1871,34 @@
       "Pediatrics"
     ],
     "dghs_code": "10001618"
+  },
+  {
+    "slug": "satkhira-medical-college-hospital",
+    "dghs_code": "10001047",
+    "name_en": "Satkhira Medical College Hospital",
+    "name_bn": "সাতক্ষীরা মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "khulna",
+    "district": "satkhira",
+    "established": 2011,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-471-63456",
+    "emergency_phone": "+880-471-63456",
+    "email": "smch@hospi.dghs.gov.bd",
+    "website": "http://smc.gov.bd",
+    "address": "Bakchara, Satkhira Sadar, Satkhira-9400",
+    "coordinates": {
+      "latitude": 22.7185,
+      "longitude": 89.0712
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
   },
   {
     "slug": "shaheed-sheikh-abu-naser-specialized-hospital",
@@ -611,6 +1987,60 @@
     "dghs_code": "10001110"
   },
   {
+    "slug": "shariatpur-sadar-hospital",
+    "dghs_code": "10001048",
+    "name_en": "100 Bed Sadar Hospital Shariatpur",
+    "name_bn": "১০০ শয্যা বিশিষ্ট সদর হাসপাতাল শরীয়তপুর",
+    "type": "district_hospital",
+    "division": "dhaka",
+    "district": "shariatpur",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-601-61432",
+    "emergency_phone": "+880-601-61432",
+    "email": "shariatpur@hospi.dghs.gov.bd",
+    "website": "http://hospital.shariatpur.gov.bd",
+    "address": "Hospital Road, Shariatpur Sadar, Shariatpur-8000",
+    "coordinates": {
+      "latitude": 23.2105,
+      "longitude": 90.3452
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "slug": "sheikh-hasina-national-institute-of-burn-and-plastic-surgery",
+    "dghs_code": "10000048",
+    "name_en": "Sheikh Hasina National Institute of Burn and Plastic Surgery",
+    "name_bn": "শেখ হাসিনা জাতীয় বার্ন ও প্লাস্টিক সার্জারি ইনস্টিটিউট",
+    "type": "specialized_institute",
+    "division": "dhaka",
+    "district": "dhaka",
+    "established": 2018,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-2-55165650",
+    "emergency_phone": "+880-2-55165650",
+    "email": "shnibps@hospi.dghs.gov.bd",
+    "website": "http://shnibps.gov.bd",
+    "address": "Secretariat Road, Ramna, Dhaka-1000",
+    "coordinates": {
+      "latitude": 23.7265,
+      "longitude": 90.3982
+    },
+    "services": [
+      "Burn Emergency 24/7",
+      "Burn ICU & HDU",
+      "Plastic & Reconstructive Surgery",
+      "Post-burn Rehabilitation"
+    ]
+  },
+  {
     "slug": "sher-e-bangla-medical-college-hospital",
     "name_en": "Sher-e-Bangla Medical College Hospital",
     "name_bn": "শের-ই-বাংলা মেডিকেল কলেজ হাসপাতাল",
@@ -641,6 +2071,33 @@
     "dghs_code": "10001978"
   },
   {
+    "slug": "sherpur-district-hospital",
+    "dghs_code": "10001049",
+    "name_en": "100 Bed District Hospital Sherpur",
+    "name_bn": "১০০ শয্যা বিশিষ্ট জেলা হাসপাতাল শেরপুর",
+    "type": "district_hospital",
+    "division": "mymensingh",
+    "district": "sherpur",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-931-61234",
+    "emergency_phone": "+880-931-61234",
+    "email": "sherpur@hospi.dghs.gov.bd",
+    "website": "http://hospital.sherpur.gov.bd",
+    "address": "Hospital Road, Sherpur Sadar, Sherpur-2100",
+    "coordinates": {
+      "latitude": 25.0185,
+      "longitude": 90.0152
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Gynae & Obs"
+    ]
+  },
+  {
     "slug": "sir-salimullah-medical-college-mitford-hospital",
     "name_en": "Sir Salimullah Medical College Mitford Hospital",
     "name_bn": "স্যার সলিমুল্লাহ মেডিকেল কলেজ মিটফোর্ড হাসপাতাল",
@@ -669,5 +2126,115 @@
       "General Surgery"
     ],
     "dghs_code": "10000056"
+  },
+  {
+    "slug": "sirajganj-shahid-m-monsur-ali-medical-college-hospital",
+    "dghs_code": "10001050",
+    "name_en": "Shaheed M. Monsur Ali Medical College Hospital",
+    "name_bn": "শহীদ এম. মনসুর আলী মেডিকেল কলেজ হাসপাতাল",
+    "type": "medical_college",
+    "division": "rajshahi",
+    "district": "sirajganj",
+    "established": 2014,
+    "bed_capacity": 500,
+    "has_emergency_24h": true,
+    "phone": "+880-751-64500",
+    "emergency_phone": "+880-751-64500",
+    "email": "smmamch@hospi.dghs.gov.bd",
+    "website": "http://smmamc.gov.bd",
+    "address": "Sirajganj Sadar, Sirajganj-6700",
+    "coordinates": {
+      "latitude": 24.4539,
+      "longitude": 89.7088
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology",
+      "Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "sunamganj-sadar-hospital",
+    "dghs_code": "10001051",
+    "name_en": "250 Bed District Sadar Hospital Sunamganj",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেলা সদর হাসপাতাল সুনামগঞ্জ",
+    "type": "district_hospital",
+    "division": "sylhet",
+    "district": "sunamganj",
+    "established": 1984,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-871-61456",
+    "emergency_phone": "+880-871-61456",
+    "email": "sunamganj@hospi.dghs.gov.bd",
+    "website": "http://hospital.sunamganj.gov.bd",
+    "address": "Hospital Road, Sunamganj Sadar, Sunamganj-3000",
+    "coordinates": {
+      "latitude": 25.0658,
+      "longitude": 91.3985
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Haor Healthcare"
+    ]
+  },
+  {
+    "slug": "tangail-general-hospital",
+    "dghs_code": "10001052",
+    "name_en": "250 Bed District General Hospital Tangail",
+    "name_bn": "২৫০ শয্যা বিশিষ্ট জেনারেল হাসপাতাল টাঙ্গাইল",
+    "type": "district_hospital",
+    "division": "dhaka",
+    "district": "tangail",
+    "established": 1974,
+    "bed_capacity": 250,
+    "has_emergency_24h": true,
+    "phone": "+880-921-63456",
+    "emergency_phone": "+880-921-63456",
+    "email": "tangail@hospi.dghs.gov.bd",
+    "website": "http://hospital.tangail.gov.bd",
+    "address": "Hospital Road, Tangail Sadar, Tangail-1900",
+    "coordinates": {
+      "latitude": 24.2518,
+      "longitude": 89.9172
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "Cardiology & CCU",
+      "General Surgery",
+      "Pediatrics",
+      "Dialysis"
+    ]
+  },
+  {
+    "slug": "thakurgaon-modern-sadar-hospital",
+    "dghs_code": "10001053",
+    "name_en": "100 Bed Modern Sadar Hospital Thakurgaon",
+    "name_bn": "১০০ শয্যা বিশিষ্ট আধুনিক সদর হাসপাতাল ঠাকুরগাঁও",
+    "type": "district_hospital",
+    "division": "rangpur",
+    "district": "thakurgaon",
+    "established": 1984,
+    "bed_capacity": 100,
+    "has_emergency_24h": true,
+    "phone": "+880-561-61234",
+    "emergency_phone": "+880-561-61234",
+    "email": "thakurgaon@hospi.dghs.gov.bd",
+    "website": "http://hospital.thakurgaon.gov.bd",
+    "address": "Hospital Road, Thakurgaon Sadar, Thakurgaon-5100",
+    "coordinates": {
+      "latitude": 26.0342,
+      "longitude": 88.4681
+    },
+    "services": [
+      "Emergency & Casualty 24/7",
+      "General Medicine",
+      "Surgery",
+      "Pediatrics"
+    ]
   }
 ]

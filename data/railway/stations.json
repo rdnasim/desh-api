@@ -12,6 +12,102 @@
     }
   },
   {
+    "code": "BEN",
+    "slug": "benapole",
+    "name_en": "Benapole Railway Station",
+    "name_bn": "বেনাপোল রেলওয়ে স্টেশন",
+    "division": "khulna",
+    "district": "jashore",
+    "coordinates": {
+      "latitude": 23.0372,
+      "longitude": 88.8967
+    }
+  },
+  {
+    "code": "BHR",
+    "slug": "bhairab-bazar",
+    "name_en": "Bhairab Bazar Junction",
+    "name_bn": "ভৈরব বাজার জংশন রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "kishoreganj",
+    "coordinates": {
+      "latitude": 24.0503,
+      "longitude": 90.9858
+    }
+  },
+  {
+    "code": "BNG",
+    "slug": "bhanga",
+    "name_en": "Bhanga Junction",
+    "name_bn": "ভাঙ্গা জংশন রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "faridpur",
+    "coordinates": {
+      "latitude": 23.3854,
+      "longitude": 89.9821
+    }
+  },
+  {
+    "code": "BOG",
+    "slug": "bogura",
+    "name_en": "Bogura Railway Station",
+    "name_bn": "বগুড়া রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "bogura",
+    "coordinates": {
+      "latitude": 24.8465,
+      "longitude": 89.3732
+    }
+  },
+  {
+    "code": "BB",
+    "slug": "brahmanbaria",
+    "name_en": "Brahmanbaria Railway Station",
+    "name_bn": "ব্রাহ্মণবাড়িয়া রেলওয়ে স্টেশন",
+    "division": "chattogram",
+    "district": "brahmanbaria",
+    "coordinates": {
+      "latitude": 23.974,
+      "longitude": 91.1092
+    }
+  },
+  {
+    "code": "BMI",
+    "slug": "burimari",
+    "name_en": "Burimari Railway Station",
+    "name_bn": "বুড়িমারী রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "lalmonirhat",
+    "coordinates": {
+      "latitude": 26.4172,
+      "longitude": 88.9986
+    }
+  },
+  {
+    "code": "CP",
+    "slug": "chandpur",
+    "name_en": "Chandpur Railway Station",
+    "name_bn": "চাঁদপুর রেলওয়ে স্টেশন",
+    "division": "chattogram",
+    "district": "chandpur",
+    "coordinates": {
+      "latitude": 23.2321,
+      "longitude": 90.6631
+    }
+  },
+  {
+    "code": "CNB",
+    "slug": "chapainababganj",
+    "name_en": "Chapainababganj Railway Station",
+    "name_bn": "চাঁপাইনবাবগঞ্জ রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "chapainababganj",
+    "coordinates": {
+      "latitude": 24.596,
+      "longitude": 88.2775
+    }
+  },
+  {
     "code": "CG",
     "slug": "chattogram",
     "name_en": "Chattogram Railway Station",
@@ -21,6 +117,66 @@
     "coordinates": {
       "latitude": 22.3354,
       "longitude": 91.8262
+    }
+  },
+  {
+    "code": "CHL",
+    "slug": "chilahati",
+    "name_en": "Chilahati Railway Station",
+    "name_bn": "চিলাহাটি রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "nilphamari",
+    "coordinates": {
+      "latitude": 26.1553,
+      "longitude": 88.7845
+    }
+  },
+  {
+    "code": "CDG",
+    "slug": "chuadanga",
+    "name_en": "Chuadanga Railway Station",
+    "name_bn": "চুয়াডাঙ্গা রেলওয়ে স্টেশন",
+    "division": "khulna",
+    "district": "chuadanga",
+    "coordinates": {
+      "latitude": 23.6425,
+      "longitude": 88.8524
+    }
+  },
+  {
+    "code": "CXB",
+    "slug": "coxs-bazar",
+    "name_en": "Cox's Bazar Railway Station",
+    "name_bn": "কক্সবাজার রেলওয়ে স্টেশন",
+    "division": "chattogram",
+    "district": "coxs-bazar",
+    "coordinates": {
+      "latitude": 21.4398,
+      "longitude": 91.9837
+    }
+  },
+  {
+    "code": "COM",
+    "slug": "cumilla",
+    "name_en": "Cumilla Railway Station",
+    "name_bn": "কুমিল্লা রেলওয়ে স্টেশন",
+    "division": "chattogram",
+    "district": "cumilla",
+    "coordinates": {
+      "latitude": 23.4682,
+      "longitude": 91.1788
+    }
+  },
+  {
+    "code": "DWB",
+    "slug": "dewanganj-bazar",
+    "name_en": "Dewanganj Bazar Railway Station",
+    "name_bn": "দেওয়ানগঞ্জ বাজার রেলওয়ে স্টেশন",
+    "division": "mymensingh",
+    "district": "jamalpur",
+    "coordinates": {
+      "latitude": 25.1436,
+      "longitude": 89.7712
     }
   },
   {
@@ -55,8 +211,68 @@
     "division": "rangpur",
     "district": "dinajpur",
     "coordinates": {
-      "latitude": 25.6268,
-      "longitude": 88.6437
+      "latitude": 25.6279,
+      "longitude": 88.6332
+    }
+  },
+  {
+    "code": "FRP",
+    "slug": "faridpur",
+    "name_en": "Faridpur Railway Station",
+    "name_bn": "ফরিদপুর রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "faridpur",
+    "coordinates": {
+      "latitude": 23.6071,
+      "longitude": 89.8426
+    }
+  },
+  {
+    "code": "FN",
+    "slug": "feni",
+    "name_en": "Feni Junction",
+    "name_bn": "ফেনী জংশন রেলওয়ে স্টেশন",
+    "division": "chattogram",
+    "district": "feni",
+    "coordinates": {
+      "latitude": 23.0186,
+      "longitude": 91.3966
+    }
+  },
+  {
+    "code": "GB",
+    "slug": "gaibandha",
+    "name_en": "Gaibandha Railway Station",
+    "name_bn": "গাইবান্ধা রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "gaibandha",
+    "coordinates": {
+      "latitude": 25.3287,
+      "longitude": 89.5406
+    }
+  },
+  {
+    "code": "GPJ",
+    "slug": "gopalganj",
+    "name_en": "Gopalganj Railway Station",
+    "name_bn": "গোপালগঞ্জ রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "gopalganj",
+    "coordinates": {
+      "latitude": 23.0055,
+      "longitude": 89.8267
+    }
+  },
+  {
+    "code": "HLI",
+    "slug": "hili",
+    "name_en": "Hili Railway Station",
+    "name_bn": "হিলি রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "dinajpur",
+    "coordinates": {
+      "latitude": 25.2833,
+      "longitude": 89.0167
     }
   },
   {
@@ -67,8 +283,80 @@
     "division": "rajshahi",
     "district": "pabna",
     "coordinates": {
-      "latitude": 24.1278,
-      "longitude": 89.0682
+      "latitude": 24.1274,
+      "longitude": 89.0494
+    }
+  },
+  {
+    "code": "IBP",
+    "slug": "ishwardi-bypass",
+    "name_en": "Ishwardi Bypass Railway Station",
+    "name_bn": "ঈশ্বরদী বাইপাস রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "pabna",
+    "coordinates": {
+      "latitude": 24.1539,
+      "longitude": 89.0655
+    }
+  },
+  {
+    "code": "JMP",
+    "slug": "jamalpur",
+    "name_en": "Jamalpur Railway Station",
+    "name_bn": "জামালপুর রেলওয়ে স্টেশন",
+    "division": "mymensingh",
+    "district": "jamalpur",
+    "coordinates": {
+      "latitude": 24.9375,
+      "longitude": 89.9377
+    }
+  },
+  {
+    "code": "BBE",
+    "slug": "jamuna-bridge-east",
+    "name_en": "Bangabandhu Setu East Railway Station",
+    "name_bn": "বঙ্গবন্ধু সেতু পূর্ব রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "tangail",
+    "coordinates": {
+      "latitude": 24.3986,
+      "longitude": 89.8053
+    }
+  },
+  {
+    "code": "JS",
+    "slug": "jashore",
+    "name_en": "Jashore Junction",
+    "name_bn": "যশোর জংশন রেলওয়ে স্টেশন",
+    "division": "khulna",
+    "district": "jashore",
+    "coordinates": {
+      "latitude": 23.1664,
+      "longitude": 89.2138
+    }
+  },
+  {
+    "code": "JDB",
+    "slug": "joydebpur",
+    "name_en": "Joydebpur Junction",
+    "name_bn": "জয়দেবপুর জংশন রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "gazipur",
+    "coordinates": {
+      "latitude": 23.9999,
+      "longitude": 90.4203
+    }
+  },
+  {
+    "code": "JHT",
+    "slug": "joypurhat",
+    "name_en": "Joypurhat Railway Station",
+    "name_bn": "জয়পুরহাট রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "joypurhat",
+    "coordinates": {
+      "latitude": 25.1011,
+      "longitude": 89.0278
     }
   },
   {
@@ -79,8 +367,152 @@
     "division": "khulna",
     "district": "khulna",
     "coordinates": {
-      "latitude": 22.8188,
-      "longitude": 89.5654
+      "latitude": 22.8158,
+      "longitude": 89.5672
+    }
+  },
+  {
+    "code": "KG",
+    "slug": "kishoreganj",
+    "name_en": "Kishoreganj Railway Station",
+    "name_bn": "কিশোরগঞ্জ রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "kishoreganj",
+    "coordinates": {
+      "latitude": 24.4449,
+      "longitude": 90.7766
+    }
+  },
+  {
+    "code": "KLA",
+    "slug": "kulaura",
+    "name_en": "Kulaura Junction",
+    "name_bn": "কুলাউড়া জংশন রেলওয়ে স্টেশন",
+    "division": "sylhet",
+    "district": "moulvibazar",
+    "coordinates": {
+      "latitude": 24.5165,
+      "longitude": 92.0331
+    }
+  },
+  {
+    "code": "KGM",
+    "slug": "kurigram",
+    "name_en": "Kurigram Railway Station",
+    "name_bn": "কুড়িগ্রাম রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "kurigram",
+    "coordinates": {
+      "latitude": 25.8054,
+      "longitude": 89.6361
+    }
+  },
+  {
+    "code": "KUC",
+    "slug": "kushtia-court",
+    "name_en": "Kushtia Court Railway Station",
+    "name_bn": "কুষ্টিয়া কোর্ট রেলওয়ে স্টেশন",
+    "division": "khulna",
+    "district": "kushtia",
+    "coordinates": {
+      "latitude": 23.9088,
+      "longitude": 89.122
+    }
+  },
+  {
+    "code": "LMH",
+    "slug": "lalmonirhat",
+    "name_en": "Lalmonirhat Railway Station",
+    "name_bn": "লালমনিরহাট রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "lalmonirhat",
+    "coordinates": {
+      "latitude": 25.9189,
+      "longitude": 89.4447
+    }
+  },
+  {
+    "code": "MYM",
+    "slug": "mymensingh",
+    "name_en": "Mymensingh Junction",
+    "name_bn": "ময়মনসিংহ জংশন রেলওয়ে স্টেশন",
+    "division": "mymensingh",
+    "district": "mymensingh",
+    "coordinates": {
+      "latitude": 24.7577,
+      "longitude": 90.4073
+    }
+  },
+  {
+    "code": "NAT",
+    "slug": "natore",
+    "name_en": "Natore Railway Station",
+    "name_bn": "নাটোর রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "natore",
+    "coordinates": {
+      "latitude": 24.4172,
+      "longitude": 88.9863
+    }
+  },
+  {
+    "code": "NET",
+    "slug": "netrakona",
+    "name_en": "Netrakona Railway Station",
+    "name_bn": "নেত্রকোণা রেলওয়ে স্টেশন",
+    "division": "mymensingh",
+    "district": "netrakona",
+    "coordinates": {
+      "latitude": 24.8763,
+      "longitude": 90.7279
+    }
+  },
+  {
+    "code": "NIL",
+    "slug": "nilphamari",
+    "name_en": "Nilphamari Railway Station",
+    "name_bn": "নীলফামারী রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "nilphamari",
+    "coordinates": {
+      "latitude": 25.9317,
+      "longitude": 88.856
+    }
+  },
+  {
+    "code": "NKL",
+    "slug": "noakhali",
+    "name_en": "Noakhali Railway Station",
+    "name_bn": "নোয়াখালী রেলওয়ে স্টেশন",
+    "division": "chattogram",
+    "district": "noakhali",
+    "coordinates": {
+      "latitude": 22.8273,
+      "longitude": 91.0984
+    }
+  },
+  {
+    "code": "PBN",
+    "slug": "pabna",
+    "name_en": "Pabna Railway Station",
+    "name_bn": "পাবনা রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "pabna",
+    "coordinates": {
+      "latitude": 24.0125,
+      "longitude": 89.2486
+    }
+  },
+  {
+    "code": "PNC",
+    "slug": "panchagarh",
+    "name_en": "Bir Muktijoddha Sirajul Islam Railway Station",
+    "name_bn": "বীর মুক্তিযোদ্ধা সিরাজুল ইসলাম রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "panchagarh",
+    "coordinates": {
+      "latitude": 26.3354,
+      "longitude": 88.5574
     }
   },
   {
@@ -91,8 +523,32 @@
     "division": "rangpur",
     "district": "dinajpur",
     "coordinates": {
-      "latitude": 25.6592,
-      "longitude": 88.9288
+      "latitude": 25.6669,
+      "longitude": 88.9228
+    }
+  },
+  {
+    "code": "PRD",
+    "slug": "poradaha",
+    "name_en": "Poradaha Junction",
+    "name_bn": "পোড়াদহ জংশন রেলওয়ে স্টেশন",
+    "division": "khulna",
+    "district": "kushtia",
+    "coordinates": {
+      "latitude": 23.8058,
+      "longitude": 89.0558
+    }
+  },
+  {
+    "code": "RJB",
+    "slug": "rajbari",
+    "name_en": "Rajbari Railway Station",
+    "name_bn": "রাজবাড়ী রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "rajbari",
+    "coordinates": {
+      "latitude": 23.7574,
+      "longitude": 89.6445
     }
   },
   {
@@ -103,8 +559,8 @@
     "division": "rajshahi",
     "district": "rajshahi",
     "coordinates": {
-      "latitude": 24.3739,
-      "longitude": 88.6045
+      "latitude": 24.3726,
+      "longitude": 88.6041
     }
   },
   {
@@ -115,8 +571,8 @@
     "division": "rangpur",
     "district": "rangpur",
     "coordinates": {
-      "latitude": 25.7482,
-      "longitude": 89.2618
+      "latitude": 25.7468,
+      "longitude": 89.2508
     }
   },
   {
@@ -127,8 +583,44 @@
     "division": "rajshahi",
     "district": "bogura",
     "coordinates": {
-      "latitude": 24.7877,
-      "longitude": 88.9712
+      "latitude": 24.7891,
+      "longitude": 88.9744
+    }
+  },
+  {
+    "code": "SRB",
+    "slug": "sarishabari",
+    "name_en": "Sarishabari Railway Station",
+    "name_bn": "সরিষাবাড়ী রেলওয়ে স্টেশন",
+    "division": "mymensingh",
+    "district": "jamalpur",
+    "coordinates": {
+      "latitude": 24.7471,
+      "longitude": 89.8335
+    }
+  },
+  {
+    "code": "SRJ",
+    "slug": "sirajganj",
+    "name_en": "Sirajganj Bazar Railway Station",
+    "name_bn": "সিরাজগঞ্জ বাজার রেলওয়ে স্টেশন",
+    "division": "rajshahi",
+    "district": "sirajganj",
+    "coordinates": {
+      "latitude": 24.4534,
+      "longitude": 89.7081
+    }
+  },
+  {
+    "code": "SRM",
+    "slug": "sreemangal",
+    "name_en": "Sreemangal Railway Station",
+    "name_bn": "শ্রীমঙ্গল রেলওয়ে স্টেশন",
+    "division": "sylhet",
+    "district": "moulvibazar",
+    "coordinates": {
+      "latitude": 24.3065,
+      "longitude": 91.7336
     }
   },
   {
@@ -139,8 +631,56 @@
     "division": "sylhet",
     "district": "sylhet",
     "coordinates": {
-      "latitude": 24.8824,
-      "longitude": 91.8687
+      "latitude": 24.8828,
+      "longitude": 91.8711
+    }
+  },
+  {
+    "code": "TG",
+    "slug": "tangail",
+    "name_en": "Tangail Railway Station",
+    "name_bn": "টাঙ্গাইল রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "tangail",
+    "coordinates": {
+      "latitude": 24.2513,
+      "longitude": 89.9167
+    }
+  },
+  {
+    "code": "TKD",
+    "slug": "tarakandi",
+    "name_en": "Tarakandi Railway Station",
+    "name_bn": "তারাকান্দি রেলওয়ে স্টেশন",
+    "division": "mymensingh",
+    "district": "jamalpur",
+    "coordinates": {
+      "latitude": 24.7925,
+      "longitude": 89.8654
+    }
+  },
+  {
+    "code": "THK",
+    "slug": "thakurgaon",
+    "name_en": "Thakurgaon Road Railway Station",
+    "name_bn": "ঠাকুরগাঁও রোড রেলওয়ে স্টেশন",
+    "division": "rangpur",
+    "district": "thakurgaon",
+    "coordinates": {
+      "latitude": 26.0337,
+      "longitude": 88.4674
+    }
+  },
+  {
+    "code": "TGI",
+    "slug": "tongi",
+    "name_en": "Tongi Junction",
+    "name_bn": "টঙ্গী জংশন রেলওয়ে স্টেশন",
+    "division": "dhaka",
+    "district": "gazipur",
+    "coordinates": {
+      "latitude": 23.8967,
+      "longitude": 90.4042
     }
   }
 ]

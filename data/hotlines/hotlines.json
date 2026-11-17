@@ -28,6 +28,26 @@
     "last_verified": "2026-11-14"
   },
   {
+    "number": "104",
+    "name_en": "Bangladesh Bank Financial Consumer Protection Helpline",
+    "name_bn": "বাংলাদেশ ব্যাংক গ্রাহক স্বার্থ সংরক্ষণ হেল্পলাইন",
+    "category": "government-service",
+    "hours": "Office hours, 10am–5pm",
+    "notes_en": "Complaints regarding banking and financial institution services.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
+    "number": "105",
+    "name_en": "Election Commission NID (National Identity) Call Centre",
+    "name_bn": "জাতীয় পরিচয়পত্র (এনআইডি) হেল্পলাইন",
+    "category": "government-service",
+    "hours": "9am–5pm working days",
+    "notes_en": "NID card inquiries, corrections, and voter registration assistance.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
     "number": "106",
     "name_en": "Anti-Corruption Commission hotline",
     "name_bn": "দুর্নীতি দমন কমিশন (দুদক) হটলাইন",
@@ -66,6 +86,16 @@
     "last_verified": "2026-11-14"
   },
   {
+    "number": "16107",
+    "name_en": "BRTA Customer Service Call Centre",
+    "name_bn": "বিআরটিএ হেল্পলাইন ও কাস্টমার সেবা",
+    "category": "transport",
+    "hours": "Office hours, 9am–5pm",
+    "notes_en": "Driving license, motor vehicle registration, and tax token assistance.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
     "number": "16109",
     "name_en": "Government employees' welfare line (Bangladesh Karmachari Kalyan Board)",
     "name_bn": "কল্যাণ লাইন (বাংলাদেশ কর্মচারী কল্যাণ বোর্ড)",
@@ -95,6 +125,36 @@
     "last_verified": "2026-11-14"
   },
   {
+    "number": "16116",
+    "name_en": "DPDC Electricity Customer Care & Emergency",
+    "name_bn": "ডিপিডিসি বিদ্যুৎ সেবা ও অভিযোগ কেন্দ্র",
+    "category": "utility",
+    "hours": "24/7",
+    "notes_en": "Dhaka Power Distribution Company electricity outage and fault reporting.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
+    "number": "16120",
+    "name_en": "DESCO Electricity Customer Care & Complaints",
+    "name_bn": "ডেসকো বিদ্যুৎ অভিযোগ ও গ্রাহক সেবা",
+    "category": "utility",
+    "hours": "24/7",
+    "notes_en": "Dhaka Electric Supply Company electricity emergency and meter reporting.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
+    "number": "16121",
+    "name_en": "National Consumer Rights Protection Helpline",
+    "name_bn": "জাতীয় ভোক্তা অধিকার সংরক্ষণ হেল্পলাইন",
+    "category": "government-service",
+    "hours": "Office hours, 9am–5pm",
+    "notes_en": "Consumer price gouging, food adulteration, and fraud complaints.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
     "number": "16122",
     "name_en": "Land services helpline (Ministry of Land)",
     "name_bn": "ভূমিসেবা হেল্পলাইন",
@@ -102,6 +162,16 @@
     "notes_en": "From abroad: +880 96123 16122.",
     "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
     "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16123",
+    "name_en": "Agriculture Call Centre (Krishi Tathya Service)",
+    "name_bn": "কৃষি কল সেন্টার (কৃষি তথ্য সার্ভিস)",
+    "category": "information",
+    "hours": "Office hours, 9am–5pm",
+    "notes_en": "Farming, crop disease diagnosis, livestock, and fisheries guidance.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
   },
   {
     "number": "16131",
@@ -123,6 +193,26 @@
     "last_verified": "2026-11-14"
   },
   {
+    "number": "16162",
+    "name_en": "Dhaka WASA Water & Sewerage Complaints Line",
+    "name_bn": "ঢাকা ওয়াসা পানি ও পয়ঃনিষ্কাশন হেল্পলাইন",
+    "category": "utility",
+    "hours": "24/7",
+    "notes_en": "Water supply disruptions, pipe bursts, and billing queries in Dhaka.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
+    "number": "16256",
+    "name_en": "Bangladesh Railway Inquiry & E-Ticketing Assistance",
+    "name_bn": "বাংলাদেশ রেলওয়ে তথ্য ও টিকিট হেল্পলাইন",
+    "category": "transport",
+    "hours": "6am–11pm",
+    "notes_en": "Train schedules, seat availability, and online ticketing support.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
     "number": "16263",
     "name_en": "Health call centre (Directorate General of Health Services)",
     "name_bn": "স্বাস্থ্য বাতায়ন (স্বাস্থ্য অধিদপ্তর)",
@@ -130,6 +220,37 @@
     "hours": "24/7",
     "source": "https://dghs.gov.bd/",
     "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16307",
+    "name_en": "Bangladesh Post Office (Dak Odhidoptor) Helpline",
+    "name_bn": "বাংলাদেশ ডাক অধিদপ্তর হেল্পলাইন",
+    "category": "government-service",
+    "hours": "Office hours, 9am–5pm",
+    "notes_en": "Postal tracking, EMS parcel assistance, and post office savings inquiries.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
+    "number": "16402",
+    "name_en": "National Board of Revenue (NBR) Tax Helpline",
+    "name_bn": "জাতীয় রাজস্ব বোর্ড (এনবিআর) কর সেবা হেল্পলাইন",
+    "category": "government-service",
+    "hours": "Office hours, 9am–5pm",
+    "notes_en": "Income tax e-filing, TIN, and VAT registration queries.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
+  },
+  {
+    "number": "16430",
+    "name_en": "National Legal Aid Services Helpline (Ministry of Law)",
+    "name_bn": "জাতীয় আইনগত সহায়তা হেল্পলাইন (আইন মন্ত্রণালয়)",
+    "category": "legal-aid",
+    "toll_free": true,
+    "hours": "24/7",
+    "notes_en": "Free legal counseling, representation, and ADR mediation for insolvent citizens.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
   },
   {
     "number": "16445",
@@ -140,6 +261,16 @@
     "notes_en": "From abroad: 09666716445.",
     "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
     "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16496",
+    "name_en": "Titas Gas Emergency Call Centre & Control Room",
+    "name_bn": "তিতাস গ্যাস জরুরি কল সেন্টার ও নিয়ন্ত্রণ কক্ষ",
+    "category": "utility",
+    "hours": "24/7",
+    "notes_en": "Gas leak emergency reports, line pressure issues, and pipeline faults.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
   },
   {
     "number": "16575",
@@ -159,6 +290,16 @@
     "notes_en": "Long number: +8809612316430.",
     "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
     "last_verified": "2026-11-14"
+  },
+  {
+    "number": "16793",
+    "name_en": "National Human Rights Commission Helpline",
+    "name_bn": "জাতীয় মানবাধিকার কমিশন হেল্পলাইন",
+    "category": "legal-aid",
+    "hours": "Office hours, 9am–5pm",
+    "notes_en": "Reporting human rights violations and legal assistance inquiries.",
+    "source": "https://bangladesh.gov.bd/pages/static-pages/69a55ba386514399668e4e89",
+    "last_verified": "2026-11-16"
   },
   {
     "number": "16999",

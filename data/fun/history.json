@@ -2,6 +2,15 @@
   {
     "id": "history-0001",
     "month": 1,
+    "day": 10,
+    "year": 1972,
+    "title_en": "Bangabandhu Sheikh Mujibur Rahman returns to independent Bangladesh via London and New Delhi, celebrated as Homecoming Day.",
+    "title_bn": "স্বাধীন বাংলাদেশে স্বদেশ প্রত্যাবর্তন করেন বঙ্গবন্ধু শেখ মুজিবুর রহমান।",
+    "source": "https://en.wikipedia.org/wiki/Sheikh_Mujibur_Rahman"
+  },
+  {
+    "id": "history-0002",
+    "month": 1,
     "day": 17,
     "year": 1972,
     "title_en": "The national flag of Bangladesh is officially adopted.",
@@ -9,7 +18,16 @@
     "source": "https://en.wikipedia.org/wiki/National_symbols_of_Bangladesh"
   },
   {
-    "id": "history-0002",
+    "id": "history-0003",
+    "month": 1,
+    "day": 24,
+    "year": 1969,
+    "title_en": "The 1969 mass uprising reaches its peak in East Pakistan as police kill school student Matiur Rahman Mallik.",
+    "title_bn": "১৯৬৯ সালের গণঅভ্যুত্থানের চূড়ান্ত রূপ হিসেবে পুলিশের গুলিতে শহীদ হন নবকুমার ইনস্টিটিউটের ছাত্র মতিউর রহমান মল্লিক।",
+    "source": "https://en.wikipedia.org/wiki/1969_East_Pakistan_mass_uprising"
+  },
+  {
+    "id": "history-0004",
     "month": 2,
     "day": 21,
     "year": 1952,
@@ -18,48 +36,165 @@
     "source": "https://en.wikipedia.org/wiki/Bengali_language_movement"
   },
   {
-    "id": "history-0003",
-    "month": 3,
-    "day": 25,
-    "year": 1971,
-    "title_en": "Operation Searchlight begins on the night of 25 March.",
-    "title_bn": "২৫ মার্চ রাতে অপারেশন সার্চলাইট শুরু হয়।",
-    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
-  },
-  {
-    "id": "history-0004",
-    "month": 3,
-    "day": 26,
-    "year": 1971,
-    "title_en": "Considered the official Independence Day of Bangladesh.",
-    "title_bn": "দিনটি বাংলাদেশের আনুষ্ঠানিক স্বাধীনতা দিবস হিসেবে বিবেচিত।",
-    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
-  },
-  {
     "id": "history-0005",
-    "month": 4,
-    "day": 17,
+    "month": 3,
+    "day": 2,
     "year": 1971,
-    "title_en": "The cabinet of the provisional government takes its oath at Mujibnagar.",
-    "title_bn": "মুজিবনগরে অস্থায়ী সরকারের মন্ত্রিসভা শপথ গ্রহণ করে।",
-    "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_Bangladesh"
+    "title_en": "The first national flag of Bangladesh is hoisted at the historic Bat-tola of Dhaka University by student leader ASM Abdur Rob.",
+    "title_bn": "ঢাকা বিশ্ববিদ্যালয়ের ঐতিহাসিক কলাভবন প্রাঙ্গণে ডাকসু ভিপি আ স ম আবদুর রব বাংলাদেশের প্রথম জাতীয় পতাকা উত্তোলন করেন।",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Bangladesh"
   },
   {
     "id": "history-0006",
-    "month": 11,
-    "day": 17,
-    "year": 1999,
-    "title_en": "UNESCO's 30th General Conference supports Bangladesh's proposal to make 21 February International Mother Language Day.",
-    "title_bn": "ইউনেস্কোর ৩০তম সাধারণ সম্মেলনে ২১ ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস ঘোষণার প্রস্তাব সমর্থিত হয়।",
-    "source": "https://en.wikipedia.org/wiki/Bengali_language_movement"
+    "month": 3,
+    "day": 7,
+    "year": 1971,
+    "title_en": "Sheikh Mujibur Rahman delivers the historic 7 March speech at the Ramna Racecourse Maidan, declaring 'This struggle is for our freedom, this struggle is for our independence'.",
+    "title_bn": "রেসকোর্স ময়দানে ঐতিহাসিক ভাষণে বঙ্গবন্ধু ঘোষণা করেন: 'এবারের সংগ্রাম আমাদের মুক্তির সংগ্রাম, এবারের সংগ্রাম স্বাধীনতার সংগ্রাম'।",
+    "source": "https://en.wikipedia.org/wiki/7_March_Speech_of_Bangabandhu_Sheikh_Mujibur_Rahman"
   },
   {
     "id": "history-0007",
+    "month": 3,
+    "day": 25,
+    "year": 1971,
+    "title_en": "Operation Searchlight begins on the night of 25 March, as the Pakistan Armed Forces launch a systematic crackdown against civilians in Dhaka.",
+    "title_bn": "২৫ মার্চ কালরাতে পাকিস্তানি সামরিক বাহিনী ঢাকায় নিরীহ বেসামরিক নাগরিকদের ওপর পরিকল্পিত গণহত্যা 'অপারেশন সার্চলাইট' শুরু করে।",
+    "source": "https://en.wikipedia.org/wiki/Operation_Searchlight"
+  },
+  {
+    "id": "history-0008",
+    "month": 3,
+    "day": 26,
+    "year": 1971,
+    "title_en": "The independence of Bangladesh is declared in the early hours; officially commemorated as Independence Day.",
+    "title_bn": "২৬ মার্চের প্রথম প্রহরে বাংলাদেশের স্বাধীনতা ঘোষিত হয়; দিনটি জাতীয় স্বাধীনতা দিবস হিসেবে পালিত।",
+    "source": "https://en.wikipedia.org/wiki/Independence_Day_(Bangladesh)"
+  },
+  {
+    "id": "history-0009",
+    "month": 4,
+    "day": 10,
+    "year": 1971,
+    "title_en": "The Proclamation of Independence is formally adopted at Mujibnagar by the elected representatives of Bangladesh.",
+    "title_bn": "নির্বাচিত জনপ্রতিনিধিদের সমন্বয়ে মুজিবনগর থেকে আনুষ্ঠানিকভাবে বাংলাদেশের স্বাধীনতার ঘোষণাপত্র জারি করা হয়।",
+    "source": "https://en.wikipedia.org/wiki/Proclamation_of_Bangladeshi_Independence"
+  },
+  {
+    "id": "history-0010",
+    "month": 4,
+    "day": 17,
+    "year": 1971,
+    "title_en": "The cabinet of the provisional government takes its oath at Baidyanathtala (Mujibnagar), Meherpur.",
+    "title_bn": "মেহেরপুরের বৈদ্যনাথতলার (মুজিবনগর) আম্রকাননে বাংলাদেশের অস্থায়ী সরকারের মন্ত্রিসভা শপথ গ্রহণ করে।",
+    "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_Bangladesh"
+  },
+  {
+    "id": "history-0011",
+    "month": 6,
+    "day": 23,
+    "year": 1949,
+    "title_en": "The East Pakistan Awami Muslim League is founded at the Rose Garden Palace in Old Dhaka.",
+    "title_bn": "পুরান ঢাকার রোজ গার্ডেনে মওলানা ভাসানী ও শামসুল হকের নেতৃত্বে পূর্ব পাকিস্তান আওয়ামী মুসলিম লীগ প্রতিষ্ঠিত হয়।",
+    "source": "https://en.wikipedia.org/wiki/Awami_League"
+  },
+  {
+    "id": "history-0012",
+    "month": 8,
+    "day": 8,
+    "year": 2024,
+    "title_en": "Nobel Peace Prize laureate Professor Muhammad Yunus takes oath as Chief Adviser of the Interim Government of Bangladesh.",
+    "title_bn": "নোবেলজয়ী অর্থনীতিবিদ ড. মুহাম্মদ ইউনূস বাংলাদেশের অন্তর্বর্তীকালীন সরকারের প্রধান উপদেষ্টা হিসেবে শপথ গ্রহণ করেন।",
+    "source": "https://en.wikipedia.org/wiki/Interim_Government_of_Bangladesh"
+  },
+  {
+    "id": "history-0013",
+    "month": 9,
+    "day": 17,
+    "year": 1962,
+    "title_en": "Education Day (Shikkha Dibos) is commemorated following protests against the reactionary Sharif Commission education report.",
+    "title_bn": "কুখ্যাত শরীফ কমিশনের প্রতিক্রিয়াশীল শিক্ষা নীতির বিরুদ্ধে ছাত্র আন্দোলনে শহীদদের স্মরণে শিক্ষা দিবস পালিত হয়।",
+    "source": "https://en.wikipedia.org/wiki/1962_East_Pakistan_education_movement"
+  },
+  {
+    "id": "history-0014",
+    "month": 9,
+    "day": 24,
+    "year": 1974,
+    "title_en": "Bangladesh is formally admitted as the 136th member state of the United Nations General Assembly.",
+    "title_bn": "জাতিসংঘ সাধারণ পরিষদের সর্বসম্মত সিদ্ধান্তে বাংলাদেশ ১৩৬তম সদস্য রাষ্ট্র হিসেবে আনুষ্ঠানিকভাবে স্বীকৃতি পায়।",
+    "source": "https://en.wikipedia.org/wiki/United_Nations"
+  },
+  {
+    "id": "history-0015",
+    "month": 9,
+    "day": 25,
+    "year": 1974,
+    "title_en": "Bangabandhu Sheikh Mujibur Rahman addresses the United Nations General Assembly in Bangla for the first time in history.",
+    "title_bn": "জাতিসংঘের সাধারণ অধিবেশনে ইতিহাসে প্রথমবারের মতো মাতৃভাষা বাংলায় ভাষণ দেন বঙ্গবন্ধু শেখ মুজিবুর রহমান।",
+    "source": "https://en.wikipedia.org/wiki/Sheikh_Mujibur_Rahman"
+  },
+  {
+    "id": "history-0016",
+    "month": 11,
+    "day": 3,
+    "year": 1975,
+    "title_en": "Four national leaders of the 1971 wartime provisional government are assassinated inside Dhaka Central Jail, observed as Jail Killing Day.",
+    "title_bn": "ঢাকা কেন্দ্রীয় কারাগারে মুক্তিযুদ্ধের চার জাতীয় নেতা সৈয়দ নজরুল ইসলাম, তাজউদ্দীন আহমদ, এম মনসুর আলী ও কামারুজ্জামানকে হত্যা করা হয়।",
+    "source": "https://en.wikipedia.org/wiki/Jail_Killing_Day"
+  },
+  {
+    "id": "history-0017",
+    "month": 11,
+    "day": 4,
+    "year": 1972,
+    "title_en": "The Constitution of the People's Republic of Bangladesh is formally adopted by the Constituent Assembly (Ganaparishad).",
+    "title_bn": "গণপরিষদে গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধান আনুষ্ঠানিকভাবে গৃহীত হয় (সংবিধান দিবস)।",
+    "source": "https://en.wikipedia.org/wiki/Constitution_of_Bangladesh"
+  },
+  {
+    "id": "history-0018",
+    "month": 11,
+    "day": 7,
+    "year": 1975,
+    "title_en": "A soldier-civilian uprising in Dhaka ends a series of coups; observed as National Revolution and Solidarity Day.",
+    "title_bn": "সিপাহী-জনতার বিপ্লবের মধ্য দিয়ে খালেদ মোশাররফের পাল্টা অভ্যুত্থানের অবসান ঘটে; জাতীয় বিপ্লব ও সংহতি দিবস।",
+    "source": "https://en.wikipedia.org/wiki/7_November_1975_Bangladeshi_coup_d%27%C3%A9tat"
+  },
+  {
+    "id": "history-0019",
+    "month": 11,
+    "day": 17,
+    "year": 1999,
+    "title_en": "UNESCO's 30th General Conference unananimously declares 21 February as International Mother Language Day following a proposal from Bangladesh.",
+    "title_bn": "ইউনেস্কোর ৩০তম সাধারণ সম্মেলনে বাংলাদেশের প্রস্তাবে একুশে ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস ঘোষণা করা হয়।",
+    "source": "https://en.wikipedia.org/wiki/International_Mother_Language_Day"
+  },
+  {
+    "id": "history-0020",
+    "month": 12,
+    "day": 6,
+    "year": 1971,
+    "title_en": "Bhutan and India become the first sovereign nations to officially recognize Bangladesh as an independent state.",
+    "title_bn": "ভুটান এবং ভারত আনুষ্ঠানিকভাবে স্বাধীন ও সার্বভৌম দেশ হিসেবে বাংলাদেশকে প্রথম কূটনৈতিক স্বীকৃতি দেয়।",
+    "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+  },
+  {
+    "id": "history-0021",
+    "month": 12,
+    "day": 14,
+    "year": 1971,
+    "title_en": "Scores of leading Bangladeshi intellectuals and professionals are abducted and killed in Dhaka, commemorated as Martyred Intellectuals Day.",
+    "title_bn": "বিজয়ের প্রাক্কালে শিক্ষক, চিকিৎসক, সাংবাদিকসহ দেশের শীর্ষ বুদ্ধিজীবীদের পরিকল্পিতভাবে হত্যা করা হয়; শহীদ বুদ্ধিজীবী দিবস।",
+    "source": "https://en.wikipedia.org/wiki/Martyred_Intellectuals_Day"
+  },
+  {
+    "id": "history-0022",
     "month": 12,
     "day": 16,
     "year": 1971,
     "title_en": "Pakistan surrenders in Dhaka, ending the Liberation War; observed as Victory Day.",
-    "title_bn": "ঢাকায় পাকিস্তানের আত্মসমর্পণের মধ্য দিয়ে মুক্তিযুদ্ধের অবসান; দিনটি বিজয় দিবস হিসেবে পালিত হয়।",
+    "title_bn": "রেসকোর্স ময়দানে পাকিস্তানি বাহিনীর নিঃশর্ত আত্মসমর্পণের মাধ্যমে ৯ মাসের রক্তক্ষয়ী মুক্তিযুদ্ধের বিজয় অর্জিত হয়।",
     "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
   }
 ]
