@@ -42,7 +42,6 @@ export class DeshNidInput extends BaseElement {
 
   private updateState() {
     const type = this.nidType;
-    const valid = this.isValid;
     if (this.statusEl) {
       if (type) {
         const labels: Record<string, string> = {

@@ -12,6 +12,10 @@
       "!data",
       "!dist",
       "!**/dist",
+      "!packages/flutter",
+      "!packages/go",
+      "!packages/php",
+      "!packages/python",
       "!web",
       "!**/*.md"
     ]

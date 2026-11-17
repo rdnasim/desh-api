@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { StyleSheet, Text, TextInput, type TextInputProps, View } from 'react-native';
 
 export interface DeshNidInputProps extends TextInputProps {
   onValidChange?: (isValid: boolean, type: 'smart' | 'old' | 'extended' | null) => void;
 }
 
-export function DeshNidInput({
-  onValidChange,
-  onChangeText,
-  style,
-  ...props
-}: DeshNidInputProps) {
+export function DeshNidInput({ onValidChange, onChangeText, style, ...props }: DeshNidInputProps) {
   const [nidType, setNidType] = useState<'smart' | 'old' | 'extended' | null>(null);
 
   const handleChangeText = (text: string) => {
